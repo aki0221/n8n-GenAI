@@ -1,0 +1,105 @@
+# Mermaidコード修正レポート
+
+## 1. エラー内容の分析
+
+ユーザーから指摘された3箇所のMermaidコードには、以下の共通する構文エラーが確認されました：
+
+```
+Expecting 'SQE', 'DOUBLECIRCLEEND', 'PE', '-)', 'STADIUMEND', 'SUBROUTINEEND', 'PIPE', 'CYLINDEREND', 'DIAMOND_STOP', 'TAGEND', 'TRAPEND', 'INVTRAPEND', 'UNICODE_TEXT', 'TEXT', 'TAGSTART', got 'PS'
+```
+
+このエラーは、Mermaidの構文解析において、予期しない記号や形式が使用されていることを示しています。具体的には以下の問題点が特定されました：
+
+1. **矢印表記の問題**: `-->` の使用方法が不適切
+2. **ノード定義の問題**: 括弧やブラケットの使用方法が不適切
+3. **subgraphの構文問題**: subgraphの定義方法が不適切
+
+## 2. 修正方針
+
+各Mermaidコードに対して、以下の修正方針を適用します：
+
+1. **評価プロセス全体のフロー図（2.2節）**:
+   - 矢印表記を標準的な形式に修正
+   - ノード定義を簡略化
+   - subgraphの構文を修正
+
+2. **視点別評価結果テーブル（4.2.1節）**:
+   - テーブル表現にはclassdiagramを使用
+   - 矢印表記を削除し、適切な関連表現に変更
+
+3. **整合性評価結果テーブル（5.2.1節）**:
+   - テーブル表現にはclassdiagramを使用
+   - 矢印表記を削除し、適切な関連表現に変更
+
+## 3. 修正後のMermaidコード
+
+### 3.1. 評価プロセス全体のフロー図（2.2節）
+
+```mermaid
+graph LR
+    A["入力: 視点別情報\n(変化点, 分析結果)"] --> B["視点別評価プロセス\nn8n Workflow 1"]
+    B -- "重要度・確信度評価" --> C[("評価結果DB")]
+    C --> D["整合性評価プロセス\nn8n Workflow 2"]
+    
+    subgraph 視点別評価
+        B
+    end
+    
+    subgraph 統合評価
+        D
+    end
+    
+    D -- "整合性評価" --> C
+    C --> E["出力: 統合評価結果\n(重要度, 確信度, 整合性)"]
+```
+
+### 3.2. 視点別評価結果テーブル（4.2.1節）
+
+```mermaid
+classDiagram
+    class perspective_evaluations {
+        +SERIAL PRIMARY KEY id
+        +VARCHAR(50) NOT NULL perspective_id
+        +VARCHAR(50) NOT NULL topic_id
+        +DATE NOT NULL date
+        +JSONB NOT NULL importance
+        +JSONB NOT NULL confidence
+        +FLOAT NOT NULL overall_score
+        +TIMESTAMP WITH TIME ZONE created_at
+        +UNIQUE (perspective_id, topic_id, date)
+    }
+```
+
+### 3.3. 整合性評価結果テーブル（5.2.1節）
+
+```mermaid
+classDiagram
+    class coherence_evaluations {
+        +SERIAL PRIMARY KEY id
+        +VARCHAR(50) NOT NULL topic_id
+        +DATE NOT NULL date
+        +JSONB NOT NULL coherence
+        +TIMESTAMP WITH TIME ZONE created_at
+        +UNIQUE (topic_id, date)
+    }
+```
+
+## 4. 修正のポイント
+
+1. **ノード表現の簡略化**:
+   - 複雑な書式（HTML要素など）を避け、シンプルな表現に変更
+   - 改行は `\n` で表現
+
+2. **矢印表記の標準化**:
+   - `-->` の前後にスペースを入れて明確に区切る
+   - ラベル付き矢印は `-- "ラベル" -->` の形式に統一
+
+3. **テーブル表現の適切化**:
+   - データベーススキーマの表現には `graph TD` ではなく `classDiagram` を使用
+   - カラム定義を適切なクラス構文で表現
+
+4. **subgraphの構文修正**:
+   - subgraphの定義を標準的な形式に修正
+   - 不要な引用符を削除
+
+これらの修正により、Mermaidコードが正しく解析され、意図した図表が適切に表示されるようになります。
