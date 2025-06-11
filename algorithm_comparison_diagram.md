@@ -1,0 +1,236 @@
+```mermaid
+classDiagram
+    %% 異なる検出アルゴリズムの比較表
+    class "基本的な閾値ベースアルゴリズム" {
+        +精度と信頼性: ★★★☆☆
+        +計算複雑性: ★☆☆☆☆ (低)
+        +実装の複雑さ: ★☆☆☆☆ (簡単)
+        +柔軟性と適応性: ★★☆☆☆
+        +エラー耐性: ★★☆☆☆
+        +適用シナリオ: 初期評価、リソース制約環境
+    }
+    
+    class "安定性評価を含むアルゴリズム" {
+        +精度と信頼性: ★★★★★
+        +計算複雑性: ★★★★☆ (高)
+        +実装の複雑さ: ★★★★☆ (複雑)
+        +柔軟性と適応性: ★★★★☆
+        +エラー耐性: ★★★★☆
+        +適用シナリオ: 重要な戦略決定、高リスク環境
+    }
+    
+    class "代替解生成アルゴリズム" {
+        +精度と信頼性: ★★★★☆
+        +計算複雑性: ★★★☆☆ (中)
+        +実装の複雑さ: ★★★★★ (最も複雑)
+        +柔軟性と適応性: ★★★★★
+        +エラー耐性: ★★★★★
+        +適用シナリオ: 不確実性の高い環境、複数の選択肢が必要な場合
+    }
+    
+    %% n8n実装の注釈
+    class "n8n実装の特徴" {
+        +基本的な閾値ベース: Function, If/Switchノード中心
+        +安定性評価を含む: Loop, Functionノードでモンテカルロシミュレーション
+        +代替解生成: 複数の条件分岐と代替フロー
+    }
+```
+
+```mermaid
+graph TB
+    %% 簡略化されたフロー図の並列表示
+    
+    %% スタイル定義
+    classDef basic fill:#d4f1f9,stroke:#05386b,stroke-width:2px
+    classDef stability fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    classDef alternative fill:#ffe0b2,stroke:#e65100,stroke-width:2px
+    classDef common fill:#e1bee7,stroke:#6a1b9a,stroke-width:2px
+    
+    %% 共通開始点
+    Start([静止点検出開始]) --> Split
+    class Start common
+    
+    %% 分岐点
+    Split{{"アルゴリズム選択"}}
+    Split --> |基本的な閾値ベース| B1
+    Split --> |安定性評価を含む| S1
+    Split --> |代替解生成| A1
+    class Split common
+    
+    %% 基本的な閾値ベースアルゴリズム
+    subgraph Basic [基本的な閾値ベースアルゴリズム]
+        B1[データ取得・前処理] --> B2
+        B2[統合スコア計算] --> B3
+        B3{整合性チェック} --> |OK| B4
+        B3 --> |NG| B5
+        B4[スコア調整] --> B6
+        B5[警告フラグ設定] --> B4
+        B6{静止点候補チェック} --> |候補あり| B7
+        B6 --> |候補なし| B8
+        B7[静止点として採用] --> B9
+        B8[静止点なしと判定] --> B9
+        B9([結果出力])
+    end
+    class B1,B2,B3,B4,B5,B6,B7,B8,B9 basic
+    
+    %% 安定性評価を含むアルゴリズム
+    subgraph Stability [安定性評価を含むアルゴリズム]
+        S1[データ取得・前処理] --> S2
+        S2[統合スコア計算] --> S3
+        S3{整合性チェック} --> |OK| S4
+        S3 --> |NG| S5
+        S4[スコア調整] --> S6
+        S5[警告フラグ設定] --> S4
+        S6{静止点候補チェック} --> |候補あり| S7
+        S6 --> |候補なし| S11
+        S7[安定性評価準備] --> S8
+        S8[モンテカルロシミュレーション] --> S9
+        S9{安定性チェック} --> |OK| S10
+        S9 --> |NG| S11
+        S10[静止点として採用] --> S12
+        S11[静止点なしと判定] --> S12
+        S12([結果出力])
+    end
+    class S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12 stability
+    
+    %% 代替解生成アルゴリズム
+    subgraph Alternative [代替解生成アルゴリズム]
+        A1[データ取得・前処理] --> A2
+        A2[統合スコア計算] --> A3
+        A3{整合性チェック} --> |OK| A4
+        A3 --> |NG| A5
+        A4[スコア調整] --> A6
+        A5[代替パラメータ使用] --> A4
+        A6{静止点候補チェック} --> |候補あり| A7
+        A6 --> |候補なし| A10
+        A7[安定性評価] --> A8
+        A8{安定性チェック} --> |OK| A9
+        A8 --> |NG| A10
+        A9[静止点として採用] --> A13
+        A10{代替処理選択} --> |閾値緩和| A11
+        A10 --> |重み再検討| A12
+        A10 --> |準静止点| A9
+        A11[閾値の段階的緩和] --> A6
+        A12[重み付けの再検討] --> A2
+        A13([結果出力])
+    end
+    class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13 alternative
+```
+
+```mermaid
+graph TD
+    %% アルゴリズム選択のための決定木
+    
+    %% スタイル定義
+    classDef question fill:#f9f9f9,stroke:#666,stroke-width:1px
+    classDef algorithm fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef condition fill:#fff9c4,stroke:#f57f17,stroke-width:1px
+    
+    Start([アルゴリズム選択開始]) --> Q1
+    class Start question
+    
+    Q1{リソース制約は厳しいか?} -->|はい| Q2
+    Q1 -->|いいえ| Q3
+    class Q1 question
+    
+    Q2{結果の精度要件は?} -->|低〜中| A1
+    Q2 -->|高| Q4
+    class Q2 question
+    
+    Q3{不確実性の高い環境か?} -->|はい| A3
+    Q3 -->|いいえ| Q5
+    class Q3 question
+    
+    Q4{代替案は必要か?} -->|はい| A3
+    Q4 -->|いいえ| A1
+    class Q4 question
+    
+    Q5{高リスクの意思決定か?} -->|はい| A2
+    Q5 -->|いいえ| Q6
+    class Q5 question
+    
+    Q6{データ品質は?} -->|高品質| A2
+    Q6 -->|低品質| A3
+    class Q6 question
+    
+    A1[基本的な閾値ベースアルゴリズム]
+    A2[安定性評価を含むアルゴリズム]
+    A3[代替解生成アルゴリズム]
+    class A1,A2,A3 algorithm
+    
+    %% 条件の説明
+    C1[リソース制約: CPU/メモリ制限、処理時間要件]
+    C2[精度要件: 結果の正確さと信頼性の重要度]
+    C3[不確実性: 入力データの変動性や信頼性]
+    C4[リスク: 誤った判断による影響の大きさ]
+    C5[データ品質: 欠損値、ノイズ、一貫性の程度]
+    class C1,C2,C3,C4,C5 condition
+    
+    %% 条件と質問の関連付け
+    C1 -.-> Q1
+    C2 -.-> Q2
+    C3 -.-> Q3
+    C4 -.-> Q5
+    C5 -.-> Q6
+```
+
+```mermaid
+graph TD
+    %% アルゴリズム特性のレーダーチャート表現
+    %% 注: Mermaidでは実際のレーダーチャートは直接サポートされていないため、
+    %% 視覚的な近似表現として多角形を使用
+    
+    %% スタイル定義
+    classDef basic fill:#d4f1f9,stroke:#05386b,stroke-width:2px,opacity:0.7
+    classDef stability fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,opacity:0.7
+    classDef alternative fill:#ffe0b2,stroke:#e65100,stroke-width:2px,opacity:0.7
+    classDef axis stroke:#999,stroke-width:1px,stroke-dasharray:5
+    
+    %% レーダーチャートの中心と軸
+    Center((中心))
+    
+    %% 精度と信頼性の軸
+    Center -- 精度と信頼性 --> P5(5)
+    P1 --- P2 --- P3 --- P4 --- P5
+    class P1,P2,P3,P4,P5 axis
+    
+    %% 計算複雑性の軸
+    Center -- 計算複雑性 --> C5(5)
+    C1 --- C2 --- C3 --- C4 --- C5
+    class C1,C2,C3,C4,C5 axis
+    
+    %% 実装の複雑さの軸
+    Center -- 実装の複雑さ --> I5(5)
+    I1 --- I2 --- I3 --- I4 --- I5
+    class I1,I2,I3,I4,I5 axis
+    
+    %% 柔軟性と適応性の軸
+    Center -- 柔軟性と適応性 --> F5(5)
+    F1 --- F2 --- F3 --- F4 --- F5
+    class F1,F2,F3,F4,F5 axis
+    
+    %% エラー耐性の軸
+    Center -- エラー耐性 --> E5(5)
+    E1 --- E2 --- E3 --- E4 --- E5
+    class E1,E2,E3,E4,E5 axis
+    
+    %% 基本的な閾値ベースアルゴリズムの多角形
+    B_P3 --- B_C1 --- B_I1 --- B_F2 --- B_E2 --- B_P3
+    class B_P3,B_C1,B_I1,B_F2,B_E2 basic
+    
+    %% 安定性評価を含むアルゴリズムの多角形
+    S_P5 --- S_C4 --- S_I4 --- S_F4 --- S_E4 --- S_P5
+    class S_P5,S_C4,S_I4,S_F4,S_E4 stability
+    
+    %% 代替解生成アルゴリズムの多角形
+    A_P4 --- A_C3 --- A_I5 --- A_F5 --- A_E5 --- A_P4
+    class A_P4,A_C3,A_I5,A_F5,A_E5 alternative
+    
+    %% 凡例
+    L_Basic[基本的な閾値ベース]
+    L_Stability[安定性評価を含む]
+    L_Alternative[代替解生成]
+    class L_Basic basic
+    class L_Stability stability
+    class L_Alternative alternative
+```
