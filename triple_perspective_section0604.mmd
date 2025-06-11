@@ -1,0 +1,15 @@
+graph LR
+    A[入力: 視点別情報<br>(変化点, 分析結果)] --> B(視点別評価プロセス<br>n8n Workflow 1);
+    B -- 重要度・確信度評価 --> C[(評価結果DB)];
+    C --> D(整合性評価プロセス<br>n8n Workflow 2);
+    
+    subgraph 視点別評価
+        B
+    end
+    
+    subgraph 統合評価
+        D
+    end
+    
+    D -- 整合性評価 --> C;
+    C --> E[出力: 統合評価結果<br>(重要度, 確信度, 整合性)];
