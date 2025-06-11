@@ -1,0 +1,122 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="900" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- タイトル -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">変化点検出と予測アルゴリズムのプロセスフロー</text>
+
+  <!-- 入力データ -->
+  <rect x="50" y="90" width="800" height="60" rx="5" ry="5" fill="#f0f0f0" stroke="#666" stroke-width="1"/>
+  <text x="450" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">トリプルレイヤーナレッジグラフ時系列データ</text>
+  
+  <!-- レイヤー分析段階 -->
+  <rect x="120" y="190" width="200" height="200" rx="5" ry="5" fill="#e6f7ff" stroke="#1890ff" stroke-width="2"/>
+  <text x="220" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ビジネスレイヤー分析</text>
+  <line x1="140" y1="225" x2="300" y2="225" stroke="#1890ff" stroke-width="1"/>
+  
+  <rect x="350" y="190" width="200" height="200" rx="5" ry="5" fill="#f6ffed" stroke="#52c41a" stroke-width="2"/>
+  <text x="450" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">マーケットレイヤー分析</text>
+  <line x1="370" y1="225" x2="530" y2="225" stroke="#52c41a" stroke-width="1"/>
+  
+  <rect x="580" y="190" width="200" height="200" rx="5" ry="5" fill="#fff7e6" stroke="#fa8c16" stroke-width="2"/>
+  <text x="680" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">テクノロジーレイヤー分析</text>
+  <line x1="600" y1="225" x2="760" y2="225" stroke="#fa8c16" stroke-width="1"/>
+  
+  <!-- 各レイヤー内の分析ステップ -->
+  <!-- ビジネスレイヤー -->
+  <rect x="140" y="235" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#1890ff" stroke-width="1"/>
+  <text x="220" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">統計的変化点検出</text>
+  
+  <rect x="140" y="275" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#1890ff" stroke-width="1"/>
+  <text x="220" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">セマンティック変化点検出</text>
+  
+  <rect x="140" y="315" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#1890ff" stroke-width="1"/>
+  <text x="220" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">構造的変化点検出</text>
+  
+  <rect x="140" y="355" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#1890ff" stroke-width="1"/>
+  <text x="220" y="373" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1890ff">変化点重要度評価</text>
+  
+  <!-- マーケットレイヤー -->
+  <rect x="370" y="235" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#52c41a" stroke-width="1"/>
+  <text x="450" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">統計的変化点検出</text>
+  
+  <rect x="370" y="275" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#52c41a" stroke-width="1"/>
+  <text x="450" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">セマンティック変化点検出</text>
+  
+  <rect x="370" y="315" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#52c41a" stroke-width="1"/>
+  <text x="450" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">構造的変化点検出</text>
+  
+  <rect x="370" y="355" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#52c41a" stroke-width="1"/>
+  <text x="450" y="373" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#52c41a">変化点重要度評価</text>
+  
+  <!-- テクノロジーレイヤー -->
+  <rect x="600" y="235" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#fa8c16" stroke-width="1"/>
+  <text x="680" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">統計的変化点検出</text>
+  
+  <rect x="600" y="275" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#fa8c16" stroke-width="1"/>
+  <text x="680" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">セマンティック変化点検出</text>
+  
+  <rect x="600" y="315" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#fa8c16" stroke-width="1"/>
+  <text x="680" y="335" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">構造的変化点検出</text>
+  
+  <rect x="600" y="355" width="160" height="30" rx="3" ry="3" fill="#ffffff" stroke="#fa8c16" stroke-width="1"/>
+  <text x="680" y="373" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#fa8c16">変化点重要度評価</text>
+  
+  <!-- クロスレイヤー分析 -->
+  <rect x="250" y="410" width="400" height="50" rx="5" ry="5" fill="#f9f0ff" stroke="#722ed1" stroke-width="2"/>
+  <text x="450" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">クロスレイヤー連動変化検出と因果関係分析</text>
+  
+  <!-- 予測モデル段階 -->
+  <rect x="80" y="480" width="330" height="100" rx="5" ry="5" fill="#e6fffb" stroke="#13c2c2" stroke-width="2"/>
+  <text x="245" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">短期予測モデル (2-3ヶ月)</text>
+  <line x1="100" y1="515" x2="390" y2="515" stroke="#13c2c2" stroke-width="1"/>
+  <text x="245" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・時系列予測 (LSTM, Transformer)</text>
+  <text x="245" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・グラフ進化予測 (TGNN)</text>
+  <text x="245" y="575" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・レイヤー間連動効果予測</text>
+  
+  <rect x="490" y="480" width="330" height="100" rx="5" ry="5" fill="#fff0f6" stroke="#eb2f96" stroke-width="2"/>
+  <text x="655" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">中期予測モデル (6ヶ月)</text>
+  <line x1="510" y1="515" x2="800" y2="515" stroke="#eb2f96" stroke-width="1"/>
+  <text x="655" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・シナリオベース予測</text>
+  <text x="655" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・確率的グラフ進化モデル</text>
+  <text x="655" y="575" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">・外部要因統合分析</text>
+  
+  <!-- 接続線 -->
+  <!-- 入力→各レイヤー分析 -->
+  <path d="M220,150 L220,190" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M450,150 L450,190" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M680,150 L680,190" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 各レイヤー→クロスレイヤー -->
+  <path d="M220,390 L220,435 L250,435" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M450,390 L450,410" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M680,390 L680,435 L650,435" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- クロスレイヤー→予測モデル -->
+  <path d="M320,460 L245,480" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M580,460 L655,480" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- レイヤー間の相互作用 -->
+  <path d="M320,290 C340,290 340,290 350,290" stroke="#722ed1" stroke-width="1.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M550,290 C570,290 570,290 580,290" stroke="#722ed1" stroke-width="1.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 短期と中期予測の連携 -->
+  <path d="M410,530 L490,530" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 変化点の流れ可視化 -->
+  <path d="M50,110 C30,110 30,320 30,530 C30,560 50,560 80,560" stroke="#f5222d" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#arrowhead_red)"/>
+  <text x="60" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f5222d" transform="rotate(-90,60,250)">変化点の流れ</text>
+  
+  <!-- 予測信頼度評価 -->
+  <rect x="350" y="590" width="200" height="0" rx="0" ry="0" fill="#f0f0f0" stroke="#666" stroke-width="0"/>
+  
+  <!-- 矢印定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="arrowhead_red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f5222d"/>
+    </marker>
+  </defs>
+</svg>

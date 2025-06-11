@@ -1,0 +1,115 @@
+```mermaid
+flowchart TD
+    %% Data Sources
+    subgraph DataSources[Data Sources]
+        DS1[Market API]
+        DS2[Tech API]
+        DS3[Business DB]
+    end
+
+    %% Data Collection
+    subgraph Collection[Data Collection]
+        N1[HTTP Request 1]
+        N2[HTTP Request 2]
+        N3[DB Query]
+        N4[Merge Data]
+        N5[Preprocessing]
+        N6[Save Data]
+    end
+
+    %% Model Execution
+    subgraph ModelExec[Model Execution]
+        N7[Load Data]
+        N8[Model Selection]
+        N9[Split Tasks]
+        N10a[TimeSeries]
+        N10b[ML Models]
+        N10c[DL Models]
+        N10d[Ensemble]
+        N11a[TS API]
+        N11b[ML API]
+        N11c[DL API]
+        N11d[Ensemble API]
+        N12[Update Status]
+    end
+
+    %% Results Integration
+    subgraph Results[Results Integration]
+        N13[Check Completion]
+        N14[Load Results]
+        N15[Integrate Results]
+        N16[Evaluate Results]
+        N17[Save Prediction]
+        N18[Update Dashboard]
+    end
+
+    %% Model Update
+    subgraph Update[Model Update]
+        N19[Schedule]
+        N20[Check Condition]
+        N21[Retrain]
+    end
+
+    %% External Systems
+    subgraph External[External Systems]
+        API[Model API Server]
+        DB[Database]
+        MQ[Message Queue]
+        Monitor[Monitoring]
+        Dashboard[Dashboard]
+        Retrain[Retraining]
+    end
+
+    %% Connections
+    DS1 --> N1
+    DS2 --> N2
+    DS3 --> N3
+    N1 --> N4
+    N2 --> N4
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6
+    N6 --> DB
+    N6 --> N7
+    N7 --> N8
+    N8 --> N9
+    N9 --> N10a
+    N9 --> N10b
+    N9 --> N10c
+    N9 --> N10d
+    N10a --> N11a
+    N10b --> N11b
+    N10c --> N11c
+    N10d --> N11d
+    N11a --> API
+    N11b --> API
+    N11c --> API
+    N11d --> API
+    API --> N11a
+    API --> N11b
+    API --> N11c
+    API --> N11d
+    N11a --> N12
+    N11b --> N12
+    N11c --> N12
+    N11d --> N12
+    N12 --> DB
+    N12 --> N13
+    N13 --> N14
+    N14 --> DB
+    N14 --> N15
+    N15 --> N16
+    N16 --> N17
+    N17 --> DB
+    N17 --> N18
+    N18 --> Dashboard
+    N19 --> N20
+    N20 --> N21
+    N21 --> Retrain
+    N5 --> Monitor
+    N8 --> Monitor
+    N15 --> Monitor
+    N16 --> Monitor
+    N9 --> MQ
+    MQ --> N10a
+```
