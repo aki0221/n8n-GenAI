@@ -1,0 +1,157 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="level1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="level2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="level3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="level4Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="level5Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header Section -->
+  <rect x="0" y="0" width="600" height="100" fill="url(#headerGrad)" rx="0"/>
+  <text x="300" y="35" text-anchor="middle" fill="white" font-size="22" font-weight="bold">
+    あなたの組織の自動化成熟度は？
+  </text>
+  <text x="300" y="60" text-anchor="middle" fill="white" font-size="16" opacity="0.9">
+    5分で分かる現在地診断
+  </text>
+  <text x="300" y="80" text-anchor="middle" fill="white" font-size="14" opacity="0.8">
+    👇 上から順番にチェックしてみましょう
+  </text>
+  
+  <!-- Introduction -->
+  <rect x="40" y="120" width="520" height="80" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" rx="10"/>
+  <text x="300" y="145" text-anchor="middle" fill="#1f2937" font-size="16" font-weight="bold">
+    なぜ成熟度診断が重要なのか？
+  </text>
+  <text x="60" y="170" fill="#4b5563" font-size="13">
+    <tspan x="60" dy="0">• 現在の立ち位置を客観視できる</tspan>
+    <tspan x="60" dy="18">• 次に取るべきアクションが明確になる</tspan>
+    <tspan x="60" dy="18">• 投資対効果の高い施策を選択できる</tspan>
+  </text>
+  
+  <!-- Level 1: Individual Optimization -->
+  <rect x="40" y="230" width="520" height="140" fill="url(#level1Grad)" stroke="#f59e0b" stroke-width="2" rx="15"/>
+  <circle cx="80" cy="270" r="20" fill="#f59e0b"/>
+  <text x="80" y="277" text-anchor="middle" fill="white" font-size="14" font-weight="bold">1</text>
+  <text x="110" y="265" fill="#92400e" font-size="18" font-weight="bold">個別最適化段階</text>
+  <text x="110" y="285" fill="#78350f" font-size="14" opacity="0.8">「部分的に自動化を始めている」</text>
+  
+  <rect x="60" y="300" width="480" height="55" fill="#fffbeb" stroke="#fbbf24" stroke-width="1" rx="8"/>
+  <text x="75" y="318" fill="#92400e" font-size="12" font-weight="bold">✓ こんな状況なら Level 1</text>
+  <text x="80" y="335" fill="#78350f" font-size="11">
+    <tspan x="80" dy="0">□ 特定の部門だけで自動化ツールを使っている</tspan>
+    <tspan x="80" dy="12">□ エクセルマクロやRPAを個人レベルで活用</tspan>
+    <tspan x="80" dy="12">□ 全社的な取り組みにはなっていない</tspan>
+  </text>
+  
+  <!-- Level 2: Standardization -->
+  <rect x="40" y="390" width="520" height="140" fill="url(#level2Grad)" stroke="#3b82f6" stroke-width="2" rx="15"/>
+  <circle cx="80" cy="430" r="20" fill="#3b82f6"/>
+  <text x="80" y="437" text-anchor="middle" fill="white" font-size="14" font-weight="bold">2</text>
+  <text x="110" y="425" fill="#1e3a8a" font-size="18" font-weight="bold">標準化段階</text>
+  <text x="110" y="445" fill="#1e40af" font-size="14" opacity="0.8">「ルールとガイドラインがある」</text>
+  
+  <rect x="60" y="460" width="480" height="55" fill="#f0f9ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  <text x="75" y="478" fill="#1e3a8a" font-size="12" font-weight="bold">✓ こんな状況なら Level 2</text>
+  <text x="80" y="495" fill="#1e40af" font-size="11">
+    <tspan x="80" dy="0">□ 自動化のルールやガイドラインが存在する</tspan>
+    <tspan x="80" dy="12">□ 複数部門で同じツールを使い始めている</tspan>
+    <tspan x="80" dy="12">□ 成功事例を他部門に展開している</tspan>
+  </text>
+  
+  <!-- Level 3: Strategic Integration -->
+  <rect x="40" y="550" width="520" height="140" fill="url(#level3Grad)" stroke="#10b981" stroke-width="2" rx="15"/>
+  <circle cx="80" cy="590" r="20" fill="#10b981"/>
+  <text x="80" y="597" text-anchor="middle" fill="white" font-size="14" font-weight="bold">3</text>
+  <text x="110" y="585" fill="#064e3b" font-size="18" font-weight="bold">戦略的統合段階</text>
+  <text x="110" y="605" fill="#065f46" font-size="14" opacity="0.8">「経営戦略と連動している」</text>
+  
+  <rect x="60" y="620" width="480" height="55" fill="#ecfdf5" stroke="#34d399" stroke-width="1" rx="8"/>
+  <text x="75" y="638" fill="#064e3b" font-size="12" font-weight="bold">✓ こんな状況なら Level 3</text>
+  <text x="80" y="655" fill="#065f46" font-size="11">
+    <tspan x="80" dy="0">□ 自動化が中期経営計画に明記されている</tspan>
+    <tspan x="80" dy="12">□ 専門チーム（CoE）が設置されている</tspan>
+    <tspan x="80" dy="12">□ ROIを定量的に測定・管理している</tspan>
+  </text>
+  
+  <!-- Level 4: Transformation -->
+  <rect x="40" y="710" width="520" height="140" fill="url(#level4Grad)" stroke="#6366f1" stroke-width="2" rx="15"/>
+  <circle cx="80" cy="750" r="20" fill="#6366f1"/>
+  <text x="80" y="757" text-anchor="middle" fill="white" font-size="14" font-weight="bold">4</text>
+  <text x="110" y="745" fill="#312e81" font-size="18" font-weight="bold">変革推進段階</text>
+  <text x="110" y="765" fill="#3730a3" font-size="14" opacity="0.8">「ビジネスモデルを変革している」</text>
+  
+  <rect x="60" y="780" width="480" height="55" fill="#f0f9ff" stroke="#818cf8" stroke-width="1" rx="8"/>
+  <text x="75" y="798" fill="#312e81" font-size="12" font-weight="bold">✓ こんな状況なら Level 4</text>
+  <text x="80" y="815" fill="#3730a3" font-size="11">
+    <tspan x="80" dy="0">□ 自動化で新しい収益源を創出している</tspan>
+    <tspan x="80" dy="12">□ 組織文化として自動化思考が浸透</tspan>
+    <tspan x="80" dy="12">□ 市場変化に素早く対応できる体制</tspan>
+  </text>
+  
+  <!-- Level 5: Autonomous Evolution -->
+  <rect x="40" y="870" width="520" height="140" fill="url(#level5Grad)" stroke="#8b5cf6" stroke-width="2" rx="15"/>
+  <circle cx="80" cy="910" r="20" fill="#8b5cf6"/>
+  <text x="80" y="917" text-anchor="middle" fill="white" font-size="14" font-weight="bold">5</text>
+  <text x="110" y="905" fill="#581c87" font-size="18" font-weight="bold">自律進化段階</text>
+  <text x="110" y="925" fill="#6b21a8" font-size="14" opacity="0.8">「AIが自動最適化している」</text>
+  
+  <rect x="60" y="940" width="480" height="55" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  <text x="75" y="958" fill="#581c87" font-size="12" font-weight="bold">✓ こんな状況なら Level 5</text>
+  <text x="80" y="975" fill="#6b21a8" font-size="11">
+    <tspan x="80" dy="0">□ AIが自動的にプロセスを最適化している</tspan>
+    <tspan x="80" dy="12">□ 人間の介入なしで継続的に改善</tspan>
+    <tspan x="80" dy="12">□ 市場変化を予測して先行対応</tspan>
+  </text>
+  
+  <!-- Next Steps Section -->
+  <rect x="40" y="1030" width="520" height="130" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" rx="15"/>
+  <text x="300" y="1055" text-anchor="middle" fill="#1e293b" font-size="18" font-weight="bold">
+    🎯 診断結果を受けて、次に何をする？
+  </text>
+  
+  <rect x="60" y="1070" width="220" height="80" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  <text x="70" y="1087" fill="#064e3b" font-size="12" font-weight="bold">Level 1-2 の方へ</text>
+  <text x="70" y="1105" fill="#065f46" font-size="11">
+    <tspan x="70" dy="0">1. 小さな成功事例作り</tspan>
+    <tspan x="70" dy="12">2. 経営層への価値説明</tspan>
+    <tspan x="70" dy="12">3. 標準化ルール策定</tspan>
+  </text>
+  
+  <rect x="300" y="1070" width="240" height="80" fill="#eff6ff" stroke="#3b82f6" stroke-width="1" rx="8"/>
+  <text x="310" y="1087" fill="#1e3a8a" font-size="12" font-weight="bold">Level 3-5 の方へ</text>
+  <text x="310" y="1105" fill="#1e40af" font-size="11">
+    <tspan x="310" dy="0">1. 新技術との統合検討</tspan>
+    <tspan x="310" dy="12">2. 業界エコシステム連携</tspan>
+    <tspan x="310" dy="12">3. 次世代人材育成</tspan>
+  </text>
+  
+  <!-- Footer Call to Action -->
+  <rect x="60" y="1180" width="480" height="15" fill="#4f46e5" rx="7"/>
+  <text x="300" y="1192" text-anchor="middle" fill="white" font-size="12" font-weight="bold">
+    📈 さらに詳しい戦略フレームワークは記事本文へ！
+  </text>
+</svg>

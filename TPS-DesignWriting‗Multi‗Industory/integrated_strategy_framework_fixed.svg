@@ -1,0 +1,217 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="executiveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#991b1b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="projectGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="consultingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="seminarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#581c87;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="educationGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+    <marker id="connectionArrow" markerWidth="8" markerHeight="6" 
+     refX="0" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#6b7280" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">
+    n8n+AI自動化　統合戦略フレームワーク
+  </text>
+  <text x="300" y="55" text-anchor="middle" fill="white" font-size="16" opacity="0.9">
+    5つの活用シーンを統合した包括的戦略アプローチ
+  </text>
+  <text x="300" y="75" text-anchor="middle" fill="white" font-size="12" opacity="0.8">
+    Integrated Strategic Framework for Automation Excellence
+  </text>
+  
+  <!-- Framework Overview -->
+  <rect x="40" y="110" width="520" height="100" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="12"/>
+  <text x="300" y="135" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">🎯 統合フレームワーク概要</text>
+  <text x="60" y="155" fill="#475569" font-size="12">
+    <tspan x="60" dy="0">戦略立案から実行まで、すべての局面で活用可能な体系的アプローチ</tspan>
+    <tspan x="60" dy="18">各活用シーンの特性を理解し、適切な図表・資料を選択使用</tspan>
+    <tspan x="60" dy="18">組織成熟度と目的に応じたカスタマイズ可能な柔軟なフレームワーク</tspan>
+  </text>
+  
+  <!-- Central Hub -->
+  <circle cx="300" cy="400" r="60" fill="#1f2937" stroke="#374151" stroke-width="4"/>
+  <text x="300" y="390" text-anchor="middle" fill="white" font-size="14" font-weight="bold">n8n+AI</text>
+  <text x="300" y="405" text-anchor="middle" fill="white" font-size="12" font-weight="bold">自動化戦略</text>
+  <text x="300" y="420" text-anchor="middle" fill="white" font-size="10" opacity="0.8">中核フレームワーク</text>
+  
+  <!-- Executive Strategy -->
+  <rect x="40" y="240" width="180" height="100" fill="url(#executiveGrad)" stroke="#dc2626" stroke-width="2" rx="10"/>
+  <text x="50" y="260" fill="white" font-size="12" font-weight="bold">1. 経営層戦略提案</text>
+  <text x="50" y="280" fill="white" font-size="10" opacity="0.9">Executive Decision Support</text>
+  <text x="50" y="300" fill="white" font-size="9">
+    <tspan x="50" dy="0">• ROI分析・投資判断</tspan>
+    <tspan x="50" dy="12">• リスク管理・競合優位性</tspan>
+    <tspan x="50" dy="12">• KPI設定・効果測定</tspan>
+  </text>
+  
+  <!-- Project Planning -->
+  <rect x="380" y="240" width="180" height="100" fill="url(#projectGrad)" stroke="#3b82f6" stroke-width="2" rx="10"/>
+  <text x="390" y="260" fill="white" font-size="12" font-weight="bold">2. 社内プロジェクト</text>
+  <text x="390" y="280" fill="white" font-size="10" opacity="0.9">Project Planning &amp; Execution</text>
+  <text x="390" y="300" fill="white" font-size="9">
+    <tspan x="390" dy="0">• 推進体制・役割分担</tspan>
+    <tspan x="390" dy="12">• スケジュール・マイルストーン</tspan>
+    <tspan x="390" dy="12">• リスク管理・品質保証</tspan>
+  </text>
+  
+  <!-- Consulting -->
+  <rect x="40" y="520" width="180" height="100" fill="url(#consultingGrad)" stroke="#ea580c" stroke-width="2" rx="10"/>
+  <text x="50" y="540" fill="white" font-size="12" font-weight="bold">3. コンサルティング</text>
+  <text x="50" y="560" fill="white" font-size="10" opacity="0.9">Client Consulting Proposal</text>
+  <text x="50" y="580" fill="white" font-size="9">
+    <tspan x="50" dy="0">• 課題分析・価値提案</tspan>
+    <tspan x="50" dy="12">• 実装プロセス・期待効果</tspan>
+    <tspan x="50" dy="12">• 料金体系・ROI実現</tspan>
+  </text>
+  
+  <!-- Seminar -->
+  <rect x="380" y="520" width="180" height="100" fill="url(#seminarGrad)" stroke="#8b5cf6" stroke-width="2" rx="10"/>
+  <text x="390" y="540" fill="white" font-size="12" font-weight="bold">4. セミナー・講演</text>
+  <text x="390" y="560" fill="white" font-size="10" opacity="0.9">Industry Seminar Presentation</text>
+  <text x="390" y="580" fill="white" font-size="9">
+    <tspan x="390" dy="0">• 市場動向・技術トレンド</tspan>
+    <tspan x="390" dy="12">• 成功事例・将来予測</tspan>
+    <tspan x="390" dy="12">• 聴衆エンゲージメント</tspan>
+  </text>
+  
+  <!-- Education -->
+  <rect x="210" y="650" width="180" height="100" fill="url(#educationGrad)" stroke="#10b981" stroke-width="2" rx="10"/>
+  <text x="220" y="670" fill="white" font-size="12" font-weight="bold">5. 社内教育・啓発</text>
+  <text x="220" y="690" fill="white" font-size="10" opacity="0.9">Internal Education Program</text>
+  <text x="220" y="710" fill="white" font-size="9">
+    <tspan x="220" dy="0">• 意識改革・スキル開発</tspan>
+    <tspan x="220" dy="12">• 組織文化変革</tspan>
+    <tspan x="220" dy="12">• 評価・認定制度</tspan>
+  </text>
+  
+  <!-- Connection Lines -->
+  <line x1="250" y1="360" x2="180" y2="310" stroke="#6b7280" stroke-width="2" marker-end="url(#connectionArrow)"/>
+  <line x1="350" y1="360" x2="420" y2="310" stroke="#6b7280" stroke-width="2" marker-end="url(#connectionArrow)"/>
+  <line x1="250" y1="440" x2="180" y2="550" stroke="#6b7280" stroke-width="2" marker-end="url(#connectionArrow)"/>
+  <line x1="350" y1="440" x2="420" y2="550" stroke="#6b7280" stroke-width="2" marker-end="url(#connectionArrow)"/>
+  <line x1="300" y1="460" x2="300" y2="650" stroke="#6b7280" stroke-width="2" marker-end="url(#connectionArrow)"/>
+  
+  <!-- Application Matrix -->
+  <rect x="40" y="780" width="520" height="180" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" rx="12"/>
+  <text x="300" y="805" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📊 活用マトリックス</text>
+  <text x="60" y="825" fill="#475569" font-size="12" font-weight="bold">目的・対象者別の最適活用パターン</text>
+  
+  <!-- Matrix Grid -->
+  <rect x="60" y="840" width="480" height="105" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" rx="5"/>
+  
+  <!-- Headers -->
+  <rect x="70" y="850" width="80" height="20" fill="#334155" rx="3"/>
+  <text x="110" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">活用シーン</text>
+  
+  <rect x="160" y="850" width="70" height="20" fill="#334155" rx="3"/>
+  <text x="195" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">主要目的</text>
+  
+  <rect x="240" y="850" width="70" height="20" fill="#334155" rx="3"/>
+  <text x="275" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">対象者</text>
+  
+  <rect x="320" y="850" width="70" height="20" fill="#334155" rx="3"/>
+  <text x="355" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">成功指標</text>
+  
+  <rect x="400" y="850" width="70" height="20" fill="#334155" rx="3"/>
+  <text x="435" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">期待効果</text>
+  
+  <rect x="480" y="850" width="50" height="20" fill="#334155" rx="3"/>
+  <text x="505" y="863" text-anchor="middle" fill="white" font-size="9" font-weight="bold">時期</text>
+  
+  <!-- Matrix Rows -->
+  <g transform="translate(70, 880)">
+    <text x="5" y="12" fill="#475569" font-size="8" font-weight="bold">経営戦略</text>
+    <text x="95" y="12" fill="#475569" font-size="8">意思決定支援</text>
+    <text x="175" y="12" fill="#475569" font-size="8">経営層</text>
+    <text x="255" y="12" fill="#475569" font-size="8">投資承認</text>
+    <text x="335" y="12" fill="#475569" font-size="8">戦略実行</text>
+    <text x="415" y="12" fill="#475569" font-size="8">初期</text>
+  </g>
+  
+  <g transform="translate(70, 900)">
+    <text x="5" y="12" fill="#475569" font-size="8" font-weight="bold">プロジェクト</text>
+    <text x="95" y="12" fill="#475569" font-size="8">実行管理</text>
+    <text x="175" y="12" fill="#475569" font-size="8">PMO・チーム</text>
+    <text x="255" y="12" fill="#475569" font-size="8">進捗達成</text>
+    <text x="335" y="12" fill="#475569" font-size="8">効率向上</text>
+    <text x="415" y="12" fill="#475569" font-size="8">実行</text>
+  </g>
+  
+  <g transform="translate(70, 920)">
+    <text x="5" y="12" fill="#475569" font-size="8" font-weight="bold">教育啓発</text>
+    <text x="95" y="12" fill="#475569" font-size="8">文化醸成</text>
+    <text x="175" y="12" fill="#475569" font-size="8">全社員</text>
+    <text x="255" y="12" fill="#475569" font-size="8">参加率</text>
+    <text x="335" y="12" fill="#475569" font-size="8">変革加速</text>
+    <text x="415" y="12" fill="#475569" font-size="8">継続</text>
+  </g>
+  
+  <!-- Implementation Roadmap -->
+  <rect x="40" y="980" width="520" height="120" fill="#0f172a" stroke="#1e293b" stroke-width="2" rx="12"/>
+  <text x="300" y="1005" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🗺️ 統合実装ロードマップ</text>
+  
+  <!-- Timeline -->
+  <rect x="60" y="1020" width="480" height="65" fill="#1e293b" stroke="#374151" stroke-width="1" rx="5"/>
+  
+  <g transform="translate(80, 1035)">
+    <rect x="0" y="0" width="80" height="35" fill="#dc2626" rx="3"/>
+    <text x="40" y="15" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Phase 1</text>
+    <text x="40" y="27" text-anchor="middle" fill="white" font-size="8">戦略承認</text>
+  </g>
+  
+  <g transform="translate(180, 1035)">
+    <rect x="0" y="0" width="80" height="35" fill="#3b82f6" rx="3"/>
+    <text x="40" y="15" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Phase 2</text>
+    <text x="40" y="27" text-anchor="middle" fill="white" font-size="8">実行準備</text>
+  </g>
+  
+  <g transform="translate(280, 1035)">
+    <rect x="0" y="0" width="80" height="35" fill="#10b981" rx="3"/>
+    <text x="40" y="15" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Phase 3</text>
+    <text x="40" y="27" text-anchor="middle" fill="white" font-size="8">教育展開</text>
+  </g>
+  
+  <g transform="translate(380, 1035)">
+    <rect x="0" y="0" width="80" height="35" fill="#8b5cf6" rx="3"/>
+    <text x="40" y="15" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Phase 4</text>
+    <text x="40" y="27" text-anchor="middle" fill="white" font-size="8">知見共有</text>
+  </g>
+  
+  <!-- Success Factors -->
+  <rect x="40" y="1120" width="520" height="60" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="12"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🔑 統合成功の鍵</text>
+  <text x="60" y="1165" fill="white" font-size="12">
+    <tspan x="60" dy="0">各活用シーンの特性理解 × 組織成熟度の正確な把握 × 適切なタイミング</tspan>
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Integrated Strategic Framework 6/6 - Complete Framework Suite
+  </text>
+</svg>

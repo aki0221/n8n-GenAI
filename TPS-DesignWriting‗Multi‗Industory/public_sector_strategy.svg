@@ -1,0 +1,215 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="citizenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="digitalGovGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    公共業向けn8n+AI自動化戦略提案書
+  </text>
+  <text x="300" y="50" text-anchor="middle" fill="white" font-size="14" opacity="0.9">
+    デジタルガバメント推進・住民サービス向上戦略
+  </text>
+  <text x="300" y="68" text-anchor="middle" fill="white" font-size="11" opacity="0.8">
+    Public Sector Digital Transformation Strategy
+  </text>
+  <text x="300" y="82" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+    🏛️ 行政DX・市民満足度向上・業務効率化の実現
+  </text>
+  
+  <!-- Executive Summary -->
+  <rect x="40" y="110" width="520" height="90" fill="#fef2f2" stroke="#ef4444" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#991b1b" font-size="16" font-weight="bold">📊 公共業界向けエグゼクティブサマリー</text>
+  <text x="60" y="155" fill="#7f1d1d" font-size="12">
+    <tspan x="60" dy="0">• 住民手続き時間70%短縮、オンライン申請率85%達成</tspan>
+    <tspan x="60" dy="15">• 職員業務効率50%向上、窓口待ち時間60%削減</tspan>
+    <tspan x="60" dy="15">• 年間行政コスト3.2億円削減、住民満足度40%向上</tspan>
+  </text>
+  
+  <!-- Public Sector ROI Analysis -->
+  <rect x="40" y="220" width="520" height="180" fill="url(#roiGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="260" r="25" fill="#fff"/>
+  <text x="80" y="267" text-anchor="middle" fill="#3b82f6" font-size="12" font-weight="bold">ROI</text>
+  <text x="120" y="255" fill="white" font-size="18" font-weight="bold">公共業界ROI分析</text>
+  <text x="120" y="275" fill="white" font-size="14" opacity="0.9">30ヶ月での投資回収実現</text>
+  
+  <!-- ROI Breakdown -->
+  <rect x="60" y="295" width="480" height="90" fill="#dbeafe" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <!-- Year 1 -->
+  <rect x="80" y="310" width="130" height="60" fill="#1e3a8a" rx="5"/>
+  <text x="145" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 1</text>
+  <text x="145" y="340" text-anchor="middle" fill="white" font-size="10">投資：6,800万円</text>
+  <text x="145" y="352" text-anchor="middle" fill="white" font-size="10">効果：800万円</text>
+  <text x="145" y="364" text-anchor="middle" fill="white" font-size="9">基盤構築・一部導入</text>
+  
+  <!-- Year 2 -->
+  <rect x="235" y="310" width="130" height="60" fill="#1d4ed8" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 2</text>
+  <text x="300" y="340" text-anchor="middle" fill="white" font-size="10">追加：3,500万円</text>
+  <text x="300" y="352" text-anchor="middle" fill="white" font-size="10">効果：2,800万円</text>
+  <text x="300" y="364" text-anchor="middle" fill="white" font-size="9">オンライン化拡大</text>
+  
+  <!-- Year 3 -->
+  <rect x="390" y="310" width="130" height="60" fill="#3b82f6" rx="5"/>
+  <text x="455" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 3</text>
+  <text x="455" y="340" text-anchor="middle" fill="white" font-size="10">運用：1,200万円</text>
+  <text x="455" y="352" text-anchor="middle" fill="white" font-size="10">効果：6,500万円</text>
+  <text x="455" y="364" text-anchor="middle" fill="white" font-size="9">AI活用・高度化</text>
+  
+  <!-- Citizen Service Enhancement -->
+  <rect x="40" y="420" width="520" height="200" fill="url(#citizenGrad)" stroke="#10b981" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="460" r="25" fill="#fff"/>
+  <text x="80" y="467" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">市民</text>
+  <text x="120" y="455" fill="white" font-size="18" font-weight="bold">住民サービス向上</text>
+  <text x="120" y="475" fill="white" font-size="14" opacity="0.9">24/7オンライン・ワンストップサービス</text>
+  
+  <!-- Citizen Service Areas -->
+  <rect x="60" y="495" width="480" height="110" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#065f46" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">オンライン申請</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">24時間受付</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">自動審査</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">進捗通知</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">電子交付</text>
+  </g>
+  
+  <g transform="translate(200, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#059669" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">チャットボット</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">自動応答</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">FAQ対応</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">問い合わせ</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">案内サービス</text>
+  </g>
+  
+  <g transform="translate(320, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#10b981" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ワンストップ</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">手続き統合</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">関連業務連携</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">一括処理</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">効率化</text>
+  </g>
+  
+  <g transform="translate(440, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#22c55e" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">マイナンバー</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">カード連携</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">本人確認</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">情報連携</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">自動入力</text>
+  </g>
+  
+  <!-- Digital Government -->
+  <rect x="40" y="640" width="520" height="180" fill="url(#digitalGovGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="680" r="25" fill="#fff"/>
+  <text x="80" y="687" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">DGov</text>
+  <text x="120" y="675" fill="white" font-size="18" font-weight="bold">デジタルガバメント基盤</text>
+  <text x="120" y="695" fill="white" font-size="14" opacity="0.9">行政内部業務の効率化・透明化</text>
+  
+  <!-- Digital Government Areas -->
+  <rect x="60" y="715" width="480" height="90" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 730)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">文書管理</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">電子決裁・自動分類・検索システム</text>
+  </g>
+  
+  <g transform="translate(280, 730)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">予算管理</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">執行状況監視・自動分析・レポート</text>
+  </g>
+  
+  <g transform="translate(80, 770)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">人事管理</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">勤怠管理・評価・配置最適化</text>
+  </g>
+  
+  <g transform="translate(280, 770)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">情報公開</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">透明性確保・自動開示・アーカイブ</text>
+  </g>
+  
+  <!-- Public Sector KPIs -->
+  <rect x="40" y="840" width="520" height="140" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="870" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📈 公共業界特化KPI</text>
+  
+  <g transform="translate(60, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">手続き時間</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">70%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">短縮</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">オンライン化</text>
+  </g>
+  
+  <g transform="translate(200, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">業務効率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">50%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">職員業務</text>
+  </g>
+  
+  <g transform="translate(340, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">オンライン率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">85%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">達成</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">申請手続き</text>
+  </g>
+  
+  <g transform="translate(480, 890)">
+    <rect x="0" y="0" width="80" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">満足度</text>
+    <text x="40" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">40%</text>
+    <text x="40" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="40" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">住民</text>
+  </g>
+  
+  <!-- Implementation Priority -->
+  <rect x="40" y="1000" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1030" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🎯 公共業界実装優先順位</text>
+  <text x="60" y="1055" fill="white" font-size="12">
+    <tspan x="60" dy="0">Phase 1: 基幹システム統合・オンライン申請基盤</tspan>
+    <tspan x="60" dy="18">Phase 2: 住民サービス自動化・チャットボット導入</tspan>
+    <tspan x="60" dy="18">Phase 3: AI活用・予測分析・政策立案支援</tspan>
+  </text>
+  
+  <!-- Call to Action -->
+  <rect x="60" y="1120" width="480" height="60" fill="#dc2626" stroke="#ef4444" stroke-width="2" rx="15"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">🏛️ 行政DX推進の責務</text>
+  <text x="300" y="1165" text-anchor="middle" fill="white" font-size="12">
+    住民の利便性向上と行政の透明性・効率性確保
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Public Sector Automation Strategy - Customized Framework
+  </text>
+</svg>

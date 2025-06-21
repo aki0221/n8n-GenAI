@@ -1,0 +1,215 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="omniGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="inventoryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    小売業向けn8n+AI自動化戦略提案書
+  </text>
+  <text x="300" y="50" text-anchor="middle" fill="white" font-size="14" opacity="0.9">
+    オムニチャネル統合・顧客体験革新による売上最大化
+  </text>
+  <text x="300" y="68" text-anchor="middle" fill="white" font-size="11" opacity="0.8">
+    Retail Digital Transformation Strategy
+  </text>
+  <text x="300" y="82" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+    🛍️ 店舗・EC・物流統合による競争優位性確立
+  </text>
+  
+  <!-- Executive Summary -->
+  <rect x="40" y="110" width="520" height="90" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#065f46" font-size="16" font-weight="bold">📊 小売業界向けエグゼクティブサマリー</text>
+  <text x="60" y="155" fill="#064e3b" font-size="12">
+    <tspan x="60" dy="0">• 在庫回転率35%向上、欠品率80%削減による機会損失防止</tspan>
+    <tspan x="60" dy="15">• 需要予測精度90%以上、季節変動対応力50%強化</tspan>
+    <tspan x="60" dy="15">• 顧客生涯価値40%向上、年間売上増加3.2億円実現</tspan>
+  </text>
+  
+  <!-- Retail ROI Analysis -->
+  <rect x="40" y="220" width="520" height="180" fill="url(#roiGrad)" stroke="#ea580c" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="260" r="25" fill="#fff"/>
+  <text x="80" y="267" text-anchor="middle" fill="#ea580c" font-size="12" font-weight="bold">ROI</text>
+  <text x="120" y="255" fill="white" font-size="18" font-weight="bold">小売業界ROI分析</text>
+  <text x="120" y="275" fill="white" font-size="14" opacity="0.9">15ヶ月での投資回収実現</text>
+  
+  <!-- ROI Breakdown -->
+  <rect x="60" y="295" width="480" height="90" fill="#fed7aa" stroke="#fb923c" stroke-width="1" rx="8"/>
+  
+  <!-- Year 1 -->
+  <rect x="80" y="310" width="130" height="60" fill="#9a3412" rx="5"/>
+  <text x="145" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 1</text>
+  <text x="145" y="340" text-anchor="middle" fill="white" font-size="10">投資：6,000万円</text>
+  <text x="145" y="352" text-anchor="middle" fill="white" font-size="10">効果：3,200万円</text>
+  <text x="145" y="364" text-anchor="middle" fill="white" font-size="9">在庫最適化・欠品削減</text>
+  
+  <!-- Year 2 -->
+  <rect x="235" y="310" width="130" height="60" fill="#ea580c" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 2</text>
+  <text x="300" y="340" text-anchor="middle" fill="white" font-size="10">追加：2,500万円</text>
+  <text x="300" y="352" text-anchor="middle" fill="white" font-size="10">効果：8,500万円</text>
+  <text x="300" y="364" text-anchor="middle" fill="white" font-size="9">オムニチャネル統合</text>
+  
+  <!-- Year 3 -->
+  <rect x="390" y="310" width="130" height="60" fill="#fb923c" rx="5"/>
+  <text x="455" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 3</text>
+  <text x="455" y="340" text-anchor="middle" fill="white" font-size="10">運用：800万円</text>
+  <text x="455" y="352" text-anchor="middle" fill="white" font-size="10">効果：1.5億円</text>
+  <text x="455" y="364" text-anchor="middle" fill="white" font-size="9">パーソナライゼーション</text>
+  
+  <!-- Omnichannel Integration -->
+  <rect x="40" y="420" width="520" height="200" fill="url(#omniGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="460" r="25" fill="#fff"/>
+  <text x="80" y="467" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">統合</text>
+  <text x="120" y="455" fill="white" font-size="18" font-weight="bold">オムニチャネル統合戦略</text>
+  <text x="120" y="475" fill="white" font-size="14" opacity="0.9">シームレスな顧客体験の実現</text>
+  
+  <!-- Channel Integration -->
+  <rect x="60" y="495" width="480" height="110" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#581c87" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">店舗</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">POS連携</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">在庫共有</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">スタッフ支援</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">顧客対応</text>
+  </g>
+  
+  <g transform="translate(200, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#6b21a8" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ECサイト</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">リアルタイム在庫</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">パーソナライズ</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">レコメンド</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">カート連携</text>
+  </g>
+  
+  <g transform="translate(320, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#7c3aed" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">モバイル</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">位置情報連携</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">プッシュ通知</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">クーポン配信</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">店舗誘導</text>
+  </g>
+  
+  <g transform="translate(440, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#8b5cf6" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">SNS</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">ソーシャル購入</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">インフルエンサー</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">口コミ分析</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">トレンド把握</text>
+  </g>
+  
+  <!-- Inventory & Demand Management -->
+  <rect x="40" y="640" width="520" height="180" fill="url(#inventoryGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="680" r="25" fill="#fff"/>
+  <text x="80" y="687" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">在庫</text>
+  <text x="120" y="675" fill="white" font-size="18" font-weight="bold">在庫・需要管理高度化</text>
+  <text x="120" y="695" fill="white" font-size="14" opacity="0.9">AIによる予測精度向上</text>
+  
+  <!-- Inventory Optimization -->
+  <rect x="60" y="715" width="480" height="90" fill="#dbeafe" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 730)">
+    <circle cx="0" cy="0" r="6" fill="#3b82f6"/>
+    <text x="15" y="5" fill="#1e40af" font-size="12" font-weight="bold">需要予測</text>
+    <text x="15" y="20" fill="#1e3a8a" font-size="10">季節性・トレンド・イベント考慮</text>
+  </g>
+  
+  <g transform="translate(280, 730)">
+    <circle cx="0" cy="0" r="6" fill="#3b82f6"/>
+    <text x="15" y="5" fill="#1e40af" font-size="12" font-weight="bold">自動発注</text>
+    <text x="15" y="20" fill="#1e3a8a" font-size="10">適正在庫レベル維持・欠品防止</text>
+  </g>
+  
+  <g transform="translate(80, 770)">
+    <circle cx="0" cy="0" r="6" fill="#3b82f6"/>
+    <text x="15" y="5" fill="#1e40af" font-size="12" font-weight="bold">価格最適化</text>
+    <text x="15" y="20" fill="#1e3a8a" font-size="10">動的価格設定・競合価格監視</text>
+  </g>
+  
+  <g transform="translate(280, 770)">
+    <circle cx="0" cy="0" r="6" fill="#3b82f6"/>
+    <text x="15" y="5" fill="#1e40af" font-size="12" font-weight="bold">廃棄削減</text>
+    <text x="15" y="20" fill="#1e3a8a" font-size="10">見切り価格・販促タイミング最適化</text>
+  </g>
+  
+  <!-- Retail KPIs -->
+  <rect x="40" y="840" width="520" height="140" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="870" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📈 小売業界特化KPI</text>
+  
+  <g transform="translate(60, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">在庫回転率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">35%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">年12回→16回</text>
+  </g>
+  
+  <g transform="translate(200, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">欠品率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">80%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">削減</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">15%→3%</text>
+  </g>
+  
+  <g transform="translate(340, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">予測精度</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">90%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">達成</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">MAPE<10%</text>
+  </g>
+  
+  <g transform="translate(480, 890)">
+    <rect x="0" y="0" width="80" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">顧客LTV</text>
+    <text x="40" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">40%</text>
+    <text x="40" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="40" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">リピート率↑</text>
+  </g>
+  
+  <!-- Implementation Priority -->
+  <rect x="40" y="1000" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1030" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🎯 小売業界実装優先順位</text>
+  <text x="60" y="1055" fill="white" font-size="12">
+    <tspan x="60" dy="0">Phase 1: 在庫管理最適化（需要予測・自動発注）</tspan>
+    <tspan x="60" dy="18">Phase 2: オムニチャネル統合（店舗・EC・モバイル連携）</tspan>
+    <tspan x="60" dy="18">Phase 3: 顧客体験向上（パーソナライゼーション・CRM）</tspan>
+  </text>
+  
+  <!-- Call to Action -->
+  <rect x="60" y="1120" width="480" height="60" fill="#059669" stroke="#10b981" stroke-width="2" rx="15"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">🚀 小売DX加速の決断時期</text>
+  <text x="300" y="1165" text-anchor="middle" fill="white" font-size="12">
+    消費者行動変化・競争激化の今こそ、先行投資による差別化を
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Retail Industry Automation Strategy - Customized Framework
+  </text>
+</svg>

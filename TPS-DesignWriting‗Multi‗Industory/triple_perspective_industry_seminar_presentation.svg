@@ -1,0 +1,249 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#581c87;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="trendGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="marketGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="futureGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="32" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    業務自動化の最新動向と未来戦略
+  </text>
+  <text x="300" y="55" text-anchor="middle" fill="white" font-size="16" opacity="0.9">
+    n8n+AIエコシステムが切り拓く新時代
+  </text>
+  <text x="300" y="75" text-anchor="middle" fill="white" font-size="12" opacity="0.8">
+    Industry Seminar - Digital Transformation Insights 2025
+  </text>
+  
+  <!-- Current Market Landscape -->
+  <rect x="40" y="110" width="520" height="140" fill="#f0f9ff" stroke="#3b82f6" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#1e40af" font-size="16" font-weight="bold">📊 市場動向・現状分析</text>
+  <text x="60" y="155" fill="#1e3a8a" font-size="13" font-weight="bold">2025年の自動化市場概況</text>
+  
+  <!-- Market Stats -->
+  <rect x="60" y="175" width="480" height="65" fill="#dbeafe" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 190)">
+    <rect x="0" y="0" width="100" height="35" fill="#1e40af" rx="5"/>
+    <text x="50" y="15" text-anchor="middle" fill="white" font-size="10" font-weight="bold">市場規模</text>
+    <text x="50" y="28" text-anchor="middle" fill="white" font-size="12" font-weight="bold">15兆円</text>
+  </g>
+  
+  <g transform="translate(200, 190)">
+    <rect x="0" y="0" width="100" height="35" fill="#2563eb" rx="5"/>
+    <text x="50" y="15" text-anchor="middle" fill="white" font-size="10" font-weight="bold">年成長率</text>
+    <text x="50" y="28" text-anchor="middle" fill="white" font-size="12" font-weight="bold">22%</text>
+  </g>
+  
+  <g transform="translate(320, 190)">
+    <rect x="0" y="0" width="100" height="35" fill="#3b82f6" rx="5"/>
+    <text x="50" y="15" text-anchor="middle" fill="white" font-size="10" font-weight="bold">導入企業</text>
+    <text x="50" y="28" text-anchor="middle" fill="white" font-size="12" font-weight="bold">65%</text>
+  </g>
+  
+  <g transform="translate(440, 190)">
+    <rect x="0" y="0" width="100" height="35" fill="#60a5fa" rx="5"/>
+    <text x="50" y="15" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ROI実現</text>
+    <text x="50" y="28" text-anchor="middle" fill="white" font-size="12" font-weight="bold">18ヶ月</text>
+  </g>
+  
+  <!-- Technology Trends -->
+  <rect x="40" y="270" width="520" height="200" fill="url(#trendGrad)" stroke="#1d4ed8" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="310" r="25" fill="#fff"/>
+  <text x="80" y="317" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">TECH</text>
+  <text x="120" y="305" fill="white" font-size="18" font-weight="bold">テクノロジートレンド</text>
+  <text x="120" y="325" fill="white" font-size="14" opacity="0.9">2025年注目すべき5つの技術潮流</text>
+  
+  <!-- Trend Items -->
+  <rect x="60" y="345" width="480" height="110" fill="#eff6ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 360)">
+    <rect x="0" y="0" width="85" height="80" fill="#1e3a8a" rx="5"/>
+    <text x="42" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">生成AI統合</text>
+    <text x="42" y="35" text-anchor="middle" fill="white" font-size="8">GPT-4o活用</text>
+    <text x="42" y="47" text-anchor="middle" fill="white" font-size="8">自然言語処理</text>
+    <text x="42" y="59" text-anchor="middle" fill="white" font-size="8">コード生成</text>
+    <text x="42" y="71" text-anchor="middle" fill="white" font-size="8">意思決定支援</text>
+  </g>
+  
+  <g transform="translate(180, 360)">
+    <rect x="0" y="0" width="85" height="80" fill="#1d4ed8" rx="5"/>
+    <text x="42" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ローコード</text>
+    <text x="42" y="35" text-anchor="middle" fill="white" font-size="8">市民開発者</text>
+    <text x="42" y="47" text-anchor="middle" fill="white" font-size="8">ドラッグ&ドロップ</text>
+    <text x="42" y="59" text-anchor="middle" fill="white" font-size="8">テンプレート</text>
+    <text x="42" y="71" text-anchor="middle" fill="white" font-size="8">開発民主化</text>
+  </g>
+  
+  <g transform="translate(280, 360)">
+    <rect x="0" y="0" width="85" height="80" fill="#2563eb" rx="5"/>
+    <text x="42" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">API統合</text>
+    <text x="42" y="35" text-anchor="middle" fill="white" font-size="8">エコシステム</text>
+    <text x="42" y="47" text-anchor="middle" fill="white" font-size="8">マイクロサービス</text>
+    <text x="42" y="59" text-anchor="middle" fill="white" font-size="8">REST/GraphQL</text>
+    <text x="42" y="71" text-anchor="middle" fill="white" font-size="8">リアルタイム</text>
+  </g>
+  
+  <g transform="translate(380, 360)">
+    <rect x="0" y="0" width="85" height="80" fill="#3b82f6" rx="5"/>
+    <text x="42" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">クラウド</text>
+    <text x="42" y="35" text-anchor="middle" fill="white" font-size="8">サーバーレス</text>
+    <text x="42" y="47" text-anchor="middle" fill="white" font-size="8">自動スケール</text>
+    <text x="42" y="59" text-anchor="middle" fill="white" font-size="8">コスト最適化</text>
+    <text x="42" y="71" text-anchor="middle" fill="white" font-size="8">高可用性</text>
+  </g>
+  
+  <g transform="translate(480, 360)">
+    <rect x="0" y="0" width="80" height="80" fill="#60a5fa" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">セキュリティ</text>
+    <text x="40" y="35" text-anchor="middle" fill="white" font-size="8">ゼロトラスト</text>
+    <text x="40" y="47" text-anchor="middle" fill="white" font-size="8">暗号化</text>
+    <text x="40" y="59" text-anchor="middle" fill="white" font-size="8">アクセス制御</text>
+    <text x="40" y="71" text-anchor="middle" fill="white" font-size="8">監査ログ</text>
+  </g>
+  
+  <!-- Industry Success Cases -->
+  <rect x="40" y="490" width="520" height="180" fill="url(#marketGrad)" stroke="#059669" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="530" r="25" fill="#fff"/>
+  <text x="80" y="537" text-anchor="middle" fill="#059669" font-size="12" font-weight="bold">CASE</text>
+  <text x="120" y="525" fill="white" font-size="18" font-weight="bold">業界別成功事例</text>
+  <text x="120" y="545" fill="white" font-size="14" opacity="0.9">実証済みの価値創出パターン</text>
+  
+  <!-- Industry Cases -->
+  <rect x="60" y="565" width="480" height="90" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 580)">
+    <rect x="0" y="0" width="100" height="60" fill="#065f46" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">製造業</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">生産効率40%向上</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">品質管理自動化</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">予知保全実現</text>
+  </g>
+  
+  <g transform="translate(200, 580)">
+    <rect x="0" y="0" width="100" height="60" fill="#059669" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">金融業</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">審査時間90%短縮</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">不正検知強化</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">顧客体験向上</text>
+  </g>
+  
+  <g transform="translate(320, 580)">
+    <rect x="0" y="0" width="100" height="60" fill="#10b981" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">小売業</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">在庫最適化</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">需要予測精度向上</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">オムニチャネル</text>
+  </g>
+  
+  <g transform="translate(440, 580)">
+    <rect x="0" y="0" width="100" height="60" fill="#22c55e" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">医療業</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">診断支援</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">患者管理効率化</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">リソース最適化</text>
+  </g>
+  
+  <!-- Future Outlook -->
+  <rect x="40" y="690" width="520" height="180" fill="url(#futureGrad)" stroke="#dc2626" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="730" r="25" fill="#fff"/>
+  <text x="80" y="737" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="bold">2030</text>
+  <text x="120" y="725" fill="white" font-size="18" font-weight="bold">2030年の未来予測</text>
+  <text x="120" y="745" fill="white" font-size="14" opacity="0.9">次世代自動化エコシステム</text>
+  
+  <!-- Future Predictions -->
+  <rect x="60" y="765" width="480" height="90" fill="#fef2f2" stroke="#ef4444" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 780)">
+    <circle cx="0" cy="0" r="6" fill="#dc2626"/>
+    <text x="15" y="5" fill="#991b1b" font-size="12" font-weight="bold">自律的最適化</text>
+    <text x="15" y="20" fill="#7f1d1d" font-size="10">AIが自動的にワークフローを改善・最適化</text>
+  </g>
+  
+  <g transform="translate(300, 780)">
+    <circle cx="0" cy="0" r="6" fill="#dc2626"/>
+    <text x="15" y="5" fill="#991b1b" font-size="12" font-weight="bold">予測的自動化</text>
+    <text x="15" y="20" fill="#7f1d1d" font-size="10">市場変化を予測して事前に対応</text>
+  </g>
+  
+  <g transform="translate(80, 820)">
+    <circle cx="0" cy="0" r="6" fill="#dc2626"/>
+    <text x="15" y="5" fill="#991b1b" font-size="12" font-weight="bold">量子統合</text>
+    <text x="15" y="20" fill="#7f1d1d" font-size="10">量子コンピューティングとの融合</text>
+  </g>
+  
+  <g transform="translate(300, 820)">
+    <circle cx="0" cy="0" r="6" fill="#dc2626"/>
+    <text x="15" y="5" fill="#991b1b" font-size="12" font-weight="bold">完全統合</text>
+    <text x="15" y="20" fill="#7f1d1d" font-size="10">全システム・プロセスの統合自動化</text>
+  </g>
+  
+  <!-- Key Insights -->
+  <rect x="40" y="890" width="520" height="120" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="920" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">💡 重要な洞察</text>
+  
+  <rect x="60" y="940" width="480" height="55" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 955)">
+    <rect x="0" y="0" width="100" height="25" fill="#0f172a" rx="3"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">技術の民主化</text>
+  </g>
+  
+  <g transform="translate(200, 955)">
+    <rect x="0" y="0" width="100" height="25" fill="#1e293b" rx="3"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">人間-AI協働</text>
+  </g>
+  
+  <g transform="translate(320, 955)">
+    <rect x="0" y="0" width="100" height="25" fill="#334155" rx="3"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">持続可能な成長</text>
+  </g>
+  
+  <g transform="translate(440, 955)">
+    <rect x="0" y="0" width="100" height="25" fill="#475569" rx="3"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">エコシステム統合</text>
+  </g>
+  
+  <text x="80" y="985" fill="#475569" font-size="11">
+    <tspan x="80" dy="0">自動化は単なる効率化ツールを超え、ビジネスモデル変革の中核となる</tspan>
+  </text>
+  
+  <!-- Call to Action for Audience -->
+  <rect x="40" y="1030" width="520" height="140" fill="#0f172a" stroke="#1e293b" stroke-width="2" rx="15"/>
+  <text x="300" y="1060" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🚀 今日から始める自動化戦略</text>
+  
+  <text x="60" y="1085" fill="white" font-size="13" font-weight="bold">即実行可能な3つのステップ</text>
+  <text x="60" y="1105" fill="#e2e8f0" font-size="12">
+    <tspan x="60" dy="0">1. 現状プロセスの可視化・分析（今週中）</tspan>
+    <tspan x="60" dy="18">2. 高インパクト業務の優先順位付け（来週まで）</tspan>
+    <tspan x="60" dy="18">3. パイロットプロジェクトの企画・開始（来月まで）</tspan>
+  </text>
+  
+  <rect x="60" y="1150" width="480" height="15" fill="#7c2d12" rx="7"/>
+  <text x="300" y="1162" text-anchor="middle" fill="white" font-size="11" font-weight="bold">
+    📧 詳細資料・個別相談のご依頼はお気軽にご連絡ください
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Industry Seminar Framework 4/6
+  </text>
+</svg>

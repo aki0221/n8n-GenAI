@@ -1,0 +1,215 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="smartGridGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="renewableGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    エネルギー業向けn8n+AI自動化戦略提案書
+  </text>
+  <text x="300" y="50" text-anchor="middle" fill="white" font-size="14" opacity="0.9">
+    スマートグリッド実現・脱炭素・エネルギー効率最適化戦略
+  </text>
+  <text x="300" y="68" text-anchor="middle" fill="white" font-size="11" opacity="0.8">
+    Energy Digital Transformation Strategy
+  </text>
+  <text x="300" y="82" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+    ⚡ 再生可能エネルギー統合・需給最適化による持続可能社会実現
+  </text>
+  
+  <!-- Executive Summary -->
+  <rect x="40" y="110" width="520" height="90" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#065f46" font-size="16" font-weight="bold">📊 エネルギー業界向けエグゼクティブサマリー</text>
+  <text x="60" y="155" fill="#064e3b" font-size="12">
+    <tspan x="60" dy="0">• エネルギー効率35%向上、再生可能エネルギー統合率60%達成</tspan>
+    <tspan x="60" dy="15">• 需給予測精度95%以上、停電時間80%削減による安定供給</tspan>
+    <tspan x="60" dy="15">• 年間運用コスト8.5億円削減、CO2排出量40%削減</tspan>
+  </text>
+  
+  <!-- Energy ROI Analysis -->
+  <rect x="40" y="220" width="520" height="180" fill="url(#roiGrad)" stroke="#fb923c" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="260" r="25" fill="#fff"/>
+  <text x="80" y="267" text-anchor="middle" fill="#fb923c" font-size="12" font-weight="bold">ROI</text>
+  <text x="120" y="255" fill="white" font-size="18" font-weight="bold">エネルギー業界ROI分析</text>
+  <text x="120" y="275" fill="white" font-size="14" opacity="0.9">18ヶ月での投資回収実現</text>
+  
+  <!-- ROI Breakdown -->
+  <rect x="60" y="295" width="480" height="90" fill="#fed7aa" stroke="#fb923c" stroke-width="1" rx="8"/>
+  
+  <!-- Year 1 -->
+  <rect x="80" y="310" width="130" height="60" fill="#9a3412" rx="5"/>
+  <text x="145" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 1</text>
+  <text x="145" y="340" text-anchor="middle" fill="white" font-size="10">投資：1.5億円</text>
+  <text x="145" y="352" text-anchor="middle" fill="white" font-size="10">効果：6,200万円</text>
+  <text x="145" y="364" text-anchor="middle" fill="white" font-size="9">スマートメーター統合</text>
+  
+  <!-- Year 2 -->
+  <rect x="235" y="310" width="130" height="60" fill="#ea580c" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 2</text>
+  <text x="300" y="340" text-anchor="middle" fill="white" font-size="10">追加：5,500万円</text>
+  <text x="300" y="352" text-anchor="middle" fill="white" font-size="10">効果：1.8億円</text>
+  <text x="300" y="364" text-anchor="middle" fill="white" font-size="9">需給予測・再エネ統合</text>
+  
+  <!-- Year 3 -->
+  <rect x="390" y="310" width="130" height="60" fill="#fb923c" rx="5"/>
+  <text x="455" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 3</text>
+  <text x="455" y="340" text-anchor="middle" fill="white" font-size="10">運用：2,000万円</text>
+  <text x="455" y="352" text-anchor="middle" fill="white" font-size="10">効果：3.5億円</text>
+  <text x="455" y="364" text-anchor="middle" fill="white" font-size="9">AI最適化・自動制御</text>
+  
+  <!-- Smart Grid Implementation -->
+  <rect x="40" y="420" width="520" height="200" fill="url(#smartGridGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="460" r="25" fill="#fff"/>
+  <text x="80" y="467" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">Grid</text>
+  <text x="120" y="455" fill="white" font-size="18" font-weight="bold">スマートグリッド実現</text>
+  <text x="120" y="475" fill="white" font-size="14" opacity="0.9">AI制御・リアルタイム最適化</text>
+  
+  <!-- Smart Grid Areas -->
+  <rect x="60" y="495" width="480" height="110" fill="#eff6ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#1e3a8a" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">需給予測</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">AI需要予測</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">気象データ統合</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">リアルタイム調整</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">需給バランス</text>
+  </g>
+  
+  <g transform="translate(200, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#1d4ed8" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">系統制御</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">自動負荷制御</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">周波数調整</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">電圧管理</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">安定供給</text>
+  </g>
+  
+  <g transform="translate(320, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#2563eb" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">設備監視</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">IoTセンサー</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">状態監視</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">予兆保全</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">故障予防</text>
+  </g>
+  
+  <g transform="translate(440, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#3b82f6" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">蓄電制御</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">蓄電池管理</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">充放電最適化</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">ピークシフト</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">効率運用</text>
+  </g>
+  
+  <!-- Renewable Energy Integration -->
+  <rect x="40" y="640" width="520" height="180" fill="url(#renewableGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="680" r="25" fill="#fff"/>
+  <text x="80" y="687" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">再エネ</text>
+  <text x="120" y="675" fill="white" font-size="18" font-weight="bold">再生可能エネルギー統合</text>
+  <text x="120" y="695" fill="white" font-size="14" opacity="0.9">脱炭素・持続可能エネルギー</text>
+  
+  <!-- Renewable Energy Areas -->
+  <rect x="60" y="715" width="480" height="90" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 730)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">出力予測</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">太陽光・風力発電量予測・最適制御</text>
+  </g>
+  
+  <g transform="translate(280, 730)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">統合管理</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">分散電源統合・マイクログリッド制御</text>
+  </g>
+  
+  <g transform="translate(80, 770)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">変動対応</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">出力変動補償・安定化制御</text>
+  </g>
+  
+  <g transform="translate(280, 770)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">環境価値</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">カーボンクレジット・ESG対応</text>
+  </g>
+  
+  <!-- Energy KPIs -->
+  <rect x="40" y="840" width="520" height="140" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="870" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📈 エネルギー業界特化KPI</text>
+  
+  <g transform="translate(60, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">効率向上</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">35%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">エネルギー効率</text>
+  </g>
+  
+  <g transform="translate(200, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">再エネ統合</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">60%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">達成</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">統合率</text>
+  </g>
+  
+  <g transform="translate(340, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">予測精度</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">95%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">以上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">需給予測</text>
+  </g>
+  
+  <g transform="translate(480, 890)">
+    <rect x="0" y="0" width="80" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">CO2削減</text>
+    <text x="40" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">40%</text>
+    <text x="40" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">削減</text>
+    <text x="40" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">排出量</text>
+  </g>
+  
+  <!-- Implementation Priority -->
+  <rect x="40" y="1000" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1030" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🎯 エネルギー業界実装優先順位</text>
+  <text x="60" y="1055" fill="white" font-size="12">
+    <tspan x="60" dy="0">Phase 1: スマートメーター統合・需給予測システム</tspan>
+    <tspan x="60" dy="18">Phase 2: 再生可能エネルギー統合・系統安定化</tspan>
+    <tspan x="60" dy="18">Phase 3: AI最適化・自律制御システム（完全自動化）</tspan>
+  </text>
+  
+  <!-- Call to Action -->
+  <rect x="60" y="1120" width="480" height="60" fill="#059669" stroke="#10b981" stroke-width="2" rx="15"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">⚡ エネルギーDX推進の意義</text>
+  <text x="300" y="1165" text-anchor="middle" fill="white" font-size="12">
+    脱炭素社会実現・持続可能なエネルギー供給の責任
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Energy Industry Automation Strategy - Customized Framework
+  </text>
+</svg>

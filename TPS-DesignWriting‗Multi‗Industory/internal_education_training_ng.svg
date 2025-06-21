@@ -1,0 +1,252 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="awarenessGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="skillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="cultureGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">
+    自動化推進のための社内教育プログラム
+  </text>
+  <text x="300" y="55" text-anchor="middle" fill="white" font-size="16" opacity="0.9">
+    組織全体のデジタルリテラシー向上と変革文化の醸成
+  </text>
+  <text x="300" y="75" text-anchor="middle" fill="white" font-size="12" opacity="0.8">
+    Internal Education & Culture Transformation Program
+  </text>
+  
+  <!-- Learning Objectives -->
+  <rect x="40" y="110" width="520" height="120" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#065f46" font-size="16" font-weight="bold">🎯 教育目標・ゴール設定</text>
+  <text x="60" y="155" fill="#064e3b" font-size="13" font-weight="bold">全社員のデジタル変革への参画促進</text>
+  <text x="60" y="175" fill="#064e3b" font-size="12">
+    <tspan x="60" dy="0">• 自動化の価値と可能性への理解促進</tspan>
+    <tspan x="60" dy="15">• 実践的スキルの習得と実務での活用</tspan>
+    <tspan x="60" dy="15">• 変革への積極的参加と提案文化の形成</tspan>
+    <tspan x="60" dy="15">• 継続的学習と自己成長マインドの確立</tspan>
+  </text>
+  
+  <!-- Awareness Building -->
+  <rect x="40" y="250" width="520" height="180" fill="url(#awarenessGrad)" stroke="#f59e0b" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="290" r="25" fill="#fff"/>
+  <text x="80" y="297" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold">意識</text>
+  <text x="120" y="285" fill="white" font-size="18" font-weight="bold">意識改革・啓発活動</text>
+  <text x="120" y="305" fill="white" font-size="14" opacity="0.9">変革への理解と共感の醸成</text>
+  
+  <!-- Awareness Activities -->
+  <rect x="60" y="325" width="480" height="90" fill="#fef3c7" stroke="#fbbf24" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 340)">
+    <rect x="0" y="0" width="100" height="60" fill="#92400e" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">キックオフ</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">全社説明会</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">経営方針共有</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">Q&Aセッション</text>
+  </g>
+  
+  <g transform="translate(200, 340)">
+    <rect x="0" y="0" width="100" height="60" fill="#d97706" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">事例共有</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">成功事例紹介</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">他社ベンチマーク</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">効果の実感</text>
+  </g>
+  
+  <g transform="translate(320, 340)">
+    <rect x="0" y="0" width="100" height="60" fill="#f59e0b" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">体験会</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">デモ・体験</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">簡単な操作</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">ツール理解</text>
+  </g>
+  
+  <g transform="translate(440, 340)">
+    <rect x="0" y="0" width="100" height="60" fill="#fbbf24" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">コミュニティ</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="9">社内SNS</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="9">情報交換</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="9">相互支援</text>
+  </g>
+  
+  <!-- Skill Development -->
+  <rect x="40" y="450" width="520" height="220" fill="url(#skillGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="490" r="25" fill="#fff"/>
+  <text x="80" y="497" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">スキル</text>
+  <text x="120" y="485" fill="white" font-size="18" font-weight="bold">スキル開発プログラム</text>
+  <text x="120" y="505" fill="white" font-size="14" opacity="0.9">段階的な能力向上カリキュラム</text>
+  
+  <!-- Skill Levels -->
+  <rect x="60" y="525" width="480" height="130" fill="#eff6ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <!-- Beginner Level -->
+  <g transform="translate(80, 540)">
+    <rect x="0" y="0" width="120" height="90" fill="#1e3a8a" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="white" font-size="12" font-weight="bold">初級レベル</text>
+    <text x="60" y="32" text-anchor="middle" fill="white" font-size="9">基礎概念理解</text>
+    <text x="10" y="50" fill="white" font-size="8">
+      <tspan x="10" dy="0">• 自動化とは何か</tspan>
+      <tspan x="10" dy="10">• ツールの基本操作</tspan>
+      <tspan x="10" dy="10">• 簡単なフロー作成</tspan>
+      <tspan x="10" dy="10">• トラブルシューティング</tspan>
+    </text>
+  </g>
+  
+  <!-- Intermediate Level -->
+  <g transform="translate(220, 540)">
+    <rect x="0" y="0" width="120" height="90" fill="#1d4ed8" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="white" font-size="12" font-weight="bold">中級レベル</text>
+    <text x="60" y="32" text-anchor="middle" fill="white" font-size="9">実務活用</text>
+    <text x="10" y="50" fill="white" font-size="8">
+      <tspan x="10" dy="0">• 複雑なワークフロー</tspan>
+      <tspan x="10" dy="10">• API連携</tspan>
+      <tspan x="10" dy="10">• エラーハンドリング</tspan>
+      <tspan x="10" dy="10">• パフォーマンス最適化</tspan>
+    </text>
+  </g>
+  
+  <!-- Advanced Level -->
+  <g transform="translate(360, 540)">
+    <rect x="0" y="0" width="120" height="90" fill="#2563eb" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="white" font-size="12" font-weight="bold">上級レベル</text>
+    <text x="60" y="32" text-anchor="middle" fill="white" font-size="9">専門家育成</text>
+    <text x="10" y="50" fill="white" font-size="8">
+      <tspan x="10" dy="0">• アーキテクチャ設計</tspan>
+      <tspan x="10" dy="10">• セキュリティ対策</tspan>
+      <tspan x="10" dy="10">• 組織横断連携</tspan>
+      <tspan x="10" dy="10">• 他者への指導</tspan>
+    </text>
+  </g>
+  
+  <!-- Training Methods -->
+  <rect x="60" y="660" width="480" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="5"/>
+  <text x="80" y="678" fill="#1e40af" font-size="11" font-weight="bold">教育手法：</text>
+  <text x="80" y="692" fill="#1e3a8a" font-size="10">
+    オンライン学習 + ハンズオン研修 + メンタリング + 社内コミュニティ
+  </text>
+  
+  <!-- Culture Transformation -->
+  <rect x="40" y="690" width="520" height="160" fill="url(#cultureGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="730" r="25" fill="#fff"/>
+  <text x="80" y="737" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">文化</text>
+  <text x="120" y="725" fill="white" font-size="18" font-weight="bold">組織文化の変革</text>
+  <text x="120" y="745" fill="white" font-size="14" opacity="0.9">自動化思考の組織DNA化</text>
+  
+  <!-- Culture Elements -->
+  <rect x="60" y="765" width="480" height="70" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 780)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">実験文化</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">失敗を恐れず新しいことに挑戦</text>
+  </g>
+  
+  <g transform="translate(280, 780)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">共有文化</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">知識・経験の積極的な共有</text>
+  </g>
+  
+  <g transform="translate(80, 820)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">改善文化</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">継続的な効率化への取り組み</text>
+  </g>
+  
+  <g transform="translate(280, 820)">
+    <circle cx="0" cy="0" r="6" fill="#8b5cf6"/>
+    <text x="15" y="5" fill="#581c87" font-size="12" font-weight="bold">学習文化</text>
+    <text x="15" y="20" fill="#6b21a8" font-size="10">新技術への積極的な学習姿勢</text>
+  </g>
+  
+  <!-- Assessment & Recognition -->
+  <rect x="40" y="870" width="520" height="120" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="900" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📊 評価・認定・表彰制度</text>
+  
+  <!-- Recognition System -->
+  <rect x="60" y="920" width="480" height="55" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 935)">
+    <rect x="0" y="0" width="90" height="25" fill="#0f172a" rx="3"/>
+    <text x="45" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">スキル認定</text>
+  </g>
+  
+  <g transform="translate(185, 935)">
+    <rect x="0" y="0" width="90" height="25" fill="#1e293b" rx="3"/>
+    <text x="45" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">イノベーター表彰</text>
+  </g>
+  
+  <g transform="translate(290, 935)">
+    <rect x="0" y="0" width="90" height="25" fill="#334155" rx="3"/>
+    <text x="45" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">改善提案表彰</text>
+  </g>
+  
+  <g transform="translate(395, 935)">
+    <rect x="0" y="0" width="90" height="25" fill="#475569" rx="3"/>
+    <text x="45" y="17" text-anchor="middle" fill="white" font-size="9" font-weight="bold">メンター認定</text>
+  </g>
+  
+  <text x="80" y="970" fill="#475569" font-size="11">
+    <tspan x="80" dy="0">成果と貢献を可視化し、モチベーション向上と持続的な参画を促進</tspan>
+  </text>
+  
+  <!-- Success Metrics -->
+  <rect x="40" y="1010" width="520" height="120" fill="#0f172a" stroke="#1e293b" stroke-width="2" rx="15"/>
+  <text x="300" y="1040" text-anchor="middle" fill="white" font-size="16" font-weight="bold">📈 教育効果測定指標</text>
+  
+  <g transform="translate(60, 1060)">
+    <rect x="0" y="0" width="120" height="50" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">参加率</text>
+    <text x="60" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">85%</text>
+    <text x="60" y="45" text-anchor="middle" fill="#cbd5e1" font-size="9">全社員対象</text>
+  </g>
+  
+  <g transform="translate(200, 1060)">
+    <rect x="0" y="0" width="120" height="50" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">スキル向上</text>
+    <text x="60" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">70%</text>
+    <text x="60" y="45" text-anchor="middle" fill="#cbd5e1" font-size="9">中級以上</text>
+  </g>
+  
+  <g transform="translate(340, 1060)">
+    <rect x="0" y="0" width="120" height="50" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">改善提案</text>
+    <text x="60" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">200件</text>
+    <text x="60" y="45" text-anchor="middle" fill="#cbd5e1" font-size="9">年間目標</text>
+  </g>
+  
+  <g transform="translate(480, 1060)">
+    <rect x="0" y="0" width="80" height="50" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">満足度</text>
+    <text x="40" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">4.5</text>
+    <text x="40" y="45" text-anchor="middle" fill="#cbd5e1" font-size="9">5点満点</text>
+  </g>
+  
+  <!-- Implementation Timeline -->
+  <rect x="60" y="1150" width="480" height="35" fill="#065f46" stroke="#10b981" stroke-width="2" rx="15"/>
+  <text x="300" y="1175" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+    📅 12ヶ月で全社デジタル人材育成完了
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Internal Education Framework 5/6
+  </text>
+</svg>

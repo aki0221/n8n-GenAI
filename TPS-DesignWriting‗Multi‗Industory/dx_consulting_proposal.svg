@@ -1,0 +1,236 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="valueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="resultsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">
+    n8n+AI自動化コンサルティング提案書
+  </text>
+  <text x="300" y="58" text-anchor="middle" fill="white" font-size="16" opacity="0.9">
+    デジタル変革パートナーシップのご提案
+  </text>
+  <text x="300" y="75" text-anchor="middle" fill="white" font-size="12" opacity="0.8">
+    Digital Transformation Consulting Proposal
+  </text>
+  
+  <!-- Client Challenge Analysis -->
+  <rect x="40" y="110" width="520" height="120" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#92400e" font-size="16" font-weight="bold">🎯 お客様の課題分析</text>
+  <text x="60" y="155" fill="#78350f" font-size="13" font-weight="bold">現状の業務プロセスにおける課題</text>
+  <text x="60" y="175" fill="#78350f" font-size="12">
+    <tspan x="60" dy="0">• 手作業による繰り返し業務の増大→生産性低下</tspan>
+    <tspan x="60" dy="15">• 部門間データ連携の非効率性→情報の分断</tspan>
+    <tspan x="60" dy="15">• 人的ミスによる品質・信頼性リスク→顧客満足度低下</tspan>
+    <tspan x="60" dy="15">• 変化する市場への対応速度不足→競争力の低下</tspan>
+  </text>
+  
+  <!-- Our Value Proposition -->
+  <rect x="40" y="250" width="520" height="200" fill="url(#valueGrad)" stroke="#059669" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="290" r="25" fill="#fff"/>
+  <text x="80" y="297" text-anchor="middle" fill="#059669" font-size="12" font-weight="bold">VALUE</text>
+  <text x="120" y="285" fill="white" font-size="18" font-weight="bold">当社の価値提案</text>
+  <text x="120" y="305" fill="white" font-size="14" opacity="0.9">お客様固有の課題解決アプローチ</text>
+  
+  <!-- Value Pillars -->
+  <rect x="60" y="325" width="480" height="110" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 340)">
+    <rect x="0" y="0" width="120" height="80" fill="#065f46" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" fill="white" font-size="11" font-weight="bold">戦略コンサル</text>
+    <text x="60" y="35" text-anchor="middle" fill="white" font-size="9">現状分析</text>
+    <text x="60" y="47" text-anchor="middle" fill="white" font-size="9">最適化設計</text>
+    <text x="60" y="59" text-anchor="middle" fill="white" font-size="9">ROI算出</text>
+    <text x="60" y="71" text-anchor="middle" fill="white" font-size="9">効果測定</text>
+  </g>
+  
+  <g transform="translate(220, 340)">
+    <rect x="0" y="0" width="120" height="80" fill="#059669" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" fill="white" font-size="11" font-weight="bold">技術実装</text>
+    <text x="60" y="35" text-anchor="middle" fill="white" font-size="9">n8n構築</text>
+    <text x="60" y="47" text-anchor="middle" fill="white" font-size="9">AI統合</text>
+    <text x="60" y="59" text-anchor="middle" fill="white" font-size="9">システム連携</text>
+    <text x="60" y="71" text-anchor="middle" fill="white" font-size="9">運用最適化</text>
+  </g>
+  
+  <g transform="translate(360, 340)">
+    <rect x="0" y="0" width="120" height="80" fill="#10b981" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" fill="white" font-size="11" font-weight="bold">組織支援</text>
+    <text x="60" y="35" text-anchor="middle" fill="white" font-size="9">変革管理</text>
+    <text x="60" y="47" text-anchor="middle" fill="white" font-size="9">人材育成</text>
+    <text x="60" y="59" text-anchor="middle" fill="white" font-size="9">運用体制</text>
+    <text x="60" y="71" text-anchor="middle" fill="white" font-size="9">継続改善</text>
+  </g>
+  
+  <!-- Consulting Process -->
+  <rect x="40" y="470" width="520" height="240" fill="url(#processGrad)" stroke="#1d4ed8" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="510" r="25" fill="#fff"/>
+  <text x="80" y="517" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="bold">STEP</text>
+  <text x="120" y="505" fill="white" font-size="18" font-weight="bold">コンサルティングプロセス</text>
+  <text x="120" y="525" fill="white" font-size="14" opacity="0.9">段階的アプローチによる確実な成果創出</text>
+  
+  <!-- Process Steps -->
+  <rect x="60" y="545" width="480" height="150" fill="#eff6ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <!-- Step 1 -->
+  <g transform="translate(80, 560)">
+    <rect x="0" y="0" width="200" height="30" fill="#1e3a8a" rx="15"/>
+    <text x="100" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STEP 1: 現状分析・課題整理</text>
+    <text x="5" y="45" fill="#1e40af" font-size="10">
+      <tspan x="5" dy="0">• 業務プロセス詳細調査</tspan>
+      <tspan x="5" dy="12">• システム現状把握</tspan>
+      <tspan x="5" dy="12">• ボトルネック特定</tspan>
+      <tspan x="5" dy="12">• 自動化優先度評価</tspan>
+    </text>
+    <rect x="170" y="42" width="25" height="12" fill="#dbeafe" rx="6"/>
+    <text x="182" y="51" text-anchor="middle" fill="#1e40af" font-size="8">2週間</text>
+  </g>
+  
+  <!-- Step 2 -->
+  <g transform="translate(300, 560)">
+    <rect x="0" y="0" width="180" height="30" fill="#1d4ed8" rx="15"/>
+    <text x="90" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STEP 2: 設計・プロトタイプ</text>
+    <text x="5" y="45" fill="#1e40af" font-size="10">
+      <tspan x="5" dy="0">• 自動化フロー設計</tspan>
+      <tspan x="5" dy="12">• POC開発・検証</tspan>
+      <tspan x="5" dy="12">• 効果予測シミュレーション</tspan>
+      <tspan x="5" dy="12">• 実装計画策定</tspan>
+    </text>
+    <rect x="150" y="42" width="25" height="12" fill="#dbeafe" rx="6"/>
+    <text x="162" y="51" text-anchor="middle" fill="#1e40af" font-size="8">4週間</text>
+  </g>
+  
+  <!-- Step 3 -->
+  <g transform="translate(80, 630)">
+    <rect x="0" y="0" width="180" height="30" fill="#3b82f6" rx="15"/>
+    <text x="90" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STEP 3: 実装・展開</text>
+    <text x="5" y="45" fill="#1e40af" font-size="10">
+      <tspan x="5" dy="0">• システム構築・統合</tspan>
+      <tspan x="5" dy="12">• テスト・品質確保</tspan>
+      <tspan x="5" dy="12">• ユーザートレーニング</tspan>
+      <tspan x="5" dy="12">• 段階的本番稼働</tspan>
+    </text>
+    <rect x="150" y="42" width="25" height="12" fill="#dbeafe" rx="6"/>
+    <text x="162" y="51" text-anchor="middle" fill="#1e40af" font-size="8">8週間</text>
+  </g>
+  
+  <!-- Step 4 -->
+  <g transform="translate(280, 630)">
+    <rect x="0" y="0" width="200" height="30" fill="#60a5fa" rx="15"/>
+    <text x="100" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STEP 4: 運用・最適化支援</text>
+    <text x="5" y="45" fill="#1e40af" font-size="10">
+      <tspan x="5" dy="0">• 運用監視・サポート</tspan>
+      <tspan x="5" dy="12">• パフォーマンス分析</tspan>
+      <tspan x="5" dy="12">• 継続的改善提案</tspan>
+      <tspan x="5" dy="12">• 次期展開計画</tspan>
+    </text>
+    <rect x="170" y="42" width="25" height="12" fill="#dbeafe" rx="6"/>
+    <text x="182" y="51" text-anchor="middle" fill="#1e40af" font-size="8">継続</text>
+  </g>
+  
+  <!-- Expected Results -->
+  <rect x="40" y="730" width="520" height="180" fill="url(#resultsGrad)" stroke="#7c3aed" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="770" r="25" fill="#fff"/>
+  <text x="80" y="777" text-anchor="middle" fill="#7c3aed" font-size="11" font-weight="bold">GOAL</text>
+  <text x="120" y="765" fill="white" font-size="18" font-weight="bold">期待される成果</text>
+  <text x="120" y="785" fill="white" font-size="14" opacity="0.9">定量・定性効果の実現</text>
+  
+  <!-- Results Matrix -->
+  <rect x="60" y="805" width="480" height="90" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 820)">
+    <rect x="0" y="0" width="100" height="60" fill="#581c87" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">業務効率</text>
+    <text x="50" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">40%</text>
+    <text x="50" y="50" text-anchor="middle" fill="white" font-size="9">向上</text>
+    <text x="50" y="75" text-anchor="middle" fill="#6b21a8" font-size="9">処理時間短縮</text>
+  </g>
+  
+  <g transform="translate(200, 820)">
+    <rect x="0" y="0" width="100" height="60" fill="#6b21a8" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">コスト削減</text>
+    <text x="50" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">35%</text>
+    <text x="50" y="50" text-anchor="middle" fill="white" font-size="9">削減</text>
+    <text x="50" y="75" text-anchor="middle" fill="#6b21a8" font-size="9">運用コスト</text>
+  </g>
+  
+  <g transform="translate(320, 820)">
+    <rect x="0" y="0" width="100" height="60" fill="#7c3aed" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">品質向上</text>
+    <text x="50" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">90%</text>
+    <text x="50" y="50" text-anchor="middle" fill="white" font-size="9">向上</text>
+    <text x="50" y="75" text-anchor="middle" fill="#6b21a8" font-size="9">エラー削減</text>
+  </g>
+  
+  <g transform="translate(440, 820)">
+    <rect x="0" y="0" width="100" height="60" fill="#8b5cf6" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="11" font-weight="bold">満足度</text>
+    <text x="50" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">85%</text>
+    <text x="50" y="50" text-anchor="middle" fill="white" font-size="9">達成</text>
+    <text x="50" y="75" text-anchor="middle" fill="#6b21a8" font-size="9">従業員満足</text>
+  </g>
+  
+  <!-- Investment & ROI -->
+  <rect x="40" y="930" width="520" height="120" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="960" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">💰 投資対効果・料金体系</text>
+  
+  <!-- Pricing Structure -->
+  <rect x="60" y="980" width="480" height="55" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 995)">
+    <rect x="0" y="0" width="100" height="25" fill="#0f172a" rx="5"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="10" font-weight="bold">戦略コンサル</text>
+    <text x="50" y="35" text-anchor="middle" fill="#334155" font-size="9">300万円〜</text>
+  </g>
+  
+  <g transform="translate(200, 995)">
+    <rect x="0" y="0" width="100" height="25" fill="#1e293b" rx="5"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="10" font-weight="bold">技術実装</text>
+    <text x="50" y="35" text-anchor="middle" fill="#334155" font-size="9">800万円〜</text>
+  </g>
+  
+  <g transform="translate(320, 995)">
+    <rect x="0" y="0" width="100" height="25" fill="#334155" rx="5"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="10" font-weight="bold">運用支援</text>
+    <text x="50" y="35" text-anchor="middle" fill="#334155" font-size="9">50万円/月〜</text>
+  </g>
+  
+  <g transform="translate(440, 995)">
+    <rect x="0" y="0" width="100" height="25" fill="#475569" rx="5"/>
+    <text x="50" y="17" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ROI実現</text>
+    <text x="50" y="35" text-anchor="middle" fill="#334155" font-size="9">18ヶ月以内</text>
+  </g>
+  
+  <!-- Next Steps -->
+  <rect x="40" y="1070" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1100" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🚀 次のステップ</text>
+  <text x="60" y="1125" fill="white" font-size="12">
+    <tspan x="60" dy="0">1. 現状課題の詳細ヒアリング（無料診断セッション）</tspan>
+    <tspan x="60" dy="18">2. カスタマイズ提案書の作成・ご提示</tspan>
+    <tspan x="60" dy="18">3. パイロットプロジェクトの企画・実行</tspan>
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Consulting Proposal Framework 3/6
+  </text>
+</svg>

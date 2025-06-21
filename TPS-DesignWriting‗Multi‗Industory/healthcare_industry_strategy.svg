@@ -1,0 +1,215 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="patientGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="clinicalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    医療業向けn8n+AI自動化戦略提案書
+  </text>
+  <text x="300" y="50" text-anchor="middle" fill="white" font-size="14" opacity="0.9">
+    患者中心のケア質向上・医療従事者負担軽減戦略
+  </text>
+  <text x="300" y="68" text-anchor="middle" fill="white" font-size="11" opacity="0.8">
+    Healthcare Digital Transformation Strategy
+  </text>
+  <text x="300" y="82" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+    🏥 患者安全・医療品質向上とワークフロー最適化の両立
+  </text>
+  
+  <!-- Executive Summary -->
+  <rect x="40" y="110" width="520" height="90" fill="#fef2f2" stroke="#ef4444" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#991b1b" font-size="16" font-weight="bold">📊 医療業界向けエグゼクティブサマリー</text>
+  <text x="60" y="155" fill="#7f1d1d" font-size="12">
+    <tspan x="60" dy="0">• 診断精度15%向上、医療ミス60%削減による患者安全強化</tspan>
+    <tspan x="60" dy="15">• 医療従事者業務負担30%軽減、患者待ち時間40%短縮</tspan>
+    <tspan x="60" dy="15">• 年間運営コスト2.8億円削減、患者満足度25%向上</tspan>
+  </text>
+  
+  <!-- Healthcare ROI Analysis -->
+  <rect x="40" y="220" width="520" height="180" fill="url(#roiGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="260" r="25" fill="#fff"/>
+  <text x="80" y="267" text-anchor="middle" fill="#3b82f6" font-size="12" font-weight="bold">ROI</text>
+  <text x="120" y="255" fill="white" font-size="18" font-weight="bold">医療業界ROI分析</text>
+  <text x="120" y="275" fill="white" font-size="14" opacity="0.9">20ヶ月での投資回収実現</text>
+  
+  <!-- ROI Breakdown -->
+  <rect x="60" y="295" width="480" height="90" fill="#dbeafe" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <!-- Year 1 -->
+  <rect x="80" y="310" width="130" height="60" fill="#1e3a8a" rx="5"/>
+  <text x="145" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 1</text>
+  <text x="145" y="340" text-anchor="middle" fill="white" font-size="10">投資：9,000万円</text>
+  <text x="145" y="352" text-anchor="middle" fill="white" font-size="10">効果：2,800万円</text>
+  <text x="145" y="364" text-anchor="middle" fill="white" font-size="9">診断支援・記録自動化</text>
+  
+  <!-- Year 2 -->
+  <rect x="235" y="310" width="130" height="60" fill="#1d4ed8" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 2</text>
+  <text x="300" y="340" text-anchor="middle" fill="white" font-size="10">追加：3,500万円</text>
+  <text x="300" y="352" text-anchor="middle" fill="white" font-size="10">効果：8,200万円</text>
+  <text x="300" y="364" text-anchor="middle" fill="white" font-size="9">患者モニタリング拡大</text>
+  
+  <!-- Year 3 -->
+  <rect x="390" y="310" width="130" height="60" fill="#3b82f6" rx="5"/>
+  <text x="455" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 3</text>
+  <text x="455" y="340" text-anchor="middle" fill="white" font-size="10">運用：1,200万円</text>
+  <text x="455" y="352" text-anchor="middle" fill="white" font-size="10">効果：1.5億円</text>
+  <text x="455" y="364" text-anchor="middle" fill="white" font-size="9">予測医療・個別化</text>
+  
+  <!-- Patient Care Optimization -->
+  <rect x="40" y="420" width="520" height="200" fill="url(#patientGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="460" r="25" fill="#fff"/>
+  <text x="80" y="467" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">患者</text>
+  <text x="120" y="455" fill="white" font-size="18" font-weight="bold">患者ケア最適化</text>
+  <text x="120" y="475" fill="white" font-size="14" opacity="0.9">包括的患者管理システム</text>
+  
+  <!-- Patient Care Areas -->
+  <rect x="60" y="495" width="480" height="110" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#581c87" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">診断支援</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">画像解析AI</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">症状パターン</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">早期発見</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">診断精度向上</text>
+  </g>
+  
+  <g transform="translate(200, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#6b21a8" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">患者モニタリング</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">バイタル監視</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">異常検知</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">アラート自動化</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">早期介入</text>
+  </g>
+  
+  <g transform="translate(320, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#7c3aed" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">治療計画</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">個別化医療</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">薬物相互作用</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">副作用予測</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">最適化支援</text>
+  </g>
+  
+  <g transform="translate(440, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#8b5cf6" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">予後管理</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">退院支援</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">在宅ケア連携</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">フォローアップ</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">再入院防止</text>
+  </g>
+  
+  <!-- Clinical Workflow Automation -->
+  <rect x="40" y="640" width="520" height="180" fill="url(#clinicalGrad)" stroke="#10b981" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="680" r="25" fill="#fff"/>
+  <text x="80" y="687" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">業務</text>
+  <text x="120" y="675" fill="white" font-size="18" font-weight="bold">臨床業務ワークフロー自動化</text>
+  <text x="120" y="695" fill="white" font-size="14" opacity="0.9">医療従事者負担軽減・効率化</text>
+  
+  <!-- Clinical Workflow Areas -->
+  <rect x="60" y="715" width="480" height="90" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 730)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">電子カルテ</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">自動記録・音声入力・テンプレート化</text>
+  </g>
+  
+  <g transform="translate(280, 730)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">検査予約</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">自動スケジューリング・リソース最適化</text>
+  </g>
+  
+  <g transform="translate(80, 770)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">薬剤管理</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">処方支援・在庫管理・安全性チェック</text>
+  </g>
+  
+  <g transform="translate(280, 770)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">請求処理</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">診療報酬計算・レセプト自動作成</text>
+  </g>
+  
+  <!-- Healthcare KPIs -->
+  <rect x="40" y="840" width="520" height="140" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="870" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📈 医療業界特化KPI</text>
+  
+  <g transform="translate(60, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">診断精度</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">15%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">AI支援診断</text>
+  </g>
+  
+  <g transform="translate(200, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">医療ミス</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">60%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">削減</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">システム支援</text>
+  </g>
+  
+  <g transform="translate(340, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">待ち時間</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">40%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">短縮</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">予約最適化</text>
+  </g>
+  
+  <g transform="translate(480, 890)">
+    <rect x="0" y="0" width="80" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">満足度</text>
+    <text x="40" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">25%</text>
+    <text x="40" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="40" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">患者体験</text>
+  </g>
+  
+  <!-- Implementation Priority -->
+  <rect x="40" y="1000" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1030" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🎯 医療業界実装優先順位</text>
+  <text x="60" y="1055" fill="white" font-size="12">
+    <tspan x="60" dy="0">Phase 1: 診断支援・電子カルテ自動化（安全性・精度向上）</tspan>
+    <tspan x="60" dy="18">Phase 2: 患者モニタリング・ワークフロー最適化</tspan>
+    <tspan x="60" dy="18">Phase 3: 予測医療・個別化治療支援（AI高度活用）</tspan>
+  </text>
+  
+  <!-- Call to Action -->
+  <rect x="60" y="1120" width="480" height="60" fill="#dc2626" stroke="#ef4444" stroke-width="2" rx="15"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">⚕️ 医療DX推進の使命</text>
+  <text x="300" y="1165" text-anchor="middle" fill="white" font-size="12">
+    患者の生命と安全を守り、医療の質向上を実現する責務
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Healthcare Industry Automation Strategy - Customized Framework
+  </text>
+</svg>

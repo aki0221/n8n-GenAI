@@ -1,0 +1,215 @@
+<svg viewBox="0 0 600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="supplyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="deliveryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="1200" fill="#fefefe"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="90" fill="url(#headerGrad)"/>
+  <text x="300" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+    物流業向けn8n+AI自動化戦略提案書
+  </text>
+  <text x="300" y="50" text-anchor="middle" fill="white" font-size="14" opacity="0.9">
+    サプライチェーン最適化・配送効率最大化戦略
+  </text>
+  <text x="300" y="68" text-anchor="middle" fill="white" font-size="11" opacity="0.8">
+    Logistics Digital Transformation Strategy
+  </text>
+  <text x="300" y="82" text-anchor="middle" fill="white" font-size="10" opacity="0.7">
+    🚚 AI予測・リアルタイム最適化による次世代物流の実現
+  </text>
+  
+  <!-- Executive Summary -->
+  <rect x="40" y="110" width="520" height="90" fill="#fed7aa" stroke="#fb923c" stroke-width="2" rx="12"/>
+  <text x="60" y="135" fill="#9a3412" font-size="16" font-weight="bold">📊 物流業界向けエグゼクティブサマリー</text>
+  <text x="60" y="155" fill="#7c2d12" font-size="12">
+    <tspan x="60" dy="0">• 配送効率40%向上、燃料コスト30%削減による大幅コスト削減</tspan>
+    <tspan x="60" dy="15">• 在庫最適化により倉庫コスト25%削減、配送遅延80%改善</tspan>
+    <tspan x="60" dy="15">• 年間物流コスト5.2億円削減、顧客満足度35%向上</tspan>
+  </text>
+  
+  <!-- Logistics ROI Analysis -->
+  <rect x="40" y="220" width="520" height="180" fill="url(#roiGrad)" stroke="#8b5cf6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="260" r="25" fill="#fff"/>
+  <text x="80" y="267" text-anchor="middle" fill="#8b5cf6" font-size="12" font-weight="bold">ROI</text>
+  <text x="120" y="255" fill="white" font-size="18" font-weight="bold">物流業界ROI分析</text>
+  <text x="120" y="275" fill="white" font-size="14" opacity="0.9">16ヶ月での投資回収実現</text>
+  
+  <!-- ROI Breakdown -->
+  <rect x="60" y="295" width="480" height="90" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="8"/>
+  
+  <!-- Year 1 -->
+  <rect x="80" y="310" width="130" height="60" fill="#581c87" rx="5"/>
+  <text x="145" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 1</text>
+  <text x="145" y="340" text-anchor="middle" fill="white" font-size="10">投資：7,500万円</text>
+  <text x="145" y="352" text-anchor="middle" fill="white" font-size="10">効果：3,800万円</text>
+  <text x="145" y="364" text-anchor="middle" fill="white" font-size="9">ルート最適化・追跡</text>
+  
+  <!-- Year 2 -->
+  <rect x="235" y="310" width="130" height="60" fill="#7c3aed" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 2</text>
+  <text x="300" y="340" text-anchor="middle" fill="white" font-size="10">追加：3,200万円</text>
+  <text x="300" y="352" text-anchor="middle" fill="white" font-size="10">効果：9,500万円</text>
+  <text x="300" y="364" text-anchor="middle" fill="white" font-size="9">需要予測・在庫最適化</text>
+  
+  <!-- Year 3 -->
+  <rect x="390" y="310" width="130" height="60" fill="#8b5cf6" rx="5"/>
+  <text x="455" y="325" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Year 3</text>
+  <text x="455" y="340" text-anchor="middle" fill="white" font-size="10">運用：1,000万円</text>
+  <text x="455" y="352" text-anchor="middle" fill="white" font-size="10">効果：1.8億円</text>
+  <text x="455" y="364" text-anchor="middle" fill="white" font-size="9">自律配送・AIフル活用</text>
+  
+  <!-- Supply Chain Optimization -->
+  <rect x="40" y="420" width="520" height="200" fill="url(#supplyGrad)" stroke="#3b82f6" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="460" r="25" fill="#fff"/>
+  <text x="80" y="467" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold">SC</text>
+  <text x="120" y="455" fill="white" font-size="18" font-weight="bold">サプライチェーン最適化</text>
+  <text x="120" y="475" fill="white" font-size="14" opacity="0.9">エンドツーエンド可視化・予測</text>
+  
+  <!-- Supply Chain Areas -->
+  <rect x="60" y="495" width="480" height="110" fill="#eff6ff" stroke="#60a5fa" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#1e3a8a" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">需要予測</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">AI予測モデル</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">季節性考慮</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">外部要因統合</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">需要変動対応</text>
+  </g>
+  
+  <g transform="translate(200, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#1d4ed8" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">在庫管理</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">多拠点最適化</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">安全在庫計算</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">自動補充</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">デッドストック削減</text>
+  </g>
+  
+  <g transform="translate(320, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#2563eb" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">調達最適化</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">サプライヤー選定</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">価格交渉支援</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">リスク評価</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">契約管理</text>
+  </g>
+  
+  <g transform="translate(440, 510)">
+    <rect x="0" y="0" width="100" height="80" fill="#3b82f6" rx="5"/>
+    <text x="50" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">配送計画</text>
+    <text x="50" y="32" text-anchor="middle" fill="white" font-size="8">拠点間連携</text>
+    <text x="50" y="44" text-anchor="middle" fill="white" font-size="8">積載率最適化</text>
+    <text x="50" y="56" text-anchor="middle" fill="white" font-size="8">輸送モード選択</text>
+    <text x="50" y="68" text-anchor="middle" fill="white" font-size="8">コスト最小化</text>
+  </g>
+  
+  <!-- Last Mile Delivery -->
+  <rect x="40" y="640" width="520" height="180" fill="url(#deliveryGrad)" stroke="#10b981" stroke-width="3" rx="15"/>
+  <circle cx="80" cy="680" r="25" fill="#fff"/>
+  <text x="80" y="687" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">配送</text>
+  <text x="120" y="675" fill="white" font-size="18" font-weight="bold">ラストワンマイル配送革新</text>
+  <text x="120" y="695" fill="white" font-size="14" opacity="0.9">AI最適化・リアルタイム制御</text>
+  
+  <!-- Delivery Optimization Areas -->
+  <rect x="60" y="715" width="480" height="90" fill="#ecfdf5" stroke="#10b981" stroke-width="1" rx="8"/>
+  
+  <g transform="translate(80, 730)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">ルート最適化</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">動的ルーティング・交通情報連携</text>
+  </g>
+  
+  <g transform="translate(280, 730)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">配送追跡</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">リアルタイム位置情報・到着予測</text>
+  </g>
+  
+  <g transform="translate(80, 770)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">配送スケジュール</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">時間指定・受取人都合考慮</text>
+  </g>
+  
+  <g transform="translate(280, 770)">
+    <circle cx="0" cy="0" r="6" fill="#10b981"/>
+    <text x="15" y="5" fill="#065f46" font-size="12" font-weight="bold">顧客コミュニケーション</text>
+    <text x="15" y="20" fill="#064e3b" font-size="10">自動通知・問い合わせ対応</text>
+  </g>
+  
+  <!-- Logistics KPIs -->
+  <rect x="40" y="840" width="520" height="140" fill="#f8fafc" stroke="#64748b" stroke-width="2" rx="15"/>
+  <text x="300" y="870" text-anchor="middle" fill="#334155" font-size="16" font-weight="bold">📈 物流業界特化KPI</text>
+  
+  <g transform="translate(60, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">配送効率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">40%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">ルート最適化</text>
+  </g>
+  
+  <g transform="translate(200, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">燃料コスト</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">30%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">削減</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">効率運行</text>
+  </g>
+  
+  <g transform="translate(340, 890)">
+    <rect x="0" y="0" width="120" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="60" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">在庫回転率</text>
+    <text x="60" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">50%</text>
+    <text x="60" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">向上</text>
+    <text x="60" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">需要予測</text>
+  </g>
+  
+  <g transform="translate(480, 890)">
+    <rect x="0" y="0" width="80" height="70" fill="#1e293b" stroke="#475569" stroke-width="1" rx="5"/>
+    <text x="40" y="18" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="bold">配送遅延</text>
+    <text x="40" y="35" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">80%</text>
+    <text x="40" y="50" text-anchor="middle" fill="#cbd5e1" font-size="9">改善</text>
+    <text x="40" y="65" text-anchor="middle" fill="#94a3b8" font-size="8">予測精度</text>
+  </g>
+  
+  <!-- Implementation Priority -->
+  <rect x="40" y="1000" width="520" height="100" fill="#164e63" stroke="#0891b2" stroke-width="2" rx="15"/>
+  <text x="300" y="1030" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🎯 物流業界実装優先順位</text>
+  <text x="60" y="1055" fill="white" font-size="12">
+    <tspan x="60" dy="0">Phase 1: ルート最適化・配送追跡（即効性・可視化）</tspan>
+    <tspan x="60" dy="18">Phase 2: 需要予測・在庫最適化（コスト削減・効率化）</tspan>
+    <tspan x="60" dy="18">Phase 3: AI高度活用・自律化（次世代物流実現）</tspan>
+  </text>
+  
+  <!-- Call to Action -->
+  <rect x="60" y="1120" width="480" height="60" fill="#ea580c" stroke="#fb923c" stroke-width="2" rx="15"/>
+  <text x="300" y="1145" text-anchor="middle" fill="white" font-size="14" font-weight="bold">🚀 物流DX加速の必要性</text>
+  <text x="300" y="1165" text-anchor="middle" fill="white" font-size="12">
+    eコマース拡大・配送需要急増への対応と競争力強化
+  </text>
+  
+  <!-- Footer -->
+  <text x="300" y="1190" text-anchor="middle" fill="#6b7280" font-size="10">
+    Logistics Industry Automation Strategy - Customized Framework
+  </text>
+</svg>
