@@ -1,0 +1,1503 @@
+Journal of the Operational Research Society
+ISSN: 0160-5682 (Print) 1476-9360 (Online) Journal homepage: www.tandfonline.com/journals/tjor20
+Human-AI coordination for large-scale group
+decision making with heterogeneous feedback
+strategies
+Jing Zhang, Ning Wang & Ming Tang
+To cite this article: Jing Zhang, Ning Wang & Ming Tang (07 Mar 2025): Human-AI coordination
+for large-scale group decision making with heterogeneous feedback strategies, Journal of the
+Operational Research Society, DOI: 10.1080/01605682.2025.2466677
+To link to this article: https://doi.org/10.1080/01605682.2025.2466677
+Published online: 07 Mar 2025.
+Submit your article to this journal
+Article views: 336
+View related articles
+View Crossmark data
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=tjor20
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY
+https://doi.org/10.1080/01605682.2025.2466677
+ORIGINAL ARTICLE
+Human-AI coordination for large-scale group decision making with
+heterogeneous feedback strategies
+Jing Zhang, Ning Wang and Ming Tang
+School of Economics and Management, Dalian University of Technology, Dalian, China
+ABSTRACT ARTICLE HISTORY
+In group decision making, human experts are usually susceptible to cognitive biases and Received 5 June 2024
+information overload. Artificial intelligence (AI) has capabilities in data processing and ana- Accepted 7 February 2025
+lysis, but is limited by issues such as interpretability and human adoption. Humans and AI
+have different problem-solving capabilities, they can benefit from each other. Thus, there is KEYWORDS
+Human-AI coordination;
+a need to leverage a mechanism to tap into the intelligence of both parties and achieve
+large-scale group decision
+mutually shared outcomes. In this study, we propose a large-scale group decision-making
+making; minimum cost
+model with human-AI consensus. First, an improved density-peak clustering algorithm is uti- consensus; subgroup;
+lized to classify experts into subgroups based on the Similarity-Trust-Attitude score. Then, medical diagnosis
+weights of experts and subgroups are obtained based on the internal influence of experts
+and the intuitionistic fuzzy entropy of subgroup preferences. Further, considering three dif-
+ferent strategies of human-AI interaction, subgroup consensus and subgroup-AI consensus
+are calculated. Finally, a minimum cost consensus model with heterogeneous feedback strat-
+egies is proposed. The usability of the proposed model is verified through a medical diagno-
+sis case. This study found that the human-AI coordination with heterogeneous feedback
+strategies can reduce adjustment costs, and different interaction mechanisms have different
+effects.
+1. Introduction availability, scholars and business organizations are
+no longer limited to using human intelligence and
+Group decision making (GDM) aims to facilitate the
+have begun to utilize artificial intelligence (AI) tech-
+optimal ranking of a set of alternatives to a specific
+niques to develop a variety of GDM systems in a
+problem through the collaborative effort of multiple
+wide range of fields (Garcia et al., 2024). For
+experts (Meng et al., 2024). With the increasing
+example, AI helps clinicians make clinical decisions
+complexity of decision-making settings and the ris-
+in vascular surgery, including patient classification,
+ing demand for cross-disciplinary expertise to tackle
+early diagnosis, and surgical risk assessment, by ana-
+decision-making problems, large-scale group deci-
+lyzing huge and unstructured data (Lareyre et al.,
+sion making (LSGDM) has become a focal point of
+2023). Finnish IT company Tieto announced the
+research (Tang & Liao, 2021). To fully leverage the
+appointment of AI to their leadership team (Zheng
+role of a large group, scholars have proposed many
+et al., 2023). Additionally, Generative Artificial
+models from various perspectives to extract and har-
+Intelligence (GenAI), as an emerging technology in
+ness human intelligence, such as expert behaviours
+the field of AI, is increasingly demonstrating its
+(Gou et al., 2021), subgroup classification (Liang
+ability to make advantageous predictions (Hermann
+et al., 2024; Tang et al., 2020), consensus-building
+& Puntoni, 2024). Understanding features and
+method (Meng et al., 2023) and preference informa- effective tips of GenAI can help people make wise
+tion aggregation (Chen et al., 2022). Thus, tradi- decisions regarding their problems (Beilby &
+tional LSGDM relies mostly on the experience and Hammarberg, 2024). For example, in the context of
+intuition of human experts. However, human medical decision making, Sorin et al. (2023)
+experts may be influenced by subjective biases explored the utilization of ChatGPT as a decision
+(Liang et al., 2024), information overload (Laker support tool for breast tumour boards. They pro-
+et al., 2018), and limited learning capacity (Boyacı vided ChatGPT-3.5 with clinical information about
+et al., 2024), resulting in uncertainty and bias in 10 consecutive patients. They then asked the chatbot
+decision-making outcomes. to perform three tasks: summarization, recommen-
+Nowadays, with the development in computa- dation, and explanation. In 70% of cases, the chat-
+tional power of information technologies and data bot’s recommendations agreed with the tumour
+CONTACT Ming Tang tangming@dlut.edu.cn School of Economics and Management, Dalian University of Technology, Dalian 116024, China.
+� 2025 The Operational Research Society
+2 J. ZHANG ET AL.
+board’s decisions. However, Saban and Dubovi Consensus is traditionally measured based on
+(2024) found that GenAI tools exhibited a proclivity whether the consensus of a group exceeds a preset
+towards indecision and over-triage in comparison to threshold. If GenAI is integrated into the group,
+human clinicians. Ray et al. (2023) argued that how to measure the reliability of GenAI’s decision
+GenAI provides clinicians with powerful tools to and effectively induce the consensus between GenAI
+improve surgical precision, diagnostic accuracy, and and experts is an important issue. The third is the
+treatment planning, but AI was meant to flag rele- determination of the feedback strategy for the con-
+vant studies for human review, rather than replacing sensus-building approach. In traditional LSGDM,
+the physician’s assessment. feedback is generated by selecting experts or sub-
+While scholars acknowledge the potential of groups of experts who are not reached the consen-
+GenAI in GDM, it still has shortcomings compared
+sus threshold and providing suggestions for them to
+to human intelligence such as limited interpretabil-
+revise their preferences. However, in feedback strat-
+ity, the possibility of generating false information,
+egies involving GenAI, experts may not have suffi-
+restricted reasoning capabilities, and ethical con-
+cient willingness to cooperate with GenAI.
+cerns (Ray et al., 2023; Saban & Dubovi, 2024; Thuy
+To address these above challenges, we propose an
+& Benoit, 2024; Vasey et al., 2022). Human experts
+LSGDM model to combine GenAI and experts’ pref-
+utilize cognitive flexibility to integrate various sour-
+erences, and develop a consensus-building approach.
+ces of information, but they are limited by their
+We investigate the unity of subgroup consensus and
+cognitive capacity when it comes to evaluating large
+subgroup-AI consensus. The impact of GenAI on
+volumes of data. Fortunately, both human and AI
+the consensus-building process will be explored.
+have their own strengths, possessing the potential to
+The main contributions of our research are three-
+complement each other’s shortcomings. A nascent
+fold: (1) The impact of GenAI’s different levels of
+agreement is to employ the symbiotic relationship
+participation on the consensus process is studied.
+between human and AI (Wang et al., 2024). For
+Feedback strategies are conducted based on three
+example, the coordination between human radiolog-
+different scenarios (GenAI as the decisive role,
+ists and AI improved the overall accuracy of pneu-
+GenAI as the equal role, and GenAI as the auxiliary
+monia diagnosis compared to radiologists or AI
+role). (2) A threshold measure based on subgroup
+alone (Patel et al., 2019). Given the strengths of
+consensus and subgroup-AI consensus is proposed.
+both human experts and AI, researchers are increas-
+We introduce a new weight measurement method
+ingly acknowledging the benefits of reciprocal learn-
+to determine the standard weight with different
+ing—a form of human-AI learning loop that
+decision-making bodies, and determine the consen-
+leverages the complementary capabilities of each to
+sus threshold based on subgroup consensus and
+achieve consensus (Jussupow et al., 2021; Sturm
+subgroup-AI consensus. (3) A minimum cost con-
+et al., 2021). Therefore, it is critical to combine
+sensus (MCC) model based on heterogeneous feed-
+strengths of AI and human intuition to ensure the
+back strategies is constructed. Feedback adjustment
+continued viability of decision-making processes
+parameters of experts are set based on experts’ atti-
+(Choudhary et al., 2025; Te’eni et al., 2023).
+To fully harness the strengths of both human tudes towards GenAI. Finally, the applicability of
+experts and AI in the consensus, it is necessary to our proposed model is verified based on a medical
+develop a LSGDM model considering heterogeneous diagnosis case.
+preferences of experts and AI. Consensus building- The remainder of this paper is organized as fol-
+approach based on multiple feedbacks is a way to lows. Section 2 is a literature review, including
+achieve a shared situation among different stake- human-AI decision making, LSGDM and MCC
+holders. Consensus-based human-AI decision- models. Section 3 proposes the main model with
+making model can promote deep integration of heterogeneous feedback strategies in three scenarios.
+LSGDM processes. However, addressing this prob- Section 4 illustrates application of our proposed
+lem entails navigating several critical challenges. The model using a case study about medical diagnosis.
+first challenge is the measurement of GenAI’s par- Section 5 presents comparative analysis. Section 6
+ticipation degree in LSGDM. In traditional LSGDM, concludes the paper with implications, limitations
+the weights of experts are often determined based and future work.
+on the trustworthiness of experts in the group.
+However, in real life, due to factors such as humans’
+2. Literature review
+trust and acceptance on AI, AI’s decision in differ-
+ent scenarios may be endowed with varying degrees In this section, we review two streams of relevant
+of participation. The second is the measurement of literature: (1) Human-AI decision making, (2)
+the consensus between experts and GenAI. LSGDM and MCC models.
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 3
+2.1. Human-AI decision making related literature on human-AI decision making. We
+found that AI has been assigned different roles in
+AI, which refers to “the ability of a system to identify,
+human-AI teams.
+interpret, make inferences, and learn from data to
+achieve predetermined organizational and societal
+goals” (Mikalef & Gupta, 2021) has been incorporated 2.2. LSGDM and MCC models
+into algorithms to make them more powerful
+LSGDM is a process in which a large number of
+(Mahmud et al., 2022). However, there are still ethical
+experts evaluate a set of feasible alternatives and select
+issues associated with the use of AI, such as data priv-
+the best solution. Since there are many stakeholders
+acy and the potential for AI bias to influence the out-
+with different backgrounds in LSGDM, consensus
+come of decisions. Therefore, people have different
+reaching-process (CRP) is particularly important in
+attitudes toward the use of AI, and these attitudes also
+LSGDM. CRP is an iterative and dynamic process. In
+directly affect the final perception of experts’ decisions
+this process, experts discuss and modify their initial
+(Mahmud et al., 2024). People embracing AI believe
+preferences to reach a collective preference that is sat-
+that human-AI coordination can accelerate decision-
+isfactory to all experts. Such a process is usually
+making efficiency (Mahmud et al., 2024). People with
+guided and supervised by a person called the super-
+AI aversion may worry about negative impacts of AI
+visor (Tang et al., 2020). The typical consensus model
+(Burton et al., 2020). of LSGDM includes four aspects: preference aggrega-
+Certainty, the most promising application of AI tion, degree of consensus measurement, feedback
+is not to replace humans, but rather synergize with mechanism design and alternative selection.
+them, creating “superminds” capable of accomplish- To build a CRP at the smallest possible cost,
+ing cognitive and physical tasks that were once con- Ben-Arieh and Easton (2007) first introduced the
+sidered impossible (Malone et al., 2020). An concept of MCC model. Later, many scholars made
+increasing number of studies have found that when improvements on this model. Table 2 presents a
+humans and AI make decisions together, the overall summary of some MCC models in LSGDM.
+quality of decisions is improved (Patel et al., 2019). Existing models set experts’ adjustment cost accord-
+However, the effect of AI’s decision varies across ing to preference gap, or use the same adjustment
+domains. For example, Selby et al. (2024) found that cost. However, this situation ignores acceptance of
+Large Language Model based inference has good preference adjustment by experts. Therefore, to
+downstream performance in medicine, business, and make up for the existing limitations, we consider
+biology, but not in other domains. Table 1 reviews experts’ attitudes toward GenAI when adjusting
+Table 1. Literature related to human-AI decision making.
+Article Human-AI interaction type Research methods Application field
+(Boyacı et al., 2024) AI-supported human decision Decision model based on the Medical diagnostics
+making framework of cognitive
+flexibility and limited capacity
+(Garcia et al., 2024) AI-supported human decision Parsimonious model of advice Hotel pricing
+making
+(Saban & Dubovi, 2024) AI-supported human decision Experimental investigation Clinical decisions
+making
+(Zheng et al., 2023) Equal decision-making power A wizard-of-oz study English articles review and rank
+(De V�ericourt et al., 2023) AI performs decision tasks under Repeated tasks and learning Decide whether a specific action
+human supervision (e.g., a biopsy)
+(Ge et al., 2021) AI-supported human decision Empirical study Financial-advising services in peer-
+making to-peer lending
+Table 2. Literature on MCC in LSGDM.
+Article MCC categories Unit adjustment cost Feedback Model characteristics
+(Zhang et al., 2022) MCC in heterogeneous Heterogeneous No MCC with large-scale heterogeneous
+opinion groups group decision making
+(Liang et al., 2023) MCC with loss aversion Heterogeneous Yes Two-stage consensus reaching
+mechanism
+(Yu et al., 2022) MCC in social network Heterogeneous Yes MCC considering voluntary trust loss
+LSGDM
+(Liang et al., 2022) Minimum cost of informed Heterogeneous Yes LSGDM with bounded confidence
+individuals and time effects
+constraint
+(Du et al., 2024) MCC in social network Heterogeneous Yes Constrained community detection
+LSGDM method and a multistage multicost
+consensus
+(Li et al., 2023) MCC in dynamic social Homogenous Yes Two-stage consensus reaching
+networks LSGDM mechanism
+4 J. ZHANG ET AL.
+Figure 1. CRP of our model.
+preferences, and use a MCC model to perform het- large-scale experts into subgroups. Then, weights of
+erogeneous feedback strategies. experts, subgroups and GenAI are introduced. On this
+basis, considering three levels of participation of GenAI,
+the degrees of consensus at different levels are calcu-
+3. LSGDM model based on human-AI
+lated, and a MCC model with heterogeneous feedback
+coordination
+strategies is proposed. Finally, the model is applied to a
+3.1. Model setup medical diagnosis example to verify its feasibility.
+The LSGDM includes the following components:
+The CRP process of our model is shown in Figure 1.
+We develop a CRP to achieve an outcome between
+a. A fixed set of feasible alterna-
+experts and GenAI. First, the model uses an improved
+tives X ¼fx ,x ,:::,x g,m�2:
+Density Peaks Clustering (DPC) algorithm to classify 1 2 m
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 5
+Table 3. Notations of this study.
+Notation Explanation
+E¼fe1,e2,:::,eq g The set of experts
+X¼fx1,x2,:::,xm g The set of alternatives
+C¼fc1,c2,:::,cn g The set of criteria
+Z¼ðz1,z2,:::,zn ÞT The weight vector of criteria
+Pk¼ðpk
+ij
+Þ
+m�n
+Decision-making matrix of expert ek
+PAI¼ðpAIÞ Decision-making matrix of GenAI
+ij m�n
+Pave¼ðpaveÞ Average decision-making matrix of all subgroups
+ij m�n
+PDAI¼ðpDAIÞ Average decision-making of GenAI-experts
+ij m�n
+Cl l−th subgroup
+w
+l
+k The weight of ek in subgroup Cl
+CDk Individual consensus degree
+l
+ACD Consensus degree of subgroup
+l
+AACDl−AI Consensus degree of subgroup and GenAI
+GACD Global consensus
+r Consensus threshold
+c Unit cost for adjusting expert e ‘s preference
+k k
+gij The final global preference information of alternative x
+i
+regarding criterion cj
+Gi The decision-making information of alternative xi
+b. A group of experts E¼fe 1 ,e 2 ,:::,e qg who Furthermore, SA¼fsa 1 ,sa 2 ,:::,sa q g denotes
+expresses their preferences on X: experts’ attitudes towards GenAI, 0�sa �1:
+k
+c. A fixed set of criteria C ¼fc ,c ,:::,c g: The
+1 2 n
+weight vector of c P riteria is Z ¼ðz 1,z 2, ::: ,z n ÞT; For ease of understanding, Table 3 gives the
+where z �0 and n z ¼1: main symbols used in this paper and their corre-
+j j¼1 j
+d. Let Pk ¼ðpkÞ ðk¼1,2,:::,qÞ be decision- sponding descriptions.
+ij m�n
+making matrix composed of intuitionistic fuzzy
+numbers (IFNs) given by e 2E, where pk
+k ij 3.2. Group clustering
+denotes the preference of e k for x i regarding c j : �
+Then, the intuitionistic fuzzy set (IFS) A on X � Let A¼ hx,l A ðxÞ,� A ðxÞijx 2Xg and B¼
+is defined as hx,l ðxÞ,� ðxÞijx 2Xg be two IFSs. We use the
+B B
+�
+normalized Hamming distance measure to calculate
+A¼ x,l ðxÞ,� ðxÞjx 2Xg,
+A A
+the distance between A and B (Xu, 2007):
+where l A :X !½0,1�,x 2X !l A ðxÞ2½0,1� and 1 Xn
+v :X !½0,1�; x 2X !� ðxÞ2½0,1� respectively DðA,BÞ¼ ðjl ðxÞ−l ðxÞjþj� ðxÞ
+A A 2n A i B i A i
+denote the membership and non-membership i¼1
+degrees of element x 2X to A; and 0�l ðxÞþ −� ðxÞjþjp ðxÞ−p ðxÞjÞ (1)
+A B i A i B i
+� A ðxÞ�1,x2X: Furthermore, the function SimðA,BÞ¼1−DðA,BÞ (2)
+p ðxÞ¼1−l ðxÞ−� ðxÞ is the hesitation degree
+A A A
+Based on Eq. (1), the distance between two
+of x to A:
+experts can be obtained; based on Eq. (2), experts’
+With the rapid advancement of AI technology,
+similarity matrices can be obtained.
+AI has been able to evaluate the reliability of the
+To assess the cohesion of subgroups, we combine
+prediction results. For example, the AI model
+experts’ preference similarity, social trust and atti-
+designed by Ma et al. (2023) can give the classifica-
+tudes towards GenAI to obtain the Similarity-Trust-
+tion outcome of the task prediction and the confi-
+Attitude (STA) score. We assume that preference
+dence of AI. Thus, this study adopts IFS to
+similarity, trust relationship and attitude are equally
+represent GenAI’s preference. Let PAI ¼ðpAIÞ be
+ij m�n important in clustering process, and we draw
+GenAI’s decision-making matrix, where pAI denotes
+ij Einstein’s T-paradigm idea to calculate the STA
+the preference of GenAI for x i regarding c j : score.
+Let STA be the STA score from expert e to e ;
+kh k h
+e. There exists a social network based on cooperative which can be obtained by:
+relationships among experts, which is represented Sim �St �Sa
+as an undirected weighted graph G¼ðE,LÞ; STA kh ¼ 1þð1−Sim kh Þð1− kh St Þ kh ð1−Sa Þ
+kh kh kh
+where E denotes the set of nodes, L denotes the set
+k,h¼1,2,:::,q
+of edges between nodes. In the social network,
+(3)
+edges represent trust connections between experts
+and nodes represent experts. And let ST ¼ where Sim is the similarity between e and e ; St
+kh k h kh
+ðSt Þ be the trust matrix among experts. is the trust degree from e to e ; Sa ¼1−
+kh q�q k h kh
+6 J. ZHANG ET AL.
+jsa −sa j is the GenAI-Attitude similarity between indirect trust of e ; and CT denotes the degree cen-
+k h k k
+e and e : In Eq. (3), 0�STA �1; STA � trality of e : x ; x and x corresponds to initial
+k h kh kh k 1 2 3
+minfSim ,St ,Sa g: The higher the value of weight of three items in Eq. (4), respectively.
+kh kh kh
+STA ; the higher the probability that e and e are x þx þx ¼1; x ; x ; x >0.
+kh k k 1 2 3 1 2 3
+classified into the same subgroup.
+Step 2. Calculate the weights of subgroups and
+The DPC algorithm has been widely used in vari-
+GenAI.
+ous data clustering tasks (Li et al., 2018; 2024).
+In general, the greater the self-confidence of sub-
+Unlike algorithms such as k-means, which require a
+group members, the less they are affected by social
+pre-specified number of clusters, the DPC algorithm
+influence, and the more likely they adhere to their
+can recognize data of any shape, visually identify
+initial preferences (Tu et al., 2024). According to the
+the number of clusters in the data and effectively
+characteristic of IFN, a smaller intuitionistic fuzzy
+identify outliers (Meng et al., 2023). However, the
+entropy means a greater evaluation confidence.
+stability of the clustering centre selection in the
+Therefore, we calculate the weights of subgroups
+DPC algorithm is relatively low, in this study, we
+and GenAI by the intuitionistic fuzzy entropy.
+proposed an improved DPC algorithm to enhance
+the stability of clustering centres and applied it to � According to Chen et al. (2022), for an IFS A¼
+classify experts. Algorithm 1 presents the steps of x,l ðxÞ,� ðxÞjx 2Xg; the intuitionistic fuzzy
+A i A i i
+the improved DPC algorithm. entropy of A is defined as:
+(cid:0) �
+1 Xn 1−D A ðx i Þ e ð1−D AðxiÞÞ þp A ðx i Þ�ep AðxiÞ
+EðAÞ¼
+n i¼1 e ð1−D AðxiÞÞ þep AðxiÞ
+(5)
+Algorithm 1. Pseudo-code for the improved DPC algorithm.
+Input: STA matrix of experts, parameter values dc ;a;h 1 ;g h where D A ðx i Þ¼jðl A ðx i Þ−� A ðx i ÞÞ=ðl A ðx i Þþ � A ðx i ÞÞj
+Output: Clustering results represents the power of IFS A:
+Step 1: Calculate the distance matrix D among experts based on the
+STA matrix of experts. Based on the above definition of intuitionistic
+Step 2: Determine the intercept distance dc fuzzy entropy, the subgroup average decision-
+Step 3: Compute the local density q based on the formula
+q i ¼ P i6¼j expð−ðd ij =d c Þ2Þ: making matrix Pl ¼ðpl ij Þ m�n and the GenAI deci-
+sion-making matrix PAI ¼ðpAIÞ are constructed.
+Step 4(: Compute the relative distance d based on the formula ij m�n
+d ¼
+minj:qj>qi dij ifq
+i
+<maxðqÞ If only the proportion of weights among subgroups
+i max j6¼i d ij ifq i ¼maxðqÞ is considered, the weight of a subgroup can be
+Step 5: Select stable cluster centres: obtained as:
+for i in n do
+P P
+calculate the decision value r i ¼q i �d i 1− 1 m n z �EðplÞ
+calculate the density of data nearest 5 neighbors w ¼ Pm i P ¼1 j P ¼1 j ij (6)
+fq j :j21 i g //1 i is the set of neighboring points l L− 1 L m n z �EðplÞ
+evaluate stability: g i ¼a�q i þð1−aÞd i =stdð1 i Þ //std is m l¼1 i¼1 j¼1 j ij
+the standard deviation
+centres satisfies ri >rh and g i >g h //rh ¼percentileðr,h 1 Þ If the proportion of weights among subgroups
+end for and GenAI is considered, the standardized weight of
+Step 6: Assign each point directly to the nearest cluster centre based
+a subgroup or GenAI is
+on the distance matrix.
+P P
+Step 7: Output the clustering results. 1− 1 m n z �EðpsÞ
+w ¼ P m i P ¼1 j P ¼1 j ij (7)
+s S− 1 S m n z �EðpsÞ
+m s¼1 i¼1 j¼1 j ij
+3.3. Weight determination and consensus
+measure where w s denotes the weight of a subgroup or
+GenAI, L is the number of subgroups, S is the sum
+3.3.1. Weight determination
+of number of subgroups and GenAI, where ps ¼<
+After clustering, the weights of experts in subgroups ij
+ls,�s > denotes the preference of subgroup or
+and weights of subgroups should be determined. ij ij
+GenAI for x under c:
+i j
+Step 1. Determine the weights of experts in a
+subgroup.
+3.3.2. Consensus measure
+The weight of an expert in a group is calculated
+In this section, we calculate the degree of consensus
+based on the combination of direct trust, indirect
+at expert level, subgroup level, subgroup-AI level
+trust, and expert centrality:
+and global level, respectively.
+wk ¼x �DT þx �IT þx �CT (4) Expert level: the degree of consensus among
+l 1 k 2 k 3 k
+experts within a subgroup.
+where wk denotes the weight of e in C; DT For e in C; the degree of individual consensus
+l k l k k l
+denotes the direct trust of e ; IT denotes the CDk is a measure of the proximity between e ’s
+k k l k
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 7
+decision-making matrix Pk ¼ðpkÞ and sub- that rð0<r<1Þ is a predefined group consensus
+ij m�n
+threshold. If GACD�r; group consensus is consid-
+group’s average decision-making matrix
+Pl ¼ðplÞ : CDk is defined as: ered to be reached; if GACD<r; it means that the
+ij m�n l
+degree of decision consensus has not yet been
+CDk ¼1−dðPk,PlÞ reached and experts’ preferences or GenAI’s prefer-
+l
+1 Xm Xn ence need to be adjusted to achieve the threshold.
+¼1− z
+j
+2m (8)
+i¼1 j¼1
+�� � � � � �� 3.4. Heterogeneous feedback strategies and
+� � � � � �
+�lk −ll�þ�vk −vl�þ�pk −pl�
+selection process
+ij ij ij ij ij ij
+3.4.1. Feedback scenarios
+Subgroup level: the degree of consensus among
+If the group consensus threshold is not reached, it is
+subgroups (without AI).
+necessary to provide feedback to adjust experts’ prefer-
+For C; the subgroup consensus ACD is a meas-
+l l
+ences or GenAI’s preference and then recalculate the
+ure of the proximity between subgroup’s average
+degree of consensus until the threshold is reached.
+decision-making matrix Pl ¼ðplÞ and average
+ij m�n Therefore, we propose a MCC model based on experts’
+decision-making matrix Pave ¼ðpaveÞ of all sub-
+ij m�n attitudes towards GenAI and give different feedback
+groups. ACD l is defined as: strategies according to human-AI interaction scenarios.
+ACD ¼1−dðPave,PlÞ To better reflect the interaction between GenAI’s deci-
+l
+sion and human experts’ decisions, GenAI also takes
+1
+Xm Xn
+¼1− z part in each round of consensus iteration.
+j
+2m
+i¼1 j¼1
+�� � � � � ��
+� � � � � � 1. When GenAI’s decision and the average deci-
+�lave−ll�þ�vave−vl�þ�pave−pl�
+ij ij ij ij ij ij sion of subgroups is consistent (the degree of
+consensus is within the threshold), GenAI will
+(9)
+not change its decision;
+Subgroup-AI level: the degree of consensus 2. When GenAI’s decision and the average decision of
+between subgroups and GenAI. subgroups is inconsistent (the degree of consensus
+The degree of consensus AACD is the meas-
+l−AI is not within threshold), GenAI will modify its deci-
+ure of the proximity between subgroup’s average
+sion towards the average decision of subgroups.
+decision-making matrix Pl ¼ðplÞ and GenAI’s
+ij m�n
+decision-making matrix PAI ¼ðpAIÞ : AACD The final modification suggestion pAI0 will be
+ij m�n l−AI ij
+is defined as: generated by combining the initial preference pAI
+ij
+AACD l−AI ¼1−dðPAI,PlÞ and the modification preference pa ij ve: The updated
+1
+Xm Xn formula is calculated as (Li et al., 2023):
+¼1− z j D E
+2m
+i¼1 j¼1 pAI0¼IFWA pAI,pave
+�� � � � � �� ij ij ij
+� � � � � � D � � � � � � � � E
+�lAI −ll�þ�vAI −vl�þ�pAI −pl� # 1−# # 1−#
+ij ij ij ij ij ij ¼ 1− 1−lAI � 1−lave , vAI � vave
+ij ij ij ij
+(10) (12)
+Global level: the global consensus for the whole
+where pAI denotes the preference of GenAI that
+group ij
+needs feedback adjustment, and pave denotes the
+The degree of global consensus GACD is a meas- ij
+ure of the final degree of consensus among experts average decision of all subgroups. #2½0,1� is an
+and GenAI. We use the minimum value of ACD adjustment parameter, which indicates the degree of
+l
+and AACD to represent GACD; which allows us retention of GenAI to its own preference.
+l−AI
+to control the threshold for both subgroup consen- The following focuses on analyzing the feedback
+sus and subgroup-AI consensus. Then, the global performance of experts in different scenarios.
+consensus level GACD can be obtained as:
+3.4.1.1. Scenario I: GenAI as the decisive role. The
+GACD¼minfACD,AACD g (11)
+l l−AI importance of GenAI’s decision in the decision-
+It is easy to prove 0�GACD�1. A larger value of making process lies in its ability to handle large-
+GACD indicates a higher degree of consensus. scale data analysis or realize rapid response, etc.
+GACD¼1 indicates that all subgroups and GenAI For example, in areas such as climate prediction and
+have reached a unanimous consensus. It is assumed high-frequency trading, GenAI not only improves
+8 J. ZHANG ET AL.
+Figure 2. Adjustment direction of subgroups’ decisions in Figure 3. Adjustment direction of subgroups’ decisions in
+Scenario I. Scenario II.
+the speed and accuracy of decisions, but also enable 3.4.1.2. Scenario II: GenAI as the equal role. In
+effective decisions in areas that are difficult for many decision-making environments, GenAI and
+humans to access. GenAI’s decision is often decisive experts act side-by-side and together form the core
+in these specific scenarios. of the decision-making process. For example, in
+When the feedback process is activated, the sub- medical diagnosis, GenAI can quickly analyze com-
+group that contributes the least to the global con- plex data and provide initial judgments, while doc-
+sensus is first identified for modification, which is tors make diagnostic decisions by integrating
+marked as C : The preference of GenAI is treated the patient’s situation and their own experience.
+adj
+These scenarios emphasize the complementary char-
+as a reference for preference modification, that is,
+acteristics of GenAI’s decision and experts’ deci-
+subgroups who are not within the threshold will
+sions, which makes the final decision more
+modify their preferences toward GenAI’s prefer-
+comprehensive.
+ence. The adjustment direction of subgroups’ deci-
+In this scenario, the average preference of GenAI
+sions in Scenario I is depicted in Figure 2. The
+and experts is treated as a reference for preference
+blue points in a black circle represent a subgroup
+modification, that is, subgroups who are not within
+and the red point represents the centre of sub-
+the threshold will modify their preferences toward
+group. The green circle represents the adjustment
+GenAI-experts’ average preference. The adjustment
+centre range.
+direction of subgroups’ decisions in Scenario II is
+Considering experts’ tendency to insist on their
+own preferences, the final modification proposal
+pk0 depicted in Figure 3.
+ij Considering experts’ tendency to insist on their
+will be generated by combining the initial preference
+own preferences, the final modification suggestion
+pk
+ij
+and the modification reference pA
+ij
+I: pk0
+given to the individual expert will be generated
+ij
+D E
+pk0¼IFWA pk,pAI by combining the initial preference pk ij and the
+ij ij ij
+D � � � � � � � � E modification reference pDAI:
+q 1−q q 1−q ij
+¼ 1− 1−lk k� 1−lAI k , vk k� vAI k D E
+ij ij ij ij
+pk0¼IFWA pk,pDAI
+(13) ij ij ij
+D � � � � � � � � E
+q 1− q 1−
+where q k 2½0,1� is an adjustment parameter that ¼ 1− 1−lk ij k� 1−lD ij AI q k, vk ij k� v i D j AI q k
+indicates the degree of reservation of e to his/her
+k (14)
+own preference.
+Empirical studies have shown that if there is a where pDAI denotes the average decision of GenAI-
+ij
+GenAI’s decision, when regular experts adjust deci- experts.
+sion outcomes, the influence of authoritative experts An expert is influenced by both GenAI and other
+diminishes (Zheng et al., 2023). Therefore, if GenAI experts’ decisions. A regular expert is less influenced
+plays the decisive role, we assume that experts by authoritative experts when adjusting their deci-
+within subgroups have equal weight. sions. In this scenario, the influence of the centrality
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 9
+by combining the initial preference pk and the
+ij
+modification reference pave:
+ij
+D E
+pk0¼IFWA pk,pave
+ij ij ij
+D � � � � � � � � E
+q 1−q q 1−q
+¼ 1− 1−lk k� 1−lave k , vk k� vave k
+ij ij ij ij
+(16)
+Experts refer to GenAI’s decision when the con-
+sensus is difficult to reach. It has been shown that
+dissenting participants tend to reflect on their own
+decisions when it is noted that GenAI’s decision
+and other experts’ decisions have consistent results
+(Zheng et al., 2023). Therefore, in this scenario, we
+calculate the weight of a subgroup according to the
+degree of consensus between subgroup’s decision
+Figure 4. Adjustment direction of subgroups’ decisions in and GenAI’s decision, and only subgroup consensus
+Scenario III. is considered.
+of experts within the same subgroup is reduced, and 3.4.2. Feedback model setup
+the expert weights are changed. Based on the above analysis, the MCC model is
+The weight of expert e is calculated as follows: established as follows:
+k
+wk¼P
+x
+(cid:0)
+0
+1
+�logð1þDTk Þþx0
+2
+�logð1þITk Þþx0
+3
+�logð1þCTk Þ
+� Xm Xn
+l h2cl x0 1 �logð1þDTh Þþx0 2 �logð1þITh Þþx0 3 �logð1þCTh Þ Min c
+k
+�dðpk
+ij
+,pk
+ij
+0Þ
+(15) i¼81 j¼1
+x0; x0 and x0 corresponds to the adjusted weights of > > > GACD�r
+>
+1 2 3 > > c �0
+the direct trust value, the indirect trust value, and the > < k (17)
+0�q �1
+centrality value. x0 þx0 þx0 ¼1; x0; x0; x0>0. s:t k
+1 2 3 1 2 3 > > 0�#�1
+The log function is used to moderate the magnitude > > >
+>
+0�r�1
+>
+of inconsistency among the direct trust value, the : e 2C
+k adj
+indirect trust value, and the centrality value. In add-
+ition, the weight of e is normalized to ensure that
+k where r denote the consensus threshold, and C
+adj
+the sum of weights in each subgroup is 1.
+denotes the subgroups that needs to make adjust-
+ments. c is inversely proportional to the expert’s
+k
+3.4.1.3. Scenario III: GenAI as the auxiliary role. In
+attitude towards GenAI. In this study, c ¼1=sa :
+k k
+some decision-making scenarios, GenAI plays the
+auxiliary role and the final decision remains in
+3.4.3. Selection process
+hands of human experts. This relationship is par-
+If the degree of global consensus GACD reaches the
+ticularly notable in domains where experts’ experi- threshold r;the model will go into the selection process.
+ence and intuition are irreplaceable but can benefit First, the decision score G of x is obtained based
+i i
+from data analysis, such as artistic creation, on the final global preference matrix:
+advanced research and development, and so on (Bell
+Xn
+et al., 2024). This process demonstrates the irrepla- G ¼ z �pG (18)
+i j ij
+ceability of human experts in complex decisions. j¼1
+In this scenario, the average preference of experts
+where pG is the preference value of x regarding c in
+is treated as a reference for preference modification, ij i j
+the final global preference matrix PG:In Scenario I and
+that is, subgroups who are not within the threshold
+Scenario II, PG is the average matrix of all subgroups’
+will modify their preferences toward the average
+preferences and GenAI’s matrix. In scenario III, PG is
+preference of all subgroups. The adjustment direc-
+the average matrix of all subgroups’ preferences.
+tion of subgroups’ decisions in Scenario III is
+Then, according to scoring function of IFN, the
+depicted in Figure 4.
+final score of x is obtained as:
+Considering experts’ tendency to insist on their i
+own preferences, the final modification suggestion SðG i Þ¼l Gi −� Gi (19)
+pk0
+given to the individual expert will be generated
+ij
+10 J. ZHANG ET AL.
+Finally, all alternatives are ranked according to Step 5: If GACD�r; then go to selection process;
+their scores, and the highest scoring alternative is otherwise, select subgroups that need to make
+selected as the best alternative. modifications and go to next step.
+Step 6: Generate heterogeneous feedback adjustment
+strategies to help experts modify their preferences.
+3.5. Summarization of the proposed model Step 7: Rank alternatives based on global preferences.
+The flowchart of our proposed LSGDM model is
+4. Case study
+shown in Figure 5.
+Steps of our proposed LSGDM model are as Chronic Obstructive Pulmonary Disease (COPD) is
+follows. one of the most prevalent chronic lung diseases and
+is currently the fourth leading cause of death. Even
+Step 1: Collect information related to decision mak- experienced medical professionals are difficult to give
+ing from experts and GenAI. a definite clinical diagnosis. Fortunately, big data has
+Step 2: Classify experts into several clusters via our been used as a valuable source of COPD detection
+improved DPC algorithm. (Rhee, 2021). Previous studies have applied AI to
+Step 3: Determine weights of experts and GenAI by detect COPD features (Wang et al., 2020).
+Eqs. (4)–(7). There is an electronic medical record of a COPD
+Step 4: Calculate the degree of consensus: CDk, patient. The electronic medical record includes basic
+l
+ACD, AACD and GACD: information about patient and diagnose. To minimize
+l l−AI
+Figure 5. Flowchart of our proposed LSGDM model.
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 11
+the decision risk, 20 experts e ðk¼1,2,:::,20Þ from Step 2. Clustering
+k
+fields of pulmonology, surgery, pharmacology and Using the DPC algorithm, twenty experts are
+psychology, respectively, are invited to determine the classified into three subgroups. Preferences of sub-
+best alternative for patient’s treatment. After careful groups are shown in Table 5.
+consultation, four treatment alternatives X ¼ Step 3. Weight determination
+fx ,x ,x ,x gare identified. x is standard drug ther- The weights of subgroups are obtained based on
+1 2 3 4 1
+apy including the use of bronchodilators and cortico- Eqs. (4)–(7), as shown in Table 6.
+steroids; x is comprehensive rehabilitation including Step 4. Consensus measure
+2
+physiotherapy, nutritional guidance, and psychosocial Initial consensus is obtained based on Eqs. (8)–
+support; x is a minimally invasive procedure such as (11), as shown in Table 7.
+3
+lung volume reduction; x is the experimental drug Step 5. As can be seen from Table 7, GACD<
+4
+therapy, including the latest development of targeted 0:9: Thus, the feedback process should be
+drugs for COPD. By analyzing these four alternatives, implemented.
+treatment alternatives are given four criteria to be Step 6. Activate heterogeneous feedback
+evaluated C ¼fc ,c ,c ,c g:c is the therapeutic effi- strategies
+1 2 3 4 1
+(1) Scenario I
+cacy, which includes symptomatic relief and improve-
+According to feedback strategy of Scenario I,
+ment in lung function; c is the side effect, which
+2
+experts’ preferences are adjusted based on the MCC
+includes possible adverse reactions that may occur
+model. The weights of experts in C are [1/6,1/6,1/
+during course of treatment; c is the cost, which takes 1
+3
+6,1/6,1/6,1/6]T; the weights of experts in C are
+into account economic cost of treatment alternative; 2
+[0.25,0.25,0.25,0.25]T; the weights of experts in C
+c is the patient acceptance, which includes patient’s 3
+4
+are [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1]T.
+preference and compliance with treatment regimen.
+The weight vector of four criteria is Z ¼ Adjusted consensus is obtained in Table 8.
+ð0:4,0:3,0:2,0:1Þ: GenAI evaluates four treatment (2) Scenario II
+According to feedback strategy of Scenario II,
+alternatives by analyzing a large amount of historical
+experts’ preferences are adjusted based on the MCC
+treatment data of COPD patients and then gives a
+model. The weights of experts in C are [0.1572,
+preference score. 1
+0.1664,0.211,0.1656,0.1468,0.153]T; the weights of
+To obtain the attitudes of experts toward GenAI,
+we design a pre-experiment of human-AI coordin- experts in C 2 are [0.2526,0.2449,0.2519,0.2506]T; the
+ation, which is shown in Figure 6. A dynamic web weights of experts in C 3 are [0.0989,0.0919,
+application is built to provide core functions for 0.0993,0.0849,0.1093,0.077,0.1006,0.1072,0.1256,0.10-
+patient diagnostic systems, such as valuation of
+53]T.
+patient treatment plan outcomes, reasons for plan Adjusted consensus is obtained in Table 9.
+selection, and reliability of results, based on which (3) Scenario III
+According to feedback strategy of Scenario III,
+an expert can select models and other functions of
+AI with which he/she can interact. experts’ preferences are adjusted based on the MCC
+After appropriate exercises and interactions (it is model. The weights of experts in C 1 are
+stipulated that each expert should familiarize himself/ [0.1647,0.1563,0.1506,0.1692,0.1815, 0.1777]T;
+herself with the AI system for no less than 30min and weights of experts in C 2 are
+interact with it no less than five times), experts pro- [0.2415,0.2585,0.2479,0.2521]T; weights of experts in
+vide their attitudes towards AI by combining the C 3 are [0.0927,0.0967,
+assessment of the accuracy of the AI, the interpret- 0.1015,0.1068,0.0989,0.0898,0.1122,0.1059,0.1013,0.0-
+ability, and the transparency of the system, and do
+942]T.
+not change it. Figure 7displays the overall flowchart. Adjusted consensus is shown in Table 10.
+Figure 8 depicts trust relationships between Step 7. Selection process
+experts (black lines) and experts’ attitude towards The final evaluation information for Scenario I is:
+GenAI (red numbers). Based on relevant literature G :<0:6311,0:2162>,
+1
+and task scenarios studied in this article, parameters G :<0:5800,0:2019>,
+2
+are set as follows: d ¼2, a¼0.6, g ¼0.5, h ¼5,
+c h 1 G :<0:6598,0:1833>,
+r¼0.9, #¼0.3, x ¼0.3, x ¼0.1, x ¼0.6, x0¼0.6, 3
+1 2 3 1 G :<0:5780,0:1885>:
+x0¼0.2, x0¼0.2. 4
+2 3
+To find the best alternative, the following steps Based on the scoring function of IFN, the follow-
+are carried out. ing results are obtained: SðG Þ ¼ 0.4149, SðG Þ ¼
+1 2
+Step 1. Information collection. 0.3781, SðG Þ ¼ 0.4765, SðG Þ ¼ 0.3895.
+3 4
+The raw preference matrices of experts and the Therefore, we can obtain the final ranking:
+preference of GenAI are shown in Table 4. x >x >x >x : The best alternative is x :
+3 1 4 2 3
+12 J. ZHANG ET AL.
+Figure 6. Example of AI decision-making system.
+Figure 7. Experimenting over the process of expert adaptation to AI decision making.
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 13
+Figure 8. Social trust relationships among experts and experts’ attitudes toward GenAI.
+Table 4. Preference matrices of experts and GenAI.
+e1 e2
+c c c c c c c c
+1 2 3 4 1 2 3 4
+x1 <0.4, 0.4> <0.7,0.2> <0.8,0.2> <0.5,0.4> <0.3, 0.5> <0.8,0.2> <0.5, 0.4> <0.4, 0.1>
+x2 <0.3, 0.4> <0.4,0.5> <0.6,0.3> <0.1,0.7> <0.3,0.0> <0.3,0.1> <0.4,0.0> <0.9,0.0>
+x3 <0.7,0.2> <0.3,0.3> <0.1,0.6> <0.6,0.2> <0.4,0.5> <0.8,0.1> <1.0,0.0> <0.2,0.1>
+x <0.3,0.3> <0.5,0.2> <0.5, 0.1> <0.8,0.1> <0.2,0.1> <0.2,0.1> <0.4,0.1> <0.9,0.0>
+4
+e20 eAI
+x1 <0.7, 0.1> <0.9, 0.0> <0.2, 0.7> <0.6, 0.1> <0.5, 0.4> <0.65,0.15> <0.7,0.15> <0.7,0.2>
+x2 <0.9,0.0> <0.6,0.1> <0.2,0.4> <0.8,0.0> <0.65,0.1> <0.85, 0.1> <0.4, 0.5> <0.5, 0.3>
+x <1.0,0.0> <0.4,0.1> <1.0,0.0> <0.8,0.1> <0.55,0.3> <0.8, 0.2> <0.8, 0.1> <0.6, 0.2>
+3
+x4 <0.3,0.0> <0.3,0.2> <0.5,0.1> <0.7,0.3> <0.9,0.05> <0.25, 0.6> <0.65, 0.2> <0.6, 0.3>
+Note: due to the large number of experts, only partial data are presented.
+Table 5. Preferences of subgroups.
+Pk
+C1 <0.5717,0.2837> <0.4204,0.2415> <0.6580,0.2966> <0.8648,0.0609>
+<0.4122,0.2509> <0.6666,0.1973> <0.6943,0.1045> <0.4836,0.2579>
+<0.5745,0.2584> <0.6690,0.1813> <0.4402,0.3331> <0.5489,0.1267>
+<0.4132,0.3001> <0.5725,0.2183> <0.3852,0.2921> <0.5865,0.1431>
+C2 <0.5400,0.3570> <0.6413,0.2798> <0.5517,0.3009> <0.4639,0.2392>
+<0.4112,0.3867> <0.5939,0.1454> <0.3863,0.2922> <0.5911,0.1766>
+<0.5780,0.2485> <0.7205,0.0924> <0.5569,0.2007> <0.6506,0.1338>
+<0.6246,0.1162> <0.6382,0.1861> <0.4375,0.2716> <0.5606,0.2507>
+C3 <0.6369,0.2483> <0.7501,0.0249> <0.7826,0.1195> <0.8501,0.0761>
+<0.5745,0.2584> <0.6975,0.1758> <0.6722,0.1987> <0.5293,0.3206>
+<0.8750,0.0990> <0.5244,0.2268> <0.3929,0.3013> <0.9249,0.0260>
+<0.4727,0.2738> <0.3509,0.1517> <0.4211,0.1535> <0.2503,0.3546>
+The final evaluation information for Scenario II The final evaluation information for Scenario III
+is: is:
+G :<0:5907,0:2657>, G :<0:5655,0:2903>,
+1 1
+G :<0:5303,0:2263>, G :<0:5027,0:2504>,
+2 2
+G :<0:6260,0:1898>, G :<0:5901,0:2013>,
+3 3
+G :<0:5688,0:1926>: G :<0:5440,0:2074>
+4 4
+We have SðG Þ ¼ 0.325, SðG Þ ¼ 0.304, SðG Þ ¼ We have SðG Þ ¼ 0.2752, SðG Þ ¼ 0.2523, SðG Þ
+1 2 3 1 2 3
+0.4362, SðG Þ ¼ 0.3762. Therefore, x > x >x > ¼ 0.3888, SðG Þ ¼ 0.3366. Therefore, x > x >x
+4 3 4 1 4 3 4 1
+x : The best alternative is x : > x : The best alternative is x :
+2 3 2 3
+14 J. ZHANG ET AL.
+Table 6. Subgroup weights.
+Subgroup Number ek Initial weight of subgroup Initial weight of expert
+C1 6 e1 ;e5 ;e6 ;e7 ;e14 ;e16 w1 ¼0.3226 w
+1
+1¼0.1521, w
+2
+5¼0.1572,
+w6¼0.2525, w7¼0.1616,
+2 2
+w14¼0.1348, w16¼0.1418
+1 1
+C2 4 e9 ;e10 ;e11 ;e12 w2 ¼0.2976 w
+3
+9¼0.2597, w
+3
+10¼0.239,
+w11¼0.2493, w12¼0.252
+3 1
+C3 10 e2 ;e3 ;e4 ;e8 ;e13 ;e15 ;e17 ; w3 ¼0.3798 w
+1
+2¼0.0945, w
+1
+3¼0.0851,
+e ;e ;e w4¼0.0955, w8¼0.0757,
+18 19 20 1 3
+w13¼0.1246, w15¼0.0617,
+1 1
+w17¼0.0944,
+1
+w18¼0.1074, w19¼0.158,
+1 1
+w20¼0.1031
+2
+Table 7. Initial consensus.
+Consensus between subgroup and
+Global consensus GenAI Consensus of subgroup Consensus of expert
+GACD¼minfAACDl−AI,ACDl g¼0.7435 AACD1−AI ¼0.7631 ACD1 ¼0.9058 CD1
+1
+¼0.7828, CD5
+2
+¼0.749,
+CD6¼0.7346, CD7¼0.7877,
+2 2
+CD14¼0.7766, CD16¼0.7656
+1 1
+AACD2−AI ¼0.8061 ACD2 ¼0.892 CD9
+3
+¼0.7192, CD1
+3
+0¼0.7252,
+CD11¼0.7116, CD12¼0.6647
+3 1
+AACD ¼0.7435 ACD ¼0.8916 CD2¼0.606, CD3¼0.6845,
+3−AI 3 1 1
+CD4¼0.6261, CD8¼0.6963,
+1 3
+CD13¼0.6923, CD15¼0.6365,
+1 1
+CD17¼0.7934, CD18¼0.6346,
+1 1
+CD19¼0.6989, CD20¼0.7329
+1 2
+Table 8. Adjusted consensus.
+Consensus between subgroup and
+Global consensus GenAI Consensus of subgroup Consensus of expert
+GACD¼minfAACDl−AI,ACDl g¼0.9 AACD1−AI ¼0.917 ACD1 ¼0.938 CD1
+1
+¼0.8531, CD5
+2
+¼0.8419,
+CD6¼0.792,
+2
+CD7¼0.8367, CD14¼0.8333,
+2 1
+CD16¼0.8341
+1
+AACD2−AI ¼0.9 ACD2 ¼0.9336 CD9
+3
+¼0.8942, CD1
+3
+0¼0.9075,
+CD11¼0.8975, CD12¼0.8827
+3 1
+AACD3−AI ¼0.9418 ACD3 ¼0.9392 CD2
+1
+¼0.7794, CD3
+1
+¼0.8287,
+CD4¼0.8743, CD8¼0.832,
+1 3
+CD13¼0.8161, CD15¼0.7618,
+1 1
+CD17¼0.8546, CD18¼0.8329,
+1 1
+CD19¼0.8399, CD20¼0.7738
+1 2
+Table 9. Adjusted consensus.
+Consensus between subgroup and
+Global consensus GenAI Consensus of subgroup Consensus of expert
+GACD¼minfAACDl−AI,ACDl g¼0.9124 AACD1−AI ¼0.9124 ACD1 ¼0.9378 CD1
+1
+¼0.8456, CD5
+2
+¼0.8388,
+CD6¼0.8035, CD7¼0.8352,
+2 2
+CD14¼0.823, CD16¼0.8254
+1 1
+AACD2−AI ¼0.9161 ACD2 ¼0.952 CD9
+3
+¼0.7192, CD1
+3
+0¼0.7252,
+CD11¼0.7116, CD12¼0.6647
+3 1
+AACD3−AI ¼0.9294 ACD3 ¼0.9698 CD2
+1
+¼0.7568, CD3
+1
+¼0.8185,
+CD4¼0.8623, CD8¼0.8409,
+1 3
+CD13¼0.8148, CD15¼0.7238,
+1 1
+CD17¼0.8533, CD18¼0.8066,
+1 1
+CD19¼0.8344, CD20¼0.7603
+1 2
+Table 10. Adjusted consensus.
+Consensus between subgroup and
+Global consensus GenAI Consensus of subgroup Consensus of expert
+GACD¼minfACDl g AACD1−AI ¼0.8093 ACD1 ¼0.9058 CD1
+1
+¼0.7828, CD5
+2
+¼0.749,
+¼0.9058 CD6¼0.7346, CD7¼0.7877,
+2 2
+CD14¼0.7766, CD16¼0.7656
+1 1
+AACD2−AI ¼0.8507 ACD2 ¼0.9516 CD9
+3
+¼0.7192, CD1
+3
+0¼0.7252,
+CD11¼0.7116, CD12¼0.6647
+3 1
+AACD3−AI ¼0.8474 ACD3 ¼0.9571 CD2
+1
+¼0.6951, CD3
+1
+¼0.7754,
+CD4¼0.7707, CD8¼0.7933,
+1 3
+CD13¼0.735, CD15¼0.6884,
+1 1
+CD17¼0.7898, CD18¼0.7738,
+1 1
+CD19¼0.7309, CD20¼0.6847
+1 2
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 15
+Table 11. The degree of consensus without GenAI.
+Global consensus Consensus of subgroup Consensus of expert
+GACD¼minfACDl g ACD1 ¼0.9089 CD1
+1
+¼0.7828, CD5
+2
+¼0.749, CD6
+2
+¼0.7346, CD7
+2
+¼0.7877, CD1
+1
+4¼0.7766, CD1
+1
+6¼0.7656
+¼0.9089 ACD2 ¼0.949 CD9
+3
+¼0.7192, CD1
+3
+0¼0.7252, CD1
+3
+1¼0.7116, CD1
+1
+2¼0.6647
+ACD ¼0.9525 CD2¼0.6866, CD3¼0.774, CD4¼0.8253, CD8¼0.7879, CD13¼0.7384, CD15¼0.6858, CD17¼0.7965,
+3 1 1 1 3 1 1 1
+CD18¼0.7854, CD19¼0.7489, CD20¼0.6931
+1 1 2
+Table 12. Decision-making results in four different scenarios.
+Percentage of GenAI’s decision Adjustment cost Number of subgroup iterations Ranking order
+Scenarios I 16.78 3 x3 >x1 >x4 >x2
+Scenarios II 12.43 3 x >x >x >x
+3 4 1 2
+Scenarios III 1.74 1 x3 >x4 >x1 >x2
+No-GenAI \ 1 x3 >x4 >x1 >x2
+Table 13. Key metrics of MCC models under different thresholds.
+Consensus threshold 0.85 0.86 0.87 0.88 0.89 0.9 0.91 0.92
+Number of iterations 2þ2 2þ2 2þ3 2þ3 2þ3 3þ4 3þ4 4þ4
+Adjustment cost 0.44 1.01 2.05 7.18 8.42 12.43 16.77 25.72
+Global consensus 0.859 0.86 0.876 0.8877 0.8924 0.9124 0.9144 0.9276
+5. Simulations and comparisons professional skills, it is necessary to set the thresh-
+old reasonably based on the specificity of task deci-
+5.1. The impact of GenAI’s role
+sion-making. In current research, the values for
+To illustrate the impact of GenAI’s role, this section predefined thresholds are usually set to 0.9 (Gong
+only considers experts without GenAI’s involvement et al., 2024), 0.85 (Gou et al., 2021), and 0.8 (Tang
+in the proposed model. Other settings remain et al., 2020). For some crucial and significant
+unchanged. The degree of consensus is shown in issues, the minimum consensus level should be
+Table 11. very high. However, in other extreme cases, such
+The final evaluation information is: as emergency problems, the degree of consensus
+G :<0:5692,0:2875>, reached due to time constraints should be lower
+1
+(Xu et al., 2015). Since medical decision-making is
+G :<0:5077,0:2470>,
+2
+a high-risk decision, in this study, we set the con-
+G :<0:5926,0:201>,
+3
+sensus threshold to 0.9, which is a relatively high
+G :<0:5443,0:2076>
+4 value.
+We have SðG Þ¼0.2817, SðG Þ¼0.2607, This section explores the impact of consensus
+1 2
+SðG Þ¼0.3916, SðG Þ¼0.3367. Therefore, x > x thresholds. Eight consensus thresholds f0:85,
+3 4 3 4
+>x > x : The best alternative is x : 0:86,:::, 0:92g are assigned to r to explore the per-
+1 2 3
+The decision-making results in four different sce- formance of the proposed model. Table 13 provides
+narios are given in Table 12. the performance of the proposed model in terms of
+In terms of the adjustment cost, Scenario I and three key metrics: number of iterations, adjustment
+Scenario II have a higher cost than other scenarios. cost and the degree of final global consensus. In
+Moreover, Scenario III and No-GenAI has the addition, to better reflect the efficiency of the CRP,
+smallest subgroup iterations. This is due to the the number of GenAI iterations is also provided.
+emergence of GenAI’s decision as a new reference For example, “1þ2” indicates one iteration of sub-
+expert, which has increased discussions among groups and two iterations of GenAI.
+expert groups. Regarding the ranking of alternatives, As can be seen from Table 13, the number of
+it can be seen that the order of (x ; x ) changes iterations gradually increases as the consensus
+1 4
+with the level of participation of GenAI. As the par- threshold grows. This means that the higher the
+ticipation level of GenAI increases, the gap between requirement for global consensus, the more modifi-
+x and x decreases (x is gradually close to x ). cations need to be made. However, it is not difficult
+1 4 1 4
+Therefore, it can be concluded that GenAI has a to find that no matter the level of the consensus
+certain impact on the decision-making result, which threshold, the model can effectively improve global
+can be used as a reference for experts. consensus within a limited number of iterations.
+Even if r¼0.92, only (4þ4) iterations are needed to
+fulfil consensus requirement. These results show
+5.2. Impact of different consensus thresholds
+that our proposed model can effectively help experts
+In the LSGDM problem, due to the significant dif- reach consensus and thus solve the LSGDM
+ferences in experts’ backgrounds, knowledge, and problem.
+16 J. ZHANG ET AL.
+5.3. Impact of the unit adjustment cost 6. Discussions and conclusions
+Scholars have discussed the impact of the unit We proposed a new LSGDM model including the
+adjustment cost on decision results. For instance, participation of GenAI, and analyzed CRP of
+Wu et al. (2022) found that the adjustment cost LSGDM when GenAI has different degrees of par-
+affects initial clustering result and the group consen- ticipation in decision making. First, the model used
+sus’s achievement level. However, the current an improved DPC algorithm to classify experts.
+research based on the unit adjustment cost is mostly Second, initial weights of experts were determined
+obtained based on subjective settings. This study based on the internal influence of experts, and the
+relies on experts’ attitude towards GenAI when weights of subgroups and GenAI are calculated
+determining the unit adjustment cost, which makes based on intuitionistic fuzzy entropy. In addition,
+it more in line with real-world human-AI interactive the consensus at different levels is calculated, and a
+setting. Taking C as an example, Table 14 describes MCC model for heterogeneous feedback strategies
+2
+the impact of different unit adjustment costs under in different scenarios is proposed. To validate the
+Scenario II. feasibility and effectiveness of the model, a medical
+Experts’ attitude towards GenAI in C is f0.6, diagnosis example with comparative analysis is per-
+2
+0.7, 0.6, 0.95g. The first column of Table 14 pro- formed. We found that GenAI has different impacts
+vides different cost functions associated with SA: It under different levels of GenAI’s participation, and
+can be seen that adjustment costs under different heterogeneous adjustment strategies can effectively
+functions yield different adjustment results. reduce the adjustment cost.
+Compared to the unified cost method, the methods Our proposed model is highly adaptable. While we
+based on four functions all substantially increase the use a medical case study for validation, the model is
+amount of adjustment for e (the third expert in equally applicable to other domains. For instance, in
+12
+the bracket, whose decision attitude towards GenAI judicial decision making, AI can be trained to provide
+is relatively optimistic), and moderately decrease the legal recommendations by analyzing relevant laws
+amount of adjustment for e ; e and e : This result and judicial precedents. AI model can take into
+9 10 11
+is consistent with the fact that experts with AI aver- account factors such as similar precedent cases, case
+sion have a weaker willingness to modify in the characteristics, and legal provisions, and AI’s deci-
+feedback process. The total adjustment costs for the sions can then be compared with the rulings of
+first iteration are 3.51, 3.49, 3.51, 3.52, and 3.68, relevant judges to gather consensus feedback.
+respectively, under each method for the unit cost of Additionally, the model can be applied to emergency
+f1:67,1:43,1:67,1:05g: It can be seen that the response plan selection, paper ranking in scientific
+method for different unit adjustment costs reduces research competitions, and the evaluation of innova-
+the total costs, which verifies the validity of using tions in enterprise technologies. Depending on the
+the heterogeneous adjustment feedback strategies. complexity of the decision-making task, different
+human-AI coordination strategies can be employed.
+5.4. Comparisons with existing LSGDM models
+6.1. Management implications
+To verify the superiority of the proposed model, a
+comparative analysis with existing LSGDM models This study has theoretical and managerial implica-
+is carried out. The results are shown in Table 15. tions. First, the LSGDM model in this paper demon-
+The LSGDM model in this study takes the AI per- strates the potential of human-AI coordination.
+spective into account, making it a unique feature. With the rapid development of advanced technique,
+We first explore how to incorporate different types enterprises and policy makers increasingly rely on
+of interactions between human experts and AI in data and AI to make decisions (Xu et al., 2024). The
+the CRP and propose corresponding feedback strat- participation of GenAI can make up for insufficient
+egies. Therefore, the model proposed in this study is cognitive capacity or information overload brought
+in line with the mainstream trend of AI’s decision by the decision making of a single party (experts)
+being increasingly important. Furthermore, our and improve the ability to solve complex decision-
+model sets heterogeneous unit adjustment costs for making problems involving various elements. In
+different experts according to experts’ attitude addition, when dealing with decisions involving
+towards AI, which also improves upon the previous multiple stakeholders, adding GenAI’s decision can
+literature of subjectively setting unit adjustment improve fairness and diversity of decisions. Second,
+costs. Our model also has a comprehensive perspec- the feedback strategy plays a significant role in coor-
+tive when clustering experts. Most of the studies did dinating GenAI decision making with expert deci-
+not consider the effect of experts’ social relations, sion making. Until now, human-AI coordination
+such as the social status and the degree of trust. has been performed in various fields (De V�ericourt
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 17
+Table 14. Examples of modifications under different adjusted cost scenarios.
+Cost functions Function images Unit adjustment cost Adjustment parameter
+ck ¼1=sak f1:67,1:43,1:67,1:05g f0:54,0:61,0:47,0:91g
+ck ¼expð−sak Þ f0:55;0:50;0:55;0:37g f0:60,0:54,0:43,0:95g
+ck ¼−logðsak Þ f0:51;0:36;0:51;0:05g f0:61,0:56,0:42,0:94g
+(continued)
+et al., 2023; Ge et al., 2021; Zheng et al., 2023), but for managers, this means that they can optimize
+the decision feedback brought by interpretability decision-making process by adjusting decision feed-
+and interactivity characteristics of GenAI has not back strategy, thereby more effectively utilizing
+been considered. This study inspires scholars to resources and time.
+explore human-AI decision-making outcomes from The limitation of ethical issues regarding AI has
+an interactive feedback perspective. The results indi- always been a central focus of scholarly research,
+cate that the proposed human-AI coordination particularly in high-stake fields such as healthcare
+model based on heterogeneous feedback strategies and criminal justice (Barrera Ferro et al., 2025).
+can effectively reduce adjustment costs. Meanwhile, While ethical dilemmas do exist in the use of AI, it
+18 J. ZHANG ET AL.
+Table 14. Continued.
+Cost functions Function images Unit adjustment cost Adjustment parameter
+ck ¼1−sak f0:4;0:7;0:4;0:05g f0:58,0:50,0:52,0:92g
+Unified cost method f1,1,1,1g f0:59,0:65,0:56,0:79g
+Table 15. Comparison with existing LSGDM methods.
+Subgroup weight- Heterogeneous
+The basis of determination Minimum cost unit adjustment
+Methods AI decision clustering Clustering method method consensus cost
+(Tang et al., 2020) No Reciprocal Fuzzy c-means Size and cohesion No No
+preference clustering
+relation
+(Chen et al., 2022) No Experts’ IFN clustering Consensus value No No
+preferences
+(Li et al., 2023) No Trust relationship Spectral clustering Global weights Yes No
+of DMs
+(Liang et al., 2023) No Opinion similarity, community Global weights Yes Yes
+connectivity detection based of DMs
+similarity and on fuzzy
+behaviour clustering
+similarity
+(Gong et al., 2024) No Experts’ influence Hierarchical Consistency No No
+clustering degree,
+subgroup
+cohesion and
+subgroup
+credibility
+(Liang et al., 2024) No Opinion similarity New clustering the number of No No
+and trust method DMs and the
+relationship combined
+cohesion of
+subgroups
+Our method Yes Similarity-Trust- Improved density Intuitionistic fuzzy Yes Yes
+Attitude score peak clustering entropy
+is likely that AI will either complement, coexist Therefore, prior to implementing the human-AI
+with, or even replace current systems, ushering in a coordination model proposed in this study, human-
+new era of AI in healthcare or other fields. In fact, centred design principles should be integrated into
+it may be considered unscientific not to use AI the AI development process to ensure systematic
+(Naik et al., 2022). In response to the current short- review and regulatory oversight. Additionally, train-
+comings in human-AI coordination, the following ing and education on AI usage, along with pre-
+measures can be taken to effectively reduce the limi- experimental operations, should be conducted to
+tation of AI: 1) using diverse and representative reasonably assess AI’s role in decision-making
+data; 2) developing various privacy protection tech- (Schwalbe & Wahl, 2020).
+niques (federal learning, blockchain, etc.); 3)
+improving the interpretability and transparency of
+6.2. Limitations and future work
+AI systems; 4) improving collaborative communica-
+tion and education in the use of AI among AI This study still has limitations. First, this study does
+designers and developers, policymakers, and experts. not address extreme cases where there is a conflict
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 19
+between experts’ decisions and GenAI’s decision, Support Systems, 43(3), 713–721. https://doi.org/10.
+leaving room for future research into the behav- 1016/j.dss.2006.11.009
+Boyacı, T., Canyakmaz, C., & de V�ericourt, F. (2024).
+ioural dynamics and feedback processes of human-
+Human and machine: The impact of machine input on
+AI decision making within the CRP. Second, the
+decision making under cognitive limitations.
+current study assumes that experts’ attitudes towards Management Science, 70(2), 1258–1275. https://doi.org/
+GenAI remain static, potential changes in experts’ 10.1287/mnsc.2023.4744
+behaviour influenced by reliance on AI over time Burton, J. W., Stein, M. K., & Jensen, T. B. (2020). A sys-
+tematic review of algorithm aversion in augmented
+can be considered in the future. Third, the current
+decision making. Journal of Behavioral Decision
+data is small, and future efforts will be made to
+Making, 33(2), 220–239. https://doi.org/10.1002/bdm.
+obtain large hospital-specific data through conduct- 2155
+ing specific interviews with doctors regarding their Chen, X., Zhang, W., Xu, X., & Cao, W. (2022). A public
+willingness to engage with AI in decision making. and large-scale expert information fusion method and
+its application: Mining public opinion via sentiment
+Fourth, ethical concerns raised by AI have not yet
+analysis and measuring public dynamic reliability.
+been explored in depth, such as data privacy and
+Information Fusion, 78, 71–85. https://doi.org/10.1016/j.
+the potential for AI bias to influence decision out- inffus.2021.09.015
+comes. Future research will further examine how Choudhary, V., Marchetti, A., Shrestha, Y. R., &
+these factors influence the CRP in LSGDM’s Puranam, P. (2025). Human-AI ensembles: When can
+they work? Journal of Management, 51(2), 536–569.
+human-AI coordination.
+https://doi.org/10.1177/01492063231194968
+De V�ericourt, F., Gurkan, H., De, V’., & Ericourt, F.
+Author contribution (2023). Is your machine better than you? You may
+never know. Management Science. https://doi.org/10.
+Jing Zhang: Conceptualization, Methodology, Software, 1287/mnsc.2023.4791
+Writing-original draft, Writing-review and editing. Ning Du, Z., Yu, S., & Cai, C. (2024). Constrained community
+Wang: Funding acquisition, Conceptualization, detection and multistage multicost consensus in social
+Supervision, Writing–review and editing. Ming Tang: network large-scale decision-making. IEEE Transactions
+Methodology, Funding acquisition, Conceptualization, on Computational Social Systems, 11(1), 997–1012.
+Supervision, Writing–review and editing. https://doi.org/10.1109/TCSS.2023.3265701
+Garcia, D., Tolvanen, J., & Wagner, A. K. (2024).
+Strategic responses to algorithmic recommendations:
+Disclosure statement Evidence from hotel pricing. Management Science.
+https://doi.org/10.1287/mnsc.2022.03740
+No potential competing interest was reported by the
+Ge, R., Zheng, Z., Tian, X., & Liao, L. (2021). Human–
+authors.
+robot interaction: When investors adjust the usage of
+robo-advisors in peer-to-peer lending. Information
+Systems Research, 32(3), 774–785. https://doi.org/10.
+Funding
+1287/isre.2021.1009
+The work was supported by the National Natural Science Gong, K., Ma, W., Lei, W., & Goh, M. (2024). A dynamic
+Foundation of China. (72401052, 72434001), the National trust network and influence measure-based consensus
+Key R&D Program of China (No. 2021YFC3300200), the model for large-scale group decision-making with
+Social Science Planning Fund Project of Liaoning incomplete intuitionistic fuzzy preference relations.
+Province (No. L23AGL011) and the Fundamental Journal of the Operational Research Society, 75(6),
+Research Funds for the Central Universities 1157–1177. https://doi.org/10.1080/01605682.2023.
+(DUT23RC(3)052). 2237987
+Gou, X., Xu, Z., Liao, H., & Herrera, F. (2021).
+Consensus model handling minority opinions and non-
+References cooperative behaviours in large-scale group decision-
+making under double hierarchy linguistic preference
+Barrera Ferro, D., Brailsford, S., & Chapman, A. (2025).
+relations. IEEE Transactions on Cybernetics, 51(1), 283–
+Improving fairness in machine learning-enabled
+296. https://doi.org/10.1109/TCYB.2020.2985069
+affirmative actions: A case study in outreach activities
+Hermann, E., & Puntoni, S. (2024). Artificial intelligence
+in healthcare. Journal of the Operational Research and consumer behavior: From predictive to generative
+Society, 76(2), 363–374. https://doi.org/10.1080/ AI. Journal of Business Research, 180, 114720. https://
+01605682.2024.2354364 doi.org/10.1016/j.jbusres.2024.114720
+Beilby, K., & Hammarberg, K. (2024). ChatGPT: A reli- Jussupow, E., Spohrer, K., Heinzl, A., & Gawlitza, J.
+able fertility decision-making tool? Human (2021). Augmenting medical diagnosis decisions? An
+Reproduction (Oxford, England), 39(3), 443–447. investigation into physicians’ decision-making process
+https://doi.org/10.1093/humrep/dead272 with artificial intelligence. Information Systems
+Bell, J. J., Pescher, C., Tellis, G. J., & Fu€ller, J. (2024). Can Research, 32(3), 713–735. https://doi.org/10.1287/isre.
+AI help in ideation? A theory-based model for idea 2020.0980
+screening in crowdsourcing contests. Marketing Science, Laker, L. F., Froehle, C. M., Windeler, J. B., & Lindsell,
+43(1), 54–72. https://doi.org/10.1287/mksc.2023.1434 C. J. (2018). Quality and efficiency of the clinical deci-
+Ben-Arieh, D., & Easton, T. (2007). Multi-criteria group sion-making process: Information overload and
+consensus under linear cost opinion elasticity. Decision emphasis framing. Production and Operations
+20 J. ZHANG ET AL.
+Management, 27(12), 2213–2225. https://doi.org/10. Meng, F., Zhao, D., & Zhang, X. (2023). A fair consensus
+1111/poms.12777 adjustment mechanism for large-scale group decision
+Lareyre, F., Yeung, K. K., Guzzi, L., Di Lorenzo, G., making in term of Gini coefficient. Engineering
+Chaudhuri, A., Behrendt, C. A., Spanos, K., & Raffort, Applications of Artificial Intelligence, 126, 106962.
+J. (2023). Artificial intelligence in vascular surgical https://doi.org/10.1016/j.engappai.2023.106962
+decision making. Seminars in Vascular Surgery, 36(3), Mikalef, P., & Gupta, M. (2021). Artificial intelligence
+448–453. https://doi.org/10.1053/j.semvascsurg.2023.05. capability: Conceptualization, measurement calibration,
+004 and empirical study on its impact on organizational
+Liang, X., Guo, J., & Liu, P. (2024). A consensus model creativity and firm performance. Information &
+considers managing manipulative and overconfident Management, 58(3), 103434. https://doi.org/10.1016/j.
+behaviours in large-scale group decision-making. im.2021.103434
+Information Sciences, 654, 119848. https://doi.org/10. Naik, N., Hameed, B. M. Z., Shetty, D. K., Swain, D.,
+1016/j.ins.2023.119848 Shah, M., Paul, R., Aggarwal, K., Brahim, S., Patil, V.,
+Liang, Y., Ju, Y., Qin, J., Pedrycz, W., & Dong, P. (2023). Smriti, K., Shetty, S., Rai, B. P., Chlosta, P., & Somani,
+Minimum cost consensus model with loss aversion B. K. (2022). Legal and ethical consideration in artifi-
+based large-scale group decision making. Journal of the cial intelligence in healthcare: Who takes responsibility?
+Operational Research Society, 74(7), 1712–1729. https:// Frontiers in Surgery, 9, 862322. https://doi.org/10.3389/
+doi.org/10.1080/01605682.2022.2110002 fsurg.2022.862322
+Liang, H., Kou, G., Dong, Y., Chiclana, F., & Herrera- Patel, B. N., Rosenberg, L., Willcox, G., Baltaxe, D.,
+Lyons, M., Irvin, J., Rajpurkar, P., Amrhein, T., Gupta,
+Viedma, E. (2022). Consensus reaching with minimum
+R., Halabi, S., Langlotz, C., Lo, E., Mammarappallil, J.,
+cost of informed individuals and time constraints in
+Mariano, A. J., Riley, G., Seekins, J., Shen, L., Zucker,
+large-scale group decision-making. IEEE Transactions
+E., & Lungren, M. (2019). Human–machine partnership
+on Fuzzy Systems, 30(11), 4991–5004. https://doi.org/
+with artificial intelligence for chest radiograph diagno-
+10.1109/TFUZZ.2022.3165373
+sis. NPJ Digital Medicine, 2(1), 111. https://doi.org/10.
+Li, L., Jiao, S., Shen, Y., Liu, B., Pedrycz, W., Chen, Y., &
+1038/s41746-019-0189-7
+Tang, X. (2023). A two-stage consensus model for
+Ray, T. R., Kellogg, R. T., Fargen, K. M., Hui, F., &
+large-scale group decision-making considering dynamic
+Vargas, J. (2023). The perils and promises of generative
+social networks. Information Fusion, 100, 101972.
+artificial intelligence in neurointerventional surgery.
+https://doi.org/10.1016/j.inffus.2023.101972
+Journal of Neurointerventional Surgery, 16(1), 4–7.
+Li, S., Peng, Y., Shen, Y., Zhao, S., Shao, H., Bin, G., Guo,
+https://doi.org/10.1136/jnis-2023-020353
+Y., Yang, X., & Fan, C. (2024). Rolling bearing fault
+Rhee, C. K. (2021). Chronic obstructive pulmonary dis-
+diagnosis under data imbalance and variable speed
+ease research by using big data. The Clinical
+based on adaptive clustering weighted oversampling.
+Respiratory Journal, 15(3), 257–263. https://doi.org/10.
+Reliability Engineering & System Safety, 244, 109938.
+1111/crj.13305
+https://doi.org/10.1016/j.ress.2024.109938
+Saban, M., & Dubovi, I. (2024). A comparative vignette
+Li, L., Zhang, H., Peng, H., & Yang, Y. (2018). Nearest
+study: Evaluating the potential role of a generative AI
+neighbors based density peaks approach to intrusion
+model in enhancing clinical decision-making in nurs-
+detection. Chaos, Solitons & Fractals, 110, 33–40.
+ing. Journal of Advanced Nursing. https://doi.org/10.
+https://doi.org/10.1016/j.chaos.2018.03.010
+1111/jan.16101
+Ma, S., Lei, Y., Wang, X., Zheng, C., Shi, C., Yin, M., &
+Schwalbe, N., & Wahl, B. (2020). Artificial intelligence
+Ma, X. (2023). Who should I trust: AI or myself?
+and the future of global health. Lancet (London,
+Leveraging human and AI correctness likelihood to pro-
+England), 395(10236), 1579–1586. https://doi.org/10.
+mote appropriate trust in AI-assisted decision-making.
+1016/S0140-6736(20)30226-9
+Conference on Human Factors in Computing Systems
+Selby, D., Spriestersbach, K., Iwashita, Y., Bappert, D.,
+– Proceedings, 1–19. https://doi.org/10.1145/3544548.
+Warrier, A., Mukherjee, S., Asim, M. N., Kise, K., &
+3581058
+Vollmer, S. (2024). Quantitative knowledge retrieval
+Mahmud, H., Islam, A. K. M. N., Ahmed, S. I., &
+from large language models. arxiv preprint arxiv:
+Smolander, K. (2022). What influences algorithmic
+2402.07770.
+decision-making? A systematic literature review on Sorin, V., Klang, E., Sklair-Levy, M., Cohen, I., Zippel,
+algorithm aversion. Technological Forecasting and D. B., Balint Lahat, N., Konen, E., & Barash, Y. (2023).
+Social Change, 175, 121390. https://doi.org/10.1016/j. Large language model (ChatGPT) as a support tool for
+techfore.2021.121390 breast tumour board. NPJ Breast Cancer, 9(1), 44.
+Mahmud, H., Islam, A. K. M. N., Luo, X., & Mikalef, P. https://doi.org/10.1038/s41523-023-00557-8
+(2024). Decoding algorithm appreciation: Unveiling the Sturm, T., Gerlach, J. P., Pumplun, L., Mesbah, N., Peters,
+impact of familiarity with algorithms, tasks, and algo- F., Tauchert, C., Nan, N., & Buxmann, P. (2021).
+rithm performance. Decision Support Systems, 179, Coordinating human and machine learning for effective
+114168. https://doi.org/10.1016/j.dss.2024.114168 organization learning. MIS Quarterly, 45(3), 1581–1602.
+Malone, T., Rus, D., & Laubacher, R. (2020). Artificial https://doi.org/10.25300/MISQ/2021/16543
+intelligence and the future of work. MIT Work of the Tang, M., & Liao, H. (2021). From conventional group
+Future Research Brief. RB17–2020. decision making to large-scale group decision making:
+Meng, F. Y., Zhao, D. Y., Gong, Z. W., Chu, J. F., What are the challenges and how to meet them in big
+Pedrycz, W., & Yuan, Z. (2024). Consensus adjustment data era? A state-of-the-art survey. Omega, 100,
+for multi-attribute group decision making based on 102141. https://doi.org/10.1016/j.omega.2019.102141
+cross-allocation. European Journal of Operational Tang, M., Liao, H., Xu, J., Streimikiene, D., & Zheng, X.
+Research, 318(1), 200–216. https://doi.org/10.1016/j.ejor. (2020). Adaptive consensus reaching process with
+2024.05.003 hybrid strategies for large-scale group decision making.
+JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY 21
+European Journal of Operational Research, 282(3), 957– Wu, T., Liu, X., Qin, J., & Herrera, F. (2022). A new clus-
+971. https://doi.org/10.1016/j.ejor.2019.10.006 tering algorithm with preference adjustment cost to
+Te’eni, D., Yahav, I., Zagalsky, A., Schwartz, D., reduce the cooperation complexity in large-scale group
+Silverman, G., Cohen, D., Mann, Y., & Lewinsky, D. decision making. IEEE Transactions on Systems, Man,
+(2023). Reciprocal human-machine learning: A theory and Cybernetics: Systems, 52(8), 5271–5283. https://doi.
+and an instantiation for the case of message classifica- org/10.1109/TSMC.2021.3120809
+tion. Management Science. https://doi.org/10.1287/ Xu, Z. (2007). Some similarity measures of intuitionistic
+mnsc.2022.03518 fuzzy sets and their applications to multiple attribute
+Thuy, A., & Benoit, D. F. (2024). Explainability through decision making. Fuzzy Optimization and Decision
+uncertainty: Trustworthy decision-making with neural Making, 6(2), 109–121. https://doi.org/10.1007/s10700-
+networks. European Journal of Operational Research, 007-9004-z
+Xu, X. H., Du, Z. J., & Chen, X. H. (2015). Consensus
+317(2), 330–340. https://doi.org/10.1016/j.ejor.2023.09.
+model for multi-criteria large-group emergency deci-
+009
+sion making considering non-cooperative behaviours
+Tu, Y., Song, J., Xie, Y., Zhou, X., & Lev, B. (2024).
+and minority opinions. Decision Support Systems, 79,
+Facilitating large-scale group decision-making in social
+150–160. https://doi.org/10.1016/j.dss.2015.08.009
+networks: A bi-level consensus model with social influ-
+Xu, X., Wang, Y., Cheng, T. C. E., & Choi, T. M. (2024).
+ence. Information Fusion, 105, 102258. https://doi.org/
+Should live broadcasting platforms adopt artificial intel-
+10.1016/j.inffus.2024.102258
+ligence? A sales effort perspective. European Journal of
+Vasey, B., Nagendran, M., Campbell, B., Clifton, D. A.,
+Operational Research, 318(3), 979–999. https://doi.org/
+Collins, G. S., Denaxas, S., Denniston, A. K., Faes, L.,
+10.1016/j.ejor.2024.05.021
+Geerts, B., Ibrahim, M., Liu, X., Mateen, B. A., Mathur,
+Yu, S. M., Du, Z. J., Zhang, X. Y., Luo, H. Y., & Lin,
+P., McCradden, M. D., Morgan, L., Ordish, J., Rogers,
+X. D. (2022). Trust cop-k means clustering analysis
+C., Saria, S., Ting, D. S. W., … McCulloch, P. (2022).
+and minimum-cost consensus model considering vol-
+Reporting guideline for the early-stage clinical evalu-
+untary trust loss in social network large-scale decision-
+ation of decision support systems driven by artificial
+making. IEEE Transactions on Fuzzy Systems, 30(7),
+intelligence: DECIDE-AI. Nature Medicine, 28(5), 924–
+2634–2648. https://doi.org/10.1109/TFUZZ.2021.
+933. https://doi.org/10.1038/s41591-022-01772-9
+3089745
+Wang, C., Chen, X., Du, L., Zhan, Q., Yang, T., & Fang,
+Zhang, H., Kou, G., & Peng, Y. (2022). Large-scale peer-
+Z. (2020). Comparison of machine learning algorithms to-peer loan consensus based on minimum cost con-
+for the identification of acute exacerbations in chronic sensus. Journal of the Operational Research Society,
+obstructive pulmonary disease. Computer Methods and 73(10), 2326–2337. https://doi.org/10.1080/01605682.
+Programs in Biomedicine, 188, 105267. https://doi.org/ 2021.1981782
+10.1016/j.cmpb.2019.105267 Zheng, C., Wu, Y., Shi, C., Ma, S., Luo, J., & Ma, X.
+Wang, B., Yuan, T., & Rau, P. L. P. (2024). Effects of (2023). Competent but rigid: Identifying the gap in
+explanation strategy and autonomy of explainable AI empowering AI to participate equally in group decision-
+on human–AI collaborative decision-making. making. Conference on Human Factors in Computing
+International Journal of Social Robotics, 16(4), 791–810. Systems – Proceedings, 1–19. https://doi.org/10.1145/
+https://doi.org/10.1007/s12369-024-01132-2 3544548.3581131
