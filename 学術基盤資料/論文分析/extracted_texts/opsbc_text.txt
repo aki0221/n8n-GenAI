@@ -1,0 +1,2307 @@
+Expert Systems With Applications 250 (2024) 123803
+
+Contents lists available at ScienceDirect
+
+Expert Systems With Applications
+journal homepage: www.elsevier.com/locate/eswa
+
+OPSBC: A method to sort Pareto-optimal sets of solutions in multi-objective
+problems
+Pelayo S. Dosantos, Agustina Bouchet, Irene Mariñas-Collado ∗, Susana Montes
+Department of Statistics and Operation Research and Mathematics Didactics, C/ Leopoldo Calvo Sotelo, no 18, 33007, Oviedo, Spain
+
+ARTICLE
+
+INFO
+
+Keywords:
+Multi-objective problems
+Multi-criteria
+Pareto pruning
+Borda count
+Decision making
+
+ABSTRACT
+In recent decades, the significance of multi-objective problems has grown substantially. One of the most popular
+methods for solving these problems involves the construction of Pareto sets. Pareto sets are exponentially sized
+relative to the input size of the problem, and so the need to reduce, or at least order, them arises. This work
+proposes the order of Pareto solutions by Borda count, an approach that makes use of ranking methods to
+establish preferences among the optimal solutions. To evaluate the proposed approach, a comparative study
+is conducted, evaluating its performance in comparison to other widely used and well-established methods
+within this domain. Finally, a case study with real-world data is used to show how the methodology works.
+
+1. Introduction
+Multi-Objective Problems (MOPs) have become increasingly relevant in recent decades. These are decision problems characterized by
+having multiple, often conflicting, criteria and/or objectives. The term
+criteria in this context is used to refer to different attributes any decision
+may have (cost, risk, etc.), and the objectives are the functions used
+to aggregate those criteria. Following Ehrgott (2005) and Gunantara
+(2018), a general MOP can be written as:
+min 𝐹 (𝐱) = (𝑓1 (𝐱), … , 𝑓𝑚 (𝐱))
+subject to: 𝐱 ∈ 𝑈
+
+(1)
+
+where 𝑚 is the number of objective functions/criteria, 𝑈 is the feasible
+region and 𝑓𝑖 is 𝑖th objective function.
+MOPs are found in a variety of fields, such as engineering, finance,
+and agriculture (Shen, Dong, Wang, Li, & Wang, 2023). When an
+optimization problem has just one objective function, the course of
+action is relatively straightforward. The problem typically falls into one
+of three categories: infeasible, unbounded, or having a unique solution.
+Algorithms exist to identify and solve the problem if possible (Neumaier, 2004; Venter, 2010). However, the situation is not as assured
+in MOPs. It is usually impossible to optimize all different objective
+functions simultaneously.
+Due to this, the concept of Pareto set or Pareto-optimal set arises.
+The Pareto set contains all solutions such that there is no one that
+clearly outperforms the others. That is, 𝐱∗ ∈ 𝑈 belongs to the Pareto set
+if it does not exist another solution 𝐲 ∈ 𝑈 satisfying the following two
+
+conditions: (1)𝑓𝑖 (𝐲) ≤ 𝑓𝑖 (𝐱∗ ) ∀𝑖 = 1, … , 𝑚 and (2)𝑓𝑗 (𝐲) < 𝑓𝑗 (𝐱∗ ) for at
+least one 𝑗 = 1, … , 𝑚. The image of the Pareto set in the objective space
+is called the Pareto front. The inherent difficulty that appears once the
+Pareto set is found, is how to choose the best alternative among all of
+them. In addition, the Pareto size may be too large and the Decision
+Maker (DM) may find it impractical (Coello, Lamont, Van Veldhuizen,
+et al., 2007). For example, it has been proven that, in bi-criteria shortest
+path problems, the size of the Pareto set grows exponentially with
+the number of vertices of the graph (Hansen, 1980). The key in this
+situation is that, for a DM, it is mostly impossible to have an overall
+view of all the available solutions to make a sensible decision, and
+providing a subset of optimal solutions is more convenient. However,
+the process of generating a reduced Pareto set, also known as pruned
+Pareto set is far from trivial, and there are several approaches to face
+it.
+One intuitive idea is to use an aggregation function (Grabisch,
+2009), such as a weighted sum, to reduce the optimal set to just one
+final solution. Once the weights are determined by a DM, the Pareto
+solutions are evaluated on the aggregation and the optimal one is
+selected. However, it is more common to see in the literature that
+the aggregation of the objectives is performed at the beginning to
+transform the original MOP into a uni-objective optimization problem (Deb, 2014), and solve it by any classical method (see, for example,
+Amiri, Ekhtiari, and Yazdani (2011), Deng, Santos, and Curran (2020),
+Nelder and Mead (1965)). Nevertheless, there are more drawbacks than
+benefits. The use of weighted sums is very subjective and requires the
+
+∗ Corresponding author.
+
+E-mail addresses: suarezdpelayo@uniovi.es (P.S. Dosantos), bouchetagustina@uniovi.es (A. Bouchet), marinasirene@uniovi.es (I. Mariñas-Collado),
+montes@uniovi.es (S. Montes).
+https://doi.org/10.1016/j.eswa.2024.123803
+Received 30 November 2023; Received in revised form 24 February 2024; Accepted 19 March 2024
+Available online 26 March 2024
+0957-4174/© 2024 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/bync/4.0/).
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+DM to specify the weights at the beginning of the process. This can
+be difficult if the number of criteria is large, due to the fact that the
+preference of one criterion over another is usually vague and cannot
+be quantified with an exact value. In addition, as diverse criteria are
+considered, each with a different magnitude, the interpretation of the
+sum of all of them becomes ambiguous. More information on weighted
+sums applied in MOPs can be found in Odu and Charles-Owaba (2013).
+Another class of Pareto pruning techniques are the ones involving
+interactive algorithms. The main idea of the strategy is to ask the
+DM questions about the considered solutions in each iteration of the
+algorithm in order to guide it to the most preferred solutions or region
+of interest. Nonetheless, as mentioned by Ruiz, Luque, Miettinen, and
+Saborido (2015), having the DM be part of the whole process may be
+tedious, and a lot of facilities need to be implemented.
+There are also methods in which the DM sorts the objective functions in order of preference, so as to prioritize the optimization of some
+over others (Cvetkovic & Parmee, 2002; Jin & Sendhoff, 2002). The
+order is taken into consideration to provide, at least, a reduced set of
+desired solutions. The complication that can appear during this process
+is the possibility of contemplating extreme options that only focus on
+optimizing the best-ranked objectives and forget about the rest.
+Finally, there are several different methods for pruning the Pareto
+set whose approaches are more concrete than the previous ones or
+that focus on more specific aspects when selecting solutions such as
+diversity or distance to a reference point. These methods are discussed
+in the next section.
+Taking both the advantages and disadvantages of the different
+approaches into consideration, this paper proposes the Order of Pareto
+Solutions by Borda Count (OPSBC) method to provide the DM with an
+ordered subset from the Pareto set. The proposed approach does not
+require the use of weighted sums or similar techniques and involves the
+DM only at the final stage of the process. By comparing the objective
+functions, the result is a reduced Pareto set with a predetermined
+number of possible solutions. Moreover, the process can easily be
+adapted to take any preference rank into consideration. The proposed
+method is based on ranking methods to establish preferences among the
+optimal solutions. Ranking methods are usually studied in the field of
+social choice theory, in which several voters express their preferences
+over a set of alternatives in the form of rankings. The novelty lies in
+applying these ranking techniques to MOPs, where each objective can
+be considered a voter, and so all the solutions in the set can be ordered
+according to each criterion/objective function. Then, the rankings can
+be aggregated so that an ordered list of the possible solutions in the
+Pareto set is obtained. Moreover, with this approach, the different
+voters can be given more or less weight in the voting process, if it is
+desired, based on different preferences.
+The rest of the paper is organized as follows: Section 2 gives a
+short literature review on Pareto pruning strategies along with a brief
+introduction to ranking methods. Section 3 introduces the Borda count
+ranking rule, outlining its benefits and drawbacks. In Section 4, the
+OPSBC method is described; Section 5 compares the proposed method
+with commonly used Pareto pruning techniques. Section 6 shows an
+application with real data. Finally, in Section 7, a brief discussion of
+results and the conclusions drawn from the paper are presented.
+
+2017). When it is applied in MOPs, decision theory is used for choosing
+a solution, or a set of solutions, among all the optimal, incomparable
+ones. That is, after finding the Pareto optimal set, defining a method
+for selecting one (or a few) of the solutions.
+There exist different approaches to give the DM a reduced Pareto
+set. Torres, Pelta, Lamata, and Yager (2021) introduced a technique to
+prune the Pareto set by transforming every non-dominated solution into
+an interval and then using an interval comparison criteria to sort the
+optimal solutions. It is a good and complete approach, but the use of
+weighted sums to convert the possible solutions into intervals implies
+the problems previously mentioned in the introduction. That is, the
+loss of information due to the fact of aggregating targets with different
+magnitudes.
+Taboada and Coit (2008) proposed two methodologies to obtain a
+pruned Pareto set. The first one consists in generating random weights
+for the different objective functions and storing the solution that optimizes the weighted sum. This process is repeated several times and the
+pruned Pareto is formed by all the stored solutions. The other approach
+focuses on obtaining a subset of optimal solutions as diverse as possible,
+making use of 𝑘-means clustering technique. The term diversity in this
+context refers to covering the Pareto front as well as possible. This
+second approach, and some variants, due to the clustering techniques,
+have been widely used (see for example (Abubaker, Baharum, & Alrefaei, 2019; Brusco, 2017)). In Taboada and Coit (2008), they also
+suggest applying both techniques to get an even more reduced Pareto
+set if needed.
+Lai, Liu, and Hwang (1994) used the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method (Hwang, Yoon,
+Hwang, & Yoon, 1981) to give a solution to the Bow River Valley
+water quality management problem (Dorfman & Jacoby, 1969). The
+main idea of TOPSIS is to obtain a feasible solution that is as near
+as possible to the ideal solution and as far as possible from the worst
+one. The ideal solution is considered in terms of the image of the problem’s single objective functions at their best performances. The worst
+solution, or negative ideal solution, is defined analogously. That is, the
+worst possible values each objective function takes. The imposition of
+those two criteria transforms the MOP into two optimization problems.
+However, being close to the ideal solution does not always imply being
+far from the negative ideal solution. For that reason, optimizing both
+problems simultaneously is often impossible, and the DM has to find
+an adequate balance using a compromise function as in Yadollahi,
+Abd Majid, and Mohamad Zin (2015) to overcome this problem. One
+of the main benefits of this technique is that it provides the score of all
+solutions according to the compromise criterion. That way, the relative
+performance of them can be measured and a better reduction of the
+Pareto can be established. This is one of the reasons why it is a widely
+used approach to solve MOPs. A good review on TOPSIS applications
+can be found in Behzadian, Otaghsara, Yazdani, and Ignatius (2012).
+Ojha, Chakraborty, Singh, and Verma (2017) described an approach
+for finding just a region of interest or region of best compromise from
+the Pareto set. The DM has to specify, for each objective function,
+the amount of loss that is tolerated, taking as a reference the best
+feasible performance. The information is given to an algorithm, and the
+region of best compromise is presented to the DM afterwards. Although
+this strategy reduces computational time significantly, the fact that
+not every solution is considered may lead to a least preferred solution
+despite the guided search.
+Antipova et al. (2015) proposed a method for Pareto pruning using
+two reduction filters. The first filter eliminates similar solutions based
+on a predefined tolerance, while the second filter computes the set
+of efficient solutions by gradually reducing the number of evaluated
+objectives. However, the method’s limitation is that it may overlook
+the significance of certain objectives when excluding others.
+Noghin (2017) defined an ordering relationship between solutions
+based on the information provided by the DM. The DM indicates a
+subset of objectives that they prefer over another and specify the
+
+2. Pruning methods background
+Decision theory is the study of the process of making decisions under
+conditions of uncertainty (Berger, 2013). It seeks to identify the values,
+uncertainties, and other issues that should be considered when making
+decisions and to determine how to weight these factors in order to
+arrive at the most appropriate decision. It is a science field studied
+in different areas, including statistics, philosophy, mathematics, and
+computer science. It has been widely used for various purposes, such as
+facility location (Simic, Karagoz, Deveci, & Aydin, 2021), medicine (Yu,
+Chen, Wu, & Tan, 2021) and product design (Ma, Chu, Xue, & Chen,
+2
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Table 1
+Three different rankings for five items.
+
+amount of loss they are willing to lose on the less desired objectives
+if in exchange they obtain one unit of gain on the desired ones. With
+this information, objective functions are added to the problem that
+cause the reduction of the Pareto set. The problem that arises with
+this method is the concreteness required by the DM in specifying their
+preferences.
+de la Fuente, Vega-Rodríguez, and Pérez (2018) used the hypervolume as a unitary indicator and quality metric to quantify the extent of
+space occupied by a set of non-dominated solutions within the objective
+space. When an number of optimal solutions is desired, maximizing
+their hypervolume is a way to ensure diversity in the selection as
+well as a good overall performance (Petchrompo, Wannakrairot, &
+Parlikad, 2022). A desired number of solutions is randomly selected
+and their hypervolume is calculated with respect to a reference point.
+Then, another solution is chosen and it is checked if the hypervolume
+increases by changing it for one of the solutions already considered.
+If this happens, the set of solutions is updated by replacing the new
+one with the one that makes the hypervolume smaller. This process is
+repeated until a stopping criterion is reached, which is usually a fixed
+number of iterations or if the solution set is not updated in another
+defined number of repetitions. This is a very complete approach as it
+focuses simultaneously on achieving a diverse and optimal pruned set.
+Hosseininasab, Shetab-Boushehri, Hejazi, and Karimi (2018) extended the idea of identifying knee solutions in the Pareto set introduced by Das (1999). The aim of the approach is to find the regions in
+the Pareto front that present the best trade-offs among all objectives.
+That is, a small improvement in any one of the objectives leads to a
+large deterioration in at least another of them.
+In general, there is not an optimal Pareto pruning method. Each one
+presents certain advantages and disadvantages. For more information
+related to Pareto pruning methods, see Petchrompo, Coit, et al. (2022).
+The methodology proposed in this paper departs from a different
+perspective than the approaches used for this purpose and aims to be
+competitive with them. It is based on ranking methods. Ranking theory
+is used in a variety of contexts, including decision-making, resource
+allocation, game theory, and social choice. An overall view on the
+topic and on different ranking methods can be found in Balinski and
+Laraki (2007), Nurmi (2012). The proposed approach addresses the
+challenges mentioned by ordering the Pareto set without aggregating
+targets with different magnitudes. It eliminates the need to specify
+preferences between criteria, and allows the decision maker to choose
+the size of the pruned Pareto set according to their requirements. In this
+paper, the Borda count (De Borda, 1784), a very well-known ranking
+aggregation rule and one of the most used ones in a wide variety of
+contexts (see, for example, Ecer (2021), Min et al. (2022)), is employed
+to accomplish the task of reducing the Pareto optimal set in a MOP.
+
+Voter
+
+Ranking
+
+𝑣1
+𝑣2
+𝑣3
+
+𝑎3 ≻ 𝑎2 ≻ 𝑎4 ≻ 𝑎5 ≻ 𝑎1
+𝑎3 ≻ 𝑎2 ≻ 𝑎4 ≻ 𝑎1 ∼ 𝑎5
+𝑎4 ≻ 𝑎5 ≻ 𝑎1 ≻ 𝑎3 ≻ 𝑎2
+
+1784), which counts the number of times an alternative is preferred
+over another in each ranking. The reason for this choice is that it is the
+aggregation ranking rule that satisfies more of the desirable properties
+in this context (Young, 1974). According to Felsenthal and Machover
+(2012), these fulfilled properties are:
+• Condorcet losers are never elected as first option. An alternative or
+item 𝑎𝑖 is said to be a Condorcet loser if it is ranked below every
+other item 𝑎𝑗 (𝑗 ≠ 𝑖) by the majority of voters. In such cases, 𝑎𝑖
+never obtains the highest number of Borda points.
+• Absolute losers are never elected as first option. If the majority of
+voters rank an item 𝑎𝑖 as the worst, it is never elected as the best
+option.
+• Pareto dominance is respected. If an item 𝑎𝑖 is always preferred over
+an item 𝑎𝑗 , 𝑎𝑖 receives more points than 𝑎𝑗 .
+• Respect additional support paradox. If an item 𝑎𝑖 has the largest
+amount of Borda points under a specific ranking and a voter
+changes his preferences and moves 𝑎𝑖 to a better position while
+keeping the other items in the same correlative order, 𝑎𝑖 will still
+have the largest amount of points.
+• Union of disjoint ranking profiles respect the winner. If an item 𝑎𝑖
+has the largest amount of Borda points in several disjoint ranking
+profiles, it will still be the most preferred item if the union of all
+profiles is considered.
+• Respect no-show paradox. A voter will not obtain a more preferable
+ranking outcome if they decide not to vote.
+• Respect Inversion paradox. If an item 𝑎𝑖 has the largest amount of
+Borda points and all rankings are inverted, 𝑎𝑖 will no longer be
+the most preferred item.
+The Borda count is an aggregation method used in decision-making
+theory when a profile of rankings is presented and a single ranking
+is required. Before explaining in detail how the final ranking is constructed, the notion of outranking matrix (Lansdowne, 1996) must be
+introduced. It is a matrix 𝑂 = [𝑜𝑖𝑗 ]𝑛𝑖,𝑗=1 where 𝑜𝑖𝑗 (𝑖, 𝑗 = 1, … , 𝑛 and 𝑖 ≠ 𝑗)
+is the number of times 𝑎𝑖 ≻ 𝑎𝑗 plus half of the times 𝑎𝑖 ∼ 𝑎𝑗 , with 𝑜𝑖𝑖 = 0
+for a given profile of rankings 𝜋𝑚𝑛 . By definition, 𝑜𝑖𝑗 + 𝑜𝑗𝑖 = 𝑚 if 𝑖 ≠ 𝑗.
+For the profile of rankings shown in Table 1, the outranking matrix is:
+⎛0
+⎜2
+⎜
+𝑂=⎜ 2
+⎜3
+⎜
+⎝2.5
+
+3. The borda count’s background
+The proposed method makes use of a well-known technique. Nevertheless, a reminder of the necessary concepts is provided below in
+order to establish the notation directly in the case of MOPs. Its primary
+foundation is built on voting ranking rules. Let 𝒜 = {𝑎1 , … , 𝑎𝑛 } be a set
+with 𝑛 items or alternatives. Let 𝒱 = {𝑣1 , … , 𝑣𝑚 } be a set of 𝑚 voters
+that express their preference order among all the items in 𝒜 through
+a ranking. In a ranking, the order of preference between two items is
+indicated as 𝑎𝑖 ≻ 𝑎𝑗 if 𝑎𝑖 is preferred over 𝑎𝑗 or as 𝑎𝑖 ∼ 𝑎𝑗 if 𝑎𝑖 and
+𝑎𝑗 are equally ranked (𝑖 ≠ 𝑗). A collection of 𝑚 rankings for 𝑛 items is
+called a profile of rankings and is denoted as 𝜋𝑚𝑛 . Table 1 shows a profile
+of rankings 𝜋35 . Then, the problem is how to aggregate the profile of
+rankings to get a final ranking in order to make a fair decision.
+Several aggregation ranking rules are applied nowadays in different
+scenarios (Dopazo & Martínez-Céspedes, 2017; Rico, Vela, & Díaz,
+2023). Some of them are the plurality criterion (Yeh, 2008), approval
+voting (Weber, 1995) or the Kemeny ranking (Kemeny, 1959). The
+proposed method uses the Borda count aggregating rule (De Borda,
+
+1
+0
+3
+1
+1
+
+1
+0
+0
+1
+1
+
+0
+2
+2
+0
+0
+
+0.5⎞
+2⎟
+⎟
+2⎟
+3⎟
+⎟
+0⎠
+
+(2)
+
+As previously mentioned, Borda’s method entails awarding one
+point to each item for every item rated lower in each ranking. In terms
+∑
+of the outranking matrix, the rule means that item 𝑎𝑖 gets 𝑛𝑗=1 𝑜𝑖𝑗
+points, that is, the sum of the elements of row 𝑖. Table 2 shows the
+Borda count for the profile of rankings in Table 1. Thus, the final
+ranking is 𝑎3 ≻ 𝑎4 ≻ 𝑎2 ≻ 𝑎5 ≻ 𝑎1 and the preferred alternative
+according to this method is 𝑎3 with 9 points.
+It is also interesting to evaluate the drawbacks of Borda’s method.
+According to Felsenthal and Machover (2012), the desired properties
+that the Borda count does not follow are:
+• Majority criteria: If an item is the most preferred one for more than
+half of the voters, it has to be the best option in the final ranking.
+However, not fulfilling this properties is not a big inconvenience.
+3
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+Table 2
+Borda count of rankings in Table 1.
+Item
+
+Borda count
+
+𝑎1
+𝑎2
+𝑎3
+𝑎4
+𝑎5
+
+0+1+1+0+0.5 = 2.5
+2+0+0+2+2 = 6
+2+3+0+2+2 = 9
+3+1+1+0+3 = 8
+2.5+1+1+0+0 = 4.5
+
+(𝑓𝑗 ) in the problem as the voters (𝑣𝑗 ) introduced in Section 3. Thus,
+the number of rankings will match the number of objective functions
+to be optimized. Then, for each objective function, solutions are sorted
+from optimal to worst creating the rankings. After that, the profile of
+rankings is aggregated using the Borda count generating a natural order
+of preference between the optimal solutions. Finally, if the DM asks
+for 𝑝 solutions to make the final decision, they are given according to
+their score. If there is a tie in the position 𝑝 of the ranking, the most
+appropriate action would be to display the tied solutions along with
+the one occupying that position, or not display any at all, as they are
+equally important for the method. In any case, this decision should
+be made by the DM. The described procedure can be seen in Fig. 1.
+Moreover, Algorithm 1 shows the pseudo-code of the methodology. In
+the algorithm, 𝐗 is the set of all Pareto optimal solutions (𝐱𝟏 , … , 𝐱𝐧 ),
+𝐅 is the set of all objective functions (𝑓1 , … , 𝑓𝑚 ) and 𝑝 is the desired
+number of solutions.
+Algorithm 1: OPSBC
+
+Suppose an item is the best for five voters but also the worst for
+four. Let another item be the best one for those four voters and
+the second choice for the others. It is sensible to put that second
+item as the first option in the aggregated ranking.
+• Condorcet winner paradox: An alternative 𝑎𝑖 is defined as a Condorcet winner if it beats all other alternatives in pairwise comparison (Koch & Mitlöhner, 2009). If there is a Condorcet winner
+in a profile of rankings, Borda’s method may not consider it the
+best alternative. However, a similar situation to the previous one
+can occur, so it is not necessarily bad not to fulfill this property
+either.
+• Truncation paradox: By leaving some of the items unranked or
+considering them equally desirable at the end of their ranking,
+a voter can compel a more favorable final ranking for them when
+the Borda count is applied. However, in MOPs, voters do not
+have free will, as they are the different objective functions of a
+multi-objective problem.
+• Subset choice condition: After calculating the final ranking, if one of
+the alternatives is removed from the rankings and the rest are kept
+in the same order, the winner must be the same as before. The
+Borda count does not satisfy this condition. In the example shown
+in Table 1, if the item 𝑎2 is removed, then 𝑎3 is no longer the most
+desired one, and 𝑎4 becomes the most preferred. Although this is
+indeed a problem of the method, it also supports the necessity
+of finding a large Pareto set in MOPs and not put the focus on a
+specific region of it.
+• Strategic voting: If a voter knows the preferences of the rest of
+the voters, they can lie about their priorities to obtain a better
+result. The Borda count may be affected by the strategic voting.
+Nonetheless, as in the truncation paradox, the voters cannot lie
+in the context of MOPs.
+
+Data: 𝐗, 𝐅, 𝑝
+Result: Pruned Pareto with 𝑝 solutions = 𝑃 𝑃
+𝑃𝑅 ← ∅ ;
+/* Initialize profile of ranking to empty
+
+set */
+foreach 𝑓𝑗 ∈ 𝐅 do
+𝑟𝑎𝑛𝑘𝑖𝑛𝑔 ← sort all solutions in 𝐗 according to 𝑓𝑗 ;
+⋃
+𝑃 𝑅 ← 𝑃 𝑅 𝑟𝑎𝑛𝑘𝑖𝑛𝑔;
+foreach 𝑥𝑖 ∈ 𝐗 do
+𝑝𝑜𝑖𝑛𝑡𝑠𝑗 ← Borda count for item 𝑥𝑗 ;
+𝑜𝑟𝑑𝑒𝑟 ← sort (𝑝𝑜𝑖𝑛𝑡𝑠1 , … , 𝑝𝑜𝑖𝑛𝑡𝑠𝑛 );
+/* decreasing order */
+𝑃 𝑃 ← solutions associated with (𝑜𝑟𝑑𝑒𝑟[1], … , 𝑜𝑟𝑑𝑒𝑟[𝑝]);
+The following example illustrates the simplicity and utility of the
+method.
+4.1. Example of the OPSBC method
+Imagine a particular MOP formulated in terms of (1), with 𝑚 = 4,
+is solved finding the Pareto optimal set 𝑃 . Without loss of generality,
+suppose 𝑃 is the Pareto optimal set and contains five non-dominated
+solutions {𝐱𝟏 , 𝐱𝟐 , 𝐱𝟑 , 𝐱𝟒 , 𝐱𝟓 } with the associated objective values shown
+in Table 3. The procedure would be exactly the same if more objective
+functions, different objective values or another amount of solutions had
+been considered.
+The outranking matrix for all alternatives as well as the corresponding profile of rankings are shown in Table 4. Solutions 𝐱𝟏 , 𝐱𝟐 , 𝐱𝟑 , 𝐱𝟒 , 𝐱𝟓
+get 6, 7, 9, 8 and 10 points respectively. Therefore, in terms of preference, the order of the solutions within the Pareto set is 𝐱𝟓 ≻ 𝐱𝟑 ≻
+𝐱𝟒 ≻ 𝐱𝟐 ≻ 𝐱𝟏 . If a decision maker wishes to select a desired number of
+non-dominated solutions, they will be provided in this order.
+
+Having studied other classical methods of ranking theory and seeing
+that not only is the Borda account one of the most widely used but also
+the one that gives the fewest problems when applied to MOPs, it has
+been considered the best option for the required purpose.
+4. The OPSBC method
+
+4.2. WOPSBC: introducing subjectivity
+To address the challenges encountered in MOP Pareto pruning techniques, the Order of Pareto Solutions by Borda Count (OPSBC) method,
+a novel approach based on ranking theory, is proposed. By drawing
+upon concepts from ranking theory, we aim to overcome the limitations
+and issues associated with existing methods. More specifically, the main
+advantages are:
+
+The OPSBC method assigns equal importance to each objective
+function. This may be seen as a weakness of the method. Nevertheless,
+it has been a deliberate decision to describe the method with this
+restriction, as in a wide variety of problems, there is not enough
+information available or it is not clear that a preference relationship
+exists among the objective functions. However also it offers flexibility
+for modifications, accommodating additional information or subjective
+inputs in the decision-making process if it is required. This flexibility
+leads to the WOPSBC (Weighted Order of Pareto Solutions by Borda
+Count) variation.
+It only needs quantifying the relative importance of each objective
+function and translating it into weights. This can be achieved by
+either repeating the ranking provided by each objective function the
+appropriate number of times or by weighting the Borda points of each
+objective’s ranking using the assigned weights before final aggregation.
+An example of WOSPBC application is included in the case study
+presented in Section 6.
+
+• Avoidance of weighted sums or aggregation functions that overlook magnitude incompatibilities.
+• Versatility in reducing the Pareto set to any requested number of
+elements.
+• Incorporation of subjectivity only at the conclusion of the procedure.
+• Ease of integrating decision-maker preferences.
+In the context of a MOP, each solution (𝐱𝐢 ) within the Pareto set
+can be regarded as an item (𝑎𝑖 ) that can be ranked based on various
+criteria. What this paper suggests is considering the objective functions
+4
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Fig. 1. OPSBC method procedure.
+Table 3
+Objective functions for different solutions in Pareto set.
+Solution
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+𝐱𝟏
+𝐱𝟐
+𝐱𝟑
+𝐱𝟒
+𝐱𝟓
+
+43
+60
+71
+25
+18
+
+0.72
+0.31
+0.25
+0.58
+0.49
+
+1
+3
+6
+2
+4
+
+900
+500
+225
+780
+350
+
+cluster to be included in the pruned Pareto set. Unlike k-means, which
+determines the centroid based on the mean of the data points within a
+cluster, k-medoids selects actual data points as cluster representatives.
+This characteristic ensures that the medoid derived from the algorithm
+corresponds to a feasible solution within the Pareto optimal set.
+Taking into account that, by definition, every solution in the Pareto
+set is optimal, the comparison of methods cannot be based solely on
+the solutions obtained by each method as it would not be fair. This
+comparison aims to highlight the main differences observed when using
+the different selected methods in the Pareto pruning problem. Due
+to the non-comparability of solutions, the study has been conducted
+in the most pragmatic and impartial manner possible. Advanced and
+sophisticated methods often entail substantial computational costs.
+Furthermore, given the current scale of data and the complexity of
+the problem, it is often impractical to employ such methods in realworld scenarios. Therefore, it becomes crucial to evaluate methods not
+only based on their solution quality but also considering their execution
+time. The objective is to identify efficient solutions that provide optimal
+results while remaining practically feasible. For this reason, in addition
+to studying the dissimilarity between solutions, the mean running time
+of the methods when obtaining pruned Pareto sets is considered as an
+impartial criterion in the comparison.
+As the main focus is not on solving MOPs but on comparing the
+performance of the Pareto pruning techniques, multiple Pareto sets
+have been randomly generated following the approach in Torres et al.
+(2021). The generation of these sets takes into account the number
+of objectives (𝑚), the number of iterations and the lower and upper
+bounds of each objective function.
+
+Table 4
+Profile of rankings and outranking matrix associated to Table 3.
+Objective
+
+Ranking
+
+𝑓1
+𝑓2
+𝑓3
+𝑓4
+
+𝐱𝟓 ≻ 𝐱𝟒 ≻ 𝐱𝟏 ≻ 𝐱𝟐 ≻ 𝐱𝟑
+𝐱𝟑 ≻ 𝐱𝟐 ≻ 𝐱𝟓 ≻ 𝐱𝟒 ≻ 𝐱𝟏
+𝐱𝟏 ≻ 𝐱𝟒 ≻ 𝐱𝟐 ≻ 𝐱𝟓 ≻ 𝐱𝟑
+𝐱𝟑 ≻ 𝐱𝟓 ≻ 𝐱𝟐 ≻ 𝐱𝟒 ≻ 𝐱𝟏
+
+⎛0
+⎜2
+⎜
+𝑂 = ⎜2
+⎜3
+⎜
+⎝3
+
+2
+0
+3
+2
+2
+
+2
+1
+0
+2
+2
+
+1
+2
+2
+0
+3
+
+1⎞
+2⎟
+⎟
+2⎟
+1⎟
+⎟
+0⎠
+
+5. Comparative study
+To analyze and compare the efficiency or effectiveness of our proposal, this section presents a comprehensive comparative study, selecting three of the most commonly used methods. This analysis will
+enable us to examine and contrast the capabilities and results of our
+proposal against these established techniques in the task of Pareto
+pruning. The methods under consideration include the hypervolume
+approach (de la Fuente et al., 2018), TOPSIS (Lai et al., 1994) and
+k-medoids clustering (Kaufman & Rousseeuw, 2009).
+There are two main reasons for including these specific methods in
+the comparison. First of all, the OPSBC and the considered methods
+are all post-optimality techniques. That is, they start from a preexisting Pareto set and prune it through their associated procedure.
+Since it would not make sense to compare the proposed method with
+other pre-optimality methods already known (see for example KulturelKonak, Coit, and Baheranwala (2008), Mohammadi, Omidvar, and Li
+(2012)), it has been deemed appropriate to include only the previously mentioned techniques. On the other hand, two of the methods
+(hypervolume and k-medoids) take into account the diversity of solutions in the pruned Pareto set, while TOPSIS focuses on sorting all
+the provided solutions and retaining the ones with better scores. By
+including these techniques, we can compare the OPSBC method with
+TOPSIS, which aims to produce a similar type of output, as well as two
+other approaches that tackle the problem from a different perspective.
+It is important not to overlook the distinct viewpoints offered by these
+methods.
+While both k-means and k-medoids are popular clustering techniques, the preference for k-medoids over k-means, also supported
+in Brusco (2017), is justified because it produces feasible solutions. After running the cluster algorithm, a representative is chosen from each
+
+First, two non-dominated vectors in the objective space are created
+with their components between the lower and upper bounds. Then,
+until the number of iterations is reached, more non-dominated vectors
+are generated and added to the final set. Finally, due to the generation
+process, it cannot be assured that all elements of the set belong to the
+Pareto front, so those that do not satisfy this condition are removed.
+The pseudo-code for the generation of the Pareto fronts is shown in
+Algorithm 2. In the code, 𝑖𝑡𝑒𝑟 is the desired number of iterations, 𝑚 is
+the number of objective functions to be included in the Pareto front, 𝑟
+is a number in (1, ∞) to initialize the Pareto front the two vectors above
+mentioned and 𝑙𝑜𝑤𝑒𝑟 and 𝑢𝑝𝑝𝑒𝑟 are vectors of length 𝑚 containing the
+lower and upper bounds for each objective function.
+In this study, Pareto fronts from 3 to 6 objectives and sizes from
+100 to 2000 by steps of 100 have been considered, and without loss of
+generality, the lower and upper bounds for the objective functions are
+0 and 1 respectively (𝑓𝑖 (𝑥) ∈ (0, 1) ∀𝑥 ∈ 𝑈 ∀𝑖 ∈ {1, … , 𝑚}).
+5.1. Time comparison
+To compare the running time of the methods, 50 Pareto fronts were
+analyzed for each combination of the number of objectives and the size
+5
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Fig. 2. Mean running time (in seconds) of various Pareto pruning methods for different numbers of objectives, based on the size of the Pareto set.
+
+across different numbers of objectives and depending on the Pareto
+set size. This allows for the observation of the evolution of the mean
+time in relation to the number of criteria. As seen in Fig. 3, only
+the hypervolume method exhibits a clear linear relationship with the
+size of the Pareto set. However, this linearity is due to the stopping
+criteria of the algorithm, which are defined as a linear function of
+the set size. Specifically, the algorithm terminates if no point in the
+pruned Pareto set is updated after 2𝑁 iterations, or if it has not
+completed after 5𝑁 iterations, where 𝑁 is the size of the Pareto set.
+The clear linear pattern observed in the execution time indicates that
+the algorithm usually terminates when the number of iterations reaches
+5𝑁, suggesting that the hypervolume method has not found the desired
+optimal subset in most of the occasions. It has been tested to remove the
+stopping condition on the maximum number of iterations, thus forcing
+the algorithm to find the optimal case, and it has been found that the
+execution time increases by approximately 16%, although the solutions
+obtained do not differ notably from the others. Additionally, it can be
+observed that as the number of objectives increases, the execution time
+slightly increases due to the increased number of operations required
+to calculate the hypervolumes.
+Another point that should be noted is that for the k-medoids technique, as the number of criteria increases, it becomes easier to detect
+differences between clusters, resulting in a decrease in the average
+execution time. Therefore, this method could be considered when
+dealing with a problem that has a high number of objective functions.
+Finally, regarding the OPSBC method, it is worth noting that despite
+observing a linear increasing trend based on the size of the Pareto
+set, it is important to pay attention to the relatively smaller ranges
+of execution time compared to the other methods. Consequently, it
+becomes very difficult to determine if the number of objective functions
+in the problem actually influences the method’s execution time. If the
+TOPSIS graph (Fig. 3(a)) is zoomed in on the first Pareto sizes, a
+slightly similar behavior can be observed, as the scale of that part of
+the diagram is also smaller, as it can be seen in Fig. 4.
+To conclude this part of the analysis, considering that the OPSBC
+method has no preference for any objective function unless specified by
+
+Algorithm 2: Generate Pareto
+Data: 𝑖𝑡𝑒𝑟; 𝑚; 𝑟; 𝑙𝑜𝑤𝑒𝑟; 𝑢𝑝𝑝𝑒𝑟
+Result: Pareto front = 𝑃 𝐹
+𝑥𝑙 ← 𝑙𝑜𝑤𝑒𝑟 + (𝑢𝑝𝑝𝑒𝑟 − 𝑙𝑜𝑤𝑒𝑟)∕𝑟;
+𝑥𝑢 ← 𝑢𝑝𝑝𝑒𝑟 + (𝑙𝑜𝑤𝑒𝑟 − 𝑢𝑝𝑝𝑒𝑟)∕𝑟;
+if 𝑚 is even then
+𝑃1 ← (𝑥𝑙 [1], 𝑥𝑢 [2], … , 𝑥𝑢 [𝑚]);
+𝑃2 ← (𝑥𝑢 [1], 𝑥𝑙 [2], … , 𝑥𝑙 [𝑚]);
+else
+𝑃1 ← (𝑥𝑙 [1], 𝑥𝑢 [2], … , 𝑥𝑢 [𝑚 − 1], 𝑥𝑙 [𝑚]);
+𝑃2 ← (𝑥𝑢 [1], 𝑥𝑙 [2], … , 𝑥𝑙 [𝑚 − 1], 𝑥𝑢 [𝑚]);
+⋃
+𝑃 𝐹 ← 𝑃1 𝑃2 ;
+𝑐𝑜𝑢𝑛𝑡 ← 0;
+while 𝑐𝑜𝑢𝑛𝑡 < 𝑖𝑡𝑒𝑟 do
+𝑖𝑡𝑒𝑚 ← random vector ∈ [𝑚𝑖𝑛(𝑃 𝐹 ), 𝑢𝑝𝑝𝑒𝑟];
+if 𝑖𝑡𝑒𝑚 is dominated in 𝑃 𝐹 then
+𝑖𝑡𝑒𝑚[𝑟𝑎𝑛𝑑] ← one value ∈ [𝑙𝑜𝑤𝑒𝑟, 𝑚𝑖𝑛(𝑃 𝐹 )];
+⋃
+𝑃 𝐹 ← 𝑃 𝐹 𝑖𝑡𝑒𝑚;
+𝑖𝑡𝑒𝑟 ← 𝑖𝑡𝑒𝑟 + 1;
+remove dominated rows in 𝑃 𝐹 ;
+
+of the optimal set. For each Pareto front, 10 solutions were selected
+(𝑝 = 10) as it has been considered a reasonable and manageable number
+of options for a DM. The mean time taken by the methods for the 50
+fronts was recorded. As it can be seen in Fig. 2, the OPSBC method
+showed the fastest average performance, followed by TOPSIS. It must
+be highlighted that both techniques provide the user with the total
+score of all solutions, making them more informative compared to the
+other two methods. Additionally, the running time appears to have a
+linear relationship with the size of the Pareto front for all methods,
+except for k-medoids.
+The results can also be illustrated as in Fig. 3, which displays
+the mean running time (in seconds) for each Pareto pruning method
+6
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Fig. 3. Mean running time (in seconds) for each Pareto pruning method for different numbers of objectives, based on the size of the Pareto set.
+
+observed that the number of objectives does not seem to influence
+computation times. Fig. 5 shows the proportion of times out of a total
+of 500 that each method had a better time for Pareto set sizes ranging
+from 10 to 600. The time comparison was carried out with standardized
+Pareto sets, so that part of the process was not taken into account when
+calculating the execution time of the arithmetic mean. The figure shows
+the mentioned proportion in stead of the mean times because very little
+could be seen if they were displayed.
+5.2. Dissimilarity between solutions
+Another approach to compare the methods is by assessing the dissimilarity between the solutions they provide. To do this, the Euclidean
+distance in the objective space has been used:
+√
+√𝑚
+√∑
+(3)
+𝑑(𝐱𝐢 , 𝐱𝐣 ) = √ (𝑓𝑠 (𝐱𝐢 ) − 𝑓𝑠 (𝐱𝐣 ))2 ,
+
+Fig. 4. TOPSIS mean running time (in seconds) for different number of objectives and
+Pareto sets of sizes 100 to 500.
+
+𝑠=1
+
+where 𝑚 is the number of objective functions, 𝑓𝑠 represents the 𝑠th
+objective function and 𝐱𝐢 and 𝐱𝐣 are the 𝑖th and 𝑗th Pareto optimal
+solutions respectively.
+For each Pareto front, a dissimilarity matrix 𝐷 is calculated, where
+each element 𝑑𝑖𝑗 = 𝑑(𝐱𝐢 , 𝐱𝐣 ), the distance between pruned solutions
+vectors 𝐱𝐢 and 𝐱𝐣 in the objective space. Since it does not make sense to
+aggregate distances between solutions obtained from different Pareto
+sets, to ensure meaningful comparisons, a separate distance matrix
+has been calculated for Pareto sets containing 500, 1000, and 1500
+solutions for 3 and 6 objective functions. After computing the distances
+for each case, they have been standardized by dividing them by the
+maximum distance in each matrix. The results are shown in terms of
+heatmaps in Figs. 6 to 8 where the pruned Pareto sets for each method
+consist of 10 different solutions.
+
+the DM, one may wonder about the computation times when comparing
+the proposed method with a simple arithmetic mean. What the mean
+approach does is simply calculate the average of the objective functions
+for each solution in the Pareto set and order them from lowest to
+highest. The pruned solutions are the first ones in this order. It is worth
+noting that to correctly perform the objective aggregation provided by
+the mean, they must be standardized beforehand so that the scales of
+each objective do not influence the obtained order.
+After conducting some experiments, no difference in computation
+times between both methods has been observed when the Pareto set
+size is small (200 or less). Beyond that threshold, although in most
+cases they still have similar times for the computer, the OPSBC method
+begins to stand out compared to the arithmetic mean. It has also been
+7
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Fig. 5. Proportion of times the mean and the OPSBC method outperform each other in computation time for different number of objective functions and Pareto sizes.
+
+Fig. 6. Standardized distances, measured in the objective space, between pruned solutions given by each method for a Pareto set with size 500.
+
+Based on the heatmaps, the dissimilarity in terms of the distance
+between the solutions produced by the methods does not appear to
+depend on the size of the Pareto set. Although the effect diminishes
+for the cases were 6 objective functions are considered. It can also be
+observed that TOPSIS produces the most distinct solutions, both within
+its own set of solutions and when compared to the other methods. A
+similar behavior is observed with k-medoids, as darker regions can be
+seen in the heatmaps.
+On the contrary, both the OPSBC and the hypervolume methods
+produce solutions that are very close in the objective space. For the
+hypervolume method, this confirms the fact that the algorithm does not
+reach the optimality stopping criterion, as one of the purposes of the
+technique is to search for solutions that cover the Pareto front as well as
+possible. Therefore, the estimated average times for the hypervolume
+method seen in Section 5.1 are actually higher than indicated. This
+means that the differences compared to other methods are greater
+than what is represented in Figs. 2 and 3. Regarding the OPSCB,
+the similarity observed among the solutions can be interpreted as an
+indication of consistency in the selected solutions. This implies that
+
+there is a region in the objective space where the majority of objective
+functions are in close proximity to their optima.
+Another way to compare the solutions produced by the methods is
+in terms of diversity within the Pareto front. As previously mentioned,
+the k-medoids method aims to provide solutions that best summarize
+the Pareto front, while the hypervolume method simultaneously seeks
+that diversity while attempting to optimize the objective functions as
+much as possible. To characterize this diversity in the solutions, the
+Dunn index 𝜈𝐷 (Dunn, 1973) can be used:
+{
+}
+𝑚𝑖𝑛 𝑚𝑖𝑛{𝑑(𝐶𝑖 , 𝐶𝑗 )}
+𝑖
+𝑗≠𝑖
+𝜈𝐷 =
+; 𝑖, 𝑗, 𝑘 ∈ {1, … , 𝑝},
+(4)
+𝑚𝑎𝑥{𝛥(𝐶𝑘 )}
+𝑘
+
+where in this case {𝐶1 , … , 𝐶𝑝 } is a partition of the Pareto set, 𝑑(𝐶𝑖 , 𝐶𝑗 )
+indicates the distance between the sets 𝐶𝑖 and 𝐶𝑗 in the objective space
+(𝑑(𝐶𝑖 , 𝐶𝑗 ) = 𝑚𝑖𝑛{(𝑑(𝐱𝐢 , 𝐱𝐣 )) ∶ 𝐱𝐢 ∈ 𝐶𝑖 , 𝐱𝐣 ∈ 𝐶𝑗 }) and 𝛥(𝐶𝑘 ) represents the
+diameter of the set 𝐶𝑘 (𝛥(𝐶𝑘 ) = 𝑚𝑎𝑥{𝑑(𝐱𝐤𝟏 , 𝐱𝐤𝟐 ) ∶ 𝐱𝐤𝟏 , 𝐱𝐤𝟐 ∈ 𝐶𝑘 }). The
+larger the values of 𝜈𝐷 , the better the method is considered in terms of
+diversity.
+8
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Fig. 7. Standardized distances in the objective space between pruned solutions by each method for a Pareto set with size 1000.
+
+Fig. 8. Standardized distances in the objective space between pruned solutions by each method for a Pareto set with size 1500.
+
+In order to determine the sets {𝐶1 , … , 𝐶𝑝 } for each method, again
+the euclidean distance in the objective space is used. For OPSBC,
+TOPSIS and the hypervolume, each pruned solution 𝐱𝐢 gets associated
+to a different set 𝐶𝑖 . After that, the non selected optimal solutions
+are assigned to the set of their nearest pruned solution in terms of 𝑑
+in Eq. (3). Once the sets are defined, the Dunn index can be calculated.
+A hundred Pareto sets have been generated for sizes 500, 1000,
+1500 and 2000 and 3 to 6 objectives. Each set has been pruned using
+each of the compared techniques, and the average Dunn index produced by them has been calculated. The results are shown in Table 5,
+where it can be observed that the method yielding the highest average
+
+index in each case is k-medoids, as expected, since it is a widely used
+clustering technique, and the index is employed to evaluate the quality
+of clusters. Excluding this technique, the table highlights in bold the
+method that has provided the best average results in each case. It can
+be seen that OPSBC is the next best-performing method in this task in
+most situations.
+Finally, we can compare the diversity of the methods using the
+hypervolume measure. As previously mentioned in Section 2, this measure is computed as the hypervolume of the solution in the objective
+space with respect to a reference point. For each number of objective
+functions and Pareto set sizes, a total of 100 Pareto sets were generated.
+9
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+Table 5
+Average Dunn index of the methods depending on the Pareto size and the number of objectives.
+Size 500
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+Size 1000
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+OPSBC
+TOPSIS
+Hypervolume
+k-medoids
+
+0.0156
+0.0085
+0.0109
+0.0280
+
+0.0335
+0.0310
+0.0309
+0.0477
+
+0.0559
+0.0529
+0.0570
+0.0708
+
+0.0728
+0.0744
+0.0746
+0.0898
+
+OPSBC
+TOPSIS
+Hypervolume
+k-medoids
+
+0.0109
+0.0063
+0.0072
+0.0164
+
+0.0246
+0.0198
+0.0222
+0.0310
+
+0.0387
+0.0382
+0.0380
+0.0517
+
+0.0567
+0.0522
+0.0563
+0.0650
+
+Size 1500
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+Size 2000
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+OPSBC
+TOPSIS
+Hypervolume
+k-medoids
+
+0.0070
+0.0049
+0.0065
+0.0123
+
+0.0180
+0.0166
+0.0169
+0.0245
+
+0.0318
+0.0346
+0.0325
+0.0412
+
+0.0478
+0.0498
+0.0471
+0.0532
+
+OPSBC
+TOPSIS
+Hypervolume
+k-medoids
+
+0.0054
+0.0047
+0.0049
+0.0099
+
+0.0177
+0.0165
+0.0172
+0.0229
+
+0.0277
+0.0251
+0.0272
+0.0364
+
+0.0427
+0.0479
+0.0445
+0.0500
+
+Table 6
+Average hypervolume measure of the methods depending on the Pareto size and the number of objectives.
+Size 500
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+Size 1000
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+OPSBC
+TOPSIS
+Hypervolume
+k-Medoids
+
+2.6192
+2.7426
+2.7437
+2.6466
+
+3.3886
+3.8038
+3.8331
+3.4721
+
+4.3419
+5.1588
+5.2745
+4.4239
+
+5.4239
+6.5134
+6.9373
+5.4853
+
+OPSBC
+TOPSIS
+Hypervolume
+k-Medoids
+
+2.6196
+2.7434
+2.7439
+2.6496
+
+3.3804
+3.8214
+3.8376
+3.4663
+
+4.2891
+5.1970
+5.3022
+4.4328
+
+5.3759
+6.5263
+7.0352
+5.4459
+
+Size 1500
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+Size 2000
+
+3-Obj
+
+4-Obj
+
+5-Obj
+
+6-Obj
+
+OPSBC
+TOPSIS
+Hypervolume
+k-Medoids
+
+2.5958
+2.7436
+2.7440
+2.6496
+
+3.3569
+3.8258
+3.8388
+3.4700
+
+4.2976
+5.2376
+5.3192
+4.4255
+
+5.3783
+6.5780
+7.0932
+5.4168
+
+OPSBC
+TOPSIS
+Hypervolume
+k-Medoids
+
+2.6011
+2.7437
+2.7440
+2.6507
+
+3.3917
+3.8331
+3.8395
+3.4889
+
+4.3067
+5.2384
+5.3274
+4.4566
+
+5.3899
+6.6396
+7.1289
+5.3839
+
+In this regard, the proposed method is easily understandable and does
+not have a significant computational cost, as mentioned earlier.
+
+5.3. Overall performance
+To get an idea of the performance of the methods, the value of the
+objectives taken by some solutions can be collected depending on the
+techniques used to find them. Table 7 display, for each method, the
+pruned solutions from the Pareto set of size 1000 and 4 criteria in the
+objective space and their mean of each objective. In the table, 𝑥𝑂𝑖 , 𝑥𝑇 𝑖 ,
+𝑥𝐻𝑖 and 𝑥𝑘𝑖 represent the 𝑖th pruned solution provided by the OPSBC,
+TOPSIS, hypervolume and k-medoids methods respectively.
+As it can be seen in Table 7, the OPSBC method gives solutions
+nearer to (0, 0, 0, 0) which is the optimum for the generated Pareto front,
+as our aim is to minimize all objective functions. It also present better
+trade-offs between the objectives assuming all of them are equally
+important. This measures have been taken several times for different
+Pareto fronts of the same size. The mean of the solutions for each
+objective function as well as their standard deviation is represented
+in Fig. 10. It can be seen that the Borda count method is better, on
+average, than the rest (lower mean) and it also has lower standard
+deviations.
+
+Fig. 9. Average hypervolume in a 6-objective space of the different methods depending
+on the Pareto size.
+
+All of them were pruned by each method to obtain 10 solutions, and
+subsequently, their hypervolume was calculated. Table 6 shows the
+mean of the obtained hypervolumes for each method. Additionally, for
+the case of 6 objective functions, where more differences are observed,
+the same information is presented in the form of a bar chart in Fig. 9.
+It can be seen in both Tables 6 and Fig. 9 that the method that produces a higher hypervolume is the hypervolume method, as expected,
+followed by TOPSIS, although the differences are not notable for 3 or
+4 objective functions. OPSBC is the method that produces the lowest
+hypervolume in almost all cases, and if one were to simultaneously
+optimize both the hypervolume of solutions and execution time, it is
+suggested to opt for TOPSIS based on the results.
+It is natural for TOPSIS to be the second-best method based on
+this measure, as the compromise function it considers involves being
+far in the objective space from the point whose coordinates represent,
+for each objective function, the worst performance among each of the
+found solutions. Being far from this point results in a higher hypervolume compared to a slightly more distant point. However, it is important
+to note that OPSBC does not aim to optimize this hypervolume measure.
+The main goal is to provide competitive solutions by giving equal
+importance to all criteria in a consistent and, above all, simple manner.
+
+Based on all the results obtained and presented in this study, we
+can assert that the OPSBC method is highly suitable for ordering and
+pruning Pareto sets. The other considered techniques solve the problem
+in a longer time, and their execution time appears to increase more
+rapidly as the number of objectives grows. Additionally, it has been
+observed through heatmaps, performance tables and plots that, besides
+the speed of convergence, the regions with intuitively better overall
+results are accurately identified. However, it is important to mention
+that this does not imply that the rest of the techniques used are inferior.
+The intention is simply to emphasize that the proposed approach is
+based on the understanding that once it is acknowledged that there
+are no solutions better than others on the Pareto frontier, ordering
+them according to an objective criterion and not wasting time on it
+is essential.
+10
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+Table 7
+Performance of each method’s best solutions in a 4-objective problem.
+OPSBC
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+TOPSIS
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+𝑥𝑂1
+𝑥𝑂2
+𝑥𝑂3
+𝑥𝑂4
+𝑥𝑂5
+𝑥𝑂6
+𝑥𝑂7
+𝑥𝑂8
+𝑥𝑂9
+𝑥𝑂10
+
+0.0462
+0.0000
+0.0716
+0.0110
+0.0000
+0.0954
+0.0324
+0.1569
+0.0594
+0.0540
+
+0.0080
+0.0573
+0.0205
+0.0409
+0.0163
+0.0191
+0.0067
+0.0000
+0.0000
+0.0417
+
+0.0148
+0.0136
+0.0187
+0.0422
+0.0520
+0.0000
+0.0000
+0.0053
+0.0642
+0.0000
+
+0.0000
+0.0330
+0.0000
+0.0213
+0.0680
+0.0462
+0.1245
+0.0055
+0.0681
+0.0993
+
+𝑥𝑇 1
+𝑥𝑇 2
+𝑥𝑇 3
+𝑥𝑇 4
+𝑥𝑇 5
+𝑥𝑇 6
+𝑥𝑇 7
+𝑥𝑇 8
+𝑥𝑇 9
+𝑥𝑇 10
+
+0.6739
+0.3474
+0.0000
+0.0000
+0.1790
+0.2558
+0.0000
+0.4455
+0.7251
+0.4216
+
+0.0000
+0.0000
+0.6360
+0.2747
+0.1847
+0.0113
+0.4248
+0.2147
+0.0000
+0.7342
+
+0.1892
+0.5177
+0.4395
+0.1408
+0.0000
+0.0250
+0.2781
+0.4437
+0.3769
+0.7425
+
+0.0784
+0.4562
+0.4703
+0.7452
+0.6327
+0.0000
+0.4580
+0.0000
+0.4170
+0.0000
+
+Mean
+
+0.0527
+
+0.0210
+
+0.0211
+
+0.0466
+
+Mean
+
+0.3048
+
+0.2480
+
+0.3153
+
+0.325
+
+Hypervolume
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+k-medoids
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+𝑥𝐻1
+𝑥𝐻2
+𝑥𝐻3
+𝑥𝐻4
+𝑥𝐻5
+𝑥𝐻6
+𝑥𝐻7
+𝑥𝐻8
+𝑥𝐻9
+𝑥𝐻10
+
+0.0324
+0.1569
+0.0462
+0.0000
+0.0002
+0.1260
+0.0000
+0.0123
+0.0000
+0.0004
+
+0.0067
+0.0000
+0.0080
+0.4212
+0.0063
+0.0690
+0.0163
+0.0000
+0.0573
+0.1303
+
+0.0000
+0.0053
+0.0148
+0.1103
+0.4555
+0.0000
+0.0520
+0.1159
+0.0136
+0.0000
+
+0.1245
+0.0055
+0.0000
+0.0048
+0.0000
+0.0232
+0.0680
+0.2199
+0.0330
+0.3592
+
+𝑥𝑘1
+𝑥𝑘2
+𝑥𝑘3
+𝑥𝑘4
+𝑥𝑘5
+𝑥𝑘6
+𝑥𝑘7
+𝑥𝑘8
+𝑥𝑘9
+𝑥𝑘10
+
+0.0000
+0.4991
+0.1975
+0.0542
+0.5247
+0.0000
+0.4672
+0.5896
+0.0000
+0.5058
+
+0.5528
+0.1147
+0.1773
+0.5026
+0.4981
+0.1080
+0.0000
+0.1034
+0.1789
+0.5113
+
+0.1602
+0.3929
+0.0000
+0.3543
+0.5695
+0.0717
+0.4611
+0.0000
+0.5749
+0.0000
+
+0.4714
+0.0000
+0.5497
+0.0000
+0.0000
+0.0952
+0.4854
+0.3316
+0.3639
+0.1236
+
+Mean
+
+0.0374
+
+0.0715
+
+0.0767
+
+0.0838
+
+Mean
+
+0.2838
+
+0.2747
+
+0.2585
+
+0.2421
+
+Fig. 10. Mean values for 4 objectives in 20 different Pareto fronts of size 1000.
+
+6. Case study
+
+involves a significantly larger Pareto set than those considered so far
+and will be used to further complete the comparison from Section 5.
+
+After establishing the OPSBC method as a viable methodology for
+addressing the Pareto pruning problem, we proceed to demonstrate
+its practical application with real data through two datasets. The first
+problem consists of a small Pareto set, providing an opportunity to illustrate the simplicity of the proposed methodology. The second problem
+
+6.1. Trigeminal neuralgia data
+Trigeminal neuralgia is a condition that primarily affects the head
+and manifests as sudden, severe, electric shock-like pain in the jaw or
+11
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+Table 8
+Different treatments for trigeminal neuralgia.
+
+Table 11
+Profile of rankings of the Pareto optimal treatments its outranking
+matrix.
+
+𝑇𝑖
+
+Treatment
+
+𝑇1
+𝑇2
+𝑇3
+𝑇4
+𝑇5
+
+Infiltration with streptomycin
+Low-level laser therapy
+Treatment by skin graft
+Treatment by sciatic nerve graft
+Treatment by neurectomy
+
+Table 9
+Different criteria to evaluate the treatments in Table 8.
+𝐶𝑖
+
+Criterion
+
+𝐶1
+𝐶2
+𝐶3
+𝐶4
+𝐶5
+𝐶6
+𝐶7
+
+Hospitalization period (min)
+Remission period (min)
+Pain relief (max)
+Decrease number of crises (max)
+Decrease pain level (max)
+Decrease pain area (max)
+Decrease in medication (max)
+
+Ranking
+
+𝑓1
+𝑓2
+𝑓3
+𝑓4
+𝑓5
+𝑓6
+𝑓7
+
+𝑇1 ≻ 𝑇2 ≻ 𝑇3 ≻ 𝑇4
+𝑇1 ≻ 𝑇2 ≻ 𝑇4 ≻ 𝑇3
+𝑇4 ≻ 𝑇3 ≻ 𝑇1 ≻ 𝑇2
+𝑇3 ≻ 𝑇4 ≻ 𝑇2 ≻ 𝑇1
+𝑇4 ≻ 𝑇3 ≻ 𝑇1 ≻ 𝑇2
+𝑇4 ≻ 𝑇2 ∼ 𝑇3 ≻ 𝑇1
+𝑇3 ≻ 𝑇4 ≻ 𝑇2 ≻ 𝑇1
+
+⎛0
+⎜
+3
+𝑂=⎜
+⎜5
+⎜5
+⎝
+
+4
+0
+4.5
+5
+
+2⎞
+⎟
+2⎟
+3⎟
+0⎟⎠
+
+2
+2.5
+0
+4
+
+Table 12
+Profile of rankings of the Pareto optimal treatments its outranking matrix.
+
+Table 10
+Mean of the treatments of the medical condition measured according to the criteria.
+
+𝑓1 (min)
+𝑓2 (min)
+𝑓3 (max)
+𝑓4 (max)
+𝑓5 (max)
+𝑓6 (max)
+𝑓7 (max)
+
+Objective
+
+𝑇1
+
+𝑇2
+
+𝑇3
+
+𝑇4
+
+𝑇5
+
+12.143
+9.964
+21
+6.667
+3.423
+0.904
+364.286
+
+13.625
+10.453
+18.34
+6.688
+3.281
+0.937
+442.188
+
+15.093
+12.07
+25.2
+11.209
+3.558
+0.937
+655.814
+
+15.417
+11.889
+34.742
+9.75
+3.833
+0.978
+586.111
+
+16.778
+12.022
+18.457
+7.244
+3.156
+0.848
+255.556
+
+Objective
+
+Weight
+
+Ranking
+
+𝑓1
+𝑓2
+𝑓3
+𝑓4
+𝑓5
+𝑓6
+𝑓7
+
+2
+1
+1
+2
+1
+1
+1
+
+𝑇1 ≻ 𝑇2 ≻ 𝑇3 ≻ 𝑇4
+𝑇1 ≻ 𝑇2 ≻ 𝑇4 ≻ 𝑇3
+𝑇4 ≻ 𝑇3 ≻ 𝑇1 ≻ 𝑇2
+𝑇3 ≻ 𝑇4 ≻ 𝑇2 ≻ 𝑇1
+𝑇4 ≻ 𝑇3 ≻ 𝑇1 ≻ 𝑇2
+𝑇4 ≻ 𝑇2 ∼ 𝑇3 ≻ 𝑇1
+𝑇3 ≻ 𝑇4 ≻ 𝑇2 ≻ 𝑇1
+
+⎛0
+⎜
+4
+𝑂∗ = ⎜
+⎜6
+⎜6
+⎝
+
+5
+0
+5.5
+6
+
+3
+3.5
+0
+4
+
+3⎞
+⎟
+3⎟
+5⎟
+0⎟⎠
+
+Table 13
+Computation time of different Pareto pruning methods in the radar
+waveform problem Pareto set.
+
+𝑆𝑒𝑐𝑜𝑛𝑑𝑠
+
+OPSBC
+
+TOPSIS
+
+Hypervolume
+
+0.21
+
+550.86
+
+1745.56
+
+DM wants a pruned set of 2 optimal solutions to make a final sensible
+decision, they will be 𝑇4 and 𝑇3 .
+As previously mentioned, the OPSBC method can be adapted to
+consider any a priori preference among the objective functions through
+the WOPSBC variation. That is, if some of them are considered more
+important than the rest. Imagine, for example, that in a certain region
+the hospitals are not large enough to meet all the medical needs of the
+population. It then becomes vitally important to have as much space as
+possible in the medical centers for the most serious emergencies. Thus,
+minimizing the mean hospitalization period (𝑓1 ) and maximizing the
+reduction of the mean number of crises (𝑓4 ), which is a determining
+factor for going to the hospital, are more relevant criteria than the
+rest. Suppose these objectives are twice as important as the others. To
+incorporate this information into the problem, it is only necessary to
+consider the desired weights with these objective functions. That is,
+the profile of rankings and the outranking matrix 𝑂∗ would be the ones
+shown in Table 12. The weights shown in the table can be scaled to add
+one if desired, but the final resulting pruned set will be the same.
+Therefore, the points obtained by the Borda count on this occasion
+for 𝑇1 , 𝑇2 , 𝑇3 and 𝑇4 are 11, 10.5, 16.5 and 16 respectively. Thus, the
+final ranking this time is 𝑇3 ≻ 𝑇4 ≻ 𝑇1 ≻ 𝑇2 which is different from the
+one obtained before. However, if two pruned solutions are required,
+they remain the same (𝑇3 and 𝑇4 ).
+
+cheek. The episodes are triggered by everyday activities such as talking,
+brushing teeth, or chewing. It is known as one of the most intense forms
+of pain experienced by humans (Grosan, Abraham, Tigan, & Chang,
+2006). The considered and already processed data were taken from a
+trigeminal neuralgia study (Grosan et al., 2006) which made used of the
+data from Câmpian, Băciuţ, Băciuţ, and Ţigan (2004), which included
+information of 251 patients. The study aimed to evaluate the effectiveness of various 5 different treatments for the medical condition.
+According to the study, those treatments are shown in Table 8.
+Treatments were evaluated in terms of 7 criteria. By the nature of
+the criteria, some must be maximized to be considered optimal. We
+have presented the MOPs as minimization problems. However, if any
+objective function must be maximized, it is sufficient to multiply it by
+−1 to transform the problem to the one originally stated. The criteria
+of the study are shown in Table 9.
+Each patient in the study received one of the treatments and all
+the criteria were measured on them. Subsequently, the means of the
+measurements for each criterion depending on the treatment were
+considered as the objective functions (𝑓1 , … , 𝑓7 ). In this way, the MOP
+that emerges is to decide the best treatment optimizing as much as
+possible all the objectives. Because of the importance of the problem,
+suppose that a DM expert wishes to make the final decision on the best
+treatment, but taking into account only 2 of the 5 that exist (𝑝 = 2).
+Table 10 shows the mean of each criterion for all the patients receiving
+each treatment.
+It can be seen that treatment by neurectomy (𝑇5 ) is dominated by
+the treatment by sciatic nerve graft (𝑇4 ), so we can remove it as it is
+not a Pareto optimal solution.
+Considering just columns 𝑇1 , 𝑇2 , 𝑇3 and 𝑇4 of Table 10, each objective function provides a ranking of preference. The profile of rankings
+and its corresponding outranking matrix can be seen in Table 11.
+Now, looking at the outranking matrix, the Borda points for each
+treatment can be computed. Infiltration with streptomycin (𝑇1 ) receive
+8 points, the low level laser therapy (𝑇2 ) 7.5 points, the treatment by
+skin graft (𝑇3 ) 12.5 points and the treatment by sciatic nerve graft (𝑇4 )
+14 points. Therefore, the final ranking is 𝑇4 ≻ 𝑇3 ≻ 𝑇1 ≻ 𝑇2 . As the
+
+6.2. Radar waveform design data
+In order to briefly show the advantages of the OPSBC method in a
+large real case scenario of an engineering problem, a comparison with
+the considered methods in Section 5 is made with the dataset analyzed
+in Hughes (2007). The data consists of 100,070 possible non-dominated
+solutions that are candidates for optimizing the radar waveform design
+problem, which is associated with 9 different objective functions. For
+more details on the problem, refer to Hughes (2007).
+The goal is to reduce the Pareto set to 10 solutions using the
+presented methods. It is worth mentioning that the k-medoids method
+is not included in the comparison because the R function that computes
+them does not support inputs exceeding 65,536 individuals. For this
+reason, this method is not suitable for pruning the considered Pareto.
+12
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+Table 14
+Computation time (in seconds) of different Pareto pruning methods in the radar waveform problem Pareto set.
+
+OPSBC
+TOPSIS
+Hypervolume
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+𝑓5
+
+𝑓6
+
+𝑓7
+
+𝑓8
+
+𝑓9
+
+−3591
+−2154
+−3306
+
+−28.79
+−50.73
+−35.79
+
+−9889.28
+−5279.33
+−7798.20
+
+−99.75
+−143.96
+−104.25
+
+−300.0
+−184.5
+−901.5
+
+−3.78
+−20.81
+−11.09
+
+−1514.55
+−1620.30
+−3394.50
+
+−33.37
+−80.32
+−59.18
+
+20.60
+−6.06
+11.16
+
+Table 15
+Correlation matrix of the Pareto optimal solutions to the radar waveform problem in the objective space.
+
+𝑓1
+𝑓2
+𝑓3
+𝑓4
+𝑓5
+𝑓6
+𝑓7
+𝑓8
+𝑓9
+
+𝑓1
+
+𝑓2
+
+𝑓3
+
+𝑓4
+
+𝑓5
+
+𝑓6
+
+𝑓7
+
+𝑓8
+
+𝑓9
+
+1.00
+−0.86
+0.83
+−0.91
+0.67
+−0.42
+0.61
+−0.72
+−0.91
+
+−0.86
+1.00
+−0.93
+0.94
+−0.57
+0.51
+−0.41
+0.86
+0.95
+
+0.83
+−0.93
+1.00
+−0.93
+0.55
+−0.49
+0.31
+−0.85
+−0.98
+
+−0.91
+0.94
+−0.93
+1.00
+−0.62
+0.48
+−0.50
+0.80
+0.97
+
+0.67
+−0.57
+0.55
+−0.62
+1.00
+−0.24
+0.56
+−0.45
+−0.62
+
+−0.42
+0.51
+−0.49
+0.48
+−0.24
+1.00
+−0.14
+0.57
+0.49
+
+0.61
+−0.41
+0.31
+−0.50
+0.56
+−0.14
+1.00
+−0.19
+−0.44
+
+−0.72
+0.86
+−0.85
+0.80
+−0.45
+0.57
+−0.19
+1.00
+0.83
+
+−0.91
+0.95
+−0.98
+0.97
+−0.62
+0.49
+−0.44
+0.83
+1.00
+
+The execution times of the methods can be seen in the Table 13. As
+observed in the graphs in Fig. 2, the difference in execution times has
+grown substantially with the size of the Pareto set. It is also evident the
+advantage that OPSBC provides in this aspect.
+Finally, Table 14 presents the average performance of the 10 solutions found by each method for each objective function. The minimum
+for each case has been highlighted in bold. This time, TOPSIS outperforms the other two methods in 5 of the 9 objectives. However,
+the fact that it is, on average, better in those objectives may be due
+to the high correlation among them. Table 15 shows the correlation
+matrix constructed from the solutions in the considered dataset. It can
+be observed that there is a high correlation between objective functions
+2, 4, 8, and 9, which are 4 of the objectives where the method appears
+to stand out. The influence of correlation on the obtained results
+highlights the need to study in the future its effect in the proposed
+method.
+
+and, thus, make a decision based on more information. In addition,
+the preference of some objective functions over others can be easily
+incorporated to the problem with the WOPSBC variation.
+In summary, the OPSBC method provides solutions through a simple
+procedure and proves competitive across various metrics compared to
+other methods, meaning the principle of parsimony perfectly supports
+it. It is a neutral, straightforward, and versatile approach that has
+demonstrated, in the performed simulations, its effectiveness in sorting
+and pruning Pareto sets of solutions and that can be applied in a wide
+variety of MOPs.
+CRediT authorship contribution statement
+Pelayo S. Dosantos: Conceptualization, Methodology, Software,
+Visualization, Writing – original draft, Writing – review & editing.
+Agustina Bouchet: Conceptualization, Methodology, Writing – original
+draft, Writing – review & editing. Irene Mariñas-Collado: Conceptualization, Methodology, Writing – original draft preparation, Writing
+– review & editing. Susana Montes: Conceptualization, Supervision,
+Writing – review & editing.
+
+7. Conclusion
+The proposed method in this study aims to objectively and sensibly
+sort and prune a Pareto optimal set of solutions in any multi-objective
+problem. Furthermore, the methodology has been compared with three
+other well known and used methods. The OPSBC method has proven
+to be effective and appropriate for sorting non-dominated Pareto optimal solutions. Moreover, a case study with real-world data has been
+presented to show the use of the method in practice. Even though
+this approach is able to provide a unique optimal solution, it is highly
+recommended to leave the final choice to an expert DM. This is because
+decision-making tasks inherently involve a subjective component that
+should not be overlooked.
+The advantages of using the OPSBC method in a multi-objective
+optimization scenario are worth highlighting. Firstly, it offers a simple
+and straightforward procedure. The fact that, by definition, no solution
+in a Pareto set is objectively better than another must always be kept
+in mind. Employing a complex method for Pareto reduction may prove
+to be time-consuming without significant benefits. In this sense, the
+OPSBC aligns perfectly with this philosophy, providing competitive
+solutions in a very straightforward manner without neglecting any of
+the criteria of the objective functions. The OPSBC method strikes an
+optimal balance between time-saving and impartial sorting.
+In addition, the Borda count is the ranking aggregation method
+that satisfies more desirable properties, and as seen in Section 3, the
+ones that are usually not fulfilled are also respected in MOPs. That
+is, they do not affect in this context. The method is adaptable to
+various situations, allowing DMs to request any desired number of nondominated solutions, as long as there are enough in the Pareto set. They
+can even ask for the least preferable one to compare it with the others
+
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Data availability
+Data available within the article.
+Acknowledgments
+Authors would like to express their gratitude for the support from
+the Spanish Ministry of Science and Innovation (fund reference:
+PREP2022-000355. Project: MCINN-23-PID2022-139886NB-I00).
+References
+Abubaker, A., Baharum, A., & Alrefaei, M. (2019). A pruned Pareto set for multiobjective optimisation problems via particle swarm and simulated annealing.
+International Journal of Operational Research, 35(1), 67–86.
+Amiri, M., Ekhtiari, M., & Yazdani, M. (2011). Nadir compromise programming: A
+model for optimization of multi-objective portfolio problem. Expert Systems with
+Applications, 38(6), 7222–7226.
+Antipova, E., Pozo, C., Guillén-Gosálbez, G., Boer, D., Cabeza, L. F., & Jiménez, L.
+(2015). On the use of filters to facilitate the post-optimal analysis of the Pareto
+solutions in multi-objective optimization. Computers & Chemical Engineering, 74,
+48–58.
+13
+
+Expert Systems With Applications 250 (2024) 123803
+
+P.S. Dosantos et al.
+
+Kulturel-Konak, S., Coit, D. W., & Baheranwala, F. (2008). Pruned Pareto-optimal
+sets for the system redundancy allocation problem based on multiple prioritized
+objectives. Journal of Heuristics, 14, 335–357.
+Lai, Y.-J., Liu, T.-Y., & Hwang, C.-L. (1994). Topsis for MODM. European Journal of
+Operational Research, 76(3), 486–500.
+Lansdowne, Z. F. (1996). Outranking methods for multicriterion decision making:
+Arrow’s and Raynaud’s conjecture. Social Choice and Welfare, 14(1), 125–128.
+Ma, H., Chu, X., Xue, D., & Chen, D. (2017). A systematic decision making approach
+for product conceptual design based on fuzzy morphological matrix. Expert Systems
+with Applications, 81, 444–456.
+Min, D., Zhang, S. M., Shang, W. J., Yan, W. X., Qiao, L., Qin, C. Y., et al. (2022).
+2022 Multiple-country Monkeypox outbreak and its importation risk into China: An
+assessment based on the risk matrix method. Biomedical and Environmental Sciences,
+35(10), 878–887.
+Mohammadi, A., Omidvar, M. N., & Li, X. (2012). Reference point based multiobjective optimization through decomposition. In 2012 IEEE congress on evolutionary
+computation (pp. 1–8). IEEE.
+Nelder, J. A., & Mead, R. (1965). A simplex method for function minimization. The
+Computer Journal, 7(4), 308–313.
+Neumaier, A. (2004). Complete search in continuous global optimization and constraint
+satisfaction. Acta Numerica, 13, 271–369.
+Noghin, V. (2017). Pareto set reduction based on an axiomatic approach with
+application of some metrics. Computational Mathematics and Mathematical Physics,
+57, 645–652.
+Nurmi, H. (2012). Comparing voting systems: vol. 3, Springer Science & Business Media.
+Odu, G., & Charles-Owaba, O. (2013). Review of multi-criteria optimization
+methods–theory and applications. IOSR Journal of Engineering, 3(10), 01–14.
+Ojha, M., Chakraborty, P., Singh, K. P., & Verma, S. (2017). Regions of interest on
+pareto front using MOGA automated feedback mechanism. In TENCON 2017-2017
+IEEE region 10 conference (pp. 2023–2028). IEEE.
+Petchrompo, S., Coit, D. W., Brintrup, A., Wannakrairot, A., & Parlikad, A. K. (2022).
+A review of Pareto pruning methods for multi-objective optimization. Computers &
+Industrial Engineering, Article 108022.
+Petchrompo, S., Wannakrairot, A., & Parlikad, A. K. (2022). Pruning Pareto optimal
+solutions for multi-objective portfolio asset management. European Journal of
+Operational Research, 297(1), 203–220.
+Rico, N., Vela, C. R., & Díaz, I. (2023). Reducing the time required to find the Kemeny
+ranking by exploiting a necessary condition for being a winner. European Journal
+of Operational Research, 305(3), 1323–1336.
+Ruiz, A. B., Luque, M., Miettinen, K., & Saborido, R. (2015). An interactive evolutionary multiobjective optimization method: Interactive WASF-GA. In International
+conference on evolutionary multi-criterion optimization (pp. 249–263). Springer.
+Shen, J., Dong, H., Wang, P., Li, J., & Wang, W. (2023). An inverse model-guided
+two-stage evolutionary algorithm for multi-objective optimization. Expert Systems
+with Applications, 225, Article 120198.
+Simic, V., Karagoz, S., Deveci, M., & Aydin, N. (2021). Picture fuzzy extension of the
+CODAS method for multi-criteria vehicle shredding facility location. Expert Systems
+with Applications, 175, Article 114644.
+Taboada, H. A., & Coit, D. W. (2008). Multi-objective scheduling problems:
+Determination of pruned Pareto sets. IIE Transactions, 40(5), 552–564.
+Torres, M., Pelta, D. A., Lamata, M. T., & Yager, R. R. (2021). An approach to identify
+solutions of interest from multi and many-objective optimization problems. Neural
+Computing and Applications, 33(7), 2471–2481.
+Venter, G. (2010). Review of optimization techniques. Encyclopedia of Aerospace
+Engineering.
+Weber, R. J. (1995). Approval voting. Journal of Economic Perspectives, 9(1), 39–49.
+Yadollahi, M., Abd Majid, M. Z., & Mohamad Zin, R. (2015). Post-Pareto optimality approach to enhance budget allocation process for bridge rehabilitation management.
+Structure and Infrastructure Engineering, 11(12), 1565–1582.
+Yeh, C.-H. (2008). An efficiency characterization of plurality rule in collective choice
+problems. Economic Theory, 34(3), 575–583.
+Young, H. (1974). An axiomatization of Borda’s rule. Journal of Economic Theory, 9(1),
+43–52.
+Yu, G., Chen, Z., Wu, J., & Tan, Y. (2021). Medical decision support system for
+cancer treatment in precision medicine in developing countries. Expert Systems with
+Applications, 186, Article 115725.
+
+Balinski, M., & Laraki, R. (2007). A theory of measuring, electing, and ranking.
+Proceedings of the National Academy of Sciences, 104(21), 8720–8725.
+Behzadian, M., Otaghsara, S. K., Yazdani, M., & Ignatius, J. (2012). A state-of
+the-art survey of TOPSIS applications. Expert Systems with Applications, 39(17),
+13051–13069.
+Berger, J. O. (2013). Statistical decision theory and Bayesian analysis. Springer Science
+& Business Media.
+Brusco, M. J. (2017). Partitioning methods for pruning the Pareto set with application
+to multiobjective allocation of a cross-trained workforce. Computers & Industrial
+Engineering, 111, 29–38.
+Câmpian, R., Băciuţ, G., Băciuţ, M., & Ţigan, Ş. (2004). Pain evaluation in essential
+trigeminal neuralgia of essential trigeminal neuralgia treatments. Applied Medical
+Informatics, 15(3, 4), 21–25.
+Coello, C. A. C., Lamont, G. B., Van Veldhuizen, D. A., et al. (2007). Evolutionary
+algorithms for solving multi-objective problems: vol. 5, Springer.
+Cvetkovic, D., & Parmee, I. C. (2002). Preferences and their application in evolutionary
+multiobjective optimization. IEEE Transactions on Evolutionary Computation, 6(1),
+42–57.
+Das, I. (1999). On characterizing the ‘‘knee’’ of the Pareto curve based on
+normal-boundary intersection. Structural Optimization, 18, 107–115.
+De Borda, J. (1784). Mémoire sur les élections au scrutin. Histoire de l’Academie Royale
+des Sciences pour 1781.
+Deb, K. (2014). Multi-objective optimization. Search methodologies. Search Methodol,
+2014, 403–449.
+Deng, Q., Santos, B. F., & Curran, R. (2020). A practical dynamic programming based
+methodology for aircraft maintenance check scheduling optimization. European
+Journal of Operational Research, 281(2), 256–273.
+Dopazo, E., & Martínez-Céspedes, M. L. (2017). Rank aggregation methods dealing with
+ordinal uncertain preferences. Expert Systems with Applications, 78, 103–109.
+Dorfman, R., & Jacoby, H. D. (1969). A model of public decisions illustrated by. The
+Analysis and Evaluation of Public Expenditures: The PPB System, 1, 226–274.
+Dunn, J. C. (1973). A fuzzy relative of the ISODATA process and its use in detecting
+compact well-separated clusters. Taylor & Francis.
+Ecer, F. (2021). A consolidated MCDM framework for performance assessment of
+battery electric vehicles based on ranking strategies. Renewable and Sustainable
+Energy Reviews, 143, Article 110916.
+Ehrgott, M. (2005). Multicriteria optimization: vol. 491, Springer Science & Business
+Media.
+Felsenthal, D. S., & Machover, M. (2012). Electoral systems: Paradoxes, assumptions, and
+procedures. Springer Science & Business Media.
+de la Fuente, D., Vega-Rodríguez, M. A., & Pérez, C. J. (2018). Automatic selection of
+a single solution from the Pareto front to identify key players in social networks.
+Knowledge-Based Systems, 160, 228–236.
+Grabisch, M. (2009). Aggregation functions: vol. 127, Cambridge University Press.
+Grosan, C., Abraham, A., Tigan, S., & Chang, T.-G. (2006). How to solve a multicriterion
+problem for which Pareto dominance relationship cannot be applied? A case
+study from medicine. In International conference on knowledge-based and intelligent
+information and engineering systems (pp. 1128–1135). Springer.
+Gunantara, N. (2018). A review of multi-objective optimization: Methods and its
+applications. Cogent Engineering, 5(1), Article 1502242.
+Hansen, P. (1980). Bicriterion path problems. In Multiple criteria decision making theory
+and application (pp. 109–127). Springer.
+Hosseininasab, S.-M., Shetab-Boushehri, S.-N., Hejazi, S. R., & Karimi, H. (2018). A
+multi-objective integrated model for selecting, scheduling, and budgeting road
+construction projects. European Journal of Operational Research, 271(1), 262–277.
+Hughes, E. J. (2007). Radar waveform optimisation as a many-objective application
+benchmark. In International conference on evolutionary multi-criterion optimization (pp.
+700–714). Springer.
+Hwang, C.-L., Yoon, K., Hwang, C.-L., & Yoon, K. (1981). Methods for multiple
+attribute decision making. Multiple attribute decision making: methods and applications
+a state-of-the-art survey, 58–191.
+Jin, Y., & Sendhoff, B. (2002). Incorporation of fuzzy preferences into evolutionary
+multiobjective optimization. In GECCO: vol. 2, (p. 683).
+Kaufman, L., & Rousseeuw, P. J. (2009). Finding groups in data: an introduction to cluster
+analysis. John Wiley & Sons.
+Kemeny, J. G. (1959). Mathematics without numbers. Daedalus, 88(4), 577–591.
+Koch, S., & Mitlöhner, J. (2009). Software project effort estimation with voting rules.
+Decision Support Systems, 46(4), 895–901.
+
+14
+
+

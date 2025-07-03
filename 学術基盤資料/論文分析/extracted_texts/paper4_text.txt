@@ -1,0 +1,1534 @@
+Journal of Adult Development
+https://doi.org/10.1007/s10804-024-09504-8
+
+Value‑Based Decision‑Making and Its Relation to Cognition
+and Processing Noise in Young and Older Adults
+Anja Richtmann1
+
+· Johannes Petzold1
+
+· Franka Glöckner2
+
+· Michael N. Smolka1
+
+Accepted: 22 October 2024
+© The Author(s) 2024
+
+Abstract
+In all phases of life, people face decisions with important consequences. Weighing options involves using cognitive resources
+to assess valence, delay, and risk to achieve a desired outcome. Value-based decision-making changes over the lifespan, but
+studies disagree on the extent, domains, and mechanisms of this change. We assessed delay discounting, risk aversion for
+probabilistic gains, risk seeking for probabilistic losses, loss aversion as well as cognitive abilities, and processing noise in
+86 young (25–38 years) and 93 older (63–76 years) adults. We tested whether decision-making differed between age groups
+and whether differences were mediated by cognitive abilities or processing noise as measured by reaction time variability and
+decision inconsistency. Older adults showed steeper delay discounting (p = .003) and trended towards more risk aversion for
+gains (p = .071). Age groups did not differ in risk seeking for losses or loss aversion. Lower decision consistency and better
+spatial working memory mediated older adults’ steeper delay discounting. The relationship between delay discounting and
+age persisted when controlling for both mediators, suggesting robust age differences in delay discounting. This persistent
+age difference implies mechanisms beyond noise or cognitive parameters, such as changing life circumstances or limited
+future perspective.
+Keywords Value-based decision-making · Delay discounting · Risk-taking · Processing noise · Cognitive performance ·
+Adult life span
+In all phases of life, people make decisions with important
+consequences for their future, such as taking out insurances
+or attending medical check-ups. Weighing options involves
+cognitive resources for assessing factors such as valence
+(i.e., the intrinsic positive or negative quality) of a decision,
+delay until making a decision and receiving the outcome,
+* Michael N. Smolka
+Michael.smolka@tu-dresden.de
+Anja Richtmann
+anja.stock@mailbox.tu-dresden.de
+Johannes Petzold
+Johannes.petzold@tu-dresden.de
+Franka Glöckner
+franka.gloeckner@tu-dresden.de
+1
+
+Section of Systems Neuroscience, Department of Psychiatry
+and Psychotherapy, Faculty of Medicine, Technische
+Universität Dresden, Würzburger Str. 35, 01187 Dresden,
+Germany
+
+2
+
+Chair of Behavioral Psychotherapy, Faculty of Psychology,
+Technische Universität Dresden, Dresden, Germany
+
+and risk to achieve the desired outcome depending on the
+subjective evaluation of the probability or uncertainty of an
+outcome.
+Delay discounting—i.e., the tendency of individuals to
+devalue or discount future rewards and to prefer smaller
+immediate over larger delayed rewards (Green et al.,
+1999)—has frequently been studied. Individual studies on
+the association of aging with delay discounting revealed
+mixed results, with some showing no difference between
+young and older adults (Mata, et al., 2011; Samanez-Larkin
+et al., 2011; Whelan & McHugh, 2009) and others finding
+a stronger preference for delayed over immediate rewards
+in older adults (Bixter & Rogers, 2019; Eppinger et al.,
+2012; Green et al., 1994, 1999; Löckenhoff et al., 2011) or,
+conversely, in young adults (Read & Read, 2004). A recent
+meta-analysis of 50 publications totaling 115,496 participants (125 effect sizes extracted) has revealed a significant,
+but very small, negative correlation (r = − 0.04) between age
+and delay discounting (Bagaïni et al., 2023). The authors
+conclude that the estimated effect size is so low that it is
+trivially small.
+Vol.:(0123456789)
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+A. Richtmann et al.
+
+Regarding risk-taking tasks, research indicates greater
+risk aversion towards probabilistic gains among older adults
+(Mather et al., 2012; Rutledge et al., 2016; Tymula et al.,
+2013). Yet, conflicting results arise when tasks require
+choosing between two risky options (Mather et al., 2012;
+Pachur et al., 2017). The first meta-analysis (Best & Charness, 2015) reported a weak (g = − 0.25) but significant
+association of age and risk taking in the gain domain, and is
+in line with the recent meta-analysis (Bagaïni et al., 2023)
+that also reported a slight but significant decline in risk seeking for gains with age (r = − 0.05). While young and older
+adults show comparable choice behavior in decision-making
+tasks that fully disclose the information about outcome probabilities, age differences might be more apparent in tasks
+requiring the outcome probabilities to be learned (Mata
+et al., 2011), highlighting potential effects of task design.
+Some studies investigating discounting of probabilistic
+losses suggest that older adults take more risks to avoid
+losses (Best & Freund, 2018; Fernandes et al., 2018; Mather
+et al., 2012), yet the (online) study with the largest sample
+size (> 25,000 participants) found no respective age-related
+differences (Rutledge et al., 2016). In line with the latter,
+both meta-analyses cited above (Bagaïni et al., 2023; Best
+& Charness, 2015) did not find significant associations
+between age and risk taking in the loss domain (r = 0.02
+and g = − 0.02, respectively).
+Regarding tasks with mixed probabilistic outcomes, the
+large (online) study identified a small (r = 0.02), non-monotonic, but significant increase in risk taking across the adult
+lifespan when looking at decision-making behavior in tasks
+involving both potential gains and losses (Rutledge et al.,
+2016). The literature is unclear about how decision-making in these mixed tasks may change with increasing adult
+age, with studies reporting a reduced willingness to gamble
+(Arora & Kumari, 2015; O’Brien & Hess, 2020), referred
+to as loss aversion. However, again, other studies found no
+differences in loss aversion (Li et al., 2013; Seaman et al.,
+2018). The aforementioned meta-analysis by Bagaïni and
+colleagues (2023) found also no significant effect of age on
+the mixed domain (r = 0.012).
+Discrepancies in findings regarding delay discounting
+could partly be related to high inter-individual differences
+(Kanai & Rees, 2011) or variations in the duration of delays
+(Leverett et al., 2022). Factors contributing to inconsistencies in the literature on risk attitudes might be due to different task characteristics regarding probability discounting
+(Mata et al., 2011) and loss aversion (Rutledge et al., 2016;
+Seaman et al., 2018). A nonlinear relationship between age
+and decision parameters (Guttman et al., 2021), demographic
+factors such as income status (Green et al., 1996), or the cultural context in which the studies were conducted (Rieger &
+Mata, 2015) may also explain some variance in the observed
+decision behaviors. Also whether studies are performed in
+
+the laboratory or online, possibly due to variations in sample
+characteristics, seem to moderate associations that seem to
+be of small effect size (Bagaïni et al., 2023).
+Several theories elucidate potential age-related disparities in decision-making between young and older adults.
+These theories on aging-related changes in decision-making
+behavior can be categorized into biological or neurodegeneration-related mechanisms versus social psychological
+phenomena. A prominent hypothesis and representative of
+biological theories is the frontal aging hypothesis, which
+postulates that the frontal lobes are especially vulnerable
+to aging-related deteriorations with potentially adverse
+effects on higher cognitive functions like problem-solving,
+memory retention, and attention control (West, 1996). Neuromodulation theories further relate aging-related changes
+in neurotransmitter systems such as the dopamine system
+to age differences in decision-making, including changes in
+reward evaluation and risk tolerance (e.g., Eppinger et al.,
+2011). In addition, aging-related changes in relevant brain
+structures or in the efficiency of communication within the
+neural networks involved in decision-making processes are
+also assumed to impact reward processing (Best & Charness, 2015; Raz et al., 1998) as well as decision speed and
+accuracy (Bennett & Madden, 2014). These changes may be
+associated with increased cognitive noise (Li & Sikström,
+2002; Li et al., 2001a, 2001b; MacDonald et al., 2009;
+Pachur et al., 2017), which in turn could affect decisionmaking processes in older age. Previous work (MacDonald
+et al., 2009, 2012; Papenberg et al., 2013) suggests that intraindividual response variability, i.e., trial-by-trial fluctuations
+in response behavior such as response time, can serve as
+behavioral indicators of neuronal noise. The aging-related
+increase in intra-individual response variability (hereafter referred to as processing noise) is often associated
+with reduced cognitive performance or a bias towards less
+demanding cognitive strategies in older age (Glöckner et al.,
+2021; cf. MacDonald et al., 2009 for review). In the context
+of decision-making, for example, individuals with higher
+levels of processing noise seem to prefer certain or immediate outcomes over delayed ones (Burks et al., 2009; Mather
+et al., 2012). Moreover, increasing the salience of information during value-based decision-making can improve choice
+behavior in older adults, presumably by increasing the distinctiveness of value representations (i.e., reducing noise in
+representations) and thereby reducing the cognitive demands
+during value computation (Chen et al., 2021). Regarding
+social psychological theories, the socioemotional selectivity
+theory (Carstensen, 2006) is of specific relevance and postulates that individuals prioritize emotional fulfillment as they
+age, recognizing the finite nature of their lifetime, which
+might impact the way older adults evaluate rewards and risk.
+In summary, the literature reviewed above highlights the
+complexity of decision-making processes across the adult
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+
+lifespan. While various studies have contributed valuable
+insights, a considerable uncertainty remains in understanding how these processes evolve with age. This study, which
+was conducted between June 2017 and October 2020, investigated whether older adults (63–76 years) and young adults
+(25–38 years) differ in four dimensions of value-based decision-making: delay discounting, risk attitudes towards probabilistic gains and probabilistic losses, and loss aversion. In
+addition, we investigated differences in cognitive abilities
+and processing noise between young and older adults and
+explored potential mediating effects of these variables on
+choice behavior. Our study used four computerized tasks
+providing full information on delays or odds and visual representations of probabilities to minimize cognitive load. We
+examined whether measures of crystallized abilities (verbal
+knowledge) and fluid abilities (specifically working memory
+and speed of processing), or processing noise (i.e., reaction
+time variability and decision consistency) might mediate or
+mask potential decision-making differences related to age.
+We hypothesized that reduced working memory capacity and
+increased processing noise in older adults might be associated with a preference for safer or earlier options. Thus, we
+expected older adults to demonstrate steeper temporal discounting, higher probability discounting for gains (indicating higher risk aversion), lower probability discounting for
+losses (indicating less risk seeking), and higher loss aversion
+compared to young adults. If age-related differences were
+observed, we anticipated that basic cognitive abilities such
+as working memory and speed of processing or processing noise parameters might mediate the observed age group
+differences.
+
+Materials and Methods
+This study is part of the “Aging and dopamine modulation
+of complementary control processes” project within the
+Collaborative Research Center 940 “Volition and Cognitive
+Control” (www.​sfb940.​de).
+
+Participants
+We recruited young (25–38 years) and older adults
+(63–76 years) by sending 5927 study information letters
+to addresses provided by the resident registration office of
+Dresden, Germany. We screened 672 interested adults via
+telephone interview and excluded 485. Exclusion criteria
+were severely impaired vision or hearing without correction,
+a lifetime history of major neurological or mental disorders,
+intake of drugs with potential impact on the dopaminergic
+system, and contraindications to L-DOPA or magnetic resonance imaging. We excluded all participants who tested
+positive for commonly used drugs (i.e., methamphetamine,
+
+amphetamine, morphine, benzodiazepines, and cocaine;
+urine test; SureStep, Innovacon, San Diego, CA, USA) or
+alcohol (breath alcohol analysis; Alcotest 6581 med, Dräger,
+Lübeck, Germany). Older adults completed the Montreal
+Cognitive Assessment (MoCA) for global dementia screening and were excluded if they scored fewer than 19 points
+to ensure a minimal level of cognitive function, while still
+including a range of cognitive abilities typical of older
+adults. This cutoff was selected based on research suggesting that lower MoCA scores can be indicative of significant
+cognitive impairment (Nasreddine et al., 2005), yet using a
+cutoff of 18 allows for the inclusion of individuals with mild
+cognitive deficits who can still meaningfully participate in
+decision-making tasks. In this study, 4 older participants
+were in the < 23 range, indicating mild cognitive impairment
+(Carson et al., 2018). The final sample included 86 young
+adults (M = 31.08, SD = 2.98 years of age; 35 women) and 93
+older adults (M = 69.06, SD = 3.14 years of age; 37 women).
+Participants received €34 for compensation and an additional
+performance-based payment (M = €17.86). During data collection (2017–2020), the Euro to US Dollar exchange rate
+fluctuated between approximately 1.12 and 1.22.
+
+Value‑Based Decision‑Making Battery
+We used a value-based decision-making battery consisting
+of four tasks (Pooseh et al., 2018) to measure delay discounting and risk taking. An example depiction of the four tasks
+as they were presented to the participants on the computer
+screen is provided in Fig. 1. In the delay discounting task,
+participants decided between an immediate smaller and a
+larger reward (€3–50) available at varying delays (3, 7, 14,
+31, 61, 180, 365 days).
+In the probability discounting for gains and losses tasks,
+participants chose between an uncertain higher and a certain smaller reward or loss ranging from €3 to 50. To limit
+demands for abstraction and numeracy skills, the different
+probabilities (2/3, 1/2, 1/3, 1/4, 1/5) were visually represented by ratios of blanks and wins or losses in two jars
+(Fernandes et al., 2018).
+In the mixed gambles task, participants accepted or
+rejected a gamble with a 50% chance of winning (€1–40)
+and losing (€5–20) after receiving a one-time deposit of
+€10 to encourage gambling (Ert & Erev, 1930). Each task
+consisted of 50 trials with two offers presented simultaneously. The responses, which were limited to five seconds,
+were registered on standard keyboards, and the selected
+option was highlighted with a green frame. Participants
+saw the outcome of each decision in risk taking tasks.
+They were informed at the beginning that for each of
+the four tasks one of their decisions would be randomly
+selected and monetary compensation for study participation would be increased by the corresponding bonus
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+A. Richtmann et al.
+
+Fig. 1  Illustration of Exemplary Tasks from the Value-Based Decision-Making Battery. Throughout the battery, the amounts, probabilities, and delays were systematically varied. In delay discounting
+tasks, participants were presented with a choice between receiving an
+immediate payout or opting for a larger amount to be paid out after a
+delay, for example, in two weeks. During the probability discounting
+
+for gains task, participants had the option to select between a guaranteed gain and a larger, but uncertain gain. In the probability discounting for losses task, individuals were faced with the decision between
+a certain, smaller loss and a larger, uncertain loss. In the mixed gambles task, participants could choose either not to play, or to engage
+with a 50% chance of either incurring a loss or achieving a win
+
+amount (minimum bonus = 0). Participants were instructed
+that the bonus payout could be delayed depending on the
+decisions they made in the delay discounting task, but
+basic monetary compensation was ultimately done without
+delay for administrative reasons. The average time taken
+to complete the entire test battery was 21.6 min (SD = 3.4;
+range = 15.1–34.4).
+The battery employs an adaptive Bayesian algorithm
+based on trial-by-trial observations that updates offers following a hyperbolic function according to the individual
+indifference point (no preference for either offer). The
+likelihood of choosing between offers is described by a
+softmax probability function. Further information regarding the mathematical framework of the battery is provided
+by Pooseh et al. (2018).
+Individuals exhibit higher delay discounting when they
+prefer smaller immediate gains (high k) and lower delay
+discounting when they choose larger delayed options (low
+k). Risk seeking individuals are more likely to accept the
+possibility of winning nothing to maximize outcomes (low
+k), whereas risk averse individuals favor smaller certain
+gains (high k). In the probability discounting for losses
+task, risk seeking individuals take the chance of losing a
+higher amount to avoid any loss (high k), and risk averse
+adults tend to choose a certain loss to prevent higher losses
+(low k). Loss-averse individuals (high λ) prefer maintaining the amount of money they possess at the start over taking the risk of losing or winning money (Tom et al., 2007).
+We applied a natural logarithmic transformation of k and
+λ values to approximate the data to a normal distribution.
+Five participants had missing data for at least one task.
+
+Cognitive Covariates
+To account for fluid cognitive abilities, we evaluated working memory for spatial locations and serial order, and perceptual processing speed (Identical Pictures Task). A verbal
+comprehension task (Spot-a-Word test) was implemented
+as a correlate of crystallized cognitive abilities (specifically
+verbal knowledge). All tests relating to the cognitive variables took 30 min, including a 5-min briefing. The cognitive
+tasks and covariate measures are described in greater detail
+below.
+Verbal Knowledge
+In a modified version of the Spot-a-Word test (Lindenberger
+et al., 1993), participants were asked to identify the one true
+word among five words, of which four were pronounceable
+non-words, as quickly and as correctly as possible. The test
+ended after 35 trials or three consecutive incorrect answers.
+We used accuracy (ratio of correct to all responses) as an
+indicator of verbal knowledge. Data were missing from the
+same two participants whose data were missing for the Identical Picture Task.
+Working Memory for Spatial Location and Serial Order
+We used a computerized version of a working memory task
+for spatial location and serial order (Nagel et al., 2008),
+wherein participants were shown a 4-by-4 grid of white circles on a blue background. For each of the 96 trials, four
+(low working memory load level) or seven (high working
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+
+memory load level) circles were highlighted sequentially and
+participants indicated whether a probed circle was among
+those highlighted (working memory for spatial location).
+If so, a digit (1–7) appeared in the center of this circle and
+participants decided whether this digit matched the circle’s
+position in the sequence (working memory for serial order).
+Participants indicated their responses by pressing one of
+two buttons (yes or no). Ratios of correct answers served as
+accuracy measures for both subtasks. Due to data loss, one
+older adult was excluded from the analysis of both subtasks,
+and 13 older participants were excluded from the analysis of
+the serial order memory subtask. A detailed description of
+the missing data can be found in the Supplementary Materials. We performed Mann–Whitney U tests to compare
+decision-making in older participants with complete versus
+incomplete data on working memory for serial order, finding
+no significant differences between the groups (all p > 0.16),
+as detailed in our missing data statement in the Supplementary Information.
+Perceptual Processing Speed
+In the Identical Pictures Task, participants saw a black-andwhite line drawing in the upper part of the computer screen
+and selected the matching drawing from five options below
+by pressing a corresponding key (1–5) as quickly as possible. The test lasted 80 s. The mean response time served as
+a parameter for perceptual speed. One young and one older
+adult who did not comply with the task instructions were
+excluded from the analyses. Data from one young and one
+older participant were missing.
+
+Correlates of Processing Noise
+Processing noise can lead to less distinctive reward representation, affecting evaluation of risks and delayed rewards (Li
+et al., 2007). We computed two measures of processing noise
+reflecting response variability: The first was derived from
+the Identical Pictures Task, where intra-individual reaction
+time variability (standard deviation of reaction times) indicated cognitive fluctuations and neural noise. Three participants were excluded for this measure due to incomplete data.
+The second measure, choice consistency parameter β,
+was estimated using a softmax probability function from
+the decision-making battery, with higher values reflecting
+higher consistency in selecting options, and thus a higher
+probability of taking more valuable offers (Pooseh et al.,
+2018). The correlations between the averaged parameter and
+the beta scores for each task range between 0.51 and 0.67
+(Table S1), indicating that choice consistencies in the different tasks are highly associated. We were therefore able to
+compute one parameter by averaging the mean-centered β
+
+values from all four tasks, with lower consistency indicating
+higher decision noise.
+
+Statistical Analysis
+Analyses were performed in IBM SPSS Statistics (Version
+25), applying a significance level of p < 0.05 for all tests.
+Two-tailed t tests assessed differences between age groups.
+We calculated Pearson’s bivariate and partial correlation
+coefficients r and rp (correcting for age group) for associations among decision-making, cognitive, and noise variables. We used bootstrapping (5000 samples) to compute
+bias-corrected accelerated 95% confidence intervals.
+For significant correlations, we performed bootstrapping mediation analyses (Preacher & Hayes, 2008) using
+the PROCESS macro for SPSS (http://​afhay​es.​com/​spss-​
+sas-​and-​mplus-​macros-​and-​code.​html) with age group as
+the independent variable (X), value-based decision-making
+scores as dependent variables (Y), and noise or cognition
+parameters as mediators (M). An illustration of the hypothetical mediation model is provided in Fig. 2. Coefficients
+were calculated for each association, including the total
+effect (c), the indirect effect (ab), and the direct effect (c’) of
+age group on value-based decision-making. Path a indicates
+the relationship between X and M, while b represents the
+relationship between M and Y. Effect sizes were quantified
+by applying Cohen´s d.
+
+Results
+Differences Between Age Groups
+In decision-making (Fig. 3a, Table 1), older adults showed
+higher delay discounting (t175 = − 3.01, p = 0.003) than
+young adults, with a medium-sized effect (d = 0.45). Age
+group comparison regarding risk aversion for probabilistic
+
+Fig. 2  Path Diagrams of Theoretical Mediation Models. The age
+group is used as independent variable. The decision-making parameter corresponds to the dependent variable. Either noise or cognitive
+abilities represent the mediator in this model. Age group can either
+have a direct effect (c’) on the dependent variable after accounting for
+the mediator, or the influence of age group on the dependent variable
+is indirect and mediated by the respective mediator variable (indirect
+effect ab). The total effect c reflects the sum of the direct and the indirect effect (c = a × b + c’)
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+A. Richtmann et al.
+Fig. 3  Decision-Making, Cognitive and Noise Parameters. a Compar- ▸
+ison of performance on value-based decision-making tasks between
+younger and older participants. DD delay discounting, PDG probability discounting for gains, PDL probability discounting for losses, MG
+mixed gambles. b Comparison of cognitive skills between young and
+older adults with high z-scores indicating superior and low z-scores
+indicating inferior performance. Perceptual speed is displayed as the
+reciprocal of reaction time in the Identical Picture tasks. c Comparison of noise parameters between young and older adults. Reaction
+time consistency is the reciprocal of intra-individual reaction time
+variability. High z-scores indicate superior and low z-scores indicate
+inferior performance
+
+gains did not reach significance but trended higher among
+older adults (t176 = − 1.82, p = 0.071, d = 0.27) than young
+adults. Risk seeking for probabilistic losses (t176 = 0.73,
+p = 0.467, d = 0.11) and loss aversion (t178 = 0.99, p = 0.322,
+d = 0.15) did not significantly differ between groups.
+Young adults outperformed older adults (p < 0.001) in all
+tasks capturing fluid abilities (Fig. 3b, Table 1), including
+working memory for spatial location (92% vs. 80% accuracy, d = 1.43) and serial order (80% vs. 60%, d = 1.33), and
+processing speed (2.5 vs. 3.6 s, d = 1.90). As expected, the
+older group exhibited greater accuracy in the Spot-a-Word
+task (63% vs. 72%, p < 0.001, d = 0.76), which tests verbal
+knowledge as a correlate of crystallized abilities.
+Furthermore, older adults exhibited more noisy responses
+than younger adults (Fig. 3c, Table 1), with increased reaction time variability in the Identical Pictures Task (740 ms
+vs. 1106 ms, p < 0.0001, d = 1.06) and reduced decision consistency across the decision-making battery (0.24 vs. − 0.22,
+p < 0.0001, d = 0.59).
+
+Association Between Decision‑Making
+and Cognitive/Noise Scores
+To explore the relations between value-based decision-making, basic crystallized cognitive abilities (verbal knowledge),
+fluid abilities (working memory, processing speed), and processing noise, we computed bivariate and partial (controlling for age group) correlation coefficients (Table 2). The
+results indicated no significant associations between measures of decision-making and verbal knowledge or speed of
+processing.
+We determined the age-corrected correlations between
+decision-making performance and cognitive abilities or
+noise parameters, which are presented in Figure S1 of the
+supplementary materials. Partial correlations with working
+memory were significant between delay discounting and
+working memory for spatial locations (rp = 0.171, n = 173)
+as well as for risk seeking for losses and working memory
+for serial order (rp = 0.183, n = 161). Regarding the correlates of processing noise, there were no significant associations between measures of decision-making and trial-by-trial
+variability in the speed of processing (Identical Pictures)
+
+task. However, higher processing noise (as operationalized
+as lower choice consistency) across the decision-making battery was associated with better performance in delay discounting (rp = − 0.311, n = 175) and mixed gambles (loss
+aversion) trials (rp = − 0.180, n = 178).
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+Table 1  Decision-making behavior, cognitive skills, and noise parameters by age groups
+VBDM
+
+Young adults
+
+logkDD
+logkPDG
+logkPDL
+logλMG
+
+Older adults
+
+t test
+
+n
+
+M
+
+SD
+
+n
+
+M
+
+SD
+
+t
+
+p
+
+Cohen’s d
+
+84
+84
+84
+86
+
+− 5.60
+.05
+.29
+1.54
+
+2.133
+.804
+.753
+.576
+
+91
+92
+92
+92
+
+− 4.45
+.33
+.18
+1.44
+
+2.877
+1.214
+1.260
+.736
+
+− 3.01
+− 1.82
+.73
+.99
+
+.003
+.071
+.467
+.322
+
+− .45
+− .27
+.11
+.15
+
+Cognitive abilities
+
+CI
+
+Spatial working memory
+Serial order memory
+Perceptual speed
+Verbal knowledge
+
+86
+86
+84
+85
+
+92.15
+79.98
+2465.41
+62.89
+
+5.03
+11.57
+468.08
+11.28
+
+91
+79
+91
+92
+
+79.79
+60.22
+3568.59
+71.74
+
+11.04
+17.76
+669.73
+11.84
+
+9.67
+8.39
+12.71
+− 5.08
+
+[9.93, 15.02]
+[15.28, 24.16]
+[− 1272.63, − 930.88]
+[− 12.21, − 5.48]
+
+1.43
+1.33
+− 1.90
+− .76
+
+84
+
+739.55
+
+309.39
+
+91
+
+1105.84
+
+376.71
+
+− 7.00
+
+[− 464.48, − 267.73]
+
+− 1.06
+
+86
+
+.24
+
+.68
+
+93
+
+− .22
+
+.84
+
+3.97
+
+Noise parameters
+Reaction time SD in IDP
+task [ms]
+Decision consistency
+
+[.24, .68]
+
+.59
+
+VBDM value-based decision-making battery, DD delay discounting, PDG probability discounting for gains, PDL probability discounting for
+losses, MG mixed gambles, IDP identical pictures
+
+We found significant bivariate correlations between delay
+discounting and decision consistency (r = − 0.352, n = 175),
+between loss aversion and decision consistency (r = − 0.151,
+n = 178), between risk aversion for gains and working memory for serial order (r = − 0.210, n = 162), and risk seeking
+for losses and working memory for serial order (r = 0.180,
+n = 162).
+
+Mediation Analyses
+To clarify whether choice consistency during decisionmaking or working memory for spatial location and serial
+order influenced decision-making, we conducted mediation
+analyses with the variables that were significantly zero-order
+or partially (controlling for age group) correlated with valuebased decision-making parameters (Fig. 4). Older adults’
+poorer performance in working memory for spatial location
+(CI − 1.42 ≤ a ≤ − 0.93) was related to less delay discounting
+(CI 0.03 ≤ b ≤ 0.38). The mediation model revealed an indirect relationship between age group and delay discounting
+that is mediated by baseline working memory performance
+(CI − 0.58 ≤ ab ≤ − 0.01). The differences between age
+groups in delay discounting (CI 0.12 ≤ c ≤ 0.70) increased
+when considering age differences in working memory for
+spatial location (CI 0.30 ≤ c’ ≤ 1.00; model Fig. 4a), indicating a competitive mediation (Zhao et al., 2010). Decision
+consistency fully mediated the age effect on delay discounting (CI 0.15 ≤ ab ≤ 0.73) by weakening the correlation (CI
+0.15 ≤ c ≤ 0.73) between the age group and delay discounting
+(CI: − 0.02 ≤ c’ ≤ 0.56; model Fig. 4b). When controlling
+for both spatial working memory and decision consistency
+
+in one partial correlation model, we found steeper delay
+discounting in older adults (r = 0.231, p = 0.002, d = 0.47).
+Working memory for serial order did not mediate the
+association between age and probability discounting for
+gains as indicated by the nonsignificant indirect path (CI:
+− 0.00 ≤ ab ≤ 0.60; model Fig. 4c).
+When probability discounting for losses and its potential mediators were examined, serial order memory (CI
+− 0.48 ≤ ab ≤ − 0.02) showed significant indirect effects.
+The numerical effect of age group on probability discounting for losses (CI − 0.40 ≤ c ≤ 0.21) reversed when serial
+order memory was included (CI − 0.22 ≤ c’ ≤ 0.50; model
+Fig. 4d), indicating a competitive mediation.
+The mediation analysis of loss aversion via decision
+consistency also revealed a significant indirect effect (CI
+0.02 ≤ ab ≤ 0.22). The association between age group
+and loss aversion (CI − 0.44 ≤ c ≤ 0.15) increased when
+decision consistency was included as a mediator (CI
+− 0.56 ≤ c’ ≤ 0.05; model Fig. 4e), but this increase was not
+significant.
+To further interpret the observed effects, we conducted
+separate correlation analyses for each age group in models,
+where competitive mediation effects were identified: In the
+younger age group, better spatial working memory was associated with higher delay discounting (r = 0.323, p = 0.003,
+CI 0.092; 0.507), a relationship that was not observed in
+older adults (r = 0.128, p = 0.231, CI − 0.069; 0.377). In
+contrast, in the older age group, higher decision consistency
+was linked to lower loss aversion (r = − 0.235, p = 0.024, CI
+− 0.420; − 0.039), while this association did not appear in
+the younger age group (r = − 0.086, p = 0.434, CI − 0.284;
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Reaction
+time SD
+Identical
+Picture
+Task [ms]
+
+Noise parameters
+
+Spatial
+working
+memory
+Serial order
+memory
+Perceptual
+speed
+Verbal
+knowledge
+
+Cognitive
+abilities
+
+Reaction
+time SD
+Identical
+Picture
+Task [ms]
+Decision
+consistency
+
+Noise parameters
+
+Spatial
+working
+memory
+Serial order
+memory
+Perceptual
+speed
+Verbal
+knowledge
+
+Cognitive
+abilities
+
+− .115
+
+− .234
+
+− .089
+
+.067
+
+− .072
+
+.062
+
+− .180
+
+.003
+
+.171*
+
+− .025
+
+− .209
+
+.220
+
+.280
+
+.266
+
+.134
+
+.188
+
+− .082
+
+.003
+
+.026
+
+.091
+
+− .210*
+
+− .042
+
+.120
+
+.210
+
+.103
+
+.255
+
+.379
+
+− .059
+
+− .021
+
+.015
+
+− .152
+
+.039
+
+Lower bound Upper bound Partial correlation
+
+− .479
+
+− .009
+
+.138
+
+− .352*
+
+− .074
+
+.097
+
+− .079
+
+− .225
+
+− .049
+
+.079
+
+− .138
+
+Partial correlation
+
+logkPDG
+
+Lower bound Upper bound Bivariate
+correlation
+
+.014
+
+Bivariate
+correlation
+
+logkDD
+
+.073
+
+.145
+
+.207
+
+.238
+
+− .035
+
+.136
+
+− .004
+
+− .070
+
+− .003
+
+− .040
+
+.180*
+
+.103
+
+− .193
+
+− .217
+
+− .122
+
+− .306
+
+− .176
+
+.082
+
+.186
+
+.164
+
+.006
+
+.226
+
+− .055
+
+.019
+
+− .012
+
+.183*
+
+.094
+
+Lower bound Upper bound Partial correlation
+
+− .238
+
+− .133
+
+− .158
+
+− .052
+
+− .366
+
+− .238
+
+Lower bound Upper bound Bivariate
+correlation
+
+logkPDL
+
+.139
+
+.101
+
+.149
+
+.125
+
+.340
+
+.256
+
+− .151*
+
+− .050
+
+.072
+
+− .114
+
+.050
+
+.071
+
+− .220
+
+− .147
+
+− .168
+
+.024
+
+− .049
+
+.105
+
+.185
+
+.143
+
+.334
+
+.238
+
+− .005
+
+.107
+
+− .065
+
+.022
+
+.026
+
+Lower bound Upper bound Partial correlation
+
+− .152
+
+− .247
+
+− .157
+
+− .202
+
+.007
+
+− .054
+
+Lower bound Upper bound Bivariate
+correlation
+
+logλMG
+
+Table 2  Zero-Order and Partial Correlations (Corrected for Age Group) Between Decision-Making Performance and Cognitive Abilities or Noise Parameters
+
+− .010
+
+.112
+
+.246
+
+.049
+
+.259
+
+.239
+
+− .164
+
+− .100
+
+− .219
+
+− .172
+
+− .145
+
+.158
+
+.306
+
+.087
+
+.212
+
+.182
+
+Lower bound Upper bound
+
+− .295
+
+− .211
+
+− .114
+
+− .283
+
+− .165
+
+− .110
+
+Lower bound Upper bound
+
+A. Richtmann et al.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+
+− .322
+
+− .037
+
+0.123). Better serial order memory was associated with
+higher probability discounting for losses only in older adults
+(r = 0.254, p = 0.025, CI 0.029; 0.445), whereas this association was not present in the younger age group (r = 0.015,
+p = 0.890, CI − 0.160; 0.177).
+
+p < .05
+
+*
+
+DD delay discounting, PDG probability discounting for gains, PDL probability discounting for losses, MG mixed gambles
+
+− .311*
+Decision
+consistency
+
+Noise parameters
+
+Table 2  (continued)
+
+− .450
+
+-.151
+
+− .048
+
+− .211
+
+.115
+
+− .020
+
+− .162
+
+.118
+
+− .180*
+
+Discussion
+This study explored potential differences between healthy
+young and older adults in decision-making, specifically in
+delay discounting, risk aversion for gains, risk seeking for
+losses, and loss aversion, thereby taking aging-related differences in cognition, especially in fluid cognitive abilities,
+and in behavioral indices of processing noise into account.
+Among 179 participants, older adults exhibited steeper delay
+discounting than young adults. Regarding the covariates for
+fluid cognitive abilities and processing noise, we replicated
+the expected age effect of lower spatial working memory,
+higher trial-by-trial response variability, and lower decision consistency in older adults compared to young adults.
+Exploratory mediation analyses indicated that lower decision consistency and better spatial working memory promoted steeper discounting, but these analyses also indicated
+robust age differences even when controlling for both mediators. We further observed a slight trend towards higher risk
+aversion for gains in older adults but no differences in risk
+seeking for losses and loss aversion, even when adjusting for
+cognitive abilities and processing noise. The lack of a clear
+age difference in those three tasks is in line with the recent
+meta-analysis by Bagaïni and colleagues (Bagaïni et al.,
+2023), which also reported nonsignificant effects of age on
+these decision-making parameters. In the following, we will
+therefore focus on the mediating effects of processing noise
+as indicated by choice consistency during decision-making
+and working memory capacity on the observed adult age
+differences in delay discounting.
+Choice consistency fully mediated age differences in
+delay discounting such that age differences decreased when
+taking choice consistency into account. Lower choice consistency might be explained by increased processing noise in
+older adults (Li & Sikström, 2002; Li et al., 2001a, 2001b;
+MacDonald et al., 2009; Pachur et al., 2017), which impedes
+the evaluation of complex options’ overall utility, leading
+older individuals to focus on simpler or more immediate
+options (Burks et al., 2009). Increased processing noise in
+older adults might reduce the specificity of value representations and thereby bias choice behavior towards computationally less demanding (i.e., immediate) choice options.
+This bias in choice behavior in older individuals may have
+important real-life implications for various decision-making
+domains, affecting economics, finances, health, social, and
+political topics.
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+A. Richtmann et al.
+
+Fig. 4  Path Diagrams of Mediation Models. Standardized coefficients are shown for each association, including the total effect (c), the direct
+effect (c’), and the indirect effect (ab) of age group on value-based decision-making
+
+We further observed a competitive mediation of age group
+via spatial working memory on delay discounting, suggesting
+that if both groups had had equal spatial working memory performance, the age difference would have been even larger. We
+found that in younger adults, better spatial working memory
+was significantly associated with higher delay discounting,
+implying that in younger individuals a more effective spatial working memory shifts their decision-making behavior
+towards more prioritization of immediate rewards over future
+ones. Conversely, the absence of a similar relationship in older
+adults suggests that the influence of spatial working memory
+on discounting diminishes with age. One possible explanation is that even older adults with above-average working
+memory capacity may be unable to allocate sufficient cognitive resources to enhance their decision-making performance.
+This limitation could stem from an overall decline in working
+memory capacity, which hinders their ability to compensate
+for the increased noise observed in their decision-making processes. Our finding of the association between higher spatial
+working memory and steeper delay discounting contradicts
+previous findings showing an inverse relation between working memory and delay discounting (Aranovich et al., 2016;
+Finn et al., 2015; Shamosh et al., 2008; Szuhany et al., 2018).
+This discrepancy might in part be related to the use of different tasks. We applied a visuospatial working memory task,
+
+whereas previous studies tested verbal working memory in
+retaining information while doing arithmetic (Finn et al., 2015)
+or n-back tasks (Aranovich et al., 2016; Szuhany et al., 2018).
+However, this shows that spatial working memory plays a role
+in this process by supporting the maintenance and manipulation of the information necessary for evaluating the delayed
+reward, which is a cognitive process that is involved in various
+decision-making tasks. Importantly, age differences persisted
+even when both mediators, working memory and processing
+noise, were considered. This result could indicate that other
+psychological mechanisms could play an important role in
+addition to neurodegeneration-related mechanisms. Possible
+causes contributing to age differences might also be related
+to motivational factors or recognition of the finite nature of
+life in old age. Understanding that age differences in delay
+discounting may even persist when accounting for mediators
+highlights the complexity of the underlying processes as well
+as the influence of individual differences in covariate measures
+on decision-making across the lifespan. However, the effect
+size found in our study (d = 0.47) is substantially greater and of
+opposite direction compared to the very recent meta-analysis
+by Bagaïni and colleagues (2023). One reason may be that our
+sample of older participants is not representative of the general
+older population given our strict screening process, but rather
+applies to high-functioning older adults.
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+
+Of note, both higher processing noise (i.e., lower
+choice consistency) and lower spatial working memory
+in older adults may reflect lower dopamine receptor density (MacDonald et al., 2012) and dopamine tone (Störmer
+et al., 2012), which decrease with age (Karrer et al., 2017;
+Samanez-Larkin et al., 2010). Dopamine appears to increase
+the signal-to-noise ratio, and thus reduce processing noise
+(Bäckman et al., 2010; MacDonald et al., 2012). Together,
+these studies support the claim that deterioration within the
+dopamine system may cause changes in behavior during
+aging (Bäckman et al., 2006).
+
+Limitations
+The cross-sectional design of this study precludes causal
+claims about the effects of age on decision-making and renders the results susceptible to cohort effects. For example,
+we did not control for factors such as income, which might
+be relevant in the context of our decision-making battery, so
+we can only speculate about possible differences between
+groups that are unrelated to age. Additionally, our task
+did not systematically manipulate the variation in delays
+(3–365 days) and in rewards (€3–50) between participants,
+and did not compare potential domain-specific adult age differences in delay discounting (e.g., Jimura et al., 2011). Furthermore, the ecological validity of our task may be rather
+limited, rendering our results to some extent measure-specific. We focused on basic cognitive abilities and processing noise as potential mediators of age effects on decisionmaking, and did not consider individual differences with
+regard to personality traits, socioemotional or other factors
+that might also be of relevance.
+Due to non-response and sampling biases (as evident, for
+example, from the to be expected low response rate during
+recruitment and the necessity of rather strict exclusion criteria), our sample is non-representative, with our older adults
+likely being higher functioning than the general older population. In addition, a sensitivity analysis (G*Power, Version
+3.1.9.6) indicated that our sample size is only sufficient to
+detect an effect size of d = 0.42 with 80% power. Studies
+in larger samples with less rigorous exclusion criteria and
+therefore fewer limitations with regard to representativeness are needed to extend our conclusions towards a broader
+population.
+
+Conclusion
+Our study contributes to the recent body of literature suggesting that age effects on decision-making, when comparing healthy young and older adults, are small (see also the
+recent meta-analysis by Bagaïni et al., 2023). Our study
+further highlights that adult age differences might in part
+
+depend on the decision-making domain and task, and are
+presumably also affected by individual differences in baseline cognitive function and processing noise (as reflected
+in the consistency of choice behavior). Of specific interest,
+our results indicate that older adults’ less consistent choice
+behavior and poorer working memory performance might
+bias their decision behavior towards higher discounting rates
+in some tasks, resulting in a robust age effect on delay discounting in our sample. Although our study lacks sufficient
+representativeness, it might stimulate future studies that
+further elucidate individual differences in decision-making
+across the adult lifespan.
+Supplementary Information The online version contains supplementary material available at https://d​ oi.o​ rg/1​ 0.1​ 007/s​ 10804-0​ 24-0​ 9504-8.
+Acknowledgements This research was supported by the German
+Research Foundation (Deutsche Forschungsgemeinschaft, DFG project numbers 178833530 (SFB 940), 402170461 (TRR 265), and
+454245598 (IRTG 2773)). We thank Shu-Chen Li, all the project staff
+members, and student assistants for supporting the project.
+Author Contributions All authors contributed to the study conception
+and design. Material preparation and data collection were organized
+by Franka Glöckner. Analyses were performed by Anja Richtmann.
+The first draft of the manuscript was written by Anja Richtmann and
+all authors commented on the previous versions of the manuscript. All
+authors read and approved the final manuscript.
+Funding Open Access funding enabled and organized by Projekt
+DEAL.
+Data Availability The data that support the findings of this study, along
+with syntax are openly available in the Open Science Framework at
+https://​osf.​io/​t7v2j/. The data will be shared in preprocessed form that
+ensures full anonymity of participants, in line with funding and data
+security regulations.
+
+Declarations
+Conflict of interest The authors have no competing interests to declare
+that are relevant to the content of this article.
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source,
+provide a link to the Creative Commons licence, and indicate if changes
+were made. The images or other third party material in this article are
+included in the article’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in
+the article’s Creative Commons licence and your intended use is not
+permitted by statutory regulation or exceeds the permitted use, you will
+need to obtain permission directly from the copyright holder. To view a
+copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+
+References
+Aranovich, G. J., McClure, S. M., Fryer, S., & Mathalon, D. H.
+(2016). The effect of cognitive challenge on delay discounting.
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+A. Richtmann et al.
+NeuroImage, 124(Pt A), 733–739. https://​doi.​org/​10.​1016/j.​neuro​
+image.​2015.​09.​027
+Arora, M., & Kumari, S. (2015). Risk taking in financial decisions as a
+function of age, gender: Mediating role of loss aversion and regret.
+International Journal of Applied Psychology, 5(4), 83–89. https://​
+doi.​org/​10.​5923/j.​ijap.​20150​504.​01
+Bäckman, L., Lindenberger, U., Li, S. C., & Nyberg, L. (2010). Linking cognitive aging to alterations in dopamine neurotransmitter
+functioning: Recent data and future avenues. Neuroscience and
+Biobehavioral Reviews, 34(5), 670–677. https://d​ oi.o​ rg/1​ 0.1​ 016/j.​
+neubi​orev.​2009.​12.​008
+Bäckman, L., Nyberg, L., Lindenberger, U., Li, S. C., & Farde, L.
+(2006). The correlative triad among aging, dopamine, and cognition: Current status and future prospects. Neuroscience and Biobehavioral Reviews, 30(6), 791–807. https://d​ oi.o​ rg/1​ 0.1​ 016/j.n​ eubi​
+orev.​2006.​06.​005
+Bagaïni, A., Liu, Y., Bajrami, A., Son, G., Tisdall, L., & Mata, R.
+(2023). Aging and economic preferences: Cumulative metaanalyses of age differences in risk, time, social, and effort preferences. Journals of Gerontology - Series B Psychological Sciences and Social Sciences, 78(7), 1122–1135. https://​doi.​org/​
+10.​1093/​geronb/​gbad0​34
+Bennett, I. J., & Madden, D. J. (2014). Disconnected aging: Cerebral
+white matter integrity and age-related differences in cognition.
+Neuroscience, 276, 187–205. https://​doi.​org/​10.​1016/j.​neuro​
+scien​ce.​2013.​11.​026
+Best, R., & Charness, N. (2015). Age differences in the effect of
+framing on risky choice: A meta-analysis. Psychology and
+Aging, 30(3), 688–698. https://​doi.​org/​10.​1037/​a0039​447
+Best, R., & Freund, A. M. (2018). Age, loss minimization, and the
+role of probability for decision-making. Gerontology, 64(5),
+475–484. https://​doi.​org/​10.​1159/​00048​7636
+Bixter, M. T., & Rogers, W. A. (2019). Age-related differences in
+delay discounting: Immediate reward, reward magnitude, and
+social influence. Journal of Behavioral Decision Making, 32(4),
+471–484. https://​doi.​org/​10.​1002/​bdm.​2124
+Burks, S. V., Carpenter, J. P., Goette, L., & Rustichini, A. (2009).
+Cognitive skills affect economic preferences, strategic behavior,
+and job attachment. Proceedings of the National Academy of
+Sciences of the United States of America, 106(19), 7745–7750.
+https://​doi.​org/​10.​1073/​pnas.​08123​60106
+Carson, N., Leach, L., & Murphy, K. J. (2018). A re-examination of
+Montreal Cognitive Assessment (MoCA) cutoff scores. International Journal of Geriatric Psychiatry, 33(2), 379–388. https://​
+doi.​org/​10.​1002/​gps.​4756
+Carstensen, L. L. (2006). The influence of a sense of time on human
+development. Science, 312(5782), 1913–1915. https://​doi.​org/​
+10.​1126/​scien​ce.​11274​88
+Chen, H. Y., Dix, A., Goh, J. O. S., Smolka, M. N., Thurm, F., & Li,
+S. C. (2021). Effects and mechanisms of information saliency
+in enhancing value-based decision-making in younger and older
+adults. Neurobiology of Aging, 99, 86–98. https://​doi.​org/​10.​
+1016/j.​neuro​biola​ging.​2020.​11.​018
+Eppinger, B., Hämmerer, D., & Li, S.-C. (2011). Neuromodulation
+of reward-based learning and decision making in human aging.
+Annals of the New York Academy of Sciences, 1235(1), 1–17.
+https://​doi.​org/​10.​1111/j.​1749-​6632.​2011.​06230.x
+Eppinger, B., Nystrom, L. E., & Cohen, J. D. (2012). Reduced sensitivity to immediate reward during decision-making in older
+than younger adults. PLoS ONE, 7(5), e36953. https://​doi.​org/​
+10.​1371/​journ​al.​pone.​00369​53
+Ert, E., & Erev, I. (1930). On the descriptive value of loss aversion in decisions under risk: Six clarifications. Judgment and
+Decision Making, 8(3), 214–235. https://​doi.​org/​10.​1017/​S1930​
+29750​00059​45
+
+Fernandes, C., Pasion, R., Gonçalves, A. R., Ferreira-Santos, F.,
+Barbosa, F., Martins, I. P., & Marques-Teixeira, J. (2018). Age
+differences in neural correlates of feedback processing after economic decisions under risk. Neurobiology of Aging, 65, 51–59.
+https://​doi.​org/​10.​1016/j.​neuro​biola​ging.​2018.​01.​003
+Finn, P. R., Gunn, R. L., & Gerst, K. R. (2015). The effects of a
+working memory load on delay discounting in those with externalizing psychopathology. Clinical Psychological Science, 3(2),
+202–214. https://​doi.​org/​10.​1177/​21677​02614​542279
+Glöckner, F., Schuck, N. W., & Li, S. C. (2021). Differential prioritization of intramaze cue and boundary information during spatial
+navigation across the human lifespan. Scientific Reports, 11(1),
+15257. https://​doi.​org/​10.​1038/​s41598-​021-​94530-9
+Green, L., Fry, A. F., & Myerson, J. (1994). Discounting of delayed
+rewards: A life-span comparison. Psychological Science, 5(1),
+33–36. https://​doi.​org/​10.​1111/j.​1467-​9280.​1994.​tb006​10.x
+Green, L., Myerson, J., Lichtman, D., Rosen, S., & Fry, A. (1996).
+Temporal discounting in choice between delayed rewards: The
+role of age and income. Psychology and Aging, 11(1), 79–84.
+https://​doi.​org/​10.​1037/​0882-​7974.​11.1.​79
+Green, L., Myerson, J., & Ostaszewski, P. (1999). Discounting of
+delayed rewards across the life span: Age differences in individual discounting functions. Behavioural Processes, 46(1), 89–96.
+https://​doi.​org/​10.​1016/​S0376-​6357(99)​00021-2
+Guttman, Z. R., Ghahremani, D. G., Pochon, J. B., Dean, A. C., & London, E. D. (2021). Age influences loss aversion through effects on
+posterior cingulate cortical thickness. Frontiers in Neuroscience,
+15, 673106. https://​doi.​org/​10.​3389/​fnins.​2021.​673106
+Jimura, K., Myerson, J., Hilgard, J., Keighley, J., Braver, T. S., &
+Green, L. (2011). Domain independence and stability in young
+and older adults’ discounting of delayed rewards. Behavioural
+Processes, 87(3), 253–259. https://d​ oi.o​ rg/1​ 0.1​ 016/j.b​ eproc.2​ 011.​
+04.​006
+Kanai, R., & Rees, G. (2011). The structural basis of inter-individual
+differences in human behaviour and cognition. Nature Reviews
+Neuroscience, 12(4), 231–242. https://​doi.​org/​10.​1038/​nrn30​00
+Karrer, T. M., Josef, A. K., Mata, R., Morris, E. D., & Samanez-Larkin,
+G. R. (2017). Reduced dopamine receptors and transporters but
+not synthesis capacity in normal aging adults: A meta-analysis.
+Neurobiology of Aging, 57, 36–46. https://d​ oi.o​ rg/1​ 0.1​ 016/j.n​ euro​
+biola​ging.​2017.​05.​006
+Leverett, S., Garza, C., & Seaman, K. (2022). The effect of delay duration on delay discounting across adulthood. Journals of Gerontology - Series B Psychological Sciences and Social Sciences, 77(3),
+467–471. https://​doi.​org/​10.​1093/​geronb/​gbab1​98
+Li, S. C., Aggen, S. H., Nesselroade, J. R., & Baltes, P. B. (2001a).
+Short-term fluctuations in elderly people’s sensorimotor functioning predict text and spatial memory performance: The MacArthur
+successful aging studies. Gerontology, 47(2), 100–116. https://d​ oi.​
+org/​10.​1159/​00005​2782
+Li, S.-C., Biele, G., Mohr, P. N. C., & Heekeren, H. R. (2007). Aging
+and neuroeconomics: Insights from research on neuromodulation of reward-based decision making. Analyse & Kritik, 29(1),
+97–111. https://​doi.​org/​10.​1515/​auk-​2007-​0107
+Li, S. C., Lindenberger, U., & Sikström, S. (2001b). Aging cognition:
+From neuromodulation to representation. Trends in Cognitive Sciences, 5(11), 479–486. https://​doi.​org/​10.​1016/​S1364-​6613(00)​
+01769-1
+Li, S. C., & Sikström, S. (2002). Integrative neurocomputational perspectives on cognitive aging, neuromodulation, and representation. Neuroscience and Biobehavioral Reviews, 26(7), 795–808.
+https://​doi.​org/​10.​1016/​S0149-​7634(02)​00066-0
+Li, Y., Baldassi, M., Johnson, E. J., & Weber, E. U. (2013). Complementary cognitive capabilities, economic decision making, and
+aging. Psychology and Aging, 28(3), 595–613. https://​doi.​org/​10.​
+1037/​a0034​172
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Value‑Based Decision‑Making and Its Relation to Cognition and Processing Noise in Young and…
+Lindenberger, U., Mayr, U., & Kliegl, R. (1993). Speed and intelligence
+in old age. Psychology and Aging, 8(2), 207–220. https://​doi.​org/​
+10.​1037/​0882-​7974.8.​2.​207
+Löckenhoff, C. E., O’Donoghue, T., & Dunning, D. (2011). Age differences in temporal discounting: The role of dispositional affect
+and anticipated emotions. Psychology and Aging, 26(2), 274–284.
+https://​doi.​org/​10.​1037/​a0023​280
+MacDonald, S. W. S., Karlsson, S., Rieckmann, A., Nyberg, L., &
+Bäckman, L. (2012). Aging-related increases in behavioral variability: Relations to losses of dopamine D 1 receptors. Journal of
+Neuroscience, 32(24), 8186–8191. https://d​ oi.o​ rg/1​ 0.1​ 523/J​ NEUR​
+OSCI.​5474-​11.​2012
+MacDonald, S. W. S., Li, S. C., & Bäckman, L. (2009). Neural underpinnings of within-person variability in cognitive functioning.
+Psychology and Aging, 24(4), 792–808. https://​doi.​org/​10.​1037/​
+a0017​798
+Mata, R., Josef, A. K., Samanez-Larkin, G. R., & Hertwig, R. (2011).
+Age differences in risky choice: A meta-analysis. Annals of the
+New York Academy of Sciences, 1235(1), 18–29. https://​doi.​org/​
+10.​1111/j.​1749-​6632.​2011.​06200.x
+Mather, M., Mazar, N., Gorlick, M. A., Lighthall, N. R., Burgeno, J.,
+Schoeke, A., & Ariely, D. (2012). Risk preferences and aging:
+The “certainty effect” in older adults’ decision making. Psychology and Aging, 27(4), 801–816. https://d​ oi.o​ rg/1​ 0.1​ 037/a​ 00301​ 74
+Nagel, I. E., Chicherio, C., Li, S. C., von Oertzen, T., Sander, T.,
+Villringer, A., Heekeren, H. R., Bäckman, L., & Lindenberger,
+U. (2008). Human aging magnifies genetic effects on executive
+functioning and working memory. Frontiers in Human Neuroscience, 2, 1. https://​doi.​org/​10.​3389/​neuro.​09.​001.​2008
+Nasreddine, Z. S., Phillips, N. A., Bédirian, V., Charbonneau, S.,
+Whitehead, V., Collin, I., Cummings, J. L., & Chertkow, H.
+(2005). The montreal cognitive assessment, MoCA: A brief
+screening tool for mild cognitive impairment. Journal of the
+American Geriatrics Society, 53(4), 695–699. https://​doi.​org/​10.​
+1111/j.​1532-​5415.​2005.​53221.x
+O’Brien, E. L., & Hess, T. M. (2020). Differential focus on probability and losses between young and older adults in risky decisionmaking. Aging, Neuropsychology, and Cognition, 27(4), 532–552.
+https://​doi.​org/​10.​1080/​13825​585.​2019.​16424​42
+Pachur, T., Mata, R., & Hertwig, R. (2017). Who dares, who errs?
+Disentangling cognitive and motivational roots of age differences
+in decisions under risk. Psychological Science, 28(4), 504–518.
+https://​doi.​org/​10.​1177/​09567​97616​687729
+Papenberg, G., Hämmerer, D., Müller, V., Lindenberger, U., & Li, S.
+C. (2013). Lower theta inter-trial phase coherence during performance monitoring is related to higher reaction time variability:
+A lifespan study. NeuroImage, 83, 912–920. https://​doi.​org/​10.​
+1016/j.​neuro​image.​2013.​07.​032
+Pooseh, S., Bernhardt, N., Guevara, A., Huys, Q. J. M., & Smolka,
+M. N. (2018). Value-based decision-making battery: A Bayesian
+adaptive approach to assess impulsive and risky behavior. Behavior Research Methods, 50(1), 236–249. https://​doi.​org/​10.​3758/​
+s13428-​017-​0866-x
+Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling
+strategies for assessing and comparing indirect effects in multiple
+mediator models. Behavior Research Methods, 40(3), 879–891.
+https://​doi.​org/​10.​3758/​BRM.​40.3.​879
+Raz, N., Gunning-Dixon, F. M., Head, D., Dupuis, J. H., & Acker, J. D.
+(1998). Neuroanatomical correlates of cognitive aging: Evidence
+from structural magnetic resonance imaging. Neuropsychology,
+12(1), 95–114. https://​doi.​org/​10.​1037/​0894-​4105.​12.1.​95
+Read, D., & Read, N. L. (2004). Time discounting over the lifespan.
+Organizational Behavior and Human Decision Processes, 94(1),
+22–32. https://​doi.​org/​10.​1016/j.​obhdp.​2004.​01.​002
+
+Rieger, M., & Mata, R. (2015). On the generality of age differences
+in social and nonsocial decision making. Journals of Gerontology - Series B Psychological Sciences and Social Sciences, 70(2),
+200–212. https://​doi.​org/​10.​1093/​geronb/​gbt088
+Rutledge, R. B., Smittenaar, P., Zeidman, P., Brown, H. R., Adams,
+R. A., Lindenberger, U., Dayan, P., & Dolan, R. J. (2016). Risk
+taking for potential reward decreases across the lifespan. Current
+Biology, 26(12), 1634–1639. https://​doi.​org/​10.​1016/j.​cub.​2016.​
+05.​017
+Samanez-Larkin, G. R., Kuhnen, C. M., Yoo, D. J., & Knutson, B.
+(2010). Variability in nucleus accumbens activity mediates agerelated suboptimal financial risk taking. Journal of Neuroscience,
+30(4), 1426–1434. https://d​ oi.o​ rg/1​ 0.1​ 523/J​ NEURO
+​ SCI.4​ 902-0​ 9.​
+2010
+Samanez-Larkin, G. R., Mata, R., Radu, P. T., Ballard, I. C.,
+Carstensen, L. L., & McClure, S. M. (2011). Age differences in
+striatal delay sensitivity during intertemporal choice in healthy
+adults. Frontiers in Neuroscience, 5, 126. https://​doi.​org/​10.​3389/​
+fnins.​2011.​00126
+Seaman, K. L., Green, M. A., Shu, S., & Samanez-Larkin, G. R.
+(2018). Individual differences in loss aversion and preferences
+for skewed risks across adulthood. Psychology and Aging, 33(4),
+654–659. https://​doi.​org/​10.​1037/​pag00​00261
+Shamosh, N. A., DeYoung, C. G., Green, A. E., Reis, D. L., Johnson,
+M. R., Conway, A. R. A., Engle, R. W., Braver, T. S., & Gray, J.
+R. (2008). Individual differences in delay discounting: Relation
+to intelligence, working memory, and anterior prefrontal cortex.
+Psychological Science, 19(9), 904–911. https://​doi.​org/​10.​1111/j.​
+1467-​9280.​2008.​02175.x
+Störmer, V. S., Passow, S., Biesenack, J., & Li, S. C. (2012). Dopaminergic and cholinergic modulations of visual-spatial attention
+and working memory: Insights from molecular genetic research
+and implications for adult cognitive development. Developmental
+Psychology, 48(3), 875–889. https://​doi.​org/​10.​1037/​a0026​198
+Szuhany, K. L., MacKenzie, D., & Otto, M. W. (2018). The impact
+of depressed mood, working memory capacity, and priming on
+delay discounting. Journal of Behavior Therapy and Experimental
+Psychiatry, 60, 37–41. https://d​ oi.o​ rg/1​ 0.1​ 016/j.j​ btep.2​ 018.0​ 3.0​ 01
+Tom, S. M., Fox, C. R., Trepel, C., & Poldrack, R. A. (2007). The neural basis of loss aversion in decision-making under risk. Science,
+315(5811), 515–518. https://​doi.​org/​10.​1126/​scien​ce.​11342​39
+Tymula, A., Belmaker, L. A. R., Ruderman, L., Glimcher, P. W., &
+Levy, I. (2013). Like cognitive function, decision making across
+the life span shows profound age-related changes. Proceedings of
+the National Academy of Sciences of the United States of America,
+110(42), 17143–17148. https://d​ oi.o​ rg/1​ 0.1​ 073/p​ nas.1​ 30990​ 9110
+West, R. L. (1996). An application of prefrontal cortex function theory to cognitive aging. Psychological Bulletin, 120(2), 272–292.
+https://​doi.​org/​10.​1037/​0033-​2909.​120.2.​272
+Whelan, R., & McHugh, L. A. (2009). Temporal discounting of hypothetical monetary rewards by adolescents adults and older adults.
+Psychological Record, 59(2), 247–258. https://​doi.​org/​10.​1007/​
+BF033​95661
+Zhao, X., Lynch, J. G., & Chen, Q. (2010). Reconsidering Baron and
+Kenny: Myths and truths about mediation analysis. Journal of
+Consumer Research, 37(2), 197–206. https://​doi.​org/​10.​1086/​
+651257
+Publisher's Note Springer Nature remains neutral with regard to
+jurisdictional claims in published maps and institutional affiliations.
+
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+Terms and Conditions
+Springer Nature journal content, brought to you courtesy of Springer Nature Customer Service Center GmbH (“Springer Nature”).
+Springer Nature supports a reasonable amount of sharing of research papers by authors, subscribers and authorised users (“Users”), for smallscale personal, non-commercial use provided that all copyright, trade and service marks and other proprietary notices are maintained. By
+accessing, sharing, receiving or otherwise using the Springer Nature journal content you agree to these terms of use (“Terms”). For these
+purposes, Springer Nature considers academic use (by researchers and students) to be non-commercial.
+These Terms are supplementary and will apply in addition to any applicable website terms and conditions, a relevant site licence or a personal
+subscription. These Terms will prevail over any conflict or ambiguity with regards to the relevant terms, a site licence or a personal subscription
+(to the extent of the conflict or ambiguity only). For Creative Commons-licensed articles, the terms of the Creative Commons license used will
+apply.
+We collect and use personal data to provide access to the Springer Nature journal content. We may also use these personal data internally within
+ResearchGate and Springer Nature and as agreed share it, in an anonymised way, for purposes of tracking, analysis and reporting. We will not
+otherwise disclose your personal data outside the ResearchGate or the Springer Nature group of companies unless we have your permission as
+detailed in the Privacy Policy.
+While Users may use the Springer Nature journal content for small scale, personal non-commercial use, it is important to note that Users may
+not:
+1. use such content for the purpose of providing other users with access on a regular or large scale basis or as a means to circumvent access
+control;
+2. use such content where to do so would be considered a criminal or statutory offence in any jurisdiction, or gives rise to civil liability, or is
+otherwise unlawful;
+3. falsely or misleadingly imply or suggest endorsement, approval , sponsorship, or association unless explicitly agreed to by Springer Nature in
+writing;
+4. use bots or other automated methods to access the content or redirect messages
+5. override any security feature or exclusionary protocol; or
+6. share the content in order to create substitute for Springer Nature products or services or a systematic database of Springer Nature journal
+content.
+In line with the restriction against commercial use, Springer Nature does not permit the creation of a product or service that creates revenue,
+royalties, rent or income from our content or its inclusion as part of a paid for service or for other commercial gain. Springer Nature journal
+content cannot be used for inter-library loans and librarians may not upload Springer Nature journal content on a large scale into their, or any
+other, institutional repository.
+These terms of use are reviewed regularly and may be amended at any time. Springer Nature is not obligated to publish any information or
+content on this website and may remove it or features or functionality at our sole discretion, at any time with or without notice. Springer Nature
+may revoke this licence to you at any time and remove access to any copies of the Springer Nature journal content which have been saved.
+To the fullest extent permitted by law, Springer Nature makes no warranties, representations or guarantees to Users, either express or implied
+with respect to the Springer nature journal content and all parties disclaim and waive any implied warranties or warranties imposed by law,
+including merchantability or fitness for any particular purpose.
+Please note that these rights do not automatically extend to content, data or other material published by Springer Nature that may be licensed
+from third parties.
+If you would like to use or distribute our Springer Nature journal content to a wider audience or on a regular basis or in any other manner not
+expressly permitted by these Terms, please contact Springer Nature at
+onlineservice@springernature.com
+
+

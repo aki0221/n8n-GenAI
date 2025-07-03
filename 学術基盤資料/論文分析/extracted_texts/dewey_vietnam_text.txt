@@ -1,0 +1,749 @@
+Cogent Education
+
+ISSN: 2331-186X (Online) Journal homepage: www.tandfonline.com/journals/oaed20
+
+The relevance of John Dewey’s pragmatism for
+educational innovation in contemporary Vietnam
+Kien Pham Thi
+To cite this article: Kien Pham Thi (2025) The relevance of John Dewey’s pragmatism for
+educational innovation in contemporary Vietnam, Cogent Education, 12:1, 2510055, DOI:
+10.1080/2331186X.2025.2510055
+To link to this article: https://doi.org/10.1080/2331186X.2025.2510055
+
+© 2025 The Author(s). Published by Informa
+UK Limited, trading as Taylor & Francis
+Group.
+Published online: 03 Jun 2025.
+
+Submit your article to this journal
+
+Article views: 311
+
+View related articles
+
+View Crossmark data
+
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=oaed20
+
+COGENT EDUCATION
+2025, VOL. 12, NO. 1, 2510055
+https://doi.org/10.1080/2331186X.2025.2510055
+
+EDUCATION POLICY | RESEARCH ARTICLE
+
+The relevance of John Dewey’s pragmatism for educational
+innovation in contemporary Vietnam
+Kien Pham Thi
+University of Economics Ho Chi Minh City – UEH, Ho Chi Minh City, Vietnam
+ABSTRACT
+
+ARTICLE HISTORY
+
+In the current era of global integration, and the fourth industrial revolution requires
+the education system to transform and combine traditional education with online
+education. Therefore, educational innovations are being implemented globally to
+meet the increasing demands of the modern labor market. However, Vietnamese education faces many challenges in innovation, such as the curriculum being too theoretical and lacking practicality. These teaching methods do not encourage creative and
+critical thinking, and unequal access to education exists between regions. Dewey’s
+philosophy emphasizes experiential education, where students learn through practical
+experiences, critical thinking, and problem-solving instead of passively absorbing
+knowledge. These ideas are consistent with current educational reforms in Vietnam,
+especially in transitioning from traditional education to an active learning model,
+developing creative thinking, and strengthening the connection between education
+and real life, technology, AI, and Big Data, and careers. Their combination is intertwined, creating a powerful synergy in innovation and success for Vietnam education
+today.
+
+Received 27 July 2024
+Revised 15 January 2025
+Accepted 9 May 2025
+KEYWORDS
+
+Education; Dewey;
+Philossophy; Innovation;
+Vietnam
+SUBJECTS
+
+Education Policy & Politics;
+History of Education;
+Multicultural Education;
+Research Methods in
+Education
+
+Introduction
+In the context of globalization and the Fourth Industrial Revolution, international education requires a
+flexible, creative, and practical learning system to train highly qualified human resources to meet the
+needs of the knowledge economy. Vietnam is no exception to this trend as the labor market requires
+workers to have in-depth knowledge of science and technology and, at the same time, must be proficient in labor skills such as critical thinking, creativity, cooperation, and adaptation to change (Earl,
+2025). However, Vietnam’s human resources have not yet met these requirements due to many limitations, such as educational methods that are still heavily theoretical, lacking practicality and application,
+and labor skills that are not linked to the needs of businesses and the labor market. Additionally, there
+is inequality in access to education between regions in the country, including mountainous and plains
+areas, urban and rural areas, and central and peripheral regions (Shinjo et al., 2024). The cause of this
+situation comes from the education system that has not kept up with the innovation trend; traditional
+teaching methods have not created conditions for learners to develop creative thinking, critical thinking,
+and practical professional skills (O’Leary et al., 2023). Therefore, Vietnamese education today needs to be
+reformed in the direction of experimentation, encouraging innovation to develop the scientific research,
+technology, and creative capacity of learners while ensuring fairness in education so that all citizens,
+regardless of region, have equal learning opportunities (Le et al., 2023; Tran & Do, 2024). A modern education system needs to create proactive and positive people in learning and working, contributing to
+the prosperous development of the country. Meanwhile, John Dewey (1859-1952) was a famous
+American philosopher and educator who contributed significantly to modern educational theory. He promoted experiential education, emphasizing that students learn best through direct interaction with realCONTACT Kien Pham Thi
+
+kienpt@ueh.edu.vn
+
+University of Economics Ho Chi Minh City – UEH, Ho Chi Minh City, Vietnam
+
+ß 2025 The Author(s). Published by Informa UK Limited, trading as Taylor & Francis Group.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been
+published allow the posting of the Accepted Manuscript in a repository by the author(s) or with their consent.
+
+2
+
+K. PHAM THI
+
+life situations and environments. He also promoted democratic education and civic responsibility, considering schools as places to practice cooperative thinking and participate in shared decision-making. In addition, Dewey encouraged education for innovative thinking, developing creativity, and problem-solving
+skills to prepare students to face the challenges of modern society. Dewey’s educational philosophy
+emphasizes three core elements: experimental education, democracy in education, and the proactive role
+of learners (Dewey, 1938). These ideas are essential for Vietnamese education, as they aim to train citizens
+to adapt, be creative, and think critically. This study hypothesizes that applying Dewey’s educational philosophy can help Vietnam reform its education more modernly, overcome current limitations, and meet
+future labor market requirements. This study uses analytical and synthetic methods to clarify issues related
+to Vietnamese education in the current context. The analytical method is applied to examine and evaluate
+each factor, such as the current state of human resources, limitations in the educational system, and the
+requirements for innovation. Meanwhile, the synthetic method helps to connect the analytical results and
+systematize the positive and negative factors of Vietnamese education and the values that Dewey’s educational philosophy builds. This shows the suitability of the Vietnamese education system when applying
+Dewey’s educational philosophy to the cause of educational innovation in Vietnam and proposes suitable
+solutions for the cause of educational innovation in Vietnam. Combining these two methods ensures logic
+and science and helps the research have a solid theoretical basis, proposing effective educational innovation. This research has practical significance in clearly defining the directions for educational innovation in
+Vietnam, from changing teaching methods and training programs to improving the quality of comprehensive education, aiming to build an advanced education system suitable for developing the knowledge
+economy and global integration.
+
+Research objectives
+This study examines the application of Dewey’s educational philosophy in Vietnam, focusing on experiential learning, democratic education, and innovation. It aims to analyze the challenges and opportunities
+within Vietnam’s education system, assess the feasibility of Dewey reforms, and propose evidence-based
+recommendations to enhance student engagement, critical thinking, and equitable access to quality
+education.
+
+Research question
+1.
+2.
+3.
+
+How does Dewey’s educational philosophy apply in Vietnam today?
+What are the challenges Vietnamese educators face in the cause of educational innovation today?
+What specific impacts does the application of Dewey’s educational philosophy have on Vietnam’s
+modern education system today?
+
+Research hypotheses
+Based on Dewey’s educational philosophy and the current state of Vietnamese education, this study proposes the following hypotheses:
+1.
+2.
+3.
+
+Applying Dewey’s educational philosophy improves teaching and learning quality in Vietnamese
+schools.
+The main challenges Vietnamese education faces in educational innovation include inadequate
+adoption of new educational methodologies.
+Applying Dewey’s educational philosophy to current Vietnamese education is the basis for successfully innovating and keeping up with global educational innovation.
+
+Literature review
+John Dewey’s educational philosophy is foundational in pragmatic education. His emphasis on experiential learning and integrating education with real-life experiences sets his approach apart from that of his
+
+COGENT EDUCATION
+
+3
+
+contemporaries and modern educational theorists. This comprehensive review will compare Dewey’s
+philosophy with other key figures in pragmatism and global educational theory, highlighting both convergences and divergences. Additionally, it will identify the superiority of Dewey’s educational philosophy and point out gaps in current research that this article aims to address.
+
+First, education as experience: learning through engagement
+In ‘Democracy and Education’ (Dewey, 2024), he argues that learning should not be limited to rote
+memorization but should engage students in activities that reflect real-life situations, fostering critical
+thinking and problem-solving skills. Dewey’s idea that education should be rooted in experience aligns
+with the broader pragmatic tradition. Dewey believes that education through experience helps learners
+understand and gain expertise, thereby achieving a deep understanding and applying knowledge to
+real-life situations. This allows students to become more flexible and creative in the learning process.
+William James, a contemporary key figure in pragmatism, also emphasized the importance of experience in learning. However, James focused more on the individual’s experience and personal growth
+than Dewey (James, 2001). While Dewey acknowledged the importance of the individual, he placed a
+greater emphasis on the social context of education, arguing that learning is inherently a social process.
+According to Dewey, education should prepare students to be active and engaged members of their
+communities, not just to understand themselves better.
+In contrast, Maria Montessori’s educational philosophy also prioritizes experiential learning with a different approach. Montessori emphasized self-directed learning within a prepared environment. Her
+method involves providing children with materials stimulating exploration and discovery (Swargiary,
+2024). While both Dewey and Montessori value experience as central to learning, Dewey emphasizes
+social interactions and democratic participation within the educational environment.
+Similarly, Jean Piaget’s constructivist theory emphasizes the role of experience in learning, mainly
+through active discovery and interaction with the environment. However, Piaget focuses primarily on
+the cognitive stages of development and how children construct knowledge at different stages. On the
+other hand, Dewey integrates these cognitive processes within a broader social context, advocating for
+an educational system that prepares students for democratic participation and community engagement
+(Ottavi, 2024).
+William James’s and Dewey’s philosophies belong to the American school of realism, emphasizing the
+role of experience and action in constructing knowledge (Dewey, 1938; James, 2006). Both value the
+flexibility and practicality of thinking and emphasize the interaction between humans and the environment (Dewey, 1938; James, 2001). However, Dewey surpasses James by applying philosophy to education and social systems, promoting democracy and social reform through experimental methods and
+critical thinking (Dewey, 1938).
+Empirical studies like Jamison’s have supported Dewey’s emphasis on experiential learning. (Jamison,
+2022) found that students involved in real-world projects and internships demonstrate higher engagement levels and better academic performance, similar to Slattery. (2024) proved that hands-on projects
+and problem-based learning significantly enhance students’ comprehension and retention of complex
+concepts. These findings underscore the practical effectiveness of Dewey’s experiential learning philosophy in contemporary education. Research by Tembrevilla et al. (2024) considers experiential learning in
+technical education as an interactive system between individuals, schools, and communities, especially
+in the context of the evolving work environment post-COVID-19. This highlights the importance of such
+engagement in enhancing the effectiveness and significance of this educational approach. A limitation
+of this method is its high demand for resources and thorough preparation from educators, which may
+pose challenges for widespread implementation (Chavez-Miyauchi et al., 2021).
+Lebert and Vilarroya (2024) explored the relationship between experiential learning (EL) and 4E cognition, arguing that despite their different theoretical foundations, both emphasize the role of concrete
+experience in cognition. They suggest that integrating them through the ‘concrete experience’ concept
+could create a more comprehensive approach to learning and cognition. Meanwhile, the study by
+Coleman et al. (2024) analyzes experiential learning theory in agricultural education, synthesizing recent
+empirical research. Their work refines the experiential learning model to emphasize the nonlinearity of
+
+4
+
+K. PHAM THI
+
+this process while proposing a comprehensive framework that incorporates both the process and context of experiential learning (Alford et al., 2024).
+Thus, recent studies have affirmed the effectiveness of experiential learning across various educational
+fields, from technical education to agriculture, while expanding its connection with 4E cognition theory.
+These studies highlight key advantages such as fostering engagement between individuals, schools, and
+communities, enhancing critical thinking, improving learning outcomes, and creating a more holistic
+educational model. However, these studies still present several limitations, including a lack of a solid theoretical foundation, constrained resources due to the extensive preparation required from educators,
+and the need for better integration between traditional and modern educational theories. Future
+research should aim to build a more comprehensive theoretical framework, develop more flexible pedagogical models to reduce resource demands, and further integrate cognitive elements to enhance the
+applicability and sustainability of this approach in education.
+
+Second, education needs democracy and social responsibility for students
+Dewey’s concept of democratic education is another cornerstone of his philosophy. He viewed education
+as a democratic process that requires active participation and cooperation from students. In ‘Democracy
+and Education’ (Dewey, 2024), he emphasized that education should cultivate a sense of inclusion and
+personal responsibility, foster social skills, and prepare students to become active and engaged members
+of society.
+Paolo Freire, a prominent figure in critical pedagogy, also emphasized democratic education but
+focused on empowering students to challenge oppressive structures (Freire, 2020). Freire’s approach is
+more politically charged, aiming to transform society through education. While Dewey also saw education as a means of social improvement, his approach focuses on fostering democratic values and social
+responsibility within the educational setting.
+Emile Durkheim also viewed education as a means of social cohesion and instilling societal norms
+and values (Durkheim, 1956). While Durkheim focused more on the structured transmission of societal
+norms, Dewey’s approach is more dynamic, involving active participation and community involvement.
+Dewey argued that schools should impart knowledge and prepare students to actively participate in
+improving and developing their communities (Dewey, 1899). With a humanistic educational philosophy,
+Nel Noddings promotes the relationship between teachers and students, emphasizing care and mutual
+respect in a democratic learning environment (Noddings, 1984). Maxine Greene focused on arts education and encouraging critical thinking; Greene saw education as a tool for building a democratic society
+(Greene, 2000). Hannah Arendt considered education the foundation of democracy and individual selfrealization, emphasizing education’s role in forming responsible citizens (Arendt, 1958).
+This view is supported by contemporary research; for example, Clark and Mayer (2023) presented
+case studies of schools that have successfully integrated community service and social issues into their
+curricula, promoting social change.
+O’Hair and Woods (2024) analyzed the role of effective communication and education in the context
+of the ‘post-truth’ world and global challenges through discourse innovation theory. Thus, these studies
+clarify that democracy in education is linked to ecological relationships between media, education, and
+peace. In addition, the studies also present models, theories, and practical studies to effectively implement democracy linked to ecological relationships in society. However, the studies are limited in their
+ability to apply the models to specific local contexts and lack sufficient empirical data to verify the
+effectiveness of the proposed theories. Therefore, further research is needed to clarify and expand the
+application of these models, especially in Vietnam, a country that needs comprehensive educational
+reform.
+
+Third, education needs to develop learners’ thinking skills
+Developing critical thinking skills is a central aspect of Dewey’s educational philosophy. In ‘How We
+Think’ (Dewey, 2022), he described reflective thinking as a dynamic, persistent process of critically examining beliefs or supposed forms of knowledge in light of the premises that support them and the
+
+COGENT EDUCATION
+
+5
+
+conclusions they lead to. Dewey emphasized that developing fundamental thinking skills is the foundation for fostering critical thinking. Following Rene Descartes’s philosophy, Dewey stressed experience in
+the educational process, and both emphasized the role of reason in understanding the world. However,
+Descartes, with his skeptical and argumentative method ‘Cogito, ergo sum’, focused on the foundations
+of individual knowledge (Descartes, 2024). Similarly, Dewey also valued critical thinking and practical
+experience in problem-solving (Dewey, 1938). However, Dewey surpassed Descartes by combining philosophy with social application, education, and the democratic process, emphasizing flexibility and interaction in practice (Dewey, 1938).
+Robert Ennis has extensively written about the importance of critical thinking in education. Ennis’s
+detailed framework for essential thinking skills complements Dewey’s broader, more philosophical
+approach to fostering reflective thought and self-assessment in students (Ennis, 2015). While both
+emphasize the importance of critical thinking, Dewey integrates this within a holistic educational framework that includes experiential learning, democratic participation, and social engagement.
+Atkinson (2024) examined strategies for nurturing critical thinking in higher education, discussing the
+use of reflective journals, peer discussions, and self-assessment tools to promote deep learning and critical thinking. Similarly, Thornhill-Miller et al. (2023) investigated the effectiveness of reflective learning
+strategies in online education, demonstrating that incorporating reflective activities in online courses
+enhances students’ learning outcomes and critical thinking skills.
+Dewey’s educational philosophy is distinguished by its comprehensive approach, integrating experiential
+learning, democratic principles, social engagement, and critical thinking. This holistic framework addresses
+education’s individual and social dimensions, preparing students for personal success and active and
+engaged citizenship. Comparatively, other educational philosophers have made significant contributions to
+the field, but often with more specialized focuses. For example, Montessori emphasizes self-directed learning and a prepared environment, Piaget focuses on cognitive development stages, Freire advocates for
+education as a means of social transformation, Wibowo et al. (2025) argue that Vygotsky emphasizes the
+role of social interactions in mental development, and Ennis (2015) provides a detailed framework for critical thinking skills. While these invaluable contributions, Dewey’s philosophy stands out for integrating these
+elements into a unified educational framework. The superiority of Dewey’s philosophy lies in its ability to
+adapt to and address the complex and dynamic nature of education in a democratic society. By advocating
+for experiential learning, democratic participation, and social engagement, Dewey’s approach prepares students for the challenges of the modern world in a practical and visionary way. Despite Dewey’s comprehensive educational philosophy, current research gaps must be addressed (Dewey, 1933, p. 441- 448). One
+significant gap is integrating experiential learning, democratic principles, social engagement, and critical
+thinking into modern educational systems. While substantial research supports these components individually, studies must explore how these elements can be cohesively integrated into contemporary curricula
+and teaching practices. Additionally, with digital technology and online education, Dewey’s principles must
+be adapted to the digital age. Brown et al. (2024) have begun to explore this by discussing using technology to create interactive, experiential learning environments that promote critical thinking. However, more
+research is needed to fully understand how digital tools and online platforms can enhance experiential
+learning and democratic participation in education (Bourgeois-Bougrine, 2023).
+Dewey’s educational philosophy offers a robust framework for creating compelling and inclusive
+learning environments. By integrating experiential learning, democratic principles, social engagement,
+and critical thinking, educators can prepare students to become competent, engaged citizens capable of
+addressing the challenges of the modern world. As educational reform continues globally, Dewey’s principles remain a valuable guide for shaping the future of education. This paper aims to clarify how these
+principles can be fully integrated into modern education systems, address gaps in current research, and
+provide a comprehensive approach to contemporary education for countries like Vietnam to implement
+effective and successful educational reform.
+
+Methods
+The study adopts a mixed-methods research approach to ensure a comprehensive and systematic
+analysis of Vietnam’s education system and the applicability of Dewey’s educational philosophy.
+
+6
+
+K. PHAM THI
+
+Secondary data is collected from previous research, reports from international organizations such as the
+World Bank (WB) and the Organisation for Economic Co-operation and Development (OECD), and official
+announcements from the Vietnamese Ministry of Education and Training and the Government of
+Vietnam. This data evaluates the implementation of experiential learning, democratic education, and
+educational innovation in Vietnam. Additionally, a systematic analysis of Dewey’s works and those of
+preceding and succeeding philosophers is conducted to contextualize the relevance of Deweyan principles in modern educational reforms.
+The study employs analytical and synthesis methods to assess key factors influencing Vietnam’s education system. The analytical method involves a systematic literature review, statistical data analysis, and
+policy evaluation, allowing for an in-depth examination of human resource quality, systemic limitations,
+alignment with labor market demands, and disparities in educational access. Policy analysis and comparative evaluation highlight the strengths, weaknesses, and challenges in Vietnam’s education system,
+particularly regarding curriculum shortcomings, an overreliance on theoretical instruction, and regional
+inequalities in educational opportunities.
+The synthesis method integrates and systematizes key insights to complement the analytical findings,
+identifying positive aspects and areas requiring improvement. This method enables the study to develop
+a comprehensive framework for educational reform, incorporating experiential learning, democratic classroom participation, critical thinking development, and equitable access to quality education. Combining
+these methods ensures a scientifically rigorous and logically structured research process, leading to
+evidence-based policy recommendations.
+Findings from the study contribute to strategic education reforms aimed at transitioning from passive
+to active learning methodologies, enhancing curricula with experiential learning components, integrating
+science and technology into teaching, and promoting inclusive education policies. These recommendations align with Vietnam’s broader socio-economic development goals and global integration strategies,
+providing a scientifically grounded roadmap for modernizing the country’s education system.
+
+Results
+Apply dewey’s experiential educational philosophy to enhance experiential education for
+students
+Vietnam’s education system has made significant strides in enhancing the quality of human resources,
+with a notable increase in the proportion of workers holding degrees or certificates, reaching 28.1% in
+2024. This progress reflects a commitment to improving educational standards and aligning them with
+labor market demands. However, challenges persist. A substantial portion of the workforce remains inadequately trained, with over 70% of workers untrained (General Statistics Office of Vietnam, 2024). This
+gap indicates a misalignment between educational outcomes and the evolving requirements of a modern, flexible, and integrated labor market. One contributing factor is the traditional emphasis on theoretical knowledge over practical skills within the educational curriculum. Experiential and experimental
+learning methodologies have not been sufficiently prioritized, leading to graduates who may excel academically but lack the hands-on experience and critical thinking abilities essential for today’s job market.
+The lack of experiential education in the Vietnamese education system leads to students lacking practical skills, affecting their competitiveness in the global labor market. According to the World Bank,
+Vietnam’s formal education and training system is still heavily theoretical and outdated, failing to meet
+the labor market requirements (World Bank, 2020, p. 7). Compared to developed countries, Vietnam is
+slow to adopt experiential education methods, leading to students lacking practical skills and critical
+thinking. The World Bank report also points out that, in addition to funding constraints, higher education governance lacks information about market needs and incentives to meet those needs (World Bank,
+2020, p. 3).
+Dewey’s philosophy of experiential education emphasizes the active participation of learners in realworld contexts. He posited, ‘Education is not preparation for life; education is life itself (Dewey, 1916, p.
+239), highlighting the necessity of integrating learning with practical experiences. Moreover, he argued,
+"We do not learn from experience … we learn from reflecting on experience" (Dewey, 1933, p. 78),
+
+COGENT EDUCATION
+
+7
+
+stressing the importance of experience. Dewey also believed, "The most important attitude that can be
+formed is that of desire to go on learning" (Dewey, 1938, p. 48), that is, experience reinforces lifelong
+learning as a cornerstone of education. There is a notable gap in implementing Dewey’s experiential
+learning principles in Vietnamese education. The traditional education system in Vietnam has been characterized by a focus on theoretical knowledge, rote memorization, and teacher-centered instruction,
+with limited opportunities for students to engage in hands-on, experiential learning activities. This lack
+of experiential learning is evident in the limited integration of practical experiences within the curriculum and a predominant emphasis on examination results as measures of academic success. Several factors contribute to this deficiency.
+
+Applying Dewey’s democratic educational philosophy, education and social responsibility, to
+building equity in education in Vietnam
+Democratic education in Vietnam must expand its understanding of equitable access to quality education, prioritizing resources for urban and rural areas differently. Urban regions benefit from advanced
+educational facilities, modern technologies, better English language opportunities, and highly qualified
+teachers, while students in rural and mountainous areas face significant disparities. For example, urban
+schools offer STEAM education and learner-centered approaches, fostering critical thinking and creativity,
+yet these practices remain limited in less-developed areas (Scogin et al., 2023). Dewey’s philosophy
+emphasizes accommodating student0 s diverse cultural, experiential, and living conditions, advocating
+tailored teaching strategies to enable active knowledge construction (Dewey, 1916, p. 425-428). Teachers
+must adapt methods to each learner’s needs rather than rely on passive lecture-based teaching, ensuring
+all students can engage meaningfully with education.
+Vietnam’s education system exhibits significant disparities across regions, particularly between urban
+and rural areas and between lowland and mountainous regions. These disparities manifest in access to
+quality education, availability of trained teachers, and educational outcomes. For instance, ethnic minority groups in mountainous areas often have lower educational attainment compared to the Kinh majority in urban centers. A study analyzing data from the Vietnam Household Living Standard Surveys
+(VHLSS) indicates that ethnic minority children are less likely to attend school and have lower completion rates than their Kinh counterparts. This inequality is attributed to economic constraints, limited
+access to educational facilities, and language barriers. Vietnam has made significant progress in improving education quality and reducing inequality. According to the Global Commitment to Reducing
+Inequality Index 2024, Vietnam ranked 94 out of 164 countries, demonstrating a strong commitment to
+reducing inequality, especially in tax policies and education spending, according to Oxfam (2024).
+However, disparities in educational opportunities between regions persist. The average number of years
+of schooling for Vietnamese people increased from 9 to 9.6 between 2019 and 2024; however, men
+spend 0.7 years more than women, and urban areas spend 2.5 years more than rural areas (General
+Statistics Office of Vietnam, 2024). To continue promoting educational equity, Vietnam must focus on
+expanding primary education, improving teacher quality, and improving facilities, especially in disadvantaged areas. In the 2023-2024 school year, the country will have 318 ethnic minority boarding schools in
+48 provinces and cities, with 103,847 students; the rate of schools meeting national standards is 58.8%
+(Ministry of Education & Training, 2024). Continuous investment in the education system, especially in
+rural and mountainous areas, is necessary to ensure that all children have access to quality education,
+reducing inequality and promoting sustainable development.
+Dewey’s democratic ideology in education emphasizes inclusivity, participation, and social consciousness, advocating for an education system that ensures equal opportunities for all students. He asserted
+that ‘a democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience’ (Dewey, 1916, p. 101). From this perspective, education is about knowledge transmission and fostering individuals who actively engage in society. Dewey emphasized that
+education must promote critical thinking, collaboration, and civic engagement, enabling students to
+become responsible and informed citizens (Dewey, 1938). His democratic educational philosophy supports student-centered learning environments where learners contribute to decision-making, thus
+enhancing autonomy and problem-solving skills (DeJaeghere et al., 2024). In Vietnam, disparities in
+
+8
+
+K. PHAM THI
+
+education persist between urban and rural areas and among different socio-economic groups, leading
+to unequal access to quality education (Nham, 2023). Implementing Dewey’s principles could address
+these inequalities by fostering an inclusive and participatory learning environment. Adopting studentcentered teaching methods and incorporating experiential learning can empower students from diverse
+backgrounds, ensuring they acquire the skills needed for meaningful contributions to society. Studies
+indicate democratic education enhances student engagement, motivation, and long-term learning outcomes (Gutmann, 1999). Moreover, providing marginalized groups with a voice in educational decisionmaking aligns with Dewey’s view that education serves as a vehicle for social transformation. While
+Vietnam has made progress in expanding education access, challenges remain in ensuring equity in educational quality and participation. By integrating Dewey’s democratic ideals into its education system,
+Vietnam can create a more equitable and socially cohesive learning environment that prepares students
+for active civic participation and lifelong learning (Dewey, 1958).
+In the Vietnamese education system, the mention of civic responsibility in society is still limited.
+According to statistics, in 2022, only 40% of general schools integrated civic education into the curriculum (Pham et al., 2023). This shows that the current state of Vietnamese education has not emphasized
+the role of citizens. Dewey said: ‘Education is not only preparation for present life but also future civic
+responsibility’ (Dewey, 1916, p. 45). Dewey’s education requires integrating civic values into the curriculum to develop social awareness and personal responsibility, while Vietnamese education has not yet
+fully implemented this.
+
+Applying Dewey’s innovative thinking to help learners in Vietnam be proactive, positive, and
+autonomous in learning
+Vietnam’s education system has traditionally emphasized rote memorization over critical thinking and
+innovation, leading to a workforce that may lack the creativity and adaptability required in today’s rapidly evolving labor market. The Fourth Industrial Revolution demands a workforce proficient in science,
+technology, and innovative problem-solving, particularly as digital enterprises expand and the need for
+digital skills intensifies (Dighliya, 2025). Despite ongoing educational reforms, challenges persist in aligning Vietnam’s educational outcomes with labor market demands. A 2024 report highlights that while
+higher education institutions have initiated solutions to prepare human resources for the semiconductor
+chip industry, the overall integration of critical thinking and innovation in curricula remains limited
+(Ministry of Education & Training, 2024). This gap is evident in employer feedback; many express concerns over graduates’ lack of practical skills and innovative capabilities, which are essential in high-tech
+industries (Le, 2023).
+Dewey’s educational philosophy underscores the importance of experiential learning and critical
+thinking. He asserted, ‘If we teach today’s students as we taught yesterday’s, we rob them of tomorrow’
+(Dewey, 1916, p. 167). This perspective highlights the necessity for educational systems to evolve in
+response to societal changes. Dewey also emphasized that ‘education must be conceived as a continuing reconstruction of experience; that the process and the goal of education are the same thing’
+(Dewey, 1958, p. 7), advocating for an education that fosters continuous learning and adaptability.
+Vietnam’s education system must integrate critical thinking, creativity, and practical skills into its curriculum to help students bridge the gap between learning outcomes and labor market demands. This
+includes adopting student-centered teaching methods, promoting problem-solving activities, and
+enhancing collaboration between educational institutions and industry. With positive innovations in academic content, curricula, and teaching methods, students have the necessary competencies to succeed
+in a dynamic, technology-driven global economy.
+
+Discussion
+Current research on experiential education, democratic education, civic education, and innovative education has continued and expanded on Dewey’s philosophy. Contemporary philosophers such as Nel
+Noddings and Bell Hooks emphasize the importance of teacher-student relationships, inclusion, and
+equality in the learning environment (Hooks, 1994; Noddings, 1984). New research shows that
+
+COGENT EDUCATION
+
+9
+
+experiential and democratic education approaches have been successfully applied in countries such as
+Finland and Canada, where education systems that focus on project-based learning and developing critical thinking skills have resulted in higher student success and teacher satisfaction (OECD, 2023). For
+example, Finland regularly tops global education rankings due to its application of Dewey’s principles of
+active learning and social interaction (Sahlberg, 2015). The limitations of pre-Dewey studies are often
+the lack of widespread application in different cultural contexts and the difficulty in measuring the
+effectiveness of democratic education. However, Dewey is still predicted to continue to have a strong
+influence in the future, especially in promoting inclusive education and sustainable development,
+emphasizing the flexibility and adaptability of educational systems to social changes (Biesta, 2024).
+Vietnam’s education system faces significant challenges in fostering experiential learning, democratic
+participation, and innovative thinking among students, essential to meeting the demands of the global
+labor market and the Fourth Industrial Revolution. Traditional teaching methods, characterized by rote
+memorization and teacher-centered instruction, dominate Vietnamese classrooms, limiting students’ critical thinking and problem-solving abilities. This educational approach contrasts sharply with the competencies required in today’s workforce, where creativity, adaptability, and technological proficiency are
+paramount.
+Dewey’s educational philosophy, emphasizing experiential learning and democracy in education,
+offers a compelling framework for addressing these deficiencies. Dewey advocated for education as a
+process of living, not merely preparation for future life, asserting that ‘education is not preparation for
+life; education is life itself’ (Dewey, 1916, p. 239). He emphasized engaging students in active problemsolving and critical thinking through real-world experiences, fostering intrinsic motivation and a lifelong
+love of learning. Dewey also believed education should be a democratic process involving students in
+decision-making to cultivate responsibility and active citizenship.
+While other educational theories exist, Dewey’s integration of experiential learning with democratic
+principles uniquely addresses the current needs of Vietnamese education. For instance, Paulo Freire’s
+critical pedagogy emphasizes dialogue and critical consciousness but lacks Dewey’s focus on learning
+through experience (Freire, 2020). Similarly, Jean Piaget’s cognitive development theory centers on
+stages of intellectual growth without explicitly incorporating the social and democratic aspects that
+Dewey champions (Ottavi, 2024).
+Previous studies have highlighted the need for educational reform in Vietnam, particularly in adopting
+student-centered learning and enhancing critical thinking skills. However, a paucity of research focuses
+explicitly on implementing Dewey’s experiential and democratic education principles within the
+Vietnamese context. This study addresses this gap by exploring how Deweyan philosophy can be operationalized to transform teaching practices and curricula in Vietnam, aligning them more closely with global educational standards and labor market requirements.
+The findings suggest that integrating Dewey’s principles could lead to a more dynamic and responsive education system in Vietnam. By emphasizing experiential learning, students can develop practical
+skills and adaptability, essential for the rapidly evolving job market influenced by Industry 4.0. Moreover,
+fostering democratic participation in classrooms can enhance students’ sense of agency, collaboration,
+and civic responsibility, aligning with the societal needs of a modern, democratic nation.
+The study recognizes several limitations in implementing Deweyan educational principles in Vietnam,
+including resistance to change due to deeply entrenched traditional teaching practices and the need for
+extensive teacher training. To effectively transition to an education system inspired by Dewey’s philosophy, future research should prioritize the development of targeted strategies for teacher education, policy reforms, and pilot programs that facilitate gradual adoption.
+Currently, Vietnam is undergoing efforts to modernize its education system. However, several critical
+challenges hinder this innovation, primarily in teacher training, resource availability, and resistance to
+change. Teacher training programs often lack sufficient preparation in innovative pedagogical methods,
+leaving educators ill-equipped to adopt and sustain new teaching approaches (Slattery, 2024).
+Additionally, many schools’ inadequate funding and resource constraints further impede the integration
+of modern educational technologies and active learning strategies (Tri, 2024). Furthermore, cultural
+resistance to change remains a significant barrier, as traditional methods dominate the education system, making it challenging to introduce and institutionalize progressive reforms (Neofotistos &
+
+10
+
+K. PHAM THI
+
+Papastathis, 2025). These challenges underscore the need for a comprehensive approach that includes
+reforms in teacher education, increased investment in educational infrastructure, and a fundamental shift
+in mindset toward embracing educational innovation.
+Applying Dewey’s educational philosophy to Vietnam’s educational reform efforts could provide a
+transformative framework. Dewey’s emphasis on experiential learning, democratic participation, and critical thinking fosters a more dynamic, student-centered learning environment. His principles align with
+the pressing need for an education system that equips students with problem-solving skills, adaptability,
+and autonomy, essential qualities for the demands of the Fourth Industrial Revolution. To ensure successful implementation, Vietnam must prioritize teacher professional development, promote active learning methodologies, and create policies that support participatory and experience-based education. By
+doing so, the country can move towards an education system that modernizes learning and prepares
+students to engage effectively in the global workforce.
+First, implementing Dewey’s experiential learning principles can potentially drive significant innovation in
+Vietnam’s education system. Vietnamese educators can enhance student engagement and knowledge
+retention by shifting from traditional rote memorization methods to more interactive, hands-on learning
+approaches. Research has demonstrated that connecting theoretical concepts to practical applications
+improves learning outcomes (Thornhill-Miller et al., 2024). For instance, schools incorporating projectbased learning and field trips into their curricula have reported increased student motivation and participation (Nguyen et al., 2023).
+Secondly, Dewey’s advocacy for democratic education is expected to influence the operational framework
+of educational institutions in Vietnam. Schools that adopt participatory teaching methods - encouraging
+students to express their opinions and engage in decision-making - have observed positive effects on
+student autonomy and leadership development. A democratic classroom environment fosters a sense of
+responsibility and citizenship, preparing students to be active and informed members of society
+(Atkinson, 2024; Dewey, 1916). Empirical studies indicate that students in schools implementing democratic educational principles exhibit higher critical thinking and problem-solving abilities (DeJaeghere
+et al., 2024).
+According to Dewey, Vietnamese education must integrate experiential learning methods into the
+curriculum to educate students on civic responsibility (Dewey, 1916). Experiential learning methods can
+include project-based learning, where students participate in real-life projects related to the community,
+such as improving public areas, organizing social events, or solving local environmental problems. In
+addition, volunteer learning methods also help students directly participate in community service activities, thereby developing teamwork skills and personal responsibility. Collaboration with social organizations requires schools and universities to build partnerships with NGOs, businesses, and local
+government agencies. These organizations can provide practical learning environments by organizing
+internships, seminars, and student mentorship programs. For example, students can participate in projects of non-profit organizations such as disaster relief, community education, or sustainable development, thereby better understanding their roles and responsibilities in society. Vietnamese education can
+use technology platforms such as specialized social networks and online learning management systems
+to connect students with international projects. In addition, participating in international exchange programs, global project competitions, and crowdfunding platforms to support social projects is also an
+effective way. Virtual reality (VR) and augmented reality (AR) technology can also be used to create
+simulation models of social situations, helping students better understand the impact of their actions on
+the global community.
+Third, applying Dewey’s educational philosophy to the Vietnamese education system can significantly
+improve students’ critical thinking and creativity. Dewey emphasized that ‘democracy is not merely a form
+of government; it is primarily a way of life, of shared experience’ (Dewey, 1916, p. 101). This suggests
+that education should create a democratic learning environment where students can participate, ask
+questions, and develop independent thinking. However, the Vietnamese education system is still heavily
+dependent on rote learning and lacks practical experience activities. According to the Ministry of
+Education and Training report, in the 2023–2024 school year, innovation in teaching methods and
+assessment is still one of the key tasks to be implemented (Ministry of Education & Training, 2023). This
+shows the need to apply new educational methods to meet the demands of the labor market in the
+
+COGENT EDUCATION
+
+11
+
+context of the Industrial Revolution 4.0. To do this, Vietnam must focus on training teachers in advanced
+teaching methods, facilitating students to participate in experiential learning activities, and promoting a
+democratic learning environment. As Dewey pointed out, ‘the only freedom of lasting importance is that
+of the mind, that is, the freedom to observe and judge for purposes of intrinsic value’ (Dewey, 1938, p.
+61). Applying this philosophy can help Vietnamese students develop critical and creative thinking skills
+and better meet global labor market demands.
+Dewey’s emphasis on education as a tool for social reform aligns with Vietnam’s broader educational
+and social development objectives. Integrating Dewey’s ideas into the curriculum allows educators to
+address key social issues such as inequality and sustainable development. For example, incorporating
+social justice topics into classroom discussions raises students’ awareness and empowers them to take
+meaningful action within their communities (Cao & Vu, 2023). This approach has proven effective in cultivating a socially conscious generation capable of addressing contemporary challenges.
+As Dewey advocates, a learner-centered educational approach emphasizes students’ active role in
+constructing knowledge rather than passively receiving information from teachers. This perspective
+encourages students to leverage their experiences to develop unique viewpoints, fostering deeper
+engagement in the learning process. Additionally, democracy in education necessitates equitable
+resource distribution, including allocating well-trained teachers to rural and mountainous regions, investment in infrastructure, and providing teaching equipment and student support policies. Such efforts are
+essential to ensuring educational equity across diverse geographical areas (Sahlberg, 2021).
+The successful implementation of Dewey’s educational philosophy also requires substantial reforms in
+teacher training programs. Educators must participate in professional development programs to acquire
+the skills to implement experiential and democratic learning methodologies. Consequently, comprehensive teacher training initiatives have been developed, focusing on modern pedagogical strategies and
+continuous professional growth (Ho & Dimmock, 2023). Enhancing teacher training quality directly
+impacts overall educational effectiveness, as well-prepared teachers are more adept at employing
+innovative teaching techniques that benefit student learning outcomes.
+Adopting Dewey’s educational philosophy in Vietnam presents several challenges despite its benefits.
+Resistance to pedagogical innovation - particularly from educators accustomed to traditional teaching
+methods - remains a significant obstacle. Additionally, resource constraints in certain regions pose further difficulties in implementing experiential and democratic learning strategies. To ensure the sustainability of these educational reforms, continuous support and investment from educational authorities are
+necessary (O’Leary et al.,2023).
+Applying Dewey’s educational philosophy in Vietnam can enhance student engagement, critical thinking, and social responsibility. By promoting experiential learning, fostering democratic participation, and
+integrating social issues into education, Dewey’s principles contribute to the modernization and
+improvement of the Vietnamese education system.
+
+Conclusion
+Vietnam’s current educational framework exhibits notable limitations, particularly in providing students
+with experiential learning opportunities and fostering democratic engagement within the educational
+process. Traditional pedagogical methods, characterized by rote memorization and teacher-centered
+instruction, dominate the landscape, restricting students’ active participation and critical thinking development. This conventional approach contrasts sharply with Dewey’s educational philosophy, which
+emphasizes experiential learning and democratic education as pivotal to cultivating autonomous and
+reflective individuals.
+Dewey posited that "education is not preparation for life; education is life itself" (Dewey, 1916, p.
+239), underscoring the necessity for education to be deeply intertwined with real-life experiences. He
+further asserted, "We do not learn from experience … we learn from reflecting on experience" (Dewey,
+1933, p. 78), highlighting the critical role of reflection in the learning process. Moreover, Dewey believed
+that ‘a democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience’ (Dewey, 1916, p. 101), advocating for educational environments that
+promote democratic participation and collaborative learning.
+
+12
+
+K. PHAM THI
+
+Recent studies indicate that integrating experiential learning and democratic principles into education
+enhances student engagement, critical thinking, and adaptability skills essential for the modern workforce (Dewey, 2024). However, the Vietnamese education system has slowly adopted these progressive
+methodologies. For instance, a 2023 report by the Ministry of Education and Training revealed that only
+15% of higher education institutions have incorporated experiential learning components into their curricula, reflecting a significant gap in educational practice (Ministry of Education & Training, 2023).
+This research contributes to Vietnamese educational philosophy by illuminating the disparities
+between current practices and Dewey’s ideals. It underscores the imperative for systemic reforms prioritizing experiential and democratic education to better prepare students for the complexities of the global labor market and the demands of the Fourth Industrial Revolution.
+To actualize these reforms, Vietnam must undertake several strategic initiatives: Curriculum Overhaul
+that is redesigned educational programs to incorporate experiential learning opportunities, such as
+project-based assignments, internships, and community engagement projects, facilitating the practical
+application of theoretical knowledge; Teacher training enhancement that is investing in comprehensive
+professional development programs that equip educators with the skills to implement student-centered
+and democratic teaching methodologies effectively. Policy development establishes policies that support
+and incentivize the adoption of Dewey’s educational principles, ensuring alignment with national educational goals and labor market needs. Cultural shift promotion fosters a cultural shift within academic
+institutions that value and practice democratic participation, encouraging students to participate actively
+in their learning journeys. By embracing these strategies, Vietnam can bridge the gap between its current educational practices and the progressive ideals that Dewey espoused, thereby enhancing education’s quality and relevance in the context of a rapidly evolving global landscape.
+
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+
+Funding
+This research is funded by University of Economics Ho Chi Minh City, Vietnam (UEH).
+
+About the author
+Pham Thi Kien: Associate Professor of Philosophy and Education Associate Professor Pham Thi Kien began her academic career with a BA in philosophy, an MA in philosophy, and a PhD in philosophy at Ho Chi Minh City National
+University, where she focused on groundbreaking issues in modern education and philosophical thinking. Associate
+Professor Pham Thi Kien has become one of the typical philosophy researchers at UEH, Ho Chi Minh City University
+of Economics, where she studied in-depth courses in Philosophy and Education. Her teaching method always
+focuses on combining theory with practice, encouraging students to develop critical thinking and the ability to
+apply philosophical knowledge to solve contemporary, practical, and educational problems. Associate Professor
+Pham Thi Kien has been actively contributing to the Vietnamese and international knowledge base, with more than
+30 scientific articles in prestigious indexes such as Web of Science (WoS) and Scopus. Her research not only focuses
+on the philosophical aspects of education but also emphasizes the role of innovation in the teaching and learning
+process, contributing to providing practical solutions to current challenges. It is an inspiration for students and colleagues to continue pursuing the path of research, creativity, and innovation.
+
+ORCID
+Kien Pham Thi
+
+http://orcid.org/0000-0001-8024-8679
+
+References
+Alford, K. R., Stedman, N. L., Bunch, J., Baker, S., & Roberts, T. G. (2024). Real-world experiences in higher education:
+Contributing to the development of a systems thinking paradigm. Journal of Experiential Education, 48(1), 169–
+188. https://doi.org/10.1177/10538259241259626
+Arendt, H. (1958). The human condition. University of Chicago Press.
+
+COGENT EDUCATION
+
+13
+
+Atkinson, S. (2024). Literary creation and the fusion of critical thinking: Project-centered teaching strategies in
+Australian higher education at the beginning of the 21st century. Research and Advances in Education, 3(1), 44–53.
+https://doi.org/10.56397/RAE.2024.01.05
+Biesta, G. (2024). Taking education seriously: The ongoing challenge. Educational Theory, 74(3), 434–448.
+Brown, L., Alcoz, A. G., Cangialosi, F., Narayan, A., Alizadeh, M., Balakrishnan, H., … Shenker, S. (2024, August).
+Principles for internet congestion management. Proceedings of the ACM SIGCOMM 2024 Conference (pp. 166–180).
+Cao, P. T. H., & Vu, T. N. (2023). Vietnamese teaching practitioners as doctoral students learning to teach, teaching,
+and assessing students of and for social justice. In E. Meletiadou (Ed.), Handbook of research on fostering social
+justice through intercultural and multilingual communication (pp. 81–99). IGI Global. https://doi.org/10.4018/978-16684-5083-3.ch005
+~eda, A., & Ogando-Justo, A. B. (2021).
+Chavez-Miyauchi, T. E., Benitez-Rico, A., Alcantara-Flores, M., Vergara-Castan
+Personal motivation and learning self-management in students, as a result of the transition to online courses during the COVID-19 pandemic. Nova Scientia, 13(SPE). https://doi.org/10.21640/ns.v13ie.2739
+Clark, R. C., & Mayer, R. E. (2023). E-learning and the science of instruction: Proven guidelines for consumers and designers of multimedia learning. John Wiley & Sons.
+Coleman, B., Bunch, J. C., Roberts, T. G., Israel, G. D., & Wysocki, A. F. (2024). The effects of reflection and transfer on
+students’ post-course retention while learning experientially. Journal of Agricultural Education, 65(1), 58–77.
+https://doi.org/10.5032/jae.v65i1.94
+DeJaeghere, J., Dao, V., & Nguyen, T. (2024). Education systems change: Cultural beliefs and practices that support
+and inhibit deep learning in Vietnam. Journal of Educational Change, 25(3), 555–577. https://doi.org/10.1007/
+s10833-024-09505-0
+Descartes, R. (2024). Meditations on first philosophy (Vol. 4). Minerva Heritage Press.
+Dewey, J. (1899). The school and society: Being three lectures. University of Chicago Press.
+Dewey, J. (1916). Democracy and education: An introduction to the philosophy of education. Macmillan.
+Dewey, J. (1916). Nationalizing education. Journal of Education, 84(16), 425–428. https://doi.org/10.1177/002205741608401602
+Dewey, J. (1933). How we think: A restatement of the relation of reflective thinking to the educative process. D.C. Heath
+and Company.
+Dewey, J. (1933). Why have progressive schools? Current History, 38(4), 441–448. https://doi.org/10.1525/curh.1933.38.
+4.441
+Dewey, J. (1938). Experience and education. Macmillan.
+Dewey, J. (1938). The philosophy of the arts. Dewey: The Later Works, 13, 357–368.
+Dewey, J. (2024). Democracy and education. Columbia University Press.
+Dewey, J. (1958). My pedagogic creed (Original work published 1897). Teachers College Press. https://books.google.
+com.vn/books?id=ZbiyhnVEWdgC
+Dewey, J. (2022). How do we think? DigiCat. https://pure.mpg.de/rest/items/item_2316308/component/file_2316307/
+content
+Dighliya, B. (2025). Innovative teaching methods for skill development. In M. Kayyali, & B. Christiansen (Eds.), Insights
+into international higher education leadership and the skills gap (pp. 229–250). IGI Global. https://doi.org/10.4018/
+979-8-3693-3443-0.ch009
+Durkheim, E. (1956). Education and sociology. Simon and Schuster.
+Earl, C. (2025). Educator-led pedagogical transformations in Vietnam: An introduction. In Vietnam’s Creativity Agenda:
+Reforming and Transforming Higher Education Practice (pp. 1–12). Springer Nature Singapore. https://doi.org/10.
+1007/978-981-97-7703-7_1
+Ennis, R. H. (2015). Critical thinking: A streamlined conception. In M. Davies, & R. Barnett (Eds.), The palgrave handbook of critical thinking in higher education (pp. 31–47). Palgrave Macmillan US.
+Freire, P. (2020). Pedagogy of the oppressed. In J. Beck, C. Jenks, & N. Keddie (Eds.), Toward a sociology of education
+(pp. 374–386). Routledge.
+General Statistics Office of Vietnam. (2024). Report on the socio-economic situation in the first quarter of 2024. General
+Statistics Office of Vietnam. https://www.gso.gov.vn/tin-tuc-thong-ke/2024/03/bao-cao-tinh-hinh-kinh-te-xa-hoiquy-i-nam-2024/
+Greene, M. (2000). Releasing the imagination: Essays on education, the arts, and social change. John Wiley & Sons.
+Gutmann, M. C. (1999). Ethnicity, alcohol, and acculturation. Social Science & Medicine (1982), 48(2), 173–184. https://
+doi.org/10.1016/s0277-9536(98)00325-6
+Ho, L., & Dimmock, C. (2023). Changing teachers’ beliefs and practices towards learner-centered education:
+Experiences and lessons from Vietnam’s education system reforms. PRACTICE, 5(3), 200–219. https://doi.org/10.
+1080/25783858.2023.2177191
+Hooks, B. (1994). Teaching to transgress: Education as the practice of freedom. Routledge.
+James, W. (2001). What pragmatism means. In Writing New England: An anthology from the puritans to the present
+(pp. 80–93). Harvard University Press.
+James, W. (2006). Pragmatism: A new name for some old ways of thinking. Trong C.
+Jamison, C. (2022). Experiential learning in co-curricular settings: What are the professional implications for biomedical
+engineering students? [Doctoral dissertation].
+
+14
+
+K. PHAM THI
+
+ (2024). The links between experiential learning and 4E cognition. Annals of the New York
+Lebert, A., & Vilarroya, O.
+Academy of Sciences, 1541(1), 37–52. https://doi.org/10.1111/nyas.15238
+Le, T. T., Tigelaar, D., & Admiraal, W. (2023). A typology of educational democratic values: Perspectives from teachers
+and students in Vietnamese secondary schools. Asia Pacific Journal of Education, 43(4), 1240–1255. https://doi.org/
+10.1080/02188791.2021.2016371
+Le, P. X. N. (2023). How team-level lean startup facilitates firm-level transforming capability in SMEs [Master’s thesis].
+University of Twente.
+Ministry of Education and Training. (2023). Annual education report. Government Publishing House.
+Ministry of Education and Training. (2024). Summary of the 2023–2024 secondary education and continuing education
+school year. https://moet.gov.vn/tintuc/Pages/tin-tong-hop.aspx?ItemID=9657
+Neofotistos, V., & Papastathis, T. (2025). Political and philosophical theories dominate the structure of the Greek educational system. Pedagogical Research, 10(1), em0226. https://doi.org/10.29333/pr/15587
+Nguyen, H. B. N., Chen, M.-L., Hong, J.-C., & Lee, Y.-F. (2023). Developing an educational policy acceptance model to
+explore the implementation of Vietnamese teachers’ inquiry-based teaching. Asia Pacific Journal of Education,
+44(4), 723–739. https://doi.org/10.1080/02188791.2023.2212872
+Nham, P. T. (2023, September). Inequality in educational opportunities between the mountainous areas and the lowlands in contemporary Vietnam. A historical materialist approach. In V. H. Nguyen & D. Briesen (Eds.), Social and
+human development in Vietnam (pp. 151–166). Nomos Verlagsgesellschaft mbH & Co. KG. https://doi.org/10.5771/
+9783748925590-151
+Noddings, N. (1984). Caring: A feminine approach to ethics and moral education. University of California Press.
+O’Hair, M. J., & Woods, P. A. (2024). The promise of communication and education for peace and democracy. In
+Communication and education: Promoting peace and democracy in times of crisis and conflict (pp. 1–15). https://
+doi.org/10.1007/978-981-97-7703-7_1
+O’Leary, M., Cui, V., Kiem, M. T., Dang, D. T., Nguyen, G. T. H., & Thi Hoang, K. H. (2023). The role of classroom observation in the development and assessment of schoolteachers in Vietnam: A review of national policy and
+research. Asia-Pacific Journal of Teacher Education, 51(4), 395–407. https://doi.org/10.1080/1359866X.2023.2191307
+OECD. (2023). Education at a glance 2023: OECD indicators. OECD Publishing.
+Ottavi, D. (2024). Jean Piaget: Comment se developpe l’intelligence. Sciences Humaines, 17(HS18), 68–71. https://doi.
+org/10.3917/sh.hs18.0068
+Oxfam. (2024). Inequality Inc.: How corporate power divides our world and the need for a new era of public action.
+Oxfam GB.
+Pham, K. T., Ha, X. V., Tran, N. H., & Nguyen, Y. T. X. (2023). Curriculum reform in Vietnam: Primary teachers’ views,
+experiences, and challenges. Education 3–13, 51(3), 440–451. https://doi.org/10.1080/03004279.2022.2162829
+Sahlberg, P. (2015). Finnish lessons: What can the world learn from educational change in Finland?. Teachers College
+Press.
+Sahlberg, P. (2021). Finnish lessons 3.0: What can the world learn from educational change in Finland?. Teachers
+College Press.
+Scogin, S. C., Dorantes, M., Couwenhoven, A., Vander Kolk, J., Schuen, A., Grimmer, C., Porchik, M., Veine, C.,
+Plohetski, S., & Bowers, S. (2023). The relationship between pre-service teachers’ ideologies and learner-centered
+approaches in STEM classrooms. Journal of Science Teacher Education, 34(2), 181–200. https://doi.org/10.1080/
+1046560X.2022.2039344
+Shinjo, H., Le, H. T. T., Funakawa, S., & Shine, T. (2024). Overview of Vietnam. In Livelihood and the environment in
+Vietnam (pp. 11–30). Springer Nature Singapore. https://doi.org/10.1007/978-981-97-2289-1_2
+Slattery, M. (2024). Education strategy in a changing society: Personalized, more innovative, lifelong learning in the 21st
+century. Taylor & Francis.
+Swargiary, K. (2024). Modern perspectives on montessori philosophy: Adaptations and applications in the 2020s. ERA, US.
+Tembrevilla, G., Phillion, A., & Zeadin, M. (2024). Experiential learning in engineering education: A systematic literature review. Journal of Engineering Education, 113(1), 195–218. https://doi.org/10.1002/jee.20575
+Thornhill-Miller, B., Camarda, A., Mercier, M., Burkhardt, J.-M., Morisseau, T., Bourgeois-Bougrine, S., Vinchon, F., El
+Hayek, S., Augereau-Landais, M., Mourey, F., Feybesse, C., Sundquist, D., & Lubart, T. (2023). Creativity, critical
+thinking, communication, and collaboration: Assessment, certification, and promotion of 21st century skills for the
+future of work and education. Journal of Intelligence, 11(3), 54. https://doi.org/10.3390/jintelligence11030054
+Thornhill-Miller, B., Camarda, A., Mercier, M., Burkhardt, J. M., Morisseau, T., Uyen, D. P., Nhu, N. T. H., Nghi, D. D.,
+Khanh, V. H., Vy, H. T., Sa, N. T. H., & Vy, N. T. H. (2024). Optimal pedagogical strategies in research methodology:
+Insights from student experiences. Environment and Social Psychology, 9(4), 1–22. https://doi.org/10.54517/esp.
+v9i4.2342
+Tran, L. T., & Do, T. T. Q. (2024). Higher education in Vietnam. In L. P. Symaco & M. Hayden (Eds.), International handbook on education in Southeast Asia (pp. 14–31). Springer. https://doi.org/10.1007/978-981-16-8136-3
+Tri, N. M. (2024). Developing science, technology, and innovative creativity to meet the requirements of sustainable
+development in Vietnam: Current situation and solutions. International Journal of Sustainable Development &
+Planning, 19(4), 1547. https://doi.org/10.18280/ijsdp.190431.
+
+COGENT EDUCATION
+
+15
+
+Wibowo, S., Wangid, M. N., & Firdaus, F. M. (2025). The relevance of Vygotsky’s constructivist learning theory to differentiated learning in primary schools. Journal of Education and Learning (EduLearn), 19(1), 431–440. https://doi.
+org/10.11591/edulearn.v19i1.21197
+World Bank. (2020). Vietnam Science, Technology and Innovation Report: Enhancing Innovation for Productivity and
+Growth (pp. 7). World Bank. https://www.worldbank.org/content/dam/Worldbank/document/EAP/Vietnam/VietnamSTI-review-executive-summary-TIENGVIET-FINAL.pdf
+
+

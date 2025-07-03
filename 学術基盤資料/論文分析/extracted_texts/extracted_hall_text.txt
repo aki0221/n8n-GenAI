@@ -1,0 +1,829 @@
+論文タイトル: Hall & Davis (2007) - Value-based Decision-making Model
+================================================================================
+
+DecisionSupportSystems43(2007)1588–1604
+www.elsevier.com/locate/dss
+Engaging multiple perspectives: A value-based
+decision-making model
+⁎
+Dianne J. Hall a, , Robert A. Davis b,1
+a DepartmentofManagement,AuburnUniversity,401LowderBusinessBuilding,Auburn,AL36849-5241,UnitedStates
+b DepartmentofComputerInformationSystems,TexasStateUniversity-SanMarcos,SanMarcos,TX78666-4616,UnitedStates
+Availableonline24April2006
+Abstract
+Insomedecisioncontexts,suchasacrisisorwhenconfrontedbyanewornovelsetofcircumstances,peoplemaybeforcedto
+makedecisionswithlimitedinformationortimeavailableforanalysis.Insuchcontexts,thesetofalternativesolutionsdevelopedmay
+begreatlyaffectedbythepersonalvaluesandtheperspectivethosevaluesprecipitate.Beingabletoviewthedecisionenvironment
+frommultipleperspectivesenhancesthedecision-maker'sabilitytomakebetter-informedchoices.Thisarticleintroducesthevalue-
+baseddecision-makingmodelthatsuggeststhatmultipleperspectivesmaybeachievedbyconsideringafoundationofindividual
+values.Empiricaltestingindicatesthatthismodelprovidesaviableframeworkthatdecision-makersandresearcherscanusetobetter
+understandandfacilitatemultipleperspectivesindecision-making.
+©2006Elsevier B.V. All rightsreserved.
+Keywords:Decisionsupport;Multipleperspectivedecision-making;Individualvalues
+1. Introduction organizationaldecision-making.Theysuggestthatare-
+presentation scheme that allows interpretations to be
+Many authors suggest that a key component to ef- compared should be developed. This scheme must be
+fective problem formulation and solution is to expand abletostandardizetheperspectivesevidentinindividu-
+theproblemsetwithasmanyfactsandassumptionsasis alinterpretations suchthat acommonunderstandingof
+reasonable (e.g., [51,53]). Discrepancies, however, are the differences (our emphasis) may happen. From this
+likely to occur in the interpretation of those facts, par- common understanding, conflict may be measured,
+ticularly in a complex domain where stakeholders may addressed,andreduced.Theauthorssuggestthatanin-
+not come from similar backgrounds. Identification of dividual's beliefs form the building block of interpre-
+thosediscrepanciesiscriticaltodevelopinganinterpre- tations and therefore may be a potential measure for
+tation that is shared among the decision-makers. Hine operationalizing and measuring equivocality.
+et al. [28,29] schematically demonstrate the process of Courtney [12] also demonstrates a process of reach-
+arriving at a shared interpretation, which then benefits ing a shared interpretation (in his term, shared mental
+model) and considers individual beliefs as a basis of
+perspectiveinhisparadigmforknowledgemanagement,
+⁎
+Correspondingauthor.Tel.:+13348446443.
+creation,anddecision-making.Hineetal.'s[28,29]ap-
+E-mailaddresses:dhall@auburn.edu(D.J.Hall),
+proachistorecognizethepotentialfordifferinginterpre-
+rd23@txstate.edu(R.A.Davis).
+1 Tel.:+15122458676. tationsandtofindwaystomediateandsynthesizethose
+0167-9236/$-seefrontmatter©2006ElsevierB.V.Allrightsreserved.
+doi:10.1016/j.dss.2006.03.004
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1589
+differences, while Courtney [12] actively encourages a inordertoeffectivelycoordinateactionsuchasreaching
+number of perspectives in the decision context prior to a decision.This is the shared interpretation outcome of
+synthesis. He suggests expanding Mason and Mitroff's interpretivelearning[28,29].
+[42] Technical-Organizational-Personal model by add- Shared interpretation requires a method by which
+ing aesthetic and ethical perspectives such that manag- individuals agree on a classification scheme for inter-
+ers, stakeholders, system designers, and others have a preting factsandvariablesinthedecision context.Cat-
+foundationonwhichtosearchforandpromotedifferences. egorizing can lead decision-makers to consider and
+While these perspectives are relatively well-defined integrate context-specific information and make better
+[10,12,42] and may begin the process of developing a decisions[6,27,50].Categorizationmaybefacilitatedby
+representationschemesuchasthatcalledforbyHineet cognitive mapping, atool that allows individualstoor-
+al.[28,29],ourresearchgoesastepfurther.Inthisstudy, ganize their beliefs in a manner that increases under-
+we propose that all individuals develop perspectives standingoftheirreasoningprocess.Individualvaluesare
+basedontheirindividualvaluesandthatarepresentation frequently referred to as cognitive maps [7,17] making
+schemeforindividualinterpretationshouldbebasedon themanaturalcandidatenotonlyforcategorization,but
+individual values as defined by Spranger [56]. Our re- alsoforoperationalizingbeliefs.Encouragingtheappli-
+search motivation is based on the need to understand cationofvalueshasapositiveimpactonorganizational
+decision-making behavior, the belief that individual decision-makingbehavior(e.g.,[48,52]).
+valuesimpactthatbehavior,andthedesiretodevelopa Value-laden contexts present special problems for
+processspecificallytoaddressvalueattunementinsup- negotiating and decision-making, particularly when an
+port of interpretive learning and subsequent decision- individual'scorevaluesareprominent[62].Providinga
+making. Our value-based decision-making model pre- socialenvironmentinwhichthesevalueconflictsmaybe
+sented here provides an environment for encouraging surfaced and addressed may help alleviate biases asso-
+multiple value-based perspectives and mediating value ciatedwithvaluesandmediateaffectiveresponsesfrom
+conflicts[29,28,62].Thiswillultimatelyprovideanor- individualdecision-makers.Anorganizationthathasthe
+ganizationwithavalueattunementprocess[60]thatwill abilitytosurfaceandstoremultiplevalue-basedperspec-
+support shared interpretation that is necessary to ef- tiveswillenhanceitsabilitytosolveproblems[60].The
+fectivelysolveproblems.Suchamodel,andultimatelya abilitytosurfacethedissentioncreatedbydifferingval-
+system or system component based on that model, is a ues (and hence value-based perspectives) is necessary
+necessarysteptoextendingdecisionsupportresearch. forinterpretivelearning[28,29].Understandingindivid-
+We begin this study by discussing individual values ual values will serve to increase the number of value-
+and their place in organizational decision-making. De- based perspectives from which an organization may
+velopmentofthevalue-baseddecision-makingmodelis view, interpret, and act on newly acquired information
+thendiscussed,followedbyatestofacomponentbased andtocreateknowledge[20,21].
+on the properties of the VBDM model. We end with Individual values are an integral part of an indi-
+the implications of the model to practice, theory, and vidual's behavior, particularly early in the decision-
+research. makingprocessbecausetheyformthefoundationofan
+individual'sperspective.Wemaintainthatdecisionsup-
+2. Individual values and decision-making port processes and components can be developed that
+enhance the use of personal values and promote value
+Valuesarediscussedprominentlyintheliteratureal- attunement.However,therehasbeenlimitedresearchin
+though there is some disagreement regarding the def- theareaofpersonalvaluesanddecisionsupport,despite
+inition and effect of these values. Meglino and Ravlin research suggesting that individual and organizational
+[44] define a value as an internalized belief regarding valuesareevidentinorganizationsandthatconflictisa
+appropriatebehavior;thisimpacts(amongotherthings) natural outcome of a diverse population [34,52]. When
+how an individual interprets information. The authors conflictismediated,theprocessmayleadtosynthesized
+conduct a comprehensive review of the literature and perspectivesthatservetoexpandorganizationalmemory
+proposeaframeworkforidentifyingandclassifyingex- and further enhance shared interpretation [20,21]. This
+istingvaluesresearch,pointingouttheiterativenatureof expandedorganizationalmemoryalsoservestopromote
+values and the way that values can influence both per- understandingofanother'sperspective(perspectivetak-
+ceptionandbehavior.Theauthorsalsodiscusstheneed ing[8])whichinturnenhancescomprehensiblecommuni-
+forindividualstoreachanunderstandingofeachother's cation[38],anotherfacilitatorofsharedcommunication
+valuesystems(inSpranger's[56]words,valueprofiles) andinterpretation.
+
+1590 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+Researchers have called for additional investigation ganization asa whole.The political value dimensionis
+into the human side of decision-making and support. concernedwithprestigeandpower,oftenattheexpense
+StohrandKonsynski[58]suggestaframeworkfordeci- ofothers,andincorporatesacriticalandpower-oriented
+sion process research which acknowledges the impor- view.Thereligiousvaluedimensionaspirestomakethe
+tance of the complexity of people and their individual world a better place, and is based on philosophical and
+characteristics and suggest that those characteristics be interpretiveviews.Theaestheticvaluedimensionviews
+studied.MeglinoandRavlin[44]indicatethatweknow theworldfromanartistic,interpretiveviewandseeksto
+too little about how values affect behavior and call for find form and harmony in a given scenario. The eco-
+more attention to decision-making behavior rather than nomic value dimension arises from a functional, prac-
+decisionoutcome. ticalviewandseeksusabilityandmaterialgoods.
+Following the call for advancing decision support A person may exhibit one strong value such as re-
+researchbyfocusingondecisionbehaviorandthechar- ligious, or exhibit a pattern of importance to multiple
+acteristics that affect it, we propose that (1) individual values.Forinstance,atypicalmasculinevalueprofileis
+values are an integral factor of decision behavior, (2) high on the economic, political, and theoretical dimen-
+thosevaluesformthefoundationofanindividual'sper- sions and correspondingly low on the religious, social,
+spective during tasks associated with decision-making, and aesthetic ones [1,41]. This deeply ingrained value
+(3) that little istruly known about theirimpact, and(4) profile impacts the way that an individual views and
+thatadecisionmodelcanbedesignedtosupportavalue interpretstheworldandseeksinformation;theperspec-
+attunementprocess.Accordingly,wepresentthedevel- tive based on the profile is the value-based perspective
+opment of our value-based decision-making (VBDM) thatisthefocusofthisresearch.Suchadeeplyfounded
+model and the initial empirical test results that validate perspective affects decisions by imparting a value bias
+theconcept. that is generally not recognized by the individual [18].
+Valueprofileshavebeenshowntoremainrelativelysta-
+3. Developing the value-based decision-making ticovertime[41],makingthemanappropriateconstruct
+model andsupportingtheiruseasameasurementtool.Values,
+however,arenotexclusivetoindividuals.
+Creatinganenvironmentthatfostersaprocessbothto Organizations exhibit the same types of value pro-
+recognize and to synthesize value profiles can be diffi- files,althoughtheeconomicandtheoreticaldimensions
+cult.Onebarrieristhedefinitionofindividualvaluesthat areoftenpredominantinbusiness.Infact,itisinteresting
+should be considered when designing such an environ- tonotethesimilaritiesbetweentheSpranger[56]value
+ment. A second barrier is finding a solid platform on dimensionsandthebusinessvalueclustersadvancedby
+whichtobasethedesign.Weaddressthefirstbarrierby Frederick[16].Frederickdefinedfiveclustersofvalues
+identifying a value construct suitable for research use, necessaryforbusinessconsideration:economical,envi-
+andthesecondbarrierbyselectinganestablishedtheo- ronmental, political, technological, and that comprised
+reticalfoundationforourplatform. of values within the individual. Using Spranger's [56]
+value dimensions together defines the fifth cluster, but
+3.1. Defining the value construct onecanalsoimmediatelyseethesimilaritiesbetweenthe
+firstfourbusinessclustersandtheindividualdimensions
+Because this study examines value-based perspec- oftheSprangervalueprofile.
+tives,itisimportantthatweadequatelydefinewhatwe
+meanby“value”andproperlypositionthisworkinthe 3.2. Defining the theoretical foundation
+larger context of the study of values. In this work, we
+followtheworkofEduardSpranger [56]whobelieved Courtney[12]discussesadecision-makingparadigm
+that individuals have a value profile that is based on foruseincomplex,dynamicenvironments.Hesuggests
+theoretical,social,political,religious,aesthetic,andeco- theuseofaninquiringorganizationalstructuretoimple-
+nomicvalues.Thetheoreticalvaluedimensionisbased mentsuchaparadigm,andmaintainsthat,atthecenterof
+onthediscoveryoftruthandknowledgeinarationaland the paradigm, is a structure known as a mental model.
+scientific way. This dimension is very functional and Thismodelisguidedbyanindividual'sexperienceand
+works best when the situation orproblemcan be struc- value profile that defines the value-based perspective
+tured.Thesocialvaluedimensionincorporatesaninter- thatanindividualusestomakesenseofanewproblem
+pretive,philanthropicview—itseekshumaninteraction scenario and to generate potential solutions. However,
+and considers the impact of action on the group or or- to be effective, a process must be in place that allows
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1591
+individualstoexpandtheirmentalmodelsinawaythat viewandthusinterprettheirsurroundingsisimportantto
+allows alternative perspectives to be evaluated. This understandingdecision-makingbehaviorandmayallow
+research defines a support system designed to evaluate ustopredictbehaviorinaspecificcontext.Thus,itisnot
+theeffectivenessofusingindividualvalueprofilesasthe only importantthat we strive tounderstand how value-
+basisofperspectivedevelopment.Theremustbeapoint basedperspectivesaffectdecision-making,butalsothat
+atwhichmostperspectiveshavebeenacknowledged,as weencourageorganizationstoincorporateasmanyvalue-
+one cannot expect all possible perspectives to be rep- based perspectives into a specific context as possible.
+resentedineverymentalmodel,whetheritisindividual Mitroff and Linstone [46] suggest a minimum of three
+or collective. It may be prudent, therefore, to begin the perspectives (technical, social,and personal); Courtney
+process of perspective examination by defining major [12]suggestsaddingethicalandaesthetic.Thisviewis
+perspectives from which individuals may approach a also represented by others who maintain that organiza-
+decision-making scenario, and include those in the tionsshouldpromoteethicalbehaviorandsocialrespon-
+model. sibility(e.g., [55,60]).Wemaintainthatanindividual's
+We believe that to truly support the humanness of interpretationofeventsandtheirsubsequentactionsare
+organizations as Courtney suggests, we must begin at foundedontheirperspectivethatisdefinedbytheirvalue
+the foundation of an individual's beliefs and perspec- profile.Thus,thepertinentperspectivestoaddressmust
+tives; that is, their individual values on which beliefs beallofthosethatmakeupanindividual'svalueprofile
+are founded and perspectives are framed. This is also (theoretical, social, political, religious, aesthetic, and
+in keeping with our second theoretical foundation, the economic).
+contention of Hine et al. [28,29] that an individual's To achieve the benefits of multiple perspectives, all
+beliefs provide the foundation for their interpretative perspectivesbasedonindividuals'valueprofilesshould
+learningprocess.Wearguethatwhenperspectivedevel- berepresentedinadecision-makingscenario.Wemain-
+opmenttakesplaceonadeeperlevel,anorganizationis tainthatourfoundationofindividualvaluesenablesan
+more likely to consistently surface and mediate value organization to focus on a defined set of perspectives.
+conflict. We also believe that perspective development Rather than being different from those perspectives of
+andperspectivesynthesisarebothnecessaryandare,in Courtney's model, value-based perspectives are en-
+fact, engaged in a reciprocal relationship for any given hancementstothembyformallydefiningeachperspec-
+context.Thesebeliefs arethefoundationfor ourvalue- tive.Infact,thereareobviousparallelsbetweenMitroff
+baseddecision-making(VBDM)model. and Linstone's technical, organizational, and personal
+perspectives and Spranger's value dimensions. For in-
+4. The value-based decision-making model stance, like their technical perspective, the theoretical
+perspectiveisrationalandfunctional.Likewise,thereare
+Given the above discussion, it is easy to see that parallels between Courtney's ethical and aesthetic per-
+understandingtheframeworkanindividualdevelopsto spectives and the corresponding value dimensions
+Table1
+ExtendingMitroffandLinstone'sTOPmodelandCourtney'sparadigmwithSpranger'svalues
+Perspectivesinthevalue-baseddecision-makingmodel
+Spranger[56] Theoretical Social Political Religious Aesthetic Economic
+Mitroffand Technical Organizational Personal
+Linstone[46]
+Courtney[12] Technical Organizational Personal Ethical Aesthetic
+Worldview Scientific,rational Collective, Individual,power Philosophical,moral Artistic Practical
+philanthropic
+Goal Problemsolving, Action,stability, Power,influence, Equitability,elevation Harmony,artistry Usability,
+product process prestige ofmankind pragmatism
+Modeofinquiry Functional Interpretive Critical Interpretive Interpretive Functional
+General Empirical,rational, Altruistic, Competitive,ego- Moral,ethical,seeks Diverse,appreciates Utilitarian,
+characteristics seeksthe“truth” philanthropic,seeks centric,seekspower unitywiththeuniverse beauty,seeksform wealth-oriented,
+humaninteraction andharmony seekstangible
+goods
+Decisioncriteria Bestfittodata Societalgain Individualgain Highestlevel Highestlevelof Highestcost/
+ofunderstanding harmonyanddesign benefitratio
+
+1592 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+discussed previously (religious and aesthetic, respec- Such a mode is adequate in situations where there are
+tively). Each of the value dimensions as suggested by known variables, the problem is at worst moderately
+Spranger [56] can form the basis of decision-making unstructured, and a solution is likely to be attained. The
+perspectives and together are the foundation of the interpretive mode of inquiry applies a social theory to
+VBDMmodelconceptualizedherein.Table1compares information, stressing communication and interpretation
+theperspectivesadvancedbyMitroffandLinstone[46] inthesystem.Sociallyorientedknowledgeistheoutcome
+andCourtney[12]toourperspectivesthatarebasedon of this perspective which closely parallels interpretive
+Spranger's[56]valuetypology. learning[28,29].Thethirdmodeofinquiryisthecritical
+Mitroff and Linstone [46] examine several facets of mode;thismodeisconcernedwithexaminingthestatus
+thetechnical,organizational,andpersonalperspectives, quo for flaws, conflicts, or contradictions and bringing
+such as each perspective's goals and worldview, as those shortcomings to light. Both the interpretive and
+well its mode of inquiry and decision criteria. Both of criticalmodesofinquirymanagementaresociallyoriented
+Courtney's perspectives (ethical and aesthetic) and the and thereforesupportthe human aspectofa system. On
+additional perspectivefrom Spranger's [56] work(eco- the other hand, current approaches to learning and
+nomic)canbeexaminedinthesameway.Theworldview decision-makingaredecidedlyfunctional,withapotential
+oftheethical(Spranger'sreligious)perspectiveisphilo- toward someelement ofthe interpretive perspective (for
+sophical and morally based. The aesthetic perspective instance,groupdecisionsupportsystems).
+viewstheworldfromanartisticlens,whiletheeconomic Because value-based perspectives form the basis of
+perspective ishighlypragmatic.Each ofthese perspec- an individual's behavior, they must be acknowledged
+tiveshasspecificgoalsthatmatchitsworldview. in organizations that wish to surface as many perspec-
+The mode of inquiry as discussed by Mitroff and tives as possible in a decision-making context [20,21].
+Linstoneisthewaythattheperspectiveviewsaproblem To accomplish this goal, organizations must encourage
+andformulatesthesolution.Afunctionalmodeofinquiry interpretive relationships among individuals and celeb-
+supportstheideathatorganizationsuseinquirytosupport rate the differences of those individuals. To reduce
+or achieve organizational objectives, relying on known conflict between organizational members, these rela-
+processes and information to facilitate organizational tionships must exist in an environment where each
+goals and minimally increase organizational knowledge. perspective is recognized; this environment must also
+Fig.1.Thevalue-baseddecision-makingmodel.
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1593
+allow for continuous updating of the collective mental mentalvariables,andthedecision-makers.Factsmaybe
+model. Accordingly, Fig. 1 presents the framework of interpreted in a multitude of ways depending on the
+the VBDM model. perspective of the interpreter; shared interpretation can
+A traditional problem-solving or decision-making only occur when the basis behind the interpretation is
+approachistoreacttoproblemrecognition(thetriggerin discussedorwhentheindividualsinvolvedhavealready
+Fig.1)byformulatingalternativesolutionsquicklyfrom achievedanunderstandingofeachothers'perspectives.
+generally known information (that is, foregoing inves- Each fact to be considered during a particular context
+tigation and knowledge creation) and choosing a solu- is discussed, and any conflicts of interpretation must
+tiontoimplement.Twoproblemsareassociatedwiththis be resolved with additional information gathered from
+method.Thefirstisthatfailuretoinvestigateallperspec- group members, organizational memory, and/or the en-
+tivesmayleadtoincorrectorincompleteproblemdefi- vironment.Ideally,thisiterativeprocess(analyze,gath-
+nitionoralackofappropriatealternativesolutions.The er,analyze…)continuesuntilthegroupreachesnotonly
+secondisthat,veryoften,theprocessofdecision-making a shared interpretation of that fact, but also a deeper
+ends with implementation; this lack of feedback may understanding of the social environment in which the
+preventoutcome-basedlearning.Courtney's[12]model group is operating. The perspective development (PD)
+andourextensionaddressbothproblemsbyadvocating processisdetailedinFig.2.
+the use of perspectives and by providing for a continu- An individual's beliefs are based on their value
+ouslyupdatedmentalmodel. profileandparalleltheconceptofamentalmodel[12].
+CourtneydiscussesthisprocessintermsofaSinger- Theunderlyingfoundationofourmodel(anindividual's
+ian“sweepingin”processthatgathersinformationfrom valueprofile)remainsrelativelystable,yetbeliefsbased
+anever-wideningsetofstakeholders.Inthisprocess,the onthosevalues(i.e.,mentalmodel)maybemodifiedas
+breadthofperspectivesinvolvedinthedecision-making PDtakesplace.Thisinvolvesupdatingbeliefsbasedon
+processesincreasessimplybyincreasingtheamountof newly acquired information, considering available op-
+input; such breadth may contribute to more informed tions,developingnewintentionsfromthesetofavailable
+decisions, but not necessarily to shared interpretation options,andactingonthosenewintentions.This,inturn,
+that is fostered by socially constructedinformation and modifies the mental model, and contributes to a shared
+understanding. interpretationoftheevents.
+Our extension addresses the social construction of Acquiringinformationwithwhichtoanalyzechanges
+informationandinterpretationbypromotinganiterative or triggers is dependent in part on the ability to ac-
+relationship between organizational memory, environ- cess organizational memory. In the VBDM model,
+Fig.2.Perspectivedevelopment.
+
+1594 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+organizational memory is represented by two storage acquired and acted on. This may change the shared
+areas, the database, and the knowledge base. Facts are interpretationofthegroupandallowsynthesis.Itisalso
+storedinthedatabasethatrepresentsexplicitknowledge possible that the item will not reach consensus despite
+in organizational memory. Shared interpretations are additional development. Regardless, additional knowl-
+ultimately stored in the knowledge base which, over edge has been gained and is reflected in organizational
+time, expands organizational memory to include infor- memory.
+mation from multiple value-based perspectives and Webelievethatsuchamodel,andacomponentbased
+interpretations. Although one decision context will thereon,isanaturalextensionofadecisionsupportsys-
+likelyonlydevelopinformationrelevanttothatcontext, temasdescribedbyBonczeketal.[9].Forinstance,the
+over time that information may be synthesized to form PDcomponentmaybeplacedbetweentheuserandthe
+relevantinformationforothercontexts.Ultimately,each model or between the user and the data. Either way,
+decision-maker believes that he or she has developed a exposingtheusertoadditionalperspectiveswillbroaden
+shared interpretation of the events, and the process theirinformation-gatheringanddecision-makingscope,
+movestowardperspectivesynthesis. allowing for analysis that is more complete. The per-
+Theperspectivesynthesisprocesshastwoaspects— spective synthesis component is a natural fit as part of
+theproblemspaceinwhichtheproblemisstructuredand themodelcomponent;drawingininformationbasedon
+potential alternative solutions are discussed, and the multipleperspectivesandanalyzingittogetherinaway
+solutionspacewhereapprovedalternativesolutionsare that allows the best alternatives with more stakeholder
+placed.Itisfromthissetthattheeventualsolutionwillbe consideration tobe considered.
+chosenandactionwillbetaken.Inthesynthesisprocess, Although interpretive learning and expanding orga-
+surfacingofunseenconflictiscriticalandbothconsen- nizational mental models are group-oriented processes,
+susandconflictsets[28,29]arenecessary.Fig.3shows initialresearchintoanareaasindividualasvalueprofiles
+thedetailsoftheperspectivesynthesisprocess. is best performed at the individual level. Therefore, in
+Although each decision-maker believes he or she ordertoshowthatourchosenvalue-profilebasiscanbe
+understandstheperspectiveoftheothers,heorshemay usedtomanipulatetheactionsofindividuals,wetesteda
+stillnotfullyappreciatetheconflictthateachperspective perspectivedevelopmentcomponentbasedonourmodel
+may produce when alternative solutions are suggested. foritsabilitytochangeadecision-maker'sbehavior.
+Alternative solutions are divided into two categories—
+those that the group agrees are feasible solutions 5. Testing the perspective development component
+(consensus set), and those on which there is no con-
+sensus (conflict set). Discussion regarding items in the Inthisresearch,acomponenthasbeenimplemented
+conflictsetisnecessarytoeither(1)mediatetheconflict, as a user interface that queries motivation behind both
+or (2) remove the item from consideration. It is during chosen and unchosen actions in an attempt to develop
+thistimethatinteractivitybetweenperspectivedevelop- that individual's knowledge of alternative perspectives
+mentandsynthesisismostnoticeable.Whenitemsarein that are often based on differing assumptions, some of
+question, it is most natural to secure additional infor- whichmaybeconflicting.Recognizingandconsidering
+mation on that item. This returns the decision-making other perspectives exposes any different assumptions
+grouptothePDprocess,whereadditionalinformationis that may be influencing stakeholders, allowing the
+Fig.3.Perspectivesynthesis.
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1595
+decision-maker(s) to determine which assumptions are profile; thus, we are able to estimate their value-based
+accurateandconsequentlytoattainabetterunderstand- perspective.Forexample,ifanindividualscoreshighly
+ing of the problem at hand. Better understanding on economic and political values (i.e., their profile ex-
+typically leads to better decision-making (e.g., hibits stronger concern for these dimensions), we can
+[2,15,29]). However, decision-makers often engage in assume that their value-based perspective will be one
+the information gathering and choice processes from a thatfocusesonthe“bottomline”andonpower/political
+perspective biased by their value profile, and are often issues over,forinstance,thesocial value ofaprogram.
+unawarethattheyarebeingaffectedbythem[18]. Value-based judgments are actions taken implicitly or
+In some decision contexts, such as a crisis or when explicitlythatarebasedonanindividual'svalueprofile.
+confrontedbyanewornovelsetofcircumstances,peo- System performance must be defined within the
+plemaybeforcedtomakedecisionswithlimitedinfor- context of its use. For instance, one reasonable perfor-
+mation or time available for analysis. In such contexts, mancetestforafunctionalsystem(forinstance,apayroll
+the set of alternatives developed, and ultimately the al- system)maybetheaccuracyofitsoutput.Foranexpert
+ternativechosen,maybegreatlyaffectedbythepersonal support system, performance may be less well defined
+valuesandtheperspectivethosevaluesprecipitate.Be- and be assessed in terms of the organizational perfor-
+causeanindividual'sperspectiveaffectsandbiasestheir mancebasedondecision-makingfacilitatedbythesys-
+responseindecisionsituations,wemustbuildsystemsto tem.Foracomponentusedwithinacomplexdecision-
+helpanindividualconsidermultipleperspectivessothat making scenario, the definition of performance is even
+the assumptions of others are surfaced and analyzed, moreilldefined.Inthisresearch,theperformanceofthe
+whichinturnmaypromotesharedmentalmodelsanda perspectivedevelopmentsystemwillbecomparedtothat
+broadenedorganizationalperspective. ofa controlsystem, and themeasureof performance is
+A shared mental model is critical to organizational thesystem'sabilitytoaffectthevalueprofileappliedina
+learning and effective group decision-making, but in specific decision context. It is posited that decisions
+ordertoarriveatthatstate,theindividualsinvolvedmust made byusersofasystemcontaining aPDcomponent
+firstbroadenthescopeoftheirthinkingtounderstandthe will exhibit a change in the value profile applied not
+thinking of those around them (e.g., [29]). Further, the evidentinthebehaviorofusersofasystemwithoutsuch
+broader the range of perspectives and alternatives con- a component (the control group). Thus, hypothesis one
+sidered, the more informed the eventual choice (e.g., is:
+[33,61]).Moreinformedchoicesarebetterandresultin
+H1. Use of a perspective development component will
+more satisfying decisions, all other things being equal
+alterthevalueprofileappliedbyanindividualonasub-
+(e.g.,[45]).Onewaytobroadenthenumberofperspec-
+sequentsimilartask.
+tivesusedinadecisioncontextmaybeaccomplishedby
+having each participant complete a series of questions Changing the value profile applied to a task may be
+regardingthecurrentdecisiondomainfromanumberof accomplishedwithoutspecificallydeviatingfromone's
+otherperspectives,perhapsbybeingaskedtoarticulate stated values. It would be possible, for instance, for a
+both good and bad points of a given problem or alter- decision-maker to modify their action in response to a
+native, thus forcing the issue (e.g., problem or alterna- treatmentwithoutdeviatingfromtheirunderlyingvalue
+tive)tobeconsideredfromtwosides(e.g.,[32,49]).This profile. Aspreviousresearchhassuggested, PDshould
+istheapproachtakeninthisresearch. allow the decision-maker to envision a wider range of
+Becausetheareaofvaluesiscomplexandbroad,and perspectivesand,atleasttemporarily,think“outsidethe
+valuesarethefoundationofmanypersonaldecisionsand box.” Therefore, it is posited that being asked to chal-
+actions,itisimportanttodefinehowwemeasurevalues lengethestatusquobyconsideringmultipleperspectives
+inthecontextofourresearch.Thisresearchacceptsthe of an issue increases the “breadth of concern” ([32],
+notion of values as espoused by Spranger, and opera- p. 202) and results in perspective development. Thus,
+tionalizes those values by using the Allport–Vernon– hypothesistwois:
+Lindzey (AVL) Study of Values [1]. We consider the
+H2. Use of a perspective development component will
+value profileto bethe pattern of relative importanceof
+result in an applied value profile that differs from that
+each of Spranger's values (theoretical, social, political,
+individual'sstatedvalueprofile.
+religious, aesthetic, and economic) to an individual, as
+constructed from the results of the AVL instrument. A The subjects used in this study were undergraduate
+value-based perspective is the worldview that an indi- studentsatamajorSouthwesternuniversity.Thesesub-
+vidualdevelopsasaresultofhisorherunderlyingvalue jectsareappropriateforajudgmentaltaskpertainingto
+
+1596 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+Fig.4.Valueprofile(AVL).
+values because they are not likely to have experience vidual's value dimensions (theoretical, social, political,
+with the requirements of the task, and thus are more religious,aesthetic,andeconomic).Thisinstrumenthas
+likelytoreactinstinctively(i.e.,followtheirvalue-based withstood time, three revisions by the authors, and one
+perspective) and less likely to consider social norms in recent revision by other researchers [37], who did not
+their responses. This is the scenario presented earlier find significant differences in responses between their
+when individuals have no information on which to act, instrument and the original one. The task involved the
+are in a new situation, and therefore must rely on their disbursement of funds among six community-based
+value-basedperspective.Also,becausethetaskrequires programs, each of which corresponds to a value-based
+no specific knowledge or training, response bias is un- perspective as determined by Spranger [56]. This task
+likely.Studiesofvariousvalueinstrumentsindicatethat wasdevelopedbytheGDSSresearchprojectattheUni-
+values can be assessed early in an individual's devel- versity of Minnesota [14], was extensively tested, and
+opmentandthatvalue-basedinstrumentsarereliablefor was specifically designed to work with the AVL. The
+individualsatthehighschoolleveloraboveanddonot task/AVL combination has been validated in previous
+discriminatebasedonage(e.g.,[1,54]).Therefore,itis research (e.g., [63]).Inthis task, subjects must allocate
+reasonable to believe that the results of this study will $500,000amongthesixprograms.Allthefundsmustbe
+generalize to other populations. Subjects ranged in age allocated; each subject may choose whether to allocate
+from19to22andweredistributedacrossallclassifica- all the funds to one program, or split the funds among
+tions(freshmantosenior).Businessstudentscomprised twoormoreprograms.Ourresultsindicatethatboththe
+61%ofthesample;39%ofthesamplewasmale. instrument and the task functioned as expected in our
+An individual's value profile was determined using samplepopulation.
+theAllport–Vernon–Lindzey(AVL)StudyofValues[1] Two systems were developed that presented the
+that measures the relative strength of each of an indi- subject with a program that administered a short
+Fig.5.Distributionprofile(Task1).
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1597
+Fig.6.Distributionprofile(Task2).
+demographic survey, the value-based perspective study 6. Results
+(i.e.,theAVLStudyofValueswhichisadministeredin
+two sections), and two funds disbursement tasks. The Preliminary data analysis was performed to ensure
+perspective development system (i.e., the treatment dataintegrityandtomakeadjustmentsasnecessaryfor
+condition) was different from the control system in removing outliers and establishing covariates. Because
+only one aspect. It contained an alternative perspective ofthesize ofthesample(n=388),evennessofthedis-
+consideration component designed to encourage the tribution(n =193;n =195),andlackofmissingdata,no
+t c
+subject to consider all sides of a given problem. The violation of assumptions was expected nor found; no
+treatment was activated following the first funds impact of covariates or outliers was detected. This pre-
+distribution task; the control group received an inter- liminaryanalysisconfirmedthatstudyrequirementsand
+vening break between the two tasks that consisted of a that assumptions critical to statistical analysis were not
+page from the “Foundation” thanking them for their violated.
+“goodwork”inthefirstfundingtaskandaskingthatthey Theprimarymethodofanalysisusedinthisstudyis
+continuetheirjobas“trustee”throughonemoreroundof profile analysis, a multivariate form of repeated mea-
+funding. sures ANOVA. The intent is to discern patterns of re-
+Tasks 1 and 2 were similarin style (six programs to sponses over groups, rather than look at the individual
+which to distribute $500,000, each aligned to one of measures.Thistypeofanalysisiscommoninthesocial
+Spranger'svalues),buttheprogramsoutlinedinTask2 sciences where groups of related characteristics are of
+weredistinctlydifferentfromthoseinTask1.Thus,the interest(e.g.,[36,43]),andisparticularlyusefulinsitu-
+second task was a similar decision domain, as opposed ations where the measures have acomplexrelationship
+to a re-examination of a previous decision (because suchasthedataanalyzedhere.
+of space limitations, specific funding request projects Becauseallofthesubjectsarefromthesamegeneral
+and their corresponding values are available from the populationandwererandomlyassignedtothecontrolor
+authors).Theresultsofthesecondfundsdistributiontask treatment group, no difference in their profiles was ex-
+provideevidenceofwhetherthemanipulationsucceeded pected for the administration of the AVL or the first
+in changing the subject's response to funding requests. executionofthefundsdistributiontask.However,these
+Results from the AVL and the funds tasks were used assumptions required testing before hypothesis testing
+tobuildprofilesforanalysis.Theseprofilesprovidethe began.Asexpected,nosignificantdifferencesinprofiles
+basis for comparison between treatment and control werefoundfortheAVL(F=0.57,p=0.72,η2= 0.007).
+p
+groupresponses. Thisindicatesthecontrolandtreatmentgroupsexhibited
+Table2
+Significancelevelwhencomparingtreatmentandcontrolgroupmeandifferencesforthefirstandsecondfundsdistributions
+Aesthetic Economic Social Religious Political Theoretical
+Task1 p=0.85 0.98 0.81 0.47 0.13 0.33
+Task2 pb0.05 ⁎ 0.08 0.89 b0.01 ⁎ 0.68 b0.01 ⁎
+⁎ Significantatα=0.05.
+
+1598 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+Table3
+Correlationbetweenthevalueprofileandthedistributionprofile(Task2)foreachgroup[correlation(p-value)]
+Aesthetic Economic Social Religious Political Theoretical
+Pre-treatment(allcorrelationssignificant)
+Control 0.28(b0.0001) 0.25(0.0003) 0.15(0.0404) 0.30(b0.0001) 0.33(b0.0001) 0.15(0.0331)
+Treatment 0.22(0.0019) 0.20(0.0067) 0.14(0.0481) 0.33(b0.0001) 0.35(b0.0001) 0.18(0.0113)
+Post-treatment
+Control 0.25(0.0005) 0.31(b0.0001) 0.18(0.0099) 0.58(b0.0001) 0.16(0.0298) 0.25(0.0005)
+Treatment 0.20(0.0045) −0.01(0.8583) ⁎⁎ 0(0.9954) ⁎⁎ 0.38(b0.0001) 0.18(0.0130) 0.10(0.1822) ⁎⁎
+⁎⁎
+Notsignificant.
+similarvalueprofiles.Thesesameresultswereevidentin Thesecondpreviouslystatedhypothesisinvestigates
+theprofilesofthefirstfundsdistributiontask(F=0.73, whetheranindividualwillbeabletodeviatefromhisor
+p=0.60,η2=0.009),indicatingthatbothgroupsallocat- herstatedvalueprofile;eachgroup'sstatedvalueprofile
+p
+ed funds similarly between each program. Further, the was compared to their second funds distribution task
+means of the responses differed significantly over each profile.Forpurposesofthisresearch,asubjectexhibits
+ofthesixprogramsindicatingthegroupshadpreferred perspective development if their post-treatment dis-
+dimensions. Fig. 4 clearly shows that the profiles are tribution profile (i.e., the results of Task 2) and their
+almostindistinguishableforvalueresponses,andFig.5 value profile (i.e., as determined by the AVL) are dif-
+shows the same for the first funds distribution task. ferent. Statistically this could be evidenced by a lack
+Theseresultsindicatethatanypost-treatmentdifferences of correlation between the professed importance of a
+between the groups can reasonably be attributed to the valueandtheamountoffundsgiventoacorresponding
+treatment. program.
+As expected, the control group's allocation offunds
+7. Hypothesis analysis inthesecondfundsdistributiontaskisconsistentwithits
+response to the values study, statistically supported by
+Aspreviouslystated,hypothesis1examineswhether Pearson Correlations shown in Table3 (correlations all
+subjects in the treatment group allocated funds differ- significant atp≤0.05).The pattern ofthevalue profile
+entlyinthesecondfundsdistributiontaskascomparedto generally matched the pattern of the funds distribution
+the first, indicating they placed different emphases on profileforthesecondtask.Notethatwearenotfocusing
+eachvalue-basedperspectiveafterthetreatment.Asex- ontherelativedifferencebetweenfundsdistributionfor
+pected,analysisresultsshowevidencetorejectsimilarity any one program, but rather the pattern of consistent
+between groups in thesecond task indicating that there correlation. For instance, the religious value received
+are significant differences in the way the two groups highresponses;thereligiousprogramreceivedthemost
+distributed funds (F=5.1, pb0.01, η2=0.063). This funding. The theoretical value received low responses;
+p
+supports our hypothesis that behavior on a similar task correspondingly, the theoretically based program re-
+willdifferfollowingexposuretoaPDcomponent.Fig.6 ceivedlowfunding(seeFig.6).Thispatternisconsistent
+shows the profiles for each group for the second funds acrossthetask.
+distributiontask. Suchwasnotthecasewiththetreatmentgroup,how-
+Therewerenosignificantdifferencesintheamountof ever. Correlation analysis indicates that the treatment
+fundsdistributedtoeachprograminTask1betweenthe groupchangedtheirscoresontheeconomic,social,and
+twogroups,aswouldbeexpectedbetweengroupswith theoretical dimensions, which suggests the treatment
+similarprofiles.However,whilethedistributionprofiles group exhibited a perspective development effect. For
+ofthegroupsdifferedsignificantlyinTask2,resultsof instance,althoughtheaestheticvaluewasthefifthrank-
+pairwise comparisons, adjusted for multiple compari- ed value in the sample, it received the third highest
+sons, indicate that not all dimensions differed equally proportionoffunding.Itreceivedmore,infact,thanthe
+(seeTable2).Specifically,thegroupsdistributedsimilar economic program although the economic value was
+amountsoffundstothepoliticalandsocialprograms,a ranked considerably higher. The subjects who received
+different amount to the economic program, and signif- the treatment exhibited an applied value profile that is
+icantlydifferentamountstotheaesthetic,theoretical,and differentfromtheirstatedvalueprofile,thussupporting
+religiousprograms. thesecondhypothesisthatthetreatmentconditionwould
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1599
+result in a behavior pattern (applied value profile) that Supportingadecision-maker'sconsiderationofmul-
+differedfromtheirstatedvalues. tiple perspectivescan, atleast temporarily,alterthede-
+cision-maker'sappliedvalueprofileduringthatdecision
+8. Discussion task so that a wider range of values are given due con-
+sideration. Broadened perspective bases have practical
+This study has examined whether a component benefitstoanorganization.Forinstance,theothereffects
+designed to support an individual's use of multiple mentionedabove(innovation,creativity,andadaptabili-
+perspectives during a decision-making task can be ty)becomecrucialindecisiondomainsofcomplexprob-
+conceptually developed and empirically tested. Specif- lems,particularlysociallyorientedones.Anorganization
+ically, the results are evidence of the consideration of canutilizesupportsystemsdesignedtobroadenperspec-
+multiplevalue-basedperspectivesandofreduced value tives,especiallyvalue-basedperspectives,tocreate,ac-
+bias. One might argue that the change in thetreatment cumulate, and manage knowledge critical to its core
+subjects' behaviors can be explained by increased competencies.
+creativity or innovativeness or just simple alignment Asanindividual'sperspectivebaseexpands,sodoes
+with conscious thoughts of one's values. Alternatively, thatindividual'sabilitytoseeabiggerpicture. Whena
+perhapsthetreatmentsubjectsadaptedtheirbehaviorin groupofindividualsarebroughttogetherinthisway,the
+some sense to produce the behavior they believed was problemspacedevelopedbythatgroupbecomesbigger,
+desiredbytheresearcher.Wenotethatonlythetreatment allowingforawiderrangeofalternativestobegenerated
+group,thegroupencouragedtoconsiderotherperspec- andmoreinformedchoicestobemade[29,33,61].Con-
+tives,behavedinthisway.Wenotedearlierthebenefits sideration of multiple perspectives also allows an indi-
+ofconsideringadecisiondomainfrom awideperspec- vidualtoperceiveandprocessinformationthatmaynot
+tive: increased creativity, innovation, and adaptability havebeenconsideredusefulunderadifferentlens,which
+[11,32]. Thus, even if the treatment group's behaviors isanantecedenttoorganizationallearning.Anincreased
+canbedescribedascreative,innovative,oradaptive,we amountofinformationusefulinaparticulardomainhas
+believe the controlled nature of the laboratory experi- beenshowntoincreasedecisionquality[57].Thevalue-
+mentsupportsourconclusionthatperspectivedevelop- basedcomponenttestedinthisresearchencouragedin-
+mentledtothisbehaviorbecausethecontrolgroupdid dividualstoconsiderandusemultipleperspectivesduring
+not behave in the same way. Creativity, innovation, a decision task. When information based on these per-
+adaptability,andsofortharedifferenteffects. spectivesisincorporatedintoorganizationalmemory,it
+There is clear precedent for our conclusion on this becomesavailableforotherdecisiondomains.
+point.ParkerandAxtell[49]citeresearchfromthestudy Itisinterestingtonotewhichvalue-baseddimensions
+of human development that it is the ability to take the weremediated.Itshouldcomeaslittlesurprisethatthe
+perspective of others that leads to greater empathy [4], individualscouldnotbepersuadedtodeviatefromfund-
+higherlevelsofcognitivecomplexity[26],moraldevel- ingthereligiousprogramasthisvaluewasthestrongest
+opment [35], and managerial effectiveness [64]. For among the subjects. The characteristics of the religious
+example,for empathy tooccur,anindividualmustfirst value include faith, acceptance, and a respect for the
+recognizethatsomethingishappeningtosomeoneelse rights of people [19]. Individuals with a high religious
+andhavesomeunderstandingofhowtheotherpersonis value profile tend to be empathetic, concerned with
+feeling. In all of these cases, the driver of the behavior socialwelfare,andidealistic;suchfaith-based,idealistic
+changeisconsiderationofotherperspectives. values are less likely to respond to manipulation [3].
+The primary finding of this research is that an indi- Theoretical programs may have had appeal given the
+vidual's decision-making behavior can be changed in student population of the study; aesthetic support may
+value-basedsituations.Previousresearchhassuggested havecomefromafeelingofcommunitythatiscommon
+that the individual differences caused in part by value oncampuses.
+profilesmaybetoocomplextobemanagedeffectivelyin However,theabilitytomanipulatetheeconomic,the-
+systemdesign[30],butmustbeacknowledgedasante- oretical, and social value-based perspectives is a valu-
+cedentsfortheoutcomeoftechnologicalendeavorssuch able finding. Numerous studies have indicated that the
+as MIS acceptance and success [13,65]. This research, economicandtheoreticaldimensionsarethestrongestof
+however, suggests that it is possible, through a system the dimensions in individuals representing managerial
+component such as that developed here, to change the positions (e.g., [1,39]). Mitigating the effect of these
+behavior of decision-makers in a specific decision values should allow organizations to move away from
+domain. thetechnicalperspectiveofdecision-makingandtoward
+
+1600 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+theorganizationalandpersonalperspectivesassuggest- specifically strives to mediate this unifocus by first ac-
+edbyMitroffandLinstone[46]. knowledgingthatallmembersofthegrouphaveclosely
+Indeed, a decision support environment that inte- held beliefs, and encouraging communication between
+grates the multiple perspective support as we have de- the members such that the beliefs and their related as-
+scribed and tested here moves organizations toward sumptions are surfaced and discussed. This moves the
+what Mitroff and Linstone [46] describe as the “third organizationtowardvalue-attunedresponsiveness—the
+way of knowing”, that is, multiple realities. They state, understanding that complex (primarily social) decision
+“…the assumption is that on problems of any signifi- contextssuchaspolicyformulationareinseparablefrom
+cance, the analyst, decision-maker, or policy-maker individualvalues[60].
+needs to explicitly see a range of different representa- Formulating and ultimately solving ill-structured
+tions of the problem so that he or she can participate problems may also benefit from a model such as ours.
+actively in the problem solving process…” (p. 63, their Organizations often rely on their members to make
+emphasis).Thehopethattheyputforthisthatexposure decisions ina changingandunpredictable environment
+to a range of perspectives (i.e., representations) will thatproducesthesetypesofproblems.Intuitivedecision-
+allow the decision-maker to produce a new, stronger making is routinely used in these situations where a
+perspective that synthesizes the ones reviewed. The managerinterpretstheenvironmentandreactstoa“gut
+social value-based perspective may also enable these feeling.”Further,researchshowsthatinformationthatis
+organizations to be more cognizant of their social re- used in these situations is socially constructed [40].
+sponsibilities and the impact of their actions on their Intuitive action enables an individual to come to un-
+communities. derstandasituationwithoutexplicitanalysis[31].Effec-
+tiveintuitionrequiresnotonlytheindividual'sabilityto
+9. Implications judge the problem athand, butalso theenvironment in
+which the problem is situated. Although these mental
+TheVBDMmodeldiscussedaboveprovidesorgani- models are rarely, if ever, complete, they guide subse-
+zations with the means to surface, consider, and en- quentdecision-makingbehavior[47].Asmanagersrou-
+couragemultipleperspectivesbasedonvalues.Because tinelyengageinactiveinterpretationduringtheVBDM
+anindividual'svaluesprovidethefoundationforhisor model process, their mental models expand, perhaps
+herbeliefs,perspectives,andultimatelyhisorherdeci- moving the models toward a more complete state, and
+sions, investigation into this area is important for an thus eliminating some elementof uncertainty about the
+understandingofdecision-makingbehaviorinorganiza- judgment.
+tionsaswellasthecomplementaryareaoforganizational
+learning;thereareimplicationsforpracticeandtheory. 9.2. Theoretical implications
+9.1. Practical implications On a theoretical level, the VBDM model, with its
+focus on a small set of core personal values extends
+ApracticalimplicationoftheVBDMmodelisthatit individualvalueusagewithintheorganization.Swanson
+providesthebasisforengaginganorganizationinactive [60] encourages research to develop a theory of values
+considerationofvalues.Inanerawhenanorganization's thatmayprovidetheattunementprocesswithsomelevel
+social responsibility is more prominent, such a consid- of explanatory power, and that may help to focus un-
+erationmaynotonlybeadvisable,butmaybeunavoid- derstanding of individual values and their impact on
+ableincertainareas,suchaspolicyformulationandother individual(andparticularlyexecutive)behavior.Bypro-
+ideologicallybasedissues.Wade-Benzonietal.[62]dis- vidingadefinedsetofvaluesthatmaybemeasuredby
+cussbarrierstoideologicallybasednegotiationswherein establishedinstruments(e.g.,theStudyofValues[1]),a
+they define those contexts to be societal issues. These theory of individual values may be constructed and
+issues may be difficult to resolve because individual tested.
+valueslimithowanindividualinterpretstheinformation, Using a model such as the VBDM model may not
+especiallywhenaparticularissueiscloselyrelatedtoa only enhance an organization's understanding of the
+value held with deep conviction. Research shows that, values that its members hold, but it may also help the
+when an individual is presented with a problem that individuals better understand themselves. Self-percep-
+evokesstrongsentiment(eitherpositiveornegative),he tion theory indicates that individuals may not be fully
+orsheismorelikelytofocusnarrowlythantoembrace aware of what their value profile is or even that one
+otherinformationorideas(e.g.,[62]).TheVBDMmodel exists. Instead, individuals, if aware of values, may
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1601
+deduce what those values are based on their actions in usageofasystembuiltonitsfoundationisnotlimitedto
+different situations just as an observer may deduce an that. A design as flexible as the VBDM model can be
+individual's values based on that person's actions [5]. used for decision-support, learning support, or as a
+TheVBDMmodelallowsanorganizationtodisseminate component of a knowledge management system. En-
+concreteinformationtoitsmembersregardingthevalue hancedperspectivedevelopment willnaturallyincrease
+profile,thusallowingindividualstobecomeawareofthe an individual's (or organization's) mental model and
+values they hold. In turn, this awareness of one's own therefore affect decision-making and other information
+values will enhance understanding of another's values, intensive processes such as knowledge generation. Re-
+whichshouldpromotefewervalue-basedconflicts. cent research in negotiation support [59] indicates that
+Lastly, the VBDM model conceptualized here may synthesizing decision-makers' mental models not only
+providethebasisfortheindividualrepresentationscheme increases the level of consensus with the group, but
+necessary for successful interpretive organizational improvesthesocialclimateinwhichthegroupsoperate.
+learning [28]. First, the use of the value set chosen Such cohesiveness can enhance the decision-making
+allows organizations (or researchers) to focus on and process by reducing conflict, which is a goal of the
+perhaps test two foundations of interpretive organiza- VBDM model. All decision-making, information gath-
+tionallearning(IOL).Thefirstisanunderstandingofthe ering,andknowledgegenerationscenariosrequiresome
+contextual interpretation of a given individual, and the negotiationtoreducetheconflictinherentinacceptable
+second is the ability to understand potential alignment informationandsolutions.
+and/orinteractionofthoseinterpretations.Byacknowl- To achieve the goal of multiple perspectives, orga-
+edging a discrete set of values, and understanding how nizations should encourage individuals to think more
+alliances or conflict may arise within that set, an broadlyaboutproblems,andtoconsidertheviewpoints
+organization should be able to provide the surfacing of of others. When an individual strongly favors one or
+conflict necessary to IOL. Hine et al. [28] also suggest more of the six value-based perspectives, encouraging
+requirements for an individual representation scheme, this growth may be difficult. Recent research [22–24]
+suchasflexibility,scoperestriction,andstandardization indicates that systems designed to facilitate the devel-
+of terminology such that effective communication may opment of multiple perspectives may be beneficial in
+occur. Using values to represent this scheme provides encouragingindividualstoovercometheirinnatemental
+those requirements and contributes a way to measure modelsduringspecificproblem-solvingcontexts.Itmay
+equivocality. A given value profile is likely to result in benecessarytorely onspecially developedtechnology
+multipleinterpretationsdependingonthecomplexityof to aid this process, particularly to provide the ability
+the context. Further, Hine et al. [28] suggest that an to update the mental models of organizational mem-
+organization must strive to understand belief variety, bers and ultimately the collective mental model of an
+whichisthenumberofbeliefsinagiveninterpretation. organization.
+Byusingadiscretevaluesetpresentedasavalueprofile Recent advances in technology may enable organi-
+unique to an individual, the VBDM model defines not zations to facilitate the process of populating organiza-
+onlybeliefvarietybutalsothecharacteristicsassociated tionalmemorywithmultipleperspectives,thusenabling
+witheachbelief. organizational members to refer to those perspectives
+and the knowledge produced as needed. This will ef-
+9.3. Research implications fectively update and expand both individual and
+collectivementalmodels.Courtney[12]suggestsseveral
+TheVBDMmodeldiscussedherebegetsavenuesfor Web-basedtechnologicalavenueswherebythismaybe
+futureresearch.Furthertestingoftheapplicabilityofthe possible—forinstance,chats,email,applets,andknow-
+values in the workplace is possible; testing the devel- ledgerepositories.AsystembasedontheVBDMmodel
+opment and synthesis processes in a group setting is may incorporate any (or many) of these technologies.
+another possibility. Further refining of the PD compo- Agent technology is also a promising avenue for
+nentanddevelopmentoftheperspectivesynthesiscom- implementationofcomplexsystems[24,25].
+ponentshouldalsobeconsidered. Another avenue for research is further development
+It is possible that the VBDM model may be a po- of the behavioral aspects of the system. Do individuals
+tential implementation of an interpretive organizational usingasystemsuchastheVBDMmodelgeneratemore
+learning system (one such system is that of Hine and alternativesolutionsthanindividualswithoutsuchsup-
+Goul[29]).TheVBDMmodelhasbeenconceptualized port? Can such a system, over time, mediate potential
+in the image of a decision-support system, although bias effects of strongly held values of an individual?
+
+1602 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+Doesuseofthesystempromotefaster,moreefficient,or [5] D.J. Bem, Self-perception: an alternative interpretation of
+better decisions? Is there enough variety of value cognitivedissonancephenomena,PsychologicalReview74(2)
+(1967)183–200.
+profilesinagivengroupofdecision-makerstoachieve
+[6] I.Benbasat,L.-H.Lim,Theeffectsofgroup,task,content,and
+theobjectiveof synthesizing multiple perspectives?
+technologyvariablesontheusefulnessofgroupsupportsystems:
+ameta-analysisofexperimentalstudies,SmallGroupResearch
+10. Conclusion 24(4)(1993)430–462.
+[7] K.L.Betttenhausen,K.J.Murnighan,Theemergenceofnormsin
+competitive decision making groups, Administrative Science
+As organizations continue to strive for sustainable
+Quarterly30(1985)350–372.
+gains in productivity and excellence, the importance of
+[8] R.J.BolandJr.,R.V.Tenkasi,Perspectivemakingandperspec-
+effective decision-making and organizational learning tivetakingincommunitiesofknowledge,OrganizationScience6
+continues to increase. The environment faced by orga- (4)(1995)350–372.
+nizationstodayisoftencomplexandverydynamic.Itis [9] R.H.Bonczek,C.W.Holsapple,A.B.Whinston,Foundationsof
+DecisionSupportSystems,AcademicPress,NewYork,1981.
+critical thatorganizationsconsiderthecontribution that
+[10] C.W. Churchman, The Design of Inquiring Systems: Basic
+multiple perspectives make to decision-making and
+ConceptsofSystemsandOrganizations,BasicBooks,Inc.,New
+learning. In a particular decision context such as a York,NY,1971.
+novelsituation,crisis,orcontextsthatevokeemotion,a [11] J.D.Couger,L.F.Higgins,S.C.McIntyre,(Un)Structuredcrea-
+decision-maker with a set of personal values on which tivityininformationsystemsorganizations,MISQuarterly17(4)
+(1993)375–397.
+theirperspectiveisbasedmaynotbeabletoidentifyall
+[12] J.F.Courtney,Decisionmakingandknowledgemanagementin
+sidesoftheissueunderconsideration.Yet,beingableto
+inquiring organizations: a new decision-making paradigm for
+view the decision environment from multiple perspec- DSS, Decision Support Systems Special Issue on Knowledge
+tives enhances the decision-maker's ability to make Management31(1)(2001)17–38.
+better-informed choices. The value-based decision- [13] F.D.Davis,Perceivedusefulness,perceivedeaseofuse,anduser
+acceptanceofinformationtechnology,MISQuarterly13(1989)
+making model described in this paper provides a
+318–340.
+framework that organizations and researchers can use
+[14] G.DeSanctis,M.S.Poole,M.Limayem,D.Luitjens,"TheGDSS
+to better understand and facilitate the use of multiple Research Project: Experimental Task Materials," MISRC-WP-
+perspectives in decision-making and organizational 92-07, Management Information Systems Research Center,
+learning. Curtis L. Carlson School of Management, University of
+Minnesota(1992).
+ThefoundationsoftheVBDMmodelareCourtney's
+[15] A.J. DiBella, E.C. Nevis, How Organizations Learn: An Inte-
+[12]decision-makingandknowledgemanagementpara-
+grated Strategy for Building Learning Capability, Jossey-Bass
+digm and the conflict/consensus process of interpretive Inc.,SanFrancisco,1998.
+organizationallearning[28,29].TheCourtneyparadigm [16] W.C.Frederick,Anchoringvaluesinnature:towardatheoryof
+has been enhanced by the addition of six value-based businessvalues,BusinessEthicsQuarterly2(1)(1992)283–302.
+[17] D.Giola,P.P.Poole,Scriptsinorganizationalbehavior,Academy
+perspectiveswhichformthefoundationoftheindividual
+ofManagementReview9(1984)449–459.
+representation scheme of interpretive organizational
+[18] W.D.Guth,R.Tagiuri,Personalvaluesandcorporatestrategy,
+learning. Understanding these values is integral to un- HarvardBusinessReview43(5)(1965)123–132.
+derstanding value-based decision behavior. Effective [19] B.Hall,O.Harari,B.Ledig,M.Tondow,ManualfortheHall-
+decision-making and learning require consideration of TonnaInventoryofValues,PaulistPress,NewJersey,1986.
+multiple perspectives; this model will enhance the un- [20] D.J.Hall,TestingPerformanceandPerspectiveinanIntegrated
+KnowledgeManagementSystem,CollegeStation,2002.
+derstanding of individual values and their place in or-
+[21] D.J.Hall,D.Paradice,Doyoudoasyouvalue?Investigating
+ganizationallearninganddecision-making.
+value-baseddecisionbiasandmediation,Communicationsofthe
+ACM(inpress).
+[22] D.J. Hall, D.B. Paradice, Philosophical foundations for a
+References learning-oriented knowledge management system for decision
+support,DecisionSupportSystems39(3)(2005)445–461.
+[1] G.W. Allport, P.E. Vernon, C. Lindzey, A Study of Values, [23] D.J. Hall, D.B. Paradice, J.F. Courtney, Building a theoretical
+Riverside,Chicago,IL,1970. foundation for a learning-oriented knowledge management
+[2] C. Argyris, D.A. Schön, Organizational Learning II, Addison- system,Journalof InformationTechnologyTheoryand Appli-
+WesleyPublishingCompany,Reading,MA,1996. cation(JITTA)5(2)(2003)63–89.
+[3] J.Barnett,K.Bass,G.Brown,Religiosity,ethicalideology,and [24] D.J.Hall,Y.Guo,R.A.Davis,C.Cegielski,Extendingunbounded
+intentions to report a peer's wrongdoing, Journal of Business systemsthinkingwithagent-orientedmodeling:conceptualizinga
+Ethics15(November1996)1161–1174. multiple-perspective decision-making system, Decision Support
+[4] J.M. Bartunek, J.R. Gordon, R.P. Weathersby, Developing Systems41(1)(2005)279–295.
+‘complicated’ understanding in administrators, Academy of [25] D.J. Hall, Y. Guo, R.A. Davis, C. Cegielski, Technological
+ManagementReview8(2)(1983)273–284. supportforalearning-orientedknowledgemanagementsystem,
+
+D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604 1603
+Proceedings of the Americas Conference on Information nal of Management Information Systems 15 (2) (1998)
+Systems,Omaha,NE,2005. 173–197.
+[26] O.J.Harvey,D.E.Hunt,H.M.Shroder,ConceptualSystemsand [46] I.I.Mitroff,H.A.Linstone,TheUnboundedMind:Breakingthe
+PersonalityOrganization,Wiley,NewYork,NY,1961. Chains of Traditional Business Thinking, Oxford University
+[27] K.M. Hilmer, A.R. Dennis, Stimulating thinking: cultivating Press,NewYork,1993.
+betterdecisionswithgroupwarethroughcategorization,Journal [47] D.A.Norman,Usercenteredsystemdesign,in:D.A.Norman,S.
+ofManagementInformationSystems17(3)(2001)93–114. Draper (Eds.), Cognitive Engineering, Lawrence Erlbaum
+[28] M.J.Hine,J.B.Gasen,M.Goul,Emergingissuesininterpretive Associates,Hillsdale,NJ,1986,pp.31–61.
+organizational learning, The DATA BASE for Advances in [48] C.A. O'Reilly III, J.A. Chatman, D.F. Caldwell, People and
+InformationSystems27(3)(1996)49–62. organizationalculture:aprofilecomparisonapproachtoasses-
+[29] M.Hine,M.Goul,Thedesign,development,andvalidationofa sing person-organization fit, Academy of Management 34 (3)
+knowledge-basedorganizationallearningsupportsystem,Jour- (1991)487–516.
+nalofManagementInformationSystems15(2)(1998)119–152. [49] S.K.Parker,C.M.Axtell,Seeinganotherviewpoint:antecedents
+[30] G.Huber,CognitivestyleasabasisforMISdesign:muchado and outcomes of employee perspective taking, Academy of
+aboutnothing?ManagementScience29(5)(1983)567–597. ManagementJournal44(6)(2001)1085–1100.
+[31] T.S. Isaack, Intuition: an ignored dimension of management, [50] A. Pinsonneault, K. Kraemer, The impact of technological
+AcademyofManagementReview3(4)(1978)917–921. supportongroups:anassessmentofempiricalresearch,Decision
+[32] R.Keeney,Value-FocusedThinking,HarvardUniversityPress,
+SupportSystems5(2)(1989)197–216.
+Cambridge,MA,1992. [51] W.F. Pounds, The process of problem finding, Industrial
+[33] R. Keeney, Foundations for making smart decisions, IIE
+ManagementReview11(1969)1–19.
+Solutions31(5)(1999)24–30. [52] E.H. Schein, Organizational Culture and Leadership, Jossey
+[34] D.E. Kiranne, Managing values: a systematic approach to Bass,SanFrancisco,CA,1992.
+business ethics, Training and Development Journal November [53] H.A.Simon,Thestructureofill-structuredproblems,Artificial
+(1990)53–60. Intelligence4(1973)181–201.
+[35] L.Kohlberg,Stageandsequence:thecognitivedevelopmental [54] G.F. Smith, Defining managerial problems: a framework for
+approach to socialization, in: D.A. Goslin (Ed.), Handbook of prescriptive theorizing, Management Science 35 (8) (1989)
+SocializationTheoryandResearch,AcademicPress,SanDiego,
+963–981.
+CA,1969,pp.347–480. [55] E.Soule,Managerialmoralstrategies—insearchofafewgood
+[36] T.R. Konold, J.J. Glutting, P.A. McDermott, J.C. Kush, M.M. principles, Academy of Management Review 27 (1) (2002)
+Watkins,Structureanddiagnosticbenefitsofanormativesubtest 114–124.
+taxonomydevelopedfromtheWISC-IIIstandardizationsample, [56] E. Spranger, Types of men; the Psychology and Ethics of
+JournalofSchoolPsychology37(1999)29–48. Personality,JohnsonReprints,NewYork,NY,1928/1966.
+[37] R.E.Kopelman,J.L.Rovenpor,M.Guan,Thestudyofvalues: [57] G.Stasser,D.Stewart,Discoveryofhiddenprofilesbydecision-
+constructionofthefourthedition,JournalofVocationalBehavior making groups: solving a problem versus making a judgment,
+62(2)(2003)203–220. Journal of Personality and Social Psychology 63 (1) (1992)
+[38] R.M.Krauss,S.R.Fussell,Perspectivetakingincommunication: 426–434.
+representations of others' knowledge in reference, Social [58] E.A.Stohr,B.R.Konsynski,InformationSystemsandDecision
+Cognition9(1)(1991)2–24. Processes:ChartingNewDirectionsforDSSResearch:AMulti-
+[39] K. Kumar, M. Thibodeaux, Differences in values systems of Disciplinary Approach, IEEE Computer Society Press, Los
+Anglo-AmericanandFarEasternstudents:effectsofAmerican Alamitos,CA,1992.
+business education, Journal of Business Ethics 17 (1998) [59] R.I. Swaab, T. Postmes, P. Neijens, M.H. Kiers, A.C.M.
+253–262. Dumay, Multiparty negotiation support: the role of visualiza-
+[40] F.-Y. Kuo, Managerial intuition and the development of ex- tion's influence on the development of shared mental models,
+ecutivesupportsystems,DecisionSupportSystems24(2)(1998) Journal of Management Information Systems 19 (1) (2002)
+89–103. 129–150.
+[41] D.Lubinski,D.Schmidt,C.PerssonBenbow,A20-yearstability [60] D.L. Swanson, Toward an integrative theory of business and
+analysisofthestudyofvaluesforintellectuallygiftedindividuals society: a research strategy for corporate social performance,
+fromadolescencetoadulthood,JournalofAppliedPsychology AcademyofManagementReview24(3)(1999)506–521.
+81(4)(1996)443–451. [61] R.Vahidov,R.Elrod,Incorporatingcritiqueandargumentation
+[42] R.O.Mason,I.Mitroff,Aprogramforresearchonmanagement inDSS,DecisionSupportSystems26(3)(1999)249–258.
+information systems, Management Science 19 (5) (1973) [62] K.A. Wade-Benzoni, A.J. Hoffman, L.L. Thompson, D.A.
+475–487. Moore,J.J.Gillespie,M.H.Bazerman,Barrierstoresolutionin
+[43] P.A. McDermott, J.W. Fantuzzo, J.J. Glutting, M.W. Watkins, ideologicallybasednegotiations:theroleofvaluesandinstitu-
+A.R.Baggaley,Illustrationsofmeaningintheipsativeassessment tions,AcademyofManagementReview27(1)(2002)41–57.
+of children's ability, Journal of Special Education 25 (1992) [63] R.T. Watson, G. DeSanctis, M.S. Poole, Using a GDSS to
+504–526. facilitate group consensus: some intended and unintended
+[44] B.M.Meglino,E.C.Ravlin,Individualvaluesinorganizations: consequences,MISQuarterly12(3)(1988)463–480.
+concepts, Controversies and Research, Management 24 (3) [64] K.E. Weick, The Social Psychology of Organizing, Random
+(1998)351–389. House,NewYork,1979.
+[45] B.E.Mennecke,J.Valacich,Informationiswhatyoumakeofit: [65] R.W.Zmud,IndividualdifferencesandMISsuccess:areviewof
+the influence of group history and computer support on infor- the empirical literature, Management Science 25 (10) (1979)
+mationsharing,decisionquality,andmemberperceptions,Jour- 966–979.
+
+1604 D.J.Hall,R.A.Davis/DecisionSupportSystems43(2007)1588–1604
+DianneJ.HallisanAssistant RobertA.DavisisanAssoci-
+Professor of Management In- ateProfessorintheComputer
+formation Systems at Auburn Information Systems and
+University. She received her Quantitative Methods Depart-
+doctorateatTexasA&MUni- mentoftheMcCoyCollegeof
+versity where she also taught Business Administration at
+forseveralyears.Shehasalso Texas State University-San
+worked as a consultant. Her Marcos. He earned his MBA
+work has appeared in both and Ph.D. degrees from the
+academicandpractitionerjour- University of South Carolina.
+nals such as Communications Heistheco-authorofOpera-
+oftheACM,DecisionSupport tions Management: Concepts
+Systems, Journal of Financial in Manufacturing and Ser-
+Services Marketing, OR In- vices.Hehas publishedmany
+sight,theInternationalJournal articlesdealingwiththeeffec-
+of Knowledge Management, tive and efficient utilization of resources for operations and supply
+Journal of Information Technology Theory and Application, and chainmanagement.His articleshaveappearedinacademicjournals
+KnowledgeandInnovationandinseveralbooks.Hercurrentresearch suchasManagementScience,DecisionSupportSystems,Engineering
+interestsincludeapplicationsofinformationtechnologiesinsupportof Costs and Production Economics, Journal of Marketing, National
+knowledge management as well as multiple-perspective and value- Productivity Review, International Journal of Production Research,
+baseddecision-making. CompetitivenessReview,JournalofBusinessResearch,andProduc-
+tion and Inventory Management Journal. He has served as Co-
+Principal Investigator on several research projects with industrial
+clientsdealingoperationsandsupplychainissues.
+

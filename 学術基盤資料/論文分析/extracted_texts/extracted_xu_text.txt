@@ -1,0 +1,1686 @@
+論文タイトル: Xu et al. (2019) - Confidence Consensus-based Model
+================================================================================
+
+Information Sciences 477 (2019) 410–427
+Contents lists available at ScienceDirect
+Information Sciences
+journal homepage: www.elsevier.com/locate/ins
+Confidence consensus-based model for large-scale group
+decision making: A novel approach to managing
+non-cooperative behaviors
+Xuan-hua Xu a, Zhi-jiao Du a , b , ∗, Xiao-hong Chen a , c, Chen-guang Cai d
+a School of Business, Central South University, Changsha 410083, China
+b Business School, Sun Yat-Sen University, Guangzhou 510275, China
+c School of Accounting, Hunan University of Commerce, Changsha 410205, China
+d College of Logistics and Transportation, Central South University of Forestry and Technology, Changsha, 410 0 04, China
+a r t i c l e i n f o a b s t r a c t
+Article history: Because of the complexity of real-world problems, large-scale group decision making has
+Received 23 March 2016 become a research topic of great interest in the field of decision science. Differences of
+Revised 21 September 2018 opinion in a large group are highly likely. Sometimes, decision makers are unwilling to ad-
+Accepted 28 October 2018
+just their opinions to promote consensus. It is hence necessary to establish a consensus
+Available online 30 October 2018
+model for the effective management of opinion differences and non-cooperative behaviors.
+Keywords:
+More importantly, the credibility of the adjustment information must be ensured. In this
+Large-scale group decision making (LSGDM) paper, we present a confidence consensus-based model for large-scale group decision mak-
+Non-cooperative behaviors ing that provides a novel approach to addressing non-cooperative behaviors. First, some
+Confidence consensus-based model new concepts are proposed, including the collective adjustment suggestion and rationality
+Rationality degree degree. Then, we combine the rationality and non-cooperation of the adjustment infor-
+mation to construct the concept of a confidence level. This confidence level measures the
+impartiality and objectivity of the adjustment information and is the basis for managing
+non-cooperative behaviors. We then establish a mechanism for addressing non-cooperative
+behaviors. Finally, we present a case study that illustrates that the proposed model is feasi-
+ble and effective. A comp arative analysis reveals the features and advantages of this model
+for managing large-scale group decision making.
+©2018 Elsevier Inc. All rights reserved.
+1. Introduction
+Group decision making (GDM) aims to achieve a common solution for a decision problem in which two or more decision
+makers (DMs) participate, and it has been paid an increasing amount of attention [1,3,9,23,28] . Traditional GDM is a type of
+group discussion and decision process in which the number of DMs is small (e.g., three to five people), and the complexity is
+often not very high (e.g., a car purchase decision for a family). In GDM for public-interest decisions, however, a large number
+of DMs with different interests and knowledge structures must be involved. Research into large-scale GDM (LSGDM) is a new
+area in the field of decision making. LSGDM problems are generally characterized by some or all the following four features
+[4,7,10,20,30,41] : (a) The group usually involves a large number of DMs from different sectors and professional fields. (b)
+Obtaining a high-consensus solution necessitates the implementation of a consensus reaching process (CRP). (c) The social
+∗ Corresponding author.
+E-mail addresses: xuxh@csu.edu.cn (X.-h. Xu), duzhj3@mail2.sysu.edu.cn , 131611141@csu.edu.cn (Z.-j.Du).
+https://doi.org/10.1016/j.ins.2018.10.058
+0020-0255/©2018ElsevierInc.Allrightsreserved.
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 411
+networks of the DMs and the evolution of their opinions are considered. (d) DMs often have individual concerns about
+alternatives, and thus they adopt heterogeneous preference representation structures to express their preferences. Note that
+the number of DMs in current LSGDM problems varies from dozens to thousands [32] . Xu et al. [34] and Zhang et al.
+[41] believe that if the number of DMs in a group exceeds 11, the group is a large group, whereas Liu et al. [17] insists that
+this number should be more than 20. In this study, to include all the research on consensus measures and mechanisms for
+managing non-cooperative behaviors in the CRP, we employ the first and second characteristics above to define LSGDM.
+Clustering is an effective approach to organizing and managing a large group because it can divide a large group into
+small-scale subgroups. Many clustering methods have been proposed such as K -means algorithm [14,32] , fuzzy clustering
+algorithm [20] , grey clustering algorithm [16] , and vector space-based [33] clustering method. Clustering in LSGDM is typ-
+ically based on the similarity of DMs’ opinions. If the opinions of certain DMs are sufficiently similar (i.e., over a certain
+threshold), these DMs are assigned to the same subgroup. This classification produces a hierarchical structure. The outer
+layer represents the interaction between subgroups and the inner layer represents the discussion among the members of
+each subgroup. The coordination among subgroups does not need to consider the internal members of the subgroup; the
+members in a subgroup form a unified subgroup opinion through discussion and coordination. Generally, the clustering
+structure does not change once it has been determined [34,35] because this helps the members in each subgroup to estab-
+lish trust feelings and form a unified opinion. In contrast, Wu and Xu [32] and Zhang et al. [41] studied consensus models
+in which the clusters are allowed to change. This study follows Xu et al.’s research [34] on classifying large-scale DMs and
+uses the cluster as a basic unit once the clustering structure has been determined.
+Generally, both of the two processes are used to address LSGDM problems: the consensus process and the selection pro-
+cess [34] . Reaching a consensus is a dynamic and iterative group discussion process in which some DMs must make compro-
+mises. Unanimity is difficult to attain, and “soft”consensus is widely used in CRPs [13] . To date, various consensus reaching
+models (CRMs) have been proposed that address different decision-making problems: (1) GDM with linguistic assessments
+[2,5,11,12,18,21,25,31,40,42,43] , (2) LSGDM [15,19,20,24,32,34,35,41] , (3) GDM that considers the non-cooperative behaviors
+[8,10,20,34] , and (4) GDM under a social network environment [6,26,27,29] . With respect to non-cooperative behaviors in
+particular, Palomares et al. [20] proposed a weight penalizing method that aims to reduce the weights of non-cooperating
+experts’ preferences, Xu et al. [34] developed a consensus model based on the level of non-cooperation to address non-
+cooperative behaviors, and Dong et al. [8] introduced three types of non-cooperative behaviors, in which some DMs express
+their opinions dishonestly or refuse to change their opinions to further their own interests. Based on the above literature,
+we observe the following information about the management of non-cooperative behaviors.
+(1) Research on non-cooperative behaviors is still in its inceptive stage, and there are few studies in the literature, par-
+ticularly those that consider the LSGDM environment.
+(2) Few studies have considered the rationality of the adjustment information provided by non-cooperative DMs (or sub-
+groups) and used it as a reference for managing non-cooperative behaviors. Hence, this is a research issue that should
+be addressed.
+An LSGDM problem often involves multiple DMs, and they may have different attitudes toward compromise to achieve
+a consensus. Some DMs are in favor of adjusting their opinions, whereas others refuse to compromise or make very small
+compromises. Non-cooperative behaviors may seriously affect the decision process and the final decision result; hence, it
+is necessary to respond appropriately. In addition to the CRMs for managing non-cooperative behaviors listed above, Pelta
+and Yager [22] and Yager [38,39] considered non-cooperative behaviors in the selection process of GDM problems, but not
+in the CRP. Managing non-cooperative behaviors in the CRP helps to better adjust the opinions of non-cooperative DMs
+and further influence the decision result. We prefer to manage non-cooperative behaviors and achieve agreement among
+the DMs’ opinions before applying the selection process. Therefore, in this study, we continue the approach of [34] and
+propose a novel consensus model for managing non-cooperative behaviors in LSGDM that combines the non-cooperation
+and rationality of the adjustment information.
+The CRP consists of two core elements: a consensus measure and feedback adjustment. There are usually two ways to
+measure consensus: the first is based on the distance to the group opinion [34,40] and the second is based on the distances
+among DMs’ opinions [8,31,42] . Different consensus measures lead to different consensus processes and decision results.
+Therefore, it is necessary to analyze the suitability of each measure for a particular application.
+The contributions of this paper are as follows.
+• Different consensus measures are defined and their advantages and disadvantages are compared.
+• A mechanism for addressing non-cooperative behaviors is proposed. First, we insert an interaction step in the manage-
+ment of non-cooperative behaviors that effectively enables DMs to provide better adjustment coefficients. We combine
+the levels of rationality and non-cooperation to construct the confidence level of a cluster’s adjustment coefficient. By
+referring to the confidence level, non-cooperative behaviors can be better managed.
+• An algorithm for the confidence consensus-based model for LSGDM is presented that incorporates the proposed mecha-
+nism.
+• A detailed comparative analysis of the confidence consensus-based model with other models and a simulation that sum-
+marizes the characteristics of the CRP are presented.
+
+412 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+The remainder of this paper is organized as follows: In Section 2 , we review the basic concepts of non-cooperative
+behaviors. In Section 3 , we propose the confidence consensus-based model to address non-cooperative behaviors. A case
+study is presented in Section 4 to illustrate the feasibility and validity of the proposed model. In Section 5 , we compare our
+model with existing consensus models, discuss the results obtained using different consensus measures, and analyze the
+results of setting consensus thresholds and other parameters to different values. We draw our conclusions in Section 6 .
+2. Concepts related to non-cooperative behaviors
+Non-cooperative behaviors exist widely in LSGDM because DMs come from different professions and industries and hence
+may represent different interests. Non-cooperative behaviors can be categorized as follows: (a) an expert or an experienced
+person who insists that his/her opinion is right but has no private interests; (b) a leader who thinks his/her opinion is that
+of authority, where there may be private interests; (c) a noteworthy and independent person who provides a view that
+is often out of the ordinary and insists that his/her opinion is innovative; and (d) a stakeholder with private interests. In
+this study, we focus on the management of the first type of DM. In future research, we will study the other three types of
+non-cooperative DMs.
+There are typically two approaches to addressing non-cooperative behaviors [34] : a weight adjustment, used to decrease
+a DM’s influence to achieve a greater consensus, and an opinion adjustment, used to make a DM’s opinion closer to the
+group’s opinion.
+3. Confidence consensus-based model that considers non-cooperative behaviors
+In Section 3.1 , we introduce different rules for computing consensus measures. In Section 3.2 , we propose a mechanism
+for addressing non-cooperative behaviors in LSGDM. We present the algorithm for the confidence consensus-based model
+in Section 3.3 .
+trib
+G
+u
+i
+t
+v
+e
+e
+s
+n
+, a
+a
+n
+n
+d
+L
+ω
+SG
+=
+D M
+( ω 1
+p
+,
+r
+ω
+ob
+2
+l
+,
+e
+.
+m
+. .
+,
+, ω
+le
+n
+t
+)
+X
+T
+=
+be
+{ x
+th
+1 ,
+e
+x 2
+w
+,
+e
+..
+ig
+.
+h
+, x
+t
+m
+v
+}
+e c
+b
+t
+e
+o r
+a
+o
+fi
+f
+n
+t
+i
+h
+te
+e
+s
+a
+e
+t
+t
+t r
+o
+ib
+f
+u
+m
+te s
+a
+,
+lt
+w
+er
+h
+n
+e
+a
+r
+t
+e
+i v(cid:2)es
+n
+,
+j =
+A
+1 ω
+=
+j
+{
+=
+a 1
+1
+,
+,
+a 2
+0
+, .
+≤
+. .
+ω
+, a
+j
+n
+≤
+}
+1
+b
+(
+e
+j
+a
+=
+s
+1
+e
+,
+t
+2
+o
+, .
+f
+.
+n
+. ,
+a
+n
+t
+)
+-
+.
+Let E = { e 1 , e 2 , . . . , e q } ( q ≥20) be a set of q DMs. Each DM expresses its opinion using numerical decision matrix V l =
+[ v l i j ] m ×n , where v l i j represents the opinion of DM e l on alternative x i ∈ X with respect to attribute a j ∈ A . Before entering the
+CRP, individual decision matrix V l should be normalized to standardized decision matrix R l = [ r i l j ] m ×n , where [36]
+v l −min { v l }
+r
+i
+l
+j
+=
+max
+i
+{
+j
+v l } −
+l
+min
+ij
+{ v l }
+for benefit attributes and
+l
+ij
+l
+ij
+max { v l } −v l
+r
+i
+l
+j
+=
+max {
+l
+v l } −
+ij
+min {
+ij
+v l }
+for cost attributes.
+l
+ij
+l
+ij
+Clustering the DMs’ opinions is the basis for analyzing a large group. In this study, we adopt the clustering method in
+[33] to classify a large number of DMs into K (1 ≤K ≤q ) subgroups (the clustering method is described in the supplementary
+materials). The weight vector of the clusters λ= ( λ1 , λ2 , . . . , λK ) T is obtained such that
+λk = (cid:2)
+k
+k
+(
+=
+n
+1
+k
+(
+)
+n
+2
+k
+)2
+, (1)
+w
+c
+( r
+a
+h
+i c
+n
+j
+e
+) m
+r
+b
+e
+×
+e
+n
+n
+,
+o
+k
+w
+b
+is
+t
+h
+a
+t
+e
+i
+h
+n
+r
+e
+e
+e d
+n
+r
+,
+i c
+u
+j
+i
+m
+=
+.e
+b
+. , (cid:2)
+e
+R
+r
+K k
+k
+=
+o
+=
+1
+f
+r
+D
+i
+(
+k j
+M
+r
+λ
+i k j
+k
+s
+)
+.
+m
+in
+× n
+c
+,
+l u
+w
+st
+h
+e
+e
+r
+r
+g
+e
+k .
+r
+C
+i k j
+le
+=
+a r
+(
+l
+1
+y
+/
+,
+n
+0
+k
+≤
+)
+(cid:2) λ
+n l
+k
+= k
+≤
+1 r
+1
+i l j
+(
+,
+k
+e l
+=
+∈
+1
+g
+,
+k
+2
+.
+,
+T
+.
+h
+. .
+e
+, K
+g
+)
+r o
+a
+u
+n
+p
+d
+d
+(cid:2)
+e
+K k
+c
+=
+is
+1
+i o
+λ
+n
+k =
+m
+1
+a
+.
+t r
+T
+i
+h
+x
+e
+i s
+c lu
+re
+st
+p
+e
+r
+r
+e s
+d
+e
+e
+n
+c
+t
+i
+e
+si
+d
+o n
+b y
+m a
+R
+t
+c
+r i
+=
+x
+3.1. Consensus measures
+Two methods for calculating consensus measures exist: the first is based on the distance to the group opinion and the
+second is based on the distances between individual opinions. In practice, consensus measures can be classified into the
+following three categories.
+(1) Consensus measure based on the distance to the group opinion using an average operator (CM-I):
+The individual consensus level is calculated as
+CI k,t = 1 −d
+(cid:3)
+R k,t , R c,t
+(cid:4)
+= 1 − 1
+(cid:5)m (cid:5)n
+d
+(cid:3)
+r k,t , r c,t
+(cid:4)
+, (2)
+CM−I m ×n ij ij
+i =1 j=1
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 413
+where d( r k,t , r c,t ) is the distance between r k,t and r c,t , and the group consensus level is calculated as
+ij ij ij ij
+GC I
+C
+t
+M−I
+=
+K
+1
+(cid:5)K
+C I
+C
+k
+M
+,t
+−I
+. (3)
+k =1
+(2) Consensus measure based on the distance to the group opinion using a minimum operator (CM-II):
+In this rule, the individual consensus level measure is calculated using Eq. (2) and the group consensus level is defined
+as
+(cid:6) (cid:7)
+GC I
+C
+t
+M−II
+= m
+k
+i n C I
+C
+k
+M
+,t
+−I
+. (4)
+(3) Consensus measure based on the distance between DMs’ opinions using a minimum operator (CM-III):
+Here, the individual consensus level is
+CI k,t = 1 − 1
+K(cid:5)−1
+d
+(cid:3)
+R k,t , R g,t
+(cid:4)
+CM−I I I K −1
+g=1 ,k (cid:6) = g
+= 1 − 1
+K(cid:5)−1
+1
+(cid:5)m (cid:5)n
+d
+(cid:3)
+r k,t , r g,t
+(cid:4)
+, (5)
+K −1 m ×n ij ij
+g=1 ,k (cid:6) = g i =1 j=1
+where d( r k,t , r g,t ) is the distance between r k,t and r g,t , and the group consensus level is
+ij ij (cid:6) (cid:7) ij ij
+GC I
+C
+t
+M−I I I
+= m
+k
+i n C I
+C
+k
+M
+,t
+−I I I
+. (6)
+Clearly, 0 ≤GCI
+C
+t
+M−I
+≤1 , 0 ≤GCI
+C
+t
+M−II
+≤1 , and 0 ≤GCI
+C
+t
+M−I I I
+≤1 . If the group consensus level is sufficiently high, then the
+selection process can be followed; otherwise, the CRP should be applied to manage the opinion differences. In Section 5.4 ,
+we discuss the advantages and disadvantages of the above three consensus measures.
+3.2. Mechanism for managing non-cooperative behaviors
+In LSGDM after clustering, it is common for some clusters to adopt a non-cooperative attitude toward opinion adjust-
+ment. Managing these non-cooperative behaviors is a challenge but also an important part of the process of consensus
+building. Inspired by the research in [20,34] , this study employs three phases to address non-cooperative behaviors: identi-
+fication, interaction, and proper modification.
+3.2.1. Identification rule for non-cooperative behaviors
+Step 1. Detect and determine the most deviant individual opinion.
+Suppose that the opinion of cluster g k ∗ deviates most from those of the other clusters. This cluster can be determined
+using the following formulas:
+(cid:6) (cid:7)
+CI k ∗,t = min CI k,t for CM −I ,
+CM−I
+k (cid:6)
+CM−I
+(cid:7)
+CI k ∗,t = min CI k,t for CM −II ,
+CM−II
+k (cid:6)
+CM−I
+(cid:7)
+CI k ∗,t = min CI k,t for CM −III.
+CM−I I I
+k
+CM−I I I
+Step 2. Cluster g k ∗ provides the adjustment coefficient and the other clusters provide the related adjustment suggestions.
+Because of the complexity of decision making, the adjustment coefficient and adjustment suggestions are given as in-
+terval numbers. Suppose that the adjustment coefficient is η ¯k ∗,t = [ ηL k ∗,t , ηU k ∗,t ] , where ηU k ∗,t and ηL k ∗,t are the upper
+and lower limits of η ¯k ∗,t , respectively, such that 0 ≤ηL k ∗,t ≤ηU k ∗,t ≤1 . η ¯k ∗,t represents the degree of respect that cluster
+η g ¯ k k ∗ (cid:7) → h k a ∗, s t = fo r [ η t L h k e (cid:7) → g k r ∗ o ,t u , η p U o k (cid:7) p → in k ∗ i , o t n ] , . w Th h e er a e d η ju U s k t (cid:7) m → k e ∗ n ,t t a s n u d g g η es Lk t (cid:7) i → on k ∗, η t ¯ k a (cid:7) → re k ∗ t ,t h ( e k (cid:7) u = p p 1 e , r 2 , a . n . . d , K lo ; w k ∗ er (cid:6) = l k im (cid:7) ) i t i s s o a f l so η ¯ k a (cid:7) → n k ∗ in ,t t , e r r e n s a p l e n ct u iv m e b ly e , r , s u i. c e h .,
+that 0 ≤ηLk (cid:7) → k ∗,t ≤ηUk (cid:7) → k ∗,t ≤1 .
+Step 3. Calculate the collective adjustment suggestion.
+Definition 1. By aggregating all adjustment suggestions, the collective adjustment suggestion η ˆ k ∗,t can be obtained such
+that
+η ˆ k ∗,t =
+(cid:5)K
+η ¯k (cid:7) → k ∗,t λk (cid:7) ,t , (7)
+k (cid:7) =1 ,k (cid:7) (cid:6) = k ∗
+where λk (cid:7) ,t is the remaining cluster’s weight, 0 ≤λk (cid:7) ,t ≤1 and (cid:2) K k (cid:7) =1 , k ∗(cid:6) = k (cid:7) λk (cid:7) ,t = 1 .
+Step 4. Measure the degree of non-cooperation and identify non-cooperative behaviors.
+
+414 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Use the probability degree of two interval numbers to compute the degree of non-cooperation of adjusting coefficient
+η ¯k ∗,t [34] . If p( η ¯k ∗,t ≥η ¯k (cid:7) → k ∗,t ) = 1 , then this indicates that g k ∗ is a completely cooperative subgroup; otherwise, g k ∗ is re-
+garded as a non-cooperative subgroup.
+Note that only using the degree of non-cooperation to punish non-cooperative behaviors is likely to induce the cluster
+to deliberately reduce it and reduce the rationality of the adjustment coefficient. Therefore, we should further measure the
+rationality of the adjustment coefficient.
+Based on the majority principle, an adjustment coefficient that is closer to the collective adjustment suggestion is more
+reasonable. Thus, using the similarity [37] to compute the proximity of the adjustment coefficient to the collective adjust-
+ment suggestion, we can measure the rationality T k ∗,t ( 0 ≤T k ∗,t ≤1 ) of the given adjustment coefficient. Appendix A presents
+the definition of the similarity of two interval numbers. Values of T k ∗,t closer to one indicate an adjustment coefficient that
+is more similar to the collective adjustment suggestion.
+3.2.2. Interaction and discussion
+If cluster g k ∗ is determined to be a non-cooperative subgroup, then more in-depth discussions can be conducted between
+g k ∗ and the other clusters. Two scenarios are presented: (a) cluster g k ∗ is urged to make its adjustment coefficient closer to
+the collective adjustment suggestion and (b) cluster g k ∗ is impelled to reduce its degree of non-cooperation to obtain greater
+consensus. After discussion and interaction, cluster g k ∗ changes its adjustment coefficient η ¯k ∗,t to z η ¯k ∗,t , where z η ¯k ∗,t is an
+interval number. Then, the non-cooperation and rationality are recalculated, denoted by z τk ∗,t and z T k ∗,t , respectively. It is
+noted that cluster g k ∗ may has the option of not changing its adjustment coefficient.
+3.2.3. Proper modification
+Combining the value of rationality with that of non-cooperation, we can construct a new concept called the confidence
+level to measure quantitatively the extent to which cluster g k ∗ can provide a rational adjustment coefficient. The confidence
+level represents three aspects: (a) other clusters’ feelings that the given adjustment coefficient can be trusted; (b) the re-
+flection of honesty and emotional expression of cluster g k ∗ in terms of opinion adjustment; and (c) an indication of the
+understanding of cluster g k ∗ of the decision problem and its impartiality in the decision-making process.
+Definition 2. The confidence level of the given adjustment coefficient is the mapping f : z τk ∗,t , z T k ∗,t → ς k ∗,t ( ς k ∗,t ∈ [ 0 , 1] ) .
+Definition 3. A weighted geometric averaging operator is used to describe the mapping f and obtain f
+W G
+: z τk ∗,t , z T k ∗,t →
+ς k ∗,t , such that
+(cid:3) (cid:4) (cid:3) (cid:4) (cid:3) (cid:4)
+ς k ∗,t = f
+W G
+z τk ∗,t , z T k ∗,t = 1 −z τk ∗,t μ WG × z T k ∗,t ν WG , (8)
+μ ν
+where
+WG
+and
+WG
+are control coefficients that define the relative weight of the non-cooperation and rationality, re-
+spectively, such that μ
+WG
+, ν
+WG
+∈ [0, 1] and μ
+WG
++ ν
+WG
+= 1 .
+The following theorem can easily be determined.
+Theorem 1. If μ
+WG
+, ν
+WG
+(cid:6) = 0 , then ς k ∗,t ∈ [ 0 , 1] .
+Theorem 2. If μ
+WG
+= 0 , then Eq. (8) changes to ς k ∗,t = z T k ∗,t . In this case, the confidence level only depends on the rationality of
+the adjustment coefficient.
+Theorem 3. If ν
+WG
+= 0 , then Eq. (8) changes to ς k ∗,t = z τk ∗,t . In this case, the confidence level only relies on the non-cooperation
+of the adjustment coefficient.
+Commonly, we set 0 < μ
+WG
+, ν
+WG
+< 1. Specifically,
+(1) if ς k ∗,t = 0 , then the confidence level of the adjustment coefficient is zero. This can result from the following:
+a) z τk ∗,t = 1 : this indicates that the adjustment coefficient cannot satisfy the minimum requirement of the collective
+adjustment suggestion; thus, cluster g k ∗ is regarded as a completely non-cooperative subgroup.
+b) z T k ∗,t = 0 : This indicates that the adjustment coefficient deviates far from the collective adjustment suggestion.
+Whether cluster g k ∗ is regarded as a completely non-cooperative subgroup or the adjustment is too deviant, the DMs
+in cluster g k ∗ should be advised to exit the decision process to ensure decision quality and decision-making efficiency.
+In this study, we focus on the category of the non-cooperating experts; hence, the cause of non-cooperative behaviors
+or very deviant adjustments is a poor understanding of the decision problem or subjectively persistent with few
+private interests.
+(2) If ς k ∗,t ∈ ( 0 , 1 ) , then the confidence level can be used as the basis of the weight adjustment.
+A DM’s weights reflect its influence on the group opinion. By modifying the weights, the influence is adjusted. When
+confronted with non-cooperative clusters, we can reduce their weight to reduce their impact so as to promote consensus.
+Definition 4. The weight penalty function is defined as
+z λk ∗,t+1 = χt ·ς k ∗,t ·λk ∗,t , (9)
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 415
+where z λk ∗,t+1 is the modified weight of g k ∗ and χt is used to regulate the weight penalty and is calculated as
+χt =
+(cid:5)K
+χk (cid:7) ,t λ¯k (cid:7) ,t . (10)
+k (cid:7) =1 , k ∗(cid:6) = k (cid:7)
+(cid:2) K k = T 1 h , e k ∗ (cid:6) = s k y (cid:7) m λ¯k b (cid:7) o ,t l = λ¯ 1 k (cid:7) . , t T h is e t r h em e a n i o n r in m g a l c i l z u e s d te r w s e p ig ro h v t id o e f p th a e ra m re e m te a r i s n i χ ng k (cid:7) ,t c ( l k u (cid:7) s = te r 1 s , 2 s , u . c . h . , t K h ; a k t ∗ λ (cid:6) = ¯k (cid:7) k ,t (cid:7) ) ≥ s 0 u ( c k h (cid:7) t = h a 1 t , 2 th , e . y . . , m K e ; e k t ∗ t (cid:6) = he k (cid:7) c ) o n a d n i d -
+tions χk (cid:7) ,t ≥1 and χk (cid:7) ,t ·ς k ∗,t < 1 . The first condition ensures that each DM’s opinion can be effectively expressed, including
+the DMs of the non-cooperative subgroup, which is in accordance with the principle of cautious handling of and appropriate
+respect for non-cooperative behaviors. The second condition ensures that non-cooperative behaviors are efficiently managed.
+Clearly, χt ≥1 and χt ·ς k ∗,t < 1 .
+Then, we use the following to ad (cid:8) just the decision m (cid:9) atrix of cluster g k ∗ as follows:
+R k ∗,t+1 =
+ηL k ∗,t + ηU k ∗,t
+R c,t + 1 −
+ηL k ∗,t + ηU k ∗,t
+R k ∗,t , (11)
+2 2
+where the adjustment coefficient is set as the midpoint of η ¯k ∗,t . That is, 0 ≤( ηL k ∗,t + ηU k ∗,t )/ 2 ≤1 . Here, R k ∗,t and R k ∗,t+1
+represent the opinions of cluster g k ∗ before and after the t + 1th iteration, respectively, and R c, t represents the group opinion
+in the t + 1th iteration.
+Remark 1. Let ς k ∗,t = f W G ( z τk ∗,t , z T k ∗,t ) = ( 1 −z τk ∗,t ) μ WG ×( z T k ∗,t ) ν WG be a common mathematical function that represents
+the mapping z τk ∗,t , z T k ∗,t → ς k ∗,t . Here, z τk ∗,t and z T k ∗,t are two independent variables, and ς k ∗,t is a dependent variable. Let
+0 ≤z τk ∗,t , z T k ∗,t ≤1 and 0 < μ
+WG
+, ν
+WG
+< 1. We can calculate the partial derivative of this function as
+∂ ∂ z ς τ k k ∗ ∗ , , t t = −μ WG · (cid:3) 1 −z τk ∗,t (cid:4) μ WG −1 · (cid:3) z T k ∗,t (cid:4) ν WG ,
+∂ ∂ z ς T k k ∗ ∗ , , t t = (cid:3) 1 −z τk ∗,t (cid:4) μ WG ·ν WG · (cid:3) z T k ∗,t (cid:4) ν WG −1 .
+Clearly, ∂ ∂ z ς τ k k ∗ ∗ , , t t < 0 , ∂ ∂ z ς T k k ∗ ∗ , , t t > 0 . Thus, ς k ∗,t is a strictly monotonic decreasing function of z τk ∗,t , whereas ς k ∗,t is a strictly
+monotonic increasing function of z T k ∗,t .
+Note that in accordance with Definition 2 , the values z τk ∗,t and z T k ∗,t depend on z η ¯k ∗,t and η ˆ k ∗,t . Let z η ¯k ∗,t and η ˆ k ∗,t be two
+interval numbers such that 0 ≤z ηL k ∗,t ≤z ηU k ∗,t ≤1 and 0 ≤η ˆ L k ∗,t ≤η ˆ U k ∗,t ≤1 . We calculated the confidence level of these
+two interval numbers 1,0 0 0 times using MATLAB software, and obtained the simulation results (see Fig. 1 ). Fig. 1 (a)–(e)
+show five independent sub-graphs, and Fig. 1 (f) shows these five graphs overlapped as a single graph.
+From the results in Fig. 1 , we make the following observations:
+(1) The simulation results presented in Fig. 1 (b)–(d) are similar in shape.
+(2) Each graph in Fig. 1 (a)–(e) has a maximum point. This finding conforms to Theorem 1 . Further, in Fig. 1 (b)–(d), the
+three maximum values correspond to the case in which all the values of non-cooperation are close to 0.5 and all the
+values of rationality are close to one (points (0.492, 0.969, 0.798) in Fig 1 (b), (0.503, 0.989, 0.701) in Fig 1 (c), and
+(0.489, 0.959, 0.617) in Fig 1 (d)).
+(3) When we set 0 < μ
+WG
+, ν
+WG
+< 1, the relationship between the confidence level and degrees of rationality and non-
+cooperation can be described as one of two cases.
+a) Partially positive relationship: The rationality is strongly positively correlated with the confidence level, whereas the
+non-cooperation is strongly negatively correlated with the confidence level; that is, the confidence level increases
+when the rationality increases and the non-cooperation decreases.
+b) Completely positive relationship: The confidence level increases with the increase in rationality and the increase in
+non-cooperation.
+(4) Figs. 1 (a) and (e) are two special scenarios that correspond to Theorems 2 and 3 , respectively.
+Note 1. If the adjustment coefficient and collective adjustment suggestion are expressed as interval numbers, then a com-
+pletely negative relationship may emerge when different methods are used to calculate the rationality and non-cooperation.
+The completely negative relationship is defined as follows: the confidence level decreases when the rationality increases
+and non-cooperation increases. In future research, we will study the influence of different measurement formulas for ratio-
+nality and non-cooperation on the relationship between the adjustment coefficient, collective adjustment suggestion, and
+confidence level.
+3.3. Algorithm for the confidence consensus-based model in LSGDM
+The proposed consensus model in this study aims to obtain a common decision result with a sufficiently high level of
+group consensus among DMs. The algorithm for this confidence consensus model is summarized as follows (also see Fig. 2 ).
+
+416 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Fig. 1. Simulation results of the confidence level under different parameters μ WG and ν WG .
+Input: initial normalized individual decision matrices R l, 0 (l = 1 , 2 , . . . , q ) , weight vector of the attributes ω , and accept-
+able threshold of the consensus level GCI .
+Output: final number of iterations, final group matrix, and alternative ranking.
+Step 1. Classify the DMs into several subgroups.
+Divide the large group into K clusters and calculate the initial weight vector of the clusters λ0 = ( λ1 , 0 , λ2 , 0 , . . . , λK, 0 ) T .
+The initial clusters’ decision matrices R k, 0 ( k = 1 , 2 , . . . , K ) can be obtained using the weighted averaging operator. Let t = 0 .
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 417
+Fig. 2. Confidence consensus-based model for LSGDM.
+S
+A
+t
+g
+e
+g
+p
+r e
+2
+g
+.
+a
+C
+te
+o m
+th
+p
+e
+u
+c
+t
+l
+e
+u s
+t
+t
+h
+e
+e
+r s
+t
+’
+e
+d
+m
+e
+p
+ci
+o
+s
+r
+i
+a
+o
+l
+n
+g
+m
+ro
+a
+u
+t
+p
+ri c
+d
+e
+e
+s
+c i
+i
+s
+n
+i
+t
+o
+o
+n
+t e
+m
+m
+a
+p
+tr
+o
+ix
+ra
+.
+l group decision matrices R c,t = ( r i c j , t ) m ×n , where r i c j , t =
+(cid:2)
+K k = 1 r i k j , t λk,t .
+Step 3. Consensus measure.
+Select the appropriate rule of consensus measures to calculate the clusters’ consensus levels and group consensus level.
+If the group consensus level is greater than the predefined consensus threshold, then proceed to Step 5; otherwise, proceed
+to the next step.
+Step 4. Consensus reaching process.
+Apply the consensus model presented in Section 3 to manage both the CRPs and non-cooperative behaviors. Let t = t + 1
+and return to Step 2.
+Step 5. Output the related decision information.
+Output the final iterative time t ∗ and final group decision matrix R c ∗ .
+Step 6. Select the best alternative(s).
+Using the obtained final group matrix, calculate the overall evaluation values of all alternatives and then select the best
+alternative(s).
+4. Case study
+We use the case in [35] to illustrate the effectiveness of the proposed model. The decision information is summarized
+as follows: Emergency shelter construction is a priority task for post-earthquake recovery. Four types of materials can be
+selected to construct emergency shelters: tents ( x
+1
+), plastic sheeting ( x
+2
+), waste wood ( x
+3
+), and light steel ( x
+4
+). Three aspects
+are considered: availability ( a
+1
+), convenience ( a
+2
+), and perceived safety ( a
+3
+). These attribute values are typically given on a
+0–100 scale and the weight vector of the attributes is ω = ( 0 . 25 , 0 . 5 , 0 . 25 ) T . Twenty-five experts e
+l
+( l = 1 , 2 , . . . , 25 ) are
+invited to participate in the emergency decision process. Assume that the acceptable consensus threshold is GCI = 0 . 75 .
+The 25 experts offer their preferences over the alternatives with respect to attributes. The normalized individual decision
+matrices are shown in Appendix B in [35] .
+
+418 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Table 1
+Clustering results with threshold γ= 0.73.
+g k n k e l R k ,0 g k n k e l R k ,0
+⎛ ⎞ ⎛ ⎞
+0 . 501 0 . 571 1 . 0 0 0 0 . 0 0 0 0 . 173 0 . 430
+g 1 5 e 1 , e 5 , e 7 , e 9 , e 12 ⎜ ⎝ 0 0 . . 0 8 3 0 3 0 0 0 . . 1 0 3 7 2 5 0 0 . . 2 4 1 7 0 0 ⎟ ⎠ g 2 3 e 2 , e 4 , e 10 ⎜ ⎝ 1 0 . . 8 0 6 0 8 0 0 1 . . 0 0 0 0 0 0 1 0 . . 7 0 6 0 7 0 ⎟ ⎠
+0 . 538 1 . 0 0 0 0 . 137 0 . 331 0 . 834 0 . 0 0 0
+⎛ ⎞ ⎛ ⎞
+1 . 0 0 0 0 . 608 0 . 560 0 . 460 1 . 0 0 0 0 . 640
+g 3 8 e 3 , e 8 , e 13 , e 15 , e 18 , e 20 , e 22 , e 25 , ⎜ ⎝ 0 0 . . 3 4 4 31 7 0 0 . . 2 62 81 5 1 0 . . 3 0 6 0 5 0 ⎟ ⎠ g 4 1 e 6 ⎜ ⎝ 1 0 . . 7 0 4 0 5 0 0 0 . . 4 24 5 5 0 1 0 . . 0 0 0 0 0 0 ⎟ ⎠
+0 . 0 0 0 0 . 407 0 . 105 0 . 0 0 0 0 . 0 0 0 0 . 320
+⎛ ⎞
+0 . 0 0 0 0 . 0 0 0 0 . 0 0 0
+g 5 8 e 11 , e 14 , e 16 , e 17 , e 19 , e 21 , e 23 , e 24 ⎜ ⎝1 0 . . 5 0 1 0 3 0 0 1 . . 4 0 1 0 3 0 0 0 . . 4 51 8 0 2 ⎟ ⎠ – – – –
+0 . 443 0 . 496 1 . 0 0 0
+Below, we apply the algorithm presented in Section 3.3 to select the best alternative. The experts decide to use CM-I to
+measure the consensus levels and set μ
+WG
+= ν
+WG
+= 0 . 5 . The reason why CM-I is chosen will be explained in Section 5.4 .
+Input: normalized individual decision matrices R l (l = 1 , 2 , . . . , 25) , weight vector of the attributes ω , and acceptable con-
+sensus threshold GCI = 0 . 75 .
+Output: final number of iterations, final group decision matrix, and alternative ranking.
+Step 1. Classify the 25 experts into several subgroups.
+Using the clustering method presented in [33] , the large group is divided into five smaller clusters (see Table 1 ). The
+initial weight vector of the clusters is obtained as λ0 = ( 0 . 153 , 0 . 055 , 0 . 393 , 0 . 006 , 0 . 393) T . Let t = 0 .
+Step 2. Compute the temporal group decision matrix.
+Aggregate the temporal clusters’ decision matrices to obtain the temporal group matrix
+⎛ ⎞
+0 . 472 0 . 342 0 . 401
+R c, 0 = ⎜ ⎝ 0
+0
+.
+.
+7
+4
+3
+0
+7
+4
+0
+0
+.
+.
+4
+5
+7
+2
+6
+6
+0
+0
+.
+.
+6
+46
+6
+6
+8 ⎟ ⎠ .
+0 . 274 0 . 553 0 . 457
+Step 3. Consensus measure.
+Use CM-I to calculate the individual consensus levels: C I 1 , 0 = 0 . 702 , C I 2 , 0 = 0 . 677 , C I 3 , 0 = 0 . 757 , C I 4 , 0 = 0 . 668 , and
+CM−I CM−I CM−I CM−I
+CI
+C
+5
+M
+, 0
+− I
+= 0 . 745 . The group consensus level is obtained as GCI
+C
+0
+M −I
+= 0 . 710 using Eq. (3) . Because GC I
+C
+0
+M −I
+< GC I , this indicates
+that there are large differences among the opinions of the clusters. Hence, CRP should be used.
+Step 4. Consensus reaching process.
+(i) First consensus iteration.
+Because C L
+C
+4
+M
+, 0
+− I
+= min
+k
+{ C L
+C
+k,
+M
+0
+−I
+} , g
+4
+is the furthest from the group opinion. Cluster g
+4
+provides the adjustment coefficient
+of η ¯4 , 0 = [ 0 . 1 , 0 . 15] . Other clusters give their suggestions regarding the adjustment of its opinion, i.e., η ¯1 → 4 , 0 = [ 0 . 4 , 0 . 6] ,
+η ¯2 → 4 , 0 = [ 0 . 5 , 0 . 8] , η ¯3 → 4 , 0 = [ 0 . 3 , 0 . 4] , and η ¯5 → 4 , 0 = [ 0 . 2 , 0 . 4] . The collective adjustment suggestion is η ˆ 4 , 0 = [ 0 . 287 , 0 . 453] .
+The mechanism for managing non-cooperative behaviors is hence employed.
+a) Identification of non-cooperative behaviors : Because τ4 , 0 = 1 > 0 , cluster g
+4
+can be regarded as a completely non-
+cooperative subgroup.
+b) Interaction and discussion : Cluster g
+4
+changes its adjustment coefficient to z η ¯4 , 0 = [ 0 . 2 , 0 . 25] .
+c) Proper modification : The rationality is calculated as z T 4 , 0 = 0 . Thus, the confidence level is ς 4 , 0 = 0 . To ensure the quality
+and efficiency of decision making, the single member that makes up cluster g
+4
+is advised to exit the decision process.
+The weight vector of clusters is updated to λ1 = ( 0 . 154 , 0 . 056 , 0 . 395 , 0 . 395) T . The update d consensus levels b ecome
+C I
+C
+1
+M
+, 1
+− I
+= 0 . 701 , C I
+C
+2
+M
+, 1
+− I
+= 0 . 677 , C I
+C
+3
+M
+, 1
+− I
+= 0 . 757 , and C I
+C
+5
+M
+, 1
+− I
+= 0 . 744 , and the group consensus level is GCI
+C
+1
+M −I
+= 0 . 720 < GCI .
+Thus, after the first iteration, differences remain among the clusters’ opinions.
+(ii) Second consensus iteration.
+Because C L
+C
+2
+M
+, 1
+− I
+= min
+k
+{ C L
+C
+k,
+M
+1
+−I
+} , this means that g
+2
+has an opinion with the largest difference from the group opinion.
+Cluster g
+2
+provides the adjustment coefficient η ¯2 , 1 = [ 0 . 3 , 0 . 5] . Other clusters provide their suggestions regarding the ad-
+justment of the opinion of g
+2
+as η ¯1 → 2 , 1 = [ 0 . 4 , 0 . 6] , η ¯3 → 2 , 1 = [ 0 . 5 , 0 . 8] , and η ¯5 → 2 , 1 = [ 0 . 6 , 0 . 9] . The collective adjustment
+suggestion is hence η ˆ 2 , 1 = [ 0 . 526 , 0 . 809] . The mechanism for managing non-cooperative behaviors proceeds as follows.
+a) Identification of non-cooperative behaviors : because τ2 , 1 = 0 . 872 > 0 , cluster g
+2
+can be regarded as a non-cooperative sub-
+group.
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 419
+b) Interaction and discussion : Cluster g
+2
+changes its adjustment coefficient to z η ¯4 , 1 = [ 0 . 3 , 0 . 55] .
+c) Proper modification. The rationality degree is computed as z T 2 , 1 = 0 . 048 . Thus, the confidence level is ς 2 , 1 = 0 . 047 . Sup-
+pose that χ1 = 1 . The weight of cluster g
+2
+is modified to z λ2 , 2 = χ1 ·ς 2 , 1 ·λ2 , 1 = 0 . 03 using Eq. (9) . The weight vector
+of the clusters is updated to λ2 = ( 0 . 163 , 0 . 03 , 0 . 417 , 0 . 417) T . Eq. (11) is used to modify the matrix of cluster g
+2
+. The
+temporal group decision matrix becomes
+⎛ ⎞
+0 . 499 0 . 347 0 . 397
+R c, 2 = ⎜ ⎝ 0
+0
+.
+.
+7
+3
+2
+6
+9
+5
+0
+0
+.
+.
+4
+55
+4
+7
+7 0
+0
+.
+.
+6
+43
+6
+1
+6 ⎟ ⎠ .
+0 . 273 0 . 540 0 . 484
+After the second iteration, the cluster consensus levels are C I 1 , 2 = 0 . 700 , C I 2 , 2 = 0 . 807 , C I 3 , 2 = 0 . 760 , and C I 5 , 2 =
+CM−I CM−I CM−I CM−I
+0 . 744 . The group consensus level is GCI
+C
+2
+M −I
+= 0 . 753 ≥GCI ; that is, the group consensus level has reached an acceptable level
+(above the threshold) after two rounds of CRP.
+Step 5. Output the related decision information: final group decision matrix R c ∗ = R c, 2 .
+Step 6. Select the best alternative(s).
+The overall evaluation value of each alternative is
+E V ( x
+1
+) = 0 . 398 , E V ( x
+2
+) = 0 . 572 , E V ( x
+3
+) = 0 . 477 , and E V ( x
+4
+) = 0 . 459 .
+The derived ranking of alternatives is x
+2
+(cid:9)x
+3
+(cid:9)x
+4
+(cid:9)x
+1
+, and thus x
+2
+is the best alternative. Hence, plastic sheeting is the
+most desirable material for constructing emergency shelters.
+5. Comparative analysis
+This section comprises five parts. We analyze the effect of the proposed model on managing non-cooperative behaviors.
+In Section 5.2 , we formulate the influence of different consensus thresholds on the CRP. In Section 5.3 , we present a compar-
+ison of the proposed model with other models [34,41] . We discuss the comparison results for different consensus measures
+and parameters in Sections 5.4 and 5.5 , respectively. Note that the data used in the comparative analysis come from the
+case study in Section 4 .
+5.1. Effect of the confidence consensus-based model on managing non-cooperative behaviors
+In the first iteration of the case study, cluster g
+4
+was regarded as a completely non-cooperative subgroup. In addition,
+τ4 , 0 = 1 indicated that the given adjustment coefficient could not satisfy the minimum requirement of the collective ad-
+justment suggestion. After an interaction with the other clusters, cluster g
+4
+was still very reluctant to modify its opinion to
+improve consensus (i.e., z τ4 , 0 = 1 ). Hence, the DM in cluster g
+4
+was advised to exit the decision process. We can see that
+the group consensus level clearly increased from GC I 0 = 0 . 710 to GC I 1 = 0 . 720 after the DM in cluster g
+4
+exited the decision.
+This shows that a cluster who has very large difference of opinion from the group and is not willing to modify its opinion
+should be advised to exit the decision process in a timely manner. This is useful for enabling the remaining DMs to reach
+an agreement quickly.
+In the second iteration, cluster g
+2
+was regarded as a partially non-cooperative subgroup. Using weight penalties and
+opinion adjustment, the individual consensus level was increased from CI 2 , 1 = 0 . 677 to CI 2 , 2 = 0 . 807 , and eventually the
+CM−I CM−I
+group consensus level reached the consensus threshold. This suggests that to reduce the weight and modify an opinion
+that is substantially different from the group opinion, it is useful to reduce the differences among the DMs and reach an
+agreement.
+5.2. Analysis of different consensus thresholds
+In the following, we analyze the effect of setting different consensus thresholds. Table 2 and Fig. 3 present the decision
+results for different consensus thresholds. Fig. 3 shows the number of iterations and group consensus levels. Table 2 lists
+the final group decision matrices, overall evaluation values of each alternative, and alternative rankings. To better reflect
+the impact of different consensus thresholds on the decision, in this section, we adopt the objective adjustment coefficient
+presented in [34] to simulate the CRP and do not consider non-cooperative behaviors.
+Based on the results in Table 2 and Fig. 3 , the following observations can be obtained.
+(1) The number of iterations decreases as the consensus threshold decreases, and the final alternative rankings do not
+change. No change in alternative rankings can happen because the attribute weights are fixed.
+(2) The final rankings are the same; however, the final group decision matrices and overall evaluation values of the
+alternatives are different.
+(3) As the number of iterations increases, the group consensus level eventually meets the threshold.
+(4) The closer the group consensus level to the consensus threshold, the lower the opinion adjustment amount.
+
+420 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Table 2
+Comparison results for different consensus thresholds.
+Consensus Total adjustment Final group decision Overall evaluation Alternative
+threshold amount matrix values of alternatives ranking
+⎛ ⎞
+0 . 507 0 . 347 0 . 382 EV ( x 1 ) = 0.396 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0.900 0.980 ⎜ ⎝ 0 0 . . 4 71 0 7 1 0 0 . . 5 4 4 88 4 0 0 . . 4 70 47 2 ⎟ ⎠ EV ( x 2 ) = 0.599
+0 . 251 0 . 523 0 . 465 EV ( x 3 ) = 0.484
+⎛ ⎞ EV ( x 4 ) = 0.441
+0.850 0.719 ⎜ ⎝ 0 0 0 . . . 4 7 5 1 0 0 9 1 4 0 0 0 . . . 5 4 34 3 8 4 9 6 0 0 0 . . . 6 4 3 9 5 9 1 6 0 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0 . . 3 5 9 97 8 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 254 0 . 531 0 . 457 EV ( x 3 ) = 0.480
+⎛ ⎞ EV ( x 4 ) = 0.443
+0.800 0.465 ⎜ ⎝ 0 0 0 . . . 5 7 4 1 0 0 7 4 0 0 0 0 . . . 3 5 4 5 2 8 7 3 7 0 0 0 . . . 4 3 6 5 9 9 7 3 5 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0. . 5 4 9 03 6 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 254 0 . 534 0 . 450 EV ( x 3 ) = 0.477
+⎛ ⎞ EV ( x 4 ) = 0.443
+0.750 0.223 ⎜ ⎝ 0 0 0 . . . 4 4 7 7 3 0 8 3 5 0 0 0 . . . 3 5 4 3 4 8 7 5 0 0 0 0 . . . 4 3 6 5 8 8 7 2 1 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0 . . 3 5 8 9 3 4 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 267 0 . 538 0 . 473 EV ( x 3 ) = 0.488
+⎛ ⎞ EV ( x 4 ) = 0.454
+0.700 0.0 0 0 ⎜ ⎝ 0 0 0 . . . 4 4 7 7 3 0 2 7 4 0 0 0 . . . 5 4 3 7 4 2 6 2 6 0 0 0 . . . 6 4 4 6 0 6 1 6 8 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0 . . 3 5 8 8 9 9 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 275 0 . 553 0 . 457 EV ( x 3 ) = 0.480
+EV ( x 4 ) = 0.460
+Note: The total adjustment amount can be calculated using Definition 3 presented in [34] , which is also reviewed in
+Appendix B.
+Fig. 3. Simulation results based on the objective adjustment coefficient for different consensus thresholds.
+(5) A higher consensus threshold requires a greater adjustment amount, which leads to a more likely distortion of opin-
+ions. Therefore, the threshold needs to be set reasonably.
+(6) An available method to confirm the two important parameters (i.e., the number of iterations and acceptable consensus
+threshold) is to simulate the CRP using the objective adjustment coefficient presented in [34] . The simulation results
+demonstrate the relationship between the number of iterations and consensus threshold, which can be used as a
+reference to determine these two parameters.
+5.3. Comparison with Xu et al.’s model [34] and Zhang et al.’s model [41]
+To demonstrate the advantages of the proposed method, a comparative analysis is conducted using another technique
+[34] . Xu et al. [34] utilized the degree of non-cooperation to manage non-cooperative behaviors. In our study, the proposed
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 421
+Table 3
+Comparison of Xu et al.’s model and our proposed model.
+Consensus Updated adjustment Collective adjustment Non-cooperative Rationality Confidence Modified Updated group
+model coefficient suggestion degree degree level weight consensus level
+Xu et al.’s – [0.225, 0.900] 0.686 – – 0.022 0.757
+model [34]
+Proposed [0.3, 0.55] [0.526, 0.809] 0.954 0.048 0.047 0.003 0.753
+model
+Note: To ensure the effectiveness of the comparison results, we suppose that The two models had the same adjustment coefficient (i.e., η¯2 , 1 = [ 0 . 3 , 0 . 5] )
+and adjustment suggestions (i.e., η¯1 → 2 , 1 = [ 0 . 4 , 0 . 6] , η¯3 → 2 , 1 = [ 0 . 5 , 0 . 8] , η¯5 → 2 , 1 = [ 0 . 6 , 0 . 9] ).
+Table 4
+Comparison of Zhang et al.’s model and our proposed model.
+Changeable Expression form Object of preference Management of
+Consensus model clusters? of satisfaction adjustment non-cooperative behaviors CompositionoftheCRP
+Zhang et al.’s model [41] Yes Explicit All the preferences No (1) Consensus measure
+can be modified (2) Satisfaction measure
+(3) Feedback adjustment
+Proposed model No Implicit Preference which has Yes (1) Consensus measure
+the lowest consensus (2) Feedback adjustment
+level should be (Including addressing
+modified non-cooperative
+behaviors)
+Note: The item “Object of preference adjustment”refers to which preferences may be adjusted during each iteration of CRPs.
+consensus model includes not only the degree of non-cooperation but also the newly defined degree rationality. We compare
+these two models in the second iteration of the case study in Section 4 .
+The results in Table 3 show the following differences between our proposed model and Xu et al.’s model [34] :
+(1) The updated group consensus levels obtained by the two models both exceed the consensus threshold. This finding
+implies that both models are effective at promoting consensus by managing non-cooperative behaviors.
+(2) The modified weights are obviously different. This is for two reasons: (a) The two models calculate the collective ad-
+justment suggestions differently. Xu et al.’s model uses the max-min operator to combine the objective adjustment
+coefficient and adjustment suggestions, whereas the proposed model directly aggregates the adjustment suggestions.
+This causes the different results for the non-cooperation. (b) The proposed model introduces the rationality and con-
+fidence level, which not only considers the non-cooperation of the adjustment but, more importantly, the rationality
+of the adjustment coefficient.
+(3) The proposed model adds the interaction step and a discussion that could help DMs to provide more favorable ad-
+justment coefficients as well as reducing the distrust and emotional expression of DMs.
+Further considering the reasons for the existence of non-cooperative behaviors in the CRP, we recognize that the varying
+levels of DMs’ satisfaction with respect to the consensus level can lead to non-cooperative behaviors. For example, in a
+CRP under a GDM environment, the DM Andy is asked to adjust his opinion to promote consensus. Suppose that Andy’s
+consensus level is 0.7, the group consensus level is 0.75, and the consensus threshold is set as 0.8. Andy thinks his consensus
+level is close to the threshold; that is, he is somewhat satisfied with this level and hence is unwilling to make a noticeable
+adjustment to his opinion. Other DMs, however, do not agree with Andy’s satisfaction regarding the consensus level, and
+view Andy’s adjustment action as a non-cooperative behavior. Zhang et al. [41] investigated the individual satisfaction with
+consensus level under a heterogeneous LSGDM environment. To better demonstrate the contribution of our proposed model
+to managing consensus in LSGDM, we compare Zhang et al.’s model and our proposed model ( Table 4 ).
+A detailed explanation of each of these differences are presented below.
+5.3.1. Explicit satisfaction versus implicit satisfaction
+“Explicit satisfaction”refers to a scenario in which DMs provide their own satisfaction with the consensus level. In Zhang
+et al.’s research [41] , the collective satisfaction index is obtained by aggregating the individual satisfactions. This collective
+satisfaction is compared with the established satisfaction index to determine whether a feedback mechanism is needed. An
+implicit expression of satisfaction is thought to be a clue to non-cooperative behaviors. Generally, non-cooperative behaviors
+occur for three reasons: (1) a DM (or cluster) thinks the current level of consensus is high enough (that is, he/she is satisfied
+with the current level of consensus), so there is no need to adjust the preference significantly; (2) a DM (or cluster) sticks
+to his/her own preferences and is reluctant to adjust them; and (3) a mixture of the first two reasons.
+The implicit expression of satisfaction is hard to measure. An explicit expression can intuitively quantify a DM’s satisfac-
+tion with the consensus level. Unlike our model, Zhang et al.’s model [41] adds a “satisfaction measure”to the CRP. However,
+dishonesty may exist and affect the accuracy of such expressions. For example, a non-cooperative DM can avoid being forced
+
+422 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Table 5
+Simulation results for different consensus measures ( GCI = 0 . 75 ).
+Consensus measure Total adjustment Final group decision Overall evaluation Alternative
+rules amount ⎛ma trix ⎞ values of alternatives ranking
+CM-I 0.223 ⎜ ⎝0 0 0 . . . 7 4 5 1 0 0 7 1 7 0 0 0 . . . 5 3 4 4 4 8 7 8 4 0 0 0 . . . 4 3 70 8 47 2 2 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0 . . 3 5 9 9 6 9 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 251 0 . 523 0 . 465 EV ( x 3 ) = 0.484
+⎛ ⎞ EV ( x 4 ) = 0.441
+CM-II 0.227 ⎜ ⎝ 0 0 0 . . . 4 7 5 1 0 0 9 1 4 0 0 0 . . . 5 4 34 3 8 4 9 6 0 0 0 . . . 6 4 3 9 5 9 1 6 0 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0 . . 3 5 9 97 8 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 254 0 . 531 0 . 457 EV ( x 3 ) = 0.480
+⎛ ⎞ EV ( x 4 ) = 0.443
+CM-III 0.811 ⎜ ⎝ 0 0 0 . . . 5 7 4 1 0 0 7 4 0 0 0 0 . . . 5 3 4 5 2 8 7 3 7 0 0 0 . . . 4 6 3 5 9 97 3 5 ⎟ ⎠ E E V V ( ( x x 1 2 ) ) = = 0 0. . 5 4 9 03 6 x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1
+0 . 254 0 . 534 0 . 450 EV ( x 3 ) = 0.477
+EV ( x 4 ) = 0.443
+Note: We use the objective adjustment coefficient presented in [34] to simulate the consensus process for different consensus
+measures rules in this subsection.
+to adjust his/her opinion by falsely reporting a high level of satisfaction. In this sense, dishonesty and non-cooperative be-
+haviors are two issues that must be addressed. Our model proposes a mechanism for managing non-cooperative behaviors
+that could be extended to consensus building where satisfaction is expressed explicitly.
+5.3.2. The management of non-cooperative behaviors
+In LSGDM problems, non-cooperative behaviors always exist [10,20,34] . For example, some individuals may refuse to
+modify their preferences or move their preferences to resist consensus to further their private interests. Hence, adding the
+management of non-cooperative behaviors to the CRP is necessary in many decision scenarios. Compared with Zhang et al.’
+model [41] , our proposed model presents a confidence-consensus model that contains a novel mechanism for addressing
+non-cooperative behaviors.
+5.3.3. Changeable cluster structure versus unalterable cluster structure
+Generally, the cluster structure is one of two types: (1) it does not change once it has been determined [34,35] because
+a stable clustering structure prompts the members in each subgroup to establish trust feelings and form a unified opinion
+and (2) it changes with the dynamic changes in similarity of DM preferences caused by preference adjustment (see [32,41] ).
+This study uses the cluster as a basic unit once the clustering structure has been determined.
+Additionally, in Zhang et al.’s research [41] , when the collective satisfaction degree is lower than the predefined threshold,
+all the DMs modify their own preferences. In our model, only the preference of the cluster that is the most different from the
+group preference should be modified. If multiple DMs adjust their preferences simultaneously, the decision-making process
+may quickly reach a consensus level with high satisfaction, but it could also become more complex and uncertain.
+5.4. Comparison with different consensus measures
+In terms of the consensus measure, CM-II is much stricter than CM-I. Because it uses a minimum operator, which is a
+more rigorous criterion, its use can avoid the situation in which some clusters’ consensus levels are still lower than the
+consensus threshold even though the group consensus level is sufficiently high in the final decision results. In contrast
+to CM-I and CM-II, CM-III directly measures the difference between clusters and can avoid the deviation caused by the
+weighted average operation when aggregating cluster opinions. Table 5 and Fig. 4 both describe the CRP and results of
+using the objective adjustment coefficient to simulate the consensus process for different consensus measures.
+Clearly, there are differences in the adjustment amount, final decision matrix, final alternative evaluation value, and
+number of iterations when different consensus measures are used. Based on the simulation results in Table 6 and Fig. 4 , we
+conclude the following.
+(1) CM-II and CM-III have more stringent requirements than CM-I. Different consensus measures may apply to different
+decision problems.
+(2) Given the differences in consensus measures, different consensus thresholds should be set for the three measures.
+In the case study presented in Section 4 , the DMs believed that the construction of emergency shelters was the most
+important part of post-earthquake recovery and the most appropriate solution was to follow the majority of opinion. There-
+fore, the DMs with relatively large weights should have a significant impact on the group opinion and consensus measure.
+Moreover, just as importantly, because of the timeliness of constructing emergency shelters, it is preferable that the solution
+be acceptable to most DMs, rather than recognizing all opinions. Eventually, the DMs decided to use CM-I to measure the
+consensus levels.
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 423
+Fig. 4. Simulation results based on the objective adjustment coefficient for different consensus measures.
+Table 6
+Comparison of the advantages and disadvantages of different measure rules.
+Consensus measure rules Detailed description
+CM-I Advantages:
+•The DMs with relatively large weights have a significant impact on the consensus measure. The greater the weight
+of a DM, the greater the contribution of its opinion to the group opinion, and thus the higher its individual
+consensus level.
+•Only the average value of individual consensus levels needs to be higher than the predefined consensus threshold
+without all individual consensus levels reaching the threshold. It may not need too many iterations and the
+consensus process may not be difficult to implement.
+Disadvantages:
+•DMs’ weights need to be calculated in advance.
+•The consensus process is generally aimed at the lower-weight DMs’ opinions because their opinions contribute less
+to the aggregated group opinion and thus are relatively far from the group opinion.
+•A compromise appears between some DMs’ opinions with very high consensus levels and those with low consensus
+levels when the group consensus level is sufficiently high.
+CM-II Advantages:
+•DMs with relatively large weights have obvious advantages.
+•Using a min operator to calculate consensus allows for a more rigorous criterion that can avoid the compromise
+presented in CM-I rule.
+Disadvantages:
+A tighter measure rule leads to more iterations and a greater adjustment of opinions when the consensus threshold is
+fixed.
+CM-III Advantages:
+There is no need to consider the weights of DMs when measuring the consensus. All the concerns regard calculating
+the differences between DM’s opinions.
+Disadvantages:
+The advantages of DMs with relatively large weights cannot be effectively embodied in a consensus measure.
+5.5. Comparison with different parameters
+In this part, we analyze the influence of parameters
+μ
+WG
+,
+ν
+WG
+, and
+χt
+on the decision results. Considering the first
+μ ν
+iteration in the case study, Table 7 and Fig. 5 show the simulation results when different input parameters
+WG
+,
+WG
+, and
+χ1
+are set. The simulation results in Table 7 use five sets of
+μ
+WG
+and
+ν
+WG
+and three sets of
+χ1
+and illustrate the change
+in the confidence level, group consensus level, and adjusted weight. Fig. 5 shows the results when we randomly generated
+input parameters
+μ
+WG
+,
+ν
+WG
+, and
+χ1
+and run the simulation 1,0 0 0 times to obtain the confidence level and adjusted weight
+values. To compare the data more intuitively, we present four significant figures for the weights z λ2, 2 and updated group
+consensus levels in Table 7 and Fig. 5 .
+The following observations are obtained.
+(1) Let the auxiliary coefficient
+χ1
+be fixed. When setting different parameters
+μ
+WG
+and
+ν
+WG
+, there are differences in
+the confidence level, adjusted weight, and updated group consensus level. For example, in Table 7 , for χ1 = 5 , when
+
+424 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Table 7
+Comparison results based on the data in the case study for different parameters μ WG , ν WG , and χ1 .
+μ WG , ν WG ς 2, 1 z λ2, 2 Updated alternative ranking Updated group consensus level
+χ1 = 5 χ1 = 2 χ1 = 1
+0.0, 1.0 0.1462 0.0405 0.0162 0.0081 2341, 2341, 2341 0.7511, 0.7498, 0.7494
+0.3, 0.7 0.1404 0.0388 0.0155 0.0078 2341, 2341, 2341 0.7511, 0.7498, 0.7493
+0.5, 0.5 0.1366 0.0378 0.0151 0.0076 2341, 2341, 2341 0.7510, 0.7498, 0.7493
+0.7, 0.3 0.1329 0.0368 0.0147 0.074 2341, 2341, 2341 0.7509, 0.7497, 0.7493
+1.0, 0.0 0.1276 0.0353 0.0141 0.0071 2341, 2341, 2341 0.7509, 0.7497, 0.7493
+Notes: (a) The data in the item “Updated alternative ranking”represent three groups of alternative rankings when parameter
+χ1 is set to 5, 2 and 1, respectively. “2341”indicates that the alternative ranking is x 2 (cid:9)x 3 (cid:9)x 4 (cid:9)x 1 .
+(b) The data in the item “Updated group consensus level”represent the different group consensus levels when parameter
+χ1 is set to 5, 2, and 1, respectively.
+Fig. 5. Simulation results of confidence level ς 2, 1 and adjusted weight z λ2, 2 for different parameters μ WG , ν WG , and χ1 .
+μ
+WG
+= 0 and ν
+WG
+= 1 , the updated group consensus level is 0.7511 and z λ2 , 2 = 0 . 0405 ; when μ
+WG
+= 0 . 7 and ν
+WG
+=
+0 . 3 , the group consensus level is 0.7509 and z λ2 , 2 = 0 . 0368 . Furthermore, Fig. 5 shows our comparison of the two
+sets of coordinates, that is, the pair (0.1, 6.6, 0.144) and (0.8, 6.6, 0.131) and the pair (0.1, 6.6, 0.0526) and (0.8, 6.6,
+0.0479). The difference in the confidence level and adjusted weight is obvious.
+(2) Let
+μ
+WG
+and
+ν
+WG
+be fixed. When
+χ1
+is set to different values, then the adjusted weight of cluster g
+2
+may also be
+different. For examp le, in Table 7 , when μ= 0 . 3 , ν= 0 . 7 , and χ1 is set to 5 or 2, the corresponding adjusted weight
+of g
+2
+is 0.0388 or 0.0155. In accordance with Eq. (9) , when the confidence level is fixed, the adjusted weight is
+proportional to parameter
+χ1
+. The two coordinates shown in Fig. 5 , i.e., (0.1, 6.6, 0.0526) and (0.1, 4.1, 0.0327), also
+demonstrate this proportional relation.
+6. Conclusions
+Because LSGDM can model many real-world decisions, a confidence consensus-based model that considers non-
+cooperative behaviors was proposed. The major contributions of this study are as follows:
+• New concepts were proposed: the collective adjustment suggestion, degree of rationality, and confidence level.
+• A novel mechanism for addressing non-cooperative behaviors was presented. We divide the management of non-
+cooperative behaviors into three phases. The interaction and discussion effectively make DMs provide more suitable
+adjustment coefficients. In this process, we combine the degrees of rationality and non-cooperation to construct the
+confidence level of a cluster’s adjustment coefficient. It is more accurate and objective to use the confidence level to
+measure the willingness of a cluster to adjust its opinion to promote agreement. Further, it ensures that the cluster has
+an accurate and reasonable understanding of the decision problem.
+• An algorithm for the confidence consensus-based model in LSGDM was presented. Its aim is to better address non-
+cooperative behaviors and obtain a common decision result with a sufficiently high level of group consensus.
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 425
+• We summarized different consensus measures and used simulation to compare them. The simulation results reveal the
+advantages and disadvantages of these different measures.
+• A comparison with Zhang et al.’s model [41] leads to the concepts of “explicit satisfaction” and “implicit satisfaction.”
+These concepts lead to a significant research issue: how to measure satisfaction that is implicitly expressed.
+Meanwhile, there still exist some limitations:
+(1) In some real-life LSGDM, trust relationships among DMs defined by a social network play a key role. As a conse-
+quence, the research on CRMs in social network-based GDM has been paid increasing attention. It could be meaning-
+ful to build an improved CRM for addressing non-cooperative behaviors within a social network environment.
+(2) Zhang et al.’s research [41] indicates that in a LSGDM, DMs often have individual concerns about alternatives and
+satisfactions regarding the degree of consensus in CRPs. Thus, they prefer to use heterogeneous preference represen-
+tation structures to express their opinions. It is important to extend the traditional CRMs to manage non-cooperative
+behaviors in heterogeneous LSGDM with individual concerns and satisfactions.
+(3) How to more reasonably modify DMs’ weights based on the confidence level is also an important issue to address.
+Solving this matter depends on multiple simulation analyses with real data from different sources.
+Acknowledgements
+The authors would like to thank the editors and anonymous reviewers for their insightful comments and suggestions.
+This research was supported by the National Natural Science Foundation of China (No. 71671189 ), the Major Project of the
+Natural Science Foundation of China (No. 71790615 ), and the Key Project of the Natural Science Foundation of China (No.
+71431006 ).
+Supplementary materials
+Supplementary material associated with this article can be found, in the online version, at doi: 10.1016/j.ins.2018.10.058 .
+Appendix A. Definition of the similarity of two interval numbers
+Definition A.1. [37] . The similarity of the adjustment coefficient η ¯k ∗,t and collective adjustment suggestion η ˆ k ∗,t can be
+obtained as
+(cid:16)
+(cid:3) (cid:4)
+T (cid:3) η ¯k ∗,t , η ˆ k ∗,t (cid:4) = 1 1 + − d d ( ( η η ¯ ¯ k k ∗ ∗ , , t t , , η η ˆ ˆ k k ∗ ∗ , , t t ) ) , 0 (cid:3) ≤d η ¯k ∗,t , η (cid:4) ˆ k ∗,t ≤1 , (12)
+0 , d η ¯k ∗,t , η ˆ k ∗,t ≥1
+where d( η ¯k ∗,t , η ˆ k ∗,t ) is the distance between η ¯k ∗,t and η ˆ k ∗,t ; that is,
+(cid:17) (cid:17) (cid:17) (cid:17)
+(cid:3) (cid:4) (cid:17)ηL k ∗,t −η ˆ L k ∗,t (cid:17) + (cid:17)ηU k ∗,t −η ˆ U k ∗,t (cid:17)
+d η ¯k ∗,t , η ˆ k ∗,t = (cid:3) (cid:4) (cid:3) (cid:4) , (13)
+l η ¯k ∗,t + l η ˆ k ∗,t
+where l( η ¯k ∗,t ) = ηU k ∗,t −ηL k ∗,t , l( η ˆ k ∗,t ) = η ˆ U k ∗,t −η ˆ L k ∗,t . If η ¯k ∗,t and η ˆ k ∗,t are both crisp numbers, then the distance between
+them is
+(cid:3) (cid:4) (cid:17) (cid:17)
+d η ¯k ∗,t , η ˆ k ∗,t = (cid:17)ηU k ∗,t −η ˆ U k ∗,t (cid:17) . (14)
+Yang et al. [37] proved that the similarity in Definition A.1 could meet the axiomatic definition of similarity. Clearly,
+T ( η ¯k ∗,t , η ˆ k ∗,t ) has the following properties:
+(1) 0 ≤T ( η ¯k ∗,t , η ˆ k ∗,t ) ≤1 ;
+(2) T ( η ¯k ∗,t , η ˆ k ∗,t ) = T ( η ˆ k ∗,t , η ¯k ∗,t ) ;
+(3) T ( η ¯k ∗,t , η ˆ k ∗,t ) = 1 , if and only if η ¯k ∗,t = η ˆ k ∗,t ;
+(4) If the three interval numbers meet the condition that c¯ ⊆η ˆ k ∗,t ⊆η ¯k ∗,t , then T ( η ¯k ∗,t , c¯ ) ≤T ( η ¯k ∗,t , η ˆ k ∗,t ) + T ( η ˆ k ∗,t , c¯ ) ,
+where c¯ is an interval number.
+Definition A.2. Using the similarity of two interval numbers presented in Definition A.1 , the rationality of the adjustment
+coefficient prov (cid:3) ided by clu (cid:4) ster g k ∗ is defined as
+T k ∗,t = T η ¯k ∗,t , η ˆ k ∗,t . (15)
+Clearly, 0 ≤T k ∗,t ≤1 .
+
+426 X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427
+Appendix B. Definition of the total amount of adjustment
+Definition B. [34] The amount of opinion adjustment between R k,t+1 and R k, t is defined as
+AD
+(cid:3)
+R k,t+1 , R k,t
+(cid:4)
+= d
+(cid:3)
+R k,t+1 , R k,t
+(cid:4)
+= 1
+(cid:5)m (cid:5)n
+d
+(cid:3)
+r k,t+1 , r k,t
+(cid:4)
+, (16)
+m ×n ij ij
+i =1 j=1
+where d( R k,t+1 , R k,t ) is the Manhattan distance between R k,t+1 and R k, t . The total adjustment amount is the sum of all the
+opinion adjustment amounts in the CRP.
+References
+[1] S. Alonso , A web based consensus support system for group decision making problems and incomplete preferences, Inf. Sci. 180 (2010) 4 477–4 495 .
+[2] F.J. Cabrerizo , I.J. Pérez , E. Herrera-Viedma , Managing the consensus in group decision making in an unbalanced fuzzy linguistic context with incom-
+plete information, Knowl. Based Syst. 23 (2010) 169–181 .
+[3] X. Chen , H.J. Zhang , Y.C. Dong , The fusion process with heterogeneous preference structures in group decision making: a survey, Inf. Fusion 24 (2015)
+72–83 .
+[4] Y.C. Dong , Z.G. Ding , L. Martínez , F. Herrera , Managing consensus based on leadership in opinion dynamics, Inf. Sci. 397–398 (2017) 187–205 .
+[5] Y.C. Dong , C.C. Li , Y.F. Xu , X. Gu , Consensus-based group decision making under multi-granular unbalanced 2-tuple linguistic preference relations,
+Group Decis. Negot. 24 (2015) 217–242 .
+[6] Y.C. Dong, Q.B. Zha, H.J. Zhang, G. Kou, H. Fujita, F. Chiclana, E. Herrera-Viedma, Consensus reaching in social network group decision making: Research
+paradigms and challenges, Knowl. Based Syst. (2018). https://doi.org/10.1016/j.knosys.2018.06.036 .
+[7] Y.C. Dong , M. Zhan , G. Kou , Z.G. Ding , H.M. Liang , A survey on the fusion process in opinion dynamics, Inf. Fusion 43 (2018) 57–65 .
+[8] Y.C. Dong , H.J. Zhang , E. Herrera-Viedma , Integrating experts’ weights generated dynamically into the consensus reaching process and its applications
+in managing non-cooperative behaviors, Decis. Support Syst. 84 (2016) 1–15 .
+[9] Y.C. Dong , H.J. Zhang , E. Herrera-Viedma , Consensus reaching model in the complex and dynamic MAGDM problem, Knowl. Based Syst. 106 (2016)
+206–219 .
+[10] Y.C. Dong, S.H. Zhao, H.J. Zhang, F. Chiclana, E. Herrera-Viedma, A self-management mechanism for non-cooperative behaviors in large-scale group
+consensus reaching processes, IEEE Trans. Fuzzy Syst. (2018). https://doi.org/10.1109/tfuzz.2018.2818078 .
+[11] F. Herrera , E. Herrera-Viedma , J.L. Verdegay , A model of consensus in group decision making under linguistic assessments, Fuzzy Sets Syst. 78 (1996)
+73–87 .
+[12] E. Herrera-Viedma , L. Martínez , F. Mata F , F. Chiclana , A consensus support system model for group decision-making problems with multigranular
+linguistic preference relations, IEEE Trans. Fuzzy Syst. 13 (2005) 644–658 .
+[13] J. Kacprzyk , M. Fedrizzi , A “soft”measure of consensus in the setting of partial (fuzzy) preferences, Eur. J. Oper. Res. 34 (1988) 316–325 .
+[14] T. Kanungo , D.M. Mount , N.S. Netanyahu , C.D. Piatko , R. Silverman , A.Y. Wu , An efficient k -means clustering algorithm: analysis and implementation,
+IEEE Trans. Pattern Anal. Mach. Intell. 24 (2002) 881–892 .
+[15] Á. Labella, Y. Liu, R.M. Rodríguez, L. Martínez, Analyzing the performance of classical consensus models in large scale group decision making: a
+comparative study, Appl. Soft Comput. (2017). https://doi.org/10.1016/j.asoc.2017.05.045 .
+[16] C.H. Lin , C.H. Wu , P.Z. Huang , Grey clustering analysis for incipient fault diagnosis in oil-immersed transformers, Expert Syst. Appl. 36 (2009)
+1371–1379 .
+[17] B.S. Liu , Y.H. Shen , X.H. Chen , Y. Chen , X.Q. Wang , A partial binary tree DEA-DA cyclic classification model for decision makers in complex multi-at-
+tribute large-group interval-valued intuitionistic fuzzy decision-making problems, Inf. Fusion 18 (2014) 119–130 .
+[18] F. Mata , L Martínez , E. Herrera-viedma , An adaptive consensus support model for group decision-making problems in a multigranular fuzzy linguistic
+context, IEEE Trans. Fuzzy Syst. 17 (2009) 279–290 .
+[19] I. Palomares , Consensus model for large-scale group decision support in IT services management, Intell. Decis. Technol. 8 (2014) 81–94 .
+[20] I. Palomares , L. Martínez , F. Herrera , A consensus model to detect and manage noncooperative behaviors in large-scale group decision making, IEEE
+Trans. Fuzzy Syst. 22 (2014) 516–530 .
+[21] R.O. Parreiras , P.Y. Ekel , J.S.C. Martini , R.M. Palhares , A flexible consensus scheme for multicriteria group decision making under linguistic assessments,
+Inf. Sci. 180 (2010) 1075–1089 .
+[22] D.A. Pelta , R.R. Yager , Decision strategies in mediated multiagent negotiations: an optimization approach, IEEE Trans. Syst. Man Cybern. Part A 40
+(2010) 635–640 .
+[23] L.G. Pérez , F. Mata , F. Chiclana F , Social network decision making with linguistic trustworthiness–based induced OWA operators, Int. J. Intell. Syst. 29
+(2015) 1117–1137 .
+[24] F.J. Quesada , I. Palomares , L. Martínez , Managing experts behavior in large-scale consensus reaching processes with uninorm aggregation operators,
+Appl. Soft Comput. 35 (2015) 873–887 .
+[25] L. Roselló, M. Sánchez , N. Agell , F. Prats , F.A. Mazaira , Using consensus and distances between generalized multi-attribute linguistic assessments for
+group decision-making, Inf. Fusion 17 (2014) 83–92 .
+[26] J. Wu , F. Chiclana , A social network analysis trust–consensus based approach to group decision-making problems with interval-valued fuzzy reciprocal
+preference relations, Knowl. Based Syst. 59 (2014) 97–107 .
+[27] J. Wu , F. Chiclana , E. Herrera-Viedma , Trust based consensus model for social network in an incomplete linguistic information context, Appl. Soft
+Comput. 35 (2015) 827–839 .
+[28] J. Wu , R.Y. Xiong , F. Chiclana , Uninorm trust propagation and aggregation methods for group decision making in social network with four tuple
+information, Knowl. Based Syst. 96 (2016) 29–39 .
+[29] J. Wu , L.F. Dai , F. Chiclana , H. Fujita , E. Herrera-Viedma , A minimum adjustment cost feedback mechanism based consensus model for group decision
+making under social network with distributed linguistic trust, Inf. Fusion 41 (2018) 232–242 .
+[30] T. Wu , X.W. Liu , F. Liu , An interval type-2 fuzzy TOPSIS model for large scale group decision making problems with social network information, Inf.
+Sci. 432 (2018) 392–410 .
+[31] Z.B. Wu , J.P. Xu , Managing consistency and consensus in group decision making with hesitant fuzzy linguistic preference relations, Omega 65 (2016)
+28–40 .
+[32] Z.B. Wu , J.P. Xu , A consensus model for large-scale group decision making with hesitant fuzzy information and changeable clusters, Inf. Fusion 41
+(2018) 217–231 .
+[33] X.H. Xu , X.H. Chen , Research on the group clustering method based on vector space, Syst. Eng. Electron. 27 (2005) 1034–1037 .
+[34] X.H. Xu , Z.J. Du , X.H. Chen , Consensus model for multi-criteria large-group emergency decision making considering non-cooperative behaviors and
+minority opinions, Decis. Support Syst. 79 (2015) 150–160 .
+[35] Y.J. Xu , X.W. Wen , W.C. Zhang , A two-stage consensus method for large-scale multi-attribute group decision making with an application to earthquake
+shelter selection, Comput. Ind. Eng. 116 (2018) 113–129 .
+
+X.-h. Xu, Z.-j. Du and X.-h. Chen et al. / Information Sciences 477 (2019) 410–427 427
+[36] Z.S. Xu , An automatic approach to reaching consensus in multiple attribute group decision making, Comput. Ind. Eng. 56 (2009) 1369–1374 .
+[37] C.L. Yang , C.F. Zhang , W.C. Xu , A model based on similarity degree of interval number for uncertain multi-attribute decision making, Math. Pract.
+Theory 40 (2010) 148–154 .
+[38] R.R. Yager , Penalizing strategic preference manipulation in multi-agent decision making, IEEE Trans. Fuzzy Syst. 9 (2001) 393–403 .
+[39] R.R. Yager , Defending against strategic manipulation in uninorm-based multi-agent decision making, Eur. J. Oper. Res. 141 (2002) 217–232 .
+[40] B.W. Zhang , H.M. Liang , G.Q. Zhang , Reaching a consensus with minimum adjustment in MAGDM with hesitant fuzzy linguistic term sets, Inf. Fusion
+42 (2018) 12–23 .
+[41] H.J. Zhang , Y.C. Dong , E. Herrera-Viedma , Consensus building for the heterogeneous large-scale GDM with the individual concerns and satisfactions,
+IEEE Trans. Fuzzy Syst. 26 (2018) 884–898 .
+[42] Y.X. Zhang , Z.S. Xu , H.C. Liao , A consensus process for group decision making with probabilistic linguistic preference relations, Inf. Sci. 414 (2017)
+260–275 .
+[43] M. Zhao , X.Y. Ma , D.W. Wei , A method considering and adjusting individual consistency and group consensus for group decision making with incom-
+plete linguistic preference relations, Appl. Soft Comput. 54 (2017) 322–346 .
+

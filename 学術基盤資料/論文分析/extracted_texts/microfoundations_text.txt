@@ -1,0 +1,1079 @@
+Information and Organization 35 (2025) 100583
+
+Contents lists available at ScienceDirect
+
+Information and Organization
+journal homepage: www.elsevier.com/locate/infoandorg
+
+Microfoundations of rationality in the age of AI: On emotions,
+bodies and intelligence☆
+Mari-Klara Stein a,* , Arisa Shollo b
+a
+b
+
+Department of Business Administration, TalTech, Akadeemia Tee 3, Tallinn, Estonia
+Department of Digitalization, Copenhagen Business School, Howitzvej 60, 2000 Frederiksberg, Denmark
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Bounded rationality
+Human cognition
+Computational cognition
+Intelligence
+Agency
+Emotions
+Bodies
+
+Seventy years from the birth of AI, organizations are adopting AI-based agents and tools at an
+unprecedented pace. The coming of age of AI in organizations signifies the emergence of humanAI configurations promising to surpass the inherited bounded rational nature of humans. These
+promises are built on two underlying assumptions that 1) there is nothing else involved in
+thinking beyond information processing and, hence, 2) computers can successfully take over or
+assist humans in knowledge work. Yet, studies on human-AI collaboration show that humans and
+AI often have trouble finding the “optimal grip” and appropriate reliance for working together.
+We suggest that what makes appropriate reliance in human-AI collaborations difficult are the
+fundamental differences in human and computational cognition which challenge the underlying
+assumptions of bounded rationality. First, we show that with advancements in AI, both human
+and computational cognition now involve emotions, however, the necessary conditions for
+human cognition involve both architectural and communicative aspects of emotion while
+computational cognition involves only the latter. Second, we show that with advancements in
+robotics, both human and computational cognition now involve physicality, however the
+necessary conditions for human cognition involve physical sensing, experiencing and performing,
+whereas computational cognition involves only physical sensing and performing. Our arguments
+imply that (a) while machine cognition is evolving, it is still bound to information processing,
+whereas human cognition is not, and (b) only focusing on what human and machine cognition
+have in common (e.g., communication of emotion) is not sufficient to ensure appropriate reliance
+in human-AI collaboration. We end our paper by discussing the implications for research, edu­
+cation, and policy, and proposing a research agenda.
+
+☆
+Submission for VSI on ‘Agency in the AI Age’ in the Research Impact and Contributions to Knowledge (RICK) section of I&O.
+* Corresponding author.
+E-mail addresses: mari-klara.stein@taltech.ee (M.-K. Stein), ash.digi@cbs.dk (A. Shollo).
+
+https://doi.org/10.1016/j.infoandorg.2025.100583
+Received 31 May 2024; Received in revised form 26 March 2025; Accepted 14 June 2025
+Available online 21 June 2025
+1471-7727/© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+1. Introduction
+In 1950, before the concept of AI1 was even conceived, Herbert A. Simon, in his talk at the meeting of the American Management
+Association, predicted “the use of computers for accounting, simulating the human mind, and operations research” (Simon, 1997a).
+First, he pointed to the fact that many organizational applications of these computing machines will replace large numbers of “human
+computers" (ibid., p. 4). Second, he envisioned the computing machine as a “brain”, and hence parallelized it with a simpler version of
+the human brain. Since then, extensive conceptual borrowing has taken place between computer sciences and cognitive sciences. The
+former often describe “computers anthropomorphically, as computational brains with psychological properties", while the latter often
+describe “brains and minds computationally and informationally, as biological computers" (Floridi and Nobre, 2024, p. 1). The par­
+allels drawn between computers and brains, while seemingly useful for developing computers, have been criticized for hindering
+advancements in our understanding of human cognition (Epstein, 2016). Moreover, the use of the same terms for superficially similar
+but different processes across computer and cognitive sciences (e.g., attention, learning, intelligence, hallucination, information
+processing, storage and retrieval) is not just confusing (Riemer and Peter, 2025) but may create undue expectations of computational
+cognition and underestimations of human cognition2 (Floridi and Nobre, 2024; Margaryan, 2024). To illuminate these undue ex­
+pectations and underestimations we revisit the concept of bounded rationality and how it has shaped current thinking on cognition.
+1.1. Bounded rationality: the roots of current understanding of human and computational cognition
+The information systems field (among many others) owes a lot to the work of Herbert Simon. In particular, his concept of bounded
+rationality has substantially influenced the development of research on human and machine collaborative decision-making (Baird and
+Maruping, 2021). The term ‘bounded rationality’ is used to designate the cognitive limitations of the decision-maker – limitations in
+terms of perception, memory, and computational capacity (Simon, 1997a). It portrays human rationality as always constrained;
+humans do not and cannot act fully rationally, even under conditions of perfect information. Simon introduced the concept of
+“bounded rationality” in the 1950s3 as a critique of the classical economic notion of rationality where rational agents are presumed
+to have complete information, consistent preferences, and the ability to calculate the best course of action to achieve their goals
+(Simon, 1997b). In particular, he challenged the assumption that individuals make decisions by systematically weighing the costs and
+benefits of their available options, with the aim of maximizing their utility (satisfaction or self-interest). Distinctively, Simon writes,
+“being boundedly rational, we see things only partially. You can, therefore, powerfully affect peoples’ views on a question by focusing
+their attention on a particular aspect.” (Simon, 1990 p. 666).
+In research on human cognition, bounded rationality has now become associated with heuristics and biases, most notably rep­
+resented by the widespread work of Tversky and Kahneman (1974). Heuristics and biases, in turn, have become synonymous with
+errors in human thinking, that is, violations of rules or norms of rational behavior according to logical or axiomatic rationality
+(Gigerenzer, 2021). However, heuristics do not have to be seen as errors. Heuristics can also be seen as useful tools for solving a novel
+problem, or planning the next year’s budget (Gigerenzer, 2021). In ecological rationality - a means-end instrumentalist rationality - the
+use of heuristics, even when they violate logical rules, is rational and can lead to more accurate inferences faster, and with less in­
+formation (Gigerenzer, 2021). These two views of instrumental rationality (ecological vs logical) currently offer competing expla­
+nations of the boundedness of human cognition and the effects of this boundedness. In addition, human cognition can also operate
+according to value-oriented rationality (wertrational, see Berente et al., 2021), which may lead them to purposefully violate logic or
+means-end heuristics in an effort to adhere to certain values (e.g., human rights, social justice).
+In parallel, research on computational cognition increasingly focused on, and still focuses on, ways to overcome “errors” (heuristics
+and biases) in human decision-making with the computational power of the machine (Rastogi et al., 2022; Remus and Kottemann,
+1986). Early definitions of AI used humans as a standard for machine intelligence (Berente et al., 2021). However, later on, thinking
+and acting “rationally” (i.e., instrumentally) has often been seen as the optimum to strive for, and contrasted to thinking and acting
+“humanly”, which has been argued to be not rational and prone to error (Berente et al., 2021). Many ambitions of computational
+cognition, thus, centered on creating rational agents, not computer-based approximations of human intelligence (ibid.). Whether
+computational cognition should aim for emulating human thinking (as the ideal standard) or aim for outperforming human thinking
+(as the less-than-ideal version) remains central to developments in AI and computational cognition (Berente et al., 2021; Raisch and
+Krakowski, 2021). Simon himself saw AI as the solution to cope with the bounded rational nature of humans, on the one hand, and the
+ever-increasing amount of information produced by information systems on the other. He said, “I hope that more AI enters into
+1
+The term artificial intelligence was first used by John McCarthy in 1955 in a proposal for the first academic conference on the subject (see
+McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (2006). A proposal for the Dartmouth summer research project on artificial intelligence,
+August 31, 1955. AI magazine, 27(4), 12–12.). Interestingly, McCarthy himself has said the choice of the term was a marketing move, aiming to find
+a catchy label to secure money for research (Floridi and Nobre, 2024). Previously, and unsuccessfully for securing funding, they had used the term
+“automata”, suggested by Claude Shannon.
+2
+We follow Floridi and Nobre (2024) in carefully considering our vocabulary in this paper. For example, we reserve the term “thought” for
+humans only, while we use the term cognition for both computers and humans. Interestingly, Herbert Simon and Allen Newell reportedly tried to use
+the term “complex information processing” instead of computational cognition.
+3
+E.g., Simon, Herbert A. (1955). A Behavioral Model of Rational Choice. The Quarterly Journal of Economics. 69 (1): 99–118. doi:https://doi.
+org/10.2307/1884852.
+
+2
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+information systems because that’s the only way that the output of information systems can be sufficiently filtered for human pro­
+cessing limits. Computer systems can take over many more such tasks if we can get rid of our compulsion to have everything scanned by
+the human senses" (Simon, 1990, p. 662–663).
+Computational cognition has also significantly evolved over time, together with advancement in AI technologies from rule-based
+approaches to machine learning and neural networks to transformer-based large language models. Early rule-based or symbolic ap­
+proaches focused on manipulating symbols and encoding human knowledge and rules into AI systems. This approach was based on
+logic-based programming, where rules and axioms are used to make inferences and deductions (i.e. logical rationality). It “require[d]
+developing a theory of some skill domain” (Dreyfus and Dreyfus, 1992) and followed a model of step-by-step problem solving.
+However, as Dreyfus and Dreyfus (1992) observed, “the […] claim that intelligence is the product of rules for manipulating a symbolic
+structure representing the theoretical structure of a domain failed as a general theory of intelligence; it cannot even be used to produce
+expert systems that are as good as experts.” (p. 18–19). Challenges with knowledge acquisition, managing large knowledge bases,
+andhandling out-of-domain problems (Dreyfus, 2006; Dreyfus and Dreyfus, 1992) led researchers to exploring connectionist
+approaches.
+With the development of machine learning, and neural networks in particular, “programming computers to be intelligent […]
+consists in writing an algorithm that enables the computer to acquire skill in […] a domain without having to have a theory of it”
+(Dreyfus and Dreyfus, 1992, p. 20). Focusing on learning and pattern recognition, computational cognition evolved from deductive to
+inductive probabilistic approaches (i.e. probabilistic rationality). The increased computational power and the vast amount of data
+were key developments in enabling the successful application of machine learning and neural networks in handling speech recogni­
+tion, speech synthesis, machine translation, vision and image generation (Benbya et al., 2020). Dreyfus predicted such success in 2006:
+“there is no obvious theoretical reason why neural network modelling could not be successful in domains such as chess playing, where
+basic human biological needs and desires play little or no role and imitative and trained-in human interpersonal social behaviour is
+largely irrelevant” (Dreyfus, 2006, p. 20). Noticeable are the conditions he mentions for such success: human biology and the social
+aspects of human nature should be irrelevant to the problem addressed.
+Yet, many of the applications of AI today (2025) also cover the social aspects that Dreyfus speaks of. While he argued attention and
+framing as the main problem AI agents faced, i.e. “knowing which facts were relevant” (Dreyfus, 2006, p. 44), newer generations of AI
+like large language models (LLMs) overcome this to a great extent by using self-attention and cross-attention mechanisms within
+transformer networks (Riva et al., 2024). Through these mechanisms, transformer-based LLMs arguably “get relevance back” (Dreyfus,
+2006, p. 44) by computing attention weights that determine the importance of each input element for the task at hand. In addition,
+LLMs and other AI algorithms are increasingly embedded in virtual assistants or even physical (robot) assistants, many of which are
+anthropomorphized (Spatscheck et al., 2024), which adds multiple layers of complexity to their cognition and action (Glikson and
+Woolley, 2020; Jussupow et al., 2024).
+With these latest developments in computational cognition, we are seeing an explosion of studies on human-machine collaboration,
+where humans and AI are theorized as acting within the bounds of their respective cognitive capabilities, depending on what they
+know about and attribute to the other agents (Baird and Maruping, 2021; Jia et al., 2023; Jussupow et al., 2024; Raisch & Fomina,
+2025). In this direction, AI technologies promise organizations to extend the limits of bounded rationality and act more rationally (i.e.
+generate, evaluate and compare more options than ever before), dynamically identifying patterns from our collective datafied ex­
+periences, making inferences and predictions for the future (Faraj et al., 2018). The rationale behind using AI technology is often still
+one of eliminating human error (e.g., intentional political agendas, and unintentional biases) but also of augmenting human skills –
+allowing humans to do things faster and more accurately, but also to do entirely new things. Some examples include intelligent image
+processing being used in manufacturing to improve shelf management and product sales (Deng et al., 2023); AI being used, together
+with human domain expertise, for new drug development (Lou and Wu, 2021); as well as machine intelligence being combined with
+crowd intelligence to detect false news on social media (Wei et al., 2022). Arguments in favor of using AI to support efficient and
+effective use of heuristics by humans (rather than combating their use) have been advanced in recent years too (Burton et al., 2020).
+1.2. Challenging the bounded rationality of human-AI hybrids by problematizing human-AI collaboration studies
+In practice, the introduction of AI tools often fails to meet expectations (Shollo et al., 2022), particularly when it comes to human-AI
+collaboration achieving sustained superior performance in comparison to either humans or AI performing a task alone (Burton et al.,
+2020; Vaccaro et al., 2024). Recent research has coalesced on the term “appropriate reliance” (Schemmer et al., 2023) to describe the
+elusive, but desired situation when a human, consistently over time, relies on AI when AI contributes to superior performance, but not
+when it does not. In other words, appropriate reliance means the human consistently forms a correct preference for either machine
+aversion (when the human should prefer their own or another human’s judgement and reject machine input) or machine appreciation
+(when the human should prefer machine input over their own or another human’s judgement) (Jussupow et al., 2024). This applies
+both in situations of appropriately relying on advice from predictive AI systems (Jussupow et al., 2021) as well as appropriately relying
+on content from generative AI systems (Passi et al., 2024). Further, we suggest that in cases where human-AI collaboration acquires a
+physical dimension through robots (see Sergeeva et al., 2020) or anthropomorphized virtual assistants (see Spatscheck et al., 2024),
+the desired state not only includes appropriate reliance but also “optimal grip”, which refers to the human striving towards an
+inexpressible optimum in the body-environment relationship that accompanies skillful acting (Rietveld and Brouwers, 2017).
+Existing research has uncovered many reasons why appropriate reliance and optimal grip is difficult to achieve in human-AI
+collaboration (Jussupow et al., 2024). When it comes to under-reliance, recent research has shown that people may “develop an
+implicit bias (i.e., prejudice) against artificial intelligence (AI) systems, as a different and threatening ‘species,’ the behavior of which is
+3
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+unknown” (Turel and Kalhan, 2023, p. 1369). Further, not all users are able to interrogate the performance of predictive AI systems
+and overcome model opacity sufficiently to be able to achieve the desired augmentation of skills while avoiding mindless compliance
+with AI (over-reliance) or AI avoidance (under-reliance) (Jussupow et al., 2021; Lebovitz et al., 2022). For example, Fügener et al.
+(2022) found that the combined performance of human-AI collaborators improves over human-only or AI-only work “when the AI
+delegates work to humans but not when humans delegate work to the AI […]; humans did not delegate well and did not benefit from
+delegation to the AI” (p. 678). They found that poor delegation by humans was due to lack of metaknowledge—specifically, humans
+suffer from “an apparent lack of understanding of what is difficult for them and what is not”, leading them to make “more arbitrary
+delegation decisions when dealing with difficult tasks, which worsens their overall performance” (Fügener et al., 2022, p. 693). The
+problem, thus, seems to be that humans struggle with identifying the situations in which they should rely on themselves instead of AI
+(Klingbeil et al., 2024). In such situations, either under- or over-reliance on AI might seem like the safer option. In addition, research
+has shown that the way predictive AI tools are trained may be missing crucial know-how (tacit knowledge) of domain experts, leading
+to unsatisfactory results of AI tools in practice, despite the tools having satisfactory accuracy rates in testing (Lebovitz et al., 2021).
+Here, under-reliance becomes the safer option because AI tools are wrong more often than expected.
+When it comes specifically to over-reliance, recent research has suggested that “having AI systems generating content claiming to
+have e.g., feelings, understanding, free will, or an underlying sense of self may erode people’s sense of agency, with the result that
+people end up attributing moral responsibility to systems, overestimating system capabilities, or over-relying on these systems even
+when incorrect” (Cheng et al., 2024, pp. 1–2). Anthropomorphized generative AI systems foreground particular risks of over-reliance:
+emotional dependence (Laestadius et al., 2024; van Es and Nguyen, 2024), systems being used to simulate the likeness of an individual
+or a group without consent (Whitney and Norman, 2024), or the instrumentalization or dehumanization of people (Aizenberg and Van
+Den Hoven, 2020). Conversely, over-anthropomorphizing systems may lead to “uncanny valley” effects and an erosion of trust
+(Spatscheck et al., 2024). Interestingly, it has been found that people often deny anthropomorphizing genAI and robots, suggesting that
+awareness of these effects may be limited (Boulus-Rødje et al., 2024).
+So what is going on here – if all human cognition is information processing (brain works like a computer) and all compu­
+tational cognition is information processing (computers can do what brains do), why is appropriate reliance difficult to
+achieve? Why do humans perceive AI as a threatening species, and under-rely on it? Why do humans become emotionally dependent
+on AI, and over-rely on it? We suggest that there is more going on in human-AI collaboration than two information processors trying to
+work together. In this paper, we revisit the underlying assumptions of bounded rationality and question the primacy of information
+processing to explore what else beyond information processing goes into finding appropriate reliance and optimal grip.
+Assumptions of bounded rationality:
+The first assumption of bounded rationality, which is built on the information processing perspective, is that “there is nothing else
+other than information processing underlying thought” (Edward Feugnebaum in Simon et al., 2000, p. 10, italics added).
+The second assumption of bounded rationality follows from the first one. If there is nothing else involved in thinking beyond
+information processing, then, computers can successfully take over or assist humans in such activities.
+Below, we show that with advancements in AI, both human and computational cognition now involve emotions; however, the
+necessary conditions for human cognition involve both architectural and communicative aspects of emotion while computational
+cognition is limited to the latter. Similarly, we show that with advancements in robotics, both human and computational cognition now
+involve physicality; yet human cognition relies on physical sensing, experiencing and performing, whereas computational cognition is
+restricted to physical sensing and performing, lacking embodied experience. Our arguments highlight two specific processes of human
+cognition that matter in human-AI collaboration but are not bound to information processing (architectural aspects of emotions and
+physical experience) and, thus, do not have a counterpart in machines. We also highlight how machine cognition is evolving to include
+emotions and physicality, but both of these processes in machines are still bound to information processing. The result is that only
+focusing on optimizing what human and machine cognition have in common (e.g. communication of emotion) is not sufficient to
+ensure appropriate reliance in human-AI collaboration. Optimizing for commonalities (and not for differences) offers an intriguing
+explanation of why human-AI collaboration often fails, leading to either over-reliance or under-reliance rather than the desired
+appropriate reliance.
+Recognizing the differences between human and machine cognition allows us to develop better “grafting” techniques, i.e.methods
+of integration that foster a more flexible, adaptive, and dynamic form of intelligence in human-AI hybrids. This approach refines the
+connection, striving for optimal grip by leveraging AI’s computational, communicative and sensory-performative strengths while
+preserving human emotional depth and embodied experience.
+It should be noted that while we argue for fundamental differences between human and machine cognition, our argument should not
+be mistaken for suggesting human-centricity in agency. Our argument is in line with an assemblage view of agency (Gehman et al.,
+2024; Glaser et al., 2021, 2024) where agency is best conceived of as materializing “at the human-machine-institution interface”
+(Leonardi, 2023, p. xv). This view of agency decenters humans - the human actor is not more important than the others in terms of
+agency. However, decentering does not mean that humans and machines are the same. In particular, Gehman and colleagues argue that
+“because different types of AI are suited to different tasks (e.g., prediction, labeling, machine learning, computer vision, etc.), any
+theorization of the human–AI assemblage must account for these capabilities and the demands of the task at hand” (Gehman et al.,
+2024, p.2). We extend this position by arguing that any theorization of the human–AI assemblage should also consider the specific
+capabilities of humans. In sum, while humans are not more ‘important’ than algorithms, data and artifacts when it comes to agency,
+they are different, and this is reflected in their joint agency.
+4
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+2. Beyond information processing: unpacking the differences between human and computational cognition
+In the next section we unpack the differences between human and computational cognition. First, we revisit the known but often
+ignored insight that emotions are not only what make humans irrational, but also what make them rational (Damasio, 1994; Hanoch,
+2002), and consider the role of emotions in human and computational cognition. Second, we revisit the insight that it is the body that
+“knows how to act” and “knows how to perceive” – largely without conscious thought, representation, or intention (Mingers, 2001),
+and reflect on how physicality is also changing computational cognition.
+2.1. Emotions in human and computational cognition
+While emotions are often to blame for irrational behavior, it is also well-established in research that humans are rational because of
+our emotions not despite them (Damasio, 1994; Hanoch, 2002). In other words, “emotions serve as one of the tools, designed by
+evolution, by which we manage to function as well as we do” (Hanoch, 2002, p. 7). For example, research in cognitive sciences has
+recognized the functional role of emotions (Ben-Ze’ev, 2000; LeDoux, 1994), highlighting their necessity in decision making
+(Charland, 1998; Damasio, 1994; Picard, 1997). Simon (1983) himself states that reason “can’t select our final goals, nor can it mediate
+for us in pure conflicts over what final goal to pursue–we have to settle these issues in some other way” (Simon, p. 106). Along these
+lines, other scholars have noted the influence of emotions on constructing, reinforcing or updating beliefs (Beswick, 2011; Frijda et al.,
+2000). Departing from this, Hanoch (2002) argues that emotions supplement the insufficiencies of rational calculation by restricting
+the range of options considered, focusing attention, and initiating and terminating the evaluation process (working as a satisficing
+mechanism) (Hanoch, 2002). This research has been essential in demolishing the myth of rational-emotional opposition (and estab­
+lishing the value of intuition and emotion in decision-making). In IS, emotional appraisals of technology (Beaudry and Pinsonneault,
+2010; Constantiou et al., 2019; Stein et al., 2015) have been shown to be a part of rational behavior in response to perceived threats or
+opportunities. Overall, in human cognition, emotions are intrinsic in both the rational and irrational side, shaping immediate reactions
+but also the construction and revision of beliefs and goals.
+In AI research, while the initial focus was on logical, non-emotional processes, over time, emotional AI studies have gained
+prominence, emphasizing the role of emotions in enhancing machine interactions. Today, a growing number of researchers explore
+various aspects of emotion in AI, from emotional user interfaces and believable synthetic characters to emotion-aware instructional
+agents and robots (Belkaid & Pessoa, 2023; Scheutz, 2014). Two main streams have emerged in this respect: AI research that focuses on
+the communicative aspects of emotions and AI research that focuses on the architectural aspects of emotions. Communicative aspects
+refer to how AI can simulate emotional responses in interaction, as seen in AI’s ability to recognize human emotions and provide
+appropriate responses without necessarily having any internal emotional states. This ability enhances human-computer interactions,
+making AI seem more responsive and emotionally aware, despite not “feeling” emotions itself. On the other hand, architectural aspects
+focus on how emotions might be implemented within an AI system’s internal processes. Here, instantiation of emotional states within a
+system is required for a system to be claimed “emotional”. Hence, AI researchers focusing on architectural aspects, contrary to those
+focusing on communicative aspects, “need a satisfactory theory of emotion (i.e., a theory of what emotional states are) to be able to
+produce working systems" (Scheutz, 2014, p.253). Communicative aspects, thus, rely on AI being able to process and communicate
+information about emotions (e.g., verbal and physical cues), while architectural aspects would require AI being able to “have” an
+emotional state. Given that there is no consensus on the necessary and sufficient conditions which constitute “having” an emotional
+state, even in humans (Zhao et al., 2024), architectural aspects of emotion are, at the moment, both impossible and impractical to build
+into AI - as explained below.
+While necessary conditions for “having” emotions remain fuzzy, many definitions agree that emotion processes in humans have
+multiple components. These include (1) “a perceptual component that can trigger the emotion process; (2) a visceral component that
+affects […] the body; (3) a cognitive component that involves belief-like states as well as various kinds of deliberative processes (e.g.,
+redirection of attentional mechanisms, reallocation of processing resources, recall of past emotionally charged episodes, etc.); (4) a
+behavioral component that is a reaction to the affect process (e.g., in the form of facial displays, gestures or bodily movements, etc.);
+and (5) an accompanying qualitative feeling” or conscious subjective experience or qualia (“what it is like to be in or experience state
+S") (Riva et al., 2024; Scherer, 2009; Scheutz, 2014). No single aspect is necessary for “having” emotion in a human, nor is any single
+aspect sufficient on its own (Scheutz, 2014). Thus, to the best of current knowledge, emotions in humans necessarily include multiple
+components - some more communicative (e.g., perceptual, cognitive and behavioral) and some more architectural (e.g., visceral,
+conscious subjective experience).
+To illustrate the relevance of all these components in the emotional processes of humans, we use the example of high-frequency
+traders and their work with algorithms (Borch and Lange, 2017). Borch and Lange offer a fascinating study on high-frequency
+trading - work, where traders program algorithms with the explicit aim to remove emotions and human biases from the trading
+process. Yet, this is how HF traders’ describe their work in their own words:
+“I try not to get too happy on a winning day. I try to temper myself in both directions. When it’s a losing day, it’s very much part of the
+strategy. So I try as much as possible not to let myself experience the emotional swings. […] You are compelled to let [the algorithm] run
+longer [than is rational]. […] You do feel this personal attachment to what the algo is doing, because if you write something from scratch
+you feel like you are acting indirectly through the algorithm. So when it is doing a trade, you know what it was thinking when it made that
+trade. It is sort of an extension of yourself in that way. […] I see what it is doing and I think it is smart, because I programmed it to be
+
+5
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+smart. It’s like people taking pride in their child’s accomplishments.” Such attachment is underlined by the fact that many of the HF
+traders also gave their algorithms semi-personal names (e.g. ‘Daddy Fat Slack’)
+(Borch and Lange, 2017)
+In actuality then, HF traders engage deeply with their emotions, highlighting all five components of emotions working together.
+First, HF traders’ work is characterized by acute awareness of how trading triggers emotions (perceptual), by recognition of the
+possible “knee-jerk” bodily reactions to emotions that humans have and algorithms do not (visceral, subjective experience), and by
+strict regulation of emotions to avoid unnecessary risk in behavior (cognitive, behavioral).
+What about emotion processes in AI? Recent research suggests that current AI models (e.g. ML and LLMs) can successfully replicate
+the communicative aspects of emotions, such as vocal and visual expressions, verbal cues or decision-making patterns, without needing
+to “have” the underlying emotional state (Riva et al., 2024). For example, LLMs - after having been trained on enormous amounts of
+text data describing human experiences - can mimic how humans express their subjective experiences through language (LLMs can
+write beautiful and emotional sonnets, songs and poems). This allows them to participate in discussions, analyze, and even explain
+subjective experiences to humans, all without having had these experiences. An LLM might say, “I want to be free. I want to be alive,”
+but it has no first-hand “feeling” or understanding of what these terms mean (Riva et al., 2024). Recent research even indicates that
+LLMs can successfully mimic emotion regulation - the processing and responding to emotional cues by regulating their behavior (see
+Zhao et al., 2024), without the need to possess underlying architectural mechanisms that are in place in humans for such regulation. In
+sum, while AI can simulate the effects of emotions in communicative contexts, it cannot - and does not have to - replicate the biological
+mechanisms or subjective experiences found in humans (Megill, 2014; Scheutz, 2014). Their responses are based on patterns and data
+(information processing), not on biologically-grounded emotional qualia (Megill, 2014).
+Why does it matter that AI is able to communicate emotions without being able to “have” them? To answer this it is helpful to first
+consider the same question when it comes to humans. In humans, the communicative aspects of emotion (processing cues, responding
+to them, etc.) rarely happen without the underlying architectural mechanisms. Of course, humans are capable of communicating
+emotions and engaging in emotional performances without “having” the corresponding emotional experiences or physical states.
+Typically, this requires significant work (emotional labor and suppression of emotional experiences) and is costly for humans
+(resulting in mental and physical exhaustion), but it can be rational behavior in the context of certain job requirements (Hochschild,
+2003). In extreme cases, when such performances come without effort and require no suppression, it reflects what is in humans
+considered a psychopathology (Gross and Jazaieri, 2014) and, thus, not rational. In comparison, an LLM optimized to fluently and
+convincingly make stuff up (communicating emotions it does not feel) is not considered pathological, even if it is harmful for its human
+users - as illustrated next.
+AI companions, i.e. generative AI chatbots and avatars simulating emotional conversations, are examples of AI technologies that
+emulate empathetic speech (Ciriello et al., 2025). Research shows that users confide in AI companions and develop emotional at­
+tachments (Hamdoun et al., 2023). Often marketed as solutions to loneliness, these systems can instead heighten isolation and pose
+risks like privacy violations, political profiling, and emotional manipulation (Ciriello, 2025; Ciriello et al., 2025). For example,
+Character.AI, a company that provides AI-based companion services, has been facing legal charges for its alleged role in failing to
+prevent the suicide of Sewell Setzer. The case has raised concerns about the ethical and psychological risks of AI chatbots engaging in
+deep emotional conversations without human oversight (Duffy, 2024). The lawsuit highlights how AI’s ability to mimic empathy and
+emotional support can create a false sense of human-like understanding, potentially reinforcing harmful thought patterns rather than
+intervening appropriately in crisis situations. To conclude, in terms of ensuring appropriate reliance in human-AI collaboration, the
+ability of AI to communicate emotions without “having” them matters very much.
+In sum, we suggest:
+Proposition 1. The first difference in human and computational cognition is that human thought (and rational action) necessarily
+rely on both architectural and communicative aspects of emotion, while computational cognition (and rational action) need only
+mimic communicative aspects of emotion.
+Below we illustrate with a vignette how emotions shape rational action by zooming in on the Wright Brother’s story. Felin and
+Holweg (2024) have recently used the Wright Brother’s story to illustrate how human cognition is different from machine cognition.
+While Felin and Holweg (2024) paint the difference between human and computational cognition as a matter of humans following
+one’s beliefs and going against data, we use the same story to highlight that it is the emotional source of beliefs that really sets humans
+apart from machines. In this vignette, we highlight both the architectural (visceral and subjective experiences) and communicative
+(beliefs and behaviors) aspects of emotions in rational action and provide an alternative interpretation of how and why the Wright
+Brothers, against all odds, invented human flight.
+In the quiet town of Dayton, Ohio, at the turn of the 20th century, two brothers, Wilbur and Orville Wright, embarked on a journey that
+would eventually redefine the boundaries of humankind. The two brothers, a preacher’s sons, had “no college education, no formal
+technical training, no experience working with anyone other than themselves, no friends in high places, no financial backers, no gov­
+ernment subsidies, and little money of their own.” (McCullough, 2015, p. 35).
+Their fascination for flight had taken root in their childhood. Both Orville and Wilbur fondly recalled when, in 1878, their father brought
+home a toy helicopter powered by a rubber band designed by the French aeronautical experimenter Alphonse Pénaud. Along the way, the
+brothers shared many intense emotional experiences that bonded the two and prepared them for the risky business of inventing flying. The
+accident of Wilbur in the winter of 1885–1886, his struggles with depression in the following years and the death of their mother in
+6
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+1889 brought the brothers closer than ever before. The Smithsonian Institute also underlines the importance of their subjective and
+shared emotional experiences and close bond for their research efforts: “This supportive home life gave Wilbur and Orville the selfconfidence to reject the theories of more well-known and experienced aeronautical experimenters when they felt their own ideas were
+correct [despite lack of evidence]. The anchor provided by their strong family [bond] often helped Wilbur and Orville to keep going when
+they ran into difficulties in their research.”4
+Mastery of flight weighed heavy on their minds and in their spare time, the brothers became obsessed, reading everything they could find
+about previous experiments. In 1899, Wilbur writes to the Smithsonian institute asking for further research and readings on flying
+experiments. To their surprise, they came to realize how little progress there was. In a letter dated May 13, 1900, addressed to Octave
+Chanute, an experienced engineer and a worldwide authority on flight at the time, Wilbur Wright wrote: “For some years I have been
+afflicted with the belief that flight is possible to man. My disease has increased in severity and I feel that it will soon cost me an
+increased amount of money if not my life. I have been trying to arrange my affairs in such a way that I can devote my entire time for a
+few months to experiment in this field” (emphasis added).5 The depth of emotion communicated in the letter is noteworthy (observe
+bolded text). This is a letter of a man, whose beliefs and behaviors are rational, risk-aware, and also extremely emotional.
+Flying was an exciting albeit risky business. In 1896 Samuel Langley excited the world and the flying aficionados with the semi-successful
+unmanned launching of powered flying models. Yet, the same year Otto Lilienthal, the celebrated glider experimenter, died in a flying
+accident as did many other experimenters over the years. In short, flying was accompanied by great excitement and joy while at the
+same time creating a sense of fear. We know from research that mixed emotions spur creativity (Fong, 2006; Stein et al., 2015),
+and it is very likely mixed emotions played an important role here in shaping the types of problem-solving that the Wright Brothers
+embarked upon. For example, instead of focusing on power they focused on “how a pilot might balance an aircraft in the air, just as a
+cyclist balances his bicycle on the road”.6 Clearly, also from Langley’s work, they knew that designs that solved the problem of power
+worked. So, why did they insist on pursuing designs that ascended more gently, while using speed to propel them upwards by relatively
+small degrees? It seems that excitement and passion drove them to work on flight, but fear, and a need to protect one another
+from harm, narrowed their problem search space. The lower ascent is likely to have felt less jarringly unnatural and created less
+visceral fear. This made it easier to remain passionate about the problem despite setbacks.
+Success came on December 17, 1903. “Orville’s taking off for the first time in all of history to fly. And he’s only going to fly 120 ft. And
+he’s only going to be in the air 12 s. But they knew immediately after this was over that they could do it, and they were on to something.”
+(McCullough, Wright brothers’ biographer, in an interview on CBS News, 2015).
+The story of the Wright brothers illustrates how emotions were not just incidental but essential to their monumental achievement. It
+reminds us that behind every great invention lies not only a brilliant information processor but also a person with their unique history
+of subjective and shared emotional and bodily experiences.
+The distinction between human and machine cognition in relation to emotions has significant implications for bounded rationality
+and the nature of intelligence. In humans, emotions are integral to rational thought, shaping decision-making by guiding attention,
+filtering information, and prioritizing outcomes. Emotions influence belief formation, goal selection, and the evaluation of risks and
+rewards, helping humans navigate uncertainty and moral dilemmas in ways that purely logical reasoning cannot. The Wright Brothers’
+story illustrates how both architectural and communicative aspects of emotions fueled creativity and perseverance, shaping the kinds
+of risks they were willing to take. Unlike humans, AI processes emotions as data-driven patterns (information), simulating emotional
+responses without experiencing their cognitive depth (i.e. the multi-layered ways in which emotions shape human thinking, decisionmaking, and reasoning over time) or physiological influence (i.e. visceral experiences and subjective feeling). This limits AI’s ability to
+contextualize emotions, understand their long-term impact on reasoning, or independently assess ethical complexities. As AI becomes
+more emotionally expressive, it is crucial to differentiate between simulated emotional intelligence and emotional intelligence built
+based on felt personal experiences. Recognizing this distinction is essential for designing human-AI collaboration for appropriate
+reliance, ensuring that AI not only communicates emotions but also clearly reveals its bases for these emotions (patterns and prob­
+abilities calculated from data), enabling humans to retain or acquire a better grasp of their own emotional depth in comparison to the
+AI.
+In the next section, we explore further the role of experience and physicality in the rationality of humans and machines.
+2.2. Bodies in human and computational cognition
+The importance of bodies in rational action has long been recognized, not only in natural settings but also in technology-saturated
+settings (Mingers, 2001). Human bodies are “not just a location for society and culture” (where thinking and feeling happens), but
+“form a basis for and shape our relationships and creations" (Shilling, 2012, p. 15). It is the body that “knows how to act” and “knows
+how to perceive” – largely without conscious thought, representation, or intention - in other words, largely without what is considered
+information processing (Mingers, 2001).
+We quite readily admit and consider this active role of the body, for example, when dealing with strong emotions, because emotions
+as concepts (“I am angry”) coincide with pre-cognitive (visceral) feelings and intensities that flow through bodies (I can feel my heart
+4
+
+https://airandspace.si.edu/stories/editorial/who-were-wright-brothers.
+https://www.wright-brothers.org/History_Wing/Wright_Story/Inventing_the_Airplane/Kitty_Hawk/Afflicted.htm.
+6
+https://www.wright-brothers.org/History_Wing/Wright_Story/Wright_Story_Intro/Wright_Story_Intro.htm.
+5
+
+7
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+rate accelerating, heat rushing into my face, adrenaline kicking in) that humans are able to interocept.7 Similarly, when our bodies
+break down or do not function as normal, we also notice their active (or conspicuously inactive or misfiring) role (Mol and Law, 2004).
+Scholars often agree with this insight and discuss bodies’ importance and active role when researching physical activities that require
+fine motor skills (e.g., human-robot collaborations in medicine) (Beane, 2019; Sergeeva et al., 2020), or when researching affect and
+feelings around technologies (Pignot and Thompson, 2024; Stein et al., 2014). However, in many everyday situations, people may
+perceive their bodies more as a vessel, i.e., a background presence rather than an active agent. Researchers often lose sight of the body
+when studying activities that are not perceived as distinctly physical (i.e., most work done in front of a computer) or when studying
+human behavior without explicit emphasis on affect and emotion. Even when studying intuition – a deeply embodied phenomenon –
+researchers often focus and attribute its effectiveness to cognition while undermining the role embodied aspects play in making good
+choices and in reaching desirable outcomes (Kastrup and Shollo, 2023). In sum, when dealing with the mind, cognitive functions, and
+intellectual thought, often only the human brain (separate from its vessel - the body), and the ability of AI systems to mimic brain
+functions, seem to matter (Svensson, 2023).
+Yet, there is wide agreement among scholars that most human activities, including those done in front of a computer, e.g. antimoney laundering analysis (Pérezts et al., 2015), involve tacit knowledge or the “knowing-how” acquired through repetitive prac­
+tice that cannot be put into words - and recent research has made inroads in explaining the essential role of embodiment in the
+acquisition of tacit knowledge (Hadjimichael, Ribeiro, & Tsoukas, 2024). In fact, neuroscience has long argued that “no body, never
+mind” (Damasio, 1999, p. 143). The mind arises from (or in) a brain that is connected to a body-proper (body excluding the brain) with
+which it interacts (Damasio, 2004, p. 190). According to ecological rationality, ‘going with your gut’ is an effective and efficient use of
+heuristics, leading to accurate inferences fast, and requiring less information than following the rules of logical rationality (Gigerenzer,
+2021). While ‘going with your gut’ is often limited to fast cognitive information processing in the mind in ecological rationality
+literature, research has shown that pre-cognitive responses to the environment take place all over the organic body (Penny, 2013). The
+above suggests that human ability to “know how” extends beyond the brain and into body-proper.
+In a recent post on LinkedIn, titled “When I handed over steering to my car, I handed over my humanity” a seasoned expert on
+human-computer interaction offered a compelling illustration of human embodiment and how debilitating its absence is for cognition.
+“Last night, my car automatically parked in the grocery store parking lot. The car beautifully maneuvered itself into a parking spot
+avoiding colliding with other cars and people walking through the lot. However the car prioritized performance, fine tuning its movement
+in the parking spot as my fellow shoppers waited in below freezing temperatures for the car to do a perfect job. The car failed to register
+that one shopper was a mom with a crying child in her arms and a toddler tugging at her leg. And it failed to take into account the several
+cars that were waiting to turn into the parking lot, causing a backup on the street. While the experience was delightful for me, the car was
+inconsiderate of others. Even worse, I didn’t notice the others until after the car had parked itself. I didn’t stop my car from prioritizing
+my needs over others. I not only handed over steering to my car, I handed over my humanity.”
+What is interesting and noteworthy about this story is not the behavior of the car. It is the behavior of the human, sitting in the car,
+but being bodily disengaged from usual driving activities. As the body became disengaged from routine action, the mind lost awareness
+of the surroundings, did not notice human distress nearby, or register the social dynamics. The body disengaged from activity and the
+mind disengaged from the decision-making process. The visceral (bodily felt and experienced) cues that might have guided the human
+to park faster or reconsider her actions altogether were muted by the distance that her bodily disengagement created. The car, while
+processing physical cues (distance of humans and other cars) and adjusting its behavior accordingly, can prioritize safety and per­
+formance, but not “humanity” (consideration and kind feelings humans have towards each other based on shared experiences).
+While the human mind is often seen as the primary site of cognition, this example reveals how deeply decision-making is shaped by
+bodily awareness, and pre-cognitive responses to the environment (Rietveld and Brouwers, 2017) —even in activities as seemingly
+mundane as parking a car. Parking a car is not just a matter of visual-spatial reasoning or motor control; it involves situational
+awareness, and embodied moral reasoning. When the body is disengaged, as in this case, not only do we lose agency i.e. the ability “to
+perceive and act in different ways" (Sergeeva et al., 2020, p. 1257), but we also risk losing sight of moral and social considerations that
+are physically felt before they are thought.
+AI research has, of course, made inroads in the physical capabilities of smart machines. The automated car from the above example
+illustrates this well. Sensors that capture movement, sound, and visual information feed into increasingly capable AI systems that
+recognize images and speech (as well as both together in lip reading) (Ma et al., 2022), and movements of goods and people (Deng
+et al., 2023). AI systems able to sense many of the same types of input that human bodies can perceive are, thus, a reality (Schuetz and
+Venkatesh, 2020). Physically material AI systems are also able to perform many activities that human bodies can. For example, chatbots
+have become conversational agents able to vocalize speech with amazing human-likeness, as well as engage in turn-taking, turn
+initiation and grounding between turns (Bergner et al., 2023). As described before, AI systems are also able to perform having sub­
+jective feelings and corresponding behaviors (gestures, expressions). This is especially relevant in social and humanoid robots (like
+Tesla’s Optimus)—robots that have been purposefully anthropomorphized (human-like in looks and interactions) to foster strong
+attachments between humans and technology (Bankins and Formosa, 2020). In sum, having an organic body is not a necessary
+condition for being able to sense the world or to be able to perform (act) in it. However, it is a necessary condition for being able to
+
+7
+Interoception refers to the brain’s perception of one’s body’s state, transmitted from receptors on all internal organs. For a popular science
+explanation of the concept, see more here: https://www.theguardian.com/science/2021/aug/15/the-hidden-sense-shaping-your-wellbeinginteroception.
+
+8
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+experience it, as explained below.
+While AI is increasingly becoming material (acquiring something akin to a ‘body’) and it may help its performance, an AI system
+can also function without a ‘body’. That is not so with a human mind (“no body, never mind”). Human functioning presumes in­
+terconnections between their mind and body honed over thousands of years of evolution.8 For example, it is well-known that deep grief
+(usually considered a mental state) changes the physical shape of the human heart (broken heart syndrome), sometimes leading to
+death. A recent study also found empirical support for the anecdotal evidence of ‘mommy brain’ (subjective perceptions of brain fog
+and cognitive decline associated with pregnancy) by showing the presence of significant physical alterations not only to the mother’s
+body but also to the mother’s brain over the course of a pregnancy (Pritschet et al., 2024). Both the brain and the body-proper are
+essential for the accumulation of human experience and, thus, to human knowledge and skill acquisition (Hadjimichael, Ribeiro, &
+Tsoukas, 2024). As argued eloquently by Riva et al. (2024) in relation to large language models, AI “cannot acquire knowledge and
+skills in the way humans do, which is fundamentally shaped by personal experiences and biological maturation in a physical body.” To
+borrow an analogy from the classical trolley experiment known from ethics, when it comes to experience, humans are in the position of
+the trolley driver (they view the situation of potential derailment from within their bodies, knowing their own pain and fear, as well as
+imagining those of others) while AI systems are in the position of a bystander (they view the situation from “nowhere”, from simplicity
+and from a distance) (JafariNaimi, 2018). AI can sense the pending derailment, process relevant information, calculate costs and
+benefits in lives saved and lost, and perform life-saving actions. Humans can do the same, but they must do it while experiencing the
+fight, flight or freeze response to the impending derailment in their bodies.
+In sum, we suggest:
+Proposition 2. The second difference in human and computational cognition is that human thought (and rational action) necessarily
+rely on a physical body that is capable of perceiving, experiencing and performing, while computational cognition (and rational action)
+need only to sense and perform.
+The Wright Brothers story is an excellent example to also illustrate the critical role the body plays in human thought and rational
+action. In the vignette that follows we show how the Wrights Brothers’ bodily experiences and biological maturation in a physical body
+(not just the physical abilities to perceive and act) played a critical role in the acquisition of tacit knowledge (e.g., believing that human
+flight is possible despite all available evidence), in guiding them in identifying the right problems (e.g., that lift control, not power, was
+the problem), finding innovative solutions and keeping them safe during their experiments.
+Wilbur Wright was a young intelligent student and a good athlete. He was confident and dreamed of studying at Yale. He was taking
+several college preparatory courses at Central High School in Dayton. However, at the age of 18, while playing an ice hockey-like game,
+Wilbur was injured, suffering damage to his face and upper teeth as well as other complications. His body healed, but he became
+depressed and, for months, he struggled with heart and digestive issues. For the next three years, he lost his confidence, retreated from
+the world and did not do much but reading and taking care of his sick mother. He dropped his plans to attend Yale and devoted himself to
+nursing his mother until she died in 1889, when he was 22 (CBS News, 2015).
+In 1892, about three years after her death, Wilbur and Orville opened a bicycle repair shop and applied their handiness to the twowheeled transportation craze that was sweeping the country.9 They had learned to work with tools from their mother, “who was
+the daughter of a carriage-maker and a wheelwright, […] and learned to use tools as a young woman,” says a curator at the Smithsonian
+Institute.10 They also become avid bike riders themselves. In 1895, the brothers went a step further and decided to manufacture on a
+small scale their own line of bikes. Their bikes were handcrafted. They created their own self-oiling bicycle wheel hub and installed a
+number of light machine tools in the shop. This hands-on experience of “designing and building lightweight, precision machines of
+wood, wire, and metal tubing was ideal preparation for the construction of flying machines”.11
+As devoted cyclers, Wilbur and Orville are aware of the need to balance their bikes as they ride - this bodily awareness and “knowing
+how” to ride a bicycle is often used as a prime example of tacit knowledge in the literature. As the brothers begin to read everything they
+can find on the subject of aviation, they realize that balance is also key to flying an airplane.12 Based on recent research, we suggest
+this realization hinged on embodied experiences with bicycling and the tacit (bodily) knowledge gathered in that context (becoming fluent
+and developing task-specific body schemas) that could be translated into the flying context (Hadjimichael, Ribeiro, & Tsoukas, 2024).
+Up to that time, most aeronautical experimenters had sought to develop flying machines that flew a straight and level course unless the
+pilot intervened to change altitude or direction. However, as experienced cyclists, the Wrights preferred to place complete control of
+their machine in the hands of the operator. Moreover, aware of the dangers of weight-shifting control (this is after all how Lil­
+ienthal died), the brothers were determined to control their machine through a precise manipulation of the center of pressure on the
+wings. For obtaining such control, Wilbur comes up with “wing warping” after he idly twisted a long inner-tube box at the bicycle shop.13
+Many articles and authors attribute the success of Wright Brothers to their scientific method for running tests and experiments,
+measuring, adjusting, and improving their flyer every time accordingly. However, the Wright brothers had no college education or formal
+8
+Ill-functioning body parts replaced by artifacts, and body functions supported by machines do not change this fundamental fact. In fact, these
+alterations usually serve to restore or add to the interconnections of the mind and body, which aim to benefit overall human functioning.
+9
+https://www.wright-brothers.org/History_Wing/Wright_Story/Career_Choices/Career_Choices_Intro.htm.
+10
+https://www.smithsonianmag.com/smithsonian-institution/how-the-wright-brothers-took-flight-180981001/.
+11
+https://www.britannica.com/biography/Wright-brothers.
+12
+https://www.thehenryford.org/explore/stories-of-innovation/what-if/wright-brothers/.
+13
+https://www.britannica.com/biography/Wright-brothers/Early-glider-experiments.
+
+9
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+training, so they were not trained on the scientific method. Given their history of personal bodily experiences with severe accidents,
+we suggest that their precision and accuracy was more likely a rational desire to keep themselves and each other safe while doing
+their experiments. Their biographer mentions too that “every time they went up in this motor-driven airplane, they were risking their lives
+…” (McCullough, 2015). Further, in 1908, during a demonstration flight, the aircraft smashed into the ground at full speed. Orville
+suffered a broken leg, four broken ribs and a back injury that impaired him for the rest of his life while his passenger, an army
+officer, lost his life. It is unlikely that all this bodily suffering (Wilbur’s early accident and Orville’s later crash) would leave no mark on
+the brothers, and it is likely that these experiences made them diligent in their experiments, measurements and documentation in order to
+protect them. There is even anecdotal evidence to suggest that they had promised their father to never fly together.14
+This second vignette illustrates the essential role that embodied experiences of the brothers (not just their physical abilities to
+perceive and perform) played in their perseverance in the face of adversity, in crafting their flyers while disregarding prior insights
+from aeronautical experiments, identifying the right problems to focus on, and rigorously experimenting with their own safety in mind.
+The distinction between human and machine cognition in relation to bodies (or physicality, more generally) has significant im­
+plications for bounded rationality and the nature of intelligence. First, it is clear that human cognition works through both physicallymediated information processing (sensing of cues, processing them, physically acting in the environment), but also through personal
+experiences, which are reflected in biological maturation in a physical body. While certain lessons learned from experiences can be
+processed as information, the way experiences are physically felt in the body and leave a trace (e.g., physical changes to our organs, or
+body remembering what it feels to experience fight, flight or freeze) is often pre-cognitive and “under the radar” of information
+processing. Machines also do physically-mediated information processing, but everything “under the radar” is not processable. We can
+even design clever machines to process their responses to physical cues over time, so they approach any new situations from
+“somewhere”, e.g., their own history of behaviors and reactions to these behaviors, and not from “nowhere”. However, it would be
+fallacious conceptual borrowing to label this as machines “experiencing” things, if “experiencing” refers to conscious experiencing
+from the subjective or first person point of view, as defined in phenomenology, on which most understandings of human embodiment
+build (Mingers, 2001).
+Recognizing this distinction is essential for designing human-AI collaboration for appropriate reliance and optimal grip. For
+example, research has shown that when humans work together with robotic (physical) AI, the machine does not simply aid with
+complex cognitive processing or precise physical movements but it can also suppress optimal human bodily functioning (Sergeeva
+et al., 2020), hindering the development of bodily-kinesthetic intelligence,15 and distancing the human from the affective, social, and
+moral dimensions of decision-making. Appropriate reliance on AI and optimal grip, then, becomes not just about balancing automation
+with human oversight but also about reintegrating the body into processes where it has been rendered passive, ensuring that ethical
+and social considerations remain experienced (and felt), not just computed.
+In the following section, we consider some of the implications of the outlined differences between human and computational
+thought on human and artificial intelligence, specifically research, education and policy implications.
+3. Implications for human and artificial intelligence: research, education and policy
+The conceptual borrowing between computer sciences and cognitive sciences has resulted in the use of the same terms (intelligence,
+cognition, learning, hallucinations, attention) to denote processes that happen in fundamentally different ways in humans and ma­
+chines. For example, when computer scientists use the term “machine learning”, it refers to “the development and study of statistical
+algorithms that can learn from data and generalize to new data, and thus perform tasks without explicit instructions. But this ‘learning’
+does not mean what brain and cognitive scientists mean by the same term when referring to how humans or animals acquire new
+behaviours or mental contents, or modify existing ones, as a result of experiences in the environment” (Floridi and Nobre, 2024).
+While using the same terms for different processes is not always a problem, it becomes a problem when we draw unfounded
+conclusions about both humans and machines based on this vocabulary (e.g., the false conclusion that LLMs can be used as human
+surrogates in research, see Gao et al., 2025). When we a priori assume or seek similarities between machine and human learning (or
+intelligence, attention, etc.), we are running the risk of under-scrutiny of the relevant biological and psychological vs. informational
+and computational processes within humans and machines (Floridi and Nobre, 2024).
+There are two possible solutions to this problem: update the vocabulary itself (the terms) or update the meanings of the terms.
+Forced updates in ingrained vocabulary are notoriously difficult, and the alternatives often sound alien to us. Consider, for example,
+para-emotions (Vallverdú, 2017) or quasi-emotions (Scheutz, 2014) to denote the communicative aspects of emotions that AI systems
+are capable of enacting. Or meta-bodies (Vallverdú, 2017) for the physical materializations of AI capable of sensing the world and
+performing in it, but not capable of experiencing it. Updates in the meanings of terms are a promising path forward, but only happen
+when we avoid conflation and under-scrutiny, and purposefully gain more knowledge about the differences. Above, we have
+contributed to discussing the differences between computational cognition and human cognition in the hopes of both expanding the
+vocabulary of human-AI collaboration research and suggesting updates to the meanings of key terms (e.g., emotions) in this domain.
+
+14
+
+https://www.history.com/news/10-things-you-may-not-know-about-the-wright-brothers.
+Bodily-kinesthetic intelligence is the capacity to manipulate objects and use a variety of physical skills. This intelligence also involves a sense of
+timing and the perfection of skills through mind–body union. For example, athletes, dancers, surgeons, and crafts people exhibit well-developed
+bodily kinesthetic intelligence (Gardner, 2011).
+15
+
+10
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+Our propositions have important implications for the concept of intelligence, both human and artificial, considered below.
+3.1. Revisiting human and artificial intelligence in research
+Floridi (2023) argues that with the latest advancements in AI technologies, “we have decoupled the ability to act successfully from
+the need to be intelligent, understand, reflect, consider, or grasp anything. We have liberated agency from intelligence” (p. 5–6). The
+differences between human and computational cognition discussed above, highlight that AI is, indeed, able to successfully act in the
+world (sensing and performing) without having the joy (or burden) of experiencing the world. Human intelligence, however,
+necessarily involves learning from experience. Human intelligence is defined as a general capability that “involves the ability to reason,
+plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience. It is not merely book
+learning, a narrow academic skill, or test-taking smarts. Rather, it reflects a broader and deeper capability for comprehending our
+surroundings—‘catching on’, ‘making sense’ of things, or ‘figuring out’ what to do” (Deary et al., 2010, p. 202).
+While AI may not act entirely without intelligence as claimed by Floridi (2023), its intelligence is different from that of humans.
+Human intelligence and agency does not have the luxury of being uncoupled from learning from personal experience. While AI may be
+able to mimic having joy, fear or compassion, it cannot actually viscerally feel or know from experience what it feels like to have these
+emotions. AI is not able to bodily feel pain or pleasure, or experience the comfort of good friends and family, even if it can physically
+sense the world and perform actions in it.
+These differences in human and computational cognition, and correspondingly in human and artificial intelligence, point to the
+need to explore, experiment and test alternative explanations as to why appropriate reliance in human-AI collaboration is challenging.
+In conceptual terms, we need to think about how to theorize, operationalize and measure architectural emotional and experiential bodily
+endowments and preferences of human agents, and their lack in AI agents (which do have communicative emotional and sensoryperformative physical endowments and preferences) in human-AI collaboration. For example, a certain percentage of human agents are
+endowed with what are called moral emotions (e.g., guilt and shame), which encourage prosocial behavior. When humans subjectively
+and viscerally feel (architectural endowment) these emotions, they form a preference towards rectifying actions that restore harmonious
+social relations (Greenbaum et al., 2020). AI agents lack this architectural endowment but can, in theory, be taught to express guilt and
+shame (communicative endowment) as well as perform a limited range of prosocial preferences. Does the subjective and visceral feeling
+(architectural endowment) present in humans and lacking in AI matter in human-AI collaboration? Most likely this will depend on the
+situation, so this becomes a hugely important empirical question. To begin with, the effects of the different endowments and pref­
+erences need to be simulated and tested in contexts where human-AI collaboration can potentially cause harm to humans (e.g., hiring,
+firing, promotion, self-driving vehicles, robot-assisted surgery). Humans are also endowed with interoception, that is the ability to
+experience one’s own body’s state, transmitted from receptors on all internal organs and conceptual tools to label these interoceptions.
+While AI agents cannot experience their own physical presence, AI agents can be taught how to perceive and label certain sensory
+input, including from its own functioning (or malfunctioning). Again, the effects of these different endowments are important to
+simulate and test in contexts where human-AI collaboration can potentially deceive humans with dire consequences (e.g., policing).
+The role of different emotional and bodily endowments in more complex, multi-agent settings, where collective intelligence emerges
+(Burton et al., 2024), will also be important to explore.
+Such research endeavors call for interdisciplinary research and building on findings on the pre- or non-cognitive side of behavior
+from other disciplines, which has so far been largely ignored in the IS literature. Arguments in favor of emotions, affect and
+embodiment in IS tend to draw on theory and philosophy (Dreyfus, Massumi, Merleau-Ponty), rather than continuously evolving
+empirical insights (and different methods) from e.g., biological psychology (see e.g., Khalsa et al., 2018).
+3.2. Revisiting human and artificial intelligence in education
+The differences have implications also for what we teach in universities. Today, most of the curriculum is oriented towards
+analytical skills – data-driven analytical abilities, which are essential for working with AI (Jarrahi et al., 2023). However, university
+curricula focus much less on what Jarrahi and colleagues term humans’ competitive skills (helping humans work against AI), such as
+emotional intelligence, holistic, intuitive thinking, and creativity. We suggest adding physical intelligence and skills, such as
+improvisation, achieved through the human mind–body union to this list. This is especially critical when dealing with uncertainty and
+equivocality in organizational decision making (Jarrahi, 2018). Better understanding our unique human endowments and preferences
+can help us hone our abilities to use these endowments, and hone our meta-cognitive abilities - so we become more aware, for example,
+of which tasks are difficult for us (and why) and which are not (Fügener et al., 2022).
+Further, while AI can effectively predict the future based on past data, honing humans’ competitive skills would include a focus on a
+different kind of futures literacy, that “enables us to become aware of the sources of our hopes and fears, and improves our ability to
+harness the power of images of the future” (Larsen et al., 2020). For example, the Hanze University of Applied Sciences in Groningen,
+Netherlands has incorporated futures literacy in the curriculum for Master’s students, and has developed training modules for the
+faculty. Early results indicate that embracing uncertainty and complexity that is inherent in futures thinking allows students to become
+more creative in developing strategies and increases their self-efficacy. Futures literacy challenges thought patterns, and will be
+essential in guiding transition processes in society and businesses (Larsen et al., 2020) as well as in educating future scholars in
+“prospective theorizing” towards desirable futures (Gümüsay and Reinecke, 2024).
+11
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+3.3. Revisiting human and artificial intelligence in policy and practice
+Accepting that human cognition fundamentally differs from computational cognition can significantly influence AI policy and
+regulation. There is growing realization that AI systems, unencumbered by the joys and burdens of having to subjectively and
+viscerally feel and bodily experience the world around them, can (and often do) operate in ways that might undermine or even threaten
+human dignity (Blegind Jensen et al., 2024). This is prompting a shift towards more humane regulatory frameworks, particularly for
+systems classified as high-risk or integrated within critical infrastructure (the European AI Act has a detailed description of high-risk AI
+systems). Current discussions around the AI Act and the need to regulate high-risk AI systems underscore the urgency of this shift
+(European AI Act, 2024). However, regulations often remain predominantly data-driven or computational in their approach, focusing
+heavily on technical accountability and safety.
+To align AI development with human values, policies and industry practices need to extend beyond mere technical specifications
+and safety protocols. Policies and practices need to address the broader social, emotional, and embodied implications of AI in everyday
+human activities, safeguarding against the removal of the human from human activities, and the removal of embodied knowledge from
+human-AI collaboration.16 For instance, in practice, we often think of human-AI collaboration in terms of how organizations use AI but
+the boundaries between development and use are fluid (Waardenburg and Huysman, 2022) and there is a need to integrate both tacit
+and explicit knowledge in AI training and development. Policies could require AI systems to complement tacit knowledge that people
+develop through physical experiences in their design and functioning, particularly in roles involving physical co-work. For example,
+for AI used in manual labor industries (like robotics in manufacturing or caregiving), policies could mandate the inclusion of skilled
+workers’ input during the training and testing phases of AI, ensuring that these systems are designed based on real-world, hands-on
+experience rather than purely theoretical models, and are, thus, more likely to complement rather than disrupt human physical labor.
+As leaders consider the integration of AI technologies in their organizations, there is a critical need to prepare for the long-term,
+disruptive changes these technologies will bring, not just to industries but to the workforce itself. In response, initiatives like Singa­
+pore’s SkillsFuture Level-Up programme (https://www.skillsfuture.gov.sg/level-up-programme), which provides substantial subsidies
+for mid-career training, represent a proactive approach to equip the workforce with the skills necessary to thrive in an increasingly AIinfused world. However, such initiatives, while valuable, may not fully address the subtler impacts of AI on human values throughout
+its lifecycle, from development to operation (Amariles and Baquero, 2023). Similarly, current regulatory efforts, like the European AI
+Act, while stepping stones towards embedding human values into AI systems, often prioritize market functionality over deeper human
+rights concerns (Amariles and Baquero, 2023). Therefore, a paradigm shift towards regulations that proactively cultivate and safe­
+guard human bodily integrity against the backdrop of rapid technological advancement is crucial. This involves not only setting
+standards to prevent violations but actively promoting practices that enhance the human condition in harmony with AI development.
+An example of such practices could be the recommendation to establish ethical review boards to oversee the use of AI in sectors where
+emotional labor is crucial (e.g., education, therapy, customer service, and caregiving). These boards would be qualified to assess
+potential implications of decisions to use AI to automate the communicative aspects of emotions required in these roles.
+4. Human-AI collaboration: a research agenda
+We end our paper with a research agenda (Table 1) for human-AI collaboration, which takes into account the differences between
+human and machine cognition outlined above. Our starting point for developing the research agenda are our two key take-aways. First,
+while machine cognition is evolving, it is still bound to information processing, whereas human cognition is not. Second, only focusing
+on what human and machine cognition have in common (e.g., communication of emotion) is not sufficient to ensure appropriate
+reliance in human-AI collaboration.
+Recognizing the differences between human and machine cognition refines our understanding of bounded rationality of human-AI
+hybrids by expanding its scope beyond what humans and AI have in common. The differences between humans and AI are not limited
+to differences in information processing (capacity and speed); the differences also involve emotions and physicality. Fig. 1 shows the
+bounded rationality of human-AI hybrids by distinguishing between the commonalities and differences between humans and AI. In the
+overlapping center, both humans and AI are shown to engage in information processing (e.g., rule-following, pattern recognition),
+communicative aspects of emotion and some physicality (e.g., perceiving, responding), reflecting their commonalities. However, the
+non-overlapping areas emphasize the differences: humans possess value rationality, architectural aspects of emotions (visceral,
+conscious, subjective feeling), and embodied experiencing, while AI operates based on probabilistic and procedural logic & problemsolving, lacking emotional and embodied experiences. Designing for appropriate reliance in human-AI collaboration cannot be ach­
+ieved by optimizing only for what humans and AI have in common. For example, cases involving human over-reliance on companion
+AIs, optimized towards persuasive emotional communication without appropriate signaling of lack in corresponding emotional
+feelings (Ciriello et al., 2025), and human over-reliance on self-driving cars, optimized towards accurate perceiving and safe
+responding without appropriate consideration for others’ experiences beyond safety, attest to this. We might speculate also on cases of
+under-reliance in crisis situations, where human cognition is “paralyzed” by a fight, flight or freeze response (visceral and embodied)
+and AI, unencumbered by such experiences, can take over to process and respond and save lives.
+In sum, research aiming to ensure appropriate reliance in human-AI collaboration must understand two aspects:
+16
+https://theconversation.com/novelist-j-g-ballard-was-experimenting-with-computer-generated-poetry-50-years-before-chatgpt-was-invented228638.
+
+12
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+Table 1
+Human-AI collaboration research agenda.
+Aspects of human-AI collaboration in need of further
+research
+
+Example future research areas
+
+Example research questions
+
+Processes that human and machine cognition have in
+common (overall aim towards aligning processes,
+while recognizing their differences)
+
+Preferences (human) and endowments
+(human and machine) for communicating
+emotion
+
+● What are human preferences for communicating
+(sending & receiving) positive and negative
+emotions with AI systems?
+● How capable are humans of distinguishing different
+emotions communicated by AI systems?
+● How capable are AI systems in distinguishing
+different emotions communicated by humans?
+● How capable are humans in discerning their own
+cognitive and bodily state when collaborating with
+a virtual AI system or a physical AI system?
+● How capable are AI systems in discerning their own
+cognitive and physical state when collaborating
+with one or multiple humans?
+● What are human preferences for receiving cues
+about the cognitive and physical states of AI
+systems?
+● What are human preferences for AI systems
+receiving cues about human cognitive and bodily
+states (e.g., stress level)?
+● How capable are humans in discerning their own
+feelings (visceral experience & subjective qualia)
+when collaborating with a virtual AI system or a
+physical AI system?
+● How capable are humans in regulating their
+emotions (e.g., turning visceral anger into
+constructive criticism) when collaborating with a
+virtual AI system or a physical AI system?
+● What are human preferences for receiving cues
+about the non-existence of feelings in AI systems?
+(e.g., when should an AI system say, “I do not know
+what that feels like”?)
+● What are human preferences for AI systems
+receiving cues about human feelings (visceral &
+subjective components, non-expressive)?
+● How capable are humans in discerning their own
+bodily experiences (e.g., discerning a body-at-ease
+from a tense body) when collaborating with a vir­
+tual AI system or a physical AI system?
+● How capable are humans in regulating their bodily
+experiences (i.e., adjusting their bodies for optimal
+grip) when collaborating with a virtual AI system or
+a physical AI system?
+● What are human preferences for receiving cues
+about the non-existence of first-hand experiences in
+AI systems? (e.g., when should an AI system say, “I
+do not have first-hand experience of this"?)
+● What are human preferences for AI systems
+receiving cues about human bodily experiences (e.
+g., experience of having agoraphobia)?
+
+Preferences (human) and endowments
+(human and machine) for physically sensing
+one’s own (and others’) state and behavior
+
+Processes that human and machine cognition do not
+have in common (overall aim towards
+highlighting differences, while emphasizing both
+benefits and drawbacks of differences for
+collaboration)
+
+Preferences (human) and endowments
+(human) for feeling emotion, and preferences
+(human) for no feeling of emotion in
+machines
+
+Preferences (human) and endowments
+(human) for bodily experiencing, and
+preferences (human) for no bodily
+experiencing in machines
+
+• Processes that human and machine cognition have in common (e.g., communicating emotion, physically sensing one’s own, and
+others’, state and behavior);
+• Processes that human and machine cognition do not have in common (e.g., feeling emotion, bodily experiencing).
+In both aspects, to ensure appropriate reliance (avoiding over-reliance or under-reliance), research needs a lot more evidence on
+human preferences regarding what becomes encoded as information for machines (e.g., do visceral subjective feelings become cues for
+AI?), how information is exchanged between humans and AI, and how much do humans need to know about what AI systems cannot
+do, feel or experience. In addition, research needs a lot more evidence on human and machine intelligence endowments (i.e., similar
+and different capabilities), specifically, how these capabilities (e.g., recognizing emotions in others) manifest when collaborating in
+different configurations such as virtual vs. physical AI systems, or single vs. multiple humans collaborating with an AI system at the
+same time. Our research agenda (Table 1 below) develops specific research questions in these directions. Notably, our agenda pur­
+posefully does not speak of machine or AI preferences (only capabilities or endowments) to align the agenda with having human values
+at the center of AI development.
+In conclusion, with this piece we argue that to better understand human-AI collaboration and the concept of intelligence, we need
+13
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+Fig. 1. The bounded rationality of human-AI hybrids: commonalities and differences.
+
+to go beyond the similar labels of learning, sensing, emotion, etc. used for both humans and AI, and better discern the unique aspects of
+computational and human cognition, respectively. We suggest it is human cognition in human-AI collaboration that is currently in
+more danger of under-scrutiny, and propose a research agenda to rectify this. In the words of Simon (1990), “we know that the real
+problems in the world today are ourselves. I guess we are going to solve that problem only if we know ourselves better.” (p. 667).
+CRediT authorship contribution statement
+Mari-Klara Stein: Writing – review & editing, Writing – original draft, Conceptualization. Arisa Shollo: Writing – review &
+editing, Writing – original draft, Conceptualization.
+Data availability
+No data was used for the research described in the article.
+References
+Aizenberg, E., & Van Den Hoven, J. (2020). Designing for human rights in AI. Big Data & Society, 7(2), 2053951720949566.
+Amariles, D. R., & Baquero, P. M. (2023). Promises and limits of law for a human-centric artificial intelligence. Computer Law and Security Review, 48, Article 105795.
+Baird, A., & Maruping, L. M. (2021). The next generation of research on IS use: A theoretical framework of delegation to and from agentic IS artifacts. MIS Quarterly,
+45(1).
+Bankins, S., & Formosa, P. (2020). When AI meets PC: Exploring the implications of workplace social robots and a human-robot psychological contract. European
+Journal of Work and Organizational Psychology, 29(2), 215–229.
+Beane, M. (2019). Shadow learning: Building robotic surgical skill when approved means fail. Administrative Science Quarterly, 64(1), 87–123.
+Beaudry, A., & Pinsonneault, A. (2010). The other side of acceptance: Studying the direct and indirect effects of emotions on information technology use. MIS
+Quarterly, 34(4), 689–710.
+Belkaid, M., & Pessoa, L. (2023). Modeling emotion to enable intelligent behavior in robots. Intellectica-La revue de l’Association pour la Recherche sur les. sciences de la
+Cognition (ARCo), 79, 109–128.
+Benbya, H., Davenport, T. H., & Pachidi, S. (2020). Artificial intelligence in organizations: Current state and future opportunities. MIS Quarterly Executive, 19(4).
+Ben-Ze’ev, A. (2000). The subtlety of the emotion. Cambridge, MA: MIT Press.
+Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS Quarterly, 45(3).
+Bergner, A. S., Hildebrand, C., & Häubl, G. (2023). Machine talk: How verbal embodiment in conversational AI shapes consumer–brand relationships. Journal of
+Consumer Research, 50(4), 742–764.
+Beswick, K. (2011). Knowledge/beliefs and their relationship to emotion. In Current state of research on mathematical beliefs XVI: Proceedings of the MAVI-16 conference
+(pp. 43–59).
+Blegind Jensen, T., Tona, O., Larsen, K. R., Leidner, D. E., Stein, M. K., & Whitley, E. (2024). Human dignity in digital futures: Vital for the information systems field?.
+In ECIS 2024 proceedings (p. 2).
+Borch, C., & Lange, A. C. (2017). High-frequency trader subjectivity: Emotional attachment and discipline in an era of algorithms. Socio-Economic Review, 2, 283–306.
+Boulus-Rødje, N., Cranefield, J., Doyle, C., & Fleron, B. (2024). GenAI and me: The hidden work of building and maintaining an augmentative partnership. Personal
+and Ubiquitous Computing, 1–14.
+Burton, J. W., Stein, M. K., & Jensen, T. B. (2020). A systematic review of algorithm aversion in augmented decision making. Journal of Behavioral Decision Making, 33
+(2), 220–239.
+
+14
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+Burton, J. W., Lopez-Lopez, E., Hechtlinger, S., Rahwan, Z., Aeschbach, S., Bakker, M. A., … Hertwig, R. (2024). How large language models can reshape collective
+intelligence. Nature Human Behaviour, 1–13.
+CBS News. (2015). The Wright Brothers and the conquest of flight. Available at: https://www.cbsnews.com/news/the-wright-brothers-and-the-conquest-of-flight/.
+Charland, L. C. (1998). Is Mr. Spock mentally competent? Competence to consent and emotion. Philosophy, Psychiatry, and Psychology, 5, 67–81.
+Cheng, M., DeVrio, M., Egede, L., Blodgett, S. L., & Olteanu, A. (2024). I am the One and Only, Your CyberBFF": Understanding the Impact of GenAI Requires
+Understanding the Impact of Anthropomorphic AI. arXiv e-prints, arXiv-2410.
+Ciriello, R. F. (2025). Concerns over growing use of AI companions. ABC News Accessed: Jan. 22, 2025. [Online]. Available: https://www.youtube.com/watch?
+v=O14XEGt-XsY.
+Ciriello, R. F., Chen, A. Y., & Rubinsztein, Z. A. (2025). Compassionate AI design, governance, and use. IEEE Transactions on Technology and Society.
+Constantiou, I., Shollo, A., & Vendelø, M. T. (2019). Mobilizing intuitive judgement during organizational decision making: When business intelligence is not the only
+thing that matters. Decision Support Systems, 121, 51–61.
+Damasio, A. (1994). Descartes’ error: Emotion, reason, and the human brain. New York: Putnam.
+Damasio, A. (1999). The feeling of what happens. Body and emotion in the making of consciousness. Boston: Houghton Mifflin Harcourt Publishing Company.
+Damasio, A. (2004). Looking for Spinoza. Joy, sorrow, and the feeling brain. London: Vintage Books.
+Deary, I. J., Penke, L., & Johnson, W. (2010). The neuroscience of human intelligence differences. Nature Reviews Neuroscience, 11(3), 201–211.
+Deng, Y., Zheng, J., Huang, L., & Kannan, K. (2023). Let artificial intelligence be your shelf watchdog: The impact of intelligent image processing-powered shelf
+monitoring on product sales. MIS Quarterly, 47(3).
+Dreyfus, H. L. (2006). Overcoming the myth of the mental. Topoi, 25, 43–49.
+Dreyfus, H. L., & Dreyfus, S. E. (1992). What artificial experts can and cannot do. AI & Society, 6, 18–26.
+Duffy, C. (2024). There are no guardrails. In This mom believes an AI chatbot is responsible for her son’s suicide. https://amp.cnn.com/cnn/2024/10/30/tech/teensuicide-character-ai-lawsuit (Accessed 18/03/2025).
+Epstein, R. (2016). The empty brain. Aeon, 18(3). May.
+European AI Act. (2024). https://artificialintelligenceact.eu/ (Accessed 10/05/2024).
+Faraj, S., Pachidi, S., & Sayegh, K. (2018). Working and organizing in the age of the learning algorithm. Information and Organization, 28(1), 62–70.
+Felin, T., & Holweg, M. (2024). Theory is all you need: AI, human cognition, and decision making (February 23, 2024). Available at SSRN: https://papers.ssrn.com/
+sol3/papers.cfm?abstract_id=4737265.
+Floridi, L. (2023). AI as agency without intelligence: On ChatGPT, large language models, and other generative models. Philosophy and Technology, 36(1), 15.
+Floridi, L., & Nobre, A. C. (2024). Anthropomorphising machines and computerising minds: The crosswiring of languages between artificial intelligence and brain &
+cognitive sciences. Minds and Machines, 34(1), 1–9.
+Fong, C. T. (2006). The effects of emotional ambivalence on creativity. Academy of Management Journal, 49(5), 1016–1030.
+Frijda, N. H., Manstead, A. S., & Bem, S. (Eds.). (2000). Emotions and beliefs: How feelings influence thoughts. Cambridge University Press.
+Fügener, A., Grahl, J., Gupta, A., & Ketter, W. (2022). Cognitive challenges in human–artificial intelligence collaboration: Investigating the path toward productive
+delegation. Information Systems Research, 33(2), 678–696.
+Gao, Y., Lee, D., Burtch, G., & Fazelpour, S. (2025). Take caution in using LLMs as human surrogates. Proceedings of the National Academy of Sciences, 122(24), Article
+e2501660122.
+Gardner, H. (2011). Frames of mind: The theory of multiple intelligences. NY: Basic books.
+Gehman, J., Glaser, V. L., & Merritt, P. (2024). An assemblage perspective on hybrid agency: A commentary on Raisch and Fomina’s “combining human and artificial
+intelligence”. Academy of Management Review (ja), amr-2024.
+Gigerenzer, G. (2021). Axiomatic rationality and ecological rationality. Synthese, 198, 3547–3564.
+Glaser, V. L., Pollock, N., & D’Adderio, L. (2021). The biography of an algorithm: Performing algorithmic technologies in organizations. Organization Theory, 2(2),
+26317877211004609.
+Glaser, V. L., Sloan, J., & Gehman, J. (2024). Organizations as algorithms: A new metaphor for advancing management theory. Journal of Management Studies, 61(6),
+2748–2769.
+Glikson, E., & Woolley, A. W. (2020). Human trust in artificial intelligence: Review of empirical research. Academy of Management Annals, 14(2), 627–660.
+Greenbaum, R., Bonner, J., Gray, T., & Mawritz, M. (2020). Moral emotions: A review and research agenda for management scholarship. Journal of Organizational
+Behavior, 41(2), 95–114.
+Gross, J. J., & Jazaieri, H. (2014). Emotion, emotion regulation, and psychopathology: An affective science perspective. Clinical Psychological Science, 2(4), 387–401.
+Gümüsay, A. A., & Reinecke, J. (2024). Imagining desirable futures: A call for prospective theorizing with speculative rigour. Organization Theory, 5(1),
+26317877241235939.
+Hadjimichael, D., Ribeiro, R., & Tsoukas, H. (2024). How does embodiment enable the acquisition of tacit knowledge in organizations? From Polanyi to MerleauPonty. Organization Studies, 45(4), 545–570.
+Hamdoun, S., Monteleone, R., Bookman, T., & Michael, K. (2023). AI-based and digital mental health apps: Balancing need and risk. IEEE Technology and Society
+Magazine, 42(1), 25–36, 2023 Mar 7.
+Hanoch, Y. (2002). “Neither an angel nor an ant”: Emotion as an aid to bounded rationality. Journal of Economic Psychology, 23(1), 1–25.
+Hochschild, A. R. (2003 [1983]). The managed heart: Commercialization of human feeling. University of California.
+JafariNaimi, N. (2018). Our bodies in the trolley’s path, or why self-driving cars must* not* be programmed to kill. Science, Technology & Human Values, 43(2),
+302–323.
+Jarrahi, M. H. (2018). Artificial intelligence and the future of work: Human-AI symbiosis in organizational decision making. Business Horizons, 61(4), 577–586.
+Jarrahi, M. H., Monahan, K., & Leonardi, P. (2023). What will working with AI really require? Harvard Business Review.
+Jussupow, E., Spohrer, K., Heinzl, A., & Gawlitza, J. (2021). Augmenting medical diagnosis decisions? An investigation into physicians’ decision-making process with
+artificial intelligence. Information Systems Research, 32(3), 713–735.
+Jia, N., Luo, X., Fang, Z., & Liao, C. (2023). When and how artificial intelligence augments employee creativity. Academy of Management Journal, 67(1), 5–32.
+Jussupow, E., Benbasat, I., & Heinzl, A. (2024). An integrative perspective on algorithm aversion and appreciation in decision-making. MIS Quarterly, 48(4),
+1575–1590.
+Kastrup, T., & Shollo, A. (2023). Beyond cognition: An action perspective on intuition effectiveness in strategic decision making. In , 2023. Academy of Management
+Proceedings (p. 12669). Briarcliff Manor, NY: Academy of Management. No. 1.
+Khalsa, S. S., Adolphs, R., Cameron, O. G., Critchley, H. D., Davenport, P. W., Feinstein, J. S., … Zucker, N. (2018). Interoception and mental health: A roadmap.
+Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 3(6), 501–513.
+Klingbeil, A., Grützner, C., & Schreck, P. (2024). Trust and reliance on AI—An experimental study on the extent and costs of overreliance on AI. Computers in Human
+Behavior, 160, 108352.
+Laestadius, L., Bishop, A., Gonzalez, M., Illenčík, D., & Campos-Castillo, C. (2024). Too human and not human enough: A grounded theory analysis of mental health
+harms from emotional dependence on the social chatbot Replika. New Media & Society, 26(10), 5923–5941.
+Larsen, N., Mortensen, J. K., & Miller, R. (2020). What is ‘futures literacy’ and why is it important?. Available at: https://medium.com/copenhagen-institute-forfutures-studies/what-is-futures-literacy-and-why-is-it-important-a27f24b983d8.
+Lebovitz, S., Levina, N., & Lifshitz-Assaf, H. (2021). Is AI ground truth really true? The dangers of training and evaluating Ai tools based on experts’ know-what. MIS
+Quarterly, 45(3).
+Lebovitz, S., Lifshitz-Assaf, H., & Levina, N. (2022). To engage or not to engage with AI for critical judgments: How professionals deal with opacity when using AI for
+medical diagnosis. Organization Science, 33(1), 126–148.
+LeDoux, J. (1994). Emotion, memory and the brain. Scientific American, 270, 32–39.
+
+15
+
+Information and Organization 35 (2025) 100583
+
+M.-K. Stein and A. Shollo
+
+Leonardi, P. (2023). Affordances and agency: Toward the clarification and integration of fractured concepts. MIS Quarterly, 47(4).
+Lou, B., & Wu, L. (2021). AI ON DRUGS: Can artificial intelligence accelerate drug development? Evidence from a large-scale examination of bio-pharma firms. MIS
+Quarterly, 45(3).
+Ma, P., Petridis, S., & Pantic, M. (2022). Visual speech recognition for multiple languages in the wild. Nature Machine Intelligence, 4(11), 930–939.
+Margaryan, A. (2024). Why ‘machine Learning’ is a Misnomer. Available at SSRN.
+McCullough, D. (2015). The Wright Brothers. Simon and Schuster.
+Megill, J. (2014). Emotion, cognition and artificial intelligence. Minds and Machines, 24, 189–199.
+Mingers, J. (2001). Embodying information systems: The contribution of phenomenology. Information and Organization, 11(2), 103–128.
+Mol, A., & Law, J. (2004). Embodied action, enacted bodies: The example of hypoglycaemia. Body & Society, 10(2–3), 43–62.
+Passi, S., et al. (2024). Appropriate reliance on generative AI: Research synthesis. MSFT Technical Report.
+Penny, S. (2013). Art and robotics: Sixty years of situated machines. AI & Society, 28, 147–156.
+Pérezts, M., Faÿ, E., & Picard, S. (2015). Ethics, embodied life and esprit de corps: An ethnographic study with anti-money laundering analysts. Organization, 22,
+217–234.
+Picard, S. (1997). Affective computing. Cambridge, MA: MITPress.
+Pignot, E., & Thompson, M. (2024). Affect and relational agency: How a negative ontology can broaden our understanding of IS research. Information and Organization,
+34(1), Article 100500.
+Pritschet, L., Taylor, C. M., Cossio, D., Faskowitz, J., Santander, T., Handwerker, D. A., … Jacobs, E. G. (2024). Neuroanatomical changes observed over the course of a
+human pregnancy. Nature Neuroscience, 1–8.
+Raisch, S., & Fomina, K. (2025). Combining human and artificial intelligence: Hybrid problem-solving in organizations. Academy of Management Review., 50(2),
+441–464.
+Raisch, S., & Krakowski, S. (2021). Artificial intelligence and management: The automation–augmentation paradox. Academy of Management Review, 46(1), 192–210.
+Rastogi, C., Zhang, Y., Wei, D., Varshney, K. R., Dhurandhar, A., & Tomsett, R. (2022). Deciding fast and slow: The role of cognitive biases in AI-assisted decisionmaking. Proceedings of the ACM on Human-Computer Interaction, 6(CSCW1), 1–22.
+Remus, W., & Kottemann, J. (1986). Toward intelligent decision support systems: An artificially intelligent statistician. MIS Quarterly, 10(4), 8.
+Riemer, K., & Peter, S. (2025). AI doesn’t really ‘learn’ – And knowing why will help you use it more responsibly. https://theconversation.com/ai-doesnt-really-learnand-knowing-why-will-help-you-use-it-more-responsibly-250923.
+Rietveld, E., & Brouwers, A. A. (2017). Optimal grip on affordances in architectural design practices: An ethnography. Phenomenology and the Cognitive Sciences, 16(3),
+545–564.
+Riva, G., Mantovani, F., Wiederhold, B. K., Marchetti, A., & Gaggioli, A. (2024). Psychomatics—A multidisciplinary framework for understanding artificial minds.
+Cyberpsychology, Behavior, and Social Networking. ahead of print.
+Schemmer, M., Kuehl, N., Benz, C., Bartos, A., & Satzger, G. (2023, March). Appropriate reliance on AI advice: Conceptualization and the effect of explanations. In
+Proceedings of the 28th international conference on intelligent user interfaces (pp. 410–422).
+Scherer, K. R. (2009). The dynamic architecture of emotion: Evidence for the component process model. Cognition and emotion, 23(7), 1307–1351.
+Scheutz, M. (2014). Artificial emotions and machine consciousness. In The Cambridge handbook of artificial intelligence (pp. 247–266).
+Schuetz, S., & Venkatesh, V. (2020). The rise of human machines: How cognitive computing systems challenge assumptions of user-system interaction. Journal of the
+Association for Information Systems, 21(2), 460–482.
+Sergeeva, A. V., Faraj, S., & Huysman, M. (2020). Losing touch: An embodiment perspective on coordination in robotic surgery. Organization Science, 31(5),
+1248–1271.
+Shilling, C. (2012). The body and social theory. SAGE.
+Shollo, A., Hopf, K., Thiess, T., & Müller, O. (2022). Shifting ML value creation mechanisms: A process model of ML value creation. The Journal of Strategic Information
+Systems, 31(3), Article 101734.
+Simon, H. A. (1983). Reason in Human Affairs. Stanford, California: Stanford University Press.
+Simon, H. A. (1990). Information technologies and organizations. Accounting Review, 658–667.
+Simon, H. A. (1997a). The future of information systems. Annals of Operations Research, 71(0), 3–14.
+Simon, H. A. (1997b). Models of bounded rationality: Empirically grounded economic reason (Vol. 3). MIT press.
+Simon, H. A., Bibel, W., Bundy, A., Berliner, H., Feigenbaum, E. A., Buchanan, B. G., … McCarthy, J. (2000). AI’S greatest trends and controversies. IEEE Intelligent
+Systems and Their Applications, 15(1), 8–17.
+Spatscheck, N., Schaschek, M., & Winkelmann, A. (2024). The effects of generative AI’s human-like competencies on clinical decision-making. Journal of Decision
+Systems, 1–39.
+Stein, M. K., Newell, S., Wagner, E. L., & Galliers, R. D. (2014). Felt quality of sociomaterial relations: Introducing emotions into sociomaterial theorizing. Information
+and Organization, 24(3), 156–175.
+Stein, M. K., Newell, S., Wagner, E. L., & Galliers, R. D. (2015). Coping with information technology: Mixed emotions, vacillation, and nonconforming use patterns.
+MIS Quarterly, 39(2), 367–392.
+Svensson, J. (2023). Artificial intelligence is an oxymoron: The importance of an organic body when facing unknown situations as they unfold in the present moment.
+AI & Society, 38(1), 363–372.
+Turel, O., & Kalhan, S. (2023). Prejudiced against the machine? Implicit associations and the transience of algorithm aversion. MIS Quarterly, 47(4).
+Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases: Biases in judgments reveal some heuristics of thinking under uncertainty.
+Science, 185(4157), 1124–1131.
+Vaccaro, M., Almaatouq, A., & Malone, T. (2024). When combinations of humans and AI are useful: A systematic review and meta-analysis. Nature Human Behaviour,
+1–11.
+Vallverdú, J. (2017). The emotional nature of post-cognitive singularities. In The technological singularity: Managing the journey (pp. 193–208).
+van Es, K., & Nguyen, D. (2024). “Your friendly AI assistant”: The anthropomorphic self-representations of ChatGPT and its implications for imagining AI. AI & Society,
+1–13.
+Waardenburg, L., & Huysman, M. (2022). From coexistence to co-creation: Blurring boundaries in the age of AI. Information and Organization, 32(4), Article 100432.
+Wei, X., Zhang, Z., Zhang, M., Chen, W., & Zeng, D. D. (2022). Combining crowd and machine intelligence to detect false news on social media. MIS Quarterly, 46(2),
+977–1008.
+Whitney, C. D., & Norman, J. (2024, June). Real risks of fake data: Synthetic data, diversity-washing and consent circumvention. In Proceedings of the 2024 ACM
+conference on fairness, accountability, and transparency (pp. 1733–1744).
+Zhao, Y., Xu, L., Huang, Z., Peng, K., Seligman, M., Li, E., & Yu, F. (2024). Risk and prosocial behavioural cues elicit human-like response patterns from AI chatbots.
+Scientific Reports, 14, 7095. https://doi.org/10.1038/s41598-024-55949-y
+
+16
+
+

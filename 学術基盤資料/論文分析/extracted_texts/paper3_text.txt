@@ -1,0 +1,1419 @@
+Decision Support Systems 43 (2007) 1588 – 1604
+www.elsevier.com/locate/dss
+
+Engaging multiple perspectives: A value-based
+decision-making model
+Dianne J. Hall a,⁎, Robert A. Davis b,1
+b
+
+a
+Department of Management, Auburn University, 401 Lowder Business Building, Auburn, AL 36849-5241, United States
+Department of Computer Information Systems, Texas State University-San Marcos, San Marcos, TX 78666-4616, United States
+
+Available online 24 April 2006
+
+Abstract
+In some decision contexts, such as a crisis or when confronted by a new or novel set of circumstances, people may be forced to
+make decisions with limited information or time available for analysis. In such contexts, the set of alternative solutions developed may
+be greatly affected by the personal values and the perspective those values precipitate. Being able to view the decision environment
+from multiple perspectives enhances the decision-maker's ability to make better-informed choices. This article introduces the valuebased decision-making model that suggests that multiple perspectives may be achieved by considering a foundation of individual
+values. Empirical testing indicates that this model provides a viable framework that decision-makers and researchers can use to better
+understand and facilitate multiple perspectives in decision-making.
+© 2006 Elsevier B.V. All rights reserved.
+Keywords: Decision support; Multiple perspective decision-making; Individual values
+
+1. Introduction
+Many authors suggest that a key component to effective problem formulation and solution is to expand
+the problem set with as many facts and assumptions as is
+reasonable (e.g., [51,53]). Discrepancies, however, are
+likely to occur in the interpretation of those facts, particularly in a complex domain where stakeholders may
+not come from similar backgrounds. Identification of
+those discrepancies is critical to developing an interpretation that is shared among the decision-makers. Hine
+et al. [28,29] schematically demonstrate the process of
+arriving at a shared interpretation, which then benefits
+⁎ Corresponding author. Tel.: +1 334 844 6443.
+E-mail addresses: dhall@auburn.edu (D.J. Hall),
+rd23@txstate.edu (R.A. Davis).
+1
+Tel.: +1 512 245 8676.
+0167-9236/$ - see front matter © 2006 Elsevier B.V. All rights reserved.
+doi:10.1016/j.dss.2006.03.004
+
+organizational decision-making. They suggest that a representation scheme that allows interpretations to be
+compared should be developed. This scheme must be
+able to standardize the perspectives evident in individual interpretations such that a common understanding of
+the differences (our emphasis) may happen. From this
+common understanding, conflict may be measured,
+addressed, and reduced. The authors suggest that an individual's beliefs form the building block of interpretations and therefore may be a potential measure for
+operationalizing and measuring equivocality.
+Courtney [12] also demonstrates a process of reaching a shared interpretation (in his term, shared mental
+model) and considers individual beliefs as a basis of
+perspective in his paradigm for knowledge management,
+creation, and decision-making. Hine et al.'s [28,29] approach is to recognize the potential for differing interpretations and to find ways to mediate and synthesize those
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+differences, while Courtney [12] actively encourages a
+number of perspectives in the decision context prior to
+synthesis. He suggests expanding Mason and Mitroff's
+[42] Technical-Organizational-Personal model by adding aesthetic and ethical perspectives such that managers, stakeholders, system designers, and others have a
+foundation on which to search for and promote differences.
+While these perspectives are relatively well-defined
+[10,12,42] and may begin the process of developing a
+representation scheme such as that called for by Hine et
+al. [28,29], our research goes a step further. In this study,
+we propose that all individuals develop perspectives
+based on their individual values and that a representation
+scheme for individual interpretation should be based on
+individual values as defined by Spranger [56]. Our research motivation is based on the need to understand
+decision-making behavior, the belief that individual
+values impact that behavior, and the desire to develop a
+process specifically to address value attunement in support of interpretive learning and subsequent decisionmaking. Our value-based decision-making model presented here provides an environment for encouraging
+multiple value-based perspectives and mediating value
+conflicts [29,28,62]. This will ultimately provide an organization with a value attunement process [60] that will
+support shared interpretation that is necessary to effectively solve problems. Such a model, and ultimately a
+system or system component based on that model, is a
+necessary step to extending decision support research.
+We begin this study by discussing individual values
+and their place in organizational decision-making. Development of the value-based decision-making model is
+then discussed, followed by a test of a component based
+on the properties of the VBDM model. We end with
+the implications of the model to practice, theory, and
+research.
+2. Individual values and decision-making
+Values are discussed prominently in the literature although there is some disagreement regarding the definition and effect of these values. Meglino and Ravlin
+[44] define a value as an internalized belief regarding
+appropriate behavior; this impacts (among other things)
+how an individual interprets information. The authors
+conduct a comprehensive review of the literature and
+propose a framework for identifying and classifying existing values research, pointing out the iterative nature of
+values and the way that values can influence both perception and behavior. The authors also discuss the need
+for individuals to reach an understanding of each other's
+value systems (in Spranger's [56] words, value profiles)
+
+1589
+
+in order to effectively coordinate action such as reaching
+a decision. This is the shared interpretation outcome of
+interpretive learning [28,29].
+Shared interpretation requires a method by which
+individuals agree on a classification scheme for interpreting facts and variables in the decision context. Categorizing can lead decision-makers to consider and
+integrate context-specific information and make better
+decisions [6,27,50]. Categorization may be facilitated by
+cognitive mapping, a tool that allows individuals to organize their beliefs in a manner that increases understanding of their reasoning process. Individual values are
+frequently referred to as cognitive maps [7,17] making
+them a natural candidate not only for categorization, but
+also for operationalizing beliefs. Encouraging the application of values has a positive impact on organizational
+decision-making behavior (e.g., [48,52]).
+Value-laden contexts present special problems for
+negotiating and decision-making, particularly when an
+individual's core values are prominent [62]. Providing a
+social environment in which these value conflicts may be
+surfaced and addressed may help alleviate biases associated with values and mediate affective responses from
+individual decision-makers. An organization that has the
+ability to surface and store multiple value-based perspectives will enhance its ability to solve problems [60]. The
+ability to surface the dissention created by differing values (and hence value-based perspectives) is necessary
+for interpretive learning [28,29]. Understanding individual values will serve to increase the number of valuebased perspectives from which an organization may
+view, interpret, and act on newly acquired information
+and to create knowledge [20,21].
+Individual values are an integral part of an individual's behavior, particularly early in the decisionmaking process because they form the foundation of an
+individual's perspective. We maintain that decision support processes and components can be developed that
+enhance the use of personal values and promote value
+attunement. However, there has been limited research in
+the area of personal values and decision support, despite
+research suggesting that individual and organizational
+values are evident in organizations and that conflict is a
+natural outcome of a diverse population [34,52]. When
+conflict is mediated, the process may lead to synthesized
+perspectives that serve to expand organizational memory
+and further enhance shared interpretation [20,21]. This
+expanded organizational memory also serves to promote
+understanding of another's perspective (perspective taking [8]) which in turn enhances comprehensible communication [38], another facilitator of shared communication
+and interpretation.
+
+1590
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+Researchers have called for additional investigation
+into the human side of decision-making and support.
+Stohr and Konsynski [58] suggest a framework for decision process research which acknowledges the importance of the complexity of people and their individual
+characteristics and suggest that those characteristics be
+studied. Meglino and Ravlin [44] indicate that we know
+too little about how values affect behavior and call for
+more attention to decision-making behavior rather than
+decision outcome.
+Following the call for advancing decision support
+research by focusing on decision behavior and the characteristics that affect it, we propose that (1) individual
+values are an integral factor of decision behavior, (2)
+those values form the foundation of an individual's perspective during tasks associated with decision-making,
+(3) that little is truly known about their impact, and (4)
+that a decision model can be designed to support a value
+attunement process. Accordingly, we present the development of our value-based decision-making (VBDM)
+model and the initial empirical test results that validate
+the concept.
+3. Developing the value-based decision-making
+model
+Creating an environment that fosters a process both to
+recognize and to synthesize value profiles can be difficult. One barrier is the definition of individual values that
+should be considered when designing such an environment. A second barrier is finding a solid platform on
+which to base the design. We address the first barrier by
+identifying a value construct suitable for research use,
+and the second barrier by selecting an established theoretical foundation for our platform.
+3.1. Defining the value construct
+Because this study examines value-based perspectives, it is important that we adequately define what we
+mean by “value” and properly position this work in the
+larger context of the study of values. In this work, we
+follow the work of Eduard Spranger [56] who believed
+that individuals have a value profile that is based on
+theoretical, social, political, religious, aesthetic, and economic values. The theoretical value dimension is based
+on the discovery of truth and knowledge in a rational and
+scientific way. This dimension is very functional and
+works best when the situation or problem can be structured. The social value dimension incorporates an interpretive, philanthropic view—it seeks human interaction
+and considers the impact of action on the group or or-
+
+ganization as a whole. The political value dimension is
+concerned with prestige and power, often at the expense
+of others, and incorporates a critical and power-oriented
+view. The religious value dimension aspires to make the
+world a better place, and is based on philosophical and
+interpretive views. The aesthetic value dimension views
+the world from an artistic, interpretive view and seeks to
+find form and harmony in a given scenario. The economic value dimension arises from a functional, practical view and seeks usability and material goods.
+A person may exhibit one strong value such as religious, or exhibit a pattern of importance to multiple
+values. For instance, a typical masculine value profile is
+high on the economic, political, and theoretical dimensions and correspondingly low on the religious, social,
+and aesthetic ones [1,41]. This deeply ingrained value
+profile impacts the way that an individual views and
+interprets the world and seeks information; the perspective based on the profile is the value-based perspective
+that is the focus of this research. Such a deeply founded
+perspective affects decisions by imparting a value bias
+that is generally not recognized by the individual [18].
+Value profiles have been shown to remain relatively static over time [41], making them an appropriate construct
+and supporting their use as a measurement tool. Values,
+however, are not exclusive to individuals.
+Organizations exhibit the same types of value profiles, although the economic and theoretical dimensions
+are often predominant in business. In fact, it is interesting
+to note the similarities between the Spranger [56] value
+dimensions and the business value clusters advanced by
+Frederick [16]. Frederick defined five clusters of values
+necessary for business consideration: economical, environmental, political, technological, and that comprised
+of values within the individual. Using Spranger's [56]
+value dimensions together defines the fifth cluster, but
+one can also immediately see the similarities between the
+first four business clusters and the individual dimensions
+of the Spranger value profile.
+3.2. Defining the theoretical foundation
+Courtney [12] discusses a decision-making paradigm
+for use in complex, dynamic environments. He suggests
+the use of an inquiring organizational structure to implement such a paradigm, and maintains that, at the center of
+the paradigm, is a structure known as a mental model.
+This model is guided by an individual's experience and
+value profile that defines the value-based perspective
+that an individual uses to make sense of a new problem
+scenario and to generate potential solutions. However,
+to be effective, a process must be in place that allows
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+individuals to expand their mental models in a way that
+allows alternative perspectives to be evaluated. This
+research defines a support system designed to evaluate
+the effectiveness of using individual value profiles as the
+basis of perspective development. There must be a point
+at which most perspectives have been acknowledged, as
+one cannot expect all possible perspectives to be represented in every mental model, whether it is individual
+or collective. It may be prudent, therefore, to begin the
+process of perspective examination by defining major
+perspectives from which individuals may approach a
+decision-making scenario, and include those in the
+model.
+We believe that to truly support the humanness of
+organizations as Courtney suggests, we must begin at
+the foundation of an individual's beliefs and perspectives; that is, their individual values on which beliefs
+are founded and perspectives are framed. This is also
+in keeping with our second theoretical foundation, the
+contention of Hine et al. [28,29] that an individual's
+beliefs provide the foundation for their interpretative
+learning process. We argue that when perspective development takes place on a deeper level, an organization is
+more likely to consistently surface and mediate value
+conflict. We also believe that perspective development
+and perspective synthesis are both necessary and are, in
+fact, engaged in a reciprocal relationship for any given
+context. These beliefs are the foundation for our valuebased decision-making (VBDM) model.
+4. The value-based decision-making model
+Given the above discussion, it is easy to see that
+understanding the framework an individual develops to
+
+1591
+
+view and thus interpret their surroundings is important to
+understanding decision-making behavior and may allow
+us to predict behavior in a specific context. Thus, it is not
+only important that we strive to understand how valuebased perspectives affect decision-making, but also that
+we encourage organizations to incorporate as many valuebased perspectives into a specific context as possible.
+Mitroff and Linstone [46] suggest a minimum of three
+perspectives (technical, social, and personal); Courtney
+[12] suggests adding ethical and aesthetic. This view is
+also represented by others who maintain that organizations should promote ethical behavior and social responsibility (e.g., [55,60]). We maintain that an individual's
+interpretation of events and their subsequent actions are
+founded on their perspective that is defined by their value
+profile. Thus, the pertinent perspectives to address must
+be all of those that make up an individual's value profile
+(theoretical, social, political, religious, aesthetic, and
+economic).
+To achieve the benefits of multiple perspectives, all
+perspectives based on individuals' value profiles should
+be represented in a decision-making scenario. We maintain that our foundation of individual values enables an
+organization to focus on a defined set of perspectives.
+Rather than being different from those perspectives of
+Courtney's model, value-based perspectives are enhancements to them by formally defining each perspective. In fact, there are obvious parallels between Mitroff
+and Linstone's technical, organizational, and personal
+perspectives and Spranger's value dimensions. For instance, like their technical perspective, the theoretical
+perspective is rational and functional. Likewise, there are
+parallels between Courtney's ethical and aesthetic perspectives and the corresponding value dimensions
+
+Table 1
+Extending Mitroff and Linstone's TOP model and Courtney's paradigm with Spranger's values
+Perspectives in the value-based decision-making model
+Spranger [56]
+Mitroff and
+Linstone [46]
+Courtney [12]
+Worldview
+
+Theoretical
+Technical
+
+Social
+Organizational
+
+Political
+Personal
+
+Religious
+
+Aesthetic
+
+Economic
+
+Technical
+Organizational
+Personal
+Ethical
+Aesthetic
+Scientific, rational Collective,
+Individual, power
+Philosophical, moral
+Artistic
+Practical
+philanthropic
+Goal
+Problem solving, Action, stability,
+Power, influence,
+Equitability, elevation Harmony, artistry
+Usability,
+product
+process
+prestige
+of mankind
+pragmatism
+Mode of inquiry Functional
+Interpretive
+Critical
+Interpretive
+Interpretive
+Functional
+General
+Empirical, rational, Altruistic,
+Competitive, egoMoral, ethical, seeks Diverse, appreciates Utilitarian,
+characteristics seeks the “truth”
+philanthropic, seeks centric, seeks power unity with the universe beauty, seeks form wealth-oriented,
+human interaction
+and harmony
+seeks tangible
+goods
+Decision criteria Best fit to data
+Societal gain
+Individual gain
+Highest level
+Highest level of
+Highest cost/
+of understanding
+harmony and design benefit ratio
+
+1592
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+discussed previously (religious and aesthetic, respectively). Each of the value dimensions as suggested by
+Spranger [56] can form the basis of decision-making
+perspectives and together are the foundation of the
+VBDM model conceptualized herein. Table 1 compares
+the perspectives advanced by Mitroff and Linstone [46]
+and Courtney [12] to our perspectives that are based on
+Spranger's [56] value typology.
+Mitroff and Linstone [46] examine several facets of
+the technical, organizational, and personal perspectives,
+such as each perspective's goals and worldview, as
+well its mode of inquiry and decision criteria. Both of
+Courtney's perspectives (ethical and aesthetic) and the
+additional perspective from Spranger's [56] work (economic) can be examined in the same way. The worldview
+of the ethical (Spranger's religious) perspective is philosophical and morally based. The aesthetic perspective
+views the world from an artistic lens, while the economic
+perspective is highly pragmatic. Each of these perspectives has specific goals that match its worldview.
+The mode of inquiry as discussed by Mitroff and
+Linstone is the way that the perspective views a problem
+and formulates the solution. A functional mode of inquiry
+supports the idea that organizations use inquiry to support
+or achieve organizational objectives, relying on known
+processes and information to facilitate organizational
+goals and minimally increase organizational knowledge.
+
+Such a mode is adequate in situations where there are
+known variables, the problem is at worst moderately
+unstructured, and a solution is likely to be attained. The
+interpretive mode of inquiry applies a social theory to
+information, stressing communication and interpretation
+in the system. Socially oriented knowledge is the outcome
+of this perspective which closely parallels interpretive
+learning [28,29]. The third mode of inquiry is the critical
+mode; this mode is concerned with examining the status
+quo for flaws, conflicts, or contradictions and bringing
+those shortcomings to light. Both the interpretive and
+critical modes of inquiry management are socially oriented
+and therefore support the human aspect of a system. On
+the other hand, current approaches to learning and
+decision-making are decidedly functional, with a potential
+toward some element of the interpretive perspective (for
+instance, group decision support systems).
+Because value-based perspectives form the basis of
+an individual's behavior, they must be acknowledged
+in organizations that wish to surface as many perspectives as possible in a decision-making context [20,21].
+To accomplish this goal, organizations must encourage
+interpretive relationships among individuals and celebrate the differences of those individuals. To reduce
+conflict between organizational members, these relationships must exist in an environment where each
+perspective is recognized; this environment must also
+
+Fig. 1. The value-based decision-making model.
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+allow for continuous updating of the collective mental
+model. Accordingly, Fig. 1 presents the framework of
+the VBDM model.
+A traditional problem-solving or decision-making
+approach is to react to problem recognition (the trigger in
+Fig. 1) by formulating alternative solutions quickly from
+generally known information (that is, foregoing investigation and knowledge creation) and choosing a solution to implement. Two problems are associated with this
+method. The first is that failure to investigate all perspectives may lead to incorrect or incomplete problem definition or a lack of appropriate alternative solutions. The
+second is that, very often, the process of decision-making
+ends with implementation; this lack of feedback may
+prevent outcome-based learning. Courtney's [12] model
+and our extension address both problems by advocating
+the use of perspectives and by providing for a continuously updated mental model.
+Courtney discusses this process in terms of a Singerian “sweeping in” process that gathers information from
+an ever-widening set of stakeholders. In this process, the
+breadth of perspectives involved in the decision-making
+processes increases simply by increasing the amount of
+input; such breadth may contribute to more informed
+decisions, but not necessarily to shared interpretation
+that is fostered by socially constructed information and
+understanding.
+Our extension addresses the social construction of
+information and interpretation by promoting an iterative
+relationship between organizational memory, environ-
+
+1593
+
+mental variables, and the decision-makers. Facts may be
+interpreted in a multitude of ways depending on the
+perspective of the interpreter; shared interpretation can
+only occur when the basis behind the interpretation is
+discussed or when the individuals involved have already
+achieved an understanding of each others' perspectives.
+Each fact to be considered during a particular context
+is discussed, and any conflicts of interpretation must
+be resolved with additional information gathered from
+group members, organizational memory, and/or the environment. Ideally, this iterative process (analyze, gather, analyze…) continues until the group reaches not only
+a shared interpretation of that fact, but also a deeper
+understanding of the social environment in which the
+group is operating. The perspective development (PD)
+process is detailed in Fig. 2.
+An individual's beliefs are based on their value
+profile and parallel the concept of a mental model [12].
+The underlying foundation of our model (an individual's
+value profile) remains relatively stable, yet beliefs based
+on those values (i.e., mental model) may be modified as
+PD takes place. This involves updating beliefs based on
+newly acquired information, considering available options, developing new intentions from the set of available
+options, and acting on those new intentions. This, in turn,
+modifies the mental model, and contributes to a shared
+interpretation of the events.
+Acquiring information with which to analyze changes
+or triggers is dependent in part on the ability to access organizational memory. In the VBDM model,
+
+Fig. 2. Perspective development.
+
+1594
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+organizational memory is represented by two storage
+areas, the database, and the knowledge base. Facts are
+stored in the database that represents explicit knowledge
+in organizational memory. Shared interpretations are
+ultimately stored in the knowledge base which, over
+time, expands organizational memory to include information from multiple value-based perspectives and
+interpretations. Although one decision context will
+likely only develop information relevant to that context,
+over time that information may be synthesized to form
+relevant information for other contexts. Ultimately, each
+decision-maker believes that he or she has developed a
+shared interpretation of the events, and the process
+moves toward perspective synthesis.
+The perspective synthesis process has two aspects—
+the problem space in which the problem is structured and
+potential alternative solutions are discussed, and the
+solution space where approved alternative solutions are
+placed. It is from this set that the eventual solution will be
+chosen and action will be taken. In the synthesis process,
+surfacing of unseen conflict is critical and both consensus and conflict sets [28,29] are necessary. Fig. 3 shows
+the details of the perspective synthesis process.
+Although each decision-maker believes he or she
+understands the perspective of the others, he or she may
+still not fully appreciate the conflict that each perspective
+may produce when alternative solutions are suggested.
+Alternative solutions are divided into two categories—
+those that the group agrees are feasible solutions
+(consensus set), and those on which there is no consensus (conflict set). Discussion regarding items in the
+conflict set is necessary to either (1) mediate the conflict,
+or (2) remove the item from consideration. It is during
+this time that interactivity between perspective development and synthesis is most noticeable. When items are in
+question, it is most natural to secure additional information on that item. This returns the decision-making
+group to the PD process, where additional information is
+
+acquired and acted on. This may change the shared
+interpretation of the group and allow synthesis. It is also
+possible that the item will not reach consensus despite
+additional development. Regardless, additional knowledge has been gained and is reflected in organizational
+memory.
+We believe that such a model, and a component based
+thereon, is a natural extension of a decision support system as described by Bonczek et al. [9]. For instance, the
+PD component may be placed between the user and the
+model or between the user and the data. Either way,
+exposing the user to additional perspectives will broaden
+their information-gathering and decision-making scope,
+allowing for analysis that is more complete. The perspective synthesis component is a natural fit as part of
+the model component; drawing in information based on
+multiple perspectives and analyzing it together in a way
+that allows the best alternatives with more stakeholder
+consideration to be considered.
+Although interpretive learning and expanding organizational mental models are group-oriented processes,
+initial research into an area as individual as value profiles
+is best performed at the individual level. Therefore, in
+order to show that our chosen value-profile basis can be
+used to manipulate the actions of individuals, we tested a
+perspective development component based on our model
+for its ability to change a decision-maker's behavior.
+5. Testing the perspective development component
+In this research, a component has been implemented
+as a user interface that queries motivation behind both
+chosen and unchosen actions in an attempt to develop
+that individual's knowledge of alternative perspectives
+that are often based on differing assumptions, some of
+which may be conflicting. Recognizing and considering
+other perspectives exposes any different assumptions
+that may be influencing stakeholders, allowing the
+
+Fig. 3. Perspective synthesis.
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+decision-maker(s) to determine which assumptions are
+accurate and consequently to attain a better understanding of the problem at hand. Better understanding
+typically leads to better decision-making (e.g.,
+[2,15,29]). However, decision-makers often engage in
+the information gathering and choice processes from a
+perspective biased by their value profile, and are often
+unaware that they are being affected by them [18].
+In some decision contexts, such as a crisis or when
+confronted by a new or novel set of circumstances, people may be forced to make decisions with limited information or time available for analysis. In such contexts,
+the set of alternatives developed, and ultimately the alternative chosen, may be greatly affected by the personal
+values and the perspective those values precipitate. Because an individual's perspective affects and biases their
+response in decision situations, we must build systems to
+help an individual consider multiple perspectives so that
+the assumptions of others are surfaced and analyzed,
+which in turn may promote shared mental models and a
+broadened organizational perspective.
+A shared mental model is critical to organizational
+learning and effective group decision-making, but in
+order to arrive at that state, the individuals involved must
+first broaden the scope of their thinking to understand the
+thinking of those around them (e.g., [29]). Further, the
+broader the range of perspectives and alternatives considered, the more informed the eventual choice (e.g.,
+[33,61]). More informed choices are better and result in
+more satisfying decisions, all other things being equal
+(e.g., [45]). One way to broaden the number of perspectives used in a decision context may be accomplished by
+having each participant complete a series of questions
+regarding the current decision domain from a number of
+other perspectives, perhaps by being asked to articulate
+both good and bad points of a given problem or alternative, thus forcing the issue (e.g., problem or alternative) to be considered from two sides (e.g., [32,49]). This
+is the approach taken in this research.
+Because the area of values is complex and broad, and
+values are the foundation of many personal decisions and
+actions, it is important to define how we measure values
+in the context of our research. This research accepts the
+notion of values as espoused by Spranger, and operationalizes those values by using the Allport–Vernon–
+Lindzey (AVL) Study of Values [1]. We consider the
+value profile to be the pattern of relative importance of
+each of Spranger's values (theoretical, social, political,
+religious, aesthetic, and economic) to an individual, as
+constructed from the results of the AVL instrument. A
+value-based perspective is the worldview that an individual develops as a result of his or her underlying value
+
+1595
+
+profile; thus, we are able to estimate their value-based
+perspective. For example, if an individual scores highly
+on economic and political values (i.e., their profile exhibits stronger concern for these dimensions), we can
+assume that their value-based perspective will be one
+that focuses on the “bottom line” and on power/political
+issues over, for instance, the social value of a program.
+Value-based judgments are actions taken implicitly or
+explicitly that are based on an individual's value profile.
+System performance must be defined within the
+context of its use. For instance, one reasonable performance test for a functional system (for instance, a payroll
+system) may be the accuracy of its output. For an expert
+support system, performance may be less well defined
+and be assessed in terms of the organizational performance based on decision-making facilitated by the system. For a component used within a complex decisionmaking scenario, the definition of performance is even
+more ill defined. In this research, the performance of the
+perspective development system will be compared to that
+of a control system, and the measure of performance is
+the system's ability to affect the value profile applied in a
+specific decision context. It is posited that decisions
+made by users of a system containing a PD component
+will exhibit a change in the value profile applied not
+evident in the behavior of users of a system without such
+a component (the control group). Thus, hypothesis one
+is:
+H1. Use of a perspective development component will
+alter the value profile applied by an individual on a subsequent similar task.
+Changing the value profile applied to a task may be
+accomplished without specifically deviating from one's
+stated values. It would be possible, for instance, for a
+decision-maker to modify their action in response to a
+treatment without deviating from their underlying value
+profile. As previous research has suggested, PD should
+allow the decision-maker to envision a wider range of
+perspectives and, at least temporarily, think “outside the
+box.” Therefore, it is posited that being asked to challenge the status quo by considering multiple perspectives
+of an issue increases the “breadth of concern” ([32],
+p. 202) and results in perspective development. Thus,
+hypothesis two is:
+H2. Use of a perspective development component will
+result in an applied value profile that differs from that
+individual's stated value profile.
+The subjects used in this study were undergraduate
+students at a major Southwestern university. These subjects are appropriate for a judgmental task pertaining to
+
+1596
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+Fig. 4. Value profile (AVL).
+
+values because they are not likely to have experience
+with the requirements of the task, and thus are more
+likely to react instinctively (i.e., follow their value-based
+perspective) and less likely to consider social norms in
+their responses. This is the scenario presented earlier
+when individuals have no information on which to act,
+are in a new situation, and therefore must rely on their
+value-based perspective. Also, because the task requires
+no specific knowledge or training, response bias is unlikely. Studies of various value instruments indicate that
+values can be assessed early in an individual's development and that value-based instruments are reliable for
+individuals at the high school level or above and do not
+discriminate based on age (e.g., [1,54]). Therefore, it is
+reasonable to believe that the results of this study will
+generalize to other populations. Subjects ranged in age
+from 19 to 22 and were distributed across all classifications (freshman to senior). Business students comprised
+61% of the sample; 39% of the sample was male.
+An individual's value profile was determined using
+the Allport–Vernon–Lindzey (AVL) Study of Values [1]
+that measures the relative strength of each of an indi-
+
+vidual's value dimensions (theoretical, social, political,
+religious, aesthetic, and economic). This instrument has
+withstood time, three revisions by the authors, and one
+recent revision by other researchers [37], who did not
+find significant differences in responses between their
+instrument and the original one. The task involved the
+disbursement of funds among six community-based
+programs, each of which corresponds to a value-based
+perspective as determined by Spranger [56]. This task
+was developed by the GDSS research project at the University of Minnesota [14], was extensively tested, and
+was specifically designed to work with the AVL. The
+task/AVL combination has been validated in previous
+research (e.g., [63]). In this task, subjects must allocate
+$500,000 among the six programs. All the funds must be
+allocated; each subject may choose whether to allocate
+all the funds to one program, or split the funds among
+two or more programs. Our results indicate that both the
+instrument and the task functioned as expected in our
+sample population.
+Two systems were developed that presented the
+subject with a program that administered a short
+
+Fig. 5. Distribution profile (Task 1).
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+1597
+
+Fig. 6. Distribution profile (Task 2).
+
+demographic survey, the value-based perspective study
+(i.e., the AVL Study of Values which is administered in
+two sections), and two funds disbursement tasks. The
+perspective development system (i.e., the treatment
+condition) was different from the control system in
+only one aspect. It contained an alternative perspective
+consideration component designed to encourage the
+subject to consider all sides of a given problem. The
+treatment was activated following the first funds
+distribution task; the control group received an intervening break between the two tasks that consisted of a
+page from the “Foundation” thanking them for their
+“good work” in the first funding task and asking that they
+continue their job as “trustee” through one more round of
+funding.
+Tasks 1 and 2 were similar in style (six programs to
+which to distribute $500,000, each aligned to one of
+Spranger's values), but the programs outlined in Task 2
+were distinctly different from those in Task 1. Thus, the
+second task was a similar decision domain, as opposed
+to a re-examination of a previous decision (because
+of space limitations, specific funding request projects
+and their corresponding values are available from the
+authors). The results of the second funds distribution task
+provide evidence of whether the manipulation succeeded
+in changing the subject's response to funding requests.
+Results from the AVL and the funds tasks were used
+to build profiles for analysis. These profiles provide the
+basis for comparison between treatment and control
+group responses.
+
+6. Results
+Preliminary data analysis was performed to ensure
+data integrity and to make adjustments as necessary for
+removing outliers and establishing covariates. Because
+of the size of the sample (n = 388), evenness of the distribution (nt = 193; nc = 195), and lack of missing data, no
+violation of assumptions was expected nor found; no
+impact of covariates or outliers was detected. This preliminary analysis confirmed that study requirements and
+that assumptions critical to statistical analysis were not
+violated.
+The primary method of analysis used in this study is
+profile analysis, a multivariate form of repeated measures ANOVA. The intent is to discern patterns of responses over groups, rather than look at the individual
+measures. This type of analysis is common in the social
+sciences where groups of related characteristics are of
+interest (e.g., [36,43]), and is particularly useful in situations where the measures have a complex relationship
+such as the data analyzed here.
+Because all of the subjects are from the same general
+population and were randomly assigned to the control or
+treatment group, no difference in their profiles was expected for the administration of the AVL or the first
+execution of the funds distribution task. However, these
+assumptions required testing before hypothesis testing
+began. As expected, no significant differences in profiles
+were found for the AVL (F = 0.57, p = 0.72, ηp2 = 0.007).
+This indicates the control and treatment groups exhibited
+
+Table 2
+Significance level when comparing treatment and control group mean differences for the first and second funds distributions
+
+Task 1
+Task 2
+
+Aesthetic
+
+Economic
+
+Social
+
+Religious
+
+Political
+
+Theoretical
+
+p = 0.85
+p b 0.05⁎
+
+0.98
+0.08
+
+0.81
+0.89
+
+0.47
+b0.01⁎
+
+0.13
+0.68
+
+0.33
+b0.01⁎
+
+⁎Significant at α = 0.05.
+
+1598
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+Table 3
+Correlation between the value profile and the distribution profile (Task 2) for each group [correlation (p-value)]
+Aesthetic
+
+Economic
+
+Social
+
+Religious
+
+Political
+
+Theoretical
+
+Pre-treatment (all correlations significant)
+Control
+0.28 (b0.0001)
+0.25 (0.0003)
+Treatment
+0.22 (0.0019)
+0.20 (0.0067)
+
+0.15 (0.0404)
+0.14 (0.0481)
+
+0.30 (b0.0001)
+0.33 (b0.0001)
+
+0.33 (b0.0001)
+0.35 (b0.0001)
+
+0.15 (0.0331)
+0.18 (0.0113)
+
+Post-treatment
+Control
+0.25 (0.0005)
+Treatment
+0.20 (0.0045)
+
+0.18 (0.0099)
+0 (0.9954)⁎⁎
+
+0.58 (b0.0001)
+0.38 (b0.0001)
+
+0.16 (0.0298)
+0.18 (0.0130)
+
+0.25 (0.0005)
+0.10 (0.1822)⁎⁎
+
+0.31 (b0.0001)
+−0.01 (0.8583)⁎⁎
+
+⁎⁎Not significant.
+
+similar value profiles. These same results were evident in
+the profiles of the first funds distribution task (F = 0.73,
+p = 0.60, ηp2 = 0.009), indicating that both groups allocated funds similarly between each program. Further, the
+means of the responses differed significantly over each
+of the six programs indicating the groups had preferred
+dimensions. Fig. 4 clearly shows that the profiles are
+almost indistinguishable for value responses, and Fig. 5
+shows the same for the first funds distribution task.
+These results indicate that any post-treatment differences
+between the groups can reasonably be attributed to the
+treatment.
+7. Hypothesis analysis
+As previously stated, hypothesis 1 examines whether
+subjects in the treatment group allocated funds differently in the second funds distribution task as compared to
+the first, indicating they placed different emphases on
+each value-based perspective after the treatment. As expected, analysis results show evidence to reject similarity
+between groups in the second task indicating that there
+are significant differences in the way the two groups
+distributed funds (F = 5.1, p b 0.01, ηp2 = 0.063). This
+supports our hypothesis that behavior on a similar task
+will differ following exposure to a PD component. Fig. 6
+shows the profiles for each group for the second funds
+distribution task.
+There were no significant differences in the amount of
+funds distributed to each program in Task 1 between the
+two groups, as would be expected between groups with
+similar profiles. However, while the distribution profiles
+of the groups differed significantly in Task 2, results of
+pairwise comparisons, adjusted for multiple comparisons, indicate that not all dimensions differed equally
+(see Table 2). Specifically, the groups distributed similar
+amounts of funds to the political and social programs, a
+different amount to the economic program, and significantly different amounts to the aesthetic, theoretical, and
+religious programs.
+
+The second previously stated hypothesis investigates
+whether an individual will be able to deviate from his or
+her stated value profile; each group's stated value profile
+was compared to their second funds distribution task
+profile. For purposes of this research, a subject exhibits
+perspective development if their post-treatment distribution profile (i.e., the results of Task 2) and their
+value profile (i.e., as determined by the AVL) are different. Statistically this could be evidenced by a lack
+of correlation between the professed importance of a
+value and the amount of funds given to a corresponding
+program.
+As expected, the control group's allocation of funds
+in the second funds distribution task is consistent with its
+response to the values study, statistically supported by
+Pearson Correlations shown in Table 3 (correlations all
+significant at p ≤ 0.05). The pattern of the value profile
+generally matched the pattern of the funds distribution
+profile for the second task. Note that we are not focusing
+on the relative difference between funds distribution for
+any one program, but rather the pattern of consistent
+correlation. For instance, the religious value received
+high responses; the religious program received the most
+funding. The theoretical value received low responses;
+correspondingly, the theoretically based program received low funding (see Fig. 6). This pattern is consistent
+across the task.
+Such was not the case with the treatment group, however. Correlation analysis indicates that the treatment
+group changed their scores on the economic, social, and
+theoretical dimensions, which suggests the treatment
+group exhibited a perspective development effect. For
+instance, although the aesthetic value was the fifth ranked value in the sample, it received the third highest
+proportion of funding. It received more, in fact, than the
+economic program although the economic value was
+ranked considerably higher. The subjects who received
+the treatment exhibited an applied value profile that is
+different from their stated value profile, thus supporting
+the second hypothesis that the treatment condition would
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+result in a behavior pattern (applied value profile) that
+differed from their stated values.
+8. Discussion
+This study has examined whether a component
+designed to support an individual's use of multiple
+perspectives during a decision-making task can be
+conceptually developed and empirically tested. Specifically, the results are evidence of the consideration of
+multiple value-based perspectives and of reduced value
+bias. One might argue that the change in the treatment
+subjects' behaviors can be explained by increased
+creativity or innovativeness or just simple alignment
+with conscious thoughts of one's values. Alternatively,
+perhaps the treatment subjects adapted their behavior in
+some sense to produce the behavior they believed was
+desired by the researcher. We note that only the treatment
+group, the group encouraged to consider other perspectives, behaved in this way. We noted earlier the benefits
+of considering a decision domain from a wide perspective: increased creativity, innovation, and adaptability
+[11,32]. Thus, even if the treatment group's behaviors
+can be described as creative, innovative, or adaptive, we
+believe the controlled nature of the laboratory experiment supports our conclusion that perspective development led to this behavior because the control group did
+not behave in the same way. Creativity, innovation,
+adaptability, and so forth are different effects.
+There is clear precedent for our conclusion on this
+point. Parker and Axtell [49] cite research from the study
+of human development that it is the ability to take the
+perspective of others that leads to greater empathy [4],
+higher levels of cognitive complexity [26], moral development [35], and managerial effectiveness [64]. For
+example, for empathy to occur, an individual must first
+recognize that something is happening to someone else
+and have some understanding of how the other person is
+feeling. In all of these cases, the driver of the behavior
+change is consideration of other perspectives.
+The primary finding of this research is that an individual's decision-making behavior can be changed in
+value-based situations. Previous research has suggested
+that the individual differences caused in part by value
+profiles may be too complex to be managed effectively in
+system design [30], but must be acknowledged as antecedents for the outcome of technological endeavors such
+as MIS acceptance and success [13,65]. This research,
+however, suggests that it is possible, through a system
+component such as that developed here, to change the
+behavior of decision-makers in a specific decision
+domain.
+
+1599
+
+Supporting a decision-maker's consideration of multiple perspectives can, at least temporarily, alter the decision-maker's applied value profile during that decision
+task so that a wider range of values are given due consideration. Broadened perspective bases have practical
+benefits to an organization. For instance, the other effects
+mentioned above (innovation, creativity, and adaptability) become crucial in decision domains of complex problems, particularly socially oriented ones. An organization
+can utilize support systems designed to broaden perspectives, especially value-based perspectives, to create, accumulate, and manage knowledge critical to its core
+competencies.
+As an individual's perspective base expands, so does
+that individual's ability to see a bigger picture. When a
+group of individuals are brought together in this way, the
+problem space developed by that group becomes bigger,
+allowing for a wider range of alternatives to be generated
+and more informed choices to be made [29,33,61]. Consideration of multiple perspectives also allows an individual to perceive and process information that may not
+have been considered useful under a different lens, which
+is an antecedent to organizational learning. An increased
+amount of information useful in a particular domain has
+been shown to increase decision quality [57]. The valuebased component tested in this research encouraged individuals to consider and use multiple perspectives during
+a decision task. When information based on these perspectives is incorporated into organizational memory, it
+becomes available for other decision domains.
+It is interesting to note which value-based dimensions
+were mediated. It should come as little surprise that the
+individuals could not be persuaded to deviate from funding the religious program as this value was the strongest
+among the subjects. The characteristics of the religious
+value include faith, acceptance, and a respect for the
+rights of people [19]. Individuals with a high religious
+value profile tend to be empathetic, concerned with
+social welfare, and idealistic; such faith-based, idealistic
+values are less likely to respond to manipulation [3].
+Theoretical programs may have had appeal given the
+student population of the study; aesthetic support may
+have come from a feeling of community that is common
+on campuses.
+However, the ability to manipulate the economic, theoretical, and social value-based perspectives is a valuable finding. Numerous studies have indicated that the
+economic and theoretical dimensions are the strongest of
+the dimensions in individuals representing managerial
+positions (e.g., [1,39]). Mitigating the effect of these
+values should allow organizations to move away from
+the technical perspective of decision-making and toward
+
+1600
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+the organizational and personal perspectives as suggested by Mitroff and Linstone [46].
+Indeed, a decision support environment that integrates the multiple perspective support as we have described and tested here moves organizations toward
+what Mitroff and Linstone [46] describe as the “third
+way of knowing”, that is, multiple realities. They state,
+“…the assumption is that on problems of any significance, the analyst, decision-maker, or policy-maker
+needs to explicitly see a range of different representations of the problem so that he or she can participate
+actively in the problem solving process…” (p. 63, their
+emphasis). The hope that they put forth is that exposure
+to a range of perspectives (i.e., representations) will
+allow the decision-maker to produce a new, stronger
+perspective that synthesizes the ones reviewed. The
+social value-based perspective may also enable these
+organizations to be more cognizant of their social responsibilities and the impact of their actions on their
+communities.
+9. Implications
+The VBDM model discussed above provides organizations with the means to surface, consider, and encourage multiple perspectives based on values. Because
+an individual's values provide the foundation for his or
+her beliefs, perspectives, and ultimately his or her decisions, investigation into this area is important for an
+understanding of decision-making behavior in organizations as well as the complementary area of organizational
+learning; there are implications for practice and theory.
+9.1. Practical implications
+A practical implication of the VBDM model is that it
+provides the basis for engaging an organization in active
+consideration of values. In an era when an organization's
+social responsibility is more prominent, such a consideration may not only be advisable, but may be unavoidable in certain areas, such as policy formulation and other
+ideologically based issues. Wade-Benzoni et al. [62] discuss barriers to ideologically based negotiations wherein
+they define those contexts to be societal issues. These
+issues may be difficult to resolve because individual
+values limit how an individual interprets the information,
+especially when a particular issue is closely related to a
+value held with deep conviction. Research shows that,
+when an individual is presented with a problem that
+evokes strong sentiment (either positive or negative), he
+or she is more likely to focus narrowly than to embrace
+other information or ideas (e.g., [62]). The VBDM model
+
+specifically strives to mediate this unifocus by first acknowledging that all members of the group have closely
+held beliefs, and encouraging communication between
+the members such that the beliefs and their related assumptions are surfaced and discussed. This moves the
+organization toward value-attuned responsiveness—the
+understanding that complex (primarily social) decision
+contexts such as policy formulation are inseparable from
+individual values [60].
+Formulating and ultimately solving ill-structured
+problems may also benefit from a model such as ours.
+Organizations often rely on their members to make
+decisions in a changing and unpredictable environment
+that produces these types of problems. Intuitive decisionmaking is routinely used in these situations where a
+manager interprets the environment and reacts to a “gut
+feeling.” Further, research shows that information that is
+used in these situations is socially constructed [40].
+Intuitive action enables an individual to come to understand a situation without explicit analysis [31]. Effective intuition requires not only the individual's ability to
+judge the problem at hand, but also the environment in
+which the problem is situated. Although these mental
+models are rarely, if ever, complete, they guide subsequent decision-making behavior [47]. As managers routinely engage in active interpretation during the VBDM
+model process, their mental models expand, perhaps
+moving the models toward a more complete state, and
+thus eliminating some element of uncertainty about the
+judgment.
+9.2. Theoretical implications
+On a theoretical level, the VBDM model, with its
+focus on a small set of core personal values extends
+individual value usage within the organization. Swanson
+[60] encourages research to develop a theory of values
+that may provide the attunement process with some level
+of explanatory power, and that may help to focus understanding of individual values and their impact on
+individual (and particularly executive) behavior. By providing a defined set of values that may be measured by
+established instruments (e.g., the Study of Values [1]), a
+theory of individual values may be constructed and
+tested.
+Using a model such as the VBDM model may not
+only enhance an organization's understanding of the
+values that its members hold, but it may also help the
+individuals better understand themselves. Self-perception theory indicates that individuals may not be fully
+aware of what their value profile is or even that one
+exists. Instead, individuals, if aware of values, may
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+deduce what those values are based on their actions in
+different situations just as an observer may deduce an
+individual's values based on that person's actions [5].
+The VBDM model allows an organization to disseminate
+concrete information to its members regarding the value
+profile, thus allowing individuals to become aware of the
+values they hold. In turn, this awareness of one's own
+values will enhance understanding of another's values,
+which should promote fewer value-based conflicts.
+Lastly, the VBDM model conceptualized here may
+provide the basis for the individual representation scheme
+necessary for successful interpretive organizational
+learning [28]. First, the use of the value set chosen
+allows organizations (or researchers) to focus on and
+perhaps test two foundations of interpretive organizational learning (IOL). The first is an understanding of the
+contextual interpretation of a given individual, and the
+second is the ability to understand potential alignment
+and/or interaction of those interpretations. By acknowledging a discrete set of values, and understanding how
+alliances or conflict may arise within that set, an
+organization should be able to provide the surfacing of
+conflict necessary to IOL. Hine et al. [28] also suggest
+requirements for an individual representation scheme,
+such as flexibility, scope restriction, and standardization
+of terminology such that effective communication may
+occur. Using values to represent this scheme provides
+those requirements and contributes a way to measure
+equivocality. A given value profile is likely to result in
+multiple interpretations depending on the complexity of
+the context. Further, Hine et al. [28] suggest that an
+organization must strive to understand belief variety,
+which is the number of beliefs in a given interpretation.
+By using a discrete value set presented as a value profile
+unique to an individual, the VBDM model defines not
+only belief variety but also the characteristics associated
+with each belief.
+9.3. Research implications
+The VBDM model discussed here begets avenues for
+future research. Further testing of the applicability of the
+values in the workplace is possible; testing the development and synthesis processes in a group setting is
+another possibility. Further refining of the PD component and development of the perspective synthesis component should also be considered.
+It is possible that the VBDM model may be a potential implementation of an interpretive organizational
+learning system (one such system is that of Hine and
+Goul [29]). The VBDM model has been conceptualized
+in the image of a decision-support system, although
+
+1601
+
+usage of a system built on its foundation is not limited to
+that. A design as flexible as the VBDM model can be
+used for decision-support, learning support, or as a
+component of a knowledge management system. Enhanced perspective development will naturally increase
+an individual's (or organization's) mental model and
+therefore affect decision-making and other information
+intensive processes such as knowledge generation. Recent research in negotiation support [59] indicates that
+synthesizing decision-makers' mental models not only
+increases the level of consensus with the group, but
+improves the social climate in which the groups operate.
+Such cohesiveness can enhance the decision-making
+process by reducing conflict, which is a goal of the
+VBDM model. All decision-making, information gathering, and knowledge generation scenarios require some
+negotiation to reduce the conflict inherent in acceptable
+information and solutions.
+To achieve the goal of multiple perspectives, organizations should encourage individuals to think more
+broadly about problems, and to consider the viewpoints
+of others. When an individual strongly favors one or
+more of the six value-based perspectives, encouraging
+this growth may be difficult. Recent research [22–24]
+indicates that systems designed to facilitate the development of multiple perspectives may be beneficial in
+encouraging individuals to overcome their innate mental
+models during specific problem-solving contexts. It may
+be necessary to rely on specially developed technology
+to aid this process, particularly to provide the ability
+to update the mental models of organizational members and ultimately the collective mental model of an
+organization.
+Recent advances in technology may enable organizations to facilitate the process of populating organizational memory with multiple perspectives, thus enabling
+organizational members to refer to those perspectives
+and the knowledge produced as needed. This will effectively update and expand both individual and
+collective mental models. Courtney [12] suggests several
+Web-based technological avenues whereby this may be
+possible—for instance, chats, email, applets, and knowledge repositories. A system based on the VBDM model
+may incorporate any (or many) of these technologies.
+Agent technology is also a promising avenue for
+implementation of complex systems [24,25].
+Another avenue for research is further development
+of the behavioral aspects of the system. Do individuals
+using a system such as the VBDM model generate more
+alternative solutions than individuals without such support? Can such a system, over time, mediate potential
+bias effects of strongly held values of an individual?
+
+1602
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+Does use of the system promote faster, more efficient, or
+better decisions? Is there enough variety of value
+profiles in a given group of decision-makers to achieve
+the objective of synthesizing multiple perspectives?
+10. Conclusion
+As organizations continue to strive for sustainable
+gains in productivity and excellence, the importance of
+effective decision-making and organizational learning
+continues to increase. The environment faced by organizations today is often complex and very dynamic. It is
+critical that organizations consider the contribution that
+multiple perspectives make to decision-making and
+learning. In a particular decision context such as a
+novel situation, crisis, or contexts that evoke emotion, a
+decision-maker with a set of personal values on which
+their perspective is based may not be able to identify all
+sides of the issue under consideration. Yet, being able to
+view the decision environment from multiple perspectives enhances the decision-maker's ability to make
+better-informed choices. The value-based decisionmaking model described in this paper provides a
+framework that organizations and researchers can use
+to better understand and facilitate the use of multiple
+perspectives in decision-making and organizational
+learning.
+The foundations of the VBDM model are Courtney's
+[12] decision-making and knowledge management paradigm and the conflict/consensus process of interpretive
+organizational learning [28,29]. The Courtney paradigm
+has been enhanced by the addition of six value-based
+perspectives which form the foundation of the individual
+representation scheme of interpretive organizational
+learning. Understanding these values is integral to understanding value-based decision behavior. Effective
+decision-making and learning require consideration of
+multiple perspectives; this model will enhance the understanding of individual values and their place in organizational learning and decision-making.
+References
+[1] G.W. Allport, P.E. Vernon, C. Lindzey, A Study of Values,
+Riverside, Chicago, IL, 1970.
+[2] C. Argyris, D.A. Schön, Organizational Learning II, AddisonWesley Publishing Company, Reading, MA, 1996.
+[3] J. Barnett, K. Bass, G. Brown, Religiosity, ethical ideology, and
+intentions to report a peer's wrongdoing, Journal of Business
+Ethics 15 (November 1996) 1161–1174.
+[4] J.M. Bartunek, J.R. Gordon, R.P. Weathersby, Developing
+‘complicated’ understanding in administrators, Academy of
+Management Review 8 (2) (1983) 273–284.
+
+[5] D.J. Bem, Self-perception: an alternative interpretation of
+cognitive dissonance phenomena, Psychological Review 74 (2)
+(1967) 183–200.
+[6] I. Benbasat, L.-H. Lim, The effects of group, task, content, and
+technology variables on the usefulness of group support systems:
+a meta-analysis of experimental studies, Small Group Research
+24 (4) (1993) 430–462.
+[7] K.L. Betttenhausen, K.J. Murnighan, The emergence of norms in
+competitive decision making groups, Administrative Science
+Quarterly 30 (1985) 350–372.
+[8] R.J. Boland Jr., R.V. Tenkasi, Perspective making and perspective taking in communities of knowledge, Organization Science 6
+(4) (1995) 350–372.
+[9] R.H. Bonczek, C.W. Holsapple, A.B. Whinston, Foundations of
+Decision Support Systems, Academic Press, New York, 1981.
+[10] C.W. Churchman, The Design of Inquiring Systems: Basic
+Concepts of Systems and Organizations, Basic Books, Inc., New
+York, NY, 1971.
+[11] J.D. Couger, L.F. Higgins, S.C. McIntyre, (Un)Structured creativity in information systems organizations, MIS Quarterly 17 (4)
+(1993) 375–397.
+[12] J.F. Courtney, Decision making and knowledge management in
+inquiring organizations: a new decision-making paradigm for
+DSS, Decision Support Systems Special Issue on Knowledge
+Management 31 (1) (2001) 17–38.
+[13] F.D. Davis, Perceived usefulness, perceived ease of use, and user
+acceptance of information technology, MIS Quarterly 13 (1989)
+318–340.
+[14] G. DeSanctis, M.S. Poole, M. Limayem, D. Luitjens, "The GDSS
+Research Project: Experimental Task Materials," MISRC-WP92-07, Management Information Systems Research Center,
+Curtis L. Carlson School of Management, University of
+Minnesota (1992).
+[15] A.J. DiBella, E.C. Nevis, How Organizations Learn: An Integrated Strategy for Building Learning Capability, Jossey-Bass
+Inc., San Francisco, 1998.
+[16] W.C. Frederick, Anchoring values in nature: toward a theory of
+business values, Business Ethics Quarterly 2 (1) (1992) 283–302.
+[17] D. Giola, P.P. Poole, Scripts in organizational behavior, Academy
+of Management Review 9 (1984) 449–459.
+[18] W.D. Guth, R. Tagiuri, Personal values and corporate strategy,
+Harvard Business Review 43 (5) (1965) 123–132.
+[19] B. Hall, O. Harari, B. Ledig, M. Tondow, Manual for the HallTonna Inventory of Values, Paulist Press, New Jersey, 1986.
+[20] D.J. Hall, Testing Performance and Perspective in an Integrated
+Knowledge Management System, College Station, 2002.
+[21] D.J. Hall, D. Paradice, Do you do as you value? Investigating
+value-based decision bias and mediation, Communications of the
+ACM (in press).
+[22] D.J. Hall, D.B. Paradice, Philosophical foundations for a
+learning-oriented knowledge management system for decision
+support, Decision Support Systems 39 (3) (2005) 445–461.
+[23] D.J. Hall, D.B. Paradice, J.F. Courtney, Building a theoretical
+foundation for a learning-oriented knowledge management
+system, Journal of Information Technology Theory and Application (JITTA) 5 (2) (2003) 63–89.
+[24] D.J. Hall, Y. Guo, R.A. Davis, C. Cegielski, Extending unbounded
+systems thinking with agent-oriented modeling: conceptualizing a
+multiple-perspective decision-making system, Decision Support
+Systems 41 (1) (2005) 279–295.
+[25] D.J. Hall, Y. Guo, R.A. Davis, C. Cegielski, Technological
+support for a learning-oriented knowledge management system,
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+Proceedings of the Americas Conference on Information
+Systems, Omaha, NE, 2005.
+[26] O.J. Harvey, D.E. Hunt, H.M. Shroder, Conceptual Systems and
+Personality Organization, Wiley, New York, NY, 1961.
+[27] K.M. Hilmer, A.R. Dennis, Stimulating thinking: cultivating
+better decisions with groupware through categorization, Journal
+of Management Information Systems 17 (3) (2001) 93–114.
+[28] M.J. Hine, J.B. Gasen, M. Goul, Emerging issues in interpretive
+organizational learning, The DATA BASE for Advances in
+Information Systems 27 (3) (1996) 49–62.
+[29] M. Hine, M. Goul, The design, development, and validation of a
+knowledge-based organizational learning support system, Journal of Management Information Systems 15 (2) (1998) 119–152.
+[30] G. Huber, Cognitive style as a basis for MIS design: much ado
+about nothing? Management Science 29 (5) (1983) 567–597.
+[31] T.S. Isaack, Intuition: an ignored dimension of management,
+Academy of Management Review 3 (4) (1978) 917–921.
+[32] R. Keeney, Value-Focused Thinking, Harvard University Press,
+Cambridge, MA, 1992.
+[33] R. Keeney, Foundations for making smart decisions, IIE
+Solutions 31 (5) (1999) 24–30.
+[34] D.E. Kiranne, Managing values: a systematic approach to
+business ethics, Training and Development Journal November
+(1990) 53–60.
+[35] L. Kohlberg, Stage and sequence: the cognitive developmental
+approach to socialization, in: D.A. Goslin (Ed.), Handbook of
+Socialization Theory and Research, Academic Press, San Diego,
+CA, 1969, pp. 347–480.
+[36] T.R. Konold, J.J. Glutting, P.A. McDermott, J.C. Kush, M.M.
+Watkins, Structure and diagnostic benefits of a normative subtest
+taxonomy developed from the WISC-III standardization sample,
+Journal of School Psychology 37 (1999) 29–48.
+[37] R.E. Kopelman, J.L. Rovenpor, M. Guan, The study of values:
+construction of the fourth edition, Journal of Vocational Behavior
+62 (2) (2003) 203–220.
+[38] R.M. Krauss, S.R. Fussell, Perspective taking in communication:
+representations of others' knowledge in reference, Social
+Cognition 9 (1) (1991) 2–24.
+[39] K. Kumar, M. Thibodeaux, Differences in values systems of
+Anglo-American and Far Eastern students: effects of American
+business education, Journal of Business Ethics 17 (1998)
+253–262.
+[40] F.-Y. Kuo, Managerial intuition and the development of executive support systems, Decision Support Systems 24 (2) (1998)
+89–103.
+[41] D. Lubinski, D. Schmidt, C. Persson Benbow, A 20-year stability
+analysis of the study of values for intellectually gifted individuals
+from adolescence to adulthood, Journal of Applied Psychology
+81 (4) (1996) 443–451.
+[42] R.O. Mason, I. Mitroff, A program for research on management
+information systems, Management Science 19 (5) (1973)
+475–487.
+[43] P.A. McDermott, J.W. Fantuzzo, J.J. Glutting, M.W. Watkins,
+A.R. Baggaley, Illustrations of meaning in the ipsative assessment
+of children's ability, Journal of Special Education 25 (1992)
+504–526.
+[44] B.M. Meglino, E.C. Ravlin, Individual values in organizations:
+concepts, Controversies and Research, Management 24 (3)
+(1998) 351–389.
+[45] B.E. Mennecke, J. Valacich, Information is what you make of it:
+the influence of group history and computer support on information sharing, decision quality, and member perceptions, Jour-
+
+1603
+
+nal of Management Information Systems 15 (2) (1998)
+173–197.
+[46] I.I. Mitroff, H.A. Linstone, The Unbounded Mind: Breaking the
+Chains of Traditional Business Thinking, Oxford University
+Press, New York, 1993.
+[47] D.A. Norman, User centered system design, in: D.A. Norman, S.
+Draper (Eds.), Cognitive Engineering, Lawrence Erlbaum
+Associates, Hillsdale, NJ, 1986, pp. 31–61.
+[48] C.A. O'Reilly III, J.A. Chatman, D.F. Caldwell, People and
+organizational culture: a profile comparison approach to assessing person-organization fit, Academy of Management 34 (3)
+(1991) 487–516.
+[49] S.K. Parker, C.M. Axtell, Seeing another viewpoint: antecedents
+and outcomes of employee perspective taking, Academy of
+Management Journal 44 (6) (2001) 1085–1100.
+[50] A. Pinsonneault, K. Kraemer, The impact of technological
+support on groups: an assessment of empirical research, Decision
+Support Systems 5 (2) (1989) 197–216.
+[51] W.F. Pounds, The process of problem finding, Industrial
+Management Review 11 (1969) 1–19.
+[52] E.H. Schein, Organizational Culture and Leadership, Jossey
+Bass, San Francisco, CA, 1992.
+[53] H.A. Simon, The structure of ill-structured problems, Artificial
+Intelligence 4 (1973) 181–201.
+[54] G.F. Smith, Defining managerial problems: a framework for
+prescriptive theorizing, Management Science 35 (8) (1989)
+963–981.
+[55] E. Soule, Managerial moral strategies—in search of a few good
+principles, Academy of Management Review 27 (1) (2002)
+114–124.
+[56] E. Spranger, Types of men; the Psychology and Ethics of
+Personality, Johnson Reprints, New York, NY, 1928/1966.
+[57] G. Stasser, D. Stewart, Discovery of hidden profiles by decisionmaking groups: solving a problem versus making a judgment,
+Journal of Personality and Social Psychology 63 (1) (1992)
+426–434.
+[58] E.A. Stohr, B.R. Konsynski, Information Systems and Decision
+Processes: Charting New Directions for DSS Research: A MultiDisciplinary Approach, IEEE Computer Society Press, Los
+Alamitos, CA, 1992.
+[59] R.I. Swaab, T. Postmes, P. Neijens, M.H. Kiers, A.C.M.
+Dumay, Multiparty negotiation support: the role of visualization's influence on the development of shared mental models,
+Journal of Management Information Systems 19 (1) (2002)
+129–150.
+[60] D.L. Swanson, Toward an integrative theory of business and
+society: a research strategy for corporate social performance,
+Academy of Management Review 24 (3) (1999) 506–521.
+[61] R. Vahidov, R. Elrod, Incorporating critique and argumentation
+in DSS, Decision Support Systems 26 (3) (1999) 249–258.
+[62] K.A. Wade-Benzoni, A.J. Hoffman, L.L. Thompson, D.A.
+Moore, J.J. Gillespie, M.H. Bazerman, Barriers to resolution in
+ideologically based negotiations: the role of values and institutions, Academy of Management Review 27 (1) (2002) 41–57.
+[63] R.T. Watson, G. DeSanctis, M.S. Poole, Using a GDSS to
+facilitate group consensus: some intended and unintended
+consequences, MIS Quarterly 12 (3) (1988) 463–480.
+[64] K.E. Weick, The Social Psychology of Organizing, Random
+House, New York, 1979.
+[65] R.W. Zmud, Individual differences and MIS success: a review of
+the empirical literature, Management Science 25 (10) (1979)
+966–979.
+
+1604
+
+D.J. Hall, R.A. Davis / Decision Support Systems 43 (2007) 1588–1604
+
+Dianne J. Hall is an Assistant
+Professor of Management Information Systems at Auburn
+University. She received her
+doctorate at Texas A&M University where she also taught
+for several years. She has also
+worked as a consultant. Her
+work has appeared in both
+academic and practitioner journals such as Communications
+of the ACM, Decision Support
+Systems, Journal of Financial
+Services Marketing, OR Insight, the International Journal
+of Knowledge Management,
+Journal of Information Technology Theory and Application, and
+Knowledge and Innovation and in several books. Her current research
+interests include applications of information technologies in support of
+knowledge management as well as multiple-perspective and valuebased decision-making.
+
+Robert A. Davis is an Associate Professor in the Computer
+Information Systems and
+Quantitative Methods Department of the McCoy College of
+Business Administration at
+Texas State University-San
+Marcos. He earned his MBA
+and Ph.D. degrees from the
+University of South Carolina.
+He is the co-author of Operations Management: Concepts
+in Manufacturing and Services. He has published many
+articles dealing with the effective and efficient utilization of resources for operations and supply
+chain management. His articles have appeared in academic journals
+such as Management Science, Decision Support Systems, Engineering
+Costs and Production Economics, Journal of Marketing, National
+Productivity Review, International Journal of Production Research,
+Competitiveness Review, Journal of Business Research, and Production and Inventory Management Journal. He has served as CoPrincipal Investigator on several research projects with industrial
+clients dealing operations and supply chain issues.
+
+

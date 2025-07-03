@@ -1,0 +1,856 @@
+OPT2024: 16th Annual Workshop on Optimization for Machine Learning
+
+Aligned Multi Objective Optimization
+Yonathan Efroni Meta AI
+Daniel Jiang Meta AI
+Ben Kretzu Technion
+Jalaj Bhandari Meta AI
+Zheqing (Bill) Zhu Meta AI
+Karen Ullrich Meta AI
+
+Abstract
+To date, the multi-objective optimization literature has mainly focused on conflicting objectives,
+studying the Pareto front or requiring users to balance tradeoffs. Yet, in machine learning practice,
+there are many scenarios where such conflict does not take place. Recent findings from multi-task
+learning, reinforcement learning, and LLMs show that diverse related tasks can enhance performance across objectives simultaneously. Despitechcuh this evidence, such phenomenon has not
+been examined from an optimization perspective. This leads to a lack of generic gradient-based
+methods that can scale to scenarios with a large number of related objectives. To address this gap,
+we introduce the Aligned Multi-Objective Optimization framework, propose the AMOOO algorithm,
+and provide theoretical guarantees of its superior performance compared to naive approaches.
+
+1. Introduction
+In many real-world optimization problems, we have access to multi-dimensional feedback rather
+than a single scalar objective. The multi-objective optimization (MOO) literature has largely focused on the setting where these objectives conflict with each other, which necessitates the Pareto
+dominance notion of optimality. A closely related area of study is multi-task learning [31], where
+multiple tasks are learned jointly, typically with both shared and task-specific parameters. The hope
+is that the model can perform better on individual task by sharing common information across tasks.
+Indeed, the phenomenon of improved performance across all tasks has been observed in several settings [17, 20], suggesting that perhaps there may not be significant trade-offs between objectives.
+In this paper, we explicitly consider a setting where objectives are aligned, i.e., objectives that
+share a common solution. For example, in reinforcement learning, practitioners can sometimes
+speed up learning by exploit several alternative reward specifications that all lead to the same optimal policy [8]. In statistics and machine learning, labeled data is sometimes sparse, leading practitioners to rely on closely-related proxy tasks to improve prediction accuracy [2].
+To our knowledge, there is no work that studies this setting from a purely optimization perspective. We ask the question: how can an optimization algorithm benefit from multi-objective feedback
+when the objectives are aligned? We introduce the aligned multi-objective optimization (AMOO)
+framework to study this question. Subsequently, we design a new algorithm with provable guarantees for the AMOO setting and show empirical evidence of improved convergence properties.
+
+© Y. Efroni, D. Jiang, B. Kretzu, J. Bhandari, Z.(. Zhu & K. Ullrich.
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+2. Aligned Multi Objective Optimization
+Consider an unconstrained multi-objective optimization where F : Rn → Rm is a vector valued function, F (x) = (f1 (x), f2 (x), . . . , fm (x)) , and all functions {fi }i∈[m] are convex where
+[m] := {1, . . . , m}. Without additional assumptions the components of F (x) cannot be minimized
+simultaneously. To define a meaningful approach to optimize F (x) one can study the Pareto front,
+or to properly define how to trade-off the objectives. We denote by ∆m the m-dimensional simplex,
+and by ∆m,α := {w ∈ Rm : w ∈ ∆m , ∀i ∈ [m] wi ≥ α}. In the AMOO setting we make the
+assumption the functions are aligned in a specific sense: we assume that the functions {fi }i∈[m]
+share an optimal solution. Namely, there exists a point x∗ that minimizes all functions in F (·)
+simultaneously,
+x∗ ∈ arg minn fi (x)
+x∈R
+
+∀i ∈ [m].
+
+(1)
+
+With this additional assumption one may hope to get quantitative benefits from the multi objective
+feedback. How can Gradient Descent (GD) be improved when the functions are aligned?
+A common algorithmic approach in the multi-objective setting is using a weight vector w ∈ Rm
+that maps the vector F (x) into a single objective fw (x) := wT F (x), amenable to GD optimization [22, 25, 31, 37]. Existing algorithms suggest alternatives for choosing w. We follow this
+paradigm and design an algorithm that chooses the weights adaptively for the AMOO setting.
+Towards developing intuition for our algorithmic approach we consider few examples of the
+AMOO setting. These showcase the need to choose weights in an adaptive way to the problem.
+The Specification Example. Consider the case F (x) = (f1 (x), f2 (x)), x ∈ R2 where
+f1 (x) = (1 − ∆)x21 + ∆x22 ,
+
+and f2 (x) = ∆x21 + (1 − ∆)x22 ,
+
+for some small ∆ ∈ [0, 0.5]. It is clear that F (x) can be simultaneously minimized in x⋆ = (0, 0),
+hence, this is an AMOO setting. This example, as we demonstrate, illustrates an instance in which
+each individual function does not specify the solution well, but with proper weighting the optimal
+solution is well specified.
+First, observe both f1 and f2 are ∆-strongly convex and O(1)-smooth functions. Hence, GD
+with properly tuned learning rate, applied to either f1 or f2 will converge with linear rate of Ω(∆).
+It is simple to observe this rate can be dramatically improved by proper weighting of the functions.
+Indeed, let fwU be a function with equal weighting of both f1 and f2 , namely, choosing wU =
+(0.5, 0.5), we get fwU (x) = 0.5x21 + 0.5x22 which is Ω(1)-strongly convex and O(1)-Lipchitz
+smooth. Hence, GD applied to fwU converges with linear rate of Ω(1)—much faster than O(∆)
+when ∆ is taken to be arbitrarily small.
+The Selection Example. Consider the case F (x) = (f1 (x), . . . , fm (x)), x ∈ Rm , where
+∀i ∈ [m − 1] : fi (x) = (1 − ∆)x21 + ∆
+
+d
+X
+j=2
+
+xj ,
+
+and
+
+fm (x) =
+
+d
+X
+
+x2j ,
+
+j=1
+
+and ∆ ∈ [0, 0.5]. The common minimizer of all functions is x⋆ = 0 ∈ Rd , and, hence, the
+objectives are aligned. Unlike the specification example, in the selection example, there is a single
+objective function among the m objectives we should select to improve the convergence rate of GD.
+Further, in the selection example, choosing the uniform weight degrades the convergence rate.
+2
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+Indeed, setting the weight vector toPbe uniform wU = (1/m, . . . , 1/m) ∈ Rm leads to the
+function fwU (x) = (2 − ∆)/m · x21 + dj=2 (∆ + 1)/m · x2j , which is O(1/m)-strongly convex.
+Hence, GD applied to fwU converges in a linear rate of O(1/m). On the other hand, GD applied to
+fm converges with linear rate of Ω(1). Namely, setting the weight vector to be (0, . . . , 0, 1) ∈ Rm
+improves upon taking the average when the number of objectives is large.
+Algorithm 1: AMOOO-GD
+while t = 1, 2, . . . do
+wt ← AMOOO ({fi (xt )}m
+i=1 )
+gt ← ∇fwt (xt )
+xt+1 = xt − ηt gt
+end
+
+Algorithm 2: AMOOO
+inputs: {fi (xt )}m
+i=1
+initialize: wmin = µ⋆ / (8mβ)
+m
+Get Hessian matrices {∇2 fi (xt )}
+
+Pi=1
+2
+wt ∈ arg maxw∈∆m,wmin λmin
+i wi ∇ fi (xt )
+Return wt
+
+3. Optimal Adaptive Strong Convexity & The AMOOO Algorithm
+The aforementioned instances highlighted that in the AMOO setting the weights should be chosen in
+an adaptive way to the problem instance, and, specifically, based on the curvature. We formalize this
+intuition and design the AMOO-Optimizer (AMOOO). Towards developing it, we define the optimal
+adaptive strong convexity parameter, µ⋆ . Later we show that when the weighted loss is determined
+by AMOOO GD converges in a rate that depends on µ⋆ .
+We start by defining the optimal adaptive strong convexity over the class of weights:
+Definition 1 (Optimal Adaptive Strong Convexity µ⋆ ) The optimal adaptive strong convexity parameter, µ⋆ ∈ R+ , is the largest value such that ∀x ∈ X exists a weight vector w ∈ ∆m such that
+!
+m
+X
+2
+λmin
+wi ∇ fi (x) ≥ µ⋆ .
+(2)
+i=1
+
+For each x ∈ X , there may be a different weight vector in class w⋆ (x) ∈ ∆m that solves
+w⋆ (x) ∈ arg max λmin ∇2 fw (x) and maximizes the curvature. The optimal adaptive strong
+convexity parameter µ⋆ is the largest lower bound on this quantity on the entire space X . The
+specification and selection examples (Section 2) demonstrate µ⋆ can be much larger than both the
+strong convexity parameter of the average function or of each individual function; for both µ⋆ =
+O(1) whereas the alternatives may have arbitrarily small strongly convex parameter value.
+Definition 1 not only quantifies an optimal notion of curvature, but also directly results with the
+AMOOO algorithm. AMOOO sets the weights according to equation 2, namely, at the k th iteration, it
+finds the weight for which fw (xk ) has the largest local curvature. Then, a gradient step is applied
+in the direction of ∇fwk (xk ) (see Algorithm 1). Indeed, AMOOO seems as a natural candidate
+for AMOO. One may additionally hope that standard GD analysis techniques for strongly-convex
+and smooth functions can
+ be applied. It is well known that if a function f (x) is β smooth and
+2
+∀x ∈ X , λmin ∇ f (x) ≥ µ then GD converges with µ/β linear rate.
+
+A careful examination of this argument shows it fails. Even though λmin ∇2 fwk (xk ) ≥ µ⋆
+at each iteration it does not imply that fwk is µ⋆ strongly convex for a fixed wk . Namely, it does
+not necessarily hold that for all x ∈ X , λmin ∇2 fwk (x) ≥ µ⋆ , but only pointwise at xk . This
+property emerges naturally in AMOO, yet such nuance is inherently impossible in single-objective
+optimization and, to the best of our knowledge, was not explored in online optimization as well.
+3
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+Next, we provide a positive result. When restricting the class of functions to the set of selfconcordant and smooth functions (see Appendix B) we provide a convergence guarantee for AMOOO-GD
+that depends on µ⋆ . The result shows that close to the optimal solution AMOOO-GD converges linearly with rate of O(µ⋆ /β).
+Theorem 2 (µ⋆ Convergence of AMOOO-GD) Suppose {fi }i∈[m] are β smooth, Mf self-concordant,
+ 3/2
+√
+share an optimal solution x⋆ and that µ⋆ > 0. Let k0 := ⌈ ∥x0 − x⋆ ∥ 3Mf mβ 2 − β /µ⋆ ⌉,
+where ∥·∥ is the 2-norm. If ηt = 1/β then AMOOO-GD converges with rate:
+(
+√
+√
+(1 − µ⋆ /8β)(k−k0 )/2 µ⋆ /3Mf mβ k ≥ k0
+∥xt − x⋆ ∥ ≤
+√
+3/2
+∥x0 − x⋆ ∥ − kµ⋆ /24Mf mβ
+o.w.
+Interestingly, Theorem 2 holds without making strong convexity assumption on the individual functions, but only requires that the adaptive strong convexity parameter µ⋆ to be positive, as,
+otherwise, the result is vacuous.
+3.1. Practical Implementation
+Towards large scale application of AMOOO with modern deep learning architectures we simplify its
+implementation. First, we optimize over the simplex as oppose to over ∆m,min . We conjecture this is
+a by product of our analysis. In addition, we approximate the Hessian matrices with their diagonal.
+Prior works used the diagonal Hessian approximation as pre-conditioner [1, 5, 23, 30, 35]. Notably,
+with this approximation the computational cost of AMOOO scales linearly with number of parameters
+in the Hessian calculation, instead of quadratically. The following result establishes that the value
+of optimal curvature, and, hence the convergence rate of AMOOO-GD, degrades continuously with
+the quality of approximation.
+
+2 f (x) || ≤ ∆ where
+Proposition 3 Assume that for all i ∈ [m] and x ∈ X ||∇2 fi (x) − Diag ∇
+i
+2
+
+P
+d×d . Let w
+2 Diag (f (x)) .
+b
+∥A∥2 is the P
+spectral norm of
+A
+∈
+R
+∈
+arg
+max
+λ
+w
+∇
+min
+i
+i
+w∈∆
+m
+i
+
+bi ∇2 fi (x) ≥ µ⋆ − 2∆.
+Then, λmin
+iw
+Next we provide high-level details of our implementation (also see Appendix C).
+Diagonal Hessian estimation via Hutchinson’s Method. We use the Hutchinson method [5, 13,
+35] which provides an estimate to the diagonal Hessian by averaging products of the Hessian with
+random vectors. Importantly, the computational cost of the Hutchinson method scales linearly with
+number of parameters.
+Maximizing the minimal eigenvalue. Maximizing the minimal eigenvalue of symmetric matrices
+is known to be a convex problem (Boyd and Vandenberghe [3], Example 3.10) and can be solved
+via semidefinite programming. For diagonal matrices the problem can be cast as a simpler max-min
+bilinear problem, and, specifically, as arg maxw∈∆m minq∈∆d wT Aq, where d is the dimension
+of parameters, A ∈ Rm×d and its ith row is the diagonal Hessian of the ith objective, namely,
+∀i ∈ [m], A[i, :] = diag(∇2 fi (x)).
+This bilinear optimization problem has been well studied in the past [9, 24, 29]. We implemented the PU method of Cen et al. [4] which, loosely speaking, performs iterative updates via
+exponential gradient descent/ascent. Note that, PU has a closed form update ruke and its computational cost scales linearly with number of parameters.
+4
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+Figure 1: AMOO tested against equal weighting of loss functions (EWO) when optimized by SGD
+(left) or Adam (right). Additionally, we test the effect of additive Normal noise of the
+optimal representation hθ (x). AMOO performs better than its counterpart in all 6 settings.
+
+4. Experiment
+We will compare our implementation of AMOOO to a weighting mechanism that equally weighting
+the objectives (EWO). Specifically, we choose 10 axis-aligned quadratic losses of the form
+fi (x) = (hθ (x) − hθ⋆ (x))⊤ Hi (hθ (x) − hθ⋆ (x)),
+
+∀i ∈ [10],
+
+(3)
+
+where Hi ∈ R10×10 is a diagonal positive semi-definite Hessian matrix. Both hθ⋆ : Rd → Rd and
+hθ : Rd → Rd are 2-layer neural networks with parameters θ⋆ and θ. Observe that all of the loss
+functions are minimized when hθ (x) = hθ⋆ (x), and, hence, it is an instance of the AMOO setting.
+In our experiment, we choose all but one of the losses to have low curvature, simulating a selection example (see Section 2). The features x are generated by sampling from a d dimensional
+Normal distribution N (0, I10 ), and the targets are perturbed by an additional Normal noise, namely,
+y = hθ⋆ (x) + ϵσ where ϵσ ∼ N (0, σ 2 I10 ), where Id is the identity matrix in dimension d. We
+experiment with three different noise levels by modifying σ. We test both AMOOO and EWO as the
+mechanisms for calculating a weighted loss fw at each iteration, and apply either SGD or Adam
+optimizer to fw . In both cases we perform a grid search on the learning rate to find the best performing learning rate parameter. In Figure 1, we show the results of our simulation. Generally,
+AMOOO performs better than EWO in all settings across optimizers and noise levels. Adam (right)
+approaches a more optimal representation than SGD. See additional details in Appendix C.
+
+5. Conclusion
+In this work, we introduced the AMOO framework to study how aligned multi-objective feedback
+can improve gradient descent convergence. We designed the AMOOO algorithm, which adaptively
+weights objectives and offers provably improved convergence guarantees. Our experimental results
+demonstrate AMOOO’s effectiveness optimizing a large number of tasks that share optimal solution.
+Future research directions include determining optimal rates for AMOO and conducting comprehensive empirical studies. Such advancements will improve our ability to scale learning algorithms
+to handle a large number of related tasks efficiently.
+
+5
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+References
+[1] Idan Achituve, Idit Diamant, Arnon Netzer, Gal Chechik, and Ethan Fetaya. Bayesian uncertainty for gradient aggregation in multi-task learning. arXiv preprint arXiv:2402.04005,
+2024.
+[2] Hamsa Bastani. Predicting with proxies: Transfer learning in high dimension. Management
+Science, 67(5):2964–2984, 2021.
+[3] Stephen Boyd and Lieven Vandenberghe. Convex optimization. Cambridge university press,
+2004.
+[4] Shicong Cen, Yuting Wei, and Yuejie Chi. Fast policy extragradient methods for competitive
+games with entropy regularization. Advances in Neural Information Processing Systems, 34:
+27952–27964, 2021.
+[5] Olivier Chapelle, Dumitru Erhan, et al. Improved preconditioner for hessian free optimization. In NIPS Workshop on Deep Learning and Unsupervised Feature Learning, volume 201.
+Citeseer, 2011.
+[6] Zhao Chen, Vijay Badrinarayanan, Chen-Yu Lee, and Andrew Rabinovich. Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks. In International
+conference on machine learning, pages 794–803. PMLR, 2018.
+[7] Sumanth Chennupati, Ganesh Sistu, Senthil Yogamani, and Samir A Rawashdeh. Multinet++:
+Multi-stream feature aggregation and geometric loss strategy for multi-task learning. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops,
+pages 0–0, 2019.
+[8] Christoph Dann, Yishay Mansour, and Mehryar Mohri. Reinforcement learning can be more
+efficient with multiple rewards. In International Conference on Machine Learning, pages
+6948–6967. PMLR, 2023.
+[9] Constantinos Daskalakis and Ioannis Panageas. Last-iterate convergence: Zero-sum games
+and constrained min-max optimization. arXiv preprint arXiv:1807.04252, 2018.
+[10] Jean-Antoine Désidéri. Multiple-gradient descent algorithm (mgda) for multiobjective optimization. Comptes Rendus Mathematique, 350(5-6):313–318, 2012.
+[11] Daria Dzyabura, Srikanth Jagabathula, and Eitan Muller. Accounting for discrepancies between online and offline product evaluations. Marketing Science, 38(1):88–106, 2019.
+[12] Alexander IJ Forrester, András Sóbester, and Andy J Keane. Multi-fidelity optimization via
+surrogate modelling. Proceedings of the royal society a: mathematical, physical and engineering sciences, 463(2088):3251–3269, 2007.
+[13] Michael F Hutchinson. A stochastic estimator of the trace of the influence matrix for laplacian
+smoothing splines. Communications in Statistics-Simulation and Computation, 18(3):1059–
+1076, 1989.
+
+6
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+[14] Kirthevasan Kandasamy, Gautam Dasarathy, Junier B Oliva, Jeff Schneider, and Barnabás
+Póczos. Gaussian process bandit optimisation with multi-fidelity evaluations. Advances in
+neural information processing systems, 29, 2016.
+[15] Kirthevasan Kandasamy, Gautam Dasarathy, Barnabas Poczos, and Jeff Schneider. The multifidelity multi-armed bandit. Advances in neural information processing systems, 29, 2016.
+[16] Kirthevasan Kandasamy, Gautam Dasarathy, Jeff Schneider, and Barnabás Póczos. Multifidelity bayesian optimisation with continuous approximations. In International conference
+on machine learning, pages 1799–1808. PMLR, 2017.
+[17] Seung Hyun Lee, Yinxiao Li, Junjie Ke, Innfarn Yoo, Han Zhang, Jiahui Yu, Qifei Wang,
+Fei Deng, Glenn Entis, Junfeng He, et al. Parrot: Pareto-optimal multi-reward reinforcement
+learning framework for text-to-image generation. arXiv preprint arXiv:2401.05675, 2024.
+[18] Shibo Li, Robert M Kirby, and Shandian Zhe. Deep multi-fidelity active learning of highdimensional outputs. arXiv preprint arXiv:2012.00901, 2020.
+[19] Shibo Li, Jeff M Phillips, Xin Yu, Robert Kirby, and Shandian Zhe. Batch multi-fidelity active
+learning with budget constraints. Advances in Neural Information Processing Systems, 35:
+995–1007, 2022.
+[20] Baijiong Lin and Yu Zhang. Libmtl: A python library for deep multi-task learning. The
+Journal of Machine Learning Research, 24(1):9999–10005, 2023.
+[21] Baijiong Lin, Feiyang Ye, Yu Zhang, and Ivor W Tsang. Reasonable effectiveness of random
+weighting: A litmus test for multi-task learning. arXiv preprint arXiv:2111.10603, 2021.
+[22] Bo Liu, Xingchao Liu, Xiaojie Jin, Peter Stone, and Qiang Liu. Conflict-averse gradient
+descent for multi-task learning. Advances in Neural Information Processing Systems, 34:
+18878–18890, 2021.
+[23] Hong Liu, Zhiyuan Li, David Hall, Percy Liang, and Tengyu Ma. Sophia: A scalable stochastic
+second-order optimizer for language model pre-training. arXiv preprint arXiv:2305.14342,
+2023.
+[24] Panayotis Mertikopoulos, Houssam Zenati, Bruno Lecouat, Chuan-Sheng Foo, Vijay Chandrasekhar, and Georgios Piliouras. Mirror descent in saddle-point problems: Going the extra
+(gradient) mile. arXiv preprint arXiv:1807.02629, 2018.
+[25] Aviv Navon, Aviv Shamsian, Idan Achituve, Haggai Maron, Kenji Kawaguchi, Gal Chechik,
+and Ethan Fetaya. Multi-task learning as a bargaining game. arXiv preprint arXiv:2202.01017,
+2022.
+[26] Yurii Nesterov. Introductory lectures on convex optimization: A basic course, volume 87.
+Springer Science & Business Media, 2013.
+[27] Yurii Nesterov et al. Lectures on convex optimization, volume 137. Springer, 2018.
+
+7
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+[28] Xue Bin Peng, Marcin Andrychowicz, Wojciech Zaremba, and Pieter Abbeel. Sim-to-real
+transfer of robotic control with dynamics randomization. In 2018 IEEE international conference on robotics and automation (ICRA), pages 3803–3810. IEEE, 2018.
+[29] Sasha Rakhlin and Karthik Sridharan. Optimization, learning, and games with predictable
+sequences. Advances in Neural Information Processing Systems, 26, 2013.
+[30] Tom Schaul, Sixin Zhang, and Yann LeCun. No more pesky learning rates. In International
+conference on machine learning, pages 343–351. PMLR, 2013.
+[31] Ozan Sener and Vladlen Koltun. Multi-task learning as multi-objective optimization. Advances in neural information processing systems, 31, 2018.
+[32] Jialin Song, Yuxin Chen, and Yisong Yue. A general framework for multi-fidelity bayesian
+optimization with gaussian processes. In The 22nd International Conference on Artificial
+Intelligence and Statistics, pages 3158–3167. PMLR, 2019.
+[33] Shion Takeno, Hitoshi Fukuoka, Yuhki Tsukada, Toshiyuki Koyama, Motoki Shiga, Ichiro
+Takeuchi, and Masayuki Karasuyama. Multi-fidelity bayesian optimization with max-value
+entropy search and its parallelization. In International Conference on Machine Learning,
+pages 9334–9345. PMLR, 2020.
+[34] Jian Wu, Saul Toscano-Palmerin, Peter I Frazier, and Andrew Gordon Wilson. Practical multifidelity bayesian optimization for hyperparameter tuning. In Uncertainty in Artificial Intelligence, pages 788–798. PMLR, 2020.
+[35] Zhewei Yao, Amir Gholami, Sheng Shen, Mustafa Mustafa, Kurt Keutzer, and Michael Mahoney. Adahessian: An adaptive second order optimizer for machine learning. In proceedings
+of the AAAI conference on artificial intelligence, volume 35, pages 10665–10673, 2021.
+[36] Jiaxiang Yi, Fangliang Wu, Qi Zhou, Yuansheng Cheng, Hao Ling, and Jun Liu. An activelearning method based on multi-fidelity kriging model for structural reliability analysis. Structural and Multidisciplinary Optimization, 63:173–195, 2021.
+[37] Tianhe Yu, Saurabh Kumar, Abhishek Gupta, Sergey Levine, Karol Hausman, and Chelsea
+Finn. Gradient surgery for multi-task learning. Advances in Neural Information Processing
+Systems, 33:5824–5836, 2020.
+[38] Wenshuai Zhao, Jorge Peña Queralta, and Tomi Westerlund. Sim-to-real transfer in deep reinforcement learning for robotics: a survey. In 2020 IEEE symposium series on computational
+intelligence (SSCI), pages 737–744. IEEE, 2020.
+
+Appendix A. Related Work
+A.1. Multi-task Learning and Gradient Weights
+Our work is closely related optimization methods from the multi-task learning (MTL) literature,
+particularly those that integrate weights into the task gradients or losses. The multiple gradient
+
+8
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+descent algorithm (MGDA) approach of [10], which proposes an optimization objective that gives
+rise to a weight vector that implies a descent direction for all tasks. MGDA converges to a point on
+the Pareto set. MGDA was introduced into the deep MTL setting in [31], which propose extensions
+to MGDA weight calculation that can be more efficiently solved.
+The PCGrad paper [37] identified that conflicting gradients, especially when there is high positive curvature and differing gradient magnitudes, can be detrimental to MTL. The authors then
+propose to alter the gradients to remove this conflict (by projecting each task’s gradient to the normal plane of another task), forming the basis for the PCGrad algorithm. Another work that tackles
+conflicting gradients is the conflict-averse gradient descent (CAGrad) method of [22]. CAGrad
+generalizes MGDA: its main idea is to minimize a notion of “conflict” between gradients from
+different tasks, while staying nearby the gradient of the average loss. Notably, CAGrad maintains
+convergence toward a minimum of the average loss. Another way to handle gradient conflicts is the
+Nash-MTL method of [25], where the gradients are combined using a bargaining game. Other optimization techniques for MTL include tuning gradient magnitudes so that all tasks train at a similar
+rate [6], taking the geometric mean of task losses [7], and random weighting [21].
+Our approach, AMOOO, is similar to existing work in that it also computes gradient weights in
+order to combine information from multiple pieces of feedback. However, unlike previous work,
+we focus on exploiting prior knowledge that the objectives are aligned and show both theoretically
+and empirically that such knowledge can be beneficial for optimization.
+A.2. Proxy, Multi-fidelity, and Sim-to-real Optimization
+Two other streams of related work are (1) machine learning using proxies and (2) multi-fidelity
+optimization. These works stand out from MTL in that they both focus on using closely related
+objectives, while traditional MTL typically considers a set of tasks that are more varied in nature.
+Proxy-based machine learning attempts to approximate the solution of a primary “gold” task (for
+which data is expensive or sparsely available) by making use of a proxy task where data is more
+abundant [2, 11].
+Similarly, multi-fidelity optimization makes use of data sources of varying levels of accuracy
+(and potentially lower computational cost) to optimize a target objective [12]. In particular, the
+idea of using multiple closely-related tasks of varying levels of fidelity has seen adoption in settings
+where function evaluations are expensive, including bandits [14, 15], Bayesian optimization [16,
+32–34], and active learning [18, 19, 36]. Sim-to-real learning can be thought of as a particular
+instance of multi-fidelity optimization, where one hopes to learn real world behavior via simulations
+(typically in robotics) [28, 38]. In many of these papers, however, the objectives are queried one at
+a time, differing slightly from the MTL or AMOO settings.
+The motivations behind the AMOO setting are clearly similar to those of proxy optimization,
+multi-fidelity optimization, and sim-to-real learning. However, our papers takes a pure optimization
+and gradient-descent perspective, which to our knowledge, is novel in the literature.
+
+9
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+Appendix B. Proofs of Theoretical Results
+B.1. Assumptions & Consequences
+In this section we formally provide our working assumptions. We assume access to multi-objective
+feedback with m objectives F (x) = (f1 (x), . . . , fm (x)). Considering AMOO, we assume the
+functions are aligned in the sense of equation 1, namely, that they share an optimal solution.
+We assume that the exist a local weighting for which the the minimal eigenvalue of the Hessian
+of the weighted function is at least µ⋆ . Further, we define the following quantities, for the single
+and multi optimization settings:
+∥y∥2x := ∥y∥∇2 f (x)
+∥y∥2x,w := ∥y∥∇2 fw (x) .
+Assumption 4 (Smoothness) All function are β-smooth. ∀i ∈ [m], fi : Rn →
+− R it holds that
+∀x, y ∈ X :
+f (y) ≤ f (x) + ∇f (x)⊤ (y − x) +
+
+β
+∥x − y∥2 .
+2
+
+Assumption 5 (Self-concordant) All functions are self-concordant with Mf ≥ 0 parameter. ∀i ∈
+[m] f : Rn →
+− R and ∀x, y ∈ X :
+⟨∇3 fi (x)[y]y, y⟩ ⪯ 2Mf ∥y∥3x ,
+where ∇3 g(x)[y] := limα→0 α1
+in y.
+
+
+
+∇2 g(x+αy)−∇2 g(x)
+α
+
+
+
+is the directional derivative of the hessian
+
+These assumptions have the following important consequences.
+Lemma 6 (Theorem 5.1.8 & Lemma 5.1.5, Nesterov [26]) Let f : X → R be an Mf selfconcordant function. Let x, y ∈ X , we have
+f (y) ≥ f (x) + ⟨∇f (x), y − x⟩ +
+
+1
+ω (Mf ∥y − x∥x ) ,
+Mf2
+2
+
+t
+where ω(t) = t − ln(1 − t), and, for any t > 0, ω(t) ≥ 2(1+t)
+.
+
+Lemma 7 (Theorem 5.1.1, Nesterov et al. [27]) Let f1 , f2 : X → R be Mf self-concordant
+functions. Let w1 , w2 > 0. Then, f = w1 f1 + w2 f2 is M = maxi { √1wi }Mf self-concordant
+function.
+Lemma
+8 Let {fi : X → R}ni=1 be Mf self-concordant functions. Let {wi > 0}. Then, f =
+Pn
+√1
+i=1 wi fi is M = maxi { wi }Mf self-concordant function.
+
+10
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+P
+Proof Let f = ni=1 wi fi . We prove it by using induction.
+Basis: n = 2. Using Lemma 7 we obtain that f is maxi∈[1,2] { √1wi }Mf self-concordant function.
+Induction assumption: For every n < k it hold that f is maxi∈[1,n] { √1wi }Mf self-concordant
+function.
+P
+P
+Induction step: Let f = ki=1 wi fi . Define g = k−1
+i=1 wi fi . From the Induction assumption it hold
+that g is maxi∈[1,k−1] { √1wi }Mf self-concordant function. Since f = g + wk fk , by using Lemma 7
+we obtain that f is max{maxi∈[1,k−1] { √1wi }, √1wk }Mf = maxi∈[1,k] { √1wi }Mf self-concordant
+function.
+Lemma 9 (Standard, E.g., 9.17 Boyd and Vandenberghe [3]) Let f : Rn → R a β-smooth over
+X , and let x⋆ ∈ arg min f (x). Then, it holds that
+x∈R
+
+∥∇f (x)∥2 ≤ 2β (f (x) − f (x⋆ )) .
+Further, we have the following simple consequence of the AMOO setting.
+Lemma 10 For all w ∈ ∆m and x ∈ X it holds that fw (x) − fw (x⋆ ) ≥ 0.
+Proof
+P
+Observe that fw (x) − fw (x⋆ ) = m
+i=1 wi (fi (x) − fi (x⋆ )) . Since x⋆ is the optimal solution
+for all objectives it holds that fi (x) − fi (x⋆ ) ≥ 0. The lemma follows from the fact wi ≥ 0 for all
+i ∈ [m].
+Further, recall that the following observation holds.
+Observation 11 Let w ∈ ∆m . Assume {fi }m
+i=1 are β smooth. Then, fw (x) :=
+also β smooth.
+
+Pm
+
+i=1 wi fi (x) is
+
+B.2. Proof of Proposition 3
+Recall the following results which is a corollary of Weyl’s Theorem.
+Theorem 12 (Weyl’s Theorem) Let A and ∆ be symmetric matrices in Rd×d . Let λj (A) be the jth
+largest eigenvalue of a matrix A. Then, for all j ∈ [d] it holds that ∥λj (A) − λj (A + ∆)∥ ≤ ∥∆∥2 ,
+where ∥∆∥2 is the operator norm of ∆.
+Proposition 3 is a direct outcome of this result. We establish it for a general deviation in Hessian
+matrices without requiring it to be necessarily diagonal.
+Proof
+Denote Ai := ∇2 f (x) + ∆i . Let w⋆ denote the solution of,
+!
+X
+2
+w⋆ ∈ arg max λmin
+wi ∇ fi (x) ,
+w∈∆
+
+i
+
+11
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+
+P
+2
+and let g(w⋆ ) denote the optimal value, g(w⋆ ) = λmin
+i w⋆,i ∇ fi (x) . Similarly, let ŵ⋆ denote
+the solution of the optimization problem of the perturbed problem:
+!
+X
+ŵ⋆ ∈ arg max λmin
+wi Ai ,
+w∈∆
+
+i
+
+P
+and denote ĝ(ŵ⋆ ) as its value, ĝ(ŵ⋆ ) = λmin ( i ŵ⋆,i Ai ). Then, the following holds.
+g(w⋆ ) = g(w⋆ ) − ĝ(w⋆ ) + ĝ(w⋆ ) − ĝ(ŵ⋆ ) + ĝ(ŵ⋆ ) − g(ŵ⋆ ) + g(ŵ⋆ )
+(1)
+
+≤ g(w⋆ ) − ĝ(w⋆ ) + ĝ(ŵ⋆ ) − g(ŵ⋆ ) + g(ŵ⋆ )
+≤ |g(w⋆ ) − ĝ(w⋆ )| + |ĝ(ŵ⋆ ) − g(ŵ⋆ )| + g(ŵ⋆ )
+(2)
+
+≤ 2∥∆∥2 + g(ŵ⋆ ).
+(1) holds since ĝ(w⋆ ) − ĝ(ŵ⋆ ) ≤ 0 by the optimality of ŵ⋆ on ĝ. Further, (2) holds due to
+Weyl’s Thoerem (Theorem 12) and the assumptions of the approximation error. Recall that for any
+w ∈ ∆m it holds that
+X
+
+wi A i −
+
+i
+
+since
+
+X
+i
+
+wi ∇2 fi (x)
+
+≤
+
+X
+
+wi Ai − ∇2 fi (x) 2 ≤ ∥∆∥2
+
+i
+
+2
+
+P
+
+i wi = 1. Hence, by Weyl’s theorem it holds that
+
+|g(w⋆ ) − ĝ(w⋆ )∥ ≤ ∥∆∥2 and |g(ŵ⋆ ) − ĝ(ŵ⋆ )∥ ≤ ∥∆∥2 .
+Finally, since g(w⋆ ) ≥ µ⋆ , by Definition 1, we get that
+g(ŵ⋆ ) ≥ µ⋆ − 2∥∆∥2 ,
+which concludes the proof.
+
+B.3. Proof of Theorem 2
+In highlevel, the proof follows the standard convergence analysis of µ-strongly convex and Lsmooth function, while applying Lemma 6, instead of using only properties of strongly convex
+functions alone.
+In addition, we choose the minimal weight value, wmin , such that the weighted function at each
+iteration fwk has a sufficiently large self-concordant parameter, while the minimal eigenvalue of its
+Hessian is close to µ⋆ . Before proving Theorem 2, we provide two results that allow us to control
+these two aspects.
+√
+Lemma 13 For any iteration k, the function fwk is 1/ wmin Mf self-concordant.
+Proof This is a direct consequence of Lemma 8 and the fact Algorithm 2 sets the weights by optimizing over a set where the weight vector, w. is lower bounded by wmin .
+
+12
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+
+Lemma 14 For any iteration k, we have λmin ∇2 fwk ≥ µ⋆ − 2mwmin β.
+Proof
+b ∈ ∆m,wmin
+To establish P
+the lemma we want to show
+any w ∈ ∆m there exists w
+P that for
+2 f (x ) ≥ λ
+2 f (x ) − w
+such that λmin
+ŵ
+∇
+w
+∇
+β.
+We
+start
+by
+bounding the
+i t
+min
+i t
+min
+i i
+i i
+following term ∇2 fw (x) − ∇2 fŵ (x) 2 for any x ∈ X . We have
+X
+
+(wi − ŵi )∇2 fi (x)
+
+i
+
+≤
+2
+
+X
+
+|wi − ŵi | ∇2 fi (x) 2 ≤ β
+
+i
+
+X
+
+|wi − ŵi |,
+
+i
+
+while the last inequalityP
+holds since {fi }i∈[m] are β smooth. Since for any w ∈ ∆m there exist
+ŵ ∈ ∆m,wmin such that i |wi − ŵi | ≤ 2mwmin , we obtain that for every x ∈ X it holds that
+∇2 fw (x) − ∇2 fŵ (x) 2 ≤ 2mwmin β.
+Thus, by using Theorem 12 we have
+|λmin (∇2 fw (x)) − λmin (∇2 fŵ (x))| ≤ ∇2 fw (x) − ∇2 fŵ (x) 2 ≤ 2mwmin β.
+Recall that λmin (∇2 fw (x)) ≥ µ∗ assuming Definition 1 holds. Then, we obtain
+λmin (∇2 fŵ (x)) ≥ µ∗ − 2mwmin β.
+
+With these two results we are ready to prove Theorem 2.
+Proof
+The GD update rule
+by xk+1 = xk − η∇fwk (xk ), where η is the step size, and wk ∈
+P is given
+2
+2
+arg maxw∈∆m λmin
+i wi ∇ fi (xt ) . With the assumption that maxw∈∆m λmin ∇ fwk (xk ) =
+µ⋆ > 0, Lemma 14, and since we set wmin = µ⋆ / (8mβ) we have that
+
+λmin ∇2 fwk (xk ) ≥ µ⋆ − 4mwmin β := µ⋆ /2 = µ
+c⋆ ,
+(4)
+for all iterations k.
+We bound the squared distance between xk+1 and x⋆ :
+∥xk+1 − x⋆ ∥2 = ∥xk − η∇fwk (xk ) − x⋆ ∥2
+= ∥xk − x⋆ ∥2 − 2η⟨∇fwk (xk ), xk − x∗ ⟩ + η 2 ∥∇fwk (xk )∥2
+By Lemma 13 it holds that fwk is
+p
+df := 1/√wmin Mf ≤ 3 mβMf /√µ⋆
+M
+self concordant. Then, by applying Lemma 6 with y = x⋆ and x = xk we have
+⟨∇fwk (xk ), xk − x⋆ ⟩ ≥ fwk (xk ) − fwk (x⋆ ) +
+
+13
+
+
+1 d
+ω Mf ∥x⋆ − xk ∥x,wk .
+df
+M
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+which allows us to bound ∥xk+1 − x⋆ ∥2 by
+!
+
+
+1
+df ∥x⋆ − xk ∥
+∥xk − x⋆ ∥2 − 2η fwk (xk ) − fwk (x⋆ ) +
+ω M
++ η 2 ∥∇fwk (xk )∥2
+x,wk
+df
+M
+
+(1)
+2η d
+M
+∥x
+−
+x
+∥
++ 2η (2βη − 1) (fwk (xk ) − fwk (x⋆ ))
+ω
+≤ ∥xk − x⋆ ∥2 −
+⋆
+f
+k
+x,w
+k
+df 2
+M
+
+
+(2)
+1
+df ∥x⋆ − xk ∥
+≤ ∥xk − x⋆ ∥2 −
+M
+ω
+x,w
+k
+df 2
+βM
+(3)
+
+≤ ∥xk − x⋆ ∥2 −
+
+∥x⋆ − xk ∥2x,wk
+1
+df ∥x⋆ − xk ∥
+2β 1 + M
+
+x,wk
+
+(4)
+
+≤ ∥xk − x⋆ ∥2 −
+
+2
+
+µ
+c⋆
+∥x⋆ − xk ∥
+√
+df β ∥x⋆ − xk ∥
+2β 1 + M
+
+where (1) is due to Lemma 9, (2) holds by fwk (xk )−fwk (x⋆ ) ≥ 0 (Lemma 10) and η (2βη − 1) ≤
+0 since 0 < η ≤ 1/2β, (3) is due to the lower bound on ω(t) from Lemma 6, and (4) follows from
+equation (4) and since fw is β smooth for all w ∈ ∆m .
+The above recursive equation results in polynomial contraction for large ∥x⋆ − xk ∥, and, then
+⋆
+exhibits linear convergence. To see this, let κ := µc
+β , and examine the two limits.
+√
+df β, δ ≤ 1. With this assumption we have the followLinear convergence, ∥x⋆ − xk ∥ ≤ δ/M
+ing bound on the recursive equation:
+
+
+κ
+∥xk − x⋆ ∥2 .
+∥xk+1 − x⋆ ∥2 ≤ 1 −
+2(1 + δ)
+By setting δ = 1 we get the result. Further, ∥xk+1 − x⋆ ∥2 contracts monotonically, without exiting
+√
+df β, the linear convergence rate approaches κ/2.
+the ball ∥x⋆ − xk ∥ ≤ δ/M
+√
+df β. With this assumption we have the following
+Polynomial convergence, ∥x⋆ − xk ∥ > 1/M
+bound:
+κ
+∥xk+1 − x⋆ ∥2 ≤ ∥xk − x⋆ ∥2 −
+√ ∥x − x⋆ ∥ .
+df β k
+4M
+This recursive equation decays in a linear rate and have the following closed form upper bound
+∥xk+1 − x⋆ ∥ ≤ ∥x0 − x⋆ ∥ − k dκ√ .
+8Mf
+
+β
+
+df and µ
+By plugging the values of M
+b⋆ we obtain the final result.
+
+Appendix C. Practical Implementation
+Dataset. We generate 10 dimensional inputs, x ∈ R10 from an independent Normal distribution
+N (0, Id ). The target generating network hθ⋆ is randomly generated. The noise on targets is sampled
+from a Normal distribution ϵσ ∼ N (0, σId ) and the noise level is either high σ = 1, medium size
+σ = 0.1 or low σ = 0.001.
+14
+
+A LIGNED M ULTI O BJECTIVE O PTIMIZATION
+
+Network architecture. We choose the ground truth network and target network to have the
+same architecture. Both are 2 layer neural networks with 256 hidden dimensions and ReLu activation. The neural network outputs a vector in dimension 10, similar to the input of the network.
+Loss functions. We choose H1 = I10 , and for i > 1 Hi = αI10 + (1 − α)A and α = 10−4
+where
+(
+1 i=j=1
+Ai,j =
+0 o.w.,
+namely, A is a diagonal matrix with value of 1 in the first diagonal index and zero otherwise.
+In this problem, the function generated by the H1 Hessian has the largest minimal eigenvalue
+and we expect AMOOO to choose this function, whereas EWO gives equal weight to every loss function.
+Training. We optimize learning rates across a grid of candidates and pick the best performing
+one on training loss [1e − 5, 1e − 4, 1e − 3, 1e − 2], 1e − 3 performed best in all settings. We choose
+a batch size of 1024. We perform each run with 5 different seeds and average their performance.
+General parameters for AMOOO. We set the number of samples for the Hutchinson method to
+be NHutch = 100. Namley, we estimate the Hessian matrices by averaging NHutch = 100 estimates
+obtained from the Hutchnison method. Additionally, we use exponential averaging to update the
+Hessian matrices with β = 0.99. Further, at each training step we perform a single update of the
+weights based on the PU update rule of Cen et al. [4] to solve the max-min Bilinear optimization
+problem (see Section 3.1).
+Validation. We measure the L2 distance between hθ and hθ⋆ averaged over 1024·103 validation
+points and measured per dimension.
+This quantity suppose
+to approximate the quality of the learned
+i
+h
+2
+model θ which is given by Ex ∥hθ (x) − hθ⋆ (x)∥ .
+
+15
+
+

@@ -1,0 +1,1691 @@
+Public Administration
+
+ORIGINAL ARTICLE
+
+Herbert Simon's Legacy for Public Administration
+Ricardo C. Gomes
+
+| Fernando D. Domingos
+
+FGV-­E AESP. Sao Paulo School of Business Administration, Fundação Getulio Vargas, São Paulo, Brazil
+Correspondence: Fernando D. Domingos (fernando.domingos@fgv.br)
+Received: 16 July 2024 | Revised: 26 December 2024 | Accepted: 2 January 2025
+Funding: This work was supported by Conselho Nacional de Desenvolvimento Científico e Tecnológico, 305093/2023-­1.
+Keywords: artificial intelligence | bounded rationality | Herbert Simon | public administration | systematic review
+administração pública | Herbert Simon | inteligência artificial | racionalidade limitada | revisão sistemática
+
+ABSTRACT
+
+Herbert Simon's pioneering developments on bounded rationality and artificial intelligence (AI) have had a profound and lasting
+impact on public administration. This paper systematically examines Simon's legacy, exploring how his concepts have shaped
+scholarship in three core areas: decision-­making, human performance, and organizational knowledge. By connecting Simon's
+insights into contemporary advancements in AI, we highlight several avenues for further research. We uncover opportunities
+to enhance administrative processes while addressing pressing ethical and operational challenges, such as designing adaptive
+frameworks that balance innovation with accountability in public administration. Simon's work continues to offer essential guidance for navigating the complexities of governance in the digital age.
+
+RESUMO
+
+Os desenvolvimentos pioneiros de Herbert Simon sobre racionalidade limitada e inteligência artificial (IA) tiveram um impacto
+profundo e duradouro na administração pública. Este artigo examina sistematicamente o legado de Simon, explorando como
+seus conceitos moldaram a pesquisa em três áreas centrais: tomada de decisão, desempenho humano e conhecimento organizacional. Ao conectar os insights de Simon aos avanços contemporâneos em IA, destacamos várias vias para pesquisas futuras.
+Identificamos oportunidades para aprimorar os processos administrativos, ao mesmo tempo em que abordamos desafios éticos
+e operacionais emergentes, como o desenvolvimento de estruturas adaptativas que equilibrem inovação e responsabilidade na
+administração pública. O trabalho de Simon continua a oferecer orientações práticas para lidar com as complexidades da governança na era digital.
+
+1   |   Introduction
+Herbert Simon's groundbreaking work on bounded rationality
+has profoundly influenced the field of public administration,
+providing a cornerstone for understanding decision-­making processes within complex organizational environments. While the
+early foundations of bounded rationality first simmered as a notion in the joint work with Ridley (e.g., Ridley and Simon 1938),
+Simon extensively developed the model in Administrative
+Behavior (1947) and later formalized the concept in seminal
+
+works from the 1950s, such as his 1955 and 1956 articles (e.g.,
+Simon 1955, 1956). Throughout his work, he acknowledged the
+cognitive limitations of decision-­makers and the constraints imposed by organizational structures (Fry and Raadschelders 2013;
+Ridley and Simon 1938; Sent and Klaes 2005). Simon's critique
+of the rational-­comprehensive model, which assumed perfect information and unlimited cognitive capabilities, highlighted the
+practical limitations faced by decision-­makers. Instead, Simon
+proposed that individuals operate within “bounded rationality,”
+arguing that individuals make satisfactory rather than optimal
+
+© 2025 John Wiley & Sons Ltd.
+
+Public Administration, 2025; 0:1–14
+https://doi.org/10.1111/padm.13051
+
+1 of 14
+
+This paradigm shift not only redefined the theoretical foundations of public administration but also paved the way for integrating artificial intelligence (AI) into administrative processes,
+leveraging computational models to simulate human decision-­
+making (e.g., Schwarz, Christensen, and Zhu 2022). In 1956, the
+term “artificial intelligence” was coined at the Dartmouth workshop, positing that intelligence could be attributed to living beings and to artificial machines. This marked the beginning of a
+new era in computing. Allen Newell and Herbert Simon's development of the “Logic Theorist”—the first program deliberately
+engineered to perform automated reasoning—was a pioneering
+effort in AI, demonstrating that machines could simulate human
+thought processes (Kumar et al. 2024; Nilsson 2009). In recent
+years, the intersection of Simon's theoretical contributions and
+advancements in AI has garnered significant scholarly attention, emphasizing the relevance of bounded rationality in the
+era of digital governance (Schwarz, Christensen, and Zhu 2022).
+As AI technologies become increasingly embedded in public
+administration, it is crucial to reassess the enduring impact of
+Simon's work, exploring how contemporary applications of AI
+reflect and expand upon his original ideas. For instance, to keep
+pace with the rapid advancements in AI, public managers and
+scholars must develop effective governance concepts that align
+with this dynamic progress; otherwise, related costs of AI might
+outweigh its benefits (Wirtz, Weyerer, and Sturm 2020).
+Therefore, to systematically assess Simon's legacy, this paper
+examines how his enduring concepts have shaped various scientific fields, with a particular focus on public administration.
+To set the stage for our investigation, we first revisit the foundational concepts developed by Herbert Simon and his collaborators, which serve as a theoretical cornerstone for understanding
+his enduring influence. We then move to our main analyses,
+drawing upon a comprehensive review of the literature spanning
+the past 50 years. Using the Web of Science (WoS) database, we
+performed a targeted search with the query “Simon, Herbert”
+in titles, abstracts, and keywords to focus on works that explicitly reference or engage with Simon's contributions, thereby
+ensuring alignment with the review's objectives. We then employ a content analysis based on lexical and semantic analyses
+(Benoit et al. 2018; Blei, Ng, and Jordan 2003; Goddard 2011;
+Nowlin 2016), followed by a latent semantic (LSA) and latent
+Dirichlet allocation (LDA) analysis (Blei, Ng, and Jordan 2003;
+Nowlin 2016). Taken together, these methods enabled us to
+identify key articles referencing Simon's work, further evaluating how his concepts and frameworks have been applied both
+conceptually and empirically in public administration, as well
+as the extent of their integration with AI.
+Our systematic review demonstrates that Simon's concept of
+bounded rationality remains foundational to understanding
+decision-­making within complex organizational environments.
+By tracing the evolution of his ideas from administrative theory to AI applications, we highlight their continued relevance
+in addressing challenges in public administration. This unified perspective underscores the importance of leveraging
+Simon's insights to develop integrative frameworks that enhance decision-­making while navigating the complexities of
+2 of 14
+
+AI integration. Following our cluster analysis, we identify
+three main topics with the related literature: we coin them as
+“Rationality and Decision-­Making” (e.g., Chen 1991; Foss 2003;
+Herold 2014; Olsen 2017), “Human Choice and Performance”
+(e.g., Arrojo 2017; Jones 2002; Navaneethakrishnan 2021;
+Wettersten 2017), and “Work, Organizations, and Knowledge”
+(e.g., Barragan 2022; Bertoin 2019; Sarasvathy 2003). Notably,
+these studies have highlighted the enduring relevance of Simon's
+work in understanding organizational behavior, developing decision support systems, and designing AI-­driven administrative tools (Newell and Simon 1972; Schwarz, Christensen, and
+Zhu 2022; Simon 1997).
+Interestingly, however, only a few studies published in public
+administration outlets in the past year have taken center stage
+on these broader topics and debates. Schwoerer et al. (2022),
+in their Public Administration article titled “CO-­DESIGN-­ing
+a more context-­based, pluralistic, and participatory future for
+public administration,” notice that although design science has
+a long intellectual history in the field of public administration,
+led by Simon's ideas, the field lacks participatory and context-­
+based research that should be co-­designed between researchers
+and practitioners across fields. Along these lines, recent developments illustrated by a recent Public Administration Review symposium (Al-­Hashimi et al. 2022; Dowding and Taflaga 2022;
+Feduzi, Runde, and Schwarz 2022; Hansen and Nielsen 2022;
+Schwarz, Christensen, and Zhu 2022; van der Voet and
+Lems 2022) highlight that the field lacks a better understanding of the interface between public administration and AI. More
+recent AI applications in administrative contexts often involve
+machine learning algorithms that iteratively improve decision
+outcomes based on bounded rational criteria (e.g., Russell and
+Norvig 2016). These technologies provide tools for managing
+complexity and uncertainty, addressing challenges identified by
+Simon, such as information overload and cognitive biases (e.g.,
+Bostrom and Yudkowsky 2018).
+Finally, our review underscores a limited cross-­
+pollination
+across fields that should be at least partially explained by the
+social acceptance issues and other concerns related to AI in the
+public sector (Wirtz, Weyerer, and Sturm 2020). Integrating
+AI into public administration presents new opportunities that
+should be cautiously debated, therefore advancing Simon's legacy and potentially offering innovative solutions to longstanding
+challenges in decision-­making. Future research should focus
+on exploring the synergies between bounded rationality and
+AI, investigating how AI can enhance the cognitive capacities
+of administrators and improve the efficiency and effectiveness
+of public sector operations. Additionally, empirical studies are
+needed to evaluate the practical impacts of AI-­driven decision-­
+making tools. By embracing the advancements and challenges
+of AI, public administration can continue to build on Simon's
+legacy, fostering a more rational, informed, and effective governance framework.
+
+2   |   The Relevance of Herbert Simon's Work
+In this section, we examine the evolution and enduring relevance of Herbert Simon's ideas, emphasizing their foundational
+impact on public administration and AI. Before delving into the
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+decisions based on the information available and cognitive constraints (e.g., Simon 1955, 1956).
+
+2.1   |   The Evolution of Herbert Simon's Theoretical
+Frameworks
+The concept of bounded rationality, while not explicitly introduced in 1947, was foreshadowed in Herbert Simon's earlier works and fully developed over the late 1940s and 1950s
+(e.g., Simon 1946, 1947, 1955, 1956). This foundational idea
+first emerged in joint work with Clarence Ridley, evolved over
+decades, and became formalized as a concept in the 1950s
+(Fry and Raadschelders 2013; Ridley and Simon 1938; Sent
+and Klaes 2005). Simon's critique of the classical rational-­
+comprehensive model, which assumed perfect information
+and unlimited cognitive capabilities, highlighted the practical
+limitations faced by decision-­makers operating within complex
+organizational structures. Throughout his work, Simon proposed that individuals make decisions within the constraints
+of “bounded rationality.” Individuals would seek satisfactory
+rather than optimal solutions based on available information
+and cognitive limitations (e.g., Simon 1955, 1956).
+However, Administrative Behavior (1947) remains one of
+Simon's most influential contributions, laying the foundation
+for his lasting legacy. In this seminal work, Simon emphasized
+the cognitive and environmental constraints faced by decision-­
+makers, offering a groundbreaking and more realistic approach
+to understanding administrative behavior (Simon 1947). These
+ideas were later formalized in “A Behavioral Model of Rational
+Choice” (1955) and “Rational Choice and the Structure of the
+Environment” (1956), where Simon introduced the concept of
+satisficing as a practical alternative to optimizing in decision-­
+making. By bridging economics and psychology, Simon argued
+for decision-­making grounded in empirical evidence and systematic analysis, reshaping not only public administration but also
+influencing a wide range of disciplines. Despite critiques from
+contemporaries who argued for the inclusion of values in public administration (Denhardt and Denhardt 2000; Waldo 1952),
+Simon's commitment to empirical research has had a lasting
+impact.
+Studies of logical positivism and his scientific observations led
+Simon to conclude that the rationality of decisions was a central concern of administrative theory (Simon 1997) and that
+his procedural rationality should guide government action.
+As an antagonist, Simon used the rational/economic man as a
+foil—pointing out the absurdities of selecting the only possible
+
+alternative. In contrast, Simon's administrative man was satisficed and sought a course of action that was satisfactory or “good
+enough” (Simon 1997). Once stripped of pretensions, the rational
+model was the unrealistic result of excessive abstract theorizing
+(Jones 1994b, 1994a, 2003). As Simon (1997) wrote, “Rationality
+implies a complete, and unattainable, knowledge of the exact
+consequences of each choice” (Simon 1997, 94). Simon's contrasting three-­step model retained some elements of rationality
+but stopped short of an ideal choice: “(a) viewing the behavior alternatives prior to the decision in panoramic fashion, (b) considering the whole complex of consequences that would follow each
+choice, and (c) with the system of values as criterion singling out
+one from the whole set of alternatives” (Simon 1997, 93).
+The satisficing process remains demanding, indeed, in terms of
+patience (what Simon calls docility) and requires rigorous fact-­
+finding, development of mental frameworks, communication,
+and raw theoretical predictions. Success requires accounting
+for “factors regarded as most relevant and crucial” (Simon 1997,
+119). Simon anticipates the problems that his rigorous process
+presents, and he acknowledges that administrators must frequently make quick, intuitive decisions and that satisfactory
+solutions are only sometimes possible. In response, Simon offers
+a demystified intuitive decision-­making process, which he links
+to memory. Both computers and the human mind retrieve information from memory as needed. Decision-­makers “employ the
+same mix of intuition and analysis used in other expert systems”
+(Simon 1997, 135), though developing this ability takes experience and training. Decisions based on emotion are the sole exception to the bounded rationality model. According to Simon,
+stress can lead to poor judgment in the form of irrational, emotional decisions.
+A defining characteristic of Simon's legacy is his ability to integrate theory and practice, and a key element of Simon's impact
+on public administration is that he actively sought to address
+public administration issues. He laid out his positivist manifesto in “The Proverbs of Public Administration,” which Public
+Administration Review (PAR) published in 1946. Simon has famously critiqued the influential scholar Luther Gulick, steering
+the field of public administration in a significantly different direction from its earlier course (Georgiou 2013; Hammond 1990).
+Later, he addressed bounded rationality and satisficing directly in “Administrative Decision Making,” published by
+Public Administration Review (PAR) in 1965. Other seminar
+PAR appearances included a review of “The Science of Public
+Administration” by Robert Dahl in 1947 (Dahl 1947) and a 1958
+reply to a review of his classic book, Administrative Behavior
+(Simon 1958). Another notable contribution to public administration appeared in a debate with Dwight Waldo and Peter
+Drucker, published by the American Political Science Review in
+1952 (Simon, Drucker, and Waldo 1952).
+Simon's impact extends beyond public administration to the domain of AI. His work with Allen Newell on the “Logic Theorist”
+marked the beginning of AI as a discipline, aiming to model
+human cognitive processes using computational tools. In his
+1995 article, “Artificial Intelligence: An Empirical Science,”
+Simon argued that AI should not replace human judgment but
+instead complement it by addressing ill-­structured problems
+through heuristic search and satisficing strategies (Simon 1995).
+3 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+findings of our review, it is essential to summarize the foundational concepts as originally developed by Herbert Simon
+and his collaborators, which provide the theoretical underpinnings for our analysis. We begin by tracing the development of
+Simon's key concepts, including bounded rationality and satisficing, exploring how these ideas reshaped traditional models
+of decision-­making. Subsequently, we connect these theoretical
+advancements to more recent developments in AI, highlighting
+how Simon's principles have informed contemporary tools and
+methods that address complex administrative challenges. By
+integrating historical and modern perspectives, this literature
+review provides a comprehensive reassessment of rationality assumptions and their implications for decision-­making and governance in the age of AI.
+
+All this, however, only partially reflects Simon's practical importance to AI, both in terms of its foundations and as known
+of it today. In recent years, the integration of AI in public administration has further amplified the relevance of bounded
+rationality (Schwarz, Christensen, and Zhu 2022). Simon's contributions span multiple disciplines, providing a robust framework for understanding decision-­making under constraints. His
+emphasis on empirical rigor, interdisciplinarity, and practical
+application continues to influence both public administration
+and AI, demonstrating the enduring relevance of his work. We
+next narrow to this debate.
+
+2.2   |   Focusing AI: Lasting Legacy
+and Contemporary Applications of Simon's
+Principles in Public Administration
+Herbert Simon's work laid the intellectual foundation for AI by
+modeling human decision-­making processes. His concept of
+bounded rationality has found renewed relevance in the age of
+AI, where systems must also operate under constraints of incomplete information, computational limitations, and time pressure.
+Much like Simon's “administrative man,” AI systems aim for
+satisfactory, rather than optimal, solutions, reflecting the core
+principles of bounded rationality. This parallel has profound implications for public administration, where AI tools increasingly
+aid decision-­makers in navigating complexity and uncertainty.
+The term “artificial intelligence” emerged at the 1956 Dartmouth
+workshop, which postulated that intelligence could be attributed to both living beings and machines. Simon, along with
+Allen Newell, contributed to this vision by developing the Logic
+Theorist, a groundbreaking program that showcased the ability of machines to emulate human cognitive processes (Kumar
+et al. 2024; Nilsson 2009; Simon 1995). Their subsequent collaboration with J.C. Shaw led to the creation of the General Problem
+Solver in 1959, a system designed to address a wide array of problems by simulating heuristic problem-­solving strategies (Newell,
+Shaw, and Simon 2000; Simon 1995). Later, in his 1995 article,
+Simon highlighted the central role of heuristics and satisficing
+in AI systems, emphasizing that AI should augment human intelligence rather than replace it entirely (Simon 1995). This perspective underscores the enduring alignment between Simon's
+theories and contemporary AI applications.
+Despite these advancements, AI development has faced significant hurdles. The so-­called “AI winters” arose from overly
+optimistic predictions and insufficient technological progress,
+resulting in reduced funding and skepticism about the field's potential (Toosi et al. 2021). McCarthy, often referred to as the “father of artificial intelligence,” went on to establish an AI lab at
+Stanford University in 1963, further cementing his influence on
+the field (Nilsson 2009). However, by 1966, progress had slowed
+significantly, as the Automatic Language Processing Advisory
+4 of 14
+
+Committee cut funding for machine translation projects in the
+U.S., citing limited practical results. This skepticism, mirrored
+by the British Science Research Council, led to reduced government support for AI research (Toosi et al. 2021). Setbacks apart,
+advancements continued, such as the development of an expert
+system in 1969 capable of diagnosing bacterial infections and
+recommending antibiotics (Kumar et al. 2024). Simon's emphasis on rigorous, interdisciplinary approaches to decision-­making
+provided a resilient framework for AI research during these
+periods. For example, the introduction of expert systems in the
+1970s and the subsequent development of machine learning
+algorithms in the 1980s and 1990s reflected Simon's vision of
+AI as a tool for enhancing decision-­making under uncertainty
+(Samuel 1959; Simon 1995).
+The integration of AI into public administration has further amplified the relevance of Simon's principles. Recent studies have
+applied bounded rationality to examine how AI can improve
+governance by addressing decision-­making constraints, such
+as information overload and cognitive biases. Although Simon's
+emphasis on information and decision-­making is evident in
+many contemporary studies, these works often fail to address
+the structural design of AI and frequently underestimate the
+challenges associated with its implementations (Wirtz, Weyerer,
+and Sturm 2020). Therefore, challenges remain. Schwarz,
+Christensen, and Zhu (2022), in a symposium marking the
+75th anniversary of Simon's Administrative Behavior, identified
+key questions about the implications of AI for public decision-­
+making. The guest editors asked how Simon's structural design theory could enhance advanced information-­processing
+methods, how procedural rationality could integrate with other
+decision-­
+making models, and how to mitigate the potential
+“dark sides” of AI in public governance.
+The symposium included five articles addressing these different nuances of Simon's work in our current digital societies. Al-­
+Hashimi et al. (2022) and Dowding and Taflaga (2022) depart
+from the concept of procedural rationality. At the same time, Al-­
+Hashimi et al. (2022) highlight the positive association between
+procedural rationality and successful strategic decisions in the
+public sector in Qatar, Dowding and Taflaga (2022) show that
+politically appointed advisors participate in undermining procedural rationality in Australia and the United Kingdom. van der
+Voet and Lems (2022), along with Hansen and Nielsen (2022),
+use survey experiments to investigate the usage of performance information but in different contexts. van der Voet and
+Lems (2022) focus on the decision-­making constructs of “aspiration” and “search,” and, through a survey experiment in Dutch
+municipalities, they find that negative performance information
+reduces the creativity of policies later implemented. Hansen and
+Nielsen (2022) evaluate the behavior of public managers in education departments in Denmark and complemented the work of
+Voet and Lems. They find that low-­performance information influences subsequent focus but not managers' intention to engage
+in innovation. Lastly, Feduzi, Runde, and Schwarz (2022) build
+upon the notion of “black swans” (Taleb 2010)—understood as
+consequential shocks that cannot be anticipated based on previous learnings—to distinguish their varieties and later provide
+recommendations on how public managers can improve risk
+identification mechanisms to reduce exposures and mitigate the
+consequences of those events.
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+He viewed AI as a tool to augment human problem-­solving capabilities, reflecting his broader vision of integrating technological advancements with bounded rationality. This approach
+remains deeply relevant in public administration today, where
+AI systems are increasingly used to navigate complex decision-­
+making landscapes.
+
+We chose bibliometric methods for their ability to quantitatively
+and qualitatively assess the impact and reach of Simon's work,
+as well as to map relationships between key concepts, publications, and contributors. This approach goes beyond the mere
+“availability” of tools by addressing the interdisciplinary and
+historically broad nature of Simon's contributions. For instance,
+bibliometric analysis enables the identification of trends over
+time, thematic clusters, and influential works that may not be
+immediately apparent in traditional qualitative reviews (Aria
+and Cuccurullo 2017). By integrating these tools, we aimed to
+capture the depth and breadth of Simon's legacy in a systematic,
+replicable manner, mitigating the risk of subjective biases in article selection or analysis (e.g., Grant and Booth 2009).
+
+Simon's (1995) work on AI, while dating from almost 30 years
+before these studies, continues to provide critical insights for
+the current debates. He argued that the success of AI systems
+depends on their ability to replicate the heuristic strategies used
+by humans to manage bounded rationality. Rather than aiming
+for perfection, these systems must focus on satisficing outcomes
+that align with the complexities of real-­world decision-­making
+(Simon 1995). This approach is particularly relevant in public
+administration, where decisions often involve competing objectives, limited resources, and high stakes. However, Simon also
+cautioned against over-­reliance on AI, emphasizing the need for
+human oversight and ethical considerations to mitigate unintended consequences. Addressing these gaps requires bridging
+the interdisciplinary insights of Simon's theories with contemporary AI research, such that we do not underestimate AI challenges (Wirtz, Weyerer, and Sturm 2020) and its potential dark
+sides (Schwarz, Christensen, and Zhu 2022).
+
+Using the WoS database—renowned for its comprehensive and
+multidisciplinary coverage—we conducted a targeted search
+with the query “Simon, Herbert” in titles, abstracts, and keywords. This choice reflects the need to focus specifically on
+works that explicitly cite or engage with Simon's contributions,
+ensuring relevance to the review's objectives. Since our earlier
+literature review already provides an in-­depth examination of
+Simon's own works, this systematic review prioritizes capturing research that constitutes his broader legacy, exploring how
+his ideas have been interpreted, applied, and expanded upon
+in various fields. The query was restricted to articles written in
+English to maintain analytical consistency across the dataset.
+Results were exported as BibTeX files to facilitate bibliometric
+analysis, enabling insights into publication trends, influential
+journals and authors, and recurring concepts in titles, abstracts,
+and keywords. These analyses were complemented by a manual
+review of abstracts to ensure relevance and accuracy, with text-­
+mining techniques applied to manage large datasets.
+
+Ultimately, Simon's ideas continue to shape AI and governance,
+providing powerful tools to address bounded rationality in complex administrative environments. Although his work remains
+remarkably relevant, it also continues to spark debate. Evidently,
+he and his followers still pursue the goal of developing a science
+of decision-­making that bridges social psychology, computer science, and public administration. Next, through a systematic review of relevant literature, we unpack how scholars have evolved
+and reshaped their understandings and applications of bounded
+rationality. We also highlight paths for enhancing the knowledge of academics and practitioners regarding the current and
+utmost complex decision-­making processes in the public sector.
+
+3   |   Methods: A Systematic Review and Latent
+Dirichlet Analysis
+To explore Herbert Simon's contributions to public administration and related fields, we employed a systematic literature
+review guided by established frameworks for rigor and transparency in such research (e.g., Grant and Booth 2009). A systematic
+approach is particularly well-­suited for synthesizing extensive
+and multidisciplinary literature, as it allows for replicability,
+minimizes selection bias, and ensures that the review captures
+a comprehensive view of Simon's enduring influence. This
+approach aligns with our objective of tracing the evolution of
+Simon's ideas across public administration and AI while identifying patterns, gaps, and emerging research trajectories in these
+fields.
+
+The second stage of the analysis is to conduct a content analysis
+of the whole document based on lexical and semantic analyses
+(Goddard 2011). This is done by using the Quanteda package
+also in RStudio (Benoit et al. 2018). The process involves the
+following steps: (1) converting PDF files to TXT documents; (2)
+the package is designed to remove stop words and retain only
+nouns, adjectives, and verbs. By focusing on these elements,
+one can better understand the author's ideas and conclusions
+because it allows one to identify the main topics within articles
+and the correlation between them (Benoit et al. 2018). We use
+the “text mining” and Quanteda packages to conduct LSA and
+LDA analyses (Blei, Ng, and Jordan 2003; Nowlin 2016). While
+the latter helps identify the most recurrent terms in a textual
+document, with which one can determine patterns, the former
+helps in clustering the words into topics, which, according to
+Blei, Ng, and Jordan (2003), provides an explicit representation
+of a document. The combination of both supports assessing how
+Herbert Simon's ideas have been used in public administration
+articles.
+
+4   |   Analyses and Findings
+In April 2024, we searched using only the Clarivate Web of
+Science database. We searched for the keyword “Herbert Simon”
+in titles, abstracts, and keywords. It is worth mentioning that
+WoS has a distinctive keyword plus, which assembles the most
+recurrent words used in the cited reference titles. We focused
+5 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+These studies collectively not only demonstrate Simon's continued relevance but also highlight areas where his ideas could
+evolve to address emerging challenges. As highlighted by the
+guest editors (Schwarz, Christensen, and Zhu 2022), at least three
+questions directly linked to the opportunities and challenges
+of AI remain unanswered. First, “How might insights from
+Simon's structural design theory contribute to making advanced
+information-­processing methods more effective for public decisions?” Second, “How can procedural rationality be combined
+with other components of integrative decision-­making models
+to best support the implementation of strategic decisions?” And
+lastly, “How can the potential dark sides of using artificial intelligence in public decision-­making be mitigated?”
+
+Figure 2 presents the articles' intellectual structure, that is, the
+primary cited references for this dataset. The picture is constructed based on the network parameters betweenness, closeness, and PageRank. In general terms, they assess how many
+citations the references received from the articles, which indicates their importance for the field. Eyeballing the figure, we
+see three clusters: blue, red, and green. The article with the highest power of attraction in the blue network is the classical “A
+Behavioral Model of Rational Choice” (Simon 1955). The second
+most relevant is “Rational choice and the structure of the environment” (Simon 1956). The third is “Human Problem-­Solving”
+(Newell and Simon 1972). These articles suggest the blue network as a congregation of documents related to rational choice.
+
+The articles are published in 186 journals. Table 1 demonstrates
+the most relevant journals, representing about 17% of the total.
+For this sample, there is an indication that the production derives mainly from Economics, Management, and Computer
+Science. However, we will deal with the theoretical orientation
+later when analyzing the content of the articles.
+
+4.1   |   Full Document Analysis
+
+In Table 2, there is an analysis of two types of keywords: author keywords and keyword plus. The author's keywords focus
+on terms related to decision-­making, such as bounded rationality, rationality, and satisficing. This suggests that Simon's ideas
+on AI are being used. The keyword plus analysis reveals that
+the most commonly used terms in the cited reference titles are
+related to decision-­making factors such as choice, psychology,
+information, and rationality. These terms are important in shaping the arguments and assumptions of the articles.
+
+As mentioned, the content analysis is done by transforming PDF
+files into textual files and removing the numbers, symbols, and
+stop words. The idea is to have only nouns, verbs, and adjectives.
+After analyzing the abstracts, we removed 74 documents, leaving us with 193 for the final sample. Figure 3 illustrates the most
+recurrent terms in the analysis, with the darker types representing the most common terms across the 194 documents.
+
+FIGURE 1    |    Annual Production. Source: Data Analysis. [Color figure can be viewed at wileyonlinelibrary.com]
+
+TABLE 1    |    The 10 most relevant journals.
+
+Journal
+
+Total
+
+Category
+
+JCR
+
+Journal of Economic Psychology
+
+9
+
+Economics; Psychology
+
+3.5
+
+Minds and Machines
+
+9
+
+Computer Science; Artificial Intelligence
+
+7.4
+
+Computational Economics
+
+8
+
+Economics; Management; Mathematics
+
+2.0
+
+Administration & Society
+
+7
+
+Public Administration
+
+2.3
+
+Journal of Economic Behavior & Organization
+
+4
+
+Economics
+
+2.2
+
+Synthese
+
+4
+
+History & Philosophy of Science
+
+1.5
+
+Journal of Management Studies
+
+4
+
+Business: Management
+
+10.5
+
+AI & Society
+
+3
+
+Political Science; Public Administration
+
+3.0
+
+European Journal of The History of Economic Thought
+
+3
+
+Economics
+
+0.7
+
+European Management Journal
+
+3
+
+Business; Management
+
+7.5
+
+Total
+
+54
+
+Source: Data analysis.
+
+6 of 14
+
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+only on English-­w ritten articles. The query process resulted
+in 267 articles. The bibliometric analysis presented in this first
+moment includes the whole set of documents. The dataset comprises articles published since 1975, with an annual percentage
+growth rate of 4.05. As Figure 1 demonstrates, there has been an
+increase in publications in the last 20 years, with a remarkable
+number in 2017.
+
+One form of lexical analysis involves determining documents'
+most commonly used terms. The term “rationality” is the most
+frequently used, suggesting that articles inspired by Herbert
+Simon's ideas are centered around the concept of rationality.
+
+The second-­most commonly used term is “decision.” After this,
+we encounter information that forms the basis of the decision-­
+making process. Subsequently, human, economics, behavior,
+problem, economic, work, and process are the 10 most frequently occurring terms.
+After looking at single words, the Quanteda package offers an
+algorithm to assess when and where some words appear together—that is, a collocation analysis. Table 3 presents the
+results for the 10 most recurrent pairs of words. It is worth mentioning the importance of the z score, which indicates the probability of these two words appearing together in the documents.
+Z's interpretation is the higher the score, the higher the probability (Benoit et al. 2018). Rationality and decision-­making are
+the two most repeated terms. After them, we see rational choice,
+problem-­solving, AI, and creative commons.
+
+TABLE 2    |    Analyzing keywords and keyword plus.
+
+Author
+keywords
+(DE)
+
+4.2   |   Cluster Analysis
+Articles
+
+Keywords-­
+Plus (ID)
+
+Articles
+
+1
+
+Bounded
+rationality
+
+38
+
+Choice
+
+23
+
+2
+
+Herbert
+Simon
+
+25
+
+Decision-­
+making
+
+19
+
+3
+
+Rationality
+
+12
+
+Psychology
+
+16
+
+4
+
+Behavioral
+economics
+
+11
+
+Economics
+
+14
+
+5
+
+Decision-­
+making
+
+11
+
+Model
+
+14
+
+6
+
+Design
+
+11
+
+Models
+
+13
+
+7
+
+Satisficing
+
+10
+
+Information
+
+11
+
+8
+
+Decision-­
+making
+
+9
+
+Science
+
+11
+
+9
+
+Simon
+
+9
+
+Management
+
+10
+
+10
+
+Artificial
+intelligence
+
+7
+
+Rationality
+
+9
+
+Source: Data analysis.
+
+After assessing each term's importance, we conducted a cluster
+analysis to group words into topics. Figure 4 illustrates this analysis, where the length of the term is defined. In topic one, we
+can see that rationality is related to humans, problems, behavior,
+
+FIGURE 3    |    Word Cloud of the most recurrent terms. Source: Data
+analysis.
+
+FIGURE 2    |    Intellectual structure. Source: Data analysis. [Color figure can be viewed at wileyonlinelibrary.com]
+
+7 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Rationality is the word with the highest number of citations.
+After that, decision, science, problem, bounded, information.
+The removal was due to the impossibility of accessing their PDF
+files and needing more citations for specific articles. We carried
+out lexical and semantic analyses on the documents using the
+LDA for the cluster analysis (Nowlin 2016). To help identify the
+clusters, LDA calculates beta and gamma coefficients. Beta measures the probability of a term being associated with a particular
+topic, and gamma is the probability of a term being associated
+with a document.
+
+Observing the terms in topic 1 more carefully, the ones with the
+higher probability of belonging to it are rationality, human, problem, cognition, bounded, economics, and behavior. Therefore,
+there is a high probability that this topic refers to behavioral
+studies around cognitive and psychological studies trying to
+figure out the best possible rationality to face problems. The
+second topic has the terms decision, choice, and making, associated with process, performance, and satisficing. This suggests
+these are the cases of studies concerned with proposing processes, systems, and information to improve decision-­making.
+In the third topic, the terms work, organization, administration,
+and business induce us to think that this is the case of organizational structure, processes, and practices to make decisions
+more effective.
+These are, however, preliminary insights. By examining the
+documents more closely, we delve deeper into these topics with
+additional insights from the LDA. LDA allows for assessing the
+
+relationship between topics and documents, as demonstrated
+in Table 4, where we present the 10 highest gammas for each
+topic. Here, we focus on coefficients higher than 0.9. Articles
+“Intuition, Computation, and Information” (Herold 2014),
+“Statistical Models of Text in Continuous Speech Recognition”,
+(Chen 1991), and “Bounded rationality in the economics of organization: ‘Much cited and little used’” (Foss 2003) have the highest gammas in topic 1. We refer to this topic as the one centered
+on “Rationality and Decision-­Making.”
+Articles “Human Problem-­Solving: Standing on the Shoulders
+of the Giants” (Navaneethakrishnan 2021), “From Selz to
+Gigerenzer: A thought-­
+psychological research history, which
+needs a Popperian, fallibilist theory of rationality to effectively
+develop” (Wettersten 2017), and “Information and the Internet:
+An Analysis from the Perspective of the Science of the Artificial”
+(Arrojo 2017) are the highest in topic 2 (referred to as “Human
+Choice and Performance”).
+Finally, the articles “Applying bounded rationality to information disposition: development of a risk/reward heuristic” (Barragan 2022), “A Version of Herbert A. Simon's Model
+with Slowly Fading Memory and Its Connections to Branching
+Processes” (Bertoin 2019), and “Entrepreneurship as a Science of
+the Artificial” (Sarasvathy 2003) are the highest in topic 3 (referred to as “Work, Organizations, and Knowledge”). Below, we
+discuss the three most representative articles to illustrate their
+coherence with the topic.
+
+TABLE 3    |    Collocation analysis.
+
+Collocation
+
+Count
+
+Lambda
+
+Z
+
+1
+
+Bounded rationality
+
+1253
+
+7270
+
+11,708
+
+2
+
+Decision-­making
+
+946
+
+6232
+
+11,690
+
+3
+
+Rational choice
+
+418
+
+5396
+
+8595
+
+4
+
+Problem solving
+
+426
+
+6846
+
+7996
+
+5
+
+Artificial intelligence
+
+261
+
+6784
+
+7736
+
+6
+
+Creative commons
+
+330
+
+9552
+
+7268
+
+7
+
+Behavioral economics
+
+244
+
+4588
+
+6183
+
+8
+
+Applicable creative
+
+296
+
+10,084
+
+6027
+
+9
+
+Expected utility
+
+123
+
+6911
+
+5822
+
+10
+
+Economic psychology
+
+222
+
+4391
+
+5771
+
+Source: Data analysis.
+
+4.2.1   |   Topic 1: Rationality and Decision-­Making
+The highest-­
+gamma article for this topic, “Intuition,
+Computation, and Information” (Herold 2014) explores the philosophy of information, including the relationship between data
+structures and information objects, and discusses perception,
+intuition, computation, and information in acquiring knowledge. It draws on the work of philosophers and theorists like
+Luciano Floridi and Alan Turing, proposing a model that connects these concepts through cognitive continuity, temporality,
+and constitution. It aims to understand how we experience and
+process information at different levels, suggesting that these interconnected experiences shape our world knowledge.
+Second, the article “Statistical Models of Text in Continuous
+Speech Recognition,” by Chen (1991), recommends the importance of statistical models of text in continuous speech
+
+FIGURE 4    |    The 10 most relevant terms per topic. Source: Data analysis.
+
+8 of 14
+
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+cognition, etc. In the second topic, we find decisions related to
+choice, systems, processes, and satisficing. These terms are
+likely to indicate efforts to depict structures supporting decision-­
+making. Finally, in topic three, work is related to administration,
+business, organizations, decisions, processes, social, decision,
+economics, design, and so on. The combination of these words is
+likely to indicate that the authors have concentrated on theories
+and processes to support economic and social decisions.
+
+Topic 1: Rationality and
+decision-­making
+
+Topic 2: Human choice
+and performance
+
+Topic 3: Work, organizations,
+and knowledge
+
+Paper
+
+Gamma
+
+Paper
+
+Gamma
+
+Paper
+
+Gamma
+
+1
+
+Herold (2014)
+
+0,943
+
+Navaneethakrishnan (2021)
+
+0,931
+
+Barragan (2022)
+
+0,992
+
+2
+
+Chen (1991)
+
+0,927
+
+Wettersten (2017)
+
+0,891
+
+Bertoin (2019)
+
+0,953
+
+3
+
+Foss (2003)
+
+0,918
+
+Arrojo (2017)
+
+0,887
+
+Sarasvathy (2003)
+
+0,953
+
+4
+
+Gobet and Chassy (2009)
+
+0,888
+
+Feld (1997)
+
+0,870
+
+Luzzati, Tucci, and
+Guarnieri (2022)
+
+0,830
+
+5
+
+Olsen (2017)
+
+0,887
+
+Heyck (2008)
+
+0,863
+
+Giza (2017)
+
+0,808
+
+6
+
+Parnell (2020)
+
+0,882
+
+Jones (2002)
+
+0,856
+
+Tyson (2008)
+
+0,785
+
+7
+
+Priestley (2017)
+
+0,879
+
+Lee (2011)
+
+0,842
+
+Kline (2020)
+
+0,737
+
+8
+
+Meng (2009)
+
+0,878
+
+Hanoch and Rice (2006)
+
+0,833
+
+Minkes and
+Foxall (2003)
+
+0,736
+
+9
+
+Gintis (2003)
+
+0,867
+
+Van Regenmortel (2018)
+
+0,832
+
+Tomer (2015)
+
+0,731
+
+10
+
+Smith and Stevens (1999)
+
+0,865
+
+Filip (2022)
+
+0,829
+
+Wood and
+Wood-­Harper (1993)
+
+0,731
+
+Source: Data analysis.
+
+recognition and the importance of using statistical models to
+understand and generate text in the context of AI. The article
+highlights the significance of Zipf's law and the development
+of various statistical models, such as the multinomial urn,
+Markov chain, Mandelbrot–Zipf, and Simon–Yule models in text
+generation. Overall, the article underscores the importance of
+statistical models in advancing research in continuous speech
+recognition and text generation.
+Third, in the article titled “Bounded rationality in the economics of organization: ‘Much cited and little used’,” the author
+Foss (2003) discusses the concept of Bounded Rationality, developed by Simon and often used in the context of firm theory.
+Despite Simon's efforts, bounded rationality has only been partially absorbed into the economics of organization and is used
+more for rhetorical purposes than substantive ones. The article compares different approaches to integrating bounded rationality with economic organization theory. It concludes that
+bounded rationality is often treated superficially and is not essential to producing the central insights of these theories. The
+article suggests that the lack of a specific program to incorporate bounded rationality into the economics of an organization,
+which would be acceptable to most economists, is one of the reasons for its incomplete absorption.
+Interestingly, the only article within this first topic's top-­
+10
+gamma published on a public administration outlet is “Compared
+to what? How social and historical reference points affect citizens'
+performance evaluations” (Olsen 2017). In this piece, Olsen discusses how citizens evaluate public services, taking reference
+points into account. This is based on Simon's seminal work on
+social and historical reference points (Simon 1937, 1939). Olsen
+finds that, although citizens' evaluation of an organization is affected by absolute performance and the performance relative to
+an available reference point, not all reference points are of equal
+importance. His findings indicate that social reference points
+
+impact citizens' evaluations more significantly than historical
+ones. These discussions are closely related to those in other articles on the same topic, exploring the information philosophy.
+They examine the relationship between data structures and
+information objects and delve into aspects such as perception,
+intuition, computation, and the role of information in acquiring
+knowledge.
+Nevertheless, it is important to highlight that more recent work
+on public administration draws from Simon's concepts and new
+developments in behavioral economics; such studies are often
+associated with the subfield of behavioral public administration
+(James, Jilke, and Van Ryzin 2017). For instance, Belardinelli,
+Bellé, and Cantarelli (2021) build upon the bounded subadditivity principle (Tversky and Fox 1995) and investigate whether
+and why public and private sector workers prefer projects where
+their involvement would ensure success over those where their
+participation would significantly increase, but not guarantee,
+the likelihood of success.
+4.2.2   |   Topic 2: Human Choice and Performance
+The article “Human Problem-­
+Solving: Standing on the
+Shoulders of the Giants” by Dharmaraj Navaneethakrishnan
+(Navaneethakrishnan 2021), published in Computational
+Economics, explores the historical and theoretical foundations
+of human problem-­solving, tracing its development from cognitive psychology, philosophy, economics, and computer science.
+It reviews key contributions from pioneers like Herbert Simon,
+Allen Newell, and Cliff Shaw and philosophical and psychological influences from figures such as Socrates, Plato, Wundt,
+and Brentano. The evolution from association theory to Gestalt
+psychology is detailed, highlighting contributions from the
+Würzburg School and Gestalt psychologists. The article emphasizes the integration of these diverse influences into a cohesive
+9 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+TABLE 4    |    List of the most relevant documents per topic.
+
+Second, the article “From Selz to Gigerenzer: A thought-­
+psychological research history, which needs a Popperian, fallibilist theory of rationality to effectively develop” by John
+Wettersten (Wettersten 2017) discusses two distinct traditions
+in the philosophy of science and thought psychology that originated from Otto Selz's work. One tradition, influenced by Karl
+Popper, lacks integration with empirical studies of thought processes, while the other, associated with Herbert Simon and Gerd
+Gigerenzer, is based on inductivist philosophy. The author argues for a synthesis of these traditions, suggesting that Popper's
+fallibilist framework should be combined with empirical studies
+to advance both fields. This integration would address the shortcomings of both traditions and foster significant progress in understanding human rationality and thought processes.
+Third, the article “Information and the Internet: An Analysis
+from the Perspective of the Science of the Artificial” by Maria
+Jose Arrojo (Arrojo 2017) delves into the role of information on
+the Internet, investigating the development of AI as a tool for
+communication processes. The author challenges Simon's view
+by arguing that he focuses on structural complexity while communicative designs of the Internet phenomena would require
+lenses based on dynamic complexity. In sum, she argues that his
+concept of the artificial focuses on structure and evolution but
+lacks the historical context vital for communication sciences,
+particularly in the dynamic context of the Internet. To grasp
+Internet information, communication sciences must be viewed
+as applied design sciences, addressing the new transversal and
+longitudinal communication forms of the Internet and understanding the objectives, processes, and outcomes at various
+communicative levels.
+This topic also includes the work of Bryan D. Jones titled
+“Bounded Rationality and Public Policy: Herbert A. Simon and
+the decisional foundation of collective choice” (Jones 2002). Bryan
+published that piece in the journal Policy Sciences in 2002, and,
+drawing heavily from that work, he published the following
+year in the Journal of Administration Research and Theory another titled “Bounded Rationality and Political Science: Lessons
+from Public Administration and Public Policy” (Jones 2003).
+In these two pieces, the author advocates for a behavioral approach to public policy and public administration that prioritizes information processing and problem-­solving rather than
+control mechanisms. Additionally, he critiques the limitations
+of principal-­agent models and calls for a more profound understanding of how organizations process information and make
+decisions in the face of uncertainty. Both these pieces, in turn,
+develop ideas from his seminal works theorizing on choice and
+decision-­making within the public sector (Jones 1994a, 1994b)—
+of course, all building upon several of Simon's concepts.
+Along these lines, studies have been featured in the Public
+Administration throughout the years. Part of the reason behind
+Jones's critiques targeting studies overfocusing control mechanisms, Egeberg (1999), for instance, delves into the consequences
+of bureaucracy on policymaking. There are other examples of
+conceptual and empirical articles drawing from Simon's ideas
+while focusing on the performance of public organizations. For
+10 of 14
+
+example, Kenis and Provan (2009) theorize about the performance of public networks, while Rutherford and Meier (2015)
+empirically investigate how public managers prioritize competing performance goals using data from a survey of university
+presidents.
+Moreover, it is important to highlight that other studies published in outlets that are considered to be from other fields
+also discuss topics that are closely related to concerns of public administration, such as Hanoch and Rice (2006) and Van
+Regenmortel (2018), discussing, respectively, the choices of the
+elderly in terms of health insurance and the design of vaccine
+programs.
+4.2.3   |   Topic 3: Work, Organization, and Knowledge
+The article titled “Applying bounded rationality to information disposition: development of a risk/reward heuristic,” by
+Barragan (2022) explores the application of Herbert Simon's
+concept of bounded rationality to records and information management (RIM), particularly in the context of information disposition. It argues that bounded rationality, which acknowledges
+human cognitive limitations and uses heuristics for decision-­
+making, can provide insights into why organizations often fail
+to dispose of information as per their retention schedules. The
+risk/reward heuristic, which involves weighing the risks of losing potentially valuable information against the rewards of minimizing data retention, is identified as a key factor influencing
+this behavior. The author suggests that this heuristic leads to the
+prevalent keep-­everything approach due to the fear of needing
+the information later. By incorporating bounded rationality into
+RIM practices, the paper posits that new decision-­making processes can be developed, potentially enhancing the effectiveness
+of information lifecycle policies and reducing unnecessary data
+retention.
+Second, the piece titled “A Version of Herbert A. Simon's Model
+with Slowly Fading Memory and Its Connections to Branching
+Processes,” was written by Bertoin (2019). It explores a variation of Simon's (1955) model to account for memory that decays
+slowly over time. The model generates a sequence of words.
+Each new word has a fixed probability of being a new word and
+a complementary probability of repeating a previous word, with
+a preference that depends on its position in the sequence. The
+study demonstrates that the proportion of distinct words occurring a fixed number of times converges to a probability mass
+function, with the tail behavior dependent on the innovation
+parameter. The research also links this model to branching processes, providing a detailed analysis of its statistical properties.
+Despite losing the Markov property, the model's behavior can be
+closely related to certain branching processes.
+Third, the article titled “Entrepreneurship as a Science of the
+Artificial” by Sarasvathy (Sarasvathy 2003) integrates Herbert
+Simon's key ideas from “Sciences of the Artificial” into entrepreneurial research. It discusses four main concepts: natural
+laws' constraints on design, the avoidance of prediction in design, the significance of locality and contingency, and near-­
+decomposability in enduring designs. Through empirical studies
+and extensive conversations with Simon, the author develops the
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+understanding of problem-­solving and discusses future research
+directions in the field.
+
+Interestingly, within this topic, none of the top 10 papers have
+been published in public administration journals, even though
+we see, for instance, publications in varied areas such as physics
+(Bertoin 2019), economic theory (Tyson 2008), economic psychology (Minkes and Foxall 2003; Sarasvathy 2003), and history
+of science (Kline 2020). As we discuss next, although we see that
+Simon's ideas and concepts have diffused across scientific areas,
+their dissemination within the public administration literature is
+not yet as consolidated in terms of the understanding of systems
+for recording and managing information. Even though we are
+moving to the “information era,” concerns raised by Jones more
+than two decades ago (Jones 2002, 2003) related to the overfocus
+of public administration on control mechanisms instead of information processing and problem-­solving are persistent.
+
+5   |   Venues for Further Investigations
+This systematic review reaffirms Herbert Simon's profound influence on public administration and AI, emphasizing his enduring relevance to decision-­making in complex organizational
+contexts. The review highlights foundational contributions
+while identifying several areas where Simon's ideas could be
+extended or revisited to address emerging challenges in AI and
+public governance.
+First, advancing decision-­
+making frameworks with AI into
+public administration provides a unique opportunity to operationalize Simon's bounded rationality framework in novel ways.
+Current studies demonstrate AI's potential to address cognitive
+constraints and manage complexity (Schwarz, Christensen, and
+Zhu 2022). However, empirical research is needed to evaluate
+its effectiveness in diverse public sector contexts. Future investigations should assess how AI-­driven tools enhance decision-­
+making under uncertainty, emphasizing their ability to balance
+satisficing with ethical considerations (Kumar et al. 2024;
+Wirtz, Weyerer, and Sturm 2020). For example, the application
+of bounded rationality in machine learning algorithms remains
+underexplored and could yield insights into improving decision outcomes while reducing algorithmic biases (Bostrom and
+Yudkowsky 2018). These tools could also support public administrators in managing information overload, addressing challenges identified by Simon's original work on decision-­making
+under constraints (Simon 1947), and using historical reference
+points (Olsen 2017; Simon 1937, 1939). In summary, a key
+question remains: How can bounded rationality be operationalized within machine learning algorithms to improve decision-­
+making outcomes while addressing ethical considerations and
+algorithmic biases in diverse public sector contexts?
+Second, Simon's interdisciplinary approach—spanning cognitive psychology, behavioral economics, and administrative
+sciences—remains underutilized in public administration
+literature. Scholars should prioritize bridging these silos to
+integrate cognitive insights and behavioral approaches into
+
+administrative frameworks. Linking insights from cognitive
+psychology and behavioral economics with administrative science could refine frameworks for managing complexity and
+uncertainty (Dowding and Taflaga 2022; Schwoerer et al. 2022).
+For instance, heuristic processes shaping policy design and organizational learning, particularly in environments of high uncertainty, merit further exploration (Jones 2002; Kahneman 2003;
+Schwarz, Christensen, and Zhu 2022). Expanding this cross-­
+disciplinary dialogue aligns with Simon's call for integrative
+scholarship (Simon 1995) and offers opportunities to refine
+decision-­
+making frameworks that address both administrative and cognitive challenges (e.g., Hansen and Nielsen 2022).
+To conclude, we pose the question: What are the mechanisms
+through which cognitive psychology and behavioral economics
+can be integrated with administrative science to create more effective frameworks for managing complexity and uncertainty in
+public administration?
+Third, AI not only offers transformative potential but also
+presents significant risks, such as ethical dilemmas, workforce
+displacement, and erosion of public trust (Moon 2023; Wirtz,
+Weyerer, and Sturm 2020). Simon's cautionary stance on the
+over-­reliance on technology (Simon 1995) provides a foundation
+for addressing these challenges. Future research should explore
+governance models that balance AI's benefits with its risks, emphasizing transparency, accountability, and inclusivity. AI technologies designed to mimic human cognitive processes often
+utilize algorithms approximating satisficing behavior, reflecting
+Simon's bounded rationality model (Simon 1995). However, the
+ethical and social implications of AI remain a critical area for
+future research. For example, governance frameworks could
+focus on fostering public trust in AI systems while mitigating discriminatory practices in algorithmic decision-­
+making
+(Schwartz 2002; Schwarz, Christensen, and Zhu 2022). Inclusive
+and transparent AI systems, grounded in the principles of
+bounded rationality, can help mitigate risks and maximize benefits for public governance (Moon 2023; Wirtz, Weyerer, and
+Sturm 2020). Addressing these challenges is essential for ensuring that AI-­driven decision-­making aligns with democratic
+values and societal needs. Therefore, the main question here is:
+What governance models can effectively balance the benefits
+and risks of AI in public administration, ensuring transparency,
+accountability, and inclusivity while fostering public trust in AI
+systems?
+Fourth, procedural rationality, a cornerstone of Simon's theoretical contributions, has significant implications for designing
+AI systems that support strategic decision-­making (Schwarz,
+Christensen, and Zhu 2022; Simon 1947). This review identifies gaps in its application to AI, creating an opportunity that
+warrants further investigation. Researchers should explore how
+procedural rationality can inform the development of adaptive
+AI tools, particularly those designed for resilience and context-­
+sensitive governance. Understanding how procedural rationality
+interacts with other decision-­making models could enhance its
+utility in addressing the unique challenges of public administration (Dowding and Taflaga 2022; van der Voet and Lems 2022).
+Thus, we call for further research to address the question: How
+can procedural rationality inform the development of adaptive
+AI systems designed to enhance resilience and context-­sensitive
+governance in addressing public administration challenges?
+11 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+effectuation theory, which highlights how expert entrepreneurs
+use inverse causation to create markets and firms, differing from
+traditional predictive approaches. The paper emphasizes how
+effectuation and Simon's principles together explain the creation
+and growth of high-­performing entrepreneurial ventures.
+
+Ultimately, Herbert Simon's ideas continue to provide an invaluable lens for navigating the complexities of decision-­making in
+the digital age. By building on his interdisciplinary insights,
+revisiting procedural rationality, and addressing the ethical
+challenges of AI, future research can extend Simon's legacy, ensuring its relevance in a rapidly evolving societal and technological landscape.
+
+6   |   Concluding Remarks
+This paper has critically examined Herbert Simon's enduring
+legacy in public administration, particularly through the lens of
+bounded rationality and its profound influence on AI. By synthesizing decades of research, we highlight the enduring relevance of Simon's concepts for understanding decision-­making in
+complex organizational and technological contexts.
+Central to Simon's contributions is the emphasis on satisficing
+and heuristic processes as practical alternatives to unattainable
+optimization. As Simon (1995) argued, these approaches provide a robust framework for tackling the “ill-­structured” problems inherent in public administration, offering critical lessons
+for integrating AI into decision-­making. The threefold goals of
+AI outlined by Simon—modeling intelligence, understanding
+human cognitive processes, and augmenting decision-­making
+with expert systems—remain highly pertinent. His assertion
+that AI should supplement rather than replace human judgment
+underscores the necessity of ethical oversight and the alignment
+of AI systems with human-­centric values.
+Our findings emphasize that Simon's critique of the fragmentation of AI research, which he viewed as undermining the interdisciplinary dialogue necessary for solving complex problems,
+is particularly relevant in the digital age. Bridging cognitive science, behavioral economics, and public administration, as Simon
+advocated, is vital for developing decision-­making systems that
+are not only efficient but also equitable and accountable. This
+integration can address critical issues such as transparency, inclusivity, and the unintended consequences of AI deployment.
+Despite its contributions, this study acknowledges several limitations. The focus on English-­language sources and the use of
+12 of 14
+
+specific bibliometric tools, while methodologically sound, may
+not capture the full breadth of Simon's influence across diverse
+scholarly traditions. Furthermore, while our content analysis sheds light on thematic trends, it cannot fully address the
+contextual nuances of Simon's interdisciplinary legacy. Future
+research should adopt broader methodological approaches
+and engage in empirical studies that assess the real-­
+world
+implications of AI-­
+driven decision-­
+making tools in public
+administration.
+In the spirit of Simon's call for an empirical science of AI
+(Simon 1995), future work must explore how public administration can harness AI's potential while mitigating its risks.
+Empirical research evaluating AI applications in areas such
+as resource allocation, crisis management, and citizen engagement is imperative to validate and extend Simon's insights.
+Such studies will ensure that Simon's vision of informed, responsible, and adaptive decision-­making continues to guide the
+evolution of governance in the age of AI. Simon's legacy serves
+as a beacon for navigating the complexities of modern governance. By drawing on his foundational principles and applying them to contemporary challenges, public administration
+can develop integrative frameworks that enhance decision-­
+making, advance ethical AI integration, and foster trust in public institutions.
+
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are available on request
+from the corresponding author. This systematic review builds upon data
+from documents collected from the Web of Science.
+
+References
+Al-­Hashimi, K., V. Weerakkody, S. Elbanna, and G. Schwarz. 2022.
+“Strategic Decision Making and Implementation in Public Organizations
+in the Gulf Cooperation Council: The Role of Procedural Rationality.”
+Public Administration Review 82, no. 5: 905–919.
+Aria, M., and C. Cuccurullo. 2017. “Bibliometrix: An R-­
+Tool for
+Comprehensive Science Mapping Analysis.” Journal of Informetrics 11,
+no. 4: 959–975.
+Arrojo, M. J. 2017. “Information and the Internet: An Analysis From
+the Perspective of the Science of the Artificial.” Minds and Machines 27,
+no. 3: 425–448.
+Barragan, S. P. 2022. “Applying Bounded Rationality to Information
+Disposition: Development of a Risk/Reward Heuristic.” Records
+Management Journal 32, no. 2: 170–181.
+Belardinelli, P., N. Bellé, and P. Cantarelli. 2021. “The Impact of
+Bounded Subadditivity on Administrative Behaviour Among Public
+and Private Workers.” Public Administration 99, no. 4: 679–693. https://​
+doi.​org/​10.​1111/​padm.​12710​.
+Benoit, K., K. Watanabe, H. Wang, et al. 2018. “Quanteda: An R Package
+for the Quantitative Analysis of Textual Data.” Journal of Open Source
+Software 3, no. 30: 774.
+Bertoin, J. 2019. “A Version of Herbert A. Simon's Model With Slowly
+Fading Memory and Its Connections to Branching Processes.” Journal
+of Statistical Physics 176, no. 3: 679–691.
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Fifth, Simon's fundamental concepts provide a robust framework for addressing contemporary challenges in public administration, including resilience-­building, managing black swan
+events, and fostering participatory governance (Feduzi, Runde,
+and Schwarz 2022; Taleb 2010). The intersection of Simon's design science principles with modern AI applications offers an
+avenue for innovative decision-­making tools that enhance both
+efficiency and equity (Sarasvathy 2003; Schwarz, Christensen,
+and Zhu 2022). Additionally, future research should investigate
+the cultural and institutional contexts that shape the application
+of Simon's theories, particularly in addressing complex governance issues in the digital age (Jones 1994a, 1994b; Olsen 2017).
+To conclude, our final proposed question is: How can Simon's
+design science principles be applied to develop AI-­driven tools
+that address black swan events and promote participatory governance while accounting for cultural and institutional contexts
+in public administration?
+
+Herold, K. 2014. “Intuition, Computation, and Information.” Minds and
+Machines 24: 85–88.
+
+Bostrom, N., and E. Yudkowsky. 2018. “The Ethics of Artificial
+Intelligence.” In Artificial Intelligence Safety and Security, 1st ed., 57–69.
+Chapman and Hall/CRC. Boca Raton, FL: CRC Press/Taylor & Francis
+Group.
+
+Heyck, H. 2008. “Defining the Computer: Herbert Simon and the
+Bureaucratic Mind.” IEEE Annals of the History of Computing 30, no.
+2: 42–63.
+
+Chen, Y. 1991. “Statistical Models of Text in Continuous Speech
+Recognition.” Kybernetes 20, no. 5: 29–40.
+Dahl, R. A. 1947. “The Science of Public Administration: Three
+Problems.” Public Administration Review 7, no. 1: 1–11.
+Denhardt, R. B., and J. V. Denhardt. 2000. “The New Public Service:
+Serving Rather Than Steering.” Public Administration Review 60, no.
+6: 549–559.
+Dowding, K., and M. Taflaga. 2022. “Procedural Rationality in
+Westminster Systems: How De-­
+Separation Affects the Decision
+Premise.” Public Administration Review 82, no. 5: 920–930.
+Egeberg, M. 1999. “The Impact of Bureaucratic Structure on Policy
+Making.” Public Administration 77, no. 1: 155–170. https://​doi.​org/​10.​
+1111/​1467-­​9299.​0 0148​.
+
+James, O., S. R. Jilke, and G. G. Van Ryzin. 2017. “Behavioural and
+Experimental Public Administration: Emerging Contributions and New
+Directions.” Public Administration 95, no. 4: 865–873.
+Jones, B. D. 1994a. “A Change of Mind or a Change of Focus? A Theory
+of Choice Reversals in Politics.” Journal of Public Administration
+Research and Theory 4, no. 2: 141–178.
+Jones, B. D. 1994b. Reconceiving Decision-­Making in Democratic Politics:
+Attention, Choice, and Public Policy. Chicago, IL: University of Chicago
+Press.
+Jones, B. D. 2002. “Bounded Rationality and Public Policy: Herbert
+A. Simon and the Decisional Foundation of Collective Choice.” Policy
+Sciences 35, no. 3: 269–284.
+Jones, B. D. 2003. “Bounded Rationality and Political Science: Lessons
+From Public Administration and Public Policy.” Journal of Public
+Administration Research and Theory 13, no. 4: 395–412.
+
+Feduzi, A., J. Runde, and G. Schwarz. 2022. “Unknowns, Black
+Swans, and Bounded Rationality in Public Organizations.” Public
+Administration Review 82, no. 5: 958–963.
+
+Kahneman, D. 2003. “Maps of Bounded Rationality: Psychology
+for Behavioral Economics.” American Economic Review 93, no. 5:
+1449–1475.
+
+Feld, S. L. 1997. Simulation Games in Theory Development. Vol. 12, 103–
+115. New York, NY: Springer.
+
+Kenis, P., and K. G. Provan. 2009. “Towards an Exogenous Theory of
+Public Network Performance.” Public Administration 87, no. 3: 440–
+456. https://​doi.​org/​10.​1111/j.​1467-­​9299.​2 009.​01775.​x.
+
+Filip, F. G. 2022. “Collaborative Decision-­
+Making: Concepts and
+Supporting Information and Communication Technology Tools and
+Systems.” International Journal of Computers Communications &
+Control 17, no. 2: 4732.
+Foss, N. J. 2003. “Bounded Rationality in the Economics of Organization:
+“Much Cited and Little Used”.” Journal of Economic Psychology 24, no.
+2: 245–264.
+Fry, B. R., and J. C. Raadschelders. 2013. Mastering Public Administration:
+From Max Weber to Dwight Waldo. Washington, D.C.: CQ Press.
+Georgiou, I. 2013. “A Blast at the Past: An Inquiry Into Herbert Simon's
+Arguments Against the Principles.” Public Administration 91, no. 4:
+1015–1034. https://​doi.​org/​10.​1111/​padm.​12001​.
+Gintis, H. 2003. “The hitchhiker's Guide to Altruism: Gene-­Culture
+Coevolution, and the Internalization of Norms.” Journal of Theoretical
+Biology 220, no. 4: 407–418.
+Giza, P. 2017. “Automated Discovery Systems and the Inductivist
+Controversy.” Journal of Experimental & Theoretical Artificial
+Intelligence 29, no. 5: 1053–1069.
+Gobet, F., and P. Chassy. 2009. “Expertise and Intuition: A Tale of Three
+Theories.” Minds and Machines 19: 151–180.
+Goddard, C. 2011. Semantic Analysis: A Practical Introduction. USA:
+Oxford University Press.
+Grant, M. J., and A. Booth. 2009. “A Typology of Reviews: An Analysis
+of 14 Review Types and Associated Methodologies.” Health Information
+and Libraries Journal 26, no. 2: 91–108.
+Hammond, T. H. 1990. “In Defence of Luther Gulick's Notes on the
+Theory of Organization.” Public Administration 68, no. 2: 143–173.
+Hanoch, Y., and T. Rice. 2006. “Can Limiting Choice Increase Social
+Welfare? The Elderly and Health Insurance.” Milbank Quarterly 84, no.
+1: 37–73.
+Hansen, J. A., and P. A. Nielsen. 2022. “How Do Public Managers Learn
+From Performance Information? Experimental Evidence on Problem
+Focus, Innovative Search, and Change.” Public Administration Review
+82, no. 5: 946–957.
+
+Kline, R. 2020. “How Disunity Matters to the History of Cybernetics
+in the Human Sciences in the United States, 1940–80.” History of the
+Human Sciences 33, no. 1: 12–35.
+Kumar, K., V. Kumar, Seema, M. K. Sharma, A. A. Khan, and M. J. Idrisi.
+2024. “A Systematic Review of Blockchain Technology Assisted With
+Artificial Intelligence Technology for Networks and Communication
+Systems.” Journal of Computer Networks and Communications 2024,
+no. 1: 9979371 15.
+Lee, C. 2011. “Bounded Rationality and the Emergence of Simplicity
+Amidst Complexity.” Journal of Economic Surveys 25, no. 3: 507–526.
+Luzzati, T., I. Tucci, and P. Guarnieri. 2022. “Information Overload
+and Environmental Degradation: Learning From HA Simon and W.
+Wenders.” Ecological Economics 202: 107593.
+Meng, J. C. S. 2009. “Donald Schön, Herbert Simon and the Sciences of
+the Artificial.” Design Studies 30, no. 1: 60–68.
+Minkes, A., and G. R. Foxall. 2003. “Herbert Simon and the Concept of
+Dispersed Entrepreneurship.” Journal of Economic Psychology 24, no.
+2: 221–228.
+Moon, M. J. 2023. “Searching for Inclusive Artificial Intelligence for
+Social Good: Participatory Governance and Policy Recommendations
+for Making AI More Inclusive and Benign for Society.” Public
+Administration Review 83, no. 6: 1496–1505. https://​doi.​org/​10.​1111/​
+puar.​13648​.
+Navaneethakrishnan, D. 2021. “Human Problem-­
+Solving: Standing
+on the Shoulders of the Giants.” Computational Economics 57, no. 3:
+857–868.
+Newell, A., J. Shaw, and H. Simon. 2000. “Report on a General Problem
+Solving Program.” Artificial Intelligence: Critical Concepts 2: 69–87.
+Newell, A., and H. A. Simon. 1972. Human Problem Solving. Vol. 104,
+Numéro 9. NJ: Prentice-­hall Englewood Cliffs.
+Nilsson, N. J. 2009. The Quest for Artificial Intelligence. Cambridge, UK:
+Cambridge University Press.
+Nowlin, M. C. 2016. “Modeling Issue Definitions Using Quantitative
+Text Analysis.” Policy Studies Journal 44, no. 3: 309–331.
+
+13 of 14
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Blei, D. M., A. Y. Ng, and M. I. Jordan. 2003. “Latent Dirichlet
+Allocation.” Journal of Machine Learning Research 3, no. Jan: 993–1022.
+
+Parnell, J. A. 2020. “The Contribution of Behavioral Economics to
+Crisis Management Decision-­
+Making.” Journal of Management &
+Organization 26, no. 4: 585–600.
+
+Tomer, J. F. 2015. “Economic Decision Making: How Our Mind Works.”
+Review of Behavioral Economics 2, no. 3: 255–277.
+Toosi, A., A. G. Bottino, B. Saboury, E. Siegel, and A. Rahmim. 2021. “A
+Brief History of AI: How to Prevent Another Winter (a Critical Review).”
+PET Clinics 16, no. 4: 449–469.
+
+Priestley, M. 2017. “AI and the Origins of the Functional Programming
+Language Style.” Minds and Machines 27, no. 3: 449–472.
+
+Tversky, A., and C. R. Fox. 1995. “Weighing Risk and Uncertainty.”
+Psychological Review 102, no. 2: 269–283. https://​doi.​org/​10.​1037/​0 033-­​
+295X.​102.2.​269.
+
+Ridley, C. E., and H. A. Simon. 1938. “The Criterion of Efficiency.” Annals
+of the American Academy of Political and Social Science 199, no. 1: 20–25.
+
+Tyson, C. J. 2008. “Cognitive Constraints, Contraction Consistency, and
+the Satisficing Criterion.” Journal of Economic Theory 138, no. 1: 51–70.
+
+Russell, S. J., and P. Norvig. 2016. Artificial Intelligence: A Modern
+Approach. London, UK: Pearson.
+
+van der Voet, J., and E. Lems. 2022. “Decision-­Makers' Generation of
+Policy Solutions Amidst Negative Performance: Invention or Rigidity?”
+Public Administration Review 82, no. 5: 931–945.
+
+Rutherford, A., and K. J. Meier. 2015. “Managerial Goals in a
+Performance-­Driven System: Theory and Empirical Tests in Higher
+Education.” Public Administration 93, no. 1: 17–33.
+Samuel, A. L. 1959. “Some Studies in Machine Learning Using the
+Game of Checkers.” IBM Journal of Research and Development 3, no. 3:
+210–229. IBM Journal of Research and Development. https://​doi.​org/​10.​
+1147/​rd.​33.​0210.
+Sarasvathy, S. D. 2003. “Entrepreneurship as a Science of the Artificial.”
+Journal of Economic Psychology 24, no. 2: 203–220.
+Schwartz, H. 2002. “Herbert Simon and Behavioral Economics.”
+Journal of Socio-­Economics 31, no. 3: 181–189.
+Schwarz, G., T. Christensen, and X. Zhu. 2022. “Bounded Rationality,
+Satisficing, Artificial Intelligence, and Decision-­
+Making in Public
+Organizations: The Contributions of Herbert Simon.” Public
+Administration Review 82: 902–904.
+Schwoerer, K., F. Keppeler, A. Mussagulova, and S. Puello. 2022. “CO-­
+DESIGN-­Ing a More Context-­Based, Pluralistic, and Participatory Future
+for Public Administration.” Public Administration 100, no. 1: 72–97.
+
+van Regenmortel, M. H. 2018. “Development of a Preventive HIV
+Vaccine Requires Solving Inverse Problems Which Is Unattainable by
+Rational Vaccine Design.” Frontiers in Immunology 8: 2009.
+Waldo, D. 1952. “Development of Theory of Democratic Administration.”
+American Political Science Review 46, no. 1: 81–103.
+Wettersten, J. 2017. “From Selz to Gigerenzer: A Thought-­Psychological
+Research History, Which Needs a Popperian, Fallibilist Theory of
+Rationality to Effectively Develop.” Theory & Psychology 27, no. 4:
+439–457.
+Wirtz, B. W., J. C. Weyerer, and B. J. Sturm. 2020. “The Dark Sides of
+Artificial Intelligence: An Integrated AI Governance Framework for
+Public Administration.” International Journal of Public Administration
+43, no. 9: 818–829. https://​doi.​org/​10.​1080/​01900​692.​2 020.​1749851.
+Wood, J., and A. T. Wood-­Harper. 1993. “Information Technology in
+Support of Individual Decision-­Making.” Information Systems Journal
+3, no. 2: 85–101.
+
+Sent, E.-­M., and M. Klaes. 2005. A Conceptual History of the Emergence
+of Bounded Rationality. Durham, NC: Duke University Press.
+Simon, H. A. 1937. “Comparative Statistics and the Measurement of
+Efficiency.” Nat'l Mun Rev 26: 524–527.
+Simon, H. A. 1939. “The Administrator in Search of Statistics.” Public
+Management 21, no. April: 106–109.
+Simon, H. A. 1946. “The Proverbs of Administration.” Public
+Administration Review 6, no. 1: 53–67.
+Simon, H. A. 1947. Administrative Behavior; A Study of Decision-­Making
+Processes in Administrative Organization. New York, NY: Macmillan.
+Simon, H. A. 1955. “A Behavioral Model of Rational Choice.” Quarterly
+Journal of Economics 69: 99–118.
+Simon, H. A. 1956. “Rational Choice and the Structure of the
+Environment.” Psychological Review 63, no. 2: 129–138.
+Simon, H. A. 1958. “The Decision-­Making Schema: A Reply.” Public
+Administration Review 18, no. 1: 60.
+Simon, H. A. 1995. “Artificial Intelligence: An Empirical Science.”
+Artificial Intelligence 77, no. 1: 95–127.
+Simon, H. A. 1997. Models of Bounded Rationality: Empirically Grounded
+Economic Reason. Vol. 3. Cambridge, MA: MIT Press.
+Simon, H. A., P. F. Drucker, and D. Waldo. 1952. “‘Development of
+Theory of Democratic Administration’: Replies and Comments.”
+American Political Science Review 46, no. 2: 494–503.
+Smith, T. S., and G. T. Stevens. 1999. “The Architecture of Small
+Networks: Strong Interaction and Dynamic Organization in Small
+Social Systems.” American Sociological Review 64, no. 3: 403–420.
+Taleb, N. N. 2010. The Black Swan: The Impact of the Highly Improbable:
+With a New Section: “On Robustness and Fragility”. Vol. 2. New York,
+NY: Random House Trade Paperbacks.
+
+14 of 14
+
+Public Administration, 2025
+
+14679299, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/padm.13051 by Akitaka Kasagi - Cochrane Japan , Wiley Online Library on [02/07/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Olsen, A. L. 2017. “Compared to What? How Social and Historical
+Reference Points Affect citizens' Performance Evaluations.” Journal of
+Public Administration Research and Theory 27, no. 4: 562–580.
+
+

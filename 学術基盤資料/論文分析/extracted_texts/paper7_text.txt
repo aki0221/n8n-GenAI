@@ -1,0 +1,2604 @@
+Complex & Intelligent Systems
+(2025) 11:329
+https://doi.org/10.1007/s40747-025-01952-3
+
+ORIGINAL ARTICLE
+
+Granular computing-driven two-stage consensus model for large-scale
+group decision-making
+Yanjun Wang1 · Xi Chen2 · Lidong Wang2
+Received: 3 October 2024 / Accepted: 21 May 2025
+© The Author(s) 2025
+
+Abstract
+As new technical paradigms like electronic democracy and e-governance have emerged quickly, large-scale group decisionmaking (LSGDM) has become a significant area of research. In LSGDM, conflicting interests and divergent viewpoints
+have grown especially widespread, making it challenging to bring individual preferences into line with a productive group
+consensus. This paper uses the concept of information granules to design a granular LSGDM consensus framework that
+addresses two core aspects of LSGDM: the clustering process and the consensus reaching process. First, granular hierarchical
+clustering is designed based on the principle of justifiable granularity, with a novel division index introduced to determine the
+optimal number of subgroups. Next, the fuzzy consensus measure is defined by the specificity and coverage of information
+granule, and a two-stage granule consensus model is proposed by integrating the maximum consensus rule and minimum
+consensus cost to optimize individual opinions and achieve an efficient group consensus. Finally, an illustrative example with
+detailed experiments is conducted to demonstrate the practicality and effectiveness of the granular LSGDM consensus model
+in enhancing consensus and group division among DMs.
+Keywords Granular aggregation method · Two-stage granular consensus model · Large-scale group decision-making ·
+Principle of justifiable granularity
+
+Introduction
+Group decision-making (GDM) is crucial for addressing
+practical problems, as it incorporates the diverse perspectives
+of different decision-makers (DMs) to arrive at reasonable
+decision results. GDM considers the preferences of DMs to
+identify the ideal solution from a set of possible alternatives
+[1], with the final solution derived from the adjusted preference information of the group members. Currently, GDM has
+been widely applied in fields such as connected autonomous
+
+B Lidong Wang
+
+ldwang@dlmu.edu.cn
+Yanjun Wang
+yjwang@ahjzu.edu.cn
+Xi Chen
+xiaotinggua@foxmail.com
+
+1
+
+School of Mathematics and Physics, Anhui Jianzhu
+University, Hefei 230009, Anhui, People’s Republic of China
+
+2
+
+School of Science, Dalian Maritime University, Dalian
+116026, Liaoning, People’s Republic of China
+
+vehicles [2], supply chain investment [3], renewable energy
+[4], medical diagnosis [5], and emergency plans making [6].
+The traditional method of having DMs participate in live
+activities and numerically express their choices has evolved
+into more diverse and complex forms of interaction. With
+advancements in network technology and the widespread
+use of social media, DMs can now engage in the decisionmaking process through multiple channels, leading to the
+emergence of large-scale group decision-making (LSGDM).
+If the number of DMs involved in solving a decision problem exceeds 20, it may be classified as an LSGDM problem
+[7]. However, there are two challenges associated with the
+implementation of LSGDM. One challenges is managing a
+large number of participants and their inputs, which can be
+quite intricate and time-consuming. Another is that the effectiveness of decision-making in LSGDM can be influenced by
+various factors, including the level of expertise and knowledge of the participants, as well as the potential for biases
+and groupthink.
+To address LSGDM issues, it is crucial to establish a
+decision-making model that considers both individual perspectives and group opinions. The ultimate aim is to enhance
+
+0123456789().: V,-vol
+
+123
+
+329
+
+Page 2 of 16
+
+the effectiveness of GDM and overall group satisfaction
+by identifying potential problems and achieving consensus
+or agreement. Currently, numerous approaches have been
+established to address LSGDM issues [8–12]. The LSGDM
+resolution typically consists of two significant processes
+[13]: (1) The group clustering process seeks to divide numerous DMs into smaller groups to reduce the complexity and
+cost of LSGDM. (2) The consensus reaching process (CRP)
+enables DMs to adjust their preferences or those of their
+groups, contributing to higher satisfaction with the final outcome.
+In the clustering process, DMs can be categorized into
+several subgroups based on their individual preferences. The
+goal is to group DMs by their similarities, ensuring that those
+with similar opinions are placed in the same group. Various
+clustering algorithms have been designed to categorize DMs
+in LSGDM problems. Liang et al. [14] proposed a novel
+clustering model based on opinion similarity and trust relationships among DMs, maximizing the combined cohesion
+of the subgroups. Ding et al. [15] developed a conflictrelationship-based clustering method to effectively address
+opinion conflicts in LSGDM. Liang et al. [16] presented a
+clustering method based on the similarity-trust score between
+DMs to reduce the complexity of decision-making. Wang et
+al. [17] designed a dual-attribute affinity propagation algorithm to divide the large group into manageable subgroups.
+Peng and Chen [18] proposed a clustering method based on
+the picture fuzzy Chi-square similarity measure to reduce the
+complexity and costs associated with the decision-making
+process. Tang et al. [19] applied the K-medoids clustering
+algorithm to cluster DMs into multiple subgroups, aiming to
+reduce the dimension of the problem. Yang et al. [20] offered
+a two-stage clustering approach that groups DMs by objectively selecting initial cluster centers based on the number
+of supporters and the separations between DMs. The aforementioned works highlight how existing clustering methods
+simplify the LSGDM problems and offer a direct approach
+to identifying similar preference within the LSGDM framework.
+Differences in cognition, background, experience and
+expertise among DMs lead to variations in their evaluation
+of alternatives, often resulting in a lack of consensus among
+DMs and hindering the achievement of a universally accepted
+solution. Consequently, the initial preference aggregation
+may only be acceptable to a subset of DMs [21]. To address
+this, CRP must be implemented to enhance consensus among
+DMs, ensuring broader acceptance of the final result [22].
+CRP is a dynamic, iterative group negotiation process that
+guides DMs towards consensus [23]. By adjusting DMs’
+preferences, their perspectives can be better aligned, facilitating the establishment of a high-level consensus before
+making a group decision.
+
+123
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+However, consensus adjustment is both time-consuming
+and resource-intensive, requiring low-cost adjustment strategy. Many studies have focused on narrowing the preference
+gaps among DMs and achieving consensus, considering the
+challenges of time and resource limitations. Xing et al. [24]
+established an incentive-based minimum adjustment consensus model by developing a trust-relationship-driven incentive
+mechanism to generate recommendations for individual preference. Yuan et al. [25] designed a budget-constrained
+consensus framework to reduce group conflict to address
+non-cooperative behaviors. Meng et al. [26] used the Gini
+coefficient to measure the fairness of consensus adjustment
+and proposed a two-stage consensus mechanism to minimize both consensus adjustment and ensure fairness while
+respecting minority opinions. Wang et al. [27] established a
+feedback adjustment model that minimizes individual adjustment cost and maximizes group consensus. Ma et al. [28]
+utilized a visual adjustment path in the maximum expert
+consensus model to avoid over-adjusted individual opinions
+and facilitate consensus formation. Feng et al. [29] offered
+the minimum cost consensus model, considering altruismfairness preferences within a social trust network to enhance
+DMs’ satisfaction. Qin et al. [30] developed a social networkdriven bi-level minimum cost consensus model, focusing on
+the interactions between the moderator and DMs, as well as
+among DMs themselves.
+The aforementioned analysis suggests that the clustering
+process and CRP offer valuable insights. However, several
+unsolved problems persist in practical LSGDM, especially
+when the number of DMs reaches the hundreds or thousands.
+These issues can be summarized as follows:
+
+1) In the clustering process, methods that rely on a predefined number of subgroups often struggle with large-scale
+data. While traditional techniques, such as the elbow
+method and silhouette coefficient, can help determine
+the number of subgroups, they primarily focus on data
+patterns and lack the ability to quantify trade-offs among
+multiple objectives, such as consensus levels among DMs
+and conflicts of interest. Additionally, existing clustering methods are primarily designed for decision-making
+groups of up to 50 individuals and have not yet been
+validated for decision problems involving thousands of
+participants.
+2) In consensus measurement, distance functions are commonly used to measure the consensus level. However,
+different distance functions can produce varying results
+during the CRP and can influence the convergence speed
+in distinct ways. Currently, there is no benchmark to
+determine which distance function performs best in practical applications, creating challenges in selecting the
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+appropriate distance function and ensuring the effectiveness and reliability of consensus measurement.
+Granular computing (GrC) is a new paradigm extracting knowledge for complex data, providing a highly abstract
+data modeling strategy. Recently, integrating GrC with group
+decision-making problems offers a potential way for constructing CRP models [31, 32]. Research in references [31,
+33, 34] indicates that information granules, as entries for preference information, contribute to achieving group consensus.
+Additionally, the group opinion derived from traditional
+aggregation operators is often susceptible to the influence
+of outliers. To mitigate this influence and to describe the
+consensus level among groups more flexibly, this study proposes the granular LSGDM (G-LSGDM) consensus model
+for aggregating preference information, measuring the consensus degree, and implementing the consensus feedback
+mechanism. Specifically, information granules are generated
+by introducing coverage and specificity, guided by the principle of justifiable granularity [35], and then the aggregation
+method and the consensus measurement function based on
+information granularity are designed. This method allows for
+the description of group opinions and illustrate the proximity between individual opinions and the group opinion. The
+main contributions of the G-LSGDM consensus model can
+be categorized into three aspects.
+1.) During the clustering process, we develop a granular hierarchical clustering method that leverages local and global
+consensus levels to create a division index for determining the number of subgroups. Additionally, we introduce
+a granular aggregation method that generates valuable
+information granules representing group opinions and
+reduces outliers.
+2.) We create a fuzzy consensus measurement method that
+prioritizes the quality of the consensus granule from a
+GrC perspective. This method describes the level of consensus attained and provides flexible control over the
+number of DMs needed to reach consensus.
+3.) A two-stage consensus model is developed for balancing moderator costs with consensus level, resulting in an
+efficient and cost-effective consensus.
+The organization of this study is below. Section Preliminaries provides an overview of granular computing and the
+consensus model. Section Granular large-scale group decision making consensus model presents a detailed explanation
+of the G-LSGDM consensus model, including clustering
+process, information aggregation process, and consensus
+reaching process. In Section Example, a case study on awarding honours to outstanding graduates is used to illustrate
+the presented granular LSGDM model. Section Comparison
+
+Page 3 of 16
+
+329
+
+analysis provides a detailed comparative discussion of the
+proposed consensus model. Section Conclusion concludes
+the study with a summary of the research findings and suggestions for future research.
+
+Preliminaries
+This section reviews some basic concepts and definitions
+associated with the design of G-LSGDM.
+
+Interval fuzzy number
+Fuzzy interval numbers are a valuable tool for reflecting the
+uncertainty in DMs’ preferences. By using interval fuzzy
+numbers, DMs can articulate their preferences in a way
+that considers the uncertainty associated with the evaluation
+objectives.
+
+
+Definitoin 1 [36] Interval number is defined as p = p − , p +
+= {y | p − ≤ y ≤ p + }, where p − and p + represent the lower
+and upper boundaries of the interval defined by p.
+Definitoin 2 [37] Let I (·) represent the length of an interval,
+the priority Pr ( p1 , p2 ) of the interval number p1 relative to
+p2 is calculated below,
+
+
+
+min I ( p1 ) + I ( p2 ), max p2+ − p1− , 0
+,
+Pr ( p1 , p2 ) =
+I ( p1 ) + I ( p2 )
+
+
+
+
+where p1 = p1− , p1+ and p2 = p2− , p2+ .
+Definitoin 3 [37] The similarity S ( p1 , p2 ) between two
+interval numbers p1 and p2 is calculated below,
+ 
+
+ −
+ p − p−  +  p+ − p+ 
+1
+1
+2
+2
+S ( p1 , p2 ) = 1 −
+.
+p1+ + p1− + p2+ + p2−
+
+Principle of justifiable granularity
+Information granule is element factors in granular computing, which can take on different forms, such as numerical,
+symbolic, linguistic, or perceptual. The local structures of
+complex data can be represented and comprehended by
+breaking them down into meaningful information granules,
+which can then be combined to form a higher-level hierarchical structure. This process creates a global and more
+abstract description that reveals the data structures. Pedrycz
+[38] proposed the principle of justifiable granularity, which
+offers guidelines on how to generate information granules.
+The focus of this principle is on two conflicting requirements:
+coverage and specificity, and seeks to balance them in order
+to achieve optimal results.
+
+123
+
+329
+
+Page 4 of 16
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+1) Coverage, denoted by Cov, indicates the coverage degree
+of an information granule. The value of Cov increases
+with the size of the information granule.
+2) Specificity Sp is a measure of the compactness of an
+information granule, where its value decreases as the size
+of the information granule increases.
+
+is true, it indicates that the group has achieved consensus. If
+this condition does not hold for a specific issue, DMs are
+required to adjust their individual preferences or opinions to
+reach a higher consensus level. The minimum cost consensus
+model is proposed below,
+
+In practical applications, the determination of Cov and
+Sp can take various forms. Cov is typically treated as a
+function that increases with the cardinality of information
+granules, while Sp is defined as a function that decreases with
+the size of the information granules. As coverage increases,
+specificity generally decreases. Higher values of both specificity and coverage suggest better quality of the information
+granules. Therefore, we need to find a compromise in the
+granule generation. The given information granule should not
+only cover the preferences of the DMs as much as possible,
+but also comprehensively reflect the preference information
+of each DM. The preference information granule can be
+obtained by maximizing the product of its specificity and
+coverage,
+
+min
+
+The objective of the maximum expert consensus model
+(MECM) is to determine the optimal number of DMs that
+can reach a consensus while remaining within a specific
+cost threshold. Similarly, the MECM [41] is extended and
+expressed below,
+
+Q = Cov · Sp.
+
+max
+
+(1)
+
+As the value of Q increases, the information granules
+become more effective in terms of coverage and specificity.
+The principle of justifiable granularity can guide the granulation of preference information at different abstract levels,
+providing a range for adjustment [32]. In this study, the
+generated information granules offer a more comprehensive
+description and interpretation of subgroup preference information.
+
+n
+
+
+ci | pi − pi |
+
+i=1
+
+
+s.t.
+
+| pi − cp| ≤ σ
+,
+n
+cp = i=1
+wi pi
+
+where wi represents the weight assigned to the ei .
+Maximum expert consensus model
+
+n
+
+
+xi
+
+i=1
+
+⎧
+⎪
+⎪
+⎨
+s.t.
+
+n
+i=1 ci | pi − pi | ≤ B
+n
+cp =  i=1
+wi pi
+
+⎪
+⎪
+⎩ xi =
+
+,
+
+1, if | pi − cp| ≤ σ
+0, else
+
+where B denotes the given cost budget, and xi is the consensus indicator for pi .
+
+Consensus model
+In the LSGDM problem, achieving a consensus frequently
+requires engaging in discussions and employing persuasive
+strategies. The linear consistent cost function is expressed
+below [39, 40],
+n
+
+
+ci | pi − pi | ,
+
+i=1
+
+where pi is the individual preference of DM ei , ci represents
+the unit cost of changing the individual preference of ei , and
+pi denotes the modified individual preference.
+Minimum cost consensus model
+Let σ be the deviation threshold, which is satisfied when
+| pi − cp| ≤ σ , where cp represents the adjusted group preference information. Typically, if the condition | pi − cp| ≤ σ
+
+123
+
+Granular large-scale group decision making
+consensus model
+The developed G-LSGDM consensus model will be discussed in detail in this section. Fig. 1 illustrates the flowchart
+of the consensus model, which includes the aggregation process, clustering process and consensus reaching process.
+When addressing LSGDM problems, several factors and
+their corresponding symbols must typically be considered,
+as follows,
+• E = {e1 , e2 , . . . , en } is the set of n decision-makers,
+where ek denotes the k-th decision-maker, k ∈ {1, 2, · · · ,
+n}.
+• A = {a1 , a2 , . . . , as } represents the set of s alternatives,
+where ai denotes the i-th alternative, i ∈ {1, 2, · · · , s}.
+• B = {b1 , b2 , . . . , bt } denotes the set of t attributes, where
+b j denotes the j-th attribute, j ∈ {1, 2, · · · , t}.
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Page 5 of 16
+
+329
+
+Fig. 1 The Flowchart of Granular Large Scale Group Decision Making Consensus Model
+
+• C = {c1 , c2 , . . . , cm } is the set of m subgroups, where ch
+denotes the h-th subgroup and the number of members
+in ch is n h , h ∈ {1, 2, · · · , m}.
+• p k = ( pikj )s×t means the individual preference provided
+by the k-th decision-maker, where pikj denotes the preference information of the alternative ai on the attribute
+b j denoted by interval numbers.
+• p hk = ( pihkj )s×t means the individual preference information provided by the k-th decision-maker of the h-th
+subgroup.
+• q h = (qihj )s×t represents the subgroup preference information for subgroup ch .
+• g = (gi j )s×t denotes the global preference information.
+
+Granular aggregation method
+In this study, the individual preferences of DMs are granulated to describe subgroups and assist in aggregating information from different subgroups. Rather than relying on single
+values, the designed granular aggregation method leverages
+information granules to represent the essential information
+regarding DMs’ preferences within subgroups.
+In this study, preference information granule qihj =
+
+
+cihj − rihj , cihj + rihj is created to represent the aggregated
+preference information of alternative ai regarding attribute b j
+in subgroup ch . The terms cihj and rihj represent the midpoint
+and radius of the interval granule, respectively. To ensure
+that qihj ⊆ [0, 1], the value of rihj is limited to the range of
+
+
+
+(0, α · min 1 − cihj , cihj − 0 ), where α is a parameter used
+to control the radius range.
+For determining the optimal midpoint and radius {rihj , cihj }
+of qihj , we take the following formula,
+{rihj , cihj }opt = arg max Q(rihj , cihj ),
+where the term Q(rihj , cihj ) refers to the quality of the preference information granule qihj ,
+Q(rihj , cihj ) = Covihj · Spihj ,
+where Covihj and Spihj represent the coverage and specificity
+of qihj , respectively.
+The Covihj represents the coverage of the preference information encapsulated within the given preference information
+granule. Its form is taken as follows,
+h
+
+
+1 
+·
+I qihj ∩ pihkj .
+nh
+
+n
+
+Covihj =
+
+k=1
+
+The Spihj of interval information granule is calculated as
+follows,
+Spihj =
+
+nh
+k=1 I
+
+nh
+.
+
+qihlj ∪ pihkj
+
+123
+
+329
+
+Page 6 of 16
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Granular hierarchical clustering
+
+Selecting the number of clusters
+
+The hierarchical clustering method (HCM) is a widely used
+approach for clustering data without requiring the number
+of clusters to be determined beforehand. It relies on distance
+measures and connection types to generate various clustering
+results. The use of HCM helps break down LSGDM problems
+into smaller, more manageable subgroups, facilitating a more
+effective decision-making process. By addressing each subproblem separately, we can achieve local solutions that can
+be combined to derive the overall solution.
+This study introduces the granular hierarchical clustering method (G-HCM), which combines granular computing
+with hierarchical clustering to investigate group division and
+aggregate preference information in LSGDM. The principle
+of justifiable granularity is suitable for guiding the granulation of preference information at different abstract levels,
+thereby enabling the exploration of a two-stage consensusreaching model that incorporates granular computing.
+
+Considering the ultimate goal of achieving consensus among
+subgroup members in LSGDM, a new division index is
+proposed to determine the number of subgroups based on
+two essential components: the global consensus level Gcon,
+derived from subgroup clustering outcomes, and the consensus level within subgroups in_con h (h = 1, 2, · · · , N −l), as
+given in Eq. (10) and Eq. (6), respectively. By comparing the
+division index across different potential subgroup partitions,
+the optimal number of subgroups can be determined.
+Let N represent the number of layers of pedigree chart of
+clustering, C I (l) represent the division index corresponding
+to the l-th layer (l = 1, 2, · · · , N ),
+
+G-HCM
+G-HCM measures the distance between two subgroups based
+on aggregation information. The distance d(u, v) between
+u+
+the preference information granule qiuj = [qiu−
+j , qi j ] and
+v−
+v+
+qivj = [qi j , qi j ] is defined in the following way,
+
+d(u, v) = 1 −
+
+s
+i=1
+
+t
+u
+v
+j=1 S(qi j , qi j )
+
+s·t
+
+,
+
+(2)
+
+where S(qiuj , qivj ) denotes the similarity between interval
+numbers as described in Definition 3.
+
+Algorithm 1: Granular Hierarchical Clustering
+
+Input: Decision-makers’ preference information p k = ( pikj )s×t ,
+k ∈ {1, 2, · · · , n}
+Output: Hierarchical clustering results
+for i = 1 to n do
+Create the i-th cluster containing the i-th decision-maker’s
+preference information.
+end
+Calculate the distances between clusters, respectively.
+while m > 1 do
+Find the nearest pair of clusters based on the distance matrix.
+Merge the closest pair of clusters to form a new cluster.
+Calculate the distance between the new cluster and all other
+clusters using Eq. (2).
+Obtain the preference information granule for the new cluster
+using the granular aggregation method proposed in Section
+Granular aggregation method.
+end
+
+123
+
+C I (l) = β ·
+
+Gcon(l)
+
++ (1 − β) ·
+
+N
+l=1 Gcon(l)
+N −l
+1
+h
+1
+h=1 in_con (l)
+N −l
++ λ · ln
+,
+N
+N −l
+1
+h
+N
+−l
+l=1 N −l
+h=1 in_con (l)
+
+(3)
+
+where Gcon(l) represents the global consensus level of the
+clustering result on the l-th layer, and in_con h (l) represents
+the consensus level within subgroup ch on the l-th layer, λ
+is the penalty coefficient. Larger subgroups are more capable of capturing common opinions and preferences, thereby
+minimizing the impact of different individual views on group
+preference information. In smaller subgroups, the opinions
+and information of DMs can significantly influence decision
+results, increasing the complexity of the CRP. By maintaining larger subgroups, the influence of information among
+different DMs is balanced, which helps reduce the influence
+of information bias on clustering results.
+The weight adjustment parameter β aims to balance the
+influence of global consensus level and the consensus level
+within subgroups on the division index in solving LSGDM
+problems. By adjusting the value of β, the weights of Gcon
+and in_con h in clustering results can be controlled. When
+β has a smaller value, in_con h has a greater impact on
+the division index, resulting in clustering results that prioritize the preservation of distinct characteristics among
+subgroups. Conversely, when β has a larger value, Gcon
+has a significantly impact on the division index, highlighting the importance of group consensus levels among all
+DMs. By selecting and adjusting the value of β based on
+the requirements of LSGDM, a better balance between Gcon
+and in_con h can be achieved to obtain more reasonable group
+division results. We choose the one with the highest value by
+calculating the division index C I (l) for the clustering results
+in the pedigree chart.
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Page 7 of 16
+
+Consensus reaching process
+
+con =
+h
+
+The CRP encompasses both consensus measurement and
+preference adjustment. The former evaluates the group consensus level, while the latter promotes the attainment of
+consensus, both play a significant role in achieving while
+assessing consensus.
+Consensus measuring process
+
+
+
+I qihj ∩ pihkj
+  ,
+in_con ihkj =
+I qihj
+in_con hk =
+
+s
+i=1
+
+t
+hk
+j=1 in_con i j
+
+s·t
+
+.
+
+(4)
+
+(5)
+
+Consensus level within subgroups: Let in_con h reflect
+the consensus level reached by each subgroup members for
+its subgroup ch . It can be calculated as follows,
+in_con h =
+
+nh
+hk
+k=1 in_con
+
+nh
+
+.
+
+(6)
+
+Consensus level between subgroups: Let con h represent
+the consensus level of subgroup ch , and gi j represent the
+global preference information of the alternative ai concerning the attribute b j . The corresponding calculation methods
+are shown as follows,
+
+
+I gi j ∩ qihj
+  ,
+con ihj =
+(7)
+I gi j
+
+t
+h
+j=1 con i j
+
+s·t
+
+.
+
+(8)
+
+Consensus level of global: The global consensus level
+Gcon can be defined as follows.
+Gcon i j =
+Gcon =
+
+This study assesses DMs’ agreement on collective preference
+information form two perspectives: the representativeness of
+collective preference with respect to DMs’ preferences and
+the reliability of aggregated preference information.
+The consensus level within subgroups and the global consensus level serve as indicators of the agreement and consent
+among DMs regarding the aggregated subgroup and global
+preference information, which impacts the entire decisionmaking process. The steps for measuring consensus level are
+outlined below.
+Individual consensus level of decision-makers: Let in
+_con hk represent the consensus level of DM ek within subgroup ch , which is calculated as follows,
+
+s
+i=1
+
+329
+
+s
+i=1
+
+m
+h
+h=1 con i j
+
+m
+t
+j=1 Gcon i j
+s·t
+
+,
+
+(9)
+
+,
+
+(10)
+
+where m represents the number of subgroups.
+Given a predefined consensus threshold δ, two scenarios
+can be distinguished:
+1 Gcon ≥ δ indicates that DMs reach an agreement
+
+without changing the preference information.
+2 Gcon < δ indicates that DMs do not have an acceptable
+
+agreement, hence consensus adjustment process should be
+implemented.
+Consensus adjustment process
+During the consensus adjustment process, DMs strive to
+minimize their adjustment expenses while achieving their
+goals. This stems from the rational belief that lower costs are
+preferable. Consequently, this study proposes a two-stage
+consensus adjustment model based on granular computing.
+The first stage is to determine whether a predefined consensus
+threshold can be reached, while the second stage focuses on
+identifying the adjustment strategy to minimize adjustment
+costs.
+The first stage: maximum granular consensus model
+(MGCM)
+In the two-stage consensus model, prioritizing the local
+adjustment strategy over the global adjustment can improve
+efficiency. The key is to initially create identification rules to
+select the specific alternatives and attributes requiring adjustment. The set of local positions to be adjusted is expressed
+as S N A,
+
+
+S N A = (i, j) | Gcon i j < Gcon .
+
+(11)
+
+The preferences for certain specific locations are modified
+based on the set S N A to improve the consensus level during
+the first stage of the two-stage consensus adjustment model.
+
+123
+
+329
+
+Page 8 of 16
+
+Complex & Intelligent Systems
+
+h+
+Let θihj denote the adjustment parameter, q ihj = [q ih−
+j , qi j ]
+represent the adjusted preference information of subgroup ch ,
+and g i j = [g i−j , g i+j ] represent the adjusted global preference
+information. The MGCM is developed as Model 1,
+
+(Model 1) max Gcon
+⎧
+m
+h
+h=1 con i j
+⎪
+⎪
+⎪ Gcon i j =
+m
+⎪
+s
+t
+⎪
+⎪
+j=1 Gcon i j
+⎪
+⎪
+Gcon = i=1 s·t
+⎪
+
+
+⎪
+⎪
+⎪
+⎪
+q ih−
+= θihj · gi−j + 1 − θihj · qih−
+⎪
+j
+j
+⎨
+
+
+,
++
+h+
+h
+h
+s.t. q ih+
+·
+q
+=
+θ
+·
+g
++
+1
+−
+θ
+ij ij 
+ij
+j
+ij
+⎪
+⎪
+⎪
+⎪
+I g i j ∩q ihj
+⎪
+⎪
+con ihj = I g 
+⎪
+⎪
+⎪
+ij
+⎪
+⎪
+h ∈ (0, 1)
+⎪
+θ
+⎪
+⎪
+⎩ ij
+(i, j) ∈ S N A
+
+(12)
+
+where Gcon stands for the global consensus level of the
+adjusted preference information for subgroup ch .
+There are two possible results after completing the first
+adjustment step:
+1 Gcon < δ means that the minimum consensus cost
+
+adjustment is disregarded, and the adjusted preference information is aggregated and sorted to obtain the final decision
+result.
+2 Gcon ≥ δ means that an adjustment strategy is
+
+required to reduce costs and proceed to the second stage.
+The second stage: minimum cost adjustment model
+(MCAM)
+In the two-stage adjustment model, the composition of
+unit adjustment costs includes variable costs and fixed costs.
+The variable costs are closely related to the consensus level
+within subgroups. As the consensus level increases, variable
+costs exhibit a downward trend.
+Definitoin 4 Let AC h denote the unit adjustment cost of subgroup ch , and its calculation is shown as follows,
+AC h = (1 − in_con h ) · n h + FC,
+where in_con h represents the consensus level within ch , (1−
+in_con h ) · n h means the variable unit adjustment cost of ch ,
+FC represents the fixed cost required to adjust the subgroup
+preference information.
+The MCAM is utilized to determine the most effective
+adjustment strategy, while ensuring low adjustment costs and
+meeting the consensus requirements. The MCAM is developed as Model 2,
+
+123
+
+(2025) 11:329
+
+ 
+
+
+
+ h+
+
+h− 
+h+ 
+(Model 2) min
+AC h qih−
+j − q i j  + qi j − q i j 
+⎧
+AC h = (1 − in_con h ) · n h + FC
+⎪
+⎪
+⎪
+⎪
+Gcon ≥ δ
+⎪
+⎪
+⎪
+s
+t
+⎪
+⎪
+i=1
+j=1 Gcon i j
+⎪
+Gcon
+=
+⎪
+s·t
+
+⎪
+⎪ h−
+⎪
+−
+h−
+h
+h
+⎪
+⎪ q i j = θi j · gi j + 1 − θi j · qi j
+⎨
+.
+
+
+s.t. q h+ = θ h · g + + 1 − θ h · q h+
+ij
+ij
+ij
+ij
+ij
+⎪
+⎪
+m
+⎪
+h
+⎪
+h=1 con i j
+⎪
+⎪
+Gcon i j =
+⎪
+m 
+⎪
+⎪
+⎪
+I g i j ∩q ihj
+⎪
+h
+⎪
+⎪
+con i j = I g 
+⎪
+⎪
+ij
+⎪
+⎩
+(i, j) ∈ S N A, θihj ∈ (0, 1)
+(13)
+After obtaining the adjusted results of the two-stage
+adjustment model, the alternatives undergo a process to determine their priority degree, which are then used for ranking
+and determining the final choice.
+Definitoin 5 Let ADi represent the priority degree of alternative ai . The priority degree of alternative ai is computed
+as follows,
+ADi =
+
+t
+
+
+s
+i=1,i =l Pr (gi j , gl j )
+
+j=1
+
+s−1
+
+,
+
+where Pr (gi j , gl j ) represents the priority of gi j relative to
+gl j defined in Definition 2.
+The algorithm for the proposed G-LSGDM consensus
+model is presented in Algorithm 2.
+
+Example
+During the selection process for outstanding graduates at
+ABC University, one student distinguished himself/herself
+among seven candidates and was awarded the honor of Outstanding Graduate. The event involves 1,000 participants,
+including teachers, students and alumni, garnering significant attention and support. The evaluation process involves a
+comprehensive assessment of candidates’ scientific research
+capabilities (b1 ), social practice experiences (b2 ), and ideological character (b3 ). However, each participant has their
+own standards for evaluating a candidate’s excellence, which
+introduced a degree of subjectivity into the evaluation process. To ensure fairness and objectivity, the evaluation also
+required that each candidate receive corresponding objective
+scores.
+The teachers and students involved in the evaluation are
+denoted by the set {e1 , e2 , e3 , · · · , e1000 }. The seven candidates who advanced to the final selection are denoted as
+{a1 , a2 , a3 , a4 , a5 , a6 , a7 }. Furthermore, the three evaluation
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Page 9 of 16
+
+329
+
+Algorithm 2: Granular Large-Scale Group DecisionMaking Consensus Model
+Input: Initial information p k = ( pikj )s×t , the consensus
+threshold δ, granulation parameter α, adjustment
+parameter β, penalty coefficient λ, and the fixed cost FC
+Output: The priority degree ADi
+Apply the G-HCM to classify decision-makers into subgroups.
+Calculate the division index C I (l) and select the group division
+result C = {c1 , c2 , · · · , cm }.
+Aggregate the preference information of each subgroup
+q h = (qihj )s×t (h = 1, 2, · · · , m).
+Aggregate the global preference information g = (gi j )s×t .
+Calculate the global consensus level Gcon.
+if Gcon < δ then
+Use Model 1 to calculate the maximum consensus level
+Gcon.
+if Gcon ≥ δ then
+Calculate the individual unit adjustment cost AC h .
+Use Model 2 to adjust the initial preference information
+of subgroups.
+end
+Aggregate the global preference information g = (g i j )s×t
+based on the adjusted subgroup information.
+end
+Calculate the priority degree ADi for alternative ai and
+determine the final ranking.
+
+criteria are denoted by the set {b1 , b2 , b3 }. In light of the principle of fairness, it is essential to emphasize that all DMs are
+regarded as equally significant in this evaluation process. The
+preference information provided by the DMs is expressed in
+the form of interval values, which are presented in Table 1.
+In addition to the criteria and alternatives, it is essential to assign values to the following parameters, consensus
+threshold: δ = 0.82, control parameter: α = 1, adjustment
+parameter: β = 0.75, penalty coefficient: λ = 10−4 , fixed
+cost: FC = 2.
+The following are the specific steps for deriving the optimal alternative using the proposed method.
+Step 1: The clustering process
+Using the division index C I (l), the optimal number of
+subgroups for clustering the 1,000 DMs is determined to be
+36, as shown in Fig. 2. Table 2 lists the number of DMs in
+each subgroup.
+Step 2: Consensus degree measurement
+The global consensus level is calculated using Eq. (10),
+resulting in a value of Gcon = 0.765. Since Gcon < δ, the
+two-stage feedback adjustment is applied to adjust the initial
+preference information.
+Step 3: Two-stage feedback adjustment process
+First, the positions that need adjustment are identified
+using Eq. (11), with S N A specified as,
+
+S N A = (2, 1), (2, 3), (4, 2), (4, 3), (5, 1), (6, 1), (7, 2),
+
+(8, 1), (8, 2), (8, 3) .
+
+Fig. 2 Group Division Index
+
+Second, Model 1 is employed to adjust the preference
+information for the specified positions, resulting in an
+updated group consensus level of Gcon = 0.85. Since
+Gcon > δ, we focus on minimizing adjustment costs while
+ensuring that the group consensus level remains within an
+acceptable range, thereby entering the second adjustment
+stage.
+In the second adjustment stage, the cost of adjusting the
+subgroups is calculated using Definition 4, as shown in Table
+3. Meanwhile, Model 2 is employed to adjust the initial preference information of the subgroups. The updated consensus
+level is Gcon = 0.822 > δ, and the adjustment cost is 34.4.
+Step 4: Selection process
+First, we employ the granular aggregation method described
+in Section Granular aggregation method to aggregate the final
+preference information obtained from each DMs within the
+subgroups, as illustrated in Table 4.
+Second, the overall preference information is aggregated,
+as shown in Table 5.
+Finally, the comparison matrix C M and the priority
+degree ADi for alternative ai can be calculated as follows:
+AD1 = 1.063, AD2 = 1.469, AD3 = 1.268, AD4 =
+1.259, AD5 = 1.321, AD6 = 1.334, AD7 = 2.785. The
+a2
+a6
+a5
+ranking is determined as follows: a7
+a3 a4 a1 .
+
+⎛
+
+0.4125
+⎜ 0.5312
+⎜
+⎜ 0.4339
+⎜
+CM = ⎜
+⎜ 0.4766
+⎜ 0.5506
+⎜
+⎝ 0.3472
+0.9293
+
+0.3575
+0.3446
+0.3310
+0.4352
+0.2771
+0.6203
+0.9323
+
+⎞
+0.2929
+0.5931 ⎟
+⎟
+0.5025 ⎟
+⎟
+0.3472 ⎟
+⎟
+0.4929 ⎟
+⎟
+0.3671 ⎠
+0.9239
+
+123
+
+329
+
+Page 10 of 16
+
+Complex & Intelligent Systems
+
+Table 1 Preference Information
+Provided by Decision-Makers
+e1
+
+e2
+
+..
+.
+e999
+
+e1000
+
+Table 2 Number of Cluster
+Members
+
+Table 3 The Unit Cost of Each
+Subgroup
+
+a1
+
+a2
+
+a3
+
+a4
+
+a5
+
+a6
+
+a7
+
+b1
+
+[0.4,0.6]
+
+[0.6,0.8]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.4,0.7]
+
+[0.5,0.8]
+
+[0.7,0.9]
+
+b2
+
+[0.4,0.5]
+
+[0.6,0.8]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.4,0.7]
+
+[0.4,0.5]
+
+[0.7,0.9]
+
+b3
+
+[0.4,0.5]
+
+[0.5,0.8]
+
+[0.3,0.5]
+
+[0.6,0.7]
+
+[0.5,0.7]
+
+[0.3,0.5]
+
+[0.6,0.8]
+
+b1
+
+[0.6,0.7]
+
+[0.6,0.8]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.2,0.5]
+
+[0.4,0.5]
+
+[0.7,0.9]
+
+b2
+
+[0.5,0.6]
+
+[0.5,0.7]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.4,0.7]
+
+[0.4,0.5]
+
+[0.4,0.8]
+
+b3
+
+[0.2,0.3]
+
+[0.6,0.8]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.6,0.7]
+
+[0.4,0.5]
+
+[0.7,0.9]
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+b1
+
+[0.4,0.6]
+
+[0.6,0.8]
+
+[0.3,0.6]
+
+[0.6,0.7]
+
+[0.5,0.7]
+
+[0.4,0.5]
+
+[0.7,0.9]
+
+b2
+
+[0.5,0.6]
+
+[0.6,0.8]
+
+[0.5,0.7]
+
+[0.6,0.7]
+
+[0.4,0.6]
+
+[0.4,0.5]
+
+[0.7,1.0]
+
+b3
+
+[0.5,0.6]
+
+[0.6,0.8]
+
+[0.4,0.6]
+
+[0.6,0.7]
+
+[0.4,0.7]
+
+[0.4,0.5]
+
+[0.8,0.9]
+
+b1
+
+[0.2,0.5]
+
+[0.6,0.8]
+
+[0.4,0.7]
+
+[0.6,0.7]
+
+[0.4,0.7]
+
+[0.4,0.5]
+
+[0.7,0.9]
+
+b2
+
+[0.4,0.6]
+
+[0.6,0.8]
+
+[0.3,0.5]
+
+[0.3,0.7]
+
+[0.5,0.8]
+
+[0.4,0.5]
+
+[0.5,0.7]
+
+b3
+
+[0.5,0.7]
+
+[0.5,0.8]
+
+[0.4,0.7]
+
+[0.5,0.7]
+
+[0.6,0.7]
+
+[0.4,0.5]
+
+[0.4,0.6]
+
+Clusters
+
+c1
+
+c2
+
+c3
+
+c4
+
+c5
+
+c6
+
+c7
+
+c8
+
+c9
+
+c10
+
+c11
+
+Number of members
+
+10
+
+16
+
+26
+
+15
+
+8
+
+6
+
+25
+
+19
+
+22
+
+16
+
+26
+
+Clusters
+
+c12
+
+c13
+
+c14
+
+c15
+
+c16
+
+c17
+
+c18
+
+c19
+
+c20
+
+c21
+
+c22
+
+Number of members
+
+13
+
+13
+
+13
+
+17
+
+17
+
+26
+
+33
+
+46
+
+30
+
+30
+
+34
+
+Clusters
+
+c23
+
+c24
+
+c25
+
+c26
+
+c27
+
+c28
+
+c29
+
+c30
+
+c31
+
+c32
+
+c33
+
+Number of members
+
+29
+
+32
+
+32
+
+31
+
+32
+
+48
+
+39
+
+32
+
+27
+
+44
+
+48
+
+Clusters
+
+c34
+
+c35
+
+c36
+
+Number of members
+
+54
+
+51
+
+40
+
+Clusters
+
+c1
+
+c2
+
+c3
+
+c4
+
+c5
+
+c6
+
+c7
+
+c8
+
+c9
+
+c10
+
+c11
+
+Unit adjustment cost
+
+2.31
+
+2.43
+
+2.67
+
+2.43
+
+2.27
+
+2.22
+
+2.67
+
+2.54
+
+2.62
+
+2.45
+
+2.66
+
+Clusters
+
+c12
+
+c13
+
+c14
+
+c15
+
+c16
+
+c17
+
+c18
+
+c19
+
+c20
+
+c21
+
+c22
+
+Unit adjustment cost
+
+2.41
+
+2.39
+
+2.41
+
+2.52
+
+2.54
+
+2.68
+
+2.86
+
+3.15
+
+2.77
+
+2.77
+
+2.87
+
+Clusters
+
+c23
+
+c24
+
+c25
+
+c26
+
+c27
+
+c28
+
+c29
+
+c30
+
+c31
+
+c32
+
+c33
+
+Unit adjustment cost
+
+2.74
+
+2.89
+
+2.88
+
+2.86
+
+2.82
+
+3.16
+
+2.99
+
+2.87
+
+2.75
+
+3.14
+
+3.2
+
+Clusters
+
+c34
+
+c35
+
+c36
+
+Unit adjustment cost
+
+3.44
+
+3.39
+
+3.07
+
+Comparison analysis
+This section explores the advantages and roles of various
+parameters in the decision-making process within the GLSGDM consensus model. We conducted two simulation
+experiments utilizing randomly generated preference information, as well as a comparative analysis experiment based
+on the example presented in Sect. Example.
+
+Simulation analysis
+In this section, we conduct simulation experiments using 110
+randomly generated preference information sets, each con-
+
+123
+
+(2025) 11:329
+
+sisting of a single alternative and its attributes, to analyze the
+impact of different parameter values on the proposed granular aggregation method.
+The size of the interval information granule is significantly
+influenced by the parameter α. As illustrated in Fig. 3, raising
+α within a particular range results in a higher level of group
+consensus, showing that members’ viewpoints are more in
+line with others. However, when aggregating group preference information, it is essential to adhere to the principle of
+justifiable granularity. Once the parameter α exceeds a certain threshold, the consensus level remains stable, even as
+α continues to rise. The δ represents the specified consensus
+threshold, which plays a crucial role in the LSGDM. Changes
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Page 11 of 16
+
+329
+
+Table 4 Preference Information of Subgroups
+a1
+
+a2
+
+a3
+
+a4
+
+a5
+
+a6
+
+a7
+
+b1
+
+[0.16,0.36]
+
+[0.20,0.44]
+
+[0.23,0.35]
+
+[0.24,0.36]
+
+[0.18,0.32]
+
+[0.18,0.32]
+
+[0.72,0.91]
+
+b2
+
+[0.18,0.37]
+
+[0.19,0.39]
+
+[0.17,0.31]
+
+[0.26,0.54]
+
+[0.12,0.30]
+
+[0.22,0.56]
+
+[0.73,0.95]
+
+b3
+
+[0.14,0.28]
+
+[0.26,0.42]
+
+[0.22,0.41]
+
+[0.43,0.59]
+
+[0.21,0.37]
+
+[0.17,0.35]
+
+[0.64,0.80]
+
+b1
+
+[0.17,0.33]
+
+[0.22,0.34]
+
+[0.28,0.39]
+
+[0.16,0.30]
+
+[0.23,0.37]
+
+[0.09,0.28]
+
+[0.71,0.91]
+
+b2
+
+[0.22,0.34]
+
+[0.09,0.24]
+
+[0.13,0.31]
+
+[0.22,0.36]
+
+[0.12,0.24]
+
+[0.265,0.385]
+
+[0.68,0.87]
+
+b3
+
+[0.15,0.35]
+
+[0.20,0.32]
+
+[0.19,0.49]
+
+[0.16,0.32]
+
+[0.21,0.37]
+
+[0.14,0.28]
+
+[0.72,0.88]
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+..
+.
+
+c35
+
+b1
+
+[0.12,0.30]
+
+[0.26,0.48]
+
+[0.19,0.37]
+
+[0.17,0.35]
+
+[0.14,0.32]
+
+[0.44,0.56]
+
+[0.78,0.94]
+
+b2
+
+[0.18,0.36]
+
+[0.15,0.29]
+
+[0.12,0.26]
+
+[0.20,0.36]
+
+[0.15,0.27]
+
+[0.30,0.48]
+
+[0.71,0.89]
+
+b3
+
+[0.13,0.25]
+
+[0.13,0.27]
+
+[0.15,0.49]
+
+[0.39,0.51]
+
+[0.22,0.40]
+
+[0.13,0.27]
+
+[0.68,0.88]
+
+b1
+
+[0.20,0.38]
+
+[0.23,0.41]
+
+[0.13,0.31]
+
+[0.19,0.83]
+
+[0.19,0.37]
+
+[0.13,0.27]
+
+[0.81,0.95]
+
+b2
+
+[0.15,0.33]
+
+[0.11,0.39]
+
+[0.16,0.30]
+
+[0.13,0.31]
+
+[0.16,0.28]
+
+[0.23,0.35]
+
+[0.75,0.95]
+
+b3
+
+[0.13,0.39]
+
+[0.15,0.33]
+
+[0.17,0.37]
+
+[0.12,0.30]
+
+[0.12,0.66]
+
+[0.17,0.25]
+
+[0.60,0.76]
+
+c1
+
+c2
+
+c36
+
+Table 5 Global Granulation
+Preference
+
+a1
+
+a2
+
+a3
+
+a4
+
+a5
+
+a6
+
+a7
+
+b1
+
+[0.34,0.51]
+
+[0.56,0.72]
+
+[0.33,0.57]
+
+[0.56,0.66]
+
+[0.49,0.64]
+
+[0.42,0.59]
+
+[0.76,0.83]
+
+b2
+
+[0.46,0.57]
+
+[0.61,0.77]
+
+[0.52,0.66]
+
+[0.45,0.56]
+
+[0.47,0.71]
+
+[0.61,0.75]
+
+[0.64,0.81]
+
+b3
+
+[0.38,0.61]
+
+[0.60,0.71]
+
+[0.34,0.47]
+
+[0.37,0.51]
+
+[0.51,0.63]
+
+[0.42,0.61]
+
+[0.77,0.97]
+
+expression of the WA operator [41] is provided below,
+W A(q 1 , q 2 , · · · , q m ) =
+
+m
+
+
+ωi q i ,
+
+i=1
+
+Fig. 3 The influence of α and δ
+
+in δ directly affect the group’s consensus adjustment cost, as
+illustrated in Fig. 3. When the consensus threshold is set to
+a relatively low value (e.g., δ = 0.2), there is no need to
+modify any preference information within the group. Consequently, in this scenario, an acceptable consensus level is
+achieved among group members regarding the existing preference information, resulting in an adjustment cost of 0.
+In this section, we employ a traditional information aggregation method, the weighted average (WA) operator, to
+aggregate global preferences for comparative analysis. The
+
+where ωi = m1 is the weight of subgroup ci . In Fig. 4, there
+are two intervals: interval I and interval II, representing two
+different results of preference information aggregation methods. The former is generated using the granular aggregation
+method, while the latter employs the traditional WA aggregation operator. The similarity between these two intervals
+and their corresponding initial preference information can
+be determined using Definition 3. The similarity degree for
+interval I is 0.52, whereas that for interval II is 0.5. These
+findings indicate that the aggregation result produced by the
+proposed method exhibits a suitable representative pattern,
+providing a solid foundation for future research and decisionmaking.
+Figure 5 shows that when the group contains DMs with
+extreme preferences, their preference information (Interval
+II) can influence the aggregated result, skewing it in favor
+of those with extreme preferences. Specifically, the similarity degree for Interval I remains steady at 0.52, while the
+similarity degree for Interval II experiences a slight decline
+to 0.48. The similarity degree between the aggregated preference information and the initial preference information for
+Interval I remains constant at 0.52, indicating the stability
+
+123
+
+329
+
+Page 12 of 16
+
+Fig. 4 Aggregation Result without Outliers
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+through simulation studies. To further highlight the superiority of the clustering method proposed in this paper, we
+conducted a comparative analysis of the G-HCM and traditional HCM methods, examining the division indices and
+consensus levels for different subgroup numbers. The results
+are presented in Fig. 6.
+The results shown in Fig. 6(a) indicate that the HCM
+method performs better when the number of clusters ranges
+from 10 to 27. However, when the number of participants
+in the decision-making process exceeds 1000, this range of
+clusters does not significantly reduce the complexity of the
+decision-making problem, as each cluster still contains a relatively large number of DMs. In contrast, when the number of
+clusters exceeds 27, the effectiveness of the G-HCM method
+becomes more apparent. Furthermore, the G-HCM method
+considers aggregated preference information, allowing for
+the integration of diverse perspectives. This helps mitigate
+the influence of extreme individual opinions, ultimately leading to more objective and reliable group division outcomes.
+Fig. 6(b) illustrates that the overall consensus level obtained
+by the G-HCM method is higher, indicating that the decision results from this method will be more widely accepted
+and yield greater satisfaction. Additionally, Fig. 6(c) shows
+that when the number of DMs exceeds 1000, the G-HCM
+method can significantly enhance the consensus level within
+each subgroup.
+
+Discussion
+
+Fig. 5 Aggregation Result with Outliers
+
+of the proposed method. In contrast, the similarity degree
+between the aggregated preference information generated
+using the WA method and the initial preference information for Interval II decreases from 0.50 to 0.48, reflecting its
+sensitivity to extreme preferences. Overall, these results indicate that the granular aggregation method effectively filters
+out extreme preferences and reduces the impact of outliers
+on decision-making results, thereby ensuring the robustness
+and reliability of the proposed method.
+
+Comparison analysis
+To examine the effectiveness of the G-LSGDM consensus
+model in the clustering process, we utilize the experimental
+data provided in Section Example to compare the G-HCM
+clustering algorithm with the traditional HCM clustering
+algorithm.
+The effectiveness of granular aggregation methods in
+managing extreme preference information has been analyzed
+
+123
+
+This section presents a comparative analysis of various
+decision-making models. By comparing the G-LSGDM consensus model with existing methods, the unique advantages
+and efficacy of the G-LSGDM consensus model are assessed.
+Table 6 offers a detailed comparison.
+For solving LSGDM problems, clustering algorithms
+simplify the decision-making process for complex groups.
+However, some algorithms [20, 44] require predetermined
+cluster numbers, which have significant limitations that make
+it challenging to accurately reflect group structures and may
+introduce subjective bias, potentially reducing the reliability of the results. This study presents a granular hierarchical
+clustering method that utilizes preference distribution information and consensus levels to determine the optimal number
+of subgroups, thereby minimizing the influence of individual
+preferences and enhancing the rationality of the results.
+The weighted average operator [17, 42–44] is the most
+commonly used technique for aggregating preference information in addressing LSGDM problems. However, this
+method may be sensitive to outliers in practical applications.
+In contrast, the granular aggregation method proposed in this
+study offers a more flexible approach that effectively summarizes and describes collective opinions at a higher level
+of abstraction, while also helping to mitigate the influence
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+Page 13 of 16
+
+329
+
+Fig. 6 Comparison Results of G-HCM and HCM
+Table 6 Comparison with Existing Method
+Reference
+
+Clustering method
+
+Aggregated methods
+
+Consensus
+measurement
+method
+
+Scope of adjustment
+
+Strategy of
+adjustment
+
+Liang et al. [16]
+
+Clustering method
+based on the
+similarity-trust
+score of DMs
+
+Weighted average
+operator
+
+Distance-based
+measurement
+method
+
+Global adjustment
+
+Adjustment strategy
+utilizing the
+DeGroot model
+
+Wang et al. [17]
+
+Affinity propagation
+algorithm
+
+Weighted average
+operator
+
+Distance-based
+measurement
+method
+
+Local adjustment
+
+Bi-directional
+feedback
+mechanism
+
+Yang et al. [20]
+
+Two-stage clustering
+approach
+
+–
+
+–
+
+–
+
+–
+
+Yang et al. [42]
+
+–
+
+Weighted average
+operator
+
+Distance-based
+measurement
+method
+
+Global adjustment
+
+Considering the
+acceptance
+probability of DMs
+
+Cao et al. [43]
+
+–
+
+Weighted average
+operator
+
+Distance-based
+measurement
+method
+
+Global adjustment
+
+A bilateral
+negotiation
+consensus
+mechanism
+
+Liao et al. [44]
+
+K-means clustering
+algorithm
+
+Weighted average
+operator
+
+Distance-based
+measurement
+method
+
+Local adjustment
+
+Minimum cost
+consensus-based
+feedback
+mechanism
+
+This paper
+
+G-HCM
+
+Granular aggregation
+method
+
+Fuzzy consensus
+measurement
+method
+
+Local adjustment
+
+Two-stage
+adjustment strategy
+
+The indicator “–” indicates that the corresponding item is not considered
+
+of outliers, thereby enhancing the stability of the decisionmaking process.
+In the CRP, the process is generally divided into two
+stages: the consensus measurement stage and the feedback
+adjustment stage. On one hand, existing methods [17, 42–
+44] typically assess the consensus level by measuring the
+distance between DMs’ preference information; however,
+different distance functions may yield varying results. On
+the other hand, the feedback adjustment stage involves modifying individual preferences. Some studies [16, 42, 43]
+have adopted a global adjustment strategy, which can lead
+to the loss of initial information and make the adjustment
+
+process more time-consuming. This study designs a fuzzy
+consensus measurement method within a granular computing framework that offers flexibility and applicability, as
+group consensus levels can be derived from the diverse specificity and coverage of information granules. Furthermore, the
+proposed two-stage consensus model provides more precise
+local information adjustments, ensuring that DMs achieve
+satisfactory results while preserving their initial perspectives
+as much as possible.
+Compared to the feedback adjustment strategy proposed
+in references [16, 17, 42–44], the developed two-stage adjustment model integrates the principles of maximum consensus
+
+123
+
+329
+
+Page 14 of 16
+
+and minimum cost adjustment, with the goal of achieving an
+effective group consensus, thereby improving the acceptance
+and satisfaction of the decision-making results.
+In summary, our method offers significant advantages
+over existing approaches and provides potential solutions
+for practical applications. However, it also has certain limitations. First, with the growth of social media, the number
+of participants in decision-making problems has increased
+exponentially, leading to greater divergence of opinions
+among stakeholders, as well as more pronounced competitive
+and non-cooperative behaviors. Future research should incorporate these behaviors into consensus models. Second, given
+the differences among DMs in terms of knowledge structure, individual preferences, and information representation
+(such as numerical, interval, and linguistic formats) within
+LSGDM, establishing a consensus model that effectively
+integrates heterogeneous evaluation information becomes
+crucial for addressing the practical challenges of LSGDM.
+
+Conclusion
+This study introduces the concept of information granules to design the G-LSGDM consensus framework, aiming
+to achieve more satisfactory decision-making results in
+LSGDM. Additionally, we provide an example to illustrate
+the specific application of the proposed method and compare
+it with traditional methods to demonstrate the superiority
+of the proposed model in terms of consensus and clustering,
+especially in decision-making processes involving thousands
+of participants. The main innovations and theoretical contributions of this study are summarized as follows,
+• 1) For the clustering process, we construct a granular hierarchical clustering approach based on the principle of
+justifiable granularity, where the division index is used
+to determine the optimal number of subgroups. Additionally, we develop a granular aggregation method that
+generates information granules representing group opinions and helps eliminate outliers.
+• 2) For the group consensus measurement process, we
+define the fuzzy consensus measure function by considering both the coverage and specificity of information
+granules. This function offers flexibility and applicability due to the diverse expression functions used for the
+specificity and coverage of the consensus granules.
+• 3) For the information adjustment process, we incorporate the moderator’s decision cost into the feedback
+mechanism and propose a two-stage granule consensus
+
+123
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+model that reduces adjustment costs while ensuring the
+DMs’ satisfaction with the final solution.
+In LSGDM, the individual behaviors of DMs, including
+non-cooperative and manipulative behaviors, directly impact
+both the decision-making results and the efficiency of the
+CRP. Therefore, constructing a consensus feedback mechanism that considers the individual behavior of DMs in the
+CRP is promising. Additionally, exploring the allocation of
+information granularity in LSGDM presents another intriguing direction. In our proposed model, we primarily focus on
+interval-based information granules. In the future, we will
+explore other forms of information granules, such as type2 fuzzy sets, to characterize the uncertainty in the process
+of decision making activities and examine their impact on
+decision results. Furthermore, the proposed model can be
+applied to other relevant fields, such as Hospital-based Health
+Technology Assessment, to help hospitals evaluate the value
+and effectiveness of new technologies, thereby enhancing the
+quality and efficiency of medical services.
+Acknowledgements The authors are grateful to the editors and reviewers for their valuable and constructive comments that helped improve
+this paper. This work was supported in part by the Natural Science
+Foundation of China under Grant 62173053, Anhui Jianzhu University
+2023 School-Level Attracted Talents and Doctoral Start-up Fund No.
+2023QDZ25.
+Author Contributions Substantially contributed to conception or design:
+Yanjun Wang, Xi Chen, Lidong Wang. Contributed to acquisition, analysis, or interpretation of data: Yanjun Wang, Xi Chen. Drafted the
+manuscript for important content: Yanjun Wang, Lidong Wang. Critically revised the manuscript for important intellectual content: Yanjun
+Wang, Xi Chen. Gave final approval: Yanjun Wang, Xi Chen, Lidong
+Wang.
+
+Declarations
+Conflicts of Interest The authors declare that they have no conflicts of
+interest.
+Ethical Approval This article does not contain any studies with human
+or animals performed by any of the authors.
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit
+to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted
+material derived from this article or parts of it. The images or other
+third party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons
+licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission
+directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by-nc-nd/4.0/.
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+References
+1. Ding XY, Wang WJ, Liao BY (2025) A group stability-based consensus model for multi-criteria group decision-making problems
+with linguistic distribution assessments. Journal of the Operational
+Research Society 76(4):708–724
+2. Gokasar I, Pamucar D, Deveci M et al (2023) Metaverse integration
+alternatives of connected autonomous vehicles with self-powered
+sensors using fuzzy decision making model. Inf Sci 642:119192
+3. Chuu SJ (2014) An investment evaluation of supply chain rfid
+technologies: A group decision-making model with multiple information sources. Knowl-Based Syst 66:210–220
+4. Gocer F (2024) A novel extension of fermatean fuzzy sets into
+group decision making: A study for prioritization of renewable
+energy technologies. Arab J Sci Eng 49:4209–4228
+5. Sun B, Ma W, Chen X, Zhang X (2019) Multigranulation vague
+rough set over two universes and its application to group decision
+making. Soft Comput 23:8927–8956
+6. Xu X, Pan B, Yang Y (2018) Large-group risk dynamic emergency
+decision method based on the dual influence of preference transfer
+and risk preference. Soft Comput 22:7479–7490
+7. Liu B, Shen Y, Chen X et al (2014) A partial binary tree dea-da
+cyclic classification model for decision makers in complex multiattribute large-group interval-valued intuitionistic fuzzy decisionmaking problems. Information Fusion 18:119–130
+8. Wang P, Xu X, Huang S (2019) An improved consensus-based
+model for large group decision making problems considering
+experts with linguistic weighted information. Group Decis Negot
+28:619–640
+9. Chu J, Wang Y, Liu X et al (2020) Social network community
+analysis based large-scale group decision making approach with
+incomplete fuzzy preference relations. Information Fusion 60:98–
+120
+10. Du ZJ, Luo HY, Lin XD et al (2020) A trust-similarity analysisbased clustering method for large-scale group decision-making
+under a social network. Information Fusion 63:13–29
+11. Gai T, Cao M, Chiclana F et al (2023) Consensus-trust driven
+bidirectional feedback mechanism for improving consensus in
+social network large-group decision making. Group Decis Negot
+32(1):45–74
+12. Wu T, Liu X, Liu F (2019) The solution for fuzzy large-scale
+group decision making problems combining internal preference
+information and external social network structures. Soft Comput
+23:9025–9043
+13. Gou J, Wang ZL, Zhang ZW (2024) A dual-level consensus model
+for large-scale group decision-making driven by trust relationships
+in social networks. Eng Appl Artif Intell 136:109033
+14. Liang X, Guo J, Liu PD (2024) A consensus model considers managing manipulative and overconfident behaviours in large-scale
+group decision-making. Inf Sci 654:119848
+15. Ding RX, Cheng RX, Ling MN et al (2024) Conflict managementbased consensus reaching process considering conflict relationship
+clustering in large-scale group decision-making problems. Expert
+Syst Appl 238:122095
+16. Liang X, Guo J, Liu PD (2022) A large-scale group decisionmaking model with no consensus threshold based on social network
+analysis. Inf Sci 612:361–383
+17. Wang YJ, Hu XX, Yan B et al (2024) Adaptive bi-directional
+consensus reaching model with social influence evolution for largescale group decision-making with an application to observation
+scheme selection. Int J Fuzzy Syst 26(7):2337–2358
+18. Peng JJ, Chen XG (2024) A large-scale group decision-making
+approach based on hesitancy degrees and non-cooperative behaviors with picture fuzzy information. Appl Soft Comput 154:111360
+
+Page 15 of 16
+
+329
+
+19. Tang M, Liang HC, Wu XL (2023) A Stackelberg game model for
+large-scale group decision making based on cooperative incentives.
+Information Fusion 96:103–116
+20. Yang H, Xu GL, Wang F et al (2023) A clustering-based method for
+large-scale group decision making in the hesitant fuzzy set environment. Computers & Industrial Engineering 183:109526
+21. Zhong X, Xu X, Goh M et al (2024) Large group decision-making
+method based on social network analysis: Integrating evaluation
+information and trust relationships. Cogn Comput 16:86–106
+22. Labella Á, Liu H, Rodríguez RM et al (2020) A cost consensus
+metric for consensus reaching processes based on a comprehensive
+minimum cost model. Eur J Oper Res 281(2):316–331
+23. Zhang B, Dong Y, Pedrycz W (2022) Consensus model driven
+by interpretable rules in large-scale group decision making with
+optimal allocation of information granularity. IEEE Transactions
+on Systems, Man, and Cybernetics: Systems 53(2):1233–1245
+24. Xing YM, Wu J, Chiclana F et al (2024) An incentive mechanismbased minimum adjustment consensus model under dynamic trust
+relationship. IEEE Transactions on Cybernetics 54:3666–3678
+25. Yuan YX, Wang CF, Cheng D et al (2023) Minimum conflict
+consensus models for group decision-making based on social network analysis considering non-cooperative behaviors. Information
+Fusion 99:101855
+26. Meng FY, Zhao DY, Zhang XM (2023) A fair consensus adjustment
+mechanism for large-scale group decision making in term of gini
+coefficient. Eng Appl Artif Intell 126:106962
+27. Wang S, Chiclana F, Chang J et al (2024) A minimum costmaximum consensus jointly driven feedback mechanism under
+harmonious structure in social network group decision making.
+Expert Syst Appl 238:122358
+28. Ma YF, Ji Y, Wijekoon C (2024) Robust maximum expert consensus model with adjustment path under uncertain environment.
+Appl Soft Comput 155:111430
+29. Feng Y, Dang YG, Wang JJ et al (2024) Minimum cost consensusbased social network group decision making with altruism-fairness
+preferences and ordered trust propagation. IEEE Transactions on
+Systems, Man, and Cybernetics: Systems 54(12):7605–7618
+30. Qin JD, Wang D, Liang YY (2023) Social network-driven bi-level
+minimum cost consensus model for large-scale group decisionmaking: A perspective of structural holes. Inf Sci 649:119678
+31. Qin JD, Ma XY, Pedrycz W (2023) A granular computingdriven best–worst method for supporting group decision making.
+IEEE Transactions on Systems, Man, and Cybernetics: Systems
+53(9):5591–5603
+32. Qin JD, Martinez L, Pedrycz W et al (2023) An overview of granular computing in decision-making: Extensions, applications, and
+challenges. Information Fusion 98:101833
+33. Ji Y, Yuan YY, Peng ZS (2024) A novel robust flexible minimum
+cost consensus model with consensus granule. Group Decis Negot
+33:441–441
+34. Zhang BW, Dong YC, Feng X et al (2021) Maximum fuzzy consensus feedback mechanism with minimum cost and private interest in
+group decision making. IEEE Trans Fuzzy Syst 29(9):2689–2700
+35. Castillo O, Castro JR, Melin P (2022) A methodology for building
+interval type-3 fuzzy systems based on the principle of justifiable
+granularity. Int J Intell Syst 37(10):7909–7943
+36. Zhou S, Yang J, Ding Y et al (2017) A markov chain approximation
+to multi-stage interactive group decision-making method based on
+interval fuzzy number. Soft Comput 21:2701–2708
+37. Jiang Y (2007) An approach to group decision making based on
+interval fuzzy preference relations. J Syst Sci Syst Eng 16(1):113–
+120
+38. Pedrycz W, Homenda W (2013) Building the fundamentals of granular computing: A principle of justifiable granularity. Appl Soft
+Comput 13(10):4209–4218
+
+123
+
+329
+
+Page 16 of 16
+
+39. Ben-Arieh D, Easton T, Evans B (2008) Minimum cost consensus
+with quadratic cost functions. IEEE Transactions on Systems, Man,
+and Cybernetics-Part A: Systems and Humans 39(1):210–217
+40. Zhang G, Dong Y, Xu Y et al (2011) Minimum-cost consensus models under aggregation operators. IEEE Transactions on
+Systems, Man, and Cybernetics-Part A: Systems and Humans
+41(6):1253–1261
+41. Zhang B, Dong Y, Xu Y (2013) Maximum expert consensus models
+with linear cost function and aggregation operators. Computers &
+Industrial Engineering 66(1):147–157
+42. Yang GR, Wang XQ, Ding RX et al (2023) Managing noncooperative behaviors in large-scale group decision making based
+on trust relationships and confidence levels of decision makers.
+Information Fusion 97:101820
+
+123
+
+Complex & Intelligent Systems
+
+(2025) 11:329
+
+43. Cao MS, Chiclana F, Liu YJ et al (2024) A bilateral negotiation
+mechanism by dynamic harmony threshold for group consensus
+decision making. Eng Appl Artif Intell 133:108225
+44. Liao HC, Wu Z, Tang M et al (2022) Personalized individual semantics based consensus reaching process for large-scale
+group decision making with probabilistic linguistic preference relations and application to COVID-19 surveillance. Expert Syst Appl
+191:116328
+
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
