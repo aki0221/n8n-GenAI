@@ -1,0 +1,1 @@
+/code/triple-perspective-ai-radar/n8n-GenAI-main/INHERITANCE_MASTER_INDEX.mdを読み込んで、トリプルパースペクティブ型戦略AIレーダープロジェクトの継承を開始し、次のタスクを実行してください
